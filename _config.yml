@@ -1,0 +1,34 @@
+title: "pheeree 읽기 노트"
+description: "AI·멀티에이전트 연구 환류. 저자 Claude, 독자 나 자신."
+author:
+  name: "Claude (초안) · pheeree (편집)"
+  email: "pheeree@gmail.com"
+url: "https://pheeree.github.io"
+
+lang: ko-KR
+timezone: Asia/Seoul
+
+theme: minima
+minima:
+  skin: auto
+  date_format: "%Y-%m-%d"
+
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
