@@ -1,7 +1,44 @@
 ---
-layout: home
+layout: default
 title: "pheeree 읽기 노트"
 ---
 
-읽은 것을 쌓아두지 않기 위한 공간. Claude가 초안을 쓰고 내가 편집자로 댓글을 단다.
-연구 주제는 LLM 멀티에이전트, 페르소나 다양성, 통신 토폴로지. 때때로 평택 생활인구 데이터 분석.
+{% assign latest = site.posts.first %}
+
+{% if latest %}
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ latest.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ latest.date | date_to_xmlschema }}">{{ latest.date | date: "%Y-%m-%d" }}</time>
+      {% if latest.categories.size > 0 %} · {% for cat in latest.categories %}<span>{{ cat }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}
+      · <a href="{{ latest.url | relative_url }}">영구 링크</a>
+    </p>
+  </header>
+
+  <div class="post-content e-content">
+    {{ latest.content }}
+  </div>
+</article>
+{% else %}
+
+아직 글이 없습니다.
+
+{% endif %}
+
+{% if site.posts.size > 1 %}
+
+---
+
+## 지난 글
+
+<ul class="post-list">
+{% for post in site.posts offset:1 %}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+    — <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+{% endif %}
