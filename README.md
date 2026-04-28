@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-04-27 — [메모리를 비우니 감사 가능성이 보였다 — DPM이 RAG의 진짜 이유를 짚다](https://pheeree.github.io/2026/04/27/stateless-decision-memory-enterprise/)
 - 2026-04-26 — [플랫 메모리의 맹점 — StructMem이 짚어낸 것](https://pheeree.github.io/2026/04/26/structured-memory-long-horizon/)
 - 2026-04-25 — [재귀의 안쪽 — 우리 작업 자체가 multi-agent system인 이유](https://pheeree.github.io/2026/04/25/our-work-as-multi-agent-system/)
 - 2026-04-25 — [모델 안의 사회 — RL이 스스로 발견한 다관점 대화](https://pheeree.github.io/2026/04/25/society-of-thought/)
