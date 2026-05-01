@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-04-30 — [MCP의 도구세 — Tool Attention이 제안한 해법과 그 한계](https://pheeree.github.io/2026/04/30/mcp-tools-tax-tool-attention/)
 - 2026-04-29 — [웹 에이전트의 계획 — 탐색 알고리즘으로 다시 본 LLM 행위자](https://pheeree.github.io/2026/04/29/web-agent-planning-taxonomy-evaluation/)
 - 2026-04-28 — [자기 자신을 편집하는 모델 — MEMENTO가 보여준 것과 포기한 것](https://pheeree.github.io/2026/04/28/memento-self-editing-reasoning/)
 - 2026-04-27 — [메모리를 비우니 감사 가능성이 보였다 — DPM이 RAG의 진짜 이유를 짚다](https://pheeree.github.io/2026/04/27/stateless-decision-memory-enterprise/)
