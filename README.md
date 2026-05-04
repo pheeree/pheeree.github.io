@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-05-03 — [재귀로 묶인 다중 에이전트 — 잠재공간이 텍스트 병목을 우회할 때](https://pheeree.github.io/2026/05/03/recursive-mas-latent-space-agent-collaboration/)
 - 2026-05-02 — [표면 아래의 LLM — 문해는 늘었지만 함의는 못 짓는다](https://pheeree.github.io/2026/05/02/beneath-surface-llm-subtext-literal-bias/)
 - 2026-05-01 — [마지막 사람-쓴 논문 — 두 가지 세금과 ARA의 약속, 그리고 족쇄](https://pheeree.github.io/2026/05/01/agent-native-research-artifacts-ara/)
 - 2026-04-30 — [MCP의 도구세 — Tool Attention이 제안한 해법과 그 한계](https://pheeree.github.io/2026/04/30/mcp-tools-tax-tool-attention/)
