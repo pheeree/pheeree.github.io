@@ -43,14 +43,14 @@ Abstract-CoT는 이 세 갈래의 합류점이다. 이산 코드북(첫째)을 �
 
 ```mermaid
 flowchart LR
-    Q1[질문] --> T1[step 1<br/>긴 토큰] --> T2[step 2<br/>긴 토큰] --> T3[step 3<br/>긴 토큰] --> A1[답]
+    Q1["질문"] --> T1["step 1<br/>긴 토큰"] --> T2["step 2<br/>긴 토큰"] --> T3["step 3<br/>긴 토큰"] --> A1["답"]
 ```
 
 **Abstract-CoT** — `<beginabstract>...<endabstract>` 사이 \(M=64\) 어휘의 짧은 추상 시퀀스, 비인간 가독, 144 토큰.
 
 ```mermaid
 flowchart LR
-    Q2[질문] --> B1["&lt;beginabstract&gt;"] --> AT["abstract tokens<br/>M=64 어휘"] --> B2["&lt;endabstract&gt;"] --> A2[답]
+    Q2["질문"] --> B1["&lt;beginabstract&gt;"] --> AT["abstract tokens<br/>M=64 어휘"] --> B2["&lt;endabstract&gt;"] --> A2["답"]
 ```
 
 ## 그러나 — 본문 안에서 한 번은 의심한다
@@ -79,8 +79,8 @@ flowchart LR
 
 ```mermaid
 graph LR
-    A[완전 텍스트 CoT<br/>- 효율: 낮음<br/>- 감사: 높음<br/>- 표현력: 표면 한정] --> B[이산 추상 CoT<br/>- 효율: 중간-높음<br/>- 감사: 중간<br/>- 표현력: 학습된 어휘]
-    B --> C[연속 잠재 CoT<br/>- 효율: 높음<br/>- 감사: 낮음<br/>- 표현력: 풍부]
+    A["완전 텍스트 CoT<br/>효율 낮음 · 감사 높음<br/>표현력 표면 한정"] --> B["이산 추상 CoT<br/>효율 중-상 · 감사 중<br/>표현력 학습된 어휘"]
+    B --> C["연속 잠재 CoT<br/>효율 높음 · 감사 낮음<br/>표현력 풍부"]
     style A fill:#e8f4f8
     style B fill:#fff4e1
     style C fill:#fde8e8

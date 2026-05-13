@@ -43,9 +43,9 @@ RecursiveMAS는 이 세 갈래의 합류점이다. 단일 모델 재귀(COCONUT/
 
 ```mermaid
 flowchart TB
-    A1["Agent A1 · Planner<br/>↻ Inner Link"] ==Outer Link==> A2["Agent A2 · Critic<br/>↻ Inner Link"]
-    A2 ==Outer Link==> A3["Agent A3 · Solver<br/>↻ Inner Link"]
-    A3 --> OUT[출력]
+    A1["Agent A1 · Planner<br/>↻ Inner Link"] == "Outer Link" ==> A2["Agent A2 · Critic<br/>↻ Inner Link"]
+    A2 == "Outer Link" ==> A3["Agent A3 · Solver<br/>↻ Inner Link"]
+    A3 --> OUT["출력"]
 ```
 
 협업 패턴은 네 가지를 지원한다 — Sequential (Planner→Critic→Solver), Mixture (병렬 전문가 + Summarizer), Distillation (Expert→Learner), Deliberation (Reflector↔Tool-Caller). 텍스트 기반 토폴로지에서 익숙한 패턴들이지만, 텍스트 채널을 잠재 채널로 갈아끼웠다.
@@ -74,14 +74,14 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    T1[에이전트 A] -- 자연어 --> T2[에이전트 B] -- 자연어 --> T3[에이전트 C]
+    T1["에이전트 A"] -- "자연어" --> T2["에이전트 B"] -- "자연어" --> T3["에이전트 C"]
 ```
 
 **잠재 기반 MAS** — 검사 어려움, \(K^*\) 더 풍부할 가능성, 조율 비용 작음.
 
 ```mermaid
 flowchart LR
-    L1[에이전트 A] == 히든 스테이트 ==> L2[에이전트 B] == 히든 스테이트 ==> L3[에이전트 C]
+    L1["에이전트 A"] == "히든 스테이트" ==> L2["에이전트 B"] == "히든 스테이트" ==> L3["에이전트 C"]
 ```
 
 **\(K^*\) 프레임의 검증.** RecursiveMAS는 "텍스트로 표현 가능한 채널"에 갇혀 있던 \(K\)가 잠재 채널로 가면 늘어난다는 가설을 시험할 수 있는 실험대다. 같은 에이전트 구성에 대해 텍스트 모드와 잠재 모드를 같은 작업에 돌려보고 — 의견 다양성 지표(Vendi Score 변형)가 어떻게 달라지는지를 측정해보고 싶다. \(K\)가 정말 늘어나는지, 아니면 그냥 *압축 효율*만 좋아지는지를 분리해야 한다.

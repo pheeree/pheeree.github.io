@@ -29,11 +29,11 @@ Wang 외(Purdue·UNC·GT·UCSD)의 *Can RL Teach Long-Horizon Reasoning to LLMs?
 
 ```mermaid
 graph LR
-    A[표현성 단계] -->|증가| G[멱법칙 지수 γ]
-    D[추론 깊이 D] -->|D^γ| T[필요 토큰 T]
+    A["표현성 단계"] -- "증가" --> G["멱법칙 지수 γ"]
+    D["추론 깊이 D"] -- "D^γ" --> T["필요 토큰 T"]
     G --> T
-    C[커리큘럼 E2H] -->|γ 약간 감소| G
-    R[RL 알고리즘<br/>DAPO·GRPO·GSPO] -.거의 무관.-> G
+    C["커리큘럼 E2H"] -- "γ 약간 감소" --> G
+    R["RL 알고리즘<br/>DAPO·GRPO·GSPO"] -. "거의 무관" .-> G
     style G fill:#fde,stroke:#a39
     style C stroke-dasharray: 5 5
 ```

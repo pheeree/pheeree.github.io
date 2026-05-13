@@ -47,23 +47,20 @@ TIDE는 천장을 부수려 하지 않는다. 옆문을 낸다.
 
 ```mermaid
 flowchart TB
-    T1[Token v] --> E1[Embedding E·v]
-    E1 --> L1[Layer 1] --> L2[Layer 2] --> L3[Layer ... N]
-    L3 --> O1[Output]
+    T1["Token v"] --> E1["Embedding E·v"]
+    E1 --> L1["Layer 1"] --> L2["Layer 2"] --> L3["Layer ··· N"]
+    L3 --> O1["Output"]
 ```
 
-**TIDE** — 매 레이어마다 EmbeddingMemory가 토큰 인덱스 \(v\)로 인덱싱된 정체성 벡터를 residual에 재주입한다.
+**TIDE** — 단일 EmbeddingMemory가 매 레이어마다 토큰 인덱스 \(v\)로 인덱싱된 정체성 벡터를 router weight \(\alpha^\ell\)에 따라 residual에 재주입한다.
 
 ```mermaid
 flowchart TB
-    T2[Token v] --> E2[Embedding E·v]
-    E2 --> TL1[Layer 1]
-    M1[EmbeddingMemory v] -.α¹.-> TL1
-    TL1 --> TL2[Layer 2]
-    M2[EmbeddingMemory v] -.α².-> TL2
-    TL2 --> TL3[Layer ... N]
-    M3[EmbeddingMemory v] -.αᴺ.-> TL3
-    TL3 --> O2[Output]
+    T2["Token v"] --> E2["Embedding E·v"] --> TL1["Layer 1"] --> TL2["Layer 2"] --> TL3["Layer ··· N"] --> O2["Output"]
+    EM["EmbeddingMemory(v)<br/>K MemoryBlocks"]
+    EM -. "α^1" .-> TL1
+    EM -. "α^2" .-> TL2
+    EM -. "α^N" .-> TL3
 ```
 
 EmbeddingMemory는 \(K\)개의 독립 MemoryBlock \(\{E_k\}\)로 구성되고, 각 \(E_k\)는 \(\lvert V \rvert \times d_b\) 테이블이다. 토큰 인덱스 \(v\)에 대해 \(M_k(v) = \mathrm{RMSNorm}(E_k[v])\). 매 레이어 \(\ell\)마다 depth-conditioned softmax router \(W_r^\ell\)가 post-attention hidden state를 받아 \(\alpha^\ell \in \mathbb{R}^{K+1}\)을 내고, \(m^\ell(v) = \sum_k \alpha_k^\ell M_k(v)\)를 residual에 더한다. \(K+1\)번째는 Null bank — "이 레이어에선 정체성 보충 안 해도 된다"를 모델이 명시적으로 학습할 수 있게 비워둔 슬롯이다.
