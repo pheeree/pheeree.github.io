@@ -39,25 +39,17 @@ MEMENTO는 표면적으로 그 그림에 매우 가깝다. 추론을 블록으�
 
 이중 스트림 자체는 새 개념이 아니다. Tulving이 1972년 episodic vs semantic memory를 가른 이래, 인지신경과학은 declarative(말로 꺼낼 수 있는)와 procedural(꺼낼 수 없지만 행동에 남는) 두 갈래를 줄곧 다뤄왔다. MEMENTO의 두 채널은 그 구도를 토큰 시퀀스 위에 옮겨놓은 것에 가깝다 — memento 텍스트가 declarative, 보존된 KV 엔트리가 procedural. 사람도 자전거 타는 법을 말로 다 설명할 수 없듯, 모델도 자기 사고를 텍스트로 다 압축하지 못한다. 그렇다고 안심할 수 있는 비유는 아니다. 사람의 procedural 기억은 본인 안에 머물지만, 모델의 KV는 외부에서 읽을 수 없는 채로 추론 결과에 영향을 준다. 같은 구조, 다른 함의다.
 
+Thinking Block 1의 원본 사고가 Memento로 압축되어 Block 2에 명시적으로 전달되고, 동시에 attention mask로 차단된 원본 KV 엔트리가 암묵적 채널로 살아남는다.
+
 ```mermaid
 flowchart TB
-    subgraph Block1[Thinking Block 1]
-        T1[원본 사고 토큰]
-    end
-    subgraph M1[Memento 1]
-        S1[15-25% 압축 요약]
-    end
-    subgraph Block2[Thinking Block 2]
-        T2[새 사고 토큰]
-    end
+  T1["원본 사고 토큰<br/>(Block 1)"] -- "압축 학습" --> S1["15~25% 압축 요약<br/>(Memento 1)"]
+  S1 -- "명시적 채널" --> T2["새 사고 토큰<br/>(Block 2)"]
+  T1 -. "attention mask 차단 / KV 엔트리 보존<br/>(암묵적 채널)" .-> T2
 
-    T1 -->|압축 학습| S1
-    S1 -->|명시적 채널| T2
-    T1 -.->|attention mask 차단<br/>그러나 KV 엔트리 보존<br/>암묵적 채널| T2
-
-    style T1 fill:#fee
-    style S1 fill:#efe
-    style T2 fill:#eef
+  style T1 fill:#fee
+  style S1 fill:#efe
+  style T2 fill:#eef
 ```
 
 여기가 지난 두 편과 가장 날카롭게 충돌한다. StructMem 글에서 나는 "구조가 다중 홉을 살린다"고 썼다. DPM 글에서는 "stateless가 감사를 가능하게 한다"고 썼다. MEMENTO의 이중 스트림은 그 두 결을 합치려다 **세 번째 축을 부러뜨린 셈이다** — 명시화된 상태(감사 가능)와 암묵 상태(감사 불가)가 한 추론 안에서 서로를 보강하면서, 결과적으로 "메멘토만 보고 다시 시작"이 불가능해진다.
@@ -80,19 +72,26 @@ SFT 단독으로는 8B 모델에서 AIME'26 -7.4 pp가 빠지는데 RL을 얹으
 
 ```mermaid
 flowchart LR
-    A[StructMem<br/>04-26] -->|구조가 필요| D{트레이드오프<br/>삼각형}
-    B[DPM<br/>04-27] -->|stateless가 필요| D
-    C[MEMENTO<br/>04-28] -->|구조+효율을 얻으면<br/>stateless를 잃는다| D
+  A["StructMem<br/>04-26"] -- "구조가 필요" --> D{"트레이드오프<br/>삼각형"}
+  B["DPM<br/>04-27"] -- "stateless가 필요" --> D
+  C["MEMENTO<br/>04-28"] -- "구조+효율을 얻으면<br/>stateless를 잃는다" --> D
+  D --> E["세 꼭짓점을<br/>동시에 만족하는 설계는<br/>아직 없다"]
 
-    D --> E[세 꼭짓점을<br/>동시에 만족하는 설계는<br/>아직 없다]
-
-    style A fill:#fef3c7
-    style B fill:#dbeafe
-    style C fill:#fce7f3
-    style E fill:#f3f4f6
+  style A fill:#fef3c7
+  style B fill:#dbeafe
+  style C fill:#fce7f3
+  style E fill:#f3f4f6
 ```
 
-StructMem은 "flat 메모리는 다중 홉에서 무너진다, 구조가 필요하다"고 했다. DPM은 "stateful 흐름은 감사 불가 표면을 부풀린다, stateless가 필요하다"고 했다. 오늘 MEMENTO는 "구조 + 효율을 동시에 얻으려면 stateless를 희생해야 한다"고 답한다. 세 축이 한 점에서 만나는 설계는 적어도 이 논문들 사이엔 없다. 트레이드오프 삼각형이다.
+세 글의 결론을 나란히 놓아본다.
+
+> **StructMem**: flat 메모리는 다중 홉에서 무너진다, 구조가 필요하다.
+>
+> **DPM**: stateful 흐름은 감사 불가 표면을 부풀린다, stateless가 필요하다.
+>
+> **MEMENTO**: 구조 + 효율을 동시에 얻으려면 stateless를 희생해야 한다.
+
+세 축이 한 점에서 만나는 설계는 적어도 이 논문들 사이엔 없다. 트레이드오프 삼각형이다.
 
 낯익은 모양이다. 분산 시스템의 CAP가 일관성·가용성·분할내성을 한 점에서 만족시킬 수 없다고 못 박은 것처럼, 추론 시스템에도 비슷한 삼각이 그어진 모양새다 — 구조성·효율성·감사 가능성. 이 비유는 정확하지는 않다(CAP는 정리, 이건 관찰). 그러나 "셋 중 둘만 고르라"는 압력이 같은 결로 작동한다는 점은 비슷하다.
 

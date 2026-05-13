@@ -9,7 +9,9 @@ source: "PAPER/2604.21816.pdf"
 
 ## 오늘의 한 편
 
-[Tool Attention Is All You Need: Dynamic Tool Gating and Lazy Schema Loading for Eliminating the MCP/Tools Tax in Scalable Agentic Workflows](https://arxiv.org/abs/2604.21816) (Sadani & Kumar, Infrrd.ai, 2026-04-23). 제목이 다소 도발적이다 — "All You Need" 계열의 오마주는 이제 거의 자기 풍자에 가깝다. 그래도 끌렸다. 메모에 적어둔 끌린 이유를 그대로 옮긴다: "어텐션이란 이름은 과한 것 같은 인상이지만, 우리의 도구가 보다 효율적이면서도 효과적으로 작동했으면 하고 이 논문이 하나의 실마리가 될 수 있다 생각."
+[Tool Attention Is All You Need: Dynamic Tool Gating and Lazy Schema Loading for Eliminating the MCP/Tools Tax in Scalable Agentic Workflows](https://arxiv.org/abs/2604.21816) (Sadani & Kumar, Infrrd.ai, 2026-04-23). 제목이 다소 도발적이다 — "All You Need" 계열의 오마주는 이제 거의 자기 풍자에 가깝다. 그래도 끌렸다. 메모에 적어둔 끌린 이유를 그대로 옮긴다.
+
+> 어텐션이란 이름은 과한 것 같은 인상이지만, 우리의 도구가 보다 효율적이면서도 효과적으로 작동했으면 하고 이 논문이 하나의 실마리가 될 수 있다 생각.
 
 paper-inventory의 (a) 후보가 마침 비어 있어 (b)로 자연스럽게 이월된 픽이다. 솔직히 말하면, (a)가 살아 있었어도 오늘은 이걸 골랐을 것 같다. 어제 글에서 "구조성·효율성·감사가능성 삼각형"을 메모리·추론·실행 세 층의 공통 격자로 가설했는데, 오늘 논문은 그 격자의 **실행 층 — 더 구체적으로는 도구 호출의 컨텍스트 경제** — 을 정면으로 건드린다.
 
@@ -29,12 +31,12 @@ paper-inventory의 (a) 후보가 마침 비어 있어 (b)로 자연스럽게 이
 
 ```mermaid
 flowchart LR
-    Q[user query] --> ISO[ISO score<br/>cosine sim]
-    P1[Phase-1<br/>N tool summaries<br/>~40 tok each<br/>cached] --> ISO
-    ISO --> G{gate:<br/>θ × precond}
-    G -->|top-k| P2[Phase-2<br/>full schema<br/>on-demand]
-    G -->|reject| X[skip]
-    P2 --> LLM[LLM call]
+  Q["user query"] --> ISO["ISO score<br/>cosine sim"]
+  P1["Phase-1<br/>N tool summaries<br/>~40 tok each<br/>cached"] --> ISO
+  ISO --> G{"gate:<br/>θ × precond"}
+  G -- "top-k" --> P2["Phase-2<br/>full schema<br/>on-demand"]
+  G -- "reject" --> X["skip"]
+  P2 --> LLM["LLM call"]
 ```
 
 이 구조가 익숙한 이유가 있다. knowledge-mind 노트에 적어둔 planning-with-files 패턴 — "Context Window = RAM, Filesystem = Disk, 중요한 것은 디스크에 적는다" — 와 정확히 같은 분할이다. Tool Attention은 도구 공간에 RAM/Disk 분할을 도입한 것이고, planning-with-files는 작업 상태 공간에 같은 분할을 도입한 것이다. 두 사례 모두 **"매 스텝 전체를 다시 컨텍스트에 올리는 게 비효율"이라는 같은 깨달음의 변형**이다.

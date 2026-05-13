@@ -25,32 +25,45 @@ MoA(Wang et al., 2025), AgentInit(Tian et al., 2025), MALBO(Sabbatella, 2025) �
 
 프레임이 다르다. 회귀분석, 초기화 휴리스틱, 베이지안 최적화. 그런데 도착한 자리가 같다.
 
+**MoA** (Wang 2025) — Proposer 셋 → Aggregator.
+
 ```mermaid
 flowchart TB
-  subgraph MoA["<b>MoA</b> (Wang 2025)"]
-    direction TB
-    Pm1[Proposer] --> Am[Aggregator]
-    Pm2[Proposer] --> Am
-    Pm3[Proposer] --> Am
-  end
-  subgraph AI["<b>AgentInit</b> (Tian 2025)"]
-    direction TB
-    Oa[Observer] --> Pa[Planner]
-    Fa[Formatter] --> Pa
-  end
-  subgraph ML["<b>MALBO</b> (Sabbatella 2025)"]
-    direction TB
-    Wm1[Worker] --> Mm[Manager]
-    Wm2[Worker] --> Mm
-  end
-  subgraph CH["<b>Chen</b> 일반화 — 삼자 구조"]
-    direction TB
-    Pc[Proposer] --> Jc[Judge]
-    Cc[Critic] --> Jc
-  end
-
+  Pm1["Proposer"] --> Am["Aggregator"]
+  Pm2["Proposer"] --> Am
+  Pm3["Proposer"] --> Am
   classDef judge fill:#ffd93d,stroke:#333,stroke-width:2px
-  class Am,Pa,Mm,Jc judge
+  class Am judge
+```
+
+**AgentInit** (Tian 2025) — Observer · Formatter → Planner.
+
+```mermaid
+flowchart TB
+  Oa["Observer"] --> Pa["Planner"]
+  Fa["Formatter"] --> Pa
+  classDef judge fill:#ffd93d,stroke:#333,stroke-width:2px
+  class Pa judge
+```
+
+**MALBO** (Sabbatella 2025) — Worker 둘 → Manager.
+
+```mermaid
+flowchart TB
+  Wm1["Worker"] --> Mm["Manager"]
+  Wm2["Worker"] --> Mm
+  classDef judge fill:#ffd93d,stroke:#333,stroke-width:2px
+  class Mm judge
+```
+
+**Chen 일반화** — 삼자 구조: Proposer · Critic → Judge.
+
+```mermaid
+flowchart TB
+  Pc["Proposer"] --> Jc["Judge"]
+  Cc["Critic"] --> Jc
+  classDef judge fill:#ffd93d,stroke:#333,stroke-width:2px
+  class Jc judge
 ```
 
 노랗게 칠한 자리가 세 논문(과 Chen의 일반화)이 같이 "성능 주 동인"으로 지목한 지점이다. 이름이 바뀔 뿐 다이어그램에서 차지하는 위치는 같다.
@@ -79,18 +92,18 @@ Type B Mission Engine 설계가 바뀐다.
 
 ```mermaid
 flowchart LR
-  P1[Proposer<br/>짧은 프롬프트] --> Agg
-  P2[Proposer<br/>짧은 프롬프트] --> Agg
-  P3[Proposer<br/>짧은 프롬프트] --> Agg
+  P1["Proposer<br/>짧은 프롬프트"] --> Agg
+  P2["Proposer<br/>짧은 프롬프트"] --> Agg
+  P3["Proposer<br/>짧은 프롬프트"] --> Agg
 
-  subgraph Agg["<b>Aggregator</b> — 자원 집중"]
+  subgraph Agg["Aggregator — 자원 집중"]
     direction TB
-    A1[긴 CoT 예산] --> A2[검증 체크리스트]
-    A2 --> A3[self-critique]
-    A3 -.재검토.-> A1
+    A1["긴 CoT 예산"] --> A2["검증 체크리스트"]
+    A2 --> A3["self-critique"]
+    A3 -. "재검토" .-> A1
   end
 
-  Agg --> Out[최종 응답]
+  Agg --> Out["최종 응답"]
 
   classDef light fill:#e8f4f8,stroke:#333
   classDef heavy fill:#ffd93d,stroke:#333,stroke-width:2px

@@ -25,14 +25,10 @@ Chen이 정의한 **삼자 구조(triadic)**: 제안자 + 비판자 + 심판. �
 
 ```mermaid
 flowchart LR
-  P[제안자] --> J[심판]
-  C[비판자] --> J
-
-  subgraph "붕괴 조건"
-    C -.약하거나 제안자와 상관.-> P
-  end
-
-  J -->|고무 도장| Out[사실상 단독 결정]
+  P["제안자"] --> J["심판"]
+  C["비판자"] --> J
+  C -. "약하거나 제안자와 상관" .-> P
+  J -- "고무 도장" --> Out["사실상 단독 결정"]
 
   classDef danger fill:#ff6b6b,stroke:#333,stroke-width:2px
   classDef judge fill:#ffd93d,stroke:#333,stroke-width:2px
@@ -50,26 +46,32 @@ HiddenBench는 이 과제를 LLM 집단에 이식했다. 프런티어 모델로 
 
 이 현상은 낯설지 않다. Kim et al.이 정량화한 오류 증폭(17.2× Independent)을 다른 언어로 기술한 것이다. 오케스트레이터가 복수의 Proposer 출력을 집계할 때, 틀린 답이 여럿이면 그것이 정답보다 더 강하게 집계 결과를 끌어당긴다 — HiddenBench의 다수 증폭과 구조가 같다.
 
+**HiddenBench** (사회심리학 기원) — 공유 정보가 증폭되고 고유 신호가 묻혀 오답 수렴.
+
 ```mermaid
 flowchart TB
-  subgraph HiddenBench["HiddenBench (사회심리학 기원)"]
-    I1[구성원 A: 고유 신호] -->|묻힘| Disc[집단 토론]
-    I2[구성원 B: 공유 정보] -->|증폭| Disc
-    I3[구성원 C: 공유 정보] -->|증폭| Disc
-    Disc --> WrongOut[공유 정보 기반 오답]
-  end
-
-  subgraph KimEtAl["Kim et al. 오류 증폭"]
-    P1[Proposer: 오답] --> Agg[Aggregator]
-    P2[Proposer: 오답] --> Agg
-    P3[Proposer: 정답] -->|소수| Agg
-    Agg --> Err["오류 17.2× 증폭"]
-  end
-
+  I1["구성원 A · 고유 신호"] -- "묻힘" --> Disc["집단 토론"]
+  I2["구성원 B · 공유 정보"] -- "증폭" --> Disc
+  I3["구성원 C · 공유 정보"] -- "증폭" --> Disc
+  Disc --> WrongOut["공유 정보 기반 오답"]
   classDef signal fill:#a8e6cf,stroke:#333
   classDef noise fill:#ff8b94,stroke:#333
-  class I1,P3 signal
-  class I2,I3,P1,P2 noise
+  class I1 signal
+  class I2,I3 noise
+```
+
+**Kim et al. 오류 증폭** — Proposer의 오답이 Aggregator에서 17.2배 증폭.
+
+```mermaid
+flowchart TB
+  P1["Proposer · 오답"] --> Agg["Aggregator"]
+  P2["Proposer · 오답"] --> Agg
+  P3["Proposer · 정답"] -- "소수" --> Agg
+  Agg --> Err["오류 17.2× 증폭"]
+  classDef signal fill:#a8e6cf,stroke:#333
+  classDef noise fill:#ff8b94,stroke:#333
+  class P3 signal
+  class P1,P2 noise
 ```
 
 같은 현상의 두 이름. 하나는 사회심리학에서, 하나는 LLM 공학 벤치마크에서.

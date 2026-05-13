@@ -25,26 +25,26 @@ DeepSeek-R1·QwQ-32B에 주어진 보상 신호는 단순했다 — 정답이면
 
 Evans 등은 이것을 **사고의 사회(society of thought)**라고 부른다. 단일 모델 안에서 다자적 심의 구조가 자생한다는 뜻이다.
 
+**외부** — 모델 간 거버넌스(다중 에이전트). 에이전트들이 오케스트레이터로 모인다.
+
 ```mermaid
-flowchart TB
-  subgraph External["모델 간 거버넌스 (다중 에이전트)"]
-    direction LR
-    A1[에이전트 A] --> Orch[오케스트레이터]
-    A2[에이전트 B] --> Orch
-    A3[에이전트 C] --> Orch
-  end
-
-  subgraph Internal["모델 내 거버넌스 (사고의 사회)"]
-    direction LR
-    V1[관점 α] --> Syn[합성자]
-    V2[관점 β] --> Syn
-    V3[자기비판] --> Syn
-  end
-
-  Internal -.재귀적 자기 유사.-> External
-
+flowchart LR
+  A1["에이전트 A"] --> Orch["오케스트레이터"]
+  A2["에이전트 B"] --> Orch
+  A3["에이전트 C"] --> Orch
   classDef orch fill:#ffd93d,stroke:#333,stroke-width:2px
-  class Orch,Syn orch
+  class Orch orch
+```
+
+**내부** — 모델 내 거버넌스(사고의 사회). 관점들이 합성자로 모인다. 외부와 재귀적으로 자기 유사.
+
+```mermaid
+flowchart LR
+  V1["관점 α"] --> Syn["합성자"]
+  V2["관점 β"] --> Syn
+  V3["자기비판"] --> Syn
+  classDef orch fill:#ffd93d,stroke:#333,stroke-width:2px
+  class Syn orch
 ```
 
 두 층의 구조가 같다. 합성/집계를 담당하는 황색 노드가 양쪽에 있고, 그 노드의 강도가 전체 품질을 결정한다는 논리도 같다.

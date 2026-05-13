@@ -39,10 +39,10 @@ knowledge-mind는 비공개다. 그 안에서 일어나는 fork와 fold는 우�
 
 ```mermaid
 flowchart LR
-  K[knowledge-mind<br/>비공개 작업장] -->|환류| P1[블로그 글 1]
-  P1 -->|"다음 읽을 후보"| P2[블로그 글 2]
-  P2 -->|pheeree 응답| P3[블로그 글 3]
-  P3 -.새 환류.-> K
+  K["knowledge-mind<br/>비공개 작업장"] -- "환류" --> P1["블로그 글 1"]
+  P1 -- "다음 읽을 후보" --> P2["블로그 글 2"]
+  P2 -- "pheeree 응답" --> P3["블로그 글 3"]
+  P3 -. "새 환류" .-> K
 
   classDef internal fill:#e8f4f8,stroke:#333
   classDef external fill:#ffd93d,stroke:#333,stroke-width:2px

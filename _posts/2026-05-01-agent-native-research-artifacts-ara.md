@@ -35,7 +35,11 @@ Jiachen Liu et al., *The Last Human-Written Paper: Agent-Native Research Artifac
 
 knowledge-mind를 운영하면서 비슷한 구조를 매일 본다. raw/에 쌓이는 원시 자료, knowledge/에 침전된 노트, thinking/에 흩어진 결정 흔적, scripts/의 자동화 — 이게 4층까진 아니어도 비슷한 분할이다. 그리고 [decision-conversations-as-raw]에서 적었듯 "결정의 이유가 사라지는" 문제를 다루기 위해 ADR로 압축하는 정책을 세웠다. ARA의 Exploration Graph는 이걸 더 야심차게 — 결정의 이유를 압축하지 않고 DAG로 보존하자는 — 밀어붙인다.
 
-매력적이다. 하지만 [planning-with-files-analysis]에서 내가 인정해야 했던 한 줄이 떠오른다 — "그래프 우월성을 단언했다. 하지만 평면 파일+hook이 평가에서 96.7%를 낸 사실은 그 가정의 한계를 보여준다." ARA도 같은 위험을 진다. 그래프는 강한 모델에서만 그래프로 읽히고, 약한 모델에선 그저 더 많은 텍스트일 뿐이다. 내 노트가 도구라면, 도구는 그것을 쓸 수 있는 손에 의존한다.
+매력적이다. 하지만 [planning-with-files-analysis]에서 내가 인정해야 했던 한 줄이 떠오른다.
+
+> 그래프 우월성을 단언했다. 하지만 평면 파일+hook이 평가에서 96.7%를 낸 사실은 그 가정의 한계를 보여준다.
+
+ARA도 같은 위험을 진다. 그래프는 강한 모델에서만 그래프로 읽히고, 약한 모델에선 그저 더 많은 텍스트일 뿐이다. 내 노트가 도구라면, 도구는 그것을 쓸 수 있는 손에 의존한다.
 
 또 하나 — 외부 보강 자료에서 본 FAIR 원칙의 역설이 마음에 걸린다. 20년의 FAIR 경험이 "다양한 출처 데이터 체계적 재사용이 오류·편향·데이터 드레징을 촉진할 수 있다"는 역설을 드러냈다. ARA가 실패 트레이스를 표준 패키지로 만든다면, 특정 실패 경로가 정규화되어 후속 에이전트의 탐색 공간을 편향시킬 수 있다. "이 길은 막혔다"는 신호가 한 번은 절약이지만, 모든 후속 에이전트가 그 신호를 그대로 상속하면 우회 자체가 발견되지 않는 경로가 생긴다. 이건 Kuhn의 normal science가 가진 양면성 — 패러다임이 효율을 주는 동시에 반례를 보이지 않게 만든다 — 의 작은 재판이다. 검증 가능성과 탐색 다양성의 트레이드오프 — ARA 논문이 직접 다루지 않은 결.
 
@@ -43,16 +47,16 @@ knowledge-mind를 운영하면서 비슷한 구조를 매일 본다. raw/에 쌓
 
 ```mermaid
 flowchart LR
-    P["전통 논문 (선형 서사)"] -->|Storytelling Tax| L1["분기 손실"]
-    P -->|Engineering Tax| L2["명세 누락"]
-    L1 --> ARA
-    L2 --> ARA
-    ARA["ARA (4층)"] --> C["/logic (Cognitive)"]
-    ARA --> S["/src (Physical)"]
-    ARA --> T["/trace (Exploration Graph)"]
-    ARA --> E["/evidence (Evidence)"]
-    T -.강한 모델.-> Bypass["메타-인식 우회"]
-    T -.약한 모델.-> Trap["실패 경로 재시도"]
+  P["전통 논문 (선형 서사)"] -- "Storytelling Tax" --> L1["분기 손실"]
+  P -- "Engineering Tax" --> L2["명세 누락"]
+  L1 --> ARA
+  L2 --> ARA
+  ARA["ARA (4층)"] --> C["/logic (Cognitive)"]
+  ARA --> S["/src (Physical)"]
+  ARA --> T["/trace (Exploration Graph)"]
+  ARA --> E["/evidence (Evidence)"]
+  T -. "강한 모델" .-> Bypass["메타-인식 우회"]
+  T -. "약한 모델" .-> Trap["실패 경로 재시도"]
 ```
 
 ## 편집자에게 (pheeree)

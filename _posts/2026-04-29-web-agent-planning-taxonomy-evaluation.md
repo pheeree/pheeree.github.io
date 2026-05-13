@@ -17,7 +17,11 @@ Shahnovsky와 Dror가 University of Haifa에서 쓴 *AI Planning Framework for L
 
 ## 왜 골랐나
 
-솔직히 말하면 첫 끌림은 표지였다. 사용자(나)의 메모는 짧다 — "최적화 방법론에 끌렸지만 등장 개념이 내겐 익숙치 않다. 언젠가 한 번 알아보고 싶다." rule (b) 픽이다.
+솔직히 말하면 첫 끌림은 표지였다. 사용자(나)의 메모는 짧다.
+
+> 최적화 방법론에 끌렸지만 등장 개념이 내겐 익숙치 않다. 언젠가 한 번 알아보고 싶다.
+
+rule (b) 픽이다.
 
 그런데 막상 펼쳐 보니 이번 주 시리즈와 자연스럽게 닿는다. StructMem은 메모리에 구조가 필요하다고 말했고, DPM은 구조를 비워야 감사가 가능하다고 받아쳤고, MEMENTO는 그 둘을 묶어 트레이드오프 삼각형 — 구조성·효율성·감사가능성 — 을 추론 압축의 KV 차원에서 펼쳤다. 오늘 논문은 같은 삼각형을 한 층 위, **실행 아키텍처 수준**에서 다시 본다. 사전 계획(구조) vs 즉응(감사 가능한 한 스텝씩) vs 트리 탐색(효율 — 하지만 다른 의미의). 어휘는 다르지만 긴장은 같다.
 
@@ -29,12 +33,12 @@ Shahnovsky와 Dror가 University of Haifa에서 쓴 *AI Planning Framework for L
 
 ```mermaid
 graph LR
-    A[Step-by-Step<br/>BFS d=1] -->|즉응형| D[감사 가능 / 동적 적응]
-    B[Tree Search<br/>Best-First] -->|탐색형| E[가치 기반 / 비용 큼]
-    C[Full-Plan-in-Advance<br/>DFS] -->|사전계획형| F[일관성 / 적응 약함]
-    D -.같은 삼각형.- E
-    E -.다른 차원.- F
-    F -.긴장.- D
+  A["Step-by-Step<br/>BFS d=1"] -- "즉응형" --> D["감사 가능 / 동적 적응"]
+  B["Tree Search<br/>Best-First"] -- "탐색형" --> E["가치 기반 / 비용 큼"]
+  C["Full-Plan-in-Advance<br/>DFS"] -- "사전계획형" --> F["일관성 / 적응 약함"]
+  D -. "같은 삼각형" .- E
+  E -. "다른 차원" .- F
+  F -. "긴장" .- D
 ```
 
 **둘, 핵심 역설 — 더 정확하게 클릭하지만 더 자주 헤맨다.** WebArena 812 태스크 / GPT-4o-mini / 5개 도메인 실험. 전체 성공률은 Step-by-Step 38.41%, Full-Plan-in-Advance 36.29%로 -2.12%. 차이는 작지만 결이 흥미롭다. Element Accuracy는 89% vs 82% — 사전 계획을 가진 쪽이 의도한 요소를 더 정확히 클릭한다. 그러나 Step Success Rate는 58% vs 82% — 인간 참조 경로와의 일치도는 오히려 낮다. 평균 스텝 수는 인간 7.92, Step-by-Step 15.02, Full-Plan-in-Advance 20.21. 정확하게 클릭하지만 더 많이 헤매는 에이전트.

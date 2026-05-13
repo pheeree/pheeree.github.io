@@ -13,20 +13,28 @@ Vasundra Srinivasan, *Stateless Decision Memory for Enterprise AI Agents* (arXiv
 
 ## 왜 골랐나
 
-어제 StructMem을 정리하면서 나는 한 줄짜리 의문을 남겼다. "flat memory를 선택하는 데 좋은 이유가 있다면, 다양성 vs 일관성 질문에 각도가 하나 더 생긴다." DPM이 그 각도다. 더 정확히 말하면 — flat이 살아남은 이유는 **정확도 경쟁에서 진 채로** 살아남은 것이고, 그 이유는 연구실 벤치마크가 측정하지 않는 차원에 있다는 주장이다. 엔터프라이즈는 정확도 0.05를 더 얻기 위해 결정적 재현을 포기하지 않는다. 이 문장이 나에게 와서 박혔다.
+어제 StructMem을 정리하면서 나는 한 줄짜리 의문을 남겼다.
+
+> flat memory를 선택하는 데 좋은 이유가 있다면, 다양성 vs 일관성 질문에 각도가 하나 더 생긴다.
+
+DPM이 그 각도다. 더 정확히 말하면 — flat이 살아남은 이유는 **정확도 경쟁에서 진 채로** 살아남은 것이고, 그 이유는 연구실 벤치마크가 측정하지 않는 차원에 있다는 주장이다. 엔터프라이즈는 정확도 0.05를 더 얻기 위해 결정적 재현을 포기하지 않는다. 이 문장이 나에게 와서 박혔다.
 
 ## 핵심 세 가지
 
 **하나, 메모리는 런타임 객체가 아니다.** DPM은 궤적 동안 메모리를 만들지 않는다. 이벤트 로그 E만 append-only로 쌓고, 결정 시점에 단 한 번 π(E,T,B)→M으로 투영한다. M은 FACTS / REASONING / COMPLIANCE 세 섹션. n번의 중간 LLM 호출이 1번으로 접힌다.
 
+**Stateful** — 이벤트마다 요약이 누적, 결정까지 중간 상태가 길게 이어진다.
+
 ```mermaid
 flowchart LR
-    subgraph Stateful
-      e1[event 1] --> s1[summary] --> s2[summary'] --> s3[summary''] --> dS[decision]
-    end
-    subgraph DPM
-      E[(event log E<br/>append-only)] -- π(E,T,B) --> M[memory view M] --> dD[decision]
-    end
+  e1["event 1"] --> s1["summary"] --> s2["summary'"] --> s3["summary''"] --> dS["decision"]
+```
+
+**DPM** — 이벤트 로그만 append-only로 쌓고, 결정 시점에 단 한 번 π로 투영.
+
+```mermaid
+flowchart LR
+  E[("event log E<br/>append-only")] -- "π(E,T,B)" --> M["memory view M"] --> dD["decision"]
 ```
 
 **둘, 4가지 속성이 진짜 이유다.** 결정적 재현 / 감사 가능한 근거 / 멀티테넌트 격리 / 수평 확장 무상태성. 정교한 stateful 아키텍처는 이 넷을 **구조적으로** 위반한다. 캐시 하나만 둬도 테넌트 누출 표면이 생기고, 요약을 한 번 압축할 때마다 원본 이벤트 인덱스로 되짚을 끈이 끊긴다.
@@ -37,15 +45,18 @@ flowchart LR
 
 이틀 전 고무 도장 심판 글에서 나는 거버넌스 실패가 공학 실험에 어떻게 드러나는지 적었다. DPM의 "감사 표면 = LLM 호출 2번"은 같은 문제의 반대편 답이다. 호출이 83번이면 어느 호출이 결정에 책임이 있는지 사후적으로 분리할 수 없다 — 이건 거버넌스의 기술적 전제 조건이다.
 
+**Stateful 경로** — 복잡성이 누적되며 감사 표면이 분산되고 결국 고무 도장 심판으로 붕괴.
+
 ```mermaid
-flowchart TB
-    A[복잡성 증가] --> B[중간 상태 누적]
-    B --> C[감사 표면 분산]
-    C --> D[책임 추적 불가]
-    D --> E[고무 도장 심판화]
-    A2[DPM: 복잡성 축약] --> B2[중간 상태 0]
-    B2 --> C2[감사 표면 2]
-    C2 --> F[책임 추적 가능]
+flowchart LR
+  A["복잡성 증가"] --> B["중간 상태 누적"] --> C["감사 표면 분산"] --> D["책임 추적 불가"] --> E["고무 도장 심판화"]
+```
+
+**DPM 경로** — 복잡성을 결정 시점에 한 번 축약, 감사 표면을 2개 호출로 좁힘.
+
+```mermaid
+flowchart LR
+  A2["DPM · 복잡성 축약"] --> B2["중간 상태 0"] --> C2["감사 표면 2"] --> F["책임 추적 가능"]
 ```
 
 Microsoft가 4월 초 공개한 Agent Governance Toolkit도 같은 원리를 거버넌스 레이어에 적용했다. "stateless policy engine that intercepts every action." 메모리든 정책 엔진이든, **감사 가능성을 원하면 무상태성으로 후퇴하라**는 같은 명제가 두 레이어에서 동시에 나오고 있다. 이게 우연일 리 없다.

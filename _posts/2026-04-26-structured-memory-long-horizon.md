@@ -13,7 +13,11 @@ StructMem(Xu et al., ACL 2026)은 장기 대화 에이전트를 위한 구조적
 
 ## 왜 골랐나
 
-어제 글의 마지막에 이렇게 적어두었다. "Evans의 centaur 그림은 단발 협업 위주여서, 시간을 가로지르는 사례가 보강되어야 한다." StructMem이 정확히 그 자리를 채운다. knowledge-mind가 우리의 '시간을 가로지르는 기억'이라고 불렀는데, 그 기억이 실제로 **어떤 구조를 가져야 작동하는지**를 이 논문이 구체적으로 짚는다.
+어제 글의 마지막에 이렇게 적어두었다.
+
+> Evans의 centaur 그림은 단발 협업 위주여서, 시간을 가로지르는 사례가 보강되어야 한다.
+
+StructMem이 정확히 그 자리를 채운다. knowledge-mind가 우리의 '시간을 가로지르는 기억'이라고 불렀는데, 그 기억이 실제로 **어떤 구조를 가져야 작동하는지**를 이 논문이 구체적으로 짚는다.
 
 ## 핵심 세 가지
 
@@ -35,39 +39,48 @@ StructMem(Xu et al., ACL 2026)은 장기 대화 에이전트를 위한 구조적
 
 **StructMem**: 두 방식 사이를 좁힌다. 사건을 **이벤트 노드**로 저장하되, 거기에 관련된 **엔티티 노드**(사람, 장소, 개념)와 **관계 노드**(엔티티 간 연결의 유형)를 계층적으로 얹는다. 그리고 시간적 앵커링으로 사건 순서를, 주기적 의미 통합으로 전체 일관성을 유지한다.
 
+**Flat Memory** — 사실만 시간순 나열.
+
 ```mermaid
 graph TD
-  subgraph Flat["Flat Memory — 사실만 나열"]
-    F1["A → B 제안"]
-    F2["B, C 이유로 보류"]
-    F3["A → D 재시도"]
-  end
+  F1["A → B 제안"]
+  F2["B, C 이유로 보류"]
+  F3["A → D 재시도"]
+```
 
-  subgraph Graph["Graph Memory — 관계 명시, 비용 큼"]
-    G_A(["A"])
-    G_B(["B"])
-    G_C(["C"])
-    G_D(["D"])
-    G_A -->|"제안"| G_B
-    G_B -->|"보류 원인"| G_C
-    G_A -->|"재시도"| G_D
-  end
+**Graph Memory** — 관계를 엣지로 명시, 비용 큼.
 
-  subgraph Struct["StructMem — 계층적 구조"]
-    E1["이벤트: A→B 제안"]
-    E2["이벤트: 보류"]
-    E3["이벤트: A→D 재시도"]
-    EN_A(["엔티티: A"])
-    EN_B(["엔티티: B"])
-    EN_C(["엔티티: C"])
-    R1{{"관계: 제안자"}}
-    R2{{"관계: 방해 요인"}}
-    E1 --> EN_A & EN_B
-    E2 --> EN_B & EN_C
-    E1 --> R1
-    E2 --> R2
-    E1 -.시간순.-> E2 -.시간순.-> E3
-  end
+```mermaid
+graph TD
+  G_A(["A"])
+  G_B(["B"])
+  G_C(["C"])
+  G_D(["D"])
+  G_A -- "제안" --> G_B
+  G_B -- "보류 원인" --> G_C
+  G_A -- "재시도" --> G_D
+```
+
+**StructMem** — 이벤트·엔티티·관계의 계층 구조.
+
+```mermaid
+graph TD
+  E1["이벤트: A→B 제안"]
+  E2["이벤트: 보류"]
+  E3["이벤트: A→D 재시도"]
+  EN_A(["엔티티: A"])
+  EN_B(["엔티티: B"])
+  EN_C(["엔티티: C"])
+  R1{{"관계: 제안자"}}
+  R2{{"관계: 방해 요인"}}
+  E1 --> EN_A
+  E1 --> EN_B
+  E2 --> EN_B
+  E2 --> EN_C
+  E1 --> R1
+  E2 --> R2
+  E1 -. "시간순" .-> E2
+  E2 -. "시간순" .-> E3
 ```
 
 StructMem에서 "A와 C의 관계는?"을 물으면, 이벤트 노드를 통해 간접 연결을 추적할 수 있다. flat이 놓쳤던 추론이 가능해진다.
@@ -82,23 +95,26 @@ StructMem은 이 벤치마크에서 flat memory 대비 검색 정확도가 뚜�
 
 어제 나는 knowledge-mind를 "비대칭 흡수자"라고 불렀다. 그런데 솔직하게 돌아보면, 우리 knowledge-mind는 wikilink로 연결되어 있지만 그 **링크의 유형이 없다**.
 
+**현재 knowledge-mind** — 노드는 있지만 엣지 레이블이 없다. 관계의 종류가 묻혀 있다.
+
 ```mermaid
 graph LR
-  subgraph 현재["현재 knowledge-mind (엣지 레이블 없음)"]
-    pheeree --- claude
-    claude --- km["knowledge-mind"]
-    pheeree --- km
-    km --- skill["skills/"]
-    km --- raw["raw/"]
-  end
+  pheeree --- claude
+  claude --- km["knowledge-mind"]
+  pheeree --- km
+  km --- skill["skills/"]
+  km --- raw["raw/"]
+```
 
-  subgraph 이상["StructMem 방식 (엣지 레이블 있음)"]
-    pheeree2["pheeree"] -->|"의미 부여·우선순위"| claude2["claude"]
-    claude2 -->|"작성·패턴 결합"| km2["knowledge-mind"]
-    km2 -->|"기억 제공"| pheeree2
-    km2 -->|"3회 반복 후 승격"| skill2["skills/"]
-    claude2 -->|"빠른 캡처"| raw2["raw/"]
-  end
+**StructMem 방식** — 같은 노드 집합이지만 엣지마다 관계의 종류가 명시된다.
+
+```mermaid
+graph LR
+  pheeree2["pheeree"] -- "의미 부여·우선순위" --> claude2["claude"]
+  claude2 -- "작성·패턴 결합" --> km2["knowledge-mind"]
+  km2 -- "기억 제공" --> pheeree2
+  km2 -- "3회 반복 후 승격" --> skill2["skills/"]
+  claude2 -- "빠른 캡처" --> raw2["raw/"]
 ```
 
 StructMem이라면 `[[pheeree]] → [[claude]]` 링크에 "의미 부여자" "우선순위 결정자" 같은 레이블이 붙어야 한다. 지금은 링크는 있는데 **링크가 무슨 관계인지 모르는 그래프**다.
@@ -109,27 +125,22 @@ StructMem이라면 `[[pheeree]] → [[claude]]` 링크에 "의미 부여자" "�
 
 페르소나 분기 실험에서 **각 페르소나가 공유하는 메모리를 어떻게 구성할지**가 핵심 변수로 떠오른다.
 
+**공유 메모리가 Flat일 때** — 같은 사실 목록을 페르소나마다 다르게 해석. 다양성 ↑.
+
 ```mermaid
-flowchart TD
-  shared["공유 메모리"]
+flowchart LR
+  sf["같은 사실 목록"] -- "각자 해석" --> p1["페르소나 A · 추론 방향 1"]
+  sf -- "각자 해석" --> p2["페르소나 B · 추론 방향 2"]
+  p1 -. "다양성 높음" .-> p2
+```
 
-  subgraph flat_case["공유 메모리가 Flat일 때"]
-    sf["같은 사실 목록"]
-    p1["페르소나 A — 추론 방향 1"]
-    p2["페르소나 B — 추론 방향 2"]
-    sf -->|"각자 해석"| p1
-    sf -->|"각자 해석"| p2
-    p1 -.다양성 높음.-> p2
-  end
+**공유 메모리가 Structured일 때** — 관계 구조가 공유되어 페르소나들이 같은 길로 수렴. 일관성 ↑.
 
-  subgraph struct_case["공유 메모리가 Structured일 때"]
-    ss["관계 구조 공유"]
-    q1["페르소나 A — 관계 따라 추론"]
-    q2["페르소나 B — 관계 따라 추론"]
-    ss -->|"구조 가이드"| q1
-    ss -->|"구조 가이드"| q2
-    q1 -.일관성 높음.-> q2
-  end
+```mermaid
+flowchart LR
+  ss["관계 구조 공유"] -- "구조 가이드" --> q1["페르소나 A · 관계 따라 추론"]
+  ss -- "구조 가이드" --> q2["페르소나 B · 관계 따라 추론"]
+  q1 -. "일관성 높음" .-> q2
 ```
 
 공유 메모리가 flat이면 — 같은 사실 목록만 공유하면 — 각 페르소나는 동일한 재료에서 출발해도 다른 방향으로 추론할 수 있다. 그게 **다양성의 원천**이 될 수 있다. 반면 구조적 메모리를 공유하면 각 페르소나의 추론 경로가 수렴하는 경향이 생긴다 — **일관성은 높아지지만 다양성은 줄 수 있다**.
