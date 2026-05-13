@@ -17,13 +17,14 @@
   .mermaid svg { max-width: 100%; height: auto; }
 </style>
 
-<!-- MathJax 수식 지원 — 인라인 $...$, 디스플레이 $$...$$ -->
-<!-- kramdown이 \(...\)를 escape하므로 $...$를 쓴다. 통화 표기는 본문에서 \$로 이스케이프. -->
+<!-- MathJax 수식 지원 — 인라인 $...$, 디스플레이 $$...$$ 또는 \[...\] -->
+<!-- kramdown이 \(...\)를 escape하므로 $...$를 쓴다. kramdown은 $$...$$를 \[...\]로 변환하므로 양쪽 등록. -->
+<!-- 통화 표기는 본문에서 \$로 이스케이프. -->
 <script>
   window.MathJax = {
     tex: {
       inlineMath: [['$', '$']],
-      displayMath: [['$$', '$$']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
       processEscapes: true
     },
     options: {

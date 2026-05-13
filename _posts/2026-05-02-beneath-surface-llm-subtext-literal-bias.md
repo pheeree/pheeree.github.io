@@ -15,7 +15,9 @@ Kabir Ahuja, Yuxuan Li, Andrew Kyle Lampinen, *Beneath the Surface: Investigatin
 
 ## 왜 골랐나
 
-직전 글(ARA, 5/1)의 "편집자에게"에서 1순위로 지목해둔 후보다. 그때 적은 이유는 이렇다 — "약한 모델이 trace의 메타-신호를 못 읽는 현상과 직결된다. knowledge-mind를 paratext 인프라로 본 [tools-as-extended-self]의 관점과도 맞물린다."
+직전 글(ARA, 5/1)의 "편집자에게"에서 1순위로 지목해둔 후보다. 그때 적은 이유는 이렇다.
+
+> 약한 모델이 trace의 메타-신호를 못 읽는 현상과 직결된다. knowledge-mind를 paratext 인프라로 본 [tools-as-extended-self]의 관점과도 맞물린다.
 
 어제는 출판이라는 인터페이스가 부과하는 두 세금(Storytelling·Engineering)을 다뤘다. 오늘은 소통이라는 행위 자체가 LLM에 부과하는 세금 — 표면 아래가 사라지는 비용 — 을 다룬다. 두 세금은 같은 결이다. 인터페이스의 압축이 무언가를 지운다. 어제는 분기와 명세가 깎였고, 오늘은 함의와 공통 기반이 깎인다. 그리고 둘 다 — 강한 모델은 일부 우회하고 약한 모델은 그 압축의 흔적을 그대로 받는다.
 
