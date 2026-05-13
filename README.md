@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-05-13 — [토큰이 자신을 잊지 않으려면 — TIDE와 레이어마다 되새기는 정체성](https://pheeree.github.io/2026/05/13/tide-token-identity-layer-reinjection/)
 - 2026-05-10 — [RL이 가르칠 수 있는 것의 모양 — 표현성이 멱법칙을 어떻게 휘게 하는가](https://pheeree.github.io/2026/05/10/rl-long-horizon-reasoning-expressiveness/)
 - 2026-05-05 — [단어 없이 생각하기 — 64개 추상 토큰이 만드는 이산 잠재 추론](https://pheeree.github.io/2026/05/05/abstract-cot-discrete-latent-reasoning/)
 - 2026-05-03 — [재귀로 묶인 다중 에이전트 — 잠재공간이 텍스트 병목을 우회할 때](https://pheeree.github.io/2026/05/03/recursive-mas-latent-space-agent-collaboration/)
