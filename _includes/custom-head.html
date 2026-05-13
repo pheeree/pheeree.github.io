@@ -13,5 +13,22 @@
   });
 </script>
 <style>
-  .mermaid { text-align: center; margin: 1.5em 0; }
+  .mermaid { text-align: center; margin: 1.5em 0; overflow-x: auto; }
+  .mermaid svg { max-width: 100%; height: auto; }
 </style>
+
+<!-- MathJax 수식 지원 — 인라인 \(...\), 디스플레이 $$...$$ / \[...\] -->
+<!-- 통화 표기($4.27 등)와의 충돌을 피하려 $...$ 인라인은 비활성 -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>

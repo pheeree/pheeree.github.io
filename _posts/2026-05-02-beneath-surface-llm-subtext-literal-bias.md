@@ -56,17 +56,15 @@ CLAUDE.md·MEMORY.md·north-star·frontmatter·wikilink·카테고리. 이 모�
 [multi-agent-governance]와도 연결된다. 거기서 적은 governance 실패가 "공유 기억 없는 조율"의 결이라면, MindRead 0.37/평균 0.33 — 1/3의 경우에만 팀 내 선택적 소통이 성공한다는 수치 — 는 그것의 미시 버전이다. 다중 에이전트가 도구·메모리·역할을 공유한다고 해서 *서로의 마음 모델*까지 공유되는 건 아니다. 한 에이전트가 다른 에이전트의 추론 단계를 "이건 막혔다"고 메타-인식하려면, 표면 trace 너머의 의도를 읽어야 한다 — 이게 Aesopian 과제의 정확한 다중 에이전트판이다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     Surface["표면 명제"] --> LLM
-    Sub["함의·subtext"] -.literal bias.-> Lost["압축 손실"]
-    LLM --> Comp["이해 (수용)"]
-    LLM --> Gen["생성 (산출)"]
-    Para["paratext (저자·독자·맥락)"] -->|26%→73%| Comp
-    Para -.|22% 머묾|.-> Gen
-    CG["common ground 명시"] -->|literal -30~50%| Comp
-    Form["belief 형성"] -.0.051.-> CG
-    Comp -.손-쥔 능력.-> Use["내 연구 조력"]
-    Gen -.사람이 지킴.-> Edit["내가 끝까지 짠다"]
+    Sub["함의·subtext"] -. literal bias .-> Lost["압축 손실"]
+    LLM --> Comp["이해 · 수용"]
+    LLM --> Gen["생성 · 산출"]
+    Para["paratext<br/>저자·독자·맥락"] -- "26% → 73%" --> Comp
+    Para -. "22% 머묾" .-> Gen
+    Comp --> Use["내 연구 조력"]
+    Gen --> Edit["사람이 끝까지 짠다"]
 ```
 
 여기서 어제 ARA 글의 "강한 모델은 trace를 메타-인식 우회, 약한 모델은 실패 경로 재시도"와 오늘 결과가 직접 만난다. trace의 메타-신호 — "이 가지는 막혔다"는 — 는 표면 명제가 아니라 함의다. 약한 모델이 그것을 못 읽는다는 ARA의 관찰은, 오늘 논문의 literal bias 스펙트럼의 한 점이다. 즉 ARA의 약한-모델 역전은 화용 역량 부족의 한 표현형이라고 다시 읽을 수 있다. 두 논문이 서로의 각주가 된다.
