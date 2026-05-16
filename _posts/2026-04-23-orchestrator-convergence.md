@@ -84,7 +84,7 @@ MALBO는 이질 모델 풀에서 최적화한다. 그래서 "Manager에 최강 �
 - **추론 토큰 예산 비대칭**: Aggregator에 긴 chain-of-thought 여유를 주고 Proposer는 간결하게 끊는다.
 - **검증 루프 삽입**: Aggregator 출력에 self-critique 한 차례를 강제한다. Kim et al.의 "오케스트레이터 검증 병목"과 같은 논리.
 
-## 내 연구에 어떻게 꽂히나
+## 내 연구에 어떻게 맞물리나
 
 Type B Mission Engine 설계가 바뀐다.
 

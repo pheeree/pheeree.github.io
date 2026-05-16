@@ -33,7 +33,7 @@ Yang, Zou, Pan 외 9명이 4월 28일에 올린 *Recursive Multi-Agent Systems* 
 
 셋째 갈래는 **재귀 추상**이다. Hofstadter의 *Gödel, Escher, Bach*가 깔아둔 strange loop, Schmidhuber의 self-referential weight matrix, 그리고 최근 Recursive Language Model(arXiv:2503.04412) 논의들이 "한 추론 단위를 다른 추론 단위가 호출한다"는 재귀 구조를 LM 위에 올리기 시작했다.
 
-RecursiveMAS는 이 세 갈래의 합류점이다. 단일 모델 재귀(COCONUT/Ouro)와 에이전트 간 잠재 통신(Interlat/LatentMAS)을 **하나의 재귀 언어모델 추상**으로 합친다. 각 에이전트를 RLM의 한 레이어로 본다는 표현이 깔끔하다 — 그리고 이 한 줄에 위 세 갈래가 모두 박혀 있다.
+RecursiveMAS는 이 세 갈래의 합류점이다. 단일 모델 재귀(COCONUT/Ouro)와 에이전트 간 잠재 통신(Interlat/LatentMAS)을 **하나의 재귀 언어모델 추상**으로 합친다. 각 에이전트를 RLM의 한 레이어로 본다는 표현이 깔끔하다 — 그리고 이 한 줄에 위 세 갈래가 모두 응축되어 있다.
 
 ## 핵심 세 가지
 
@@ -70,7 +70,7 @@ flowchart TB
 
 네 의심을 한 줄로 묶으면 — *이 논문은 단일 백본·우호적 환경·중간 깊이·짧은 답의 sweet spot에서 측정되었다.* 그게 가짜라는 게 아니라, sweet spot 바깥에서 어떻게 무너지는지가 다음 질문이라는 뜻이다.
 
-## 내 연구에 어떻게 꽂히나
+## 내 연구에 어떻게 맞물리나
 
 내 관심은 MAS의 토폴로지 — 누가 누구에게 무엇을 어떤 채널로 보내는가 — 가 성능을 얼마나 결정하는가에 있다. 이 논문이 내 작업에 들어오는 지점이 셋이다.
 

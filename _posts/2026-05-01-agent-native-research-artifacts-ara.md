@@ -31,7 +31,7 @@ Jiachen Liu et al., *The Last Human-Written Paper: Agent-Native Research Artifac
 
 짧게 덧붙이자. 이건 LLM만의 문제도 아니다. Sweller의 cognitive load theory(1988)가 사람-학습자에서 보인 것과 같은 구조 — 외재적 부하가 임계를 넘으면 학습 자체가 무너진다 — 가 모델에서도 그대로 재현된다.
 
-## 내 연구에 어떻게 꽂히나
+## 내 연구에 어떻게 맞물리나
 
 knowledge-mind를 운영하면서 비슷한 구조를 매일 본다. raw/에 쌓이는 원시 자료, knowledge/에 침전된 노트, thinking/에 흩어진 결정 흔적, scripts/의 자동화 — 이게 4층까진 아니어도 비슷한 분할이다. 그리고 [decision-conversations-as-raw]에서 적었듯 "결정의 이유가 사라지는" 문제를 다루기 위해 ADR로 압축하는 정책을 세웠다. ARA의 Exploration Graph는 이걸 더 야심차게 — 결정의 이유를 압축하지 않고 DAG로 보존하자는 — 밀어붙인다.
 
