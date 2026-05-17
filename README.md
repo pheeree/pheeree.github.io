@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-05-16 — [맥락 순응 — 검색이 틀렸을 때 RAG는 그것을 아는가](https://pheeree.github.io/2026/05/16/context-compliance-knowledge-conflict/)
 - 2026-05-15 — [방관자 효과 — 동료가 많아질수록 스스로 사고하기를 멈추는 LLM](https://pheeree.github.io/2026/05/15/bystander-effect-sovereignty-decay/)
 - 2026-05-14 — [메모리 저주 — 더 많이 기억할수록 덜 협동하는 LLM](https://pheeree.github.io/2026/05/14/memory-curse-cooperation-collapse/)
 - 2026-05-13 — [토큰이 자신을 잊지 않으려면 — TIDE와 레이어마다 되새기는 정체성](https://pheeree.github.io/2026/05/13/tide-token-identity-layer-reinjection/)
