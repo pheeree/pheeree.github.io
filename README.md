@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-05-17 — [합의의 붕괴 — 다원성은 분포가 아니라 대화에서 살거나 죽는다](https://pheeree.github.io/2026/05/17/sycophantic-consensus-pluralistic-repair/)
 - 2026-05-16 — [맥락 순응 — 검색이 틀렸을 때 RAG는 그것을 아는가](https://pheeree.github.io/2026/05/16/context-compliance-knowledge-conflict/)
 - 2026-05-15 — [방관자 효과 — 동료가 많아질수록 스스로 사고하기를 멈추는 LLM](https://pheeree.github.io/2026/05/15/bystander-effect-sovereignty-decay/)
 - 2026-05-14 — [메모리 저주 — 더 많이 기억할수록 덜 협동하는 LLM](https://pheeree.github.io/2026/05/14/memory-curse-cooperation-collapse/)
