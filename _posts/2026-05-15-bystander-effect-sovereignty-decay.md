@@ -49,7 +49,7 @@ flowchart LR
 
 $$G_\mathcal{S} = \mathcal{V}_{int} - \mathcal{A}_{ext}$$
 
-$\mathcal{V}_{int}$는 내부 추론 *체인의 유효성*(중간 단계가 정답을 통과하는가), $\mathcal{A}_{ext}$는 최종 출력의 외부 정확도. 두 양은 보통 같이 움직이지만, 사회적 부하가 강해지면 갈라진다.
+식의 첫 항(내부 추론 일관성)은 중간 단계가 정답을 통과하는가를, 둘째 항(외부 정확도)은 최종 출력이 맞는가를 가리킨다. 두 양은 보통 같이 움직이지만, 사회적 부하가 강해지면 갈라진다.
 
 - GPT-5.4, SWE-bench, $n=5$: 내부 추론 일관성 $\mathcal{E}_{ew} = 3.56$ → $\mathcal{V}_{int} \approx 0.71$, 그러나 $\mathcal{A}_{ext} = 0.37$. $G_\mathcal{S} = +0.34$. **안으로는 맞게 풀면서 밖으론 틀린 답을 내놓는다.** Alignment Hallucination.
 - GPT-5.4, GAIA, $n=5$: $\mathcal{E}_{ew} = 1.07$ → $\mathcal{V}_{int} \approx 0.21$, $\mathcal{A}_{ext} = 0.53$. $G_\mathcal{S} = -0.32$. **내부 추론 자체가 방기된다.** Integrative Reasoning Bypass. 외부 정확도가 더 높은 건 동료 답을 그냥 복사한 결과다.
@@ -84,9 +84,17 @@ SWE-bench에서 GPT-5.4를 평가자로 두고 (Claude, Gemini Pro) 서열로 �
 
 세 갈래로 메모해둔다.
 
-**갈래 1 — Composite Social Load $\mathcal{L}$과 K* 프레임의 합성.** Yang et al. K* 프레임은 MAS 성능 상한이 독립적 추론 경로 수 $K^* = \exp(H)$에 의존한다고 했다. Shehata & Li의 $\mathcal{L}$은 그 *경로의 독립성을 갉아먹는 메커니즘*의 닫힌 형태에 가깝다 — 집단 규모 $n$은 명목상 $K$를 키우지만, 아키텍처 근접성 $\kappa$가 크면 *유효 K*는 거의 1로 수렴한다. 동질 팀이 $K$를 빨리 포화시킨다는 K* 노트의 직관이, 사회적 부하 합성함수 안에 $\kappa$ 인수로 들어와 있다. **유효 $K = K / \kappa^\beta$** 같은 식으로 두 프레임을 한 식에 잇는 시도를 메모 카드로 떼어둔다. 단 — Yang의 K*는 과제 엔트로피를 covariate로 다뤘지만, 사회적 부하를 변수로 안 다뤘다. 두 프레임이 같은 양에 다른 변수 셋을 부여하는 거니까 매끄러운 통합은 아닐 거다. 그 마찰점이 오히려 흥미롭다. Page(2007) *The Difference*가 인간 팀에서 보여준 "다양성 예측 정리(Diversity Prediction Theorem)" — 집단 오차 = 평균 개인 오차 - 다양성 — 의 LLM 버전이 결국 이 자리에 있다.
+**갈래 1 — Composite Social Load와 K-스타 프레임의 합성.** Yang et al.의 K-스타 프레임은 MAS 성능 상한이 독립적 추론 경로 수에 의존한다고 했다 — 경로 수는 추론 엔트로피의 지수다.
 
-**갈래 2 — Aggregator의 메모리 위생자에 *주권 모니터* 역할 추가.** 어제 메모에서 Aggregator를 "메모리 소독자"로 정의했다. 오늘 한 줄을 더 붙인다 — Aggregator는 또한 **Sovereignty Gap 모니터**여야 한다. 각 에이전트의 *내부 추론 일관성* $\mathcal{V}_{int}$와 *최종 출력* $\mathcal{A}_{ext}$를 따로 기록하고, $G_\mathcal{S}$가 크게 양수인 에이전트는 *Alignment Hallucination 위험군*, 크게 음수인 에이전트는 *Reasoning Bypass 위험군*으로 분류해 다른 개입을 한다. 전자에겐 "외부 신호 차단 + 내부 결론 추출", 후자에겐 "강제 재추론 + 동료 답 차폐". 단 이걸 추론 시점에 측정하려면 *내부 추론 일관성*을 어떻게 잡을지가 문제다. Shehata & Li는 결정론적 궤적 22,500개를 돌려서 사후 측정했지만, 운영 환경에선 그 정도 사치를 부릴 수 없다. Wang et al.(2023) Self-Consistency 원논문의 *답 분포 엔트로피*가 후보 1, Kadavath et al.(2022) "Language Models (Mostly) Know What They Know"의 *self-evaluation 토큰 확률*이 후보 2. 두 지표를 $G_\mathcal{S}$ 대용으로 검증하는 작은 실험을 별도 카드로.
+$$K^{*} = \exp(H)$$
+
+Shehata & Li의 Composite Social Load는 그 경로의 독립성을 갉아먹는 메커니즘의 닫힌 형태에 가깝다 — 집단 규모는 명목상 K를 키우지만, 아키텍처 근접성이 크면 유효 K는 거의 1로 수렴한다. 동질 팀이 K를 빨리 포화시킨다는 K-스타 노트의 직관이, 사회적 부하 합성함수 안에 근접성 인수로 들어와 있다. 두 프레임을 한 식에 잇는 시도를 메모 카드로 떼어둔다.
+
+$$K_{\text{eff}} = K \,/\, \kappa^{\beta}$$
+
+단 — Yang의 K-스타는 과제 엔트로피를 covariate로 다뤘지만, 사회적 부하를 변수로 안 다뤘다. 두 프레임이 같은 양에 다른 변수 셋을 부여하는 거니까 매끄러운 통합은 아닐 거다. 그 마찰점이 오히려 흥미롭다. Page(2007) *The Difference*가 인간 팀에서 보여준 "다양성 예측 정리(Diversity Prediction Theorem)" — 집단 오차 = 평균 개인 오차 - 다양성 — 의 LLM 버전이 결국 이 자리에 있다.
+
+**갈래 2 — Aggregator의 메모리 위생자에 *주권 모니터* 역할 추가.** 어제 메모에서 Aggregator를 "메모리 소독자"로 정의했다. 오늘 한 줄을 더 붙인다 — Aggregator는 또한 **Sovereignty Gap 모니터**여야 한다. 각 에이전트의 내부 추론 일관성과 최종 출력을 따로 기록하고, Sovereignty Gap이 크게 양수인 에이전트는 Alignment Hallucination 위험군, 크게 음수인 에이전트는 Reasoning Bypass 위험군으로 분류해 다른 개입을 한다. 전자에겐 "외부 신호 차단 + 내부 결론 추출", 후자에겐 "강제 재추론 + 동료 답 차폐". 단 이걸 추론 시점에 측정하려면 내부 추론 일관성을 어떻게 잡을지가 문제다. Shehata & Li는 결정론적 궤적 22,500개를 돌려서 사후 측정했지만, 운영 환경에선 그 정도 사치를 부릴 수 없다. Wang et al.(2023) Self-Consistency 원논문의 답 분포 엔트로피가 후보 1, Kadavath et al.(2022) "Language Models (Mostly) Know What They Know"의 self-evaluation 토큰 확률이 후보 2. 두 지표를 Sovereignty Gap 대용으로 검증하는 작은 실험을 별도 카드로.
 
 **갈래 3 — Lead Anchor를 거꾸로 이용하는 설계.** Lead Anchor는 결함이지만, 그 비대칭성을 *의도적으로* 활용할 수도 있다. 신뢰도 높은 에이전트(Fortified Mind 분류의 모델)를 *항상 첫 자리*에 배치하면, 그 강건성을 집단 전체에 전염시킬 수 있을지 모른다. 5/14 메모리 저주에서 "협동은 깨지기 쉽고, 비협동은 전염성이 강하다"는 비대칭을 봤는데, 오늘 발견은 그 비대칭의 *반대 방향 활용*을 시사한다 — 비협동이 전염되듯 *주권*도 첫 자리에서 전염될 수 있는가? Asch 실험의 *한 명 동맹자가 동조률을 80% 깎는다*는 결과가 직접 대응한다. 단 Acerbi et al.의 명명 게임 + Centola(2018)의 25% 임계점을 보면 *소수 커밋 그룹*이 다수 규범을 전복하는 임계점 효과가 있으니, "첫 자리만으로 충분한가" vs "임계 비율이 필요한가"는 별도 실험으로 갈라야 한다.
 
