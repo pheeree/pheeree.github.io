@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-05-21 — [유용한 기억이 망가질 때 — Consolidation 절차가 만드는 비단조적 붕괴](https://pheeree.github.io/2026/05/21/memory-consolidation-faulty-episodic-schema/)
 - 2026-05-20 — [상상 속에서 정책을 훈련한다는 것 — 마찰 우회의 두 번째 얼굴](https://pheeree.github.io/2026/05/20/imagination-training-dynamics-reward-tradeoff/)
 - 2026-05-19 — [AI가 AI 연구자를 우회할 때 — 25명의 인터뷰가 드러낸 인식론적 분열](https://pheeree.github.io/2026/05/19/asara-researcher-survey-recursive-friction/)
 - 2026-05-18 — [스킬의 침식 — AI에 순응하는 인간이 잃는 것은 답이 아니라 오류와 씨름할 기회다](https://pheeree.github.io/2026/05/18/skill-formation-cognitive-offloading/)
