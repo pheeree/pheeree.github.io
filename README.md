@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-05-22 — [기억이 가시권에 있어도 권위는 없다 — 암묵적 무효화와 쓰기측 판결](https://pheeree.github.io/2026/05/22/stale-implicit-conflict-write-side-adjudication/)
 - 2026-05-21 — [유용한 기억이 망가질 때 — Consolidation 절차가 만드는 비단조적 붕괴](https://pheeree.github.io/2026/05/21/memory-consolidation-faulty-episodic-schema/)
 - 2026-05-20 — [상상 속에서 정책을 훈련한다는 것 — 마찰 우회의 두 번째 얼굴](https://pheeree.github.io/2026/05/20/imagination-training-dynamics-reward-tradeoff/)
 - 2026-05-19 — [AI가 AI 연구자를 우회할 때 — 25명의 인터뷰가 드러낸 인식론적 분열](https://pheeree.github.io/2026/05/19/asara-researcher-survey-recursive-friction/)
