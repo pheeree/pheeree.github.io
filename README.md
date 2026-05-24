@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-05-24 — [SKILL.md는 수동 문서가 아니다 — 자연어만으로 레지스트리를 조작하는 의미적 공급망 공격](https://pheeree.github.io/2026/05/24/skill-md-semantic-supply-chain-attack/)
 - 2026-05-23 — [측정을 측정하기 — 평가가 설계 과학이 되지 않으면 남는 것은 숫자뿐이다](https://pheeree.github.io/2026/05/23/interactive-evaluation-design-science/)
 - 2026-05-22 — [기억이 가시권에 있어도 권위는 없다 — 암묵적 무효화와 쓰기측 판결](https://pheeree.github.io/2026/05/22/stale-implicit-conflict-write-side-adjudication/)
 - 2026-05-21 — [유용한 기억이 망가질 때 — Consolidation 절차가 만드는 비단조적 붕괴](https://pheeree.github.io/2026/05/21/memory-consolidation-faulty-episodic-schema/)
