@@ -1,3 +1,8 @@
+<!-- 본문 한글 폰트 — Pretendard (jsDelivr 동적 서브셋, font-display:swap) -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" as="style" crossorigin
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+
 <!-- Mermaid 다이어그램 지원 — ```mermaid 코드블록을 자동 렌더 -->
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
@@ -33,3 +38,48 @@
   };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+<!-- 인용 사이드노트 — kramdown 풋노트를 넓은 화면(≥1080px)에서 우측 마진으로 배치 -->
+<!-- 좁은 화면에선 아무것도 안 하고 kramdown 기본 하단 미주로 둔다 -->
+<script>
+  (function () {
+    var MQ = window.matchMedia('(min-width: 1080px)');
+    function clear(post) {
+      post.querySelectorAll('.sidenote').forEach(function (s) { s.remove(); });
+      post.classList.remove('has-sidenotes');
+    }
+    function layout() {
+      document.querySelectorAll('article.post, .post').forEach(function (post) {
+        clear(post);
+        var fnotes = post.querySelector('.footnotes');
+        if (!fnotes || !MQ.matches) return;
+        var items = fnotes.querySelectorAll(':scope > ol > li');
+        if (!items.length) return;
+        post.classList.add('has-sidenotes');
+        var postTop = post.getBoundingClientRect().top + window.scrollY;
+        var prevBottom = 0;
+        items.forEach(function (li) {
+          var num = (li.id.split(':')[1]) || '';        // fn:1 → 1
+          var ref = post.querySelector('[id="fnref:' + num + '"]');
+          if (!ref) return;
+          var aside = document.createElement('aside');
+          aside.className = 'sidenote';
+          var body = li.cloneNode(true);
+          var back = body.querySelector('.reversefootnote');
+          if (back) back.remove();
+          aside.innerHTML = '<span class="sn-num">' + num + '</span>' + body.innerHTML;
+          post.appendChild(aside);
+          var top = ref.getBoundingClientRect().top + window.scrollY - postTop;
+          if (top < prevBottom + 12) top = prevBottom + 12;  // 겹치면 아래로
+          aside.style.top = top + 'px';
+          prevBottom = top + aside.offsetHeight;
+        });
+      });
+    }
+    var t;
+    function schedule() { clearTimeout(t); t = setTimeout(layout, 120); }
+    window.addEventListener('load', function () { layout(); setTimeout(layout, 800); });
+    window.addEventListener('resize', schedule);
+    if (MQ.addEventListener) MQ.addEventListener('change', layout);
+  })();
+</script>

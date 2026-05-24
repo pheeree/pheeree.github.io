@@ -1,0 +1,328 @@
+---
+# 이 파일은 gem의 assets/main.scss를 덮어쓴다.
+# 아래 @import 줄은 minima 2.5의 main.scss와 동일 — 스킨(auto 라이트/다크) 그대로 유지.
+# 변수 오버라이드는 반드시 @import "minima/initialize" 앞에 와야 한다(minima가 !default 사용).
+---
+
+// ── 변수 오버라이드 (읽기 타이포그래피) ────────────────────────────────
+$base-font-family: "Pretendard Variable", Pretendard, -apple-system,
+  BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Apple SD Gothic Neo",
+  "Noto Sans KR", sans-serif !default;
+$code-font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono",
+  monospace !default;
+$base-font-size: 18px !default;
+$base-line-height: 1.75 !default;
+$spacing-unit: 32px !default;
+$content-width: 760px !default; // .wrapper 실측 폭 ≈ 696px → 한글 18px에서 한 줄 ~42자
+
+@import "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+// ── 정제 레이어 (색 비고정: muted=opacity, 보더=중립 회색 → auto 스킨 유지) ──
+
+:root {
+  --rn-rule: rgba(128, 128, 128, 0.22);
+  --rn-rule-soft: rgba(128, 128, 128, 0.14);
+  --rn-fill-soft: rgba(128, 128, 128, 0.08);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "tnum";
+  letter-spacing: -0.003em;
+}
+
+// 한글 장문 가독성의 핵심: 어절 단위로 끊고, 긴 토큰만 강제 줄바꿈
+.post-content,
+.page-content p,
+.post-list,
+li,
+blockquote,
+td,
+th {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+// 본문 리듬
+.post-content {
+  > p,
+  > ul,
+  > ol,
+  > blockquote,
+  > pre,
+  > table,
+  > .mermaid {
+    margin-top: 0;
+    margin-bottom: 1.35em;
+  }
+
+  > p {
+    line-height: 1.85;
+  }
+
+  > ul,
+  > ol {
+    line-height: 1.8;
+    padding-left: 1.4em;
+    li + li {
+      margin-top: 0.35em;
+    }
+  }
+}
+
+// 제목 위계 — 본문보다 좁은 행간 + 위쪽 여백으로 섹션 호흡
+.post-content {
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.35;
+    letter-spacing: -0.012em;
+    margin-top: 2.2em;
+    margin-bottom: 0.7em;
+    scroll-margin-top: 1.5rem;
+  }
+  h2 {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--rn-rule-soft);
+  }
+  h1:first-child,
+  h2:first-child,
+  h3:first-child {
+    margin-top: 0;
+  }
+}
+
+// 제목·메타
+.post-title,
+.post-list-heading {
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+.post-meta {
+  font-size: 0.82em;
+  opacity: 0.62;
+  letter-spacing: 0.01em;
+}
+
+// 링크 — 차분한 밑줄, 색은 스킨 상속
+.post-content a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: var(--rn-rule);
+  transition: text-decoration-color 0.12s ease;
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+// 인용 — 이탤릭 제거(한글 가독성), 좌측 룰 + 옅은 톤
+.post-content blockquote {
+  font-style: normal;
+  font-size: 0.96em;
+  opacity: 0.85;
+  border-left: 3px solid var(--rn-rule);
+  padding: 0.1em 0 0.1em 1.1em;
+  margin-left: 0;
+  letter-spacing: 0;
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+// 코드
+.post-content {
+  code {
+    font-size: 0.86em;
+    padding: 0.12em 0.4em;
+    border-radius: 4px;
+    background: var(--rn-fill-soft);
+  }
+  pre {
+    font-size: 0.82em;
+    line-height: 1.6;
+    padding: 1em 1.15em;
+    border: 1px solid var(--rn-rule-soft);
+    border-radius: 8px;
+    overflow-x: auto;
+    background: var(--rn-fill-soft);
+    code {
+      padding: 0;
+      background: none;
+      font-size: inherit;
+    }
+  }
+}
+
+// 표 — 연구 글에 다수
+.post-content table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92em;
+  th,
+  td {
+    border: 1px solid var(--rn-rule-soft);
+    padding: 0.5em 0.75em;
+    text-align: left;
+  }
+  th {
+    background: var(--rn-fill-soft);
+    font-weight: 600;
+  }
+}
+
+// 구분선
+.post-content hr {
+  border: 0;
+  height: 1px;
+  background: var(--rn-rule);
+  margin: 2.6em 0;
+}
+
+// 지난 글 목록 — 날짜 정렬·차분한 간격
+.post-list {
+  list-style: none;
+  margin-left: 0;
+  li {
+    padding: 0.55em 0;
+    border-bottom: 1px solid var(--rn-rule-soft);
+    line-height: 1.5;
+  }
+  time {
+    display: inline-block;
+    min-width: 6.2em;
+    font-variant-numeric: tabular-nums;
+    opacity: 0.55;
+    font-size: 0.88em;
+  }
+}
+
+// 다이어그램·수식 오버플로 (custom-head 보강)
+.post-content {
+  .mermaid {
+    text-align: center;
+    margin: 1.6em 0;
+  }
+  mjx-container[display="true"] {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.2em 0;
+  }
+}
+
+// 사이트 헤더/푸터 — 군더더기 덜기
+.site-header {
+  border-top: 0;
+  border-bottom: 1px solid var(--rn-rule-soft);
+}
+.site-footer {
+  border-top: 1px solid var(--rn-rule-soft);
+  font-size: 0.86em;
+  opacity: 0.7;
+}
+// 사이트 제목 — 작고 차분하게(브랜드 비강조). 색은 opacity로(라이트/다크 공용)
+.site-title,
+.site-title:visited {
+  font-size: 1.02em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  opacity: 0.5;
+  transition: opacity 0.12s ease;
+}
+.site-title:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+// ── 인용 사이드노트 (kramdown 풋노트 → 넓은 화면에서 우측 마진) ──────────
+// 본문 참조 마커
+.post-content a.footnote {
+  text-decoration: none;
+  font-size: 0.72em;
+  font-weight: 600;
+  padding: 0 0.15em;
+  opacity: 0.75;
+  font-variant-numeric: tabular-nums;
+}
+.post-content a.footnote:hover {
+  opacity: 1;
+}
+
+// 좁은 화면 기본값: 하단 미주(kramdown 기본 위치)
+.post-content .footnotes {
+  margin-top: 2.6em;
+  padding-top: 1.2em;
+  border-top: 1px solid var(--rn-rule);
+  font-size: 0.86em;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+.post-content .footnotes ol {
+  padding-left: 1.2em;
+}
+.post-content .footnotes li {
+  margin-bottom: 0.5em;
+}
+.post-content .footnotes a.reversefootnote {
+  text-decoration: none;
+  opacity: 0.5;
+  margin-left: 0.3em;
+}
+
+// 넓은 화면: 본문 폭 유지 + 우측 마진에 사이드노트
+@media (min-width: 1080px) {
+  .wrapper {
+    max-width: 980px;
+  }
+  .post {
+    position: relative;
+  }
+  // 텍스트 컬럼은 좁게 유지, 우측 여백 확보
+  .post .post-header,
+  .post-content > p,
+  .post-content > ul,
+  .post-content > ol,
+  .post-content > h1,
+  .post-content > h2,
+  .post-content > h3,
+  .post-content > h4,
+  .post-content > blockquote {
+    max-width: 660px;
+  }
+  // 넓게 써도 되는 블록은 풀폭 허용
+  .post-content > pre,
+  .post-content > table,
+  .post-content > .mermaid {
+    max-width: 100%;
+  }
+  // JS가 배치하는 사이드노트
+  .post .sidenote {
+    position: absolute;
+    left: 700px; // 텍스트 660 + 갭 40
+    width: 250px;
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.55;
+    opacity: 0.72;
+    border-left: 2px solid var(--rn-rule-soft);
+    padding-left: 0.8em;
+  }
+  .post .sidenote p {
+    margin: 0 0 0.5em;
+  }
+  .post .sidenote .sn-num {
+    font-weight: 600;
+    margin-right: 0.35em;
+    opacity: 0.85;
+    font-variant-numeric: tabular-nums;
+  }
+  // 사이드노트가 떠 있으면 하단 미주는 감춤
+  .post.has-sidenotes .footnotes {
+    display: none;
+  }
+}

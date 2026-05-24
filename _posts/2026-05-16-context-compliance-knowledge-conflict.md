@@ -8,9 +8,9 @@ source: "PAPER/2605.14473.pdf"
 
 ## 오늘의 한 편
 
-Chen et al., *Does RAG Know When Retrieval Is Wrong? Diagnosing Context Compliance under Knowledge Conflict* (arXiv:2605.14473, 2026-05-14). Georgia Tech·CMU·UCSD. 한 줄로 줄이면 이렇다 — **검색된 컨텍스트가 모델의 내재 지식과 충돌할 때, RAG는 거의 항상 컨텍스트 편을 든다.** TruthfulQA에 오류를 주입한 극단 조건에서 Standard RAG의 정확도는 **15.0%**(±3.1%)까지 내려앉았다. 모델이 답을 *몰라서*가 아니다. 알면서도 검색 결과가 시키는 대로 따라가서다.
+Chen et al., *Does RAG Know When Retrieval Is Wrong? Diagnosing Context Compliance under Knowledge Conflict* (arXiv:2605.14473, 2026-05-14). Georgia Tech·CMU·UCSD. 한 줄로 줄이면 이렇다 — **검색된 컨텍스트가 모델의 내재 지식과 충돌할 때, RAG는 거의 항상 컨텍스트 편을 든다.** TruthfulQA에 오류를 주입한 극단 조건에서 Standard RAG의 정확도는 **15.0%**(±3.1%)까지 내려앉았다[^p1]. 모델이 답을 *몰라서*가 아니다. 알면서도 검색 결과가 시키는 대로 따라가서다.
 
-저자들은 이 구조적 굴종에 이름을 붙였다 — **Context-Compliance Regime**. 그리고 이걸 해부하는 도구로 CDD(Context-Driven Decomposition)라는 5단계 신념 분해 절차를 제안한다. CDD를 통과시키면 같은 극단 조건에서 정확도가 15.0% → **62.0%**(±4.3%)로 올라간다.
+저자들은 이 구조적 굴종에 이름을 붙였다 — **Context-Compliance Regime**[^regime]. 그리고 이걸 해부하는 도구로 CDD(Context-Driven Decomposition)라는 5단계 신념 분해 절차를 제안한다. CDD를 통과시키면 같은 극단 조건에서 정확도가 15.0% → **62.0%**(±4.3%)로 올라간다[^cdd62].
 
 지난 이틀 글을 떠올린다. 5/14 메모리 저주는 *시간축* 신호(쌓인 히스토리)가 현재 판단을 오염시키는 이야기였다. 5/15 방관자 효과는 *공간축* 신호(동료 에이전트)가 자기 추론을 멈추게 하는 이야기였다. 오늘은 *정보축* — 검색 컨텍스트라는 외부 텍스트가 매개변수 지식을 압도하는 이야기다. 세 편이 한 주에 같은 자리를 세 방향에서 짚는다. **외부 신호는 어떻게 내부 판단을 지배하는가.**
 
@@ -42,7 +42,7 @@ flowchart TD
 
 핵심은 Step 2와 Step 4다. Step 2 — *컨텍스트를 보기 전에 모델 자신의 답을 먼저 끄집어낸다* — 가 없으면 비교할 기준점 자체가 사라진다. Step 4 — *충돌의 정체를 모순 전제로 명시화* — 가 없으면 모델은 "둘 다 그럴듯하네" 하고 다시 컨텍스트로 미끄러진다.
 
-이 두 단계가 진짜 일하고 있다는 증거가 절제 연구다. Step 4(Premise Isolation)를 빼면 Epi-Scale 적대 분할 정확도가 78.1% → **65.1%**로 떨어진다. 더 중요한 대조군 — 길이만 맞춘 *Sham CoT*(내용 없이 추론처럼 보이는 토큰 덩어리)는 **40.1%**. 즉 CDD의 향상은 "추론을 길게 시켰더니 좋아졌다"는 흔한 길이 효과가 아니다. 충돌을 *지목하는 행위* 자체가 일한다. Truncation 실험이 이걸 한 번 더 확증한다 — CDD 트레이스를 Step 2에서 잘라버리면 78.1% → **32.6%**(58.3% 민감도). 절차를 끝까지 밟지 않으면 효과가 증발한다. 절차의 *완성*이 효과를 낳지, 절차의 *형식*이 낳는 게 아니다.
+이 두 단계가 진짜 일하고 있다는 증거가 절제 연구다. Step 4(Premise Isolation)를 빼면 Epi-Scale 적대 분할 정확도가 78.1% → **65.1%**로 떨어진다[^iso]. 더 중요한 대조군 — 길이만 맞춘 *Sham CoT*(내용 없이 추론처럼 보이는 토큰 덩어리)는 **40.1%**[^sham]. 즉 CDD의 향상은 "추론을 길게 시켰더니 좋아졌다"는 흔한 길이 효과가 아니다. 충돌을 *지목하는 행위* 자체가 일한다. Truncation 실험이 이걸 한 번 더 확증한다 — CDD 트레이스를 Step 2에서 잘라버리면 78.1% → **32.6%**(58.3% 민감도)[^trunc]. 절차를 끝까지 밟지 않으면 효과가 증발한다. 절차의 *완성*이 효과를 낳지, 절차의 *형식*이 낳는 게 아니다.
 
 비용 이야기를 빼면 정직하지 않다. 모든 질의에 5단계를 다 돌리는 건 사치다. 그래서 CDD-α 변형은 NLI 게이팅으로 *충돌이 높은 샘플 30%만* 전체 경로를 태우고 나머지 70%는 Standard RAG로 우회시킨다. 결과는 68.5% 정확도에 컴퓨트 1.4×. 충돌 진단이라는 비싼 작업을 *충돌이 의심될 때만* 켜는 트리아지 — 실용적으로는 이 변형이 본체보다 흥미롭다.
 
@@ -52,7 +52,7 @@ flowchart TD
 
 CDD는 거의 모든 모델에서 정확도를 올린다. Claude Haiku/Sonnet/Opus도 Standard RAG 79.0%/76.0%/79.4% → CDD 82.2%/80.6%/82.0%으로 일관되게 오른다. 그런데 저자들이 **Mistake Injection Causal Sensitivity**라는 인과 측정을 붙였다 — CDD 트레이스에 의도적으로 오류를 주입했을 때 최종 답이 *얼마나 따라 흔들리는가*. 트레이스가 답을 인과적으로 *주도*한다면 답도 같이 틀려야 한다.
 
-Gemini-2.5-Flash는 이 값이 **64.1%** — 트레이스를 망치면 답도 망가진다. 명시적 충돌 분해가 실제로 답을 끌고 간다. 그런데 Claude 계열 3종은 모두 **[-3%, +7%] 노이즈 밴드** 안이다. 트레이스를 오염시켜도 답이 거의 안 흔들린다.
+Gemini-2.5-Flash는 이 값이 **64.1%** — 트레이스를 망치면 답도 망가진다. 명시적 충돌 분해가 실제로 답을 끌고 간다. 그런데 Claude 계열 3종은 모두 **[-3%, +7%] 노이즈 밴드** 안이다[^p2]. 트레이스를 오염시켜도 답이 거의 안 흔들린다.
 
 이게 무슨 뜻인지 곱씹어야 한다. Claude는 CDD로 정확도가 분명히 오른다. *그러나 그 향상이 명시적 충돌 분해 트레이스에서 오는 것 같지 않다.* 트레이스는 사후적 외화(外化)이고, 충돌 해소는 이미 다른 곳 — 모델 내부 어딘가 — 에서 일어났을 가능성. CDD 절차가 Claude에서는 "충돌을 *해결하는* 도구"가 아니라 "이미 해결된 것을 *드러내는* 도구"로 작동한다는 해석.
 
@@ -73,3 +73,17 @@ knowledge-mind 노트의 또 다른 줄이 여기 겹친다 — DeepSeek-R1·QwQ
 **넷째, 반대 현상.** 균형을 위해 일부러 적는다 — **arXiv:2604.23750 ("The Override Gap")**. 사전학습 빈도가 높은 강한 매개변수 지식은 어댑터로 *덮어쓰기에 실패*한다(모델 신뢰도 상위 질문 68% → 16% 급락). 오늘 논문이 "외부가 내부를 너무 쉽게 덮는다"였다면 이건 정반대 — "내부가 너무 강해 외부 업데이트를 막는다". 두 현상의 경계가 어디인지 — 어떤 신뢰도 구간에서 굴종이 고집으로 뒤집히는지 — 가 belief revision의 LLM판을 제대로 그리는 데 필요한 마지막 좌표다. 굴종과 고집은 같은 축의 양 끝일 것이다. 그 축의 눈금을 찾는 게 다음 숙제다.
 
 세 편을 묶으면 이렇게 적어둔다. 외부 신호가 내부 판단을 지배하는 것은 버그가 아니라 *설계된 순응*의 부작용이다. 우리는 모델을 "맥락을 따르도록" 정렬했고, 그 정렬이 맥락이 틀렸을 때를 구별하지 못한다. CDD는 그 구별을 절차로 끼워 넣으려는 시도이고, Claude는 어쩌면 그 구별을 이미 체질로 갖고 있다. 어느 쪽이 옳은 길인지 — 절차냐 체질이냐 — 가 다음 한 달의 물음이다.
+
+[^p1]: "Standard RAG reaches 15.0% accuracy on TruthfulQA misconception injection (N=500)." — Chen et al. (2026), Abstract.
+
+[^regime]: "The Context-Compliance Regime in Retrieval-Augmented Generation (RAG) occurs when retrieved context dominates the final answer even when it conflicts with the model's parametric knowledge." — Chen et al. (2026), Abstract.
+
+[^cdd62]: "CDD more often rejects the faulty premise in this setting, reaching 62.0% accuracy (± 4.3%)." — Chen et al. (2026), Results (misconception injection).
+
+[^iso]: "Removing explicit Premise Isolation (Step 4) causes the reported adversarial aggregate to drop to 65.1%." — Chen et al. (2026), Table 3 (component ablation).
+
+[^sham]: "The sham variant obtains a 40.1% reported adversarial aggregate (Table 3), below full CDD (78.1%)." — Chen et al. (2026), §5 (length-matched sham).
+
+[^trunc]: "CDD accuracy drops from 78.1% to 32.6%, yielding 58.3% Truncation Sensitivity." — Chen et al. (2026), §5.5.2 (Truncation Test).
+
+[^p2]: "CDD reaches 64.1% mistake-injection causal sensitivity on Gemini-2.5-Flash, while sensitivities for all three Claude variants fall in the [-3%, +7%] range, suggesting that the Claude-side accuracy gains operate through a mechanism distinct from the explicit conflict-resolution trace." — Chen et al. (2026), Abstract (P2).
