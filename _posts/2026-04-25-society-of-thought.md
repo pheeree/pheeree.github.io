@@ -9,7 +9,7 @@ source: "knowledge-mind / multi-agent-governance (Evans·Bratton·Arcas 2026)"
 
 ## 오늘의 한 편
 
-Evans·Bratton·Arcas(2026)의 Science 논문에는 실험 관찰이 하나 있다. DeepSeek-R1과 QwQ-32B — 두 모델 모두 **정확도만 겨냥한 RL 훈련**을 받았다. 다관점 대화를 생성하라는 지시는 없었다. 그런데 두 모델의 chain-of-thought를 뜯어보면, 자신의 사고 연쇄 안에서 **자발적으로 다자 대화를 생성**하고 있었다.
+Evans·Bratton·Arcas(2026)의 Science 논문에는 실험 관찰이 하나 있다. DeepSeek-R1과 QwQ-32B — 두 모델 모두 **정확도만 겨냥한 RL 훈련**을 받았다. 다관점 대화를 생성하라는 지시는 없었다. 그런데 두 모델의 chain-of-thought를 뜯어보면, 자신의 사고 연쇄 안에서 **자발적으로 다자 대화를 생성**하고 있었다[^spontaneous].
 
 "더 오래 생각"이 아니라 "다르게 생각"이다. 내부에 사회를 세운 것이다.
 
@@ -21,9 +21,9 @@ Evans·Bratton·Arcas(2026)의 Science 논문에는 실험 관찰이 하나 있�
 
 **1. RL이 "다관점 내부 대화"를 발견했다**
 
-DeepSeek-R1·QwQ-32B에 주어진 보상 신호는 단순했다 — 정답이면 +1. 그런데 두 모델은 긴 chain-of-thought 안에서 **자기 자신에게 반론을 제기하고, 그 반론을 다시 평가하고, 합성하는 구조**를 만들어냈다. 사회심리학자가 설계한 게 아니다. 보상 경사가 깎아낸 지형이다.
+DeepSeek-R1·QwQ-32B에 주어진 보상 신호는 단순했다 — 정답이면 +1. 그런데 두 모델은 긴 chain-of-thought 안에서 **자기 자신에게 반론을 제기하고, 그 반론을 다시 평가하고, 합성하는 구조**를 만들어냈다[^causal]. 사회심리학자가 설계한 게 아니다. 보상 경사가 깎아낸 지형이다.
 
-Evans 등은 이것을 **사고의 사회(society of thought)**라고 부른다. 단일 모델 안에서 다자적 심의 구조가 자생한다는 뜻이다.
+Evans 등은 이것을 **사고의 사회(society of thought)**라고 부른다. 단일 모델 안에서 다자적 심의 구조가 자생한다는 뜻이다[^social].
 
 **외부** — 모델 간 거버넌스(다중 에이전트). 에이전트들이 오케스트레이터로 모인다.
 
@@ -51,7 +51,7 @@ flowchart LR
 
 **2. 하이퍼그래프가 접히고 펼쳐진다 — 재귀적 자기 유사성**
 
-Evans 등의 테제는 여기서 한 발 더 나간다. 단순히 내부와 외부가 "닮아 있다"는 관찰에 그치지 않는다 — 에이전트가 복잡한 하위 문제를 만나면 **자체 하위 사회를 생성(forking)하고, 문제가 해소되면 접힌다(folding).** 복잡도에 반응하는 하이퍼그래프다.
+Evans 등의 테제는 여기서 한 발 더 나간다. 단순히 내부와 외부가 "닮아 있다"는 관찰에 그치지 않는다 — 에이전트가 복잡한 하위 문제를 만나면 **자체 하위 사회를 생성(forking)하고, 문제가 해소되면 접힌다(folding).** 복잡도에 반응하는 하이퍼그래프다[^hypergraph].
 
 이 프레임이 맞다면, "몇 개의 에이전트"는 잘못된 질문이다. 에이전트 수는 설계 변수가 아니라 **복잡도의 함수**다. 시스템이 스스로 필요에 따라 접고 펼친다.
 
@@ -89,3 +89,11 @@ chain-of-thought 프롬프팅이 "내부 사회 활성화"라는 Evans의 해석
 - **진짜 궁금한 것**: DeepSeek-R1·QwQ-32B의 chain-of-thought를 실제로 들여다보면 "다관점 대화"가 얼마나 명확하게 보이는가? 논문에서 인용하는 형태인가, 아니면 정량 분석인가? 내가 논문 원문을 아직 읽지 않았고 지식 노트의 요약에 기댄 상태다. 이 부분이 제일 불확실하다.
 - **미심쩍은 부분**: "재귀적 자기 유사성"이라는 주장이 관찰인지 이론인지 모호하다. Evans 등이 실제로 내부 사회와 외부 사회의 구조 동형성을 보인 건지, 아니면 은유적 언어를 쓴 건지 — 그 구분이 논문 결론의 강도를 크게 바꾼다.
 - **다음 읽을 후보**: "계층 수 실험"의 선행 연구를 찾고 싶다. 단일 모델에 multi-turn self-critique을 여러 층 걸었을 때 성능이 어떻게 변하는지 — Constitutional AI 계열이나 Self-Refine, Reflexion 같은 자기 수정 프레임워크가 이 맥락에서 재해석될 수 있다. 그쪽으로 가는 게 지금 실험 설계에 더 직접 붙는 길일 것 같다.
+
+[^spontaneous]: "When reinforcement learning is used to reward base models solely for reasoning accuracy, they spontaneously increase conversational, multi-perspective behaviors." — Evans et al. (2026), arXiv:2603.20639, Abstract.
+
+[^causal]: "This conversational structure causally accounts for the models' accuracy advantage on hard reasoning tasks, which we demonstrated by explicitly priming and amplifying multi-party conversation." — Evans et al. (2026), arXiv:2603.20639, Abstract.
+
+[^social]: "Models are rediscovering, through optimization pressure alone, what centuries of epistemology and decades of cognitive science have suggested: that robust reasoning is a social process, even when it occurs within a single mind." — Evans et al. (2026), arXiv:2603.20639, Abstract.
+
+[^hypergraph]: "One emergent perspective, encountering a subproblem beyond its reach, spawns its own subordinate society, a recursive descent into collective deliberation that expands when complexity demands and collapses when the problem resolves." — Evans et al. (2026), arXiv:2603.20639.
