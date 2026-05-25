@@ -9,9 +9,9 @@ source: "PAPER/2604.25917.pdf"
 
 ## 오늘의 한 편
 
-Yang, Zou, Pan 외 9명이 4월 28일에 올린 *Recursive Multi-Agent Systems* (arXiv:2604.25917). UIUC·Stanford·NVIDIA·MIT 합작이고, 한 줄로 요약하면 "다중 에이전트 시스템 전체를 단일 잠재공간 위의 재귀 계산으로 펼친다"이다. 각 에이전트는 텍스트로 말을 주고받는 대신, 마지막 레이어 히든 스테이트를 다음 에이전트의 입력 임베딩 공간으로 변환해서 넘긴다. 이 변환을 맡는 것이 RecursiveLink — 2층 잔차 투영 모듈이고, 전체 파라미터의 0.31%(13.12M)만 학습한다.
+Yang, Zou, Pan 외 9명이 4월 28일에 올린 *Recursive Multi-Agent Systems* (arXiv:2604.25917). UIUC·Stanford·NVIDIA·MIT 합작이고, 한 줄로 요약하면 "다중 에이전트 시스템 전체를 단일 잠재공간 위의 재귀 계산으로 펼친다"이다[^def]. 각 에이전트는 텍스트로 말을 주고받는 대신, 마지막 레이어 히든 스테이트를 다음 에이전트의 입력 임베딩 공간으로 변환해서 넘긴다. 이 변환을 맡는 것이 RecursiveLink — 2층 잔차 투영 모듈이고, 전체 파라미터의 0.31%(13.12M)만 학습한다[^link].
 
-수치는 거칠게 말해 셋이다. 재귀 깊이 3에서 텍스트 기반 재귀 MAS 대비 평균 8.3% 정확도 향상, 추론 최대 2.4배 가속, 토큰 최대 75.6% 감소. 9개 벤치마크 — AIME2025/2026 둘 다 86.7%, Math500 88.0%, GPQA-D 66.2%, MedQA 79.3%. 훈련 비용은 \$4.27로 LoRA(\$6.64)·Full-SFT(\$9.67)보다 싸다. GPU 메모리도 15.29GB로 LoRA 21.67, Full-SFT 41.40 대비 가볍다.
+수치는 거칠게 말해 셋이다. 재귀 깊이 3에서 텍스트 기반 재귀 MAS 대비 평균 8.3% 정확도 향상, 추론 최대 2.4배 가속, 토큰 최대 75.6% 감소[^results]. 9개 벤치마크 — AIME2025/2026 둘 다 86.7%, Math500 88.0%, GPQA-D 66.2%, MedQA 79.3%. 훈련 비용은 \$4.27로 LoRA(\$6.64)·Full-SFT(\$9.67)보다 싸다. GPU 메모리도 15.29GB로 LoRA 21.67, Full-SFT 41.40 대비 가볍다.
 
 ## 왜 이걸 골랐나
 
@@ -37,7 +37,7 @@ RecursiveMAS는 이 세 갈래의 합류점이다. 단일 모델 재귀(COCONUT/
 
 ## 핵심 세 가지
 
-**첫째, Inner-Outer 두 단계 재귀.** Inner RecursiveLink는 한 에이전트 안에서 마지막 히든을 다음 포워드의 입력 임베딩으로 되먹여 "잠재 사고"를 길게 만든다 (최적 길이 약 80스텝, 그 이상 포화). Outer RecursiveLink는 에이전트 A1의 잠재 출력을 A2의 임베딩 공간으로 사상한다. 훈련 순서가 흥미로운데, 먼저 각 에이전트의 Inner Link를 코사인 유사도 손실로 독립 병렬 훈련하고, 그 다음에 전체 재귀 루프를 펼쳐서 Outer Link를 크로스 엔트로피로 공동 최적화한다. 0.31% 파라미터로 시스템 수준 공동 최적화가 가능한 이유가 여기 있다 — 학습 대상이 *연결부*에만 집중되기 때문이다.
+**첫째, Inner-Outer 두 단계 재귀.** Inner RecursiveLink는 한 에이전트 안에서 마지막 히든을 다음 포워드의 입력 임베딩으로 되먹여 "잠재 사고"를 길게 만든다 (최적 길이 약 80스텝, 그 이상 포화). Outer RecursiveLink는 에이전트 A1의 잠재 출력을 A2의 임베딩 공간으로 사상한다. 훈련 순서가 흥미로운데, 먼저 각 에이전트의 Inner Link를 코사인 유사도 손실로 독립 병렬 훈련하고, 그 다음에 전체 재귀 루프를 펼쳐서 Outer Link를 크로스 엔트로피로 공동 최적화한다. 0.31% 파라미터로 시스템 수준 공동 최적화가 가능한 이유가 여기 있다 — 학습 대상이 *연결부*에만 집중되기 때문이다[^innerouter].
 
 **둘째, 두 축 scaling law.** 훈련 시 재귀 깊이와 추론 시 재귀 깊이가 *상보적*으로 작동한다는 결과. 둘 다 1일 때가 가장 낮고 둘 다 4일 때가 가장 높다. 단순히 "더 깊게 추론하면 좋다"가 아니라 "깊게 추론할 거면 깊게 훈련해야 한다"는 결합 조건이 따라붙는다. 그리고 깊이 3에서 4로 가면 이미 수익이 줄어들기 시작한다 — 이 부분은 뒤에 다시 짚는다.
 
@@ -101,3 +101,11 @@ flowchart LR
 - **3순위**: AgentDropout (arXiv:2503.18891, ACL 2025). 라운드별 인접 행렬 최적화로 중복 에이전트·통신 경로를 제거. RecursiveMAS는 *연결을 깊게* 학습하지만 AgentDropout은 *연결을 솎아낸다*. "재귀로 깊게 + 동적으로 가지치기"가 한 토폴로지 안에서 결합 가능한지가 다음 질문.
 
 오늘 메모는 여기서 닫는다. 한 가지만 더 — 이 논문이 내게 남긴 가장 무거운 질문은 *수치*가 아니라 *경계*다. 모델 안과 밖, 텍스트와 잠재, 검사 가능과 불가능. RecursiveMAS는 그 경계를 부드럽게 만들었고, 부드러워진 경계 위에서 우리가 무엇을 잃었는지를 세는 게 다음 일이다.
+
+[^def]: "We introduce RecursiveMAS, a recursive multi-agent framework that casts the entire system as a unified latent-space recursive computation." — Yang et al. (2026), Abstract.
+
+[^link]: "RecursiveMAS connects heterogeneous agents as a collaboration loop through the lightweight RecursiveLink module, enabling in-distribution latent thoughts generation and cross-agent latent state transfer." — Yang et al. (2026), Abstract.
+
+[^innerouter]: "we develop an inner-outer loop learning algorithm for iterative whole-system co-optimization through shared gradient-based credit assignment across recursion rounds." — Yang et al. (2026), Abstract.
+
+[^results]: "RecursiveMAS consistently delivers an average accuracy improvement of 8.3%, together with 1.2×–2.4× end-to-end inference speedup, and 34.6%–75.6% token usage reduction." — Yang et al. (2026), Abstract.
