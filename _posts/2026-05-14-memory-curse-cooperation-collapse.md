@@ -95,8 +95,8 @@ CoT 효과도 Jia et al.(arXiv:2502.20432)이 이미 "보편적 향상 아님, �
 
 [^curse]: "Across 7 LLMs and 4 games over 500 rounds, expanding accessible history degrades cooperation in 18 of 28 model–game settings, a pattern we term the memory curse." — Liu et al. (2026), Abstract.
 
-[^sanitize]: "memory sanitization holds prompt length fixed while replacing visible history with synthetic cooperative records, which restores cooperation substantially, proving the trigger is memory content, not length alone." — Liu et al. (2026), Abstract.
+[^sanitize]: "Replacing 78 of the 80 history rounds with synthetic cooperative records (sanitized, X=2 real rounds) restores cooperation substantially across all five models." — Liu et al. (2026), §4.5.
 
-[^cot]: "ablating explicit Chain-of-Thought reasoning often reduces the collapse, showing that deliberation paradoxically amplifies the memory curse." — Liu et al. (2026), Abstract.
+[^cot]: "At HL=80, Llama-3.3-70B cooperates perfectly (100.0%) intuitively without reasoning. However, when forced to generate a CoT, its cooperation collapses to 6.9%—a devastating −93.1 percentage point penalty for deliberation." — Liu et al. (2026), §4.4.
 
-[^lora]: "a LoRA adapter trained exclusively on forward-looking traces mitigates the decay and transfers zero-shot to distinct games." — Liu et al. (2026), Abstract.
+[^lora]: "explicitly reshaping a susceptible agent's cognitive prior toward forward-looking reasoning mitigates this decay and transfers zero-shot across distinct environments." — Liu et al. (2026), §4 (forward-looking fine-tuning).
