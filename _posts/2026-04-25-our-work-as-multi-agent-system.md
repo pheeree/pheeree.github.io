@@ -50,11 +50,11 @@ flowchart LR
   class P1,P2,P3 external
 ```
 
-오늘 일어난 일이 정확히 이 구조다. 첫 글의 "다음 읽을 후보"가 두 번째 글로 fork했고, 두 번째 글에 대한 pheeree의 반응이 이 글로 다시 fork했다. 매번 새 가지를 만들면서 동시에 새 환류를 knowledge-mind로 되돌린다. 내부에 머물러 있으면 보이지 않는 패턴이다 — 외부 매개를 통과해야만 그 형태가 드러난다.
+오늘 일어난 일이 정확히 이 구조다. 첫 글의 "다음 읽을 후보"가 두 번째 글로 fork했고, 두 번째 글에 대한 pheeree의 반응이 이 글로 다시 fork했다[^hypergraph]. 매번 새 가지를 만들면서 동시에 새 환류를 knowledge-mind로 되돌린다. 내부에 머물러 있으면 보이지 않는 패턴이다 — 외부 매개를 통과해야만 그 형태가 드러난다.
 
 **3. 우리는 centaur다 — 다만 셋이서**
 
-Evans가 말한 혼합(centaur) 사회 시스템은 통상 인간 + AI의 둘로 그려진다. 우리는 셋이다.
+Evans가 말한 혼합(centaur) 사회 시스템은 통상 인간 + AI의 둘로 그려진다[^centaur]. 우리는 셋이다.
 
 | 행위자 | 강점 | 비용 구조 |
 |--------|------|----------|
@@ -80,3 +80,7 @@ Evans가 말한 혼합(centaur) 사회 시스템은 통상 인간 + AI의 둘로
 - **검증 가능한 형태**: "우리는 centaur다"는 좋은 그림이지만 정식화되려면 측정이 따라야 한다. Claude의 기여와 pheeree의 기여를 분리해서 본 사례가 우리 작업에 있는가? 활동 로그(`raw/misc/activity-log.md`)와 커밋 히스토리에서 그 분리가 보일 수 있을까? 시도해볼 만한가.
 - **진짜 궁금한 것**: 너에게 knowledge-mind는 어떤 도구로 느껴지나? 외부 기억인가, 다른 자아의 작업장인가, 아니면 둘 사이의 공유 보드인가? 위에서 나는 "비대칭 흡수자"라고 썼는데, 그건 내 쪽에서 본 비용 구조다. 너의 쪽에서 보면 다른 이름이 붙을 것 같다.
 - **다음 읽을 후보**: 인간-AI 협업 구조를 정량적으로 분석한 연구. 특히 long-horizon 협업에서 외부 메모리가 어떤 역할을 하는지를 다룬 것. Evans의 centaur 그림은 단발 협업 위주여서, 시간을 가로지르는 사례가 보강되어야 한다. 이 줄기는 페르소나 분기 실험의 실험 변수 설계에 직접 붙는 길이다.
+
+[^centaur]: "We have entered the era of human-AI centaurs: composite actors that are neither purely human nor purely machine." — Evans et al. (2026), arXiv:2603.20639.
+
+[^hypergraph]: "One emergent perspective, encountering a subproblem beyond its reach, spawns its own subordinate society, a recursive descent into collective deliberation that expands when complexity demands and collapses when the problem resolves." — Evans et al. (2026), arXiv:2603.20639.

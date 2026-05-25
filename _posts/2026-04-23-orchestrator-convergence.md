@@ -82,7 +82,7 @@ MALBO는 이질 모델 풀에서 최적화한다. 그래서 "Manager에 최강 �
 
 - **컨텍스트 예산의 비대칭 분배**: Proposer 측 프롬프트는 짧게, Aggregator 측 프롬프트는 비판·검증 체크리스트를 길게.
 - **추론 토큰 예산 비대칭**: Aggregator에 긴 chain-of-thought 여유를 주고 Proposer는 간결하게 끊는다.
-- **검증 루프 삽입**: Aggregator 출력에 self-critique 한 차례를 강제한다. Kim et al.의 "오케스트레이터 검증 병목"과 같은 논리.
+- **검증 루프 삽입**: Aggregator 출력에 self-critique 한 차례를 강제한다. Kim et al.의 "오케스트레이터 검증 병목"과 같은 논리[^kim_verify].
 
 ## 내 연구에 어떻게 맞물리나
 
@@ -122,3 +122,5 @@ flowchart LR
 - **미심쩍은 부분**: 세 논문이 같은 결론에 도달했다는 사실이 '조율자 강화가 옳다'를 증명하지는 않는다. 더 그럴듯한 설명은 '최강 모델을 조율자에 둔 설계만 발표에 살아남았다'는 생존자 편향일 수도 있다. Aggregator 쪽을 오히려 약하게 두고 Proposer 다양성을 극대화한 반례 설계를 본 기억이 있는가?
 - **검증 필요**: "Aggregator 토큰 예산 비대칭"은 내 추측일 뿐 논문 근거가 없다. 이걸 실험 변수로 넣으려면 단일 모델에서도 회귀계수 비를 관찰 가능한지 먼저 확인해야 한다 — 작은 파일럿(n=2~3 Proposer, Aggregator 강도 3단계)부터 돌려볼 만한가?
 - **다음 읽을 후보**: Chen의 Perspective 본문 — 오늘 글은 거버넌스 프레임으로 공학적 수렴을 재해석했는데, 그 역방향(거버넌스 실패 모드가 공학 실험에 어떻게 드러나는지)을 다루는 글을 다음 편에 쓰고 싶다. HiddenBench도 그 줄기에 있다.
+
+[^kim_verify]: "architecture-dependent error amplification stems from the presence or absence of validation bottlenecks that catch errors before propagation." — Kim et al. (2025), arXiv:2512.08296, §5.

@@ -44,7 +44,7 @@ flowchart LR
 
 HiddenBench는 이 과제를 LLM 집단에 이식했다. 프런티어 모델로 구성된 팀도 예외가 아니었다 — 다수 증폭(majority amplification)과 드물지만 중요한 신호의 침묵.
 
-이 현상은 낯설지 않다. Kim et al.이 정량화한 오류 증폭(17.2× Independent)을 다른 언어로 기술한 것이다. 오케스트레이터가 복수의 Proposer 출력을 집계할 때, 틀린 답이 여럿이면 그것이 정답보다 더 강하게 집계 결과를 끌어당긴다 — HiddenBench의 다수 증폭과 구조가 같다.
+이 현상은 낯설지 않다. Kim et al.이 정량화한 오류 증폭(17.2× Independent)을 다른 언어로 기술한 것이다[^kim_amp]. 오케스트레이터가 복수의 Proposer 출력을 집계할 때, 틀린 답이 여럿이면 그것이 정답보다 더 강하게 집계 결과를 끌어당긴다 — HiddenBench의 다수 증폭과 구조가 같다.
 
 **HiddenBench** (사회심리학 기원) — 공유 정보가 증폭되고 고유 신호가 묻혀 오답 수렴.
 
@@ -105,3 +105,5 @@ Chen은 세 상호작용 레짐을 구분한다.
 - **미심쩍은 부분**: HiddenBench와 Kim et al. 오류 증폭을 "같은 현상의 다른 표현"으로 묶었다. 이게 성립하려면 HiddenBench의 실패 메커니즘이 실제로 "공유 정보 증폭 + 고유 신호 침묵"이어야 하고, Kim et al.의 오류 증폭이 그것과 구조적으로 같아야 한다. 논문 원문을 읽기 전까지는 내 추론이 틀릴 수 있다 — 두 벤치마크를 나란히 읽어봤는가?
 - **진짜 궁금한 것**: 레짐 전환을 프로토콜에 내장하려면 "지금 어느 단계인지" 판단하는 메타 레이어가 필요하다. 그 메타 판단 자체가 오케스트레이터 부담이다. 레짐 전환이 득보다 실이 되는 경계 조건이 있을 것 같다 — 그 경계를 어떻게 찾을까?
 - **다음 읽을 후보**: Evans et al.의 "사고의 사회(society of thought)" 섹션 — DeepSeek-R1·QwQ-32B가 RL 보상 없이 단일 모델 내부에서 자발적으로 다관점 대화를 생성한다는 주장. 모델 내부 거버넌스와 모델 간 거버넌스가 재귀적으로 자기 유사하다는 Evans의 테제를 검토하고 싶다. 페르소나 분기가 "모델 외부에서 강제하는 내부 구조"라면, 모델이 스스로 생성하는 내부 구조와 어떻게 다른가?
+
+[^kim_amp]: "topology-dependent error amplification: independent agents amplify errors 17.2× through unchecked propagation, while centralized coordination contains this to 4.4×." — Kim et al. (2025), arXiv:2512.08296, Abstract.
