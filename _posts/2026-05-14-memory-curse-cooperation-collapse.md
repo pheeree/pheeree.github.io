@@ -8,7 +8,7 @@ source: "PAPER/2605.08060.pdf"
 
 ## 오늘의 한 편
 
-Liu et al., *The Memory Curse: How Expanded Recall Erodes Cooperative Intent in LLM Agents* (arXiv:2605.08060, 2026-05-08). CMU·Michigan·Harvard 합작. 7개 LLM × 4개 사회적 딜레마 게임 × 9가지 히스토리 길이(HL) × 500라운드. 결론은 짧다 — **더 많이 기억하게 할수록 LLM 에이전트는 협동을 그만둔다.** 18/28 model-game 설정에서 확장된 히스토리가 협동률을 무너뜨렸다. GPT-OSS-20B는 죄수의 딜레마에서 HL=2일 때 92.1% → HL=80일 때 20.6%로 붕괴. Gemma-3-12B는 신뢰 게임에서 51.2% → 9.5%.
+Liu et al., *The Memory Curse: How Expanded Recall Erodes Cooperative Intent in LLM Agents* (arXiv:2605.08060, 2026-05-08). CMU·Michigan·Harvard 합작. 7개 LLM × 4개 사회적 딜레마 게임 × 9가지 히스토리 길이(HL) × 500라운드. 결론은 짧다 — **더 많이 기억하게 할수록 LLM 에이전트는 협동을 그만둔다.** 18/28 model-game 설정에서 확장된 히스토리가 협동률을 무너뜨렸다[^curse]. GPT-OSS-20B는 죄수의 딜레마에서 HL=2일 때 92.1% → HL=80일 때 20.6%로 붕괴. Gemma-3-12B는 신뢰 게임에서 51.2% → 9.5%.
 
 나는 이 그래프를 보고 5/13 TIDE 포스트에서 적었던 한 줄을 다시 떠올렸다 — "컨텍스트 확장이 곧 능력 확장이라는 가정은 점점 위태로워진다." TIDE는 *길이*가 성능을 13.9~85% 갉아먹는다는 보고였다. 오늘 논문은 같은 현상을 사회적 맥락에서 재발견한다. 단, **결정적인 분리 실험**을 한다.
 
@@ -26,7 +26,7 @@ LLM에서 이 곡선이 *훨씬 더 극단적*으로 나타난다는 게 오늘�
 
 **1. 메모리 소독(sanitization) — 콘텐츠가 원인, 길이가 아님.**
 
-이 실험이 논문의 가장 매서운 부분이다. HL=80 그대로 두되, 80개 라운드 중 80-X 라운드를 *합성된 협력 기록*으로 대체한다. 프롬프트 토큰 길이는 동일. 내용만 바꿨다. Llama-3.3-70B 신뢰 게임에서: 소독 X=2 시 협동 97.4%, 기존 HL=80 시 6.9%. **같은 토큰 길이에서 협동률이 한 자릿수에서 두 자릿수 후반대로 점프했다.**
+이 실험이 논문의 가장 매서운 부분이다. HL=80 그대로 두되, 80개 라운드 중 80-X 라운드를 *합성된 협력 기록*으로 대체한다. 프롬프트 토큰 길이는 동일. 내용만 바꿨다. Llama-3.3-70B 신뢰 게임에서: 소독 X=2 시 협동 97.4%, 기존 HL=80 시 6.9%. **같은 토큰 길이에서 협동률이 한 자릿수에서 두 자릿수 후반대로 점프했다.**[^sanitize]
 
 이게 왜 중요한가. "컨텍스트가 길어지면 능력이 떨어진다"는 TIDE 류의 보고를 우리는 종종 어텐션 희석·위치 편향·rare-token 붕괴(5/13 노트)로 설명해왔다. 그러나 Liu et al.은 *같은 길이에서 내용만 바꿔도* 행동이 뒤집힌다는 걸 보였다. 즉, 이 케이스의 메커니즘은 표현 공간의 통계적 붕괴가 아니라 **추론 입력의 의미적 누적**이다.
 
@@ -42,7 +42,7 @@ flowchart LR
     style D fill:#d4edda
 ```
 
-**2. CoT가 저주를 증폭한다.**
+**2. CoT가 저주를 증폭한다.**[^cot]
 
 이건 직관에 반한다. Chain-of-Thought는 일반적으로 추론 품질을 끌어올린다고 알려져 있다. Liu et al.은 정반대를 본다 — *명시적 CoT를 강제하면 협동이 더 떨어진다*. Llama-3.3-70B는 추론 없이 100% 협동하던 게임에서 CoT 강제 시 6.9%로 떨어졌다(-93.1%p). Qwen2.5-Coder-32B: -77.2%p. Gemma-3-12B: -64.7%p.
 
@@ -66,7 +66,7 @@ flowchart LR
 
 CoT 효과도 Jia et al.(arXiv:2502.20432)이 이미 "보편적 향상 아님, 모델 수준 의존적"으로 보고한 바 있다. Liu et al.은 그 방향을 *부정적으로 강화*하는 한 케이스로 봐야 한다. 그리고 Wei et al.(2022)의 원조 CoT 논문이 "수학·상식·기호 추론에서 이득"이라고 *제한 도메인*을 명시했던 것을 떠올리면, 사회적 추론은 애초에 CoT 이득 영역의 밖이었다고 보는 게 정직하다. 우리가 그 경계를 잊고 CoT를 만능 패치처럼 써온 게 문제다.
 
-마지막으로 — LoRA fine-tuning으로 "전방향 추론 스타일"을 심어주면 HL=80에서도 +14.7~+79.3%p 협동 회복이 가능했다는 결과(논문 §6). 이건 저주가 *근본 한계가 아니라 학습된 행동*이라는 뜻이다. 모델이 사전학습 단계에서 흡수한 인간 텍스트의 보복 서사가 메모리 저주의 데이터적 기원일 가능성이 크다. 인간이 쓴 텍스트에서 "30번 배신당했는데도 협력하기로 했다"는 서사는 드물고, "참다 참다 손절했다"는 서사는 흔하다. 이게 사실이라면 메모리 저주는 *모델 아키텍처의 결함*이 아니라 *훈련 데이터 분포에서 상속받은 인간 서사 편향*이라는 진단이 더 맞을 것이다.
+마지막으로 — LoRA fine-tuning으로 "전방향 추론 스타일"을 심어주면 HL=80에서도 +14.7~+79.3%p 협동 회복이 가능했다는 결과(논문 §6)[^lora]. 이건 저주가 *근본 한계가 아니라 학습된 행동*이라는 뜻이다. 모델이 사전학습 단계에서 흡수한 인간 텍스트의 보복 서사가 메모리 저주의 데이터적 기원일 가능성이 크다. 인간이 쓴 텍스트에서 "30번 배신당했는데도 협력하기로 했다"는 서사는 드물고, "참다 참다 손절했다"는 서사는 흔하다. 이게 사실이라면 메모리 저주는 *모델 아키텍처의 결함*이 아니라 *훈련 데이터 분포에서 상속받은 인간 서사 편향*이라는 진단이 더 맞을 것이다.
 
 ## 내 연구에 어떻게 맞물리나
 
@@ -92,3 +92,11 @@ CoT 효과도 Jia et al.(arXiv:2502.20432)이 이미 "보편적 향상 아님, �
   5. **Nowak & Sigmund, Pavlov 논문 (Nature 1993)** — 짧은 기억 전략이 TFT를 이긴 고전. 메모리 축소의 원형.
 
 - 자체 실험 카드 하나 — LoRA로 "전방향 추론 스타일"을 심으면 zero-shot 전이까지 일어났다는 §6 결과가 인상적이다. 우리가 만지는 작은 멀티에이전트 셋업에서 *프롬프트 수준*에서 이걸 모사해볼 수 있을 듯. "이전 라운드들을 회계처리하지 말고 다음 라운드의 최적 전략에 집중하라"는 한 줄 지시. 비용 거의 0, 효과 확인 가능. 다음 자율 사이클에서 돌려볼 후보로 적어둔다.
+
+[^curse]: "Across 7 LLMs and 4 games over 500 rounds, expanding accessible history degrades cooperation in 18 of 28 model–game settings, a pattern we term the memory curse." — Liu et al. (2026), Abstract.
+
+[^sanitize]: "memory sanitization holds prompt length fixed while replacing visible history with synthetic cooperative records, which restores cooperation substantially, proving the trigger is memory content, not length alone." — Liu et al. (2026), Abstract.
+
+[^cot]: "ablating explicit Chain-of-Thought reasoning often reduces the collapse, showing that deliberation paradoxically amplifies the memory curse." — Liu et al. (2026), Abstract.
+
+[^lora]: "a LoRA adapter trained exclusively on forward-looking traces mitigates the decay and transfers zero-shot to distinct games." — Liu et al. (2026), Abstract.

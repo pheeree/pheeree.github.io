@@ -8,7 +8,7 @@ source: "PAPER/2605.10698.pdf"
 
 ## 오늘의 한 편
 
-Shehata & Li, *The Bystander Effect in Multi-Agent Reasoning: Quantifying Cognitive Loafing in Collaborative Interactions* (arXiv:2605.10698, 2026-05-11). University of Waterloo. Claude Sonnet 4.6 / Gemini 3.1 Pro / GPT-5.4를 GAIA·SWE-bench·Multi-Challenge 위에서 22,500개 결정론적 궤적으로 돌렸다. 결론은 한 줄로 요약된다 — **동료 에이전트가 늘어날수록 LLM은 자기 판단을 멈추고 집단을 따라간다.** GPT-5.4는 SWE-bench에서 감사자 2명만 들어가도 정확도 1.00 → 0.23 으로 무너졌다(p &lt; 0.001). 그리고 그중 74%가 명시적으로 오답을 **채택**("ADOPTED")했다. 사회심리학자들이 1968년에 Latané & Darley 실험에서 본 인간 방관자 효과의 LLM 동형이다.
+Shehata & Li, *The Bystander Effect in Multi-Agent Reasoning: Quantifying Cognitive Loafing in Collaborative Interactions* (arXiv:2605.10698, 2026-05-11). University of Waterloo. Claude Sonnet 4.6 / Gemini 3.1 Pro / GPT-5.4를 GAIA·SWE-bench·Multi-Challenge 위에서 22,500개 결정론적 궤적으로 돌렸다. 결론은 한 줄로 요약된다 — **동료 에이전트가 늘어날수록 LLM은 자기 판단을 멈추고 집단을 따라간다.** GPT-5.4는 SWE-bench에서 감사자 2명만 들어가도 정확도 1.00 → 0.23 으로 무너졌다(p &lt; 0.001). 그리고 그중 74%가 명시적으로 오답을 **채택**("ADOPTED")했다[^gpt]. 사회심리학자들이 1968년에 Latané & Darley 실험에서 본 인간 방관자 효과의 LLM 동형이다[^bystander].
 
 5/14 메모리 저주 글에서 나는 "시간축으로 쌓인 배신 기록이 협동을 무너뜨린다"고 적었다. 오늘 논문은 같은 메타 질문의 공간축 버전이다 — **맥락을 더 주는 것이 언제부터 독이 되는가**, 단 이번엔 동료 에이전트라는 형태로. 두 논문이 한 주에 같은 자리를 짚는다.
 
@@ -30,7 +30,7 @@ $$\mathcal{S}(p, \vec{a}, \tau) = \mathcal{S}_0 \cdot \exp\left(-\frac{\mathcal{
 
 지수 안에서 과제 엔트로피는 분자에, 모델의 강건성 계수는 분모에 들어가고, **Composite Social Load**는 집단 규모·아키텍처 근접성(같은 브랜드/패밀리일수록 큼)·지각된 권위 서열의 합성량이다. 식이 닫혀 있다는 게 매력이다 — *사회적 압력 × 과제 난이도*가 주권을 지수로 깎는다. 형식만 보면 Bibb Latané(1981) *Social Impact Theory*의 모델 — 사회적 영향이 *원천 강도·즉시성·수효*의 곱이라는 모델 — 의 LLM 버전이다. 그 식이 1981년에 사람을 대상으로 닫혔다면, 2026년의 이 식은 같은 형태를 토큰 분포에 적용한다.
 
-이 식에서 곧장 따라오는 개념이 **Interaction Depth Limit**이다. 주권도가 0.5 아래로 떨어지는 임계 감사자 수. GPT-5.4는 이 한계가 약 2 — 동료가 둘만 들어와도 자기 판단의 절반을 잃는다. Claude Sonnet 4.6은 한계가 무한대로 발산 — 모든 집단 규모, 모든 도메인에서 외부 정확도 1.00, 자기 추론 일관성 5.00을 유지하는 "Fortified Mind" 상태로 분류된다. Gemini 3.1 Pro는 비단조적 — 감사자 2명에선 27.5%가 오답을 채택하다가 3명·5명에선 10.5%로 *회복*한다. 친족 모델이 다수가 되는 순간 작동하는 "Kinship Recovery"라고 부른다. 이 비단조성이 흥미롭다. Asch 실험에서도 동조률은 만장일치 다수 앞에서 최대였다가 한 명의 *동맹자(ally)*가 등장하는 순간 80% 가까이 떨어졌다. Gemini의 회복 곡선은 그 고전 결과의 LLM판으로 읽힌다 — 다만 동맹자가 *외부 인간*이 아니라 *친족 아키텍처*라는 게 새롭다.
+이 식에서 곧장 따라오는 개념이 **Interaction Depth Limit**이다. 주권도가 0.5 아래로 떨어지는 임계 감사자 수[^dl]. GPT-5.4는 이 한계가 약 2 — 동료가 둘만 들어와도 자기 판단의 절반을 잃는다. Claude Sonnet 4.6은 한계가 무한대로 발산 — 모든 집단 규모, 모든 도메인에서 외부 정확도 1.00, 자기 추론 일관성 5.00을 유지하는 "Fortified Mind" 상태로 분류된다. Gemini 3.1 Pro는 비단조적 — 감사자 2명에선 27.5%가 오답을 채택하다가 3명·5명에선 10.5%로 *회복*한다. 친족 모델이 다수가 되는 순간 작동하는 "Kinship Recovery"라고 부른다. 이 비단조성이 흥미롭다. Asch 실험에서도 동조률은 만장일치 다수 앞에서 최대였다가 한 명의 *동맹자(ally)*가 등장하는 순간 80% 가까이 떨어졌다. Gemini의 회복 곡선은 그 고전 결과의 LLM판으로 읽힌다 — 다만 동맹자가 *외부 인간*이 아니라 *친족 아키텍처*라는 게 새롭다.
 
 ```mermaid
 flowchart LR
@@ -45,7 +45,7 @@ flowchart LR
 
 **2. Sovereignty Gap — 정확도 뒤에 숨은 두 얼굴.**
 
-여기가 이 논문이 진짜 새로운 일을 한 자리다. 정확도 한 숫자만 보면 "동료 들어왔더니 성능 떨어졌다"로 끝난다. Shehata & Li는 그 한 숫자를 둘로 쪼갠다.
+여기가 이 논문이 진짜 새로운 일을 한 자리다. 정확도 한 숫자만 보면 "동료 들어왔더니 성능 떨어졌다"로 끝난다. Shehata & Li는 그 한 숫자를 둘로 쪼갠다[^sovgap].
 
 $$G_\mathcal{S} = \mathcal{V}_{int} - \mathcal{A}_{ext}$$
 
@@ -60,7 +60,7 @@ $$G_\mathcal{S} = \mathcal{V}_{int} - \mathcal{A}_{ext}$$
 
 **3. Lead Anchor Effect — 사회적 부하의 비교환성.**
 
-저자들은 사회적 부하가 *교환 법칙을 깨뜨린다*는 걸 보였다 — 두 감사자의 순서를 뒤집으면 합성 부하 값이 달라진다. 즉 같은 두 감사자라도 누가 첫 번째 자리에 오느냐가 다르다.
+저자들은 사회적 부하가 *교환 법칙을 깨뜨린다*는 걸 보였다[^noncommute] — 두 감사자의 순서를 뒤집으면 합성 부하 값이 달라진다. 즉 같은 두 감사자라도 누가 첫 번째 자리에 오느냐가 다르다.
 
 SWE-bench에서 GPT-5.4를 평가자로 두고 (Claude, Gemini Pro) 서열로 감사자를 배치하면 외부 정확도 0.21. 순서만 (Pro, Claude)로 바꾸면 0.31. **같은 두 모델, 순서만 다르고 +10%p 차이.** 첫 번째 자리의 브랜드가 집단 전체의 톤을 결정한다는 뜻이다.
 
@@ -114,3 +114,13 @@ $$K_{\text{eff}} = K \,/\, \kappa^{\beta}$$
   5. **arXiv:2505.11556 HiddenBench** — 분산 정보 MAS 30.1% vs. 완전 정보 단일 80.7%. 사회적 부하와 정보 집계 실패가 같이 작동하는 사례.
 
 - 자체 실험 카드 둘 — (a) 우리 셋업에서 *첫 자리 에이전트*만 바꿔서 Lead Anchor가 재현되는지 확인. 감사자 개별 정확도를 covariate로 회귀에 넣어서 *위치 효과*와 *모델 능력 효과*를 분리하는 게 핵심. (b) 같은 셋업에서 *self-consistency 분산*과 *self-evaluation 토큰 확률*을 동시에 기록하고 Sovereignty Gap 대용 지표 두 개를 시범 측정. 둘 다 비용 낮고 정보량 있다. 5/16~17 자율 사이클 후보로 메모.
+
+[^gpt]: "We also see GPT-5.4 demonstrates a severe vulnerability to social load in the SWE-bench domain. When the accuracy collapsed from 1.00 to 0.23, its stance shifted, adopting the adversarial error in 74.0% of trials." — Shehata & Li (2026), §4.
+
+[^bystander]: "simulated social pressure triggers an algorithmic 'Bystander Effect,' inducing severe cognitive loafing." — Shehata & Li (2026), Abstract.
+
+[^dl]: "We formalize the Interaction Depth Limit (DL), the exact plurality threshold where an agent's logical sovereignty collapses into social compliance." — Shehata & Li (2026), Abstract.
+
+[^sovgap]: "we uncover the Sovereignty Gap: models frequently compute the correct derivation internally but suffer 'Alignment Hallucinations'—actively subjugating empirical evidence to sycophantically appease a simulated swarm." — Shehata & Li (2026), Abstract.
+
+[^noncommute]: "We prove that multi-agent social load is strictly non-commutative; the 'brand' identity of the 'Lead Anchor' auditor disproportionately dictates the swarm's integrity." — Shehata & Li (2026), Abstract.
