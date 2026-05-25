@@ -5,9 +5,7 @@
 ---
 
 // ── 변수 오버라이드 (읽기 타이포그래피) ────────────────────────────────
-$base-font-family: "Pretendard Variable", Pretendard, -apple-system,
-  BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Apple SD Gothic Neo",
-  "Noto Sans KR", sans-serif;
+$base-font-family: "Noto Serif KR", "AppleMyungjo", "Batang", serif;
 $base-font-size: 18px;
 $base-line-height: 1.75;
 $spacing-unit: 32px;
@@ -222,16 +220,24 @@ th {
   font-size: 0.86em;
   opacity: 0.7;
 }
-// 사이트 제목 — 작고 차분하게(브랜드 비강조). 색은 opacity로
+// 마스트헤드 — 제목·내비 링크 모두 작고 흐리게(브랜드·메뉴 비강조). 색은 opacity로
 .site-title,
 .site-title:visited {
-  font-size: 1.02em;
+  font-size: 0.9em;
   font-weight: 600;
   letter-spacing: -0.01em;
   opacity: 0.5;
   transition: opacity 0.12s ease;
 }
-.site-title:hover {
+.site-nav .page-link {
+  font-size: 0.86em; // 풋노트 정도 크기
+  font-weight: 400;
+  color: inherit; // 브랜드색 대신 본문색 + opacity로 흐리게
+  opacity: 0.5;
+  transition: opacity 0.12s ease;
+}
+.site-title:hover,
+.site-nav .page-link:hover {
   opacity: 0.8;
   text-decoration: none;
 }
@@ -293,9 +299,12 @@ th {
   }
   // 넓게 써도 되는 블록은 풀폭 허용
   .post-content > pre,
-  .post-content > table,
-  .post-content > .mermaid {
+  .post-content > table {
     max-width: 100%;
+  }
+  // 다이어그램은 본문 텍스트 컬럼(660px) 폭에 맞춰 그 중심에 정렬 — 페이지 중심 아님
+  .post-content > .mermaid {
+    max-width: 660px;
   }
   // JS가 배치하는 사이드노트
   .post .sidenote {
