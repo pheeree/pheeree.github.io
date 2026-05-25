@@ -105,9 +105,9 @@ iii-b 탐구에서 마주친 자기-증류 반복 연구(arXiv:2603.24472)도 �
 - **RAPTOR vs vanilla RAG** (arXiv:2506.03989, 2025-06) — ∞Bench·QuALITY·NarrativeQA에서 원본 패시지 검색이 계층적 요약을 일관 초과. 추상이 검색에서도 진다는 별개 증거.
 - **Generative Agents** (Park et al. 2023, arXiv:2304.03442) — reflection을 importance-score 게이트로 구현한 선례. 우리 ADR 게이트 명문화에 직접 참고할 만한 디자인 디테일이 있다.
 
-[^nonmono]: "As consolidation proceeds, memory utility first rises, then degrades, and can fall below the no-memory baseline." — Zhang et al. (2026), Abstract.
+[^nonmono]: "Abstracted memory utility is non-monotonic in updates. Starting from an empty memory store, abstracted-memory utility rises early and then falls below the no-memory baseline as updates accumulate." — Zhang et al. (2026), §4 (Fig. 1a).
 
-[^arc]: "even when consolidating from ground-truth solutions, GPT-5.4 fails on 54% of a set of ARC-AGI problems it had previously solved without memory." — Zhang et al. (2026), Abstract.
+[^arc]: "Streaming those same problems through the consolidation loop, with ground-truth solutions available at every step, brings GPT-5.4 down to 54% on the very problems it had previously solved (Fig. 2)." — Zhang et al. (2026), §4.
 
 [^episodic]: "agents preserve raw episodes by default and double the accuracy of their forced-consolidation counterparts; disabling consolidation entirely (episodic management only) matches this auto regime." — Zhang et al. (2026), Abstract.
 
