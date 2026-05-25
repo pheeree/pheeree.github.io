@@ -306,6 +306,11 @@ th {
   .post-content > .mermaid {
     max-width: 660px;
   }
+  // 디스플레이 수식도 같은 원리 — 텍스트 컬럼 폭에 맞춰 그 중심에 정렬(페이지 중심 아님).
+  // mjx-container[display]는 기본 margin:1em 0(좌측 정렬)이라 660px 안에서 수식이 중앙에 온다.
+  .post-content mjx-container[display="true"] {
+    max-width: 660px;
+  }
   // JS가 배치하는 사이드노트
   .post .sidenote {
     position: absolute;
