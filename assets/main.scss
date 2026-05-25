@@ -1,24 +1,21 @@
 ---
-# 이 파일은 gem의 assets/main.scss를 덮어쓴다.
-# 아래 @import 줄은 minima 2.5의 main.scss와 동일 — 스킨(auto 라이트/다크) 그대로 유지.
-# 변수 오버라이드는 반드시 @import "minima/initialize" 앞에 와야 한다(minima가 !default 사용).
+# minima 2.5.1 구조: assets/main.scss는 `@import "minima"` 한 줄.
+# 변수는 @import 앞에서 오버라이드한다(minima가 !default를 쓰므로 먼저 대입한 값이 이긴다).
+# 정제 레이어는 @import 뒤에 두어 cascade로 덮어쓴다.
 ---
 
 // ── 변수 오버라이드 (읽기 타이포그래피) ────────────────────────────────
 $base-font-family: "Pretendard Variable", Pretendard, -apple-system,
   BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Apple SD Gothic Neo",
-  "Noto Sans KR", sans-serif !default;
-$code-font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono",
-  monospace !default;
-$base-font-size: 18px !default;
-$base-line-height: 1.75 !default;
-$spacing-unit: 32px !default;
-$content-width: 760px !default; // .wrapper 실측 폭 ≈ 696px → 한글 18px에서 한 줄 ~42자
+  "Noto Sans KR", sans-serif;
+$base-font-size: 18px;
+$base-line-height: 1.75;
+$spacing-unit: 32px;
+$content-width: 760px; // .wrapper 실측 폭 ≈ 696px → 한글 18px에서 한 줄 ~42자
 
-@import "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+@import "minima";
 
-// ── 정제 레이어 (색 비고정: muted=opacity, 보더=중립 회색 → auto 스킨 유지) ──
+// ── 정제 레이어 (색 비고정: muted=opacity, 보더=중립 회색) ──
 
 :root {
   --rn-rule: rgba(128, 128, 128, 0.22);
@@ -108,7 +105,7 @@ th {
   letter-spacing: 0.01em;
 }
 
-// 링크 — 차분한 밑줄, 색은 스킨 상속
+// 링크 — 차분한 밑줄, 색은 테마 상속
 .post-content a {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
@@ -225,7 +222,7 @@ th {
   font-size: 0.86em;
   opacity: 0.7;
 }
-// 사이트 제목 — 작고 차분하게(브랜드 비강조). 색은 opacity로(라이트/다크 공용)
+// 사이트 제목 — 작고 차분하게(브랜드 비강조). 색은 opacity로
 .site-title,
 .site-title:visited {
   font-size: 1.02em;
