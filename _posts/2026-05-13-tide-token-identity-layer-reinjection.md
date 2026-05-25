@@ -139,8 +139,8 @@ K=2만 써도 전체 이익의 약 55%가 회수된다는 점도 유효 채널(K
 
 [^single]: "a token index is looked up once at the input embedding layer and then permanently discarded. This single-injection assumption induces two structural failures." — Jaiswal et al. (2026), Abstract.
 
-[^rare]: "the Rare Token Problem, where a Zipf-type distribution of vocabulary causes rare-token embeddings are chronically under-trained due to receiving a fraction of the cumulative gradient signal compared to common tokens." — Jaiswal et al. (2026), Abstract.
+[^rare]: "For the empirical instantiation in Table 1, the ratio between rare tokens (Bin 1) and common tokens (Bin 9) is ε/c ≈ 10−6, a disparity of six orders of magnitude of gradient signal between rare and common tokens over the same training budget." — Jaiswal et al. (2026), §2.1.
 
-[^collapse]: "the Contextual Collapse Problem, where limited parameters models map distributionally similar tokens to indistinguishable hidden states." — Jaiswal et al. (2026), Abstract.
+[^collapse]: "When semantically distinct tokens appear in nearly identical syntactic environments, the context provides limited differentiating signal and their hidden states become nearly indistinguishable across the network (Figure 2)." — Jaiswal et al. (2026), §2.2.
 
 [^tide]: "we propose TIDE, which augments the standard transformer with EmbeddingMemory: an ensemble of K independent MemoryBlocks that map token indices to context-free semantic vectors, computed once and injected into every layer through a depth-conditioned softmax router with a learnable null bank." — Jaiswal et al. (2026), Abstract.
