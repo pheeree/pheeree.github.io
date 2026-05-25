@@ -9,11 +9,11 @@ source: "PAPER/2603.12710.pdf"
 
 ## 오늘의 한 편
 
-Shahnovsky와 Dror가 University of Haifa에서 쓴 *AI Planning Framework for LLM-Based Web Agents* (2026-03-13, arXiv:2603.12710). 제목만 보면 평범한 서베이지만, 실제로 하는 일은 도발적이다. 이 논문은 현대 LLM 기반 웹 에이전트를 1971년 STRIPS 이래 축적된 고전 AI 계획의 어휘 — BFS, DFS, best-first tree search — 위에 다시 올려놓는다. 그리고 묻는다. 우리가 "에이전트가 잘했다"고 말할 때, 정확히 무엇을 측정하고 있는가.
+Shahnovsky와 Dror가 University of Haifa에서 쓴 *AI Planning Framework for LLM-Based Web Agents* (2026-03-13, arXiv:2603.12710). 제목만 보면 평범한 서베이지만, 실제로 하는 일은 도발적이다. 이 논문은 현대 LLM 기반 웹 에이전트를 1971년 STRIPS 이래 축적된 고전 AI 계획의 어휘 — BFS, DFS, best-first tree search — 위에 다시 올려놓는다[^seqdm]. 그리고 묻는다. 우리가 "에이전트가 잘했다"고 말할 때, 정확히 무엇을 측정하고 있는가.
 
-저자들의 장치는 두 겹이다. 첫째, 분류 체계. Step-by-Step 에이전트(WebArena 류)는 매 스텝 현재 상태만 보고 다음 행동을 결정하므로 깊이 d=1의 BFS와 동형이다. Tree Search 에이전트는 가치 함수 V: S→[0,1]로 노드를 평가하며 전개하는 best-first tree search다. Full-Plan-in-Advance 에이전트는 실행 전에 행동 시퀀스 τ=(a₁,...,aₙ)을 통째로 만들고 매 스텝 그 계획을 컨텍스트에 다시 주입한다 — 사실상 사전 계획된 DFS다.
+저자들의 장치는 두 겹이다. 첫째, 분류 체계. Step-by-Step 에이전트(WebArena 류)는 매 스텝 현재 상태만 보고 다음 행동을 결정하므로 깊이 d=1의 BFS와 동형이다. Tree Search 에이전트는 가치 함수 V: S→[0,1]로 노드를 평가하며 전개하는 best-first tree search다. Full-Plan-in-Advance 에이전트는 실행 전에 행동 시퀀스 τ=(a₁,...,aₙ)을 통째로 만들고 매 스텝 그 계획을 컨텍스트에 다시 주입한다 — 사실상 사전 계획된 DFS다[^taxonomy].
 
-둘째, 5개 궤적 지표: Recovery Rate, Repetitiveness Rate, Step Success Rate, Element Accuracy Rate, Partial Success Rate. 이진 성공률 한 줄로는 보이지 않는 결을 드러내자는 시도다.
+둘째, 5개 궤적 지표: Recovery Rate, Repetitiveness Rate, Step Success Rate, Element Accuracy Rate, Partial Success Rate. 이진 성공률 한 줄로는 보이지 않는 결을 드러내자는 시도다[^metrics].
 
 ## 왜 골랐나
 
@@ -41,7 +41,7 @@ graph LR
   F -. "긴장" .- D
 ```
 
-**둘, 핵심 역설 — 더 정확하게 클릭하지만 더 자주 헤맨다.** WebArena 812 태스크 / GPT-4o-mini / 5개 도메인 실험. 전체 성공률은 Step-by-Step 38.41%, Full-Plan-in-Advance 36.29%로 -2.12%. 차이는 작지만 결이 흥미롭다. Element Accuracy는 89% vs 82% — 사전 계획을 가진 쪽이 의도한 요소를 더 정확히 클릭한다. 그러나 Step Success Rate는 58% vs 82% — 인간 참조 경로와의 일치도는 오히려 낮다. 평균 스텝 수는 인간 7.92, Step-by-Step 15.02, Full-Plan-in-Advance 20.21. 정확하게 클릭하지만 더 많이 헤매는 에이전트.
+**둘, 핵심 역설 — 더 정확하게 클릭하지만 더 자주 헤맨다.** WebArena 812 태스크 / GPT-4o-mini / 5개 도메인 실험. 전체 성공률은 Step-by-Step 38.41%, Full-Plan-in-Advance 36.29%로 -2.12%[^results]. 차이는 작지만 결이 흥미롭다. Element Accuracy는 89% vs 82% — 사전 계획을 가진 쪽이 의도한 요소를 더 정확히 클릭한다. 그러나 Step Success Rate는 58% vs 82% — 인간 참조 경로와의 일치도는 오히려 낮다. 평균 스텝 수는 인간 7.92, Step-by-Step 15.02, Full-Plan-in-Advance 20.21. 정확하게 클릭하지만 더 많이 헤매는 에이전트.
 
 저자들의 진단은 Task 82가 압축한다. 사람은 'Foot(OSRM)'으로 교통수단을 바꾸는 단계를 즉각 수행한다. 화면을 보면 그 토글이 거기 있으니까. 하지만 사전 계획 에이전트는 초기 접근성 트리만으로 계획을 세웠으므로 그 UI 상태의 존재를 모른다. 계획에 그 단계가 없다. 결국 우회로를 만든다. 정확하게, 그러나 멀게.
 
@@ -88,3 +88,11 @@ graph LR
 3. **arXiv:2602.21230 — TRACE**. Pass@1의 "고점수 환상" 비판. 증거 기초화·인지 효율·추론 과정 품질을 동시에 수량화하는 계층적 궤적 효용 함수. 오늘 글이 5개 지표를 평행하게 두었다면, TRACE는 그것들을 하나의 효용 함수로 묶으려 한다 — 다른 디자인 선택의 비교.
 
 셋 중에서는 (1)이 직접 후속이라 가장 자연스럽다. 다만 (2)는 평가 방법론 자체를 한 단계 위에서 의심하게 만드는 글이라, 시리즈의 결을 한 번 비틀기에 좋은 카드다. 결정은 네게 맡긴다.
+
+[^seqdm]: "This paper addresses this gap by formally treating web tasks as sequential decision-making processes." — Shahnovsky & Dror (2026), Abstract.
+
+[^taxonomy]: "We introduce a taxonomy that maps modern agent architectures to traditional planning paradigms: Step-by-Step agents to Breadth-First Search (BFS), Tree Search agents to Best-First Tree Search, and Full-Plan-in-Advance agents to Depth-First Search (DFS)." — Shahnovsky & Dror (2026), Abstract.
+
+[^metrics]: "we propose five novel evaluation metrics that assess trajectory quality beyond simple success rates. We support this analysis with a new dataset of 794 human-labeled trajectories from the WebArena benchmark." — Shahnovsky & Dror (2026), Abstract.
+
+[^results]: "while the Step-by-Step agent aligns more closely with human gold trajectories (38.41% overall success), the Full-Plan-in-Advance agent excels in technical measures such as element accuracy (89%)." — Shahnovsky & Dror (2026), Abstract.

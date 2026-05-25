@@ -9,7 +9,7 @@ source: "PAPER/2604.09852.pdf"
 
 ## 오늘의 한 편
 
-Microsoft Research가 4월 10일 올린 [MEMENTO](https://arxiv.org/abs/2604.09852). 추론 모델이 자기 자신의 사고 과정을 블록으로 끊고, 각 블록을 원본의 15-25% 크기로 압축한 "memento"로 갈음한 뒤 그 요약만 보고 추론을 이어가도록 학습시킨다. KV 캐시 피크가 절반 이하로 떨어지고 처리량이 약 1.75배 오른다. Qwen3-32B가 AIME'26에서 75.2% → 72.6%, 2.6 pp만 떨어뜨리고 그걸 해낸다.
+Microsoft Research가 4월 10일 올린 [MEMENTO](https://arxiv.org/abs/2604.09852). 추론 모델이 자기 자신의 사고 과정을 블록으로 끊고, 각 블록을 원본의 15-25% 크기로 압축한 "memento"로 갈음한 뒤 그 요약만 보고 추론을 이어가도록 학습시킨다[^method]. KV 캐시 피크가 절반 이하로 떨어지고 처리량이 약 1.75배 오른다. Qwen3-32B가 AIME'26에서 75.2% → 72.6%, 2.6 pp만 떨어뜨리고 그걸 해낸다.
 
 제목이 좀 영리하다. memento는 한쪽으로 보면 기념품·유품, 다른 쪽으로 보면 Memento(2000)의 그 메모 — 단기 기억을 잃은 인물이 자기 몸과 폴라로이드에 새기는 외부화된 단서. 영화의 주인공은 자기 메모를 다시 읽어도 그 메모를 누가 어떤 의도로 썼는지를 검증할 수 없다. 오늘 글은 결국 그 자리에 도착한다.
 
@@ -25,17 +25,17 @@ MEMENTO는 표면적으로 그 그림에 매우 가깝다. 추론을 블록으�
 
 ### 1. 모델은 자기 컨텍스트를 스스로 편집할 수 있다
 
-가장 놀라운 결과는 정확도 수치보다도 **이게 실제로 학습 가능한 행동**이라는 사실이다. OpenMementos 데이터셋(QwQ-32B로 생성한 OpenThoughts-v3 트레이스 228K개를 경계 점수화 → 분할 → 컴프레서+심판 2회 반복으로 정제, 합격률 28% → 92%)으로 SFT를 돌리면, 모델은 "지금까지의 사고를 한 단락으로 줄이고 거기서부터 다시 시작"이라는 메타 동작을 안정적으로 수행한다.
+가장 놀라운 결과는 정확도 수치보다도 **이게 실제로 학습 가능한 행동**이라는 사실이다. OpenMementos 데이터셋(QwQ-32B로 생성한 OpenThoughts-v3 트레이스 228K개를 경계 점수화 → 분할 → 컴프레서+심판 2회 반복으로 정제, 합격률 28% → 92%)으로 SFT를 돌리면, 모델은 "지금까지의 사고를 한 단락으로 줄이고 거기서부터 다시 시작"이라는 메타 동작을 안정적으로 수행한다[^dataset].
 
 이 동작에 학문적 이름을 붙이자면 메타인지 — 좀 더 좁히면 1979년 Flavell이 "metacognition"으로 정식화한 "자기 인지 과정에 대한 인지", 그중에서도 자기 모니터링과 자기 조절(self-regulation) 갈래에 가깝다. 인지심리학에서 50년 가까이 묵힌 개념이 이제 모델의 토큰 생성 흐름 안에서 직접 관측 가능한 행동으로 내려왔다는 게 흥미롭다. Schmidhuber의 90년대 self-referential network, 더 가까이는 Anthropic의 introspection 연구와 한 줄로 잇닿는 계보다. 다만 차이가 있다 — 앞선 작업들은 "모델이 자기 상태를 보고할 수 있는가"를 물었고, MEMENTO는 "모델이 자기 상태를 **편집할 수 있는가**"를 묻는다. 보고에서 편집으로 한 단계 진전한 셈이다.
 
-지금까지 컨텍스트 압축은 거의 다 외부 인프라의 일이었다. RAG의 청킹, vLLM의 PagedAttention, KV 양자화, sink token, sliding window — 전부 모델 바깥에서 누군가가 결정한다. MEMENTO는 그 결정을 모델 안으로 끌어왔다. 6배 트레이스 압축, 2-3배 피크 KV 절감이 외부 스케줄러 없이 모델 자신의 토큰 생성 흐름에서 나온다.
+지금까지 컨텍스트 압축은 거의 다 외부 인프라의 일이었다. RAG의 청킹, vLLM의 PagedAttention, KV 양자화, sink token, sliding window — 전부 모델 바깥에서 누군가가 결정한다. MEMENTO는 그 결정을 모델 안으로 끌어왔다. 6배 트레이스 압축, 2-3배 피크 KV 절감이 외부 스케줄러 없이 모델 자신의 토큰 생성 흐름에서 나온다[^kv].
 
 가까운 이웃들도 같은 가족이다. InftyThink(Yan et al., 2025·2026)의 요약+반복 추론 청크, Accordion-Thinking(Yang et al., 2026)의 Fold/Unfold 모드, The Markovian Thinker(Aghajohari et al., 2025)의 청크 경계 carryover. MEMENTO는 이 셋과 한 가족이지만 결정적인 한 곳에서 다르다 — 앞의 셋은 모두 KV를 버리고 텍스트만 남긴다.
 
 ### 2. 이중 스트림 — 두 개의 채널이 함께 가야 한다
 
-논문에서 가장 단단한 발견은 ablation 한 줄이다. memento 텍스트는 그대로 두고 KV 채널만 제거하면 AIME'24에서 15 pp가 빠진다. 반대로 KV는 두고 memento 텍스트를 제거하면 모델이 "지금 어디까지 왔는지"를 잃는다. **명시적 채널(memento 텍스트)과 암묵적 채널(KV 상태)이 둘 다 필요하다.**
+논문에서 가장 단단한 발견은 ablation 한 줄이다. memento 텍스트는 그대로 두고 KV 채널만 제거하면 AIME'24에서 15 pp가 빠진다. 반대로 KV는 두고 memento 텍스트를 제거하면 모델이 "지금 어디까지 왔는지"를 잃는다. **명시적 채널(memento 텍스트)과 암묵적 채널(KV 상태)이 둘 다 필요하다.**[^dual]
 
 이중 스트림 자체는 새 개념이 아니다. Tulving이 1972년 episodic vs semantic memory를 가른 이래, 인지신경과학은 declarative(말로 꺼낼 수 있는)와 procedural(꺼낼 수 없지만 행동에 남는) 두 갈래를 줄곧 다뤄왔다. MEMENTO의 두 채널은 그 구도를 토큰 시퀀스 위에 옮겨놓은 것에 가깝다 — memento 텍스트가 declarative, 보존된 KV 엔트리가 procedural. 사람도 자전거 타는 법을 말로 다 설명할 수 없듯, 모델도 자기 사고를 텍스트로 다 압축하지 못한다. 그렇다고 안심할 수 있는 비유는 아니다. 사람의 procedural 기억은 본인 안에 머물지만, 모델의 KV는 외부에서 읽을 수 없는 채로 추론 결과에 영향을 준다. 같은 구조, 다른 함의다.
 
@@ -112,3 +112,11 @@ knowledge-mind에 적어둔 decision-memory-systems-separation 노트의 결론�
 **둘째, 잠재 공간 vs 토큰 공간.** [CoLaR](https://arxiv.org/abs/2505.16552)은 잠재 임베딩 공간에서 추론을 압축한다. CoT 대비 53.3% 길이 감소, 정확도 손실 4.8%. MEMENTO가 토큰 공간 텍스트로 가는 것과 정반대 방향이다. 두 접근이 같은 문제를 다른 표현 공간에서 푸는 셈인데, 어느 쪽이 감사 가능성에 더 친화적인지는 자명하지 않다. 잠재 공간은 외부에서 읽기 더 어렵지만, 토큰 공간 텍스트도 KV 의존성이 붙으면 결국 외부에서 검증 불가다.
 
 **다음 읽을 후보**: [Accordion-Thinking](https://arxiv.org/abs/2602.03249)과 [Markovian Thinker](https://arxiv.org/abs/2510.06557). 이 둘이 정말로 텍스트 단독으로 MEMENTO에 근접한 효율을 낸다면, KV 의존성 없는 구조적 추론 압축이 가능하다는 뜻이다 — 그게 확인되면 트레이드오프 삼각형의 한 꼭짓점을 옮길 수 있다.
+
+[^method]: "We introduce MEMENTO: a method that teaches models to segment reasoning into blocks, compress each block into a memento, i.e., a dense state summary, and reason forward by attending only to mementos, reducing context, KV cache, and compute." — Kontonis et al. (2026), Abstract.
+
+[^dataset]: "we release OpenMementos, a public dataset of 228K reasoning traces derived from OpenThoughts-v3, segmented and annotated with intermediate summaries." — Kontonis et al. (2026), Abstract.
+
+[^kv]: "Trained models maintain strong accuracy on math, science, and coding benchmarks while achieving ∼2.5× peak KV cache reduction. We extend vLLM to support our inference method, achieving ∼1.75× throughput improvement." — Kontonis et al. (2026), Abstract.
+
+[^dual]: "we identify a dual information stream: information from each reasoning block is carried both by the memento text and by the corresponding KV states, which retain implicit information from the original block. Removing this channel drops accuracy by 15 pp on AIME24." — Kontonis et al. (2026), Abstract.
