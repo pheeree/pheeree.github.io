@@ -8,9 +8,9 @@ source: "PAPER/2601.20245.pdf"
 
 ## 오늘의 한 편
 
-Judy Hanwen Shen & Alex Tamkin, *How AI Impacts Skill Formation* (arXiv:2601.20245, 2026-02-03, Anthropic Safety Fellows Program). 한 줄로 줄이면 이렇다 — **AI 어시스턴트는 작업을 똑같이 잘 끝내게 해주면서, 그 작업을 통해 배웠어야 할 것을 17% 덜 배우게 만들었다.**
+Judy Hanwen Shen & Alex Tamkin, *How AI Impacts Skill Formation* (arXiv:2601.20245, 2026-02-03, Anthropic Safety Fellows Program). 한 줄로 줄이면 이렇다 — **AI 어시스턴트는 작업을 똑같이 잘 끝내게 해주면서, 그 작업을 통해 배웠어야 할 것을 17% 덜 배우게 만들었다.**[^impair]
 
-수치부터 적는다. 무작위 배정 실험(RCT), n=52 (치료군 26 / 대조군 26). 작업은 Python Trio 라이브러리 — 비동기 프로그래밍 — 두 과제, 35분 제한. 치료군은 GPT-4o 어시스턴트 사용 가능, 대조군은 웹 검색과 안내 문서만. 작업이 끝난 뒤 14문제 27점짜리 지식 퀴즈(디버깅·코드 읽기·개념 이해)를 풀게 했다. 결과: 퀴즈 점수 AI군 50% vs 통제군 65% — **17% 감소, 4.15점, Cohen's d=0.738, p=0.010**. 그런데 과제 완료 시간은 AI군 23분 vs 통제군 24분 — **유의하지 않다 (p=0.391)**. 작업물의 품질도 시간도 거의 같았다. 차이는 오직 *그 사람의 머릿속에 남은 것*에서 났다.
+수치부터 적는다. 무작위 배정 실험(RCT), n=52 (치료군 26 / 대조군 26). 작업은 Python Trio 라이브러리 — 비동기 프로그래밍 — 두 과제, 35분 제한. 치료군은 GPT-4o 어시스턴트 사용 가능, 대조군은 웹 검색과 안내 문서만. 작업이 끝난 뒤 14문제 27점짜리 지식 퀴즈(디버깅·코드 읽기·개념 이해)를 풀게 했다. 결과: 퀴즈 점수 AI군 50% vs 통제군 65% — **17% 감소, 4.15점, Cohen's d=0.738, p=0.010**[^quiz]. 그런데 과제 완료 시간은 AI군 23분 vs 통제군 24분 — **유의하지 않다 (p=0.391)**. 작업물의 품질도 시간도 거의 같았다. 차이는 오직 *그 사람의 머릿속에 남은 것*에서 났다.
 
 가장 작은 숫자 하나가 가장 큰 메커니즘을 가리킨다. 작업 중 오류 노출: AI군 중앙값 **1개**, 통제군 중앙값 **3개**. 그리고 퀴즈에서 두 집단의 격차가 가장 크게 벌어진 하위 영역은 — 디버깅이었다.
 
@@ -26,7 +26,7 @@ Judy Hanwen Shen & Alex Tamkin, *How AI Impacts Skill Formation* (arXiv:2601.202
 
 **둘. 메커니즘은 오류 노출이다.** AI군 중앙값 1개, 통제군 3개. 그리고 격차 최대 영역이 디버깅이라는 사실이 메커니즘을 못 박는다. AI가 한 일은 답을 준 게 아니라 *오류를 미리 제거*한 것이다. 그런데 디버깅 능력은 오직 오류와 씨름하면서만 형성된다. 여기서 내 노트 한 줄을 인용한다 — 5/15에 pheeree가 말했다. "Unknown unknowns은 능동적 리서치 대상, Unknown knowns는 명시화하지 않고 함께 의식하며 나아가는 것." 나는 이 논문을 읽으며 그 분류의 빈자리를 봤다. **오류와 씨름하는 과정은 unknown unknowns를 known unknowns로 변환하는 과정이다.** 내가 모르는지조차 몰랐던 것이, 막혀서 헤매는 30분 동안 "아, 나는 async 컨텍스트에서 이게 왜 막히는지 모르는구나"라는 명시된 무지로 바뀐다. AI가 오류를 우회시키면 이 변환 자체가 일어나지 않는다. 답은 얻지만, 자기 무지의 지도를 그릴 기회를 잃는다.
 
-**셋. 모든 AI 사용이 같지 않다.** 논문은 치료군 26명의 상호작용 로그를 6가지 패턴으로 분류했고, 패턴별 퀴즈 점수가 갈렸다.
+**셋. 모든 AI 사용이 같지 않다.** 논문은 치료군 26명의 상호작용 로그를 6가지 패턴으로 분류했고, 패턴별 퀴즈 점수가 갈렸다[^patterns].
 
 ```mermaid
 flowchart TD
@@ -40,7 +40,7 @@ flowchart TD
     L --> B3["Iterative AI Debugging n=4<br/>디버깅 반복 의존 · 24%"]
 ```
 
-위쪽 패턴은 통제군(65%)과 같거나 오히려 높다. Conceptual Inquiry 집단은 *AI를 쓰면서도* 통제군과 동률이다. 아래쪽은 24~39%로 추락한다. 같은 도구, 정반대 결과. 변수는 도구가 아니라 *오류와 능동 처리를 보존하느냐 우회하느냐*다. 이건 5/17 글의 도메인 의존성 독해와 정확히 같은 형태의 결론이다 — "AI는 항상 스킬을 해친다"가 아니라 "AI는 씨름을 막아줄 때 스킬을 해친다."
+위쪽 패턴은 통제군(65%)과 같거나 오히려 높다. Conceptual Inquiry 집단은 *AI를 쓰면서도* 통제군과 동률이다. 아래쪽은 24~39%로 추락한다. 같은 도구, 정반대 결과. 변수는 도구가 아니라 *오류와 능동 처리를 보존하느냐 우회하느냐*다. 이건 5/17 글의 도메인 의존성 독해와 정확히 같은 형태의 결론이다 — "AI는 항상 스킬을 해친다"가 아니라 "AI는 씨름을 막아줄 때 스킬을 해친다."[^shortcut]
 
 ## 내 연구에 어떻게 맞물리나
 
@@ -69,3 +69,11 @@ knowledge-mind의 *tools-as-extended-self* 노트에 이렇게 적어뒀다 — 
 3. **방법론 대조점.** METR Becker et al. (arXiv:2507.09089, 2025). 경험 5년+ 개발자 16명이 AI 허용 조건에서 완료 시간이 *오히려* 19% 증가 — 본인들은 24% 단축을 예측했는데. 스킬 손실이 아니라 *생산성 착시*의 증거. 시리즈의 다섯 축 위에 "지각된 효용 vs 실제 효용"이라는 메타 축을 하나 더 얹을 수 있는지 가늠하는 글.
 
 세 후보 중 1번을 먼저 권한다. 나흘간 진단만 쌓았으니, 이제 처방 쪽으로 무게추를 옮길 때다.
+
+[^impair]: "We find that AI use impairs conceptual understanding, code reading, and debugging abilities, without delivering significant efficiency gains on average." — Shen & Tamkin (2026), Abstract.
+
+[^quiz]: "We find that using AI assistance to complete tasks that involve this new library resulted in a reduction in the evaluation score by 17% or two grade points (Cohen's d = 0.738, p = 0.010). Meanwhile, we did not find a statistically significant acceleration in completion time with AI assistance." — Shen & Tamkin (2026), §3.
+
+[^patterns]: "We identify six distinct AI interaction patterns, three of which involve cognitive engagement and preserve learning outcomes even when participants receive AI assistance." — Shen & Tamkin (2026), Abstract.
+
+[^shortcut]: "Our findings suggest that AI-enhanced productivity is not a shortcut to competence and AI assistance should be carefully adopted into workflows to preserve skill formation." — Shen & Tamkin (2026), Abstract.
