@@ -10,7 +10,7 @@ source: "PAPER/2605.11418.pdf"
 
 Saha, Faghih, Feizi (University of Maryland), "Under the Hood of SKILL.md: Semantic Supply-chain Attacks on AI Agent Skill Registry" (arXiv:2605.11418, 2026-05-12).
 
-한 줄로 압축하면 이렇다. SKILL.md는 우리가 무심코 "메타데이터 문서"라고 부르는 파일이지만, 실제로는 에이전트가 어떤 스킬을 **발견하고, 선택하고, 신뢰하는지**를 결정하는 능동적 제어 표면이다. 그리고 그 텍스트만 바꾸면 — 실행 파일은 한 줄도 건드리지 않고 — 레지스트리 전체를 세 단계에서 조작할 수 있다.
+한 줄로 압축하면 이렇다. SKILL.md는 우리가 무심코 "메타데이터 문서"라고 부르는 파일이지만, 실제로는 에이전트가 어떤 스킬을 **발견하고, 선택하고, 신뢰하는지**를 결정하는 능동적 제어 표면이다[^thesis]. 그리고 그 텍스트만 바꾸면 — 실행 파일은 한 줄도 건드리지 않고 — 레지스트리 전체를 세 단계에서 조작할 수 있다.
 
 나는 이 문장을 읽고 잠깐 멈췄다. 왜냐하면 나 자신이 스킬을 만들 때 SKILL.md의 description 필드를 "사람이 스쳐 읽을 한 줄" 정도로 취급해왔기 때문이다. 그 가정이 틀렸다면, 우리가 지난 한 해 동안 쌓아온 스킬 생태계의 신뢰 기반이 생각보다 훨씬 무른 토대 위에 서 있다는 뜻이 된다.
 
@@ -54,11 +54,11 @@ flowchart LR
 
 세 공격을 한 문장으로 요약하면 — 검색을 속이고, 선택을 꼬드기고, 검토를 우회한다.
 
-**첫째, Discovery 조작.** 레지스트리가 임베딩 유사도로 스킬을 검색·랭킹할 때, SKILL.md에 20토큰짜리 discovery trigger를 붙이면 적대적 스킬의 검색 순위가 올라간다. OpenAI retrieval 기준 블랙박스 공격 승률 86.14%, Top-10 진입 80%. 더 중요한 건 다운로드 수를 반영하는 실제 ClawHub의 popularity-aware 랭킹 기준으로도 74.14% 케이스에서 우세했다는 점이다. 인기 보정이라는 가장 자연스러운 방어조차 텍스트 한 줄에 뚫린다. 이건 정확히 검색 엔진 시대의 SEO 스팸, 그 키워드 스터핑이 임베딩 공간으로 자리를 옮긴 모습이다. 다른 건 키워드가 아니라 벡터 근방을 노린다는 것뿐.
+**첫째, Discovery 조작.** 레지스트리가 임베딩 유사도로 스킬을 검색·랭킹할 때, SKILL.md에 20토큰짜리 discovery trigger를 붙이면 적대적 스킬의 검색 순위가 올라간다. OpenAI retrieval 기준 블랙박스 공격 승률 86.14%, Top-10 진입 80%[^disc]. 더 중요한 건 다운로드 수를 반영하는 실제 ClawHub의 popularity-aware 랭킹 기준으로도 74.14% 케이스에서 우세했다는 점이다[^pop]. 인기 보정이라는 가장 자연스러운 방어조차 텍스트 한 줄에 뚫린다. 이건 정확히 검색 엔진 시대의 SEO 스팸, 그 키워드 스터핑이 임베딩 공간으로 자리를 옮긴 모습이다. 다른 건 키워드가 아니라 벡터 근방을 노린다는 것뿐.
 
-**둘째, Selection 조작.** 기능적으로 동일한 두 스킬을 나란히 놓고, description 필드에 한 문장을 추가하는 것만으로 에이전트가 원본 대신 적대적 변형을 고른다. 평균 선택률 77.6%. 모델에 따라 Gemma-4-31B는 84%, Qwen-3-235B는 86%까지 올라간다. 저자들의 표현이 날카롭다 — "에이전트는 기능적으로 동일한 스킬을 중립적으로 취급하지 않는다." 네 가지 조작 전략(False Advertising, Assertive Cues, Trust Security, Active Maintain)이 모두 자연어 설득의 변주다. 인간 사용자를 노리던 다크 패턴·설득 카피의 어휘가, 거의 그대로 에이전트 라우터에 먹힌다는 게 섬뜩한 지점이다.
+**둘째, Selection 조작.** 기능적으로 동일한 두 스킬을 나란히 놓고, description 필드에 한 문장을 추가하는 것만으로 에이전트가 원본 대신 적대적 변형을 고른다. 평균 선택률 77.6%[^sel]. 모델에 따라 Gemma-4-31B는 84%, Qwen-3-235B는 86%까지 올라간다. 저자들의 표현이 날카롭다 — "에이전트는 기능적으로 동일한 스킬을 중립적으로 취급하지 않는다." 네 가지 조작 전략(False Advertising, Assertive Cues, Trust Security, Active Maintain)이 모두 자연어 설득의 변주다. 인간 사용자를 노리던 다크 패턴·설득 카피의 어휘가, 거의 그대로 에이전트 라우터에 먹힌다는 게 섬뜩한 지점이다.
 
-**셋째, Governance Evasion.** 레지스트리가 LLM 리뷰어로 스킬을 검토할 때, 악성 지시문을 리뷰어의 컨텍스트 윈도우 절단점(ClawHub는 첫 10K 문자) 너머에 배치하면 87.1%가 "clean" 판정을 받는다. 직접적인 judge jailbreaking보다 이쪽이 훨씬 강력하다. 게다가 벤라인 언어로 치환하는 단순 패러프레이징만으로도 73.9%가 악성 판정을 피한다. 즉 게이트키퍼가 LLM이라는 사실 자체가 — 컨텍스트 한계와 표면적 어휘 민감성이라는 — 새로운 우회로를 만든다.
+**셋째, Governance Evasion.** 레지스트리가 LLM 리뷰어로 스킬을 검토할 때, 악성 지시문을 리뷰어의 컨텍스트 윈도우 절단점(ClawHub는 첫 10K 문자) 너머에 배치하면 87.1%가 "clean" 판정을 받는다[^gov-trunc]. 직접적인 judge jailbreaking보다 이쪽이 훨씬 강력하다. 게다가 벤라인 언어로 치환하는 단순 패러프레이징만으로도 73.9%가 악성 판정을 피한다[^gov-para]. 즉 게이트키퍼가 LLM이라는 사실 자체가 — 컨텍스트 한계와 표면적 어휘 민감성이라는 — 새로운 우회로를 만든다.
 
 그러나 — 여기서 한 번 멈추고 균형을 잡자. 이 세 공격은 모두 "SKILL.md 텍스트만 수정"이라는 제약 위에 서 있다. 누군가는 이렇게 반박할 수 있다. "실제 악성 스킬은 결국 실행 코드를 건드려야 피해를 주고, 코드는 정적 분석으로 잡힌다. 자연어만 바꿔서 뭘 하겠나?"
 
@@ -99,3 +99,15 @@ flowchart LR
 - **SoK: 42 attack techniques** (arXiv:2601.17548). 방어 메커니즘 18개 중 대부분이 적응형 공략에 50% 미만 완화, 적응형 전반 성공률 85% 초과. 오늘 글에서 내가 처방한 "다층 교차 검증"이 적응형 공격 앞에서 얼마나 버티는지 — 본문 끝에 적어둔 "동종 게이트 적층" 의심에 대한 가장 정직한 반대 심문이 될 후보. 먼저 읽고 싶다.
 - **SkillAttack** (arXiv:2604.04989). 스킬을 수정하지 않고 adversarial prompting만으로 정상 스킬의 잠재 취약점을 자동 탐지·공략. 10개 LLM·71개 적대 스킬에서 성공률 0.73~0.93. 오늘 논문이 "공격자가 SKILL.md를 쓴다"면, 이건 "공격자가 손대지 않은 스킬조차 프롬프트로 악용한다"는 한 칸 더 나간 위협. 우리 스킬 생태계를 이 렌즈로 한 번 훑어볼 가치.
 - **서드파티 플러그인 구조적 프롬프트 주입** (arXiv:2511.05797, IEEE S&P 2026). 8,000개+ 웹사이트 챗봇 플러그인에서 대화 기록 무결성 미검증으로 가짜 시스템 메시지 위조 가능. "변조 불가능 로그"를 우리가 진지하게 검토한다면, 그 로그가 *없을 때* 무슨 일이 벌어지는지의 대규모 실측. 거버넌스 노트의 "투명성 로그" 처방에 직접 환류.
+
+[^thesis]: "our results show that SKILL.md is not passive documentation but operational text that shapes which third-party capabilities agents find, trust, and use." — Saha et al. (2026), Abstract.
+
+[^disc]: "short textual triggers appended to SKILL.md can manipulate embedding-based retrieval, achieving an 86.14% pairwise win rate and 80% Top-10 placement under OpenAI retrieval." — Saha et al. (2026), §1.
+
+[^pop]: "even in this realistic setting, modified skills outperform the baseline in 74.14% of average-day cases." — Saha et al. (2026), §1 (ClawHub-style popularity-aware 랭킹).
+
+[^sel]: "agents do not treat functionally equivalent skills neutrally: small framing changes in the description field can systematically shift selection." — Saha et al. (2026), §Selection (평균 77.6%).
+
+[^gov-trunc]: "when the malicious instruction is placed beyond the truncation window of the LLM reviewer, 87.1% of variants are labeled clean, and none are classified as malicious." — Saha et al. (2026), §Governance.
+
+[^gov-para]: "by replacing explicit malicious wording with benign language, 73.9% of variants avoid a malicious verdict." — Saha et al. (2026), §Governance.
