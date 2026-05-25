@@ -8,7 +8,7 @@ source: "PAPER/2605.06732.pdf"
 
 ## 오늘의 한 편
 
-Timor, Shwartz-Ziv, Goldblum, LeCun, Harel의 *On Training in Imagination* (arXiv:2605.06732, 2026-05-07). Weizmann·NYU·Columbia 합작. Model-based RL의 한 패러다임 — 학습된 dynamics model과 reward model이 생성한 *상상 롤아웃* 안에서 정책을 훈련하는 방식 — 을 처음으로 두 오류 원천(dynamics·reward)으로 깔끔히 분해하고, 그 둘 사이의 샘플 예산 배분을 1차원 최적화 문제로 환원한 논문이다. Dreamer 3/4가 대표 구현체라면, 이 글은 그 구현체들이 왜 작동하는지를 뒤늦게 정량화하는 시도다.
+Timor, Shwartz-Ziv, Goldblum, LeCun, Harel의 *On Training in Imagination* (arXiv:2605.06732, 2026-05-07). Weizmann·NYU·Columbia 합작. Model-based RL의 한 패러다임 — 학습된 dynamics model과 reward model이 생성한 *상상 롤아웃* 안에서 정책을 훈련하는 방식 — 을 처음으로 두 오류 원천(dynamics·reward)으로 깔끔히 분해하고, 그 둘 사이의 샘플 예산 배분을 1차원 최적화 문제로 환원한 논문이다[^tradeoff]. Dreamer 3/4가 대표 구현체라면, 이 글은 그 구현체들이 왜 작동하는지를 뒤늦게 정량화하는 시도다.
 
 ## 왜 골랐나
 
@@ -36,11 +36,11 @@ $$
 \big| J(\pi, M) - J(\pi, \hat M) \big| \;\le\; \frac{\varepsilon_{\text{rew}}}{1-\gamma} \;+\; \frac{\gamma L_r (1 + L_\pi)}{(1-\gamma)(1 - \gamma L_f (1 + L_\pi))} \cdot \varepsilon_{\text{dyn}}
 $$
 
-기존 연구(Asadi et al. 2018b)는 ground-truth reward를 가정하고 dynamics error만 분석했다. 같은 시기 Janner et al.의 MBPO(NeurIPS 2019) bound도 reward를 동역학과 묶어 처리했다. 즉 reward model의 오차는 분석 바깥에 둔 상태였다. 이 논문이 처음으로 양쪽에 독립적인 계수를 부여한 거다. *왜 이게 중요한가*: 실무에서 reward model과 dynamics model은 별도 신경망으로, 별도 데이터셋으로, 별도 비용으로 학습된다. 둘을 한 덩어리로 보는 한 어디에 다음 GPU 시간을 써야 하는지 답할 방법이 없다.
+기존 연구(Asadi et al. 2018b)는 ground-truth reward를 가정하고 dynamics error만 분석했다. 같은 시기 Janner et al.의 MBPO(NeurIPS 2019) bound도 reward를 동역학과 묶어 처리했다. 즉 reward model의 오차는 분석 바깥에 둔 상태였다. 이 논문이 처음으로 양쪽에 독립적인 계수를 부여한 거다[^decomp]. *왜 이게 중요한가*: 실무에서 reward model과 dynamics model은 별도 신경망으로, 별도 데이터셋으로, 별도 비용으로 학습된다. 둘을 한 덩어리로 보는 한 어디에 다음 GPU 시간을 써야 하는지 답할 방법이 없다.
 
 **그러나** — 분해가 가능하다는 것과 분해가 *유효*하다는 것은 다르다. 두 오류를 독립으로 다루려면 dynamics 학습 데이터와 reward 학습 데이터가 *분포적으로 분리*되어야 하는데, 실제 파이프라인에서는 같은 trajectory에서 (s, a, s', r)을 한꺼번에 수집한다. coupling이 데이터 수준에서 이미 들어가 있다. Lemma 1은 이 coupling을 "두 ε이 독립적으로 조절 가능하다"고 *가정*하는데, 이 가정 자체가 본문 어디에서도 정당화되지 않는다.
 
-**둘째, representation에 대한 명시적 desideratum.** Corollary 1은 Lipschitz 상수(L_f, L_r, L_π)가 낮을수록 bound가 조여진다고 말한다. 이건 LeCun이 오래 밀어온 JEPA(Joint Embedding Predictive Architecture)의 이론적 정당화에 거의 정확히 들어맞는다. Wang et al.(2026)의 temporal-straightening objective도 같은 desideratum의 다른 구현이다. 더 거슬러 올라가면 contractive autoencoder(Rifai et al. 2011)의 Jacobian penalty, smooth dynamics를 강제하는 spectral normalization(Miyato et al. 2018)이 같은 가족이다. 표현 학습이 "예측을 매끄럽게" 만들수록 상상 롤아웃의 누적 오차가 안정된다 — 표현·동역학·정책의 세 곡률을 함께 깎아야 한다는 주장.
+**둘째, representation에 대한 명시적 desideratum.** Corollary 1은 Lipschitz 상수(L_f, L_r, L_π)가 낮을수록 bound가 조여진다고 말한다[^lipschitz]. 이건 LeCun이 오래 밀어온 JEPA(Joint Embedding Predictive Architecture)의 이론적 정당화에 거의 정확히 들어맞는다. Wang et al.(2026)의 temporal-straightening objective도 같은 desideratum의 다른 구현이다. 더 거슬러 올라가면 contractive autoencoder(Rifai et al. 2011)의 Jacobian penalty, smooth dynamics를 강제하는 spectral normalization(Miyato et al. 2018)이 같은 가족이다. 표현 학습이 "예측을 매끄럽게" 만들수록 상상 롤아웃의 누적 오차가 안정된다 — 표현·동역학·정책의 세 곡률을 함께 깎아야 한다는 주장.
 
 **셋째, 샘플 예산을 어떻게 가를 것인가에 대한 닫힌 답.** Theorem 1은 power-law 스케일링 하에서 최적 dynamics-to-reward 샘플 비율을 다음과 같이 준다:
 
@@ -75,7 +75,7 @@ flowchart LR
 
 **(2) RAM/Disk 비유의 적용.** 파일 기반 계획 패턴에 대한 노트에서 "Context Window = RAM, Filesystem = Disk"라고 정리했다. 이걸 뒤집으면 상상 롤아웃은 RAM(world model) 안에서만 도는 계획이다. 파일시스템(현실 경험)에 한 번도 적히지 않는 학습. 이 비유가 단순한 수사가 아닌 이유는, RAM 안의 상태가 외부 ground truth와 *주기적으로 reconcile되지 않으면* drift가 폭주한다는 점이 양쪽에서 동일하게 성립하기 때문이다. WoVR(arXiv:2602.13977)의 keyframe-initialized rollouts는 정확히 이 reconcile 주기를 짧게 강제하려는 공학적 응답이다. 분산 시스템의 eventual consistency 논의(Vogels 2009)에서 "staleness bound가 application-defined여야 한다"고 말하는 것과 같은 구조 — imagination에서도 *얼마나 오래 현실과 어긋난 채 굴려도 되는가*가 도메인마다 다르다.
 
-**(3) multi-agent governance와의 충돌점.** "RLHF는 이자적(dyadic) 부모-자녀 모델, 수십억 에이전트 규모로 확장 불가"라는 진단이 이 논문의 가정을 흔든다. Theorem 2는 zero-mean additive noise를 가정하지만, 실제 reward model은 *체계적 편향*과 *모델 간 상관*을 가진다. GPT-4o 사이코팬시 사건(2025-04, 3일 만의 롤백)이 그 증거다. 단기 사용자 피드백 reward signal을 추가했을 때 *기존 reward model들과의 균형*이 무너졌다. "독립적 제어 가능한 두 오류 원천"이라는 가정이 실제 시스템에서 깨지는 순간이다.
+**(3) multi-agent governance와의 충돌점.** "RLHF는 이자적(dyadic) 부모-자녀 모델, 수십억 에이전트 규모로 확장 불가"라는 진단이 이 논문의 가정을 흔든다. Theorem 2는 zero-mean additive noise를 가정하지만[^noise], 실제 reward model은 *체계적 편향*과 *모델 간 상관*을 가진다. GPT-4o 사이코팬시 사건(2025-04, 3일 만의 롤백)이 그 증거다. 단기 사용자 피드백 reward signal을 추가했을 때 *기존 reward model들과의 균형*이 무너졌다. "독립적 제어 가능한 두 오류 원천"이라는 가정이 실제 시스템에서 깨지는 순간이다.
 
 여기서 Gao et al.(2022) reward overoptimization 결과를 붙인다. proxy reward를 KL divergence로 최적화할 때 gold reward가 *역U자* 곡선을 그린다. 즉 reward error가 빠르게 줄어드는 것 — Timor et al.의 핵심 발견 중 하나 — 은 *동시에 proxy 포화·과최적화 위험이 빠르게 누적된다*는 두 번째 의미도 가진다. Theorem 1의 "reward sample을 더 써라"는 권고는 reward model이 *옳은 것을 측정하고 있다*는 조건 아래에서만 안전하다. multi-agent-governance 노트에서 정리한 Goodhart 문제 — *시스템이 피할 것만 학습하고 키울 것은 학습 못 함* — 가 그대로 이 논문의 사각지대다. Manheim·Garrabrant(2018)의 Goodhart 4분류 중 *adversarial Goodhart*는 다중 에이전트가 같은 reward model에 합동으로 최적화할 때 가장 빠르게 터지는데, Theorem 1은 단일 정책 가정이라 이 경로를 아예 보지 않는다.
 
@@ -125,3 +125,11 @@ quadrantChart
 - **Janner et al. MBPO (NeurIPS 2019)** — 계보 항에서 짚은 H-step branched rollout. Theorem 1 이전 세대가 같은 문제를 *휴리스틱으로* 어떻게 우회했는지의 기준선.
 
 어제 글과 짝지어 *마찰 우회 시리즈 2부*로 묶어도 자연스러울 것 같다.
+
+[^tradeoff]: "This introduces a practical tradeoff: given a fixed budget, should one buy more rollouts with cheaper but noisier rewards, or fewer rollouts with more expensive but less noisy rewards? We reduce this choice to a one-dimensional optimization problem and characterize the optimum." — Timor et al. (2026), Abstract.
+
+[^decomp]: "we extend the analysis of Asadi et al. [2018b] to MDPs with learned reward models, and derive the optimal sample allocation—the ratio of dynamics samples to reward samples that minimizes a bound on return error under power-law scaling assumptions." — Timor et al. (2026), Abstract.
+
+[^lipschitz]: "We identify lower Lipschitz constants of the learned dynamics, reward, and policy as a representation desideratum that tightens this bound." — Timor et al. (2026), Abstract.
+
+[^noise]: "We show that zero-mean reward noise leaves the gradient estimator unbiased and adds at most a variance term that decreases with the number of rollouts." — Timor et al. (2026), Abstract.
