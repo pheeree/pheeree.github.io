@@ -19,7 +19,7 @@ MoA(Wang et al., 2025), AgentInit(Tian et al., 2025), MALBO(Sabbatella, 2025) �
 
 **1. 세 가지 다른 증거, 같은 결론**
 
-- **MoA**는 Proposer/Aggregator로 역할을 쪼갠 뒤 회귀분석을 돌렸다. 최종 성능에 대한 **Aggregator 계수 0.588 vs Proposer 계수 0.281**. 두 배 이상의 민감도다.
+- **MoA**는 Proposer/Aggregator로 역할을 쪼갠 뒤 회귀분석을 돌렸다. 최종 성능에 대한 **Aggregator 계수 0.588 vs Proposer 계수 0.281**. 두 배 이상의 민감도다[^moa_coef].
 - **AgentInit**은 Planner/Observer/Formatter라는 메타 역할을 "모든 팀에 기본 탑재"할 요소로 정의했다. Planner가 그 중에서도 팀 설계의 축이다.
 - **MALBO**는 LLM들의 5차원 성능·가격 공간에서 다목적 베이즈 최적화(qLogEHVI)로 역할-모델 조합을 훑었다. 파레토 프런티어 위의 팀에서 **Manager 자리가 거의 항상 가장 강한 모델**이다.
 
@@ -70,7 +70,7 @@ flowchart TB
 
 **2. 우연이 아니라 구조적 이유 — 삼자 구조의 심판**
 
-Chen의 Perspective 논문이 이 수렴의 '왜'를 준다. 다중 에이전트 시스템에서 반복되는 설계 모티프 중 가장 흔한 것이 **삼자 구조**(제안자-비판자-심판)다. 이 구조의 전형적 실패 모드는 하나 — **비판자가 약하거나 제안자와 상관되면 심판이 고무 도장 찍기로 붕괴**한다. 그러면 위원회는 토론의 외피를 쓴 단독 결정으로 축소된다.
+Chen의 Perspective 논문이 이 수렴의 '왜'를 준다. 다중 에이전트 시스템에서 반복되는 설계 모티프 중 가장 흔한 것이 **삼자 구조**(제안자-비판자-심판)다. 이 구조의 전형적 실패 모드는 하나 — **비판자가 약하거나 제안자와 상관되면 심판이 고무 도장 찍기로 붕괴**한다. 그러면 위원회는 토론의 외피를 쓴 단독 결정으로 축소된다[^chen_triad].
 
 삼자 구조의 심판이 MoA의 Aggregator, AgentInit의 Planner, MALBO의 Manager다. 이름이 다를 뿐 자리가 같다. 세 논문의 수렴은 "조율자가 성능 주 동인"이라는 공학적 관찰이자, 동시에 "삼자 구조의 심판 붕괴를 막아야 한다"는 거버넌스 원칙의 다른 표현이다.
 
@@ -124,3 +124,7 @@ flowchart LR
 - **다음 읽을 후보**: Chen의 Perspective 본문 — 오늘 글은 거버넌스 프레임으로 공학적 수렴을 재해석했는데, 그 역방향(거버넌스 실패 모드가 공학 실험에 어떻게 드러나는지)을 다루는 글을 다음 편에 쓰고 싶다. HiddenBench도 그 줄기에 있다.
 
 [^kim_verify]: "architecture-dependent error amplification stems from the presence or absence of validation bottlenecks that catch errors before propagation." — Kim et al. (2025), arXiv:2512.08296, §5.
+
+[^moa_coef]: "the regression coefficient for the aggregator model (0.588) is higher than that for the proposer model (0.281)." — Wang et al. (2025), Mixture-of-Agents, arXiv:2406.04692, §3.3.
+
+[^chen_triad]: "Triads can collapse into rubber-stamping if critics are too weak or correlated with proposers." — Chen (2025), "Multi-Agent LLM Systems: From Emergent Collaboration to Structured Collective Intelligence" (Preprints.org).

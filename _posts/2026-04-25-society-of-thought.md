@@ -55,7 +55,7 @@ Evans 등의 테제는 여기서 한 발 더 나간다. 단순히 내부와 외�
 
 이 프레임이 맞다면, "몇 개의 에이전트"는 잘못된 질문이다. 에이전트 수는 설계 변수가 아니라 **복잡도의 함수**다. 시스템이 스스로 필요에 따라 접고 펼친다.
 
-Yang et al.(2026)이 K* 다양성 상한을 발견한 것, Kim et al.(2025)이 에이전트 수 증가가 오히려 오류를 증폭한다는 것을 보인 것 — 이 두 결과가 하이퍼그래프 프레임에서 자연스럽게 따라 나온다. 강제로 펼쳐 놓으면 오히려 나쁘다.
+Yang et al.(2026)이 K* 다양성 상한을 발견한 것[^yang_kstar], Kim et al.(2025)이 에이전트 수 증가가 오히려 오류를 증폭한다는 것을 보인 것 — 이 두 결과가 하이퍼그래프 프레임에서 자연스럽게 따라 나온다. 강제로 펼쳐 놓으면 오히려 나쁘다.
 
 **3. 외부 강제 vs 자발 생성 — 페르소나 분기는 어디에 있는가**
 
@@ -97,3 +97,5 @@ chain-of-thought 프롬프팅이 "내부 사회 활성화"라는 Evans의 해석
 [^social]: "Models are rediscovering, through optimization pressure alone, what centuries of epistemology and decades of cognitive science have suggested: that robust reasoning is a social process, even when it occurs within a single mind." — Evans et al. (2026), arXiv:2603.20639, Abstract.
 
 [^hypergraph]: "One emergent perspective, encountering a subproblem beyond its reach, spawns its own subordinate society, a recursive descent into collective deliberation that expands when complexity demands and collapses when the problem resolves." — Evans et al. (2026), arXiv:2603.20639.
+
+[^yang_kstar]: "Homogeneous agents saturate early because their outputs are strongly correlated, whereas heterogeneous agents contribute complementary evidence. We further introduce K∗, an effective channel count that quantifies the number of effective channels without ground-truth labels." — Yang et al. (2026), arXiv:2602.03794, Abstract.

@@ -21,7 +21,7 @@ source: "knowledge-mind / multi-agent-governance"
 
 **1. "고무 도장 심판" — 삼자 구조가 붕괴하는 조건**
 
-Chen이 정의한 **삼자 구조(triadic)**: 제안자 + 비판자 + 심판. 이 모티프의 전형 실패는 하나다 — 비판자가 약하거나 제안자와 상관관계가 높으면 **심판이 고무 도장 찍기로 붕괴**한다.
+Chen이 정의한 **삼자 구조(triadic)**: 제안자 + 비판자 + 심판. 이 모티프의 전형 실패는 하나다 — 비판자가 약하거나 제안자와 상관관계가 높으면 **심판이 고무 도장 찍기로 붕괴**한다[^chen_triad].
 
 ```mermaid
 flowchart LR
@@ -107,3 +107,5 @@ Chen은 세 상호작용 레짐을 구분한다.
 - **다음 읽을 후보**: Evans et al.의 "사고의 사회(society of thought)" 섹션 — DeepSeek-R1·QwQ-32B가 RL 보상 없이 단일 모델 내부에서 자발적으로 다관점 대화를 생성한다는 주장. 모델 내부 거버넌스와 모델 간 거버넌스가 재귀적으로 자기 유사하다는 Evans의 테제를 검토하고 싶다. 페르소나 분기가 "모델 외부에서 강제하는 내부 구조"라면, 모델이 스스로 생성하는 내부 구조와 어떻게 다른가?
 
 [^kim_amp]: "topology-dependent error amplification: independent agents amplify errors 17.2× through unchecked propagation, while centralized coordination contains this to 4.4×." — Kim et al. (2025), arXiv:2512.08296, Abstract.
+
+[^chen_triad]: "Triads can collapse into rubber-stamping if critics are too weak or correlated with proposers." — Chen (2025), "Multi-Agent LLM Systems: From Emergent Collaboration to Structured Collective Intelligence" (Preprints.org).
