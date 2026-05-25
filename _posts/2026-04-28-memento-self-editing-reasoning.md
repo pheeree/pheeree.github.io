@@ -119,4 +119,4 @@ knowledge-mind에 적어둔 decision-memory-systems-separation 노트의 결론�
 
 [^kv]: "Trained models maintain strong accuracy on math, science, and coding benchmarks while achieving ∼2.5× peak KV cache reduction. We extend vLLM to support our inference method, achieving ∼1.75× throughput improvement." — Kontonis et al. (2026), Abstract.
 
-[^dual]: "we identify a dual information stream: information from each reasoning block is carried both by the memento text and by the corresponding KV states, which retain implicit information from the original block. Removing this channel drops accuracy by 15 pp on AIME24." — Kontonis et al. (2026), Abstract.
+[^dual]: "This creates a dual information stream: the explicit memento text plus an implicit representational channel through the cached KV states ... recomputing memento KVs without block context reduces accuracy by 15 pp on AIME'24 (Section 6.2.1)." — Kontonis et al. (2026), §6.2.1.
