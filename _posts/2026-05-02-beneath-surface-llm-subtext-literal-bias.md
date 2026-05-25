@@ -91,8 +91,8 @@ flowchart TB
 
 [^suites]: "we systematically study whether language models can use subtext in communicative settings, and introduce four new evaluation suites to assess these capabilities." — Ahuja et al. (2026), Abstract.
 
-[^literal]: "We find that frontier models generally exhibit a strong bias towards overly literal, explicit communication, and thereby fail to account for nuanced constraints—even the best performing models generate literal clues 60% of times in one of our environments Visual Allusions." — Ahuja et al. (2026), Abstract.
+[^literal]: "in the game of Visual Allusions, even the best performing model—Gemini-2.5-Pro—in our experiments generates obvious clues that are understood by all the other players 60% of times." — Ahuja et al. (2026), §3.1 (Visual Allusions).
 
-[^commonground]: "some models can sometimes make use of common ground with another party to help them communicate with subtext, achieving 30%-50% reduction in overly literal clues; but they struggle at inferring presence of a common ground when not explicitly stated." — Ahuja et al. (2026), Abstract.
+[^commonground]: "for reasoning models like Gemini-2.5-Pro, GPT-5, and Claude-Sonnet-4.5, there is a significant 30%-50% reduction in the fraction of obvious clues generated in the game." — Ahuja et al. (2026), §(common ground).
 
-[^paratext]: "For allegory understanding, we find paratextual and persona conditions to significantly shift the interpretation of subtext." — Ahuja et al. (2026), Abstract.
+[^paratext]: "Under the right conditions, Gemini-2.5-Pro can go from interpreting 26% of the stories correctly to 73%." — Ahuja et al. (2026), §(Historical Allegories).
