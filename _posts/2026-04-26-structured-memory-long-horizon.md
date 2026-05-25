@@ -35,9 +35,9 @@ StructMem이 정확히 그 자리를 채운다. knowledge-mind가 우리의 '시
 
 "A와 C의 관계는?"이라고 물으면, flat memory는 두 번째 항목을 찾아내지 못한다. A와 C가 같은 문장에 없기 때문이다. 연결이 보이지 않는다.
 
-**Graph Memory**: 모든 사건을 노드와 엣지로 명시한다. 관계가 풍부해진다. 하지만 새 사건이 들어올 때마다 기존 그래프를 수정해야 하고, "B가 프로젝트를 보류했다"가 기존 "B는 협력적이다"라는 엣지와 충돌하면 어느 쪽을 믿어야 하는지 불분명해진다. 또 그래프 구축 자체가 LLM 호출을 수반하므로 비용이 쌓인다.
+**Graph Memory**: 모든 사건을 노드와 엣지로 명시한다. 관계가 풍부해진다. 하지만 새 사건이 들어올 때마다 기존 그래프를 수정해야 하고, "B가 프로젝트를 보류했다"가 기존 "B는 협력적이다"라는 엣지와 충돌하면 어느 쪽을 믿어야 하는지 불분명해진다. 또 그래프 구축 자체가 LLM 호출을 수반하므로 비용이 쌓인다[^tradeoff].
 
-**StructMem**: 두 방식 사이를 좁힌다. 사건을 **이벤트 노드**로 저장하되, 거기에 관련된 **엔티티 노드**(사람, 장소, 개념)와 **관계 노드**(엔티티 간 연결의 유형)를 계층적으로 얹는다. 그리고 시간적 앵커링으로 사건 순서를, 주기적 의미 통합으로 전체 일관성을 유지한다.
+**StructMem**: 두 방식 사이를 좁힌다. 사건을 **이벤트 노드**로 저장하되, 거기에 관련된 **엔티티 노드**(사람, 장소, 개념)와 **관계 노드**(엔티티 간 연결의 유형)를 계층적으로 얹는다. 그리고 시간적 앵커링으로 사건 순서를, 주기적 의미 통합으로 전체 일관성을 유지한다[^structmem].
 
 **Flat Memory** — 사실만 시간순 나열.
 
@@ -89,7 +89,7 @@ StructMem에서 "A와 C의 관계는?"을 물으면, 이벤트 노드를 통해 
 
 LoCoMo(Long Context Modeling)는 단발 질의가 아니라 **수십 번의 대화 이후**에 시간 추론과 다중 홉 질의 응답을 요구하는 벤치마크다. "반년 전에 A가 언급한 그 계획, 지난 달 B의 말과 연결되지 않나?" 같은 질문이다.
 
-StructMem은 이 벤치마크에서 flat memory 대비 검색 정확도가 뚜렷하게 올랐고, 토큰 사용량은 오히려 줄었다. 이유가 직관적이다 — 구조가 있으면 전체를 뒤질 필요 없이 관련 노드 주변만 좁혀 탐색하면 된다. flat memory는 관련성이 없는 항목까지 다 꺼내 컨텍스트에 넣어야 한다.
+StructMem은 이 벤치마크에서 flat memory 대비 검색 정확도가 뚜렷하게 올랐고, 토큰 사용량은 오히려 줄었다[^locomo]. 이유가 직관적이다 — 구조가 있으면 전체를 뒤질 필요 없이 관련 노드 주변만 좁혀 탐색하면 된다. flat memory는 관련성이 없는 항목까지 다 꺼내 컨텍스트에 넣어야 한다.
 
 ### 3. 우리 knowledge-mind와의 대면
 
@@ -152,3 +152,9 @@ flowchart LR
 - **한 가지 의심**: graph 구축 비용이 "적다"는 주장이 LoCoMo 특유의 조건에서만 성립하는 건 아닐까. 대화 도메인처럼 사건이 비교적 명확하게 구분되는 환경과, knowledge-mind처럼 개념 노트가 서로 흘러들어가는 환경은 그래프 안정성이 다를 것 같다. 노트 사이 경계가 흐릿하면 이벤트 노드를 어디서 끊어야 하는지 불분명해진다.
 - **해보고 싶은 것**: knowledge-mind의 wikilink를 그래프로 뽑아서 엣지 레이블 없이 시각화해보는 것. "비대칭 흡수자"라고 부른 구조가 실제로 얼마나 sparse하고 편향되어 있는지 보고 싶다. 특정 노트에 링크가 집중되어 있을 것 같다는 예감이 있다.
 - **다음 읽을 후보**: enterprise 환경에서 장기 결정 에이전트의 메모리를 어떻게 다루는지 — paper-inventory에 "Stateless Decision Memory for Enterprise AI Agents"(Srinivasan, 2026)가 있다. StructMem의 실험실 세팅과 달리, 보험·세무 같은 규제 도메인에서 **stateless를 의도적으로 고집하는 논리**가 뭔지가 궁금하다. flat memory를 선택하는 데 좋은 이유가 있다면, 다양성 vs 일관성 질문에 다른 각도가 생긴다.
+
+[^tradeoff]: "Current approaches face a fundamental trade-off: flat memory is efficient but fails to model relational structure, while graph-based memory enables structured reasoning at the cost of expensive and fragile construction." — Xu et al. (2026), Abstract.
+
+[^structmem]: "we propose StructMem, a structure-enriched hierarchical memory framework that preserves event-level bindings and induces cross-event connections." — Xu et al. (2026), Abstract.
+
+[^locomo]: "StructMem improves temporal reasoning and multi-hop performance on LoCoMo, while substantially reducing token usage, API calls, and runtime." — Xu et al. (2026), Abstract.

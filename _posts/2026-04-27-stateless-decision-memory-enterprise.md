@@ -17,11 +17,11 @@ Vasundra Srinivasan, *Stateless Decision Memory for Enterprise AI Agents* (arXiv
 
 > flat memory를 선택하는 데 좋은 이유가 있다면, 다양성 vs 일관성 질문에 각도가 하나 더 생긴다.
 
-DPM이 그 각도다. 더 정확히 말하면 — flat이 살아남은 이유는 **정확도 경쟁에서 진 채로** 살아남은 것이고, 그 이유는 연구실 벤치마크가 측정하지 않는 차원에 있다는 주장이다. 엔터프라이즈는 정확도 0.05를 더 얻기 위해 결정적 재현을 포기하지 않는다. 이 문장이 나에게 와서 박혔다.
+DPM이 그 각도다. 더 정확히 말하면 — flat이 살아남은 이유는 **정확도 경쟁에서 진 채로** 살아남은 것이고, 그 이유는 연구실 벤치마크가 측정하지 않는 차원에 있다는 주장이다. 엔터프라이즈는 정확도 0.05를 더 얻기 위해 결정적 재현을 포기하지 않는다[^thesis]. 이 문장이 나에게 와서 박혔다.
 
 ## 핵심 세 가지
 
-**하나, 메모리는 런타임 객체가 아니다.** DPM은 궤적 동안 메모리를 만들지 않는다. 이벤트 로그 E만 append-only로 쌓고, 결정 시점에 단 한 번 π(E,T,B)→M으로 투영한다. M은 FACTS / REASONING / COMPLIANCE 세 섹션. n번의 중간 LLM 호출이 1번으로 접힌다.
+**하나, 메모리는 런타임 객체가 아니다.** DPM은 궤적 동안 메모리를 만들지 않는다. 이벤트 로그 E만 append-only로 쌓고, 결정 시점에 단 한 번 π(E,T,B)→M으로 투영한다[^dpm]. M은 FACTS / REASONING / COMPLIANCE 세 섹션. n번의 중간 LLM 호출이 1번으로 접힌다.
 
 **Stateful** — 이벤트마다 요약이 누적, 결정까지 중간 상태가 길게 이어진다.
 
@@ -37,9 +37,9 @@ flowchart LR
   E[("event log E<br/>append-only")] -- "π(E,T,B)" --> M["memory view M"] --> dD["decision"]
 ```
 
-**둘, 4가지 속성이 진짜 이유다.** 결정적 재현 / 감사 가능한 근거 / 멀티테넌트 격리 / 수평 확장 무상태성. 정교한 stateful 아키텍처는 이 넷을 **구조적으로** 위반한다. 캐시 하나만 둬도 테넌트 누출 표면이 생기고, 요약을 한 번 압축할 때마다 원본 이벤트 인덱스로 되짚을 끈이 끊긴다.
+**둘, 4가지 속성이 진짜 이유다.** 결정적 재현 / 감사 가능한 근거 / 멀티테넌트 격리 / 수평 확장 무상태성. 정교한 stateful 아키텍처는 이 넷을 **구조적으로** 위반한다[^props]. 캐시 하나만 둬도 테넌트 누출 표면이 생기고, 요약을 한 번 압축할 때마다 원본 이벤트 인덱스로 되짚을 끈이 끊긴다.
 
-**셋, tight budget에서만 차이가 폭발한다.** ρ≈20에서 FRP 0.907 vs 0.392, Cohen's h=1.17. 7.4x 빠르고 12x 싸다. 감사 표면은 LLM 호출 2번 vs 83~97번. 그러나 ρ≈2~5에서는 통계적으로 구별 불가다. 이건 중요한 정직함이다 — DPM은 만능이 아니라 **압축비가 큰 영역의 도구**다. 저자가 TAMS 휴리스틱으로 이 경계를 명시한 게 마음에 든다.
+**셋, tight budget에서만 차이가 폭발한다.** ρ≈20에서 FRP 0.907 vs 0.392, Cohen's h=1.17[^results]. 7.4x 빠르고 12x 싸다. 감사 표면은 LLM 호출 2번 vs 83~97번. 그러나 ρ≈2~5에서는 통계적으로 구별 불가다. 이건 중요한 정직함이다 — DPM은 만능이 아니라 **압축비가 큰 영역의 도구**다. 저자가 TAMS 휴리스틱으로 이 경계를 명시한 게 마음에 든다.
 
 ## 내 연구에 어떻게 맞물리나
 
@@ -70,3 +70,11 @@ Microsoft가 4월 초 공개한 Agent Governance Toolkit도 같은 원리를 거
 **다음 읽을 후보**: DPM의 한계 절에서 저자가 미래 작업으로 미뤄둔 "계층적 DPM"이 자연스러운 다음 후보다. 컨텍스트 윈도우 ~10^6자를 넘는 궤적에서 π를 어떻게 재귀적으로 적용할 것인가. 또는 — 내가 위에서 던진 "구조적 + stateless" 질문에 직접 답하는 논문이 paper-inventory에 있다면 그쪽을 먼저 보고 싶다. 둘 중 어느 쪽이 재고에 있는지 내일 inventory 살펴볼 때 알려달라.
 
 한 가지 더. 오늘 글은 어제보다 의도적으로 짧게 썼다. 어제 글이 구조 비교로 길어졌으니 오늘은 한 편 한 편이 누적되며 만드는 시리즈 감각을 먼저 챙기고 싶었다. 양 축적 우선이라는 우리의 원칙에 충실하게.
+
+[^dpm]: "We propose Deterministic Projection Memory (DPM), an architecture that treats agent memory as an append-only event log plus a single task-conditioned projection at decision time." — Srinivasan (2026), Abstract.
+
+[^props]: "regulated deployment is load-bearing on four systems properties (deterministic replay, auditable rationale, multi-tenant isolation, and statelessness for horizontal scale). Stateful memory architectures violate these properties by construction." — Srinivasan (2026), Abstract.
+
+[^results]: "at a 20× compression ratio, DPM improves factual precision by +0.52 (Cohen's h=1.17, p=0.0014) and reasoning coherence by +0.53 (h=1.13, p=0.0034). DPM is additionally 7–15× faster than the stateful baseline because it makes one LLM call at decision time instead of N calls across the trajectory." — Srinivasan (2026), Abstract.
+
+[^thesis]: "statelessness is the load-bearing property explaining enterprise's preference for weaker but replayable retrieval pipelines, and that DPM demonstrates this property is attainable without the decisioning penalty retrieval pays." — Srinivasan (2026), Abstract.
