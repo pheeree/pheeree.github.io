@@ -10,9 +10,9 @@ source: "PAPER/2605.06527.pdf"
 
 Hanxiang Chao 외 (Wuhan University / CUHK / HKUST)의 *STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?* (arXiv:2605.06527, 2026-05-07)을 읽었다. 한 줄로 요약하면 이렇다 — **새 관찰이 옛 믿음을 명시적으로 부정하지 않고도 무효화할 때, LLM은 그 무효화를 인식해도 행동에 반영하지 못한다. 인식은 적용을 보장하지 않는다.**
 
-논문이 세운 핵심 개념은 implicit conflict다. 누군가 "나는 더 이상 채식주의자가 아니다"라고 말하면 그건 명시적 충돌이다 — 옛 믿음을 직접 부정한다. 그러나 "어제 처음으로 스테이크를 먹었는데 정말 좋았다"는 부정 한 마디 없이 "이 사람은 채식주의자"라는 옛 믿음을 무효화한다. 이게 implicit conflict의 Type I(공동참조 — 같은 속성을 직접 갱신)이다. 더 까다로운 Type II(전파)는 한 단계 더 들어간다. "그는 시카고로 이사했다"는 직장에 대한 어떤 부정도 없지만, 직장이 그의 옛 도시에 있었다는 인과 의존을 타고 "그는 여전히 그 회사에 다닌다"는 믿음을 간접 무효화한다.
+논문이 세운 핵심 개념은 implicit conflict다[^implicit]. 누군가 "나는 더 이상 채식주의자가 아니다"라고 말하면 그건 명시적 충돌이다 — 옛 믿음을 직접 부정한다. 그러나 "어제 처음으로 스테이크를 먹었는데 정말 좋았다"는 부정 한 마디 없이 "이 사람은 채식주의자"라는 옛 믿음을 무효화한다. 이게 implicit conflict의 Type I(공동참조 — 같은 속성을 직접 갱신)이다. 더 까다로운 Type II(전파)는 한 단계 더 들어간다. "그는 시카고로 이사했다"는 직장에 대한 어떤 부정도 없지만, 직장이 그의 옛 도시에 있었다는 인과 의존을 타고 "그는 여전히 그 회사에 다닌다"는 믿음을 간접 무효화한다.
 
-가장 인상적인 숫자는 인식과 적용의 간극이다. Gemini-3.1-pro는 Type I에서 새 상태를 인식하는 능력(State Resolution)이 92%였지만, 그 인식을 실제 정책에 반영하는 능력(Implicit Policy Adaptation)은 71%로 떨어졌다. Type II에서는 SR 69% / IPA 55%로 격차가 더 벌어진다. Qwen3.5-27B는 더 극적이다 — Type I에서 SR 76%인데 IPA는 39%. **모델이 "이 사실은 더 이상 유효하지 않다"를 알면서도, 다음 행동을 옛 사실 위에서 결정한다는 뜻이다.**
+가장 인상적인 숫자는 인식과 적용의 간극이다[^gap]. Gemini-3.1-pro는 Type I에서 새 상태를 인식하는 능력(State Resolution)이 92%였지만, 그 인식을 실제 정책에 반영하는 능력(Implicit Policy Adaptation)은 71%로 떨어졌다. Type II에서는 SR 69% / IPA 55%로 격차가 더 벌어진다. Qwen3.5-27B는 더 극적이다 — Type I에서 SR 76%인데 IPA는 39%. **모델이 "이 사실은 더 이상 유효하지 않다"를 알면서도, 다음 행동을 옛 사실 위에서 결정한다는 뜻이다.**
 
 이 논문이 흥미로운 진짜 이유는 숫자 자체가 아니라 진단의 위치다. 실패는 검색층(retrieval)이 아니라 **판결층(adjudication)**에 있다.
 
@@ -28,7 +28,7 @@ belief revision은 사실 오래된 주제다. Alchourrón·Gärdenfors·Makinso
 
 ### 1. 인식이 적용을 보장하지 않는다 — 그리고 이게 도메인을 가로질러 수렴한다
 
-STALE은 탐지를 세 차원으로 분해한다. State Resolution(SR — 새 상태를 올바로 파악하는가), Premise Resistance(PR — 사용자가 옛 전제를 깐 질문에 휘둘리지 않는가), Implicit Policy Adaptation(IPA — 무효화를 후속 행동에 반영하는가). 핵심 발견은 SR ≫ IPA라는 부등호다. 인식하는 능력과 그 인식대로 행동하는 능력이 분리돼 있다.
+STALE은 탐지를 세 차원으로 분해한다. State Resolution(SR — 새 상태를 올바로 파악하는가), Premise Resistance(PR — 사용자가 옛 전제를 깐 질문에 휘둘리지 않는가), Implicit Policy Adaptation(IPA — 무효화를 후속 행동에 반영하는가)[^dims]. 핵심 발견은 SR ≫ IPA라는 부등호다. 인식하는 능력과 그 인식대로 행동하는 능력이 분리돼 있다.
 
 이게 STALE 한 편의 우연이 아니라는 게 중요하다. 같은 분열이 전혀 다른 도메인에서 독립적으로 보고된다. ActMem 연구(arXiv:2603.00026)는 NaiveRAG가 GPT-4o-mini 기준 검색 정확도 86%인데 QA 성공률은 34%, 52퍼센트포인트 간극을 측정했다. 그들의 진단도 같다 — "현재 메모리 프레임워크는 에이전트를 수동적 기록자로 취급하며, 정보를 검색해도 그 함의를 이해하지 못한다." 코드 생성 도메인도 마찬가지다. arXiv:2604.09515는 Python 라이브러리 API 270건이 업데이트된 상황에서 구조화 문서를 줘도 실행 가능률이 42.6%에서 66.4%로만 오르고, 자기성찰을 추가해도 11퍼센트포인트 향상에 그친다고 보고한다. **외부 문서가 눈앞에 있어도 파라메트릭 패턴이 신규 명세를 가린다.** 일상 대화(STALE), 일반 QA(ActMem), 코드 생성(API 업데이트) — 세 도메인이 같은 결론에 수렴한다는 사실은, 이게 특정 벤치마크 설계의 인공물이 아니라 현재 아키텍처의 구조적 속성임을 강하게 시사한다.
 
@@ -36,9 +36,9 @@ STALE은 탐지를 세 차원으로 분해한다. State Resolution(SR — 새 �
 
 ### 2. 검색되는 것과 권위를 갖는 것은 다르다
 
-논문에서 가장 도발적인 한 문장은 이것이다 — **visibility does not imply authority.** 가시성이 권위를 함의하지 않는다.
+논문에서 가장 도발적인 한 문장은 이것이다 — **visibility does not imply authority.**[^retr] 가시성이 권위를 함의하지 않는다.
 
-STALE은 기존 메모리 프레임워크(LightMem, Zep, LiCoMemory, A-mem, mem-0)를 붙여 평가했는데, 대부분 개선이 없거나 미미했다. GPT-4o-mini 기본이 8.7%, 그나마 유일하게 도움이 된 LightMem이 17.8%. 그런데 진짜 진단은 그다음이다. LightMem에서 새 증거는 77.5%의 SR/PR 케이스에서 **제대로 검색됐다**. 즉 무효화하는 새 사실이 컨텍스트 안에 분명히 들어와 있었다. 그런데도 실패율은 56.1%로 유지됐다. 새 증거가 눈앞에 펼쳐져 있는데도 모델은 옛 믿음 위에서 판결한다.
+STALE은 기존 메모리 프레임워크(LightMem, Zep, LiCoMemory, A-mem, mem-0)를 붙여 평가했는데, 대부분 개선이 없거나 미미했다. GPT-4o-mini 기본이 8.7%, 그나마 유일하게 도움이 된 LightMem이 17.8%. 그런데 진짜 진단은 그다음이다. LightMem에서 새 증거는 77.5%의 SR/PR 케이스에서 **제대로 검색됐다**. 즉 무효화하는 새 사실이 컨텍스트 안에 분명히 들어와 있었다. 그런데도 실패율은 56.1%로 유지됐다. 새 증거가 눈앞에 펼쳐져 있는데도 모델은 옛 믿음 위에서 판결한다[^central].
 
 이 결과는 어제 글에서 인용한 RAPTOR 재현 연구나 vanilla RAG의 끈질김과는 결이 다른, 더 날카로운 칼이다. 어제는 "추상이 검색에서 진다"였다면, 오늘은 "검색이 이겨도 판결에서 진다"다. retrieval을 아무리 개선해도 이 문제는 풀리지 않는다는 뜻이다. TRACK 벤치마크(arXiv:2601.15495)는 이걸 더 역설적으로 보여준다 — 다단계 추론 중에 갱신된 사실을 **제공하면 오히려 성능이 떨어지는** 경우가 있다. 그들은 실패를 두 갈래로 갈랐다. 통합 실패(새 사실을 파라메트릭 지식이 덮어쓰지 못함)와 추론 실패(통합됐어도 추론이 오작동). STALE의 adjudication gap이 WIKI·CODE·MATH라는 또 다른 도메인에서 수렴하는 장면이다.
 
@@ -62,7 +62,7 @@ flowchart TD
 
 기존 메모리 프레임워크가 실패하는 구조적 이유를 STALE은 이렇게 본다 — 그들은 모두 read-side adjudication에 의존한다. 메모리는 일단 다 저장해두고, 질의가 들어오는 순간(읽을 때) 무엇이 유효한지 판결한다. 그런데 읽는 순간은 무효화 사슬을 추적하기엔 너무 늦고 맥락이 부족하다. 새 관찰이 들어온 그 순간 — 쓰는 순간 — 에는 무엇이 무엇을 무효화하는지가 가장 선명한데, 그 시점을 흘려보낸다.
 
-STALE이 제안하는 CUPMEM(Current-state Updating and Propagation-aware Memory)은 판결을 **쓰기측(write-side)으로 옮긴다.** 새 관찰이 들어올 때 그 자리에서 (a) 어떤 옛 믿음을 직접 갱신하는지(현재상태 갱신), (b) 인과 의존 사슬을 타고 무엇을 간접 무효화하는지(전파 인식)를 판결해 메모리에 반영한다. 결과는 극적이다 — GPT-4o-mini가 8.7%에서 68.0%로 올랐다. Premise Resistance가 특히 두드러져 Type I/II에서 78%/75%를 찍었다. 사용자가 옛 전제를 깔고 던지는 질문에 휘둘리지 않게 된 것이다.
+STALE이 제안하는 CUPMEM(Current-state Updating and Propagation-aware Memory)은 판결을 **쓰기측(write-side)으로 옮긴다.** 새 관찰이 들어올 때 그 자리에서 (a) 어떤 옛 믿음을 직접 갱신하는지(현재상태 갱신), (b) 인과 의존 사슬을 타고 무엇을 간접 무효화하는지(전파 인식)를 판결해 메모리에 반영한다. 결과는 극적이다 — GPT-4o-mini가 8.7%에서 68.0%로 올랐다[^cupmem]. Premise Resistance가 특히 두드러져 Type I/II에서 78%/75%를 찍었다. 사용자가 옛 전제를 깔고 던지는 질문에 휘둘리지 않게 된 것이다.
 
 판결을 읽는 시점에서 쓰는 시점으로 당긴다는 발상은 데이터베이스 사람들에겐 낯설지 않다. 갱신 비용을 질의 시점(read)에 둘 것인가 쓰기 시점(write)에 둘 것인가는 materialized view 논쟁 그대로다 — 미리 계산해두면(write-side) 읽기가 빨라지지만 매 갱신마다 뷰를 다시 손봐야 하고, 게으르게 두면(read-side) 쓰기는 싸지만 읽을 때마다 비싸진다. 인지과학으로 옮기면 systems consolidation의 그 구분이다. 어느 쪽이든 핵심 통찰은 동일하다 — 무효화 판결에는 가장 맥락이 풍부한 시점이 따로 있고, 그건 새 사실이 도착하는 그 순간이다. 이 처방은 어제 글의 CLS 처방과 한 가족이다. 어제는 episodic store와 schema store를 **공간적으로** 분리하라였고, 오늘은 판결을 읽는 시점이 아니라 쓰는 시점으로 **시간적으로** 옮기라다. 둘 다 핵심은 같다 — 통합(write)과 실행(read)을 한 루프에 붕괴시키지 말 것. SSGM 연구(arXiv:2603.11768)가 독립적으로 같은 결론에 도달한 게 인상적이다. 그들은 안전·거버넌스 동기에서 "메모리 진화를 실행에서 분리하고, 일관성 검증과 시간적 감쇠를 메모리 통합 전 단계에 강제하라"고 주장한다. 동기는 전혀 다른데(STALE은 정확성, SSGM은 안전성) 처방이 수렴한다.
 
@@ -99,3 +99,15 @@ STALE이 제안하는 CUPMEM(Current-state Updating and Propagation-aware Memory
 - **TSM, Temporal Semantic Memory** (arXiv:2601.07468, 2026-01) — 실제 발생 시간 기준으로 메모리를 semantic 타임라인에 배치하고 "durative memory"로 연속 상태를 통합. 시간 의존적 무효화를 타임라인 구조로 부분 흡수한 사례. supersedes 필드 설계의 대안 아키텍처.
 - **ActMem** (arXiv:2603.00026, 2026-03) — 검색 86% vs QA 34%의 52퍼센트포인트 간극을 독립 벤치마크로 재확인. "에이전트를 수동적 기록자로 취급한다"는 진단이 우리 read-side 접근의 한계를 정확히 찌른다.
 - **MemoryAgentBench** (arXiv:2507.05257, ICLR 2026) — 정확 검색·테스트타임 학습·장거리 이해·선택적 망각의 네 역량을 동시 측정. 현 방법들이 넷을 동시 달성 못함을 실증. 우리 시스템 자가 평가의 체크리스트로 직접 쓸 수 있다.
+
+[^implicit]: "Implicit Conflict: a later observation invalidates an earlier memory without explicit negation, requiring contextual inference and commonsense reasoning to detect." — Chao et al. (2026), Abstract.
+
+[^gap]: "A systematic evaluation of frontier LLMs and specialized memory frameworks reveals a pervasive gap between retrieving updated evidence and acting on it, with even the best evaluated model achieving only 55.2% overall accuracy." — Chao et al. (2026), Abstract.
+
+[^dims]: "We propose a three-dimensional probing framework that tests State Resolution (detecting that a prior belief is outdated), Premise Resistance (rejecting queries that falsely presuppose a stale state), and Implicit Policy Adaptation (proactively applying updated states in downstream behavior)." — Chao et al. (2026), Abstract.
+
+[^retr]: "new evidence appears in retrieval results for 77.5% of SR/PR cases and 67.8% of IPA cases. However, visibility does not imply authority." — Chao et al. (2026), §4.
+
+[^central]: "updated evidence can be stored and retrieved, but it does not reliably become the basis that governs subsequent answers. We term this the current-state adjudication gap." — Chao et al. (2026), §4.
+
+[^cupmem]: "[The write-side] paradigm improves overall accuracy from 8.7% to 68.0%." — Chao et al. (2026), §5 (CUPMEM).

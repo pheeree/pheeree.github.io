@@ -8,9 +8,9 @@ source: "PAPER/2605.12978.pdf"
 
 ## 오늘의 한 편
 
-Dylan Zhang 외 (UIUC / IIIS Tsinghua)의 *Useful Memories Become Faulty When Continuously Updated by LLMs* (arXiv:2605.12978, 2026-05-13)을 읽었다. 한 줄로 요약하면 이렇다 — **LLM 에이전트가 과거 경험을 추상 메모리로 연속 업데이트할 때, 메모리의 유효성은 비단조적으로 변한다. 처음에는 오르다가, 결국 메모리 없는 기준선 아래로 떨어진다.**
+Dylan Zhang 외 (UIUC / IIIS Tsinghua)의 *Useful Memories Become Faulty When Continuously Updated by LLMs* (arXiv:2605.12978, 2026-05-13)을 읽었다. 한 줄로 요약하면 이렇다 — **LLM 에이전트가 과거 경험을 추상 메모리로 연속 업데이트할 때, 메모리의 유효성은 비단조적으로 변한다. 처음에는 오르다가, 결국 메모리 없는 기준선 아래로 떨어진다.**[^nonmono]
 
-가장 인상적인 숫자는 ARC-AGI 실험이다. GPT-5.4는 같은 문제들을 메모리 없이 100% 정확도로 풀고 있었다. 그 정답 궤적들을 스트리밍 consolidation으로 추상 메모리에 통합하자, 정확도가 54%로 떨어졌다. **올바른 풀이만으로 구성된 양질의 입력을 줬는데도** 46%가 회귀했다는 뜻이다. ScienceWorld의 CLIN 메모리는 step 20 부근에서 피크를 찍고 step 100까지 단조 하락했다. WebShop의 AWM-distilled 메모리는 8개 예시일 때 0.64였다가 128개 예시에서 0.20까지 떨어졌고, **그 시점엔 raw 궤적을 그냥 컨텍스트에 던지는 단순 방식(0.31)에도 뒤졌다**.
+가장 인상적인 숫자는 ARC-AGI 실험이다. GPT-5.4는 같은 문제들을 메모리 없이 100% 정확도로 풀고 있었다. 그 정답 궤적들을 스트리밍 consolidation으로 추상 메모리에 통합하자, 정확도가 54%로 떨어졌다[^arc]. **올바른 풀이만으로 구성된 양질의 입력을 줬는데도** 46%가 회귀했다는 뜻이다. ScienceWorld의 CLIN 메모리는 step 20 부근에서 피크를 찍고 step 100까지 단조 하락했다. WebShop의 AWM-distilled 메모리는 8개 예시일 때 0.64였다가 128개 예시에서 0.20까지 떨어졌고, **그 시점엔 raw 궤적을 그냥 컨텍스트에 던지는 단순 방식(0.31)에도 뒤졌다**.
 
 이 논문이 흥미로운 진짜 이유는 숫자 자체가 아니라 원인 진단에 있다. 실패의 책임이 경험의 품질이 아니라 **consolidation 절차 그 자체**라는 것이다.
 
@@ -36,7 +36,7 @@ McClelland·McNaughton·O'Reilly(1995)가 *Why there are complementary learning 
 
 ### 2. 가장 단순한 통제군이 가장 강했다
 
-논문의 가장 도발적인 결과는 controls의 순위다. **Episodic-only control** — raw rollouts를 그냥 컨텍스트에 append하고 추상은 만들지 않는 방식 — 이 강제 consolidation 방식들과 경쟁하거나 능가했다. **Static-All** (전체 풀을 한 번에 일괄 consolidation) >> **Stream** (배치별 점진 업데이트). 그리고 **Auto 레짐**(에이전트가 자율로 retain/delete/consolidate 선택)에서 에이전트는 거의 항상 에피소딕 보존을 선택했고 abstract store를 희소하게 유지했다.
+논문의 가장 도발적인 결과는 controls의 순위다. **Episodic-only control** — raw rollouts를 그냥 컨텍스트에 append하고 추상은 만들지 않는 방식 — 이 강제 consolidation 방식들과 경쟁하거나 능가했다[^episodic]. **Static-All** (전체 풀을 한 번에 일괄 consolidation) >> **Stream** (배치별 점진 업데이트). 그리고 **Auto 레짐**(에이전트가 자율로 retain/delete/consolidate 선택)에서 에이전트는 거의 항상 에피소딕 보존을 선택했고 abstract store를 희소하게 유지했다.
 
 이게 의미하는 바는 단순하다 — **모델 스스로도 "지금 추상화하지 마라"를 알고 있다**. 강제로 시킬 때만 망가진다.
 
@@ -58,7 +58,7 @@ flowchart LR
 
 McClelland(1995)·Squire(2004)·Dudai(2004) 계열의 Complementary Learning Systems는 1990년대부터 일관되게 같은 처방을 주장해왔다 — **빠르게 갱신되는 에피소딕 시스템과 느리게 형성되는 스키마 시스템을 분리**하는 것. 해마-신피질 분업의 계산적 이유다. 하나의 store에서 둘 다 하려 들면 catastrophic interference에 노출된다. Tulving(1972)이 episodic/semantic memory를 처음 구분한 이래 60년 가까이 누적된 합의이기도 하다.
 
-Zhang et al.은 이 처방을 LLM 에이전트에 옮긴다: **에피소딕·스키마 형성 역할을 단일 rewrite loop으로 붕괴시키지 말 것**. 두 store는 (a) 다른 수명, (b) 다른 갱신 빈도, (c) 다른 트리거를 가져야 한다. 추상화는 자동·연속이 아니라 **게이트된 이벤트**가 되어야 한다.
+Zhang et al.은 이 처방을 LLM 에이전트에 옮긴다: **에피소딕·스키마 형성 역할을 단일 rewrite loop으로 붕괴시키지 말 것**. 두 store는 (a) 다른 수명, (b) 다른 갱신 빈도, (c) 다른 트리거를 가져야 한다. 추상화는 자동·연속이 아니라 **게이트된 이벤트**가 되어야 한다[^prescription].
 
 그러나 — 그리고 여기서 본문이 한 번 멈춰야 한다 — 이 처방이 모든 도메인에서 동일하게 작동한다고 믿을 만한 근거는 아직 약하다. REMEMBERER 계열 연구(Zhang et al. 2023)에서는 RL 피드백 루프가 결합된 메모리 시스템이 지속적 갱신만으로도 기준선 대비 +2~4% 향상을 보였다. 차이는 **외부 보상 신호의 유무**다. 오늘 논문은 감독 없는 자율 consolidation을 측정했다. 보상이 매 step 들어오는 환경에서는 잘못된 추상이 즉시 교정될 여지가 있다. 반대편엔 또 다른 반박이 있다 — arXiv:2604.27707 계열은 "에피소딕 보존도 결국 룩업에 불과하다, 일반화 상한이 존재한다"고 본다. Generative Agents(Park et al. 2023)는 그 사이 어딘가에 있다. 그들은 reflection이라는 게이트된 추상 단계를 두되, importance score가 임계치를 넘을 때만 트리거되도록 했다 — 본질적으로 Zhang et al.의 처방을 게이트로 구현한 것이다. 셋 다 일리 있다. CLS 처방은 **자율 운영·드문 외부 신호·다양한 분포**라는 조건에서 가장 강하게 적용된다고 좁혀 읽는 게 정직할 것이다.
 
@@ -104,3 +104,11 @@ iii-b 탐구에서 마주친 자기-증류 반복 연구(arXiv:2603.24472)도 �
 - **Anatomy of Agentic Memory** (arXiv:2602.19320, 2026-02) — 현 벤치마크가 정적 사실 검색에 편향돼 있고 선택적 망각·시간적 유효성·장기 열화를 측정하지 못한다는 분석. 평가 측면에서 빈자리를 짚는다.
 - **RAPTOR vs vanilla RAG** (arXiv:2506.03989, 2025-06) — ∞Bench·QuALITY·NarrativeQA에서 원본 패시지 검색이 계층적 요약을 일관 초과. 추상이 검색에서도 진다는 별개 증거.
 - **Generative Agents** (Park et al. 2023, arXiv:2304.03442) — reflection을 importance-score 게이트로 구현한 선례. 우리 ADR 게이트 명문화에 직접 참고할 만한 디자인 디테일이 있다.
+
+[^nonmono]: "As consolidation proceeds, memory utility first rises, then degrades, and can fall below the no-memory baseline." — Zhang et al. (2026), Abstract.
+
+[^arc]: "even when consolidating from ground-truth solutions, GPT-5.4 fails on 54% of a set of ARC-AGI problems it had previously solved without memory." — Zhang et al. (2026), Abstract.
+
+[^episodic]: "agents preserve raw episodes by default and double the accuracy of their forced-consolidation counterparts; disabling consolidation entirely (episodic management only) matches this auto regime." — Zhang et al. (2026), Abstract.
+
+[^prescription]: "robust agent memory should treat raw episodes as first-class evidence and gate consolidation explicitly rather than firing it after every interaction." — Zhang et al. (2026), Abstract.
