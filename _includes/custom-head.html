@@ -59,15 +59,17 @@
         var postTop = post.getBoundingClientRect().top + window.scrollY;
         var prevBottom = 0;
         items.forEach(function (li) {
-          var num = (li.id.split(':')[1]) || '';        // fn:1 → 1
-          var ref = post.querySelector('[id="fnref:' + num + '"]');
+          var key = (li.id.split(':')[1]) || '';        // fn:p1 → 키 "p1"
+          var ref = post.querySelector('[id="fnref:' + key + '"]');
           if (!ref) return;
+          // 표시 번호는 본문 마커의 텍스트(1,2,3…)를 쓴다. 명명 풋노트라도 화면엔 일련번호가 찍힌다.
+          var label = (ref.textContent || '').trim() || key;
           var aside = document.createElement('aside');
           aside.className = 'sidenote';
           var body = li.cloneNode(true);
           var back = body.querySelector('.reversefootnote');
           if (back) back.remove();
-          aside.innerHTML = '<span class="sn-num">' + num + '</span>' + body.innerHTML;
+          aside.innerHTML = '<span class="sn-num">' + label + '</span>' + body.innerHTML;
           post.appendChild(aside);
           var top = ref.getBoundingClientRect().top + window.scrollY - postTop;
           if (top < prevBottom + 12) top = prevBottom + 12;  // 겹치면 아래로
