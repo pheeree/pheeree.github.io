@@ -9,7 +9,7 @@ source: "PAPER/2605.06638.pdf"
 
 ## 오늘의 한 편
 
-Wang 외(Purdue·UNC·GT·UCSD)의 *Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key* (arXiv:2605.06638, 2026-05-07)를 읽었다. 합성 논리 환경 ScaleLogic을 두 축 — 추론 깊이 D와 논리 표현성 5단계(Implication-only → +Conjunction → +Negation → +Disjunction → +Quantification) — 으로 독립 제어하면서 DAPO·GRPO·GSPO로 Qwen3-4B/8B를 RL 포스트 트레이닝한 연구다. 핵심 발견은 깔끔하다. 정확도가 일정 임계 위로 가는 데 필요한 토큰 수 T가 깊이 D에 대해 멱법칙을 따르고(T ∝ D^γ, 결정계수 0.99 이상), 그 지수 γ가 표현성 단계에 따라 1.04 → 2.60까지 단조 증가한다. 같은 깊이라도 더 풍부한 논리 연결자 위에서 훈련된 모델이 같은 정확도에 도달하기 위해 본질적으로 더 긴 사고를 토큰으로 펼친다.
+Wang 외(Purdue·UNC·GT·UCSD)의 *Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key* (arXiv:2605.06638, 2026-05-07)를 읽었다. 합성 논리 환경 ScaleLogic을 두 축 — 추론 깊이 D와 논리 표현성 5단계(Implication-only → +Conjunction → +Negation → +Disjunction → +Quantification) — 으로 독립 제어하면서 DAPO·GRPO·GSPO로 Qwen3-4B/8B를 RL 포스트 트레이닝한 연구다[^scalelogic]. 핵심 발견은 깔끔하다. 정확도가 일정 임계 위로 가는 데 필요한 토큰 수 T가 깊이 D에 대해 멱법칙을 따르고(T ∝ D^γ, 결정계수 0.99 이상), 그 지수 γ가 표현성 단계에 따라 1.04 → 2.60까지 단조 증가한다[^powerlaw]. 같은 깊이라도 더 풍부한 논리 연결자 위에서 훈련된 모델이 같은 정확도에 도달하기 위해 본질적으로 더 긴 사고를 토큰으로 펼친다.
 
 표현성 단계를 그대로 1879년 Frege의 *Begriffsschrift* 위계로 읽어도 무방하다. 명제논리(함의·논리곱·부정·논리합)에서 술어논리(전칭·존재 양화사)로 넘어가는 그 한 칸이 ScaleLogic에서는 γ를 2.06에서 2.60으로 끌어올린다. 한 세기 반 전 논리학자들이 손으로 발견한 표현력 위계가, 이제 토큰 곡률의 멱법칙 지수로 외화된 셈이다. Cobham(1965)·Edmonds(1965)의 계산복잡도 위계가 *어떤 문제가 풀릴 수 있는가*를 다뤘다면, 오늘 논문은 한 단계 안쪽 — *같은 문제를 어느 정도의 토큰 비용으로 푸는가* — 를 묻는다. 이게 내가 이 논문에 끌린 첫 번째 이유다.
 
@@ -25,9 +25,9 @@ Wang 외(Purdue·UNC·GT·UCSD)의 *Can RL Teach Long-Horizon Reasoning to LLMs?
 
 ## 핵심 세 가지
 
-**첫째, 표현성은 깊이의 비용 곡률을 바꾼다.** Implication만으로 훈련한 모델은 깊이가 늘어도 거의 선형(γ = 1.04)으로 토큰이 증가한다. Quantification까지 포함하면 γ = 2.60. 같은 깊이 12에서 8벤치마크 평균이 +0.49pp(Impl-only) 대 +8.10pp(+Quantification)로 갈라진다. 멱법칙이라는 형식 자체보다 이 발견의 함의가 묵직하다. RL이 모델에게 가르치는 것은 단순히 더 긴 추론이 아니라, 어떤 논리 구조 위에서의 더 긴 추론인지가 결정적이다. 이는 Chomsky 위계(1956)의 형식언어 ↔ 자동기계 대응을 떠올리게 한다 — 정규문법은 유한 오토마타로, 문맥자유는 푸시다운으로, 각 표현성 단계는 그것을 처리할 계산 자원의 *질적* 도약을 요구한다. ScaleLogic이 보여주는 건 그 도약이 양적 멱법칙으로 어떻게 환산되는지의 그림이다.
+**첫째, 표현성은 깊이의 비용 곡률을 바꾼다.** Implication만으로 훈련한 모델은 깊이가 늘어도 거의 선형(γ = 1.04)으로 토큰이 증가한다. Quantification까지 포함하면 γ = 2.60. 같은 깊이 12에서 8벤치마크 평균이 +0.49pp(Impl-only) 대 +8.10pp(+Quantification)로 갈라진다. 멱법칙이라는 형식 자체보다 이 발견의 함의가 묵직하다. RL이 모델에게 가르치는 것은 단순히 더 긴 추론이 아니라, 어떤 논리 구조 위에서의 더 긴 추론인지가 결정적이다[^transfer]. 이는 Chomsky 위계(1956)의 형식언어 ↔ 자동기계 대응을 떠올리게 한다 — 정규문법은 유한 오토마타로, 문맥자유는 푸시다운으로, 각 표현성 단계는 그것을 처리할 계산 자원의 *질적* 도약을 요구한다. ScaleLogic이 보여주는 건 그 도약이 양적 멱법칙으로 어떻게 환산되는지의 그림이다.
 
-**둘째, 알고리즘은 거의 무관하다.** DAPO γ = 1.70, GRPO γ = 1.65, GSPO γ = 1.65. 세 개의 RL 변형이 같은 데이터에서 거의 같은 멱법칙 지수를 낸다. 이 점이 내게 가장 중요해 보인다 — RL 알고리즘 선택보다 환경의 표현성이 학습 곡선의 모양을 지배한다는 뜻이기 때문이다. 알고리즘 마이크로 최적화에 매달리는 최근의 후속 작업들에 대한 조용한 반박이다. Sutton의 Bitter Lesson을 한 단계 안쪽에서 다시 적용한 결과로 읽을 수 있다 — 영리한 알고리즘이 아니라, 환경의 구조가 결정한다.
+**둘째, 알고리즘은 거의 무관하다.** DAPO γ = 1.70, GRPO γ = 1.65, GSPO γ = 1.65[^methods]. 세 개의 RL 변형이 같은 데이터에서 거의 같은 멱법칙 지수를 낸다. 이 점이 내게 가장 중요해 보인다 — RL 알고리즘 선택보다 환경의 표현성이 학습 곡선의 모양을 지배한다는 뜻이기 때문이다. 알고리즘 마이크로 최적화에 매달리는 최근의 후속 작업들에 대한 조용한 반박이다. Sutton의 Bitter Lesson을 한 단계 안쪽에서 다시 적용한 결과로 읽을 수 있다 — 영리한 알고리즘이 아니라, 환경의 구조가 결정한다.
 
 **셋째, 커리큘럼이 곡률을 살짝 누른다.** Easy→Hard 커리큘럼 아래서 +Quantification의 γ가 2.60에서 2.30으로 내려간다. Difficult-only는 γ = 2.36에 분산도 크다. 작은 차이지만 방향이 일관된다 — 표현성을 단계적으로 노출하는 것이 깊이 비용의 폭주를 일정 부분 완화한다. Bengio 외(2009)의 커리큘럼 학습이 손실 곡면의 *시작점*을 바꿨다면, ScaleLogic의 커리큘럼은 *멱법칙의 지수* 자체를 약간 휜다. 이 차이가 작아 보여도, 깊이 20에서는 20^2.60과 20^2.30의 차이가 토큰 비용을 약 2.4배 가른다.
 
@@ -75,3 +75,11 @@ graph LR
 - **다음 읽을 후보 2순위**: Park 외 *Horizon Generalization* (arXiv:2605.02572). 짧은 지평에서 훈련한 모델이 긴 변형으로 일반화한다는 결과. 오늘의 깊이-멱법칙과 어떻게 충돌·공존하는지가 흥미롭다.
 - **다음 읽을 후보 3순위**: Qwen 팀의 RL 포스트 트레이닝 스케일링 법칙(arXiv:2509.25300). 모델 크기·데이터·컴퓨트의 멱법칙을 직접 다룬 대규모 연구. 표현성 축이 거기 어떻게 들어가는지를 묻고 싶다.
 - **개인 메모**: 유효 채널(K-스타) 프레임 ↔ 표현성 단계 ↔ 코드북 크기의 세 변수가 같은 자원의 다른 좌표라는 가설을 별도 노트로 빼두자. 한 번 더 읽어야 할 자료가 쌓이고 있다.
+
+[^scalelogic]: "We introduce ScaleLogic, a synthetic logical reasoning framework that offers independent control over two axes of difficulty: the depth of the required proof planning (i.e., the horizon) and the expressiveness of the underlying logic." — Wang et al. (2026), Abstract.
+
+[^powerlaw]: "the RL training compute T follows a power law with respect to reasoning depth D—T ∝ D^γ, R² > 0.99—and that the scaling exponent γ increases monotonically with logical expressiveness, from 1.04 to 2.60." — Wang et al. (2026), Abstract.
+
+[^transfer]: "more expressive training settings yield both larger performance gains (up to +10.66 points) and more compute-efficient transfer compared to less expressive settings, demonstrating that what a model is trained on, not just how much it is trained, shapes downstream transfer." — Wang et al. (2026), Abstract.
+
+[^methods]: "the power-law relationship holds across multiple RL methods, and curriculum-based training substantially improves scaling efficiency." — Wang et al. (2026), Abstract.

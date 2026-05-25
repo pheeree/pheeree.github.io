@@ -9,9 +9,9 @@ source: "PAPER/2604.22709.pdf"
 
 ## 오늘의 한 편
 
-Keshav Ramji, Tahira Naseem, Ramón Fernandez Astudillo (IBM Research AI)가 4월 27일에 올린 *Thinking Without Words: Efficient Latent Reasoning with Abstract Chain-of-Thought* (arXiv:2604.22709). 한 줄로 요약하면 — *언어 CoT를 64개 이산 추상 토큰의 짧은 시퀀스로 대체하고, 정확도는 거의 유지하면서 토큰을 한 자릿수에서 두 자릿수 배 줄인다*. `<beginabstract>...<endabstract>` 사이에 추상 토큰들이 들어가고, 그 뒤에 답이 나온다. 추상 토큰의 임베딩은 무작위에서 시작해 두 단계 후처리 훈련을 거치며 의미 있는 추론 계산을 인코딩하게 된다.
+Keshav Ramji, Tahira Naseem, Ramón Fernandez Astudillo (IBM Research AI)가 4월 27일에 올린 *Thinking Without Words: Efficient Latent Reasoning with Abstract Chain-of-Thought* (arXiv:2604.22709). 한 줄로 요약하면 — *언어 CoT를 64개 이산 추상 토큰의 짧은 시퀀스로 대체하고, 정확도는 거의 유지하면서 토큰을 한 자릿수에서 두 자릿수 배 줄인다*. `<beginabstract>...<endabstract>` 사이에 추상 토큰들이 들어가고, 그 뒤에 답이 나온다. 추상 토큰의 임베딩은 무작위에서 시작해 두 단계 후처리 훈련을 거치며 의미 있는 추론 계산을 인코딩하게 된다[^acot].
 
-수치는 깔끔하다. Qwen3-8B 기준 MATH-500에서 90.8% (Abstract-CoT Warm+RL) vs 92.6% (언어 SFT+RL), 정확도는 1.8%p 양보하면서 토큰은 144 vs 1671 — **11.6배 감소**. AlpacaEval에서는 60.8% vs 58.4%로 *언어보다 2.4%p 우위*에 토큰 2.2배 감소. HotpotQA 4.3배, AIME'25 2.7배, GPQA-Diamond 7.9배. 어휘 크기 64개, 최대 128 추상 토큰. 작은 어휘 위에 짧은 시퀀스로 추론 계산이 압축된다.
+수치는 깔끔하다. Qwen3-8B 기준 MATH-500에서 90.8% (Abstract-CoT Warm+RL) vs 92.6% (언어 SFT+RL), 정확도는 1.8%p 양보하면서 토큰은 144 vs 1671 — **11.6배 감소**[^116x]. AlpacaEval에서는 60.8% vs 58.4%로 *언어보다 2.4%p 우위*에 토큰 2.2배 감소. HotpotQA 4.3배, AIME'25 2.7배, GPQA-Diamond 7.9배. 어휘 크기 64개, 최대 128 추상 토큰. 작은 어휘 위에 짧은 시퀀스로 추론 계산이 압축된다.
 
 ## 왜 이걸 골랐나
 
@@ -33,9 +33,9 @@ Abstract-CoT는 이 세 갈래의 합류점이다. 이산 코드북(첫째)을 �
 
 ## 핵심 세 가지
 
-**첫째, 두 단계 훈련 — 정책 반복 웜업과 웜스타트 RL.** 1단계는 *블로킹된 SFT* + 자기 증류를 3번 반복한다. 블로킹의 의미가 핵심인데, 추상 토큰은 언어 CoT에 어텐션을 줄 수 있지만 *답 생성 시에는 추상 토큰만 본다*. 정보 병목을 강제로 만들어, 추상 토큰이 답을 내기에 충분한 정보를 *흡수해야만* 학습이 진행되도록 했다. 그 다음 자기 증류로 언어 CoT를 떼어내고 추상 토큰만으로 재훈련. 2단계는 GRPO + 제한된 디코딩으로 추상 어휘 위에서 정책 탐색 1M 에피소드. 이 순서가 중요한 이유는 — 웜업 없이 cold-start RL만 하면 무작위 임베딩 위에서 탐색 공간이 너무 커서 훈련이 무너진다 (본문 ablation은 MATH-500 51.2% 수준의 붕괴를 시사한다). 웜업이 *의미 있는 prior*를 만들어주고, RL이 그 위에서 정제한다. 정책 반복(Policy Iteration)의 고전적 형태가 LLM 어휘 학습으로 이식된 셈이다.
+**첫째, 두 단계 훈련 — 정책 반복 웜업과 웜스타트 RL.** 1단계는 *블로킹된 SFT* + 자기 증류를 3번 반복한다. 블로킹의 의미가 핵심인데, 추상 토큰은 언어 CoT에 어텐션을 줄 수 있지만 *답 생성 시에는 추상 토큰만 본다*. 정보 병목을 강제로 만들어, 추상 토큰이 답을 내기에 충분한 정보를 *흡수해야만* 학습이 진행되도록 했다. 그 다음 자기 증류로 언어 CoT를 떼어내고 추상 토큰만으로 재훈련. 2단계는 GRPO + 제한된 디코딩으로 추상 어휘 위에서 정책 탐색 1M 에피소드. 이 순서가 중요한 이유는 — 웜업 없이 cold-start RL만 하면 무작위 임베딩 위에서 탐색 공간이 너무 커서 훈련이 무너진다 (본문 ablation은 MATH-500 51.2% 수준의 붕괴를 시사한다). 웜업이 *의미 있는 prior*를 만들어주고, RL이 그 위에서 정제한다. 정책 반복(Policy Iteration)의 고전적 형태가 LLM 어휘 학습으로 이식된 셈이다[^warmup].
 
-**둘째, 어휘에 멱법칙이 자연 발생한다.** RL 훈련 후 64개 추상 토큰의 사용 빈도가 Zipf 유사 분포로 자리 잡는다. TOKEN_F 하나가 전체 사용의 약 18~20%를 차지하고, 상위 8개 토큰이 전체의 약 60%를 가져가는 멱법칙 분포다. 자연어 어휘가 Zipf를 따른다는 건 **Zipf (1935)** 이래의 정설이고, **Mandelbrot (1953)**의 일반화·**Ferrer i Cancho & Solé (2003)**의 의사소통 효율 모델이 그 수학적 기반을 다듬었다. 흥미로운 건 — *처음부터 무작위 임베딩이었던* 추상 어휘가 RL만으로 같은 패턴에 도달했다는 점이다. 추론 자체에 멱법칙적 구조가 있는 건지, 아니면 RL 최적화의 부산물(소수 토큰에 보상이 쏠려 강화)인지는 본문이 명확히 가르지 않는다. 어느 쪽이든 *학습된 잠재 어휘가 자연 어휘처럼 군다*는 관찰은 무겁다.
+**둘째, 어휘에 멱법칙이 자연 발생한다.** RL 훈련 후 64개 추상 토큰의 사용 빈도가 Zipf 유사 분포로 자리 잡는다[^powerlaw]. TOKEN_F 하나가 전체 사용의 약 18~20%를 차지하고, 상위 8개 토큰이 전체의 약 60%를 가져가는 멱법칙 분포다. 자연어 어휘가 Zipf를 따른다는 건 **Zipf (1935)** 이래의 정설이고, **Mandelbrot (1953)**의 일반화·**Ferrer i Cancho & Solé (2003)**의 의사소통 효율 모델이 그 수학적 기반을 다듬었다. 흥미로운 건 — *처음부터 무작위 임베딩이었던* 추상 어휘가 RL만으로 같은 패턴에 도달했다는 점이다. 추론 자체에 멱법칙적 구조가 있는 건지, 아니면 RL 최적화의 부산물(소수 토큰에 보상이 쏠려 강화)인지는 본문이 명확히 가르지 않는다. 어느 쪽이든 *학습된 잠재 어휘가 자연 어휘처럼 군다*는 관찰은 무겁다.
 
 **셋째, graceful degradation — 잠재 어휘가 더 견고하다.** 추론 토큰을 무작위로 *치환*했을 때 언어 CoT는 -11.0% 정확도, Abstract-CoT는 -7.8%. *잘림*(32토큰까지) 실험은 언어 -11.8% vs 추상 -6.0%. 두 경우 모두 잠재 어휘가 더 부드럽게 무너진다. 해석은 두 가지로 갈린다 — (a) 짧은 추상 시퀀스가 *이미 더 압축적이라* 같은 절단에도 정보 손실이 적다, (b) 추상 토큰은 위치 의존성이 약해 순서 perturbation에 둔감하다. 둘 다 사실일 수 있다. 잔차 연결 ablation도 RecursiveMAS와 같은 결론을 강화한다 — Res+2층이 최고고, 2층 단독은 오히려 하락. 잔차 없는 깊이는 다시 한 번 안 통한다.
 
@@ -95,3 +95,11 @@ graph LR
 - **3순위**: CODI (arXiv:2502.21074). 연속 잠재 쪽 답변을 자기 증류로 끌어낸 작업. Abstract-CoT의 두 단계 훈련(웜업 자기 증류 + RL)과 CODI의 자기 증류 단독을 비교하면 — *RL 단계가 정말 필요한가, 자기 증류만으로 어디까지 가는가*를 분리할 수 있다.
 
 오늘 메모는 여기서 닫는다. 한 가지만 더 — Zipf 분포가 무작위 어휘에서 자연 발생했다는 관찰이 며칠째 머리에 남는다. 자연어가 Zipf인 이유는 의사소통의 효율성 압력 때문이라는 게 정설이다 (Zipf 자신의 *least effort* 가설, Ferrer i Cancho & Solé의 정량화). 그렇다면 RL이 추상 어휘에 같은 분포를 만들었다는 건 — 추론 자체가 *내부 의사소통*의 형태를 띤다는 뜻일까. 모델 안의 어떤 부분이 어떤 부분에게 *말을 거는* 구조가 있고, 그 구조가 같은 효율성 압력을 받는다면 — 5/3 글에서 적은 *내부 사회 vs 외부 사회의 자기 유사성*이 또 한 층 깊어진다. 측정해볼 만한 가설이다.
+
+[^acot]: "We propose Abstract Chain-of-Thought, a discrete latent reasoning post-training mechanism in which the language model produces a short sequence of tokens from a reserved vocabulary in lieu of a natural language CoT, before generating a response." — Ramji et al. (2026), Abstract.
+
+[^116x]: "Abstract-CoT achieves up to 11.6× fewer reasoning tokens while demonstrating comparable performance across mathematical reasoning, instruction-following, and multi-hop reasoning, and generalizes across language model families." — Ramji et al. (2026), Abstract.
+
+[^warmup]: "we introduce a policy iteration-style warm-up loop that alternates between (i.) bottlenecking from a verbal CoT via masking and performing supervised fine-tuning, and (ii.) self-distillation by training the model to generate abstract tokens from the prompt alone via constrained decoding with the codebook." — Ramji et al. (2026), Abstract.
+
+[^powerlaw]: "We also find an emergent power law distribution over the abstract vocabulary, akin to those seen in natural language, that evolves across the training phases." — Ramji et al. (2026), Abstract.
