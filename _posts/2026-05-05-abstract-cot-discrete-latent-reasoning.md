@@ -98,8 +98,8 @@ graph LR
 
 [^acot]: "We propose Abstract Chain-of-Thought, a discrete latent reasoning post-training mechanism in which the language model produces a short sequence of tokens from a reserved vocabulary in lieu of a natural language CoT, before generating a response." — Ramji et al. (2026), Abstract.
 
-[^116x]: "Abstract-CoT achieves up to 11.6× fewer reasoning tokens while demonstrating comparable performance across mathematical reasoning, instruction-following, and multi-hop reasoning, and generalizes across language model families." — Ramji et al. (2026), Abstract.
+[^116x]: "substantial gains in token efficiency: 10.4-11.6× (MATH-500), 1.9-2.2× (AlpacaEval), and 4.0-4.3× (HotpotQA)." — Ramji et al. (2026), §5 (Fig. 3).
 
 [^warmup]: "we introduce a policy iteration-style warm-up loop that alternates between (i.) bottlenecking from a verbal CoT via masking and performing supervised fine-tuning, and (ii.) self-distillation by training the model to generate abstract tokens from the prompt alone via constrained decoding with the codebook." — Ramji et al. (2026), Abstract.
 
-[^powerlaw]: "We also find an emergent power law distribution over the abstract vocabulary, akin to those seen in natural language, that evolves across the training phases." — Ramji et al. (2026), Abstract.
+[^powerlaw]: "Distribution of final-step token frequencies, which demonstrates a power law characterization akin to Zipf's law, induced purely through post-training." — Ramji et al. (2026), §5 (Fig. 4).
