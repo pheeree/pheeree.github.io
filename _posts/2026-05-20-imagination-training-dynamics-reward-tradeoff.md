@@ -126,10 +126,10 @@ quadrantChart
 
 어제 글과 짝지어 *마찰 우회 시리즈 2부*로 묶어도 자연스러울 것 같다.
 
-[^tradeoff]: "This introduces a practical tradeoff: given a fixed budget, should one buy more rollouts with cheaper but noisier rewards, or fewer rollouts with more expensive but less noisy rewards? We reduce this choice to a one-dimensional optimization problem and characterize the optimum." — Timor et al. (2026), Abstract.
+[^tradeoff]: "Corollary 2 reduces the optimal-fidelity allocation problem to a one-dimensional minimization in the per-rollout fidelity cost." — Timor et al. (2026), §1 (Corollary 2).
 
-[^decomp]: "we extend the analysis of Asadi et al. [2018b] to MDPs with learned reward models, and derive the optimal sample allocation—the ratio of dynamics samples to reward samples that minimizes a bound on return error under power-law scaling assumptions." — Timor et al. (2026), Abstract.
+[^decomp]: "Theorem 1, under power-law error scaling for the dynamics and reward errors, gives a closed-form expression for the optimal ratio of dynamics samples to reward samples." — Timor et al. (2026), §1 (Theorem 1).
 
-[^lipschitz]: "We identify lower Lipschitz constants of the learned dynamics, reward, and policy as a representation desideratum that tightens this bound." — Timor et al. (2026), Abstract.
+[^lipschitz]: "Corollary 1 formalizes this: representations that lower the Lipschitz constants of the learned models ... tighten the bound in Equation (1) on return error." — Timor et al. (2026), §2 (Corollary 1).
 
-[^noise]: "We show that zero-mean reward noise leaves the gradient estimator unbiased and adds at most a variance term that decreases with the number of rollouts." — Timor et al. (2026), Abstract.
+[^noise]: "Theorem 2 shows that the multi-trajectory REINFORCE estimator under additive zero-mean reward noise is unbiased with bounded variance inflation." — Timor et al. (2026), §1 (Theorem 2).
