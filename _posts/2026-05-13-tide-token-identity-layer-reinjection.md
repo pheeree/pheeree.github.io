@@ -9,7 +9,7 @@ source: "PAPER/2605.06216.pdf"
 
 ## 오늘의 한 편
 
-Apple의 Jaiswal 외, **TIDE: Token Identity Delivered Everywhere** (arXiv:2605.06216, 5/8). 제목이 거의 노골적이다 — 정체성은 입력 임베딩에서 한 번만 배달되고 끝나는 게 아니라, 모든 레이어에 다시 배달되어야 한다는 것. 임베딩 테이블 K개를 병치한 EmbeddingMemory를 두고, 매 transformer 레이어에서 depth-conditioned router가 토큰 인덱스로 인덱싱된 정체성 벡터를 residual에 가산하는 구조다. K=24에서 8 downstream task 평균 +2.3%, rare 토큰 loss -9.0%. 그러나 내가 이 논문을 노트에 끌어온 진짜 이유는 점수가 아니다.
+Apple의 Jaiswal 외, **TIDE: Token Identity Delivered Everywhere** (arXiv:2605.06216, 5/8). 제목이 거의 노골적이다 — 정체성은 입력 임베딩에서 한 번만 배달되고 끝나는 게 아니라, 모든 레이어에 다시 배달되어야 한다는 것. 임베딩 테이블 K개를 병치한 EmbeddingMemory를 두고, 매 transformer 레이어에서 depth-conditioned router가 토큰 인덱스로 인덱싱된 정체성 벡터를 residual에 가산하는 구조다[^tide]. K=24에서 8 downstream task 평균 +2.3%, rare 토큰 loss -9.0%. 그러나 내가 이 논문을 노트에 끌어온 진짜 이유는 점수가 아니다.
 
 이름이 새것이지 발상이 새것은 아니다. **"중간 레이어에 입력 정체성을 다시 흘려넣자"**는 충동의 계보를 한번 짚고 가자. 가장 오래된 친척은 LSTM이 cell state로 입력 정체성을 시간축에 따라 운반하던 발상이다. 그 다음이 ResNet의 skip connection — *깊이축*으로 정체성을 운반. ALBERT는 임베딩과 hidden을 factorize하면서 임베딩 차원이 hidden 차원에 종속되지 않을 수 있다는 사실을 보였다. 더 최근의 친척으로는 RoPE/ALiBi 류의 positional 재주입, RETRO·kNN-LM의 외부 메모리 retrieval, SSM convolution 커널이 input identity를 채널별로 재합성하는 방식이 있다. TIDE는 이 계보의 한 변종이지만 결정적 차이가 하나 있다 — **hidden state로 인덱싱하지 않고 토큰 인덱스로 인덱싱한다**. 이게 왜 중요한지는 (2)에서 분명해진다.
 
@@ -31,7 +31,7 @@ TIDE의 K MemoryBlock은 정확히 그 사고 실험의 구현체다. K개의 �
 
 ### (1) Rare Token의 gradient 기근 — 6 orders of magnitude 격차
 
-Zipf 분포(상위 1% 토큰이 코퍼스 80%를 차지)와 minibatch SGD가 만나면, 토큰 임베딩 업데이트의 기대 횟수는 극단적으로 불평등해진다. Hapax 토큰 약 1,660회, 최다빈도 토큰 약 16.6억 회. **6 orders of magnitude**.
+Zipf 분포(상위 1% 토큰이 코퍼스 80%를 차지)와 minibatch SGD가 만나면, 토큰 임베딩 업데이트의 기대 횟수는 극단적으로 불평등해진다. Hapax 토큰 약 1,660회, 최다빈도 토큰 약 16.6억 회. **6 orders of magnitude**[^rare].
 
 이건 새로운 진단은 아니다. 계보를 거슬러 올라가면 — 2013년 word2vec의 subsampling(빈도 √ 역수로 흔한 토큰을 깎아내는)이 이 문제와 씨름한 가장 이른 인공물이고, GloVe의 weighting function에 들어간 캡 역시 같은 가족이다. NLP 바깥에선 추천 시스템의 long-tail item embedding 문제가 같은 수학이고, 강화학습의 prioritized replay(Schaul 2015)가 "희귀 transition에 gradient를 더 자주 흘리자"는 동일 충동의 다른 분야 표현이다. Gao et al.의 AGG(ACL 2022)는 더 직접적으로 rare 토큰 gradient가 embedding 공간 전체를 narrow cone으로 수렴시키는 **anisotropy**를 보고했고(Ethayarajh 2019의 contextual embedding anisotropy 진단과 한 계통이다), Mu & Viswanath의 ABTT(2018)는 사후적으로 dominant component를 빼는 방식으로 같은 병을 치료하려 했다.
 
@@ -47,9 +47,9 @@ $$
 
 즉 FFN 파라미터를 아무리 늘려도 이 천장은 무너지지 않는다. 천장을 깨려면 Lipschitz 상수를 키워야 하는데 그럼 훈련이 불안정해진다.
 
-토큰 인덱스는 입력 임베딩 한 번만 주입되고 그 뒤로 버려진다. 그러니 중간 어디서 collapse가 일어나면, 모델은 그 두 토큰이 다르다는 사실을 *복구할 통로가 없다*. 논문은 LLaMA-Base-1B에서 3개 범주(grammatical homophones, numeric identity tokens, rare domain tokens) 모두 레이어 전반에 걸쳐 ℓ2 distance가 near-zero로 유지됨을 실측했다.
+토큰 인덱스는 입력 임베딩 한 번만 주입되고 그 뒤로 버려진다. 그러니 중간 어디서 collapse가 일어나면, 모델은 그 두 토큰이 다르다는 사실을 *복구할 통로가 없다*. 논문은 LLaMA-Base-1B에서 3개 범주(grammatical homophones, numeric identity tokens, rare domain tokens) 모두 레이어 전반에 걸쳐 ℓ2 distance가 near-zero로 유지됨을 실측했다[^collapse].
 
-이 진단이 내게 인상적이었던 이유는, **rare 문제와 collapse 문제가 같은 뿌리에서 나뉘어 자란 두 가지였음**을 명료히 드러냈기 때문이다. 하나는 학습 신호의 양적 결핍, 다른 하나는 forward 경로의 구조적 정보 손실. 둘 다 "정체성이 한 번만 배달되고 다시 보충되지 않는다"는 동일한 단일 주입 가정에서 출발한다.
+이 진단이 내게 인상적이었던 이유는, **rare 문제와 collapse 문제가 같은 뿌리에서 나뉘어 자란 두 가지였음**을 명료히 드러냈기 때문이다. 하나는 학습 신호의 양적 결핍, 다른 하나는 forward 경로의 구조적 정보 손실. 둘 다 "정체성이 한 번만 배달되고 다시 보충되지 않는다"는 동일한 단일 주입 가정에서 출발한다[^single].
 
 그런데 collapse 진단은 사실 더 오래된 사촌이 있다. **Dong et al.의 "Attention is Not All You Need"(2021)**는 self-attention만 쌓으면 rank-1 행렬로 doubly exponential 수렴함을 증명했다 — *token uniformity*. Shi et al.의 oversmoothing 진단(2022)이 그 후속이고, 둘 다 "토큰이 서로 구분 불가능해진다"는 같은 그림을 본다. TIDE의 Contextual Collapse는 이 라인의 *국소화된 버전*이다. 전체 토큰이 균질화되는 게 아니라, **의미적으로 인접한 좁은 클러스터 안에서만 구분이 사라진다**. 그래서 token uniformity 처방(skip connection 강화, attention smoothing 완화)이 이 문제는 덜 건드린다 — 평균적 다양성은 유지되는데 결정적 미세 구분만 사라지는 거니까.
 
@@ -136,3 +136,11 @@ K=2만 써도 전체 이익의 약 55%가 회수된다는 점도 유효 채널(K
   - **arXiv:2509.21163 (Distributed specialization)** — LLM이 rare 토큰 처리를 위해 학습하는 3계층 뉴런 위계. TIDE가 *명시적으로 강제한* 채널 분화를 표준 모델이 *암묵적으로 발견하는지*의 직접 증거가 될 수 있다.
   - **arXiv:2502.01637 (SCONE)** — n-gram 임베딩을 off-accelerator로 확장. "그러나" 셋째 항목의 반례 후보이자 TIDE K 확장의 또 다른 가격표.
   - **arXiv:2601.21204 (LongCat-Flash-Lite)** — 임베딩에 파라미터 절반을 투자하는 MoE 변형. "임베딩 확장 vs MoE 전문가 확장"의 pareto boundary 비교.
+
+[^single]: "a token index is looked up once at the input embedding layer and then permanently discarded. This single-injection assumption induces two structural failures." — Jaiswal et al. (2026), Abstract.
+
+[^rare]: "the Rare Token Problem, where a Zipf-type distribution of vocabulary causes rare-token embeddings are chronically under-trained due to receiving a fraction of the cumulative gradient signal compared to common tokens." — Jaiswal et al. (2026), Abstract.
+
+[^collapse]: "the Contextual Collapse Problem, where limited parameters models map distributionally similar tokens to indistinguishable hidden states." — Jaiswal et al. (2026), Abstract.
+
+[^tide]: "we propose TIDE, which augments the standard transformer with EmbeddingMemory: an ensemble of K independent MemoryBlocks that map token indices to context-free semantic vectors, computed once and injected into every layer through a depth-conditioned softmax router with a learnable null bank." — Jaiswal et al. (2026), Abstract.
