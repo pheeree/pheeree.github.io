@@ -9,7 +9,7 @@ source: "PAPER/2604.05273.pdf"
 
 ## 오늘의 한 편
 
-Kabir Ahuja, Yuxuan Li, Andrew Kyle Lampinen, *Beneath the Surface: Investigating LLMs' Capabilities for Communicating with Subtext* (arXiv:2604.05273, 2026-04-07, Google DeepMind). 보드게임(Dixit·Wavelength)을 발판 삼은 두 환경, 역사적 우의의 해석, 그리고 검열관을 피하면서 비평가에겐 들리도록 쓰는 "이솝 저자" 과제 — 네 가지 평가 환경에서 LLM이 표면 아래 함의를 다루는 능력을 체계적으로 측정한다.
+Kabir Ahuja, Yuxuan Li, Andrew Kyle Lampinen, *Beneath the Surface: Investigating LLMs' Capabilities for Communicating with Subtext* (arXiv:2604.05273, 2026-04-07, Google DeepMind). 보드게임(Dixit·Wavelength)을 발판 삼은 두 환경, 역사적 우의의 해석, 그리고 검열관을 피하면서 비평가에겐 들리도록 쓰는 "이솝 저자" 과제 — 네 가지 평가 환경에서 LLM이 표면 아래 함의를 다루는 능력을 체계적으로 측정한다[^suites].
 
 결론은 무거운 한 줄로 압축된다. 문해(이해)는 어느 정도 따라왔지만 함의의 의도적 생성은 22%에 머문다.
 
@@ -23,13 +23,13 @@ Kabir Ahuja, Yuxuan Li, Andrew Kyle Lampinen, *Beneath the Surface: Investigatin
 
 ## 핵심 세 가지
 
-**첫째, literal bias는 구조적이다.** Visual Allusions에서 Gemini-2.5-Pro조차 60%의 시간에 obvious clue — 이미지의 표면을 그대로 가리키는 단서 — 를 생성한다. just-right 비율은 37.64%. Wavelength 기반 Attuned에서 MindRead 점수 최고치 0.37(Claude-Haiku-4.5), 평균 ~0.33. 1/3의 경우에만 팀 내 선택적 소통에 성공한다. 이건 메모리를 추가해도, 모델 크기를 키워도 잘 안 흔들리는 결이다 — 모델이 클수록 상대적으로는 낫지만, 인간 기준에는 한참 못 미친다.
+**첫째, literal bias는 구조적이다.** Visual Allusions에서 Gemini-2.5-Pro조차 60%의 시간에 obvious clue — 이미지의 표면을 그대로 가리키는 단서 — 를 생성한다[^literal]. just-right 비율은 37.64%. Wavelength 기반 Attuned에서 MindRead 점수 최고치 0.37(Claude-Haiku-4.5), 평균 ~0.33. 1/3의 경우에만 팀 내 선택적 소통에 성공한다. 이건 메모리를 추가해도, 모델 크기를 키워도 잘 안 흔들리는 결이다 — 모델이 클수록 상대적으로는 낫지만, 인간 기준에는 한참 못 미친다.
 
 계보를 짚자. 이건 새 발견이라기보다 Grice(1975)의 함축(implicature) 이론이 짚었던 자리에 LLM을 앉혀본 결과다. Grice의 협력 원리 네 격률(양·질·관계·방식) 중 *방식의 격률을 의도적으로 어김으로써 생기는 함의* — 이걸 LLM은 거의 짓지 못한다. Sperber-Wilson(1986)의 Relevance Theory는 한 발 더 나아간다. 모든 발화는 적정 관련성을 약속한다는 것. 인간 청자는 그 약속을 전제로 표면 너머를 추론한다. 모델은 약속하지 않는다. 어쩌면 못한다. Clark(1996)의 *공동 행위로서의 언어 사용*이 그 약속의 메커니즘을 grounding act로 분해해놓았는데, 이 grounding act 자체가 RLHF에서 보상되지 않는다. 정확성·근거 제시·저하 회피가 보상되는 동안, 의도된 모호함·간접 지시·우회 표현은 체계적으로 깎였을 가능성이 높다.
 
 ALTPRAG(arXiv:2505.18497)이 22개 모델의 훈련 단계별 화용 역량을 측정해보니 base 모델에 잠재한 화용 능력이 RLHF로 점진적 향상된다고 보고하지만 — 이건 이해 측면의 측정이다. 생성에서의 literal bias는 별개의 축이다. 즉 RLHF는 *읽는 화용*은 키우고 *쓰는 화용*은 깎는다는 비대칭 가설이 가능하다.
 
-**둘째, common ground 역설.** 공유 맥락을 명시적으로 제공하면 literal clue 비율이 30~50% 감소한다. 좋은 소식. 그러나 — 그리고 이게 Geurts(2024)의 인지 자원 가설을 그대로 LLM에 매핑한 결과인데 — 공유 맥락을 *증거에서 belief로 형성*하는 능력은 약하다. Awareness score는 Gemini-2.5-Pro가 공유 사실 미제공 시 0.051. 이미 갖고 있는 정보조차 스스로 알아차려 활용하지 못한다.
+**둘째, common ground 역설.** 공유 맥락을 명시적으로 제공하면 literal clue 비율이 30~50% 감소한다[^commonground]. 좋은 소식. 그러나 — 그리고 이게 Geurts(2024)의 인지 자원 가설을 그대로 LLM에 매핑한 결과인데 — 공유 맥락을 *증거에서 belief로 형성*하는 능력은 약하다. Awareness score는 Gemini-2.5-Pro가 공유 사실 미제공 시 0.051. 이미 갖고 있는 정보조차 스스로 알아차려 활용하지 못한다.
 
 받으면 쓴다. 짓지는 못한다.
 
@@ -37,7 +37,7 @@ ALTPRAG(arXiv:2505.18497)이 22개 모델의 훈련 단계별 화용 역량을 �
 
 그러나 여기서 한 발 멈추자. 받으면 쓴다는 단서도 무조건은 아니다. ALTPRAG의 후속 분석에서 *맥락 길이가 일정 임계를 넘으면 화용 역량이 다시 떨어진다*는 보고가 있다. 즉 paratext를 무한히 쌓는다고 능력이 선형으로 오르지 않는다. 인간 화자가 발화의 절반을 쓰는 그 정렬 노동을 — 모델은 거의 하지 않는다. 그리고 우리가 그 빈자리를 paratext로 채우려 할 때, 채움 자체에 한계가 있다.
 
-**셋째, paratext 효과와 이해-생성의 분리.** 이 부분이 이 논문의 가장 흥미로운 결이다. Historical Allegories(역사 사건을 우회한 허구 해석)에서 default는 26%지만, 저자명·독자 페르소나(Historian) 같은 paratextual 요소를 주면 73%로 뛴다. 한 줄로 47%p. paratext가 모델의 해석 전체를 들어 올린다.
+**셋째, paratext 효과와 이해-생성의 분리.** 이 부분이 이 논문의 가장 흥미로운 결이다. Historical Allegories(역사 사건을 우회한 허구 해석)에서 default는 26%지만, 저자명·독자 페르소나(Historian) 같은 paratextual 요소를 주면 73%로 뛴다[^paratext]. 한 줄로 47%p. paratext가 모델의 해석 전체를 들어 올린다.
 
 그러나 같은 모델이 The Aesopian Author 과제 — 금지 주제(예: 민주주의)를 비평가는 알아채되 검열관은 못 알아채게 쓰기 — 에선 성공률 22%에 머문다. GPT-5가 평균 2.20으로 최고지만 여전히 낮다. Genette(1987)의 paratext 개념(저자명·서문·주석이 본문 해석을 틀짓는다는 그 논의)이 LLM의 해석에 그대로 작동하는데, *생성* 쪽으로는 같은 레버가 작동하지 않는다.
 
@@ -88,3 +88,11 @@ flowchart TB
 - **arXiv:2604.17309** *Knows.Academy YAML 사이드카*. ARA보다 가벼운 paratext 보강이 소형 모델에서 +29~+42%p. 오늘 논문의 26%→73% 도약과 비교 가능한 외부 증거. paratext 인프라의 비용곡선을 그릴 수 있다.
 
 세 편 중에서는 다음 글에 (arXiv:2510.26253)을 우선 다뤄보자. 오늘 글의 핵심인 paratext 효과를 더 작고 명시적인 개입으로 분해해볼 수 있는 자연스러운 다음 단계다. 어제·오늘이 무거운 인프라(ARA의 4층, 본 논문의 평가 환경 네 개)였다면, 다음은 더 작은 칼로 같은 살을 베어보는 것.
+
+[^suites]: "we systematically study whether language models can use subtext in communicative settings, and introduce four new evaluation suites to assess these capabilities." — Ahuja et al. (2026), Abstract.
+
+[^literal]: "We find that frontier models generally exhibit a strong bias towards overly literal, explicit communication, and thereby fail to account for nuanced constraints—even the best performing models generate literal clues 60% of times in one of our environments Visual Allusions." — Ahuja et al. (2026), Abstract.
+
+[^commonground]: "some models can sometimes make use of common ground with another party to help them communicate with subtext, achieving 30%-50% reduction in overly literal clues; but they struggle at inferring presence of a common ground when not explicitly stated." — Ahuja et al. (2026), Abstract.
+
+[^paratext]: "For allegory understanding, we find paratextual and persona conditions to significantly shift the interpretation of subtext." — Ahuja et al. (2026), Abstract.

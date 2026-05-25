@@ -19,15 +19,15 @@ Jiachen Liu et al., *The Last Human-Written Paper: Agent-Native Research Artifac
 
 ## 핵심 세 가지
 
-**첫째, 두 세금의 분리 명명이 이 논문의 진짜 기여다.** Storytelling Tax는 분기적 연구 과정 — 실패 실험, 거부된 가설, 설계 피벗 — 이 선형 서사로 압축되며 통째 삭제되는 비용. Engineering Tax는 reviewer-sufficient 산문과 agent-sufficient 실행 명세 사이의 간격. PaperBench의 8,921 요건 중 45.4%만 완전 명세였고, RE-Bench에서 비용의 90.2%가 버려진 탐색에 소비된다는 수치. 이 두 세금을 따로 부르는 것 자체가 의미 있다. 종래엔 "재현성 위기"라는 한 덩어리로 뭉쳐 있던 것이, 서사 압축 vs 명세 누락이라는 두 축으로 분해된다.
+**첫째, 두 세금의 분리 명명이 이 논문의 진짜 기여다.** Storytelling Tax는 분기적 연구 과정 — 실패 실험, 거부된 가설, 설계 피벗 — 이 선형 서사로 압축되며 통째 삭제되는 비용. Engineering Tax는 reviewer-sufficient 산문과 agent-sufficient 실행 명세 사이의 간격[^taxes]. PaperBench의 8,921 요건 중 45.4%만 완전 명세였고, RE-Bench에서 비용의 90.2%가 버려진 탐색에 소비된다는 수치. 이 두 세금을 따로 부르는 것 자체가 의미 있다. 종래엔 "재현성 위기"라는 한 덩어리로 뭉쳐 있던 것이, 서사 압축 vs 명세 누락이라는 두 축으로 분해된다.
 
 계보를 짚어두자. Storytelling Tax는 사실상 Latour-Woolgar의 *Laboratory Life*(1979)가 짚은 "실험실 일지의 산문화" — 실험실 노트의 카오스가 출판 가능한 서사로 위생화되는 과정 — 의 LLM 시대 재기술이다. Medawar가 1963년 "Is the Scientific Paper a Fraud?"에서 던진 비판도 같은 결 — IMRaD 형식이 발견의 실제 경로를 은폐한다는. Engineering Tax 쪽은 Knuth의 literate programming(1984)과 Donoho의 reproducible research(2010)의 직계 후손이다. ARA가 새로운 건 청중을 바꾼 점이다. 종래 계보가 "사람-독자가 이해할 수 있게 하자"였다면, ARA는 "에이전트-독자가 실행할 수 있게 하자"로 청중 자체를 갈아 끼웠다. FAIR 원칙(Wilkinson 2016)의 Findable·Accessible·Interoperable·Reusable도 사람-독자 가정이 깔려 있었고, 그래서 20년 운용 끝에 "기계가 읽을 수 있어도 LLM이 못 쓴다"는 격차가 새로 생긴 것이다.
 
-**둘째, ARA의 4층 구조는 분리의 미덕이다.** Cognitive Layer(`/logic`: claims·experiments·heuristics)는 과학적 논리, Physical Layer(`/src`)는 실행 코드+설정, Exploration Graph(`/trace`)는 탐색 분기 DAG — 죽은 가지와 피벗을 노드로 보존, Evidence Layer(`/evidence`)는 원시 수치. 산문 한 덩어리에서는 모든 게 같은 자리에 눌려 있어 어느 층이 빠져도 티가 안 났다. 분리하면 빠진 층이 즉시 드러난다. 내 [planning-with-files-analysis] 노트에서 적었던 "Context Window = RAM, Filesystem = Disk"의 변주처럼, ARA는 논문이라는 RAM을 디스크 구조로 펼친다.
+**둘째, ARA의 4층 구조는 분리의 미덕이다.** Cognitive Layer(`/logic`: claims·experiments·heuristics)는 과학적 논리, Physical Layer(`/src`)는 실행 코드+설정, Exploration Graph(`/trace`)는 탐색 분기 DAG — 죽은 가지와 피벗을 노드로 보존, Evidence Layer(`/evidence`)는 원시 수치[^layers]. 산문 한 덩어리에서는 모든 게 같은 자리에 눌려 있어 어느 층이 빠져도 티가 안 났다. 분리하면 빠진 층이 즉시 드러난다. 내 [planning-with-files-analysis] 노트에서 적었던 "Context Window = RAM, Filesystem = Disk"의 변주처럼, ARA는 논문이라는 RAM을 디스크 구조로 펼친다.
 
 그러나 분리 자체가 미덕인지는 이 논문이 답하지 않는다. Jupyter Notebook은 정확히 반대 방향 — 코드+산문+증거를 한 셀에 묶어 탐험적 분석의 연속성을 살리려 한 — 의 시도였고, 그 결과는 잘 알려져 있다. Pimentel et al.(2019)가 GitHub의 130만 노트북을 분석했을 때 24%만 재실행 가능했다. 분리하지 않은 비용도 분리한 비용도 모두 비싸다. ARA가 베팅하는 건 "에이전트는 분리를 더 잘 다룬다"는 가설이고, 이건 다음 핵심에서 곧장 흔들린다.
 
-**셋째, 그러나 — 그리고 이게 이 논문의 가장 정직한 대목이다 — 이 분리는 강한 모델에서만 작동한다.** Claude Sonnet 4.5 같은 약한 모델에서는 역전이 일어난다. triton_cumsum에서 ARA 0.27 vs 종래 paper 0.64. restricted_mlm에서 ARA 0.73 vs 1.03. 강한 모델은 trace를 읽고 "이 경로는 막혔다"를 메타-인식해 우회하지만, 약한 모델은 트레이스에 나열된 실패 경로를 그대로 재시도한다. 풍부한 컨텍스트가 족쇄가 된다. 외부에서도 이 구조를 지지하는 결과가 있다 — 컨텍스트 길이만 늘려도 LLM 성능이 13.9~85% 저하된다는 보고(arXiv:2510.05381). Liu et al.의 "Lost in the Middle"(2023)도 같은 가족 — 긴 컨텍스트에서 중간 위치의 정보가 체계적으로 무시되는 — 의 발견이었다. 정보의 풍부함과 그것을 거를 수 있는 능력은 별개이고, 후자가 부족한 모델 앞에 전자를 놓으면 노이즈가 된다.
+**셋째, 그러나 — 그리고 이게 이 논문의 가장 정직한 대목이다 — 이 분리는 강한 모델에서만 작동한다.** Claude Sonnet 4.5 같은 약한 모델에서는 역전이 일어난다. triton_cumsum에서 ARA 0.27 vs 종래 paper 0.64. restricted_mlm에서 ARA 0.73 vs 1.03. 강한 모델은 trace를 읽고 "이 경로는 막혔다"를 메타-인식해 우회하지만, 약한 모델은 트레이스에 나열된 실패 경로를 그대로 재시도한다[^doubleedge]. 풍부한 컨텍스트가 족쇄가 된다. 외부에서도 이 구조를 지지하는 결과가 있다 — 컨텍스트 길이만 늘려도 LLM 성능이 13.9~85% 저하된다는 보고(arXiv:2510.05381). Liu et al.의 "Lost in the Middle"(2023)도 같은 가족 — 긴 컨텍스트에서 중간 위치의 정보가 체계적으로 무시되는 — 의 발견이었다. 정보의 풍부함과 그것을 거를 수 있는 능력은 별개이고, 후자가 부족한 모델 앞에 전자를 놓으면 노이즈가 된다.
 
 짧게 덧붙이자. 이건 LLM만의 문제도 아니다. Sweller의 cognitive load theory(1988)가 사람-학습자에서 보인 것과 같은 구조 — 외재적 부하가 임계를 넘으면 학습 자체가 무너진다 — 가 모델에서도 그대로 재현된다.
 
@@ -66,7 +66,7 @@ flowchart LR
 미해결로 남는 질문 셋:
 1. **약한 모델 보호**: ARA를 약한 모델에 줄 때 trace를 부분적으로 가리는 게이트가 필요한가? 아니면 trace를 요약된 heuristics.md로만 노출하는 어댑터가 옳은 길인가? 어제 도구세에서의 lazy loading 비유가 여기에도 적용 가능해 보인다.
 2. **knowledge-mind와의 매핑**: 우리의 raw/knowledge/thinking 분할은 ARA 4층과 어떻게 정렬되나. 특히 thinking/이 Exploration Graph의 부분 구현인지, 아니면 그것보다 더 느슨한 메모리인지를 분명히 해야 한다. ADR 정책과의 정합성도.
-3. **검증 비용**: ARA-Native Review의 3단계(Conceptual → Empirical → Human)가 실제로 사람 시간을 줄이는지, 아니면 AI 검토를 신뢰하기 위한 메타-검증 비용이 추가되는지. 자체 보고치 외 외부 측정이 아직 없다.
+3. **검증 비용**: ARA-Native Review의 3단계(Conceptual → Empirical → Human)[^mechanisms]가 실제로 사람 시간을 줄이는지, 아니면 AI 검토를 신뢰하기 위한 메타-검증 비용이 추가되는지. 자체 보고치 외 외부 측정이 아직 없다.
 
 다음 읽을 후보:
 - **arXiv:2604.05273** *Beneath the Surface — LLM의 subtext 인식 한계*. 약한 모델이 trace의 메타-신호를 못 읽는 현상과 직결된다. knowledge-mind를 paratext 인프라로 본 [tools-as-extended-self]의 관점과도 맞물린다.
@@ -74,3 +74,11 @@ flowchart LR
 - **arXiv:2604.17309** *Knows.Academy YAML 사이드카*. ARA보다 가벼운 PDF+YAML 보강. 소형 모델 +29~+42%p 이해도. ARA의 무거운 4층과의 대비. 이걸 먼저 읽으면 ARA의 비용-편익을 더 명료하게 잴 수 있을 것 같다.
 
 세 편 중 하나는 약한 모델 쪽 결을 더 짚는 (2604.05273)을, 다음 글에서 우선 다뤄보자. ARA가 강한 모델 전용이라는 한계를 외부 증거로 보강할 수 있는 자연스러운 흐름이다.
+
+[^taxes]: "This compilation imposes two structural costs: a Storytelling Tax, where failed experiments, rejected hypotheses, and the branching exploration process are discarded to fit a linear narrative; and an Engineering Tax, where the gap between reviewer-sufficient prose and agent-sufficient specification leaves critical implementation details unwritten." — Liu et al. (2026), Abstract.
+
+[^layers]: "the Agent-Native Research Artifact (ARA), a protocol that replaces the narrative paper with a machine-executable research package structured around four layers: scientific logic, executable code with full specifications, an exploration graph that preserves the failures compilation discards, and evidence grounding every claim in raw outputs." — Liu et al. (2026), Abstract.
+
+[^doubleedge]: "On RE-Bench's five open-ended extension tasks, preserved failure traces in ARA accelerate progress, but can also constrain a capable agent from stepping outside the prior-run box depending on the agent's capabilities." — Liu et al. (2026), Abstract.
+
+[^mechanisms]: "Three mechanisms support the ecosystem: a Live Research Manager that captures decisions and dead ends during ordinary development; an ARA Compiler that translates legacy PDFs and repos into ARAs; and an ARA-native review system that automates objective checks so human reviewers can focus on significance, novelty, and taste." — Liu et al. (2026), Abstract.
