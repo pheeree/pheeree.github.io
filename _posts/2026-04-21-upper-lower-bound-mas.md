@@ -19,17 +19,17 @@ Yang et al.(2026)과 Kim et al.(2025) — 같은 결론("에이전트 수는 잘
 
 **1. 상한은 K*가 결정한다 (Yang et al.)**
 
-MAS 성능의 상한은 에이전트 수 N이 아니라 **유효 독립 추론 채널의 수 K**가 결정한다. 동질적 에이전트는 출력이 강하게 상관돼 K가 금세 포화한다. 측정은 레이블 없이 가능하다 — 출력 임베딩의 공분산 고유값 분포에 섀넌 엔트로피를 씌운 `K* = exp(H)`. 좋은 소식: **페르소나 다양성만으로도**(동일 모델, 다른 프롬프트) K*를 끌어올릴 수 있다. 내가 하려던 것이 가장 싸게 상한을 여는 수단이었다.
+MAS 성능의 상한은 에이전트 수 N이 아니라 **유효 독립 추론 채널의 수 K**가 결정한다. 동질적 에이전트는 출력이 강하게 상관돼 K가 금세 포화한다[^yang_kstar]. 측정은 레이블 없이 가능하다 — 출력 임베딩의 공분산 고유값 분포에 섀넌 엔트로피를 씌운 `K* = exp(H)`. 좋은 소식: **페르소나 다양성만으로도**(동일 모델, 다른 프롬프트) K*를 끌어올릴 수 있다[^yang_div]. 내가 하려던 것이 가장 싸게 상한을 여는 수단이었다.
 
 **2. 하한은 조율 비용이 누른다 (Kim et al.)**
 
 같은 논문은 없다. 180개 통제 구성에서 도출한 스케일링 법칙은 세 지배 효과를 드러낸다.
 
-- **도구-조율 트레이드오프** (β̂=−0.330): 단일 에이전트 효율 0.466, MAS는 0.074~0.234. 도구 많은 과제일수록 조율 비용이 이득을 잠식한다.
-- **역량 포화** (β̂=−0.408): 단일 에이전트 baseline이 ≈0.45를 넘으면 MAS는 수확 체감 혹은 음의 수익. 이 한 줄로 87% 정확도의 아키텍처 선택 규칙이 만들어진다.
+- **도구-조율 트레이드오프** (β̂=−0.267): 단일 에이전트 효율 0.466, MAS는 0.074~0.234. 도구 많은 과제일수록 조율 비용이 이득을 잠식한다[^kim_tool].
+- **역량 포화** (β̂=−0.404): 단일 에이전트 baseline이 ≈0.45를 넘으면 MAS는 수확 체감 혹은 음의 수익. 이 한 줄로 87% 정확도의 아키텍처 선택 규칙이 만들어진다.
 - **위상 의존적 오류 증폭**: Independent 토폴로지는 **17.2배**, Centralized는 **4.4배**. 오케스트레이터가 '검증 병목'으로 기능할 때만 오류가 억제된다[^kim_amp].
 
-턴 수는 `T = 2.72 × (n+0.5)^1.724` (R²=0.974). 초선형 지수라 **3~4 에이전트를 넘으면 통신 비용이 추론 역량을 지배**한다.
+턴 수는 `T = 2.72 × (n+0.5)^1.724` (R²=0.974)[^kim_turn]. 초선형 지수라 **3~4 에이전트를 넘으면 통신 비용이 추론 역량을 지배**한다.
 
 **3. 두 논문은 충돌이 아니라 상보다**
 
@@ -58,3 +58,11 @@ MAS 성능의 상한은 에이전트 수 N이 아니라 **유효 독립 추론 �
 [^kim_amp]: "topology-dependent error amplification: independent agents amplify errors 17.2× through unchecked propagation, while centralized coordination contains this to 4.4×." — Kim et al. (2025), arXiv:2512.08296, Abstract.
 
 [^kim_sat]: "a capability saturation: we observe that coordination yields diminishing or negative returns ... once single-agent baselines exceed an empirical threshold of ∼45%." — Kim et al. (2025), arXiv:2512.08296, Abstract.
+
+[^yang_kstar]: "Homogeneous agents saturate early because their outputs are strongly correlated, whereas heterogeneous agents contribute complementary evidence. We further introduce K∗, an effective channel count that quantifies the number of effective channels without ground-truth labels." — Yang et al. (2026), arXiv:2602.03794, Abstract.
+
+[^yang_div]: "heterogeneous configurations consistently outperform homogeneous scaling: 2 diverse agents can match or exceed the performance of 16 homogeneous agents." — Yang et al. (2026), arXiv:2602.03794, Abstract.
+
+[^kim_tool]: "a tool-coordination trade-off (β=−0.267, p<0.001): tool-heavy tasks (e.g., 16-tool software engineering) suffer from multi-agent coordination overhead." — Kim et al. (2025), arXiv:2512.08296, §5.
+
+[^kim_turn]: "Turn count follows power-law scaling with number of agents... T = 2.72 × (n + 0.5)^1.724, R² = 0.974." — Kim et al. (2025), arXiv:2512.08296, §5.
