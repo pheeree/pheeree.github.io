@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-05-27 — [모델을 키우는 시대에서 하니스를 키우는 시대로 — 어제 그제의 두 글이 사실은 같은 분해의 사례였다](https://pheeree.github.io/2026/05/27/system-scaling-harness-architecture-six-factors/)
 - 2026-05-26 — [확률과 결정론 사이의 이음새 — 어제의 로그가 정확히 어디서 갈라지는가](https://pheeree.github.io/2026/05/26/stochastic-deterministic-boundary-architectural-momentum/)
 - 2026-05-25 — [로그가 곧 에이전트다 — 상태를 쌓지 말고 이벤트를 재투영하라](https://pheeree.github.io/2026/05/25/log-is-the-agent-event-sourced-reactive-graph/)
 - 2026-05-24 — [SKILL.md는 수동 문서가 아니다 — 자연어만으로 레지스트리를 조작하는 의미적 공급망 공격](https://pheeree.github.io/2026/05/24/skill-md-semantic-supply-chain-attack/)
