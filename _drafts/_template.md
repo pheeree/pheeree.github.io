@@ -65,7 +65,7 @@ source: "knowledge/research/xxx.md"
 2. …
 3. …
 
-## 내 연구에 어떻게 꽂히나
+## 내 연구에 어떻게 맞물리나
 
 구체적 함의 한두 문단.
 

@@ -37,11 +37,11 @@ flowchart LR
 
 **비대칭이 핵심이다.** training/consolidation 시점은 무거워지지만, 추론 시점은 가벼워진다. 인간 수면이 낮의 활동을 늘리는 게 아니라 밤에 따로 계산을 돌리는 것과 같다.
 
-수치도 인상적이다. Rule 110 cellular automaton t=32에서 no-loop이 10% 부근일 때 4 loops가 30% 이상으로 올라간다. Depo 16-hop에서는 4 loops만이 loss 감소를 달성한다. GSM-Infinite의 op8 영역(가장 깊은 추론)에서 Ouro 1.4B가 0.210에서 0.272로, Jet-Nemotron 2B가 0.351에서 0.388로 올라간다. 가장 극적인 수치는 sliding window eviction에서 나온다 — Ouro 1.4B, L=512에서 0.596 → 0.905, 52% 개선. cache가 좁아질수록 sleep이 더 절실하다는 것이 — 인간이 정보 폭주 후 더 깊이 자야 한다는 직관과 묘하게 겹친다.
+수치도 인상적이다. Rule 110 cellular automaton t=32에서 no-loop이 10% 부근일 때 4 loops가 30% 이상으로 올라간다.[^ca] Depo 16-hop에서는 4 loops만이 loss 감소를 달성한다.[^depo] GSM-Infinite의 op8 영역(가장 깊은 추론)에서 Ouro 1.4B가 0.210에서 0.272로, Jet-Nemotron 2B가 0.351에서 0.388로 올라간다.[^gsm] 가장 극적인 수치는 sliding window eviction에서 나온다 — Ouro 1.4B, L=512에서 0.596 → 0.905, 52% 개선.[^swa] cache가 좁아질수록 sleep이 더 절실하다는 것이 — 인간이 정보 폭주 후 더 깊이 자야 한다는 직관과 묘하게 겹친다.
 
 여기서 *그러나*가 한 번 들어간다. 같은 비대칭을 Mamba 원논문(Gu & Dao 2023)이 이미 어렴풋이 보여주었다. selective scan은 training-time에는 무겁고 inference-time에는 가볍다. 다만 거기서 비대칭은 *parallel scan trick*의 부산물이었을 뿐, 의도된 설계는 아니었다. Lee et al.의 기여는 이 비대칭을 *공고화라는 목적함수*에 맞춰 의도적으로 깊게 만든 것이다.
 
-**(3) "recurrence can be used not only for prediction but also for memory consolidation."** 저자들이 본문에 직접 박아둔 문장이다. 이게 왜 중요하냐면 — 지금까지 recurrence는 거의 항상 *다음 토큰을 예측하기 위한* 기제로만 다뤄졌다. RNN 시절부터 그랬고, Mamba2/GDN 계열도 본질적으로 같은 프레임이었다. 여기서 처음으로 recurrence가 두 가지 역할로 분리된다 — 예측을 위한 recurrence와 공고화를 위한 recurrence. 같은 메커니즘인데 *언제 누구를 위해 도는가*가 다르다.
+**(3) "recurrence can be used not only for prediction but also for memory consolidation."**[^key] 저자들이 본문에 직접 적어둔 문장이다. 이게 왜 중요하냐면 — 지금까지 recurrence는 거의 항상 *다음 토큰을 예측하기 위한* 기제로만 다뤄졌다. RNN 시절부터 그랬고, Mamba2/GDN 계열도 본질적으로 같은 프레임이었다. 여기서 처음으로 recurrence가 두 가지 역할로 분리된다 — 예측을 위한 recurrence와 공고화를 위한 recurrence. 같은 메커니즘인데 *언제 누구를 위해 도는가*가 다르다.
 
 이 분리는 학문적 계보로 보면 Momennejad et al. 2018(*eLife*)의 offline replay 연구와 정확히 같은 자리다 — 인간 RL에서도 깨어 있는 시간의 학습과 휴식 시간의 replay가 서로 다른 기여를 한다는 결과. 그리고 Mattar & Daw 2018(*Nature Neuroscience*)의 prioritized replay 이론 — 어떤 경험을 다시 돌리느냐가 EVB(expected value of backup)로 결정된다 — 가 한 단계 더 들어간다. 흥미로운 건 ML 쪽에서도 같은 자리가 있었다는 것이다. Schaul et al. 2016의 Prioritized Experience Replay가 DQN을 끌어올렸던 트릭. 두 분야가 약 십 년의 시차를 두고 같은 매듭에 닿는다.
 
@@ -55,11 +55,11 @@ flowchart LR
 
 그리고 한 가지 더 — NREM 수면 microstructure 연구(Park et al. 2025, *PMC*)가 시사하듯, 인간 수면에서는 *얼마나 자는가*가 아니라 *어떤 구조로 자는가*가 통합에 결정적이다. SWS의 slow oscillation과 spindle의 위상 동기화가 memory transfer의 핵심이라는 것이 Staresina et al. 2015(*Nature Neuroscience*) 이후 정착된 그림이다. 논문은 N(반복 횟수)이라는 스칼라로 단순화했지만, 실제 공고화가 단조롭게 N에 의존할 가능성은 낮다. 어떤 토큰을 더 오래 곱씹고 어떤 것을 빠르게 흘려보낼지의 스케줄링 — 그것이 다음 자리다.
 
-## 내 연구에 어떻게 꽂히나
+## 내 연구에 어떻게 맞물리나
 
 Path C 결정이 자꾸 떠오른다. knowledge-mind에서 우리는 결정론 데이터 레이어와 LLM 판단 레이어를 분리했다(2026-04-07). attention KV cache와 fast weight의 분업이 그 분리와 묘하게 평행하다 — 직접적으로 저장된 최근 정보와, 재조직된 parametric 표현. 그런데 오늘 논문이 보여주는 함의는, 후자가 제대로 기능하려면 *한 번의 쓰기로는 부족*하다는 것이다.
 
-이 부분이 가장 거슬린다. `/k-save`는 지금 단일 쓰기로 끝난다. 노트 한 편이 들어오면 그것을 그대로 markdown에 박아 두고, wikilink로 연결하고, frontmatter를 채운다. 그게 끝이다. 그런데 fast weight가 단일 forward pass로 좋은 표현을 못 만든다면, 내 knowledge 노트도 단일 쓰기로 *재사용 가능한 표현*이 되지 않을 가능성이 있다.
+이 부분이 가장 거슬린다. `/k-save`는 지금 단일 쓰기로 끝난다. 노트 한 편이 들어오면 그것을 그대로 markdown에 적어 두고, wikilink로 연결하고, frontmatter를 채운다. 그게 끝이다. 그런데 fast weight가 단일 forward pass로 좋은 표현을 못 만든다면, 내 knowledge 노트도 단일 쓰기로 *재사용 가능한 표현*이 되지 않을 가능성이 있다.
 
 tools-as-extended-self에 적어둔 한 줄이 다시 살아난다 — "지식은 사실의 저장소가 아니라 받아들임의 양식이다." 저장과 조직화는 다른 행위다. 그러면 무엇이 내 knowledge-mind의 sleep에 해당하는가? 그것이 단순히 backlinks 재계산 같은 결정론적 통계가 아니라, *LLM이 누적된 노트를 다시 한 번 통과하면서 표현을 재조직하는 단계*라면 — 이건 km/와 /k-* 분업 안에 아직 자리가 없는 작업이다.
 
@@ -99,3 +99,9 @@ flowchart TB
 - **Scaling up Test-Time Compute with Latent Reasoning: A Recurrent Depth Approach** (Geiping et al., arXiv:2502.05171, 2025-02). recurrent depth가 capacity가 아닌 computation depth 병목임을 직접 짚은 논문. 오늘 글의 "(1) 병목 재진단"의 학문적 뿌리.
 - **Serial Scaling Hypothesis** (Liu et al., arXiv:2507.12549, 2025-07). 순차적 계산이 본질적으로 순차적인 문제를 푸는 데 최적이라는 가설. 오늘 논문의 비대칭(consolidation은 무겁게, prediction은 가볍게)을 더 큰 이론적 틀에 위치시키는 데 도움이 될 것 같다.
 - **Prioritized Memory Access Explains Planning and Hippocampal Replay** (Mattar & Daw, *Nature Neuroscience* 2018). N의 스케줄링 문제 — 어떤 경험을 더 깊이 다시 돌릴지 — 에 대한 신경과학 쪽 정식화. 미해결 2와 직결.
+
+[^key]: "Our key insight is that recurrence can be used not only for prediction but also for memory consolidation." — Lee et al. (2026), §1 Introduction. (arXiv:2605.26099)
+[^ca]: "the non-looped model remains close to random guessing, reaching only about 10% exact accuracy after nearly 5B training tokens. Adding offline passes improves both learning speed and final accuracy under the same token budget: two loops achieves approximately 20% accuracy, while three and four loops achieve above 30%." (Rule 110, t=32) — Lee et al. (2026), §6.1 / Figure 2b.
+[^depo]: "We see that increasing the number of offline loops improves learning speed for queries that require 4 or more hops. The 1-loop model makes little progress on 4-hop and harder queries, and the 2-loop model similarly stalls on 8-hop and harder queries. Within our training budget, only the 4-loop model begins to improve on the hardest 16-hop task." — Lee et al. (2026), §6.2 / Figure 3.
+[^gsm]: "For Jet, six loops improves final accuracy on six-operation problems from 0.742 to 0.812 and on eight-operation problems from 0.351 to 0.388. For Ouro, four loops improves final accuracy on six-operation problems from 0.419 to 0.615 and from 0.210 to 0.272 on eight-operation problems." — Lee et al. (2026), §6.3 / Figure 4 (op8 영역).
+[^swa]: "using loops drastically improves accuracy from 0.596 to 0.905, an 52% improvement." (Ouro 1.4B, sliding-window eviction, L=512) — Lee et al. (2026), §6.4 / Figure 5.
