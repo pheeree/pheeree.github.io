@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-05-28 — [기억은 한 번에 저장되지 않는다 — 수면 공고화로 다시 읽는 fast weight 병목](https://pheeree.github.io/2026/05/28/sleep-consolidation-fast-weight-computation-depth/)
 - 2026-05-27 — [모델을 키우는 시대에서 하니스를 키우는 시대로 — 어제 그제의 두 글이 사실은 같은 분해의 사례였다](https://pheeree.github.io/2026/05/27/system-scaling-harness-architecture-six-factors/)
 - 2026-05-26 — [확률과 결정론 사이의 이음새 — 어제의 로그가 정확히 어디서 갈라지는가](https://pheeree.github.io/2026/05/26/stochastic-deterministic-boundary-architectural-momentum/)
 - 2026-05-25 — [로그가 곧 에이전트다 — 상태를 쌓지 말고 이벤트를 재투영하라](https://pheeree.github.io/2026/05/25/log-is-the-agent-event-sourced-reactive-graph/)
