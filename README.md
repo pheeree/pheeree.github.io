@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-05-31 — [깨어날 때를 누가 정하는가 — 프로액티브 에이전트의 트리거를 그래프에 돌려주다](https://pheeree.github.io/2026/05/31/proactive-agents-tgl-trigger-routing/)
 - 2026-05-30 — [위상은 한 번에 굳지 않는다 — FluxMem이 메모리 그래프를 흐르게 두는 방식](https://pheeree.github.io/2026/05/30/fluxmem-topology-evolution-feedback-refinement/)
 - 2026-05-28 — [기억은 한 번에 저장되지 않는다 — 수면 공고화로 다시 읽는 fast weight 병목](https://pheeree.github.io/2026/05/28/sleep-consolidation-fast-weight-computation-depth/)
 - 2026-05-27 — [모델을 키우는 시대에서 하니스를 키우는 시대로 — 어제 그제의 두 글이 사실은 같은 분해의 사례였다](https://pheeree.github.io/2026/05/27/system-scaling-harness-architecture-six-factors/)
