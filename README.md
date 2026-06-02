@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-02 — [검색은 이겼는데 천장은 같다 — PROBE가 프로액티브 에이전트를 세 조각으로 해부하는 방식](https://pheeree.github.io/2026/06/02/probe-proactive-bottleneck-execution-ceiling/)
 - 2026-06-01 — [출처를 기억하는 그래프 — MemORAI가 대화 메모리에 이력을 새기는 방식](https://pheeree.github.io/2026/06/01/memorai-graph-memory-provenance-retrieval/)
 - 2026-05-31 — [깨어날 때를 누가 정하는가 — 프로액티브 에이전트의 트리거를 그래프에 돌려주다](https://pheeree.github.io/2026/05/31/proactive-agents-tgl-trigger-routing/)
 - 2026-05-30 — [위상은 한 번에 굳지 않는다 — FluxMem이 메모리 그래프를 흐르게 두는 방식](https://pheeree.github.io/2026/05/30/fluxmem-topology-evolution-feedback-refinement/)
