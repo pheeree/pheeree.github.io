@@ -56,6 +56,10 @@ ARXIV_MENTION = re.compile(r"arXiv:(\d{4}\.\d{4,5})(v\d+)?", re.IGNORECASE)
 BARE_PAREN_ID = re.compile(r"\((\d{4}\.\d{4,5})(v\d+)?\)")
 # 맨 arXiv URL (마크다운 링크 ( ) 안이 아닌 것) — 작성 에이전트가 링크 대신 raw URL 단 경우.
 RAW_ARXIV_URL = re.compile(r"(?<![(\]])https?://arxiv\.org/(?:abs|html|pdf)/(\d{4}\.\d{4,5})(v\d+)?\S*")
+# 비-arXiv 학술 맨 URL (openreview·aclanthology·nips 등). 자동 링크화 대상은 아니나 게이트가 경고.
+RAW_OTHER_URL = re.compile(
+    r"(?<![(\]])https?://(?:openreview\.net|aclanthology\.org|proceedings\.\w+|papers\.nips\.cc|dl\.acm\.org)\S*"
+)
 SOURCE_LINE = re.compile(r'^source:\s*["\']?PAPER/(\d{4}\.\d{4,5})', re.MULTILINE)
 FM_TITLE = re.compile(r'^title:\s*["\']?(.+?)["\']?\s*$', re.MULTILINE)
 
@@ -365,7 +369,30 @@ def find_unlinked(text: str, valid_ids: set[str]) -> list[tuple[int, str]]:
             else:
                 if RAW_ARXIV_URL.search(line):
                     out.append((idx + 1, line.strip()[:80]))
+    # 비-arXiv 맨 URL (openreview·aclanthology 등) — 마크다운 링크 아닌 raw
+    for idx, line in _linkable_lines(text):
+        if RAW_OTHER_URL.search(line):
+            out.append((idx + 1, "[비-arXiv 맨 URL] " + line.strip()[:65]))
     return out
+
+
+# 중심 논문(source) 링크가 '오늘의 한 편' 섹션에 있는지 점검용.
+TODAY_SECTION = re.compile(r"##\s*오늘의 한 편(.*?)(?=\n##\s|\Z)", re.S)
+ARXIV_MD_LINK = re.compile(r"\]\(https?://arxiv\.org/abs/(\d{4}\.\d{4,5})")
+
+
+def check_central_link(text: str) -> str | None:
+    """'오늘의 한 편' 섹션에 중심 논문(source PAPER/id) 하이퍼링크가 있는지.
+    누락이면 중심 id 반환, 정상이면 None. arXiv 아닌 source(노트 기반 글)는 대상 외(None)."""
+    m = SOURCE_LINE.search(text)
+    if not m:
+        return None  # arXiv 중심 논문 아님 — 대상 외
+    cid = m.group(1)
+    sec = TODAY_SECTION.search(text)
+    body = sec.group(1) if sec else ""
+    if cid in set(ARXIV_MD_LINK.findall(body)):
+        return None
+    return cid
 
 
 def verify_draft(path: Path, cache: dict) -> int:
@@ -391,6 +418,10 @@ def verify_draft(path: Path, cache: dict) -> int:
         print("  → claim-check 와 함께 검토. 비차단 — 발행은 진행됨.")
     else:
         print("  ✓ 본문 arXiv id 전부 실재 확인됨.")
+    # '오늘의 한 편' 중심 논문 링크 점검
+    cmiss = check_central_link(text)
+    if cmiss:
+        print(f"  ⚠ '오늘의 한 편'에 중심 논문 {cmiss} 하이퍼링크 누락 — `[arXiv:{cmiss}](https://arxiv.org/abs/{cmiss})` 추가 권장.")
     return len(dead)
 
 
@@ -430,21 +461,26 @@ def main() -> None:
     # id 해소 (cache + API). check_links 도 실재 확인이 필요하므로 fetch 한다.
     resolved = resolve_ids(all_ids, cache, do_fetch=not check_only)
 
-    # --check-links: 본문/다음후보에 링크 안 된 검증된 arXiv 인용을 보고. 발행 전 게이트용.
+    # --check-links: 본문/다음후보 링크 누락 + '오늘의 한 편' 중심 링크 누락을 보고. 발행 전 게이트.
     if check_links:
         valid_ids = set(resolved.keys())
         total = 0
+        central_miss = 0
         for pp in parsed:
             miss = find_unlinked(pp["text"], valid_ids)
-            if miss:
-                total += len(miss)
+            cmiss = check_central_link(pp["text"])
+            if miss or cmiss:
                 print(f"⚠ {pp['slug']}")
                 for ln, snip in miss:
                     print(f"    L{ln}: {snip}")
-        if total == 0:
-            print("✓ 링크 누락 없음 — 본문·다음후보의 검증된 arXiv 인용은 모두 하이퍼링크.")
+                    total += 1
+                if cmiss:
+                    print(f"    [오늘의 한 편] 중심 논문 {cmiss} 링크 누락")
+                    central_miss += 1
+        if total == 0 and central_miss == 0:
+            print("✓ 누락 없음 — 본문·다음후보 검증 인용 + 오늘의 한 편 중심 링크 모두 정상.")
             sys.exit(0)
-        print(f"\n✗ 링크 안 된 검증 인용 {total}건. `--link-posts` 로 보완 가능.")
+        print(f"\n✗ 링크 안 된 검증 인용 {total}건, 중심 링크 누락 {central_miss}건. `--link-posts` 로 보완 가능.")
         sys.exit(1)
 
     if check_only:

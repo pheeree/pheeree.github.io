@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-06-04 (3) — 오늘의 한 편 중심 링크 보장 + 비-arXiv URL 게이트
+
+- **오늘의 한 편 중심 논문 링크 보강**: arXiv 중심 논문이 있는 전 글 점검 → 4편이 "오늘의 한 편"에 중심 링크 누락(04-26·04-27·05-31·06-03). 각 글 양상에 맞춰 중심 `[arXiv:id](url)` 삽입(저자 표기·제목 뒤·평문 링크화).
+- **openreview 맨 URL 정리**: 06-03 `(openreview h3LlJ6Bh4S … https://openreview.net/forum?id=…)` → `[OpenReview h3LlJ6Bh4S](url)` 마크다운 링크로 통합(끝 맨 URL 제거).
+- **게이트 2종 추가** (`build_citations.py`):
+  - `check_central_link`: '오늘의 한 편'에 `source` 중심 논문 링크가 있는지 — `--check-links`·`--verify-draft` 양쪽에서 점검.
+  - `RAW_OTHER_URL`: openreview·aclanthology·nips 등 비-arXiv 맨 URL을 `--check-links`가 경고(자동 링크화 대상은 아니나 누락 신호).
+
+이로써 발행 게이트가 세 가지를 함께 본다 — 본문 arXiv 링크 누락 / 오늘의 한 편 중심 링크 / 비-arXiv 맨 URL.
+
 ## 2026-06-04 (2) — 링크 누락 보강: 괄호·맨URL 형식 + 실재검증 게이트
 
 첫 마이그레이션이 `arXiv:` 접두어 형식만 잡고 '다음 읽을 후보'에 흔한 다른 형식을 놓쳤던 것을 보강.

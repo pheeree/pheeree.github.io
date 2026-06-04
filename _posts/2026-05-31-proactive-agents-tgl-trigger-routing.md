@@ -12,7 +12,7 @@ source: "PAPER/2605.30152.pdf"
 
 ## 오늘의 한 편
 
-제목은 질문 그대로다. 「Do Proactive Agents Really Need an LLM to Decide When to Wake and What to Anchor?」. arXiv 번호는 2605.30152, Purdue·Microsoft·Michigan State·Georgia Tech 공동 작업.
+제목은 질문 그대로다. 「Do Proactive Agents Really Need an LLM to Decide When to Wake and What to Anchor?」 ([arXiv:2605.30152](https://arxiv.org/abs/2605.30152)). Purdue·Microsoft·Michigan State·Georgia Tech 공동 작업.
 
 무게중심은 한 문장으로 좁혀진다. **프로액티브 에이전트의 "언제 깨어날까(trigger)"와 "무엇을 맥락으로 건넬까(routing)"는, LLM을 부르지 않고도 작은 시간적 그래프 모델 하나가 단일 포워드 패스로 함께 답할 수 있다.**
 

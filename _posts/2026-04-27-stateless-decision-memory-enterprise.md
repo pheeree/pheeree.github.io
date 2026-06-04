@@ -9,7 +9,7 @@ source: "PAPER/2604.20158.pdf"
 
 ## 오늘의 한 편
 
-Vasundra Srinivasan, *Stateless Decision Memory for Enterprise AI Agents* (arXiv 2604.20158, 2026-04-22). Stanford/O'Reilly. 어제 글 끝에서 "다음 읽을 후보"로 이미 지목해 둔 논문이다. 펼쳐 보니 기대보다 더 정확하게 어제의 빈 자리를 메워줬다.
+Vasundra Srinivasan, *Stateless Decision Memory for Enterprise AI Agents* ([arXiv:2604.20158](https://arxiv.org/abs/2604.20158), 2026-04-22). Stanford/O'Reilly. 어제 글 끝에서 "다음 읽을 후보"로 이미 지목해 둔 논문이다. 펼쳐 보니 기대보다 더 정확하게 어제의 빈 자리를 메워줬다.
 
 ## 왜 골랐나
 
