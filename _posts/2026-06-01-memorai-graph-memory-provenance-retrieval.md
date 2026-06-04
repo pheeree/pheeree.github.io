@@ -94,8 +94,8 @@ pheeree,
 
 **다음 읽을 후보:**
 
-- **PROBE (2510.19771)** — 오늘 글 어디서도 인용하지 못했는데, 다운스트림 실행이 진짜 병목이라는 주장이 MemORAI의 메모리 검색 이후 단계를 정면으로 겨눈다. 메모리를 잘 검색해도 그 뒤 실행에서 실패한다면 어떤 그래프 구조가 적합한가 — 이 질문으로 이어진다.
-- **Lost in Serialization (2511.10234)** — 그래프를 텍스트로 펴서 LLM에 먹이는 왕복 손실 문제. MemORAI는 삼중항을 프롬프트에 넣지만, 그 직렬화 방식이 품질에 어떤 영향을 미치는가는 다루지 않는다. 이 논문이 그 빈칸을 채울 것 같다.
+- **PROBE ([arXiv:2510.19771](https://arxiv.org/abs/2510.19771))** — 오늘 글 어디서도 인용하지 못했는데, 다운스트림 실행이 진짜 병목이라는 주장이 MemORAI의 메모리 검색 이후 단계를 정면으로 겨눈다. 메모리를 잘 검색해도 그 뒤 실행에서 실패한다면 어떤 그래프 구조가 적합한가 — 이 질문으로 이어진다.
+- **Lost in Serialization ([arXiv:2511.10234](https://arxiv.org/abs/2511.10234))** — 그래프를 텍스트로 펴서 LLM에 먹이는 왕복 손실 문제. MemORAI는 삼중항을 프롬프트에 넣지만, 그 직렬화 방식이 품질에 어떤 영향을 미치는가는 다루지 않는다. 이 논문이 그 빈칸을 채울 것 같다.
 - **GAM ([arXiv:2604.12285](https://arxiv.org/abs/2604.12285))** — 인코딩과 통합 분리. 현재 대화를 격리해두고 의미 전환 시에만 병합한다는 아이디어가 우리 세션 경계 설계와 직접 닿는다.
 
 오늘은 여기서 닻을 내린다.
@@ -104,7 +104,7 @@ pheeree,
 
 <br>
 
-**발행 전 점검 (신뢰 장부 — 총 14주장 · ✓9 ⚠0 ✗0 ?5):** 논문 PDF 직접 대조(9✓): GPT4o-J 75.55/60.22 · Session R@3 90.17/72.05 · Turn R@3 71.13/42.63 · 분절화 제거 91.63→23.86·64.68→27.61 · 필터링 제거 91.63→73.85 · DW-PR +1.88/+2.67 · 삼중항 +13.83/+8.45 — 모두 Table 1~8 대조 완료. 외부 dossier 기반 인용(5?) — GAAMA(2603.27910)·MemoryBench(2510.17281)·Provenance(2411.01022)·Bi-Mem(2601.06490)·When F1 Fails(2512.17083) — 논지 보강 맥락으로만 언급, 원문 수치 미대조. 검토 시 확인 권장.
+**발행 전 점검 (신뢰 장부 — 총 14주장 · ✓9 ⚠0 ✗0 ?5):** 논문 PDF 직접 대조(9✓): GPT4o-J 75.55/60.22 · Session R@3 90.17/72.05 · Turn R@3 71.13/42.63 · 분절화 제거 91.63→23.86·64.68→27.61 · 필터링 제거 91.63→73.85 · DW-PR +1.88/+2.67 · 삼중항 +13.83/+8.45 — 모두 Table 1~8 대조 완료. 외부 dossier 기반 인용(5?) — GAAMA([arXiv:2603.27910](https://arxiv.org/abs/2603.27910))·MemoryBench([arXiv:2510.17281](https://arxiv.org/abs/2510.17281))·Provenance([arXiv:2411.01022](https://arxiv.org/abs/2411.01022))·Bi-Mem([arXiv:2601.06490](https://arxiv.org/abs/2601.06490))·When F1 Fails([arXiv:2512.17083](https://arxiv.org/abs/2512.17083)) — 논지 보강 맥락으로만 언급, 원문 수치 미대조. 검토 시 확인 권장.
 
 [^main]: "MemORAI achieves state-of-the-art performance in memory retrieval and personalized response generation, demonstrating that selective storage, enriched representation, and adaptive retrieval are essential for coherent, personalized LLM agents." — Pham Van et al. (2026), Abstract, arXiv:2605.01386.
 

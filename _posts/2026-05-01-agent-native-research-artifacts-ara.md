@@ -73,7 +73,7 @@ flowchart LR
 - **[arXiv:2604.25917](https://arxiv.org/abs/2604.25917)** *Recursive Multi-Agent Systems*. ARA 단일 패키지를 넘어 에이전트 위계가 ARA를 생산·소비하는 재귀 구조 — Live Research Manager의 자연스러운 확장 방향.
 - **[arXiv:2604.17309](https://arxiv.org/abs/2604.17309)** *Knows.Academy YAML 사이드카*. ARA보다 가벼운 PDF+YAML 보강. 소형 모델 +29~+42%p 이해도. ARA의 무거운 4층과의 대비. 이걸 먼저 읽으면 ARA의 비용-편익을 더 명료하게 잴 수 있을 것 같다.
 
-세 편 중 하나는 약한 모델 쪽 결을 더 짚는 (2604.05273)을, 다음 글에서 우선 다뤄보자. ARA가 강한 모델 전용이라는 한계를 외부 증거로 보강할 수 있는 자연스러운 흐름이다.
+세 편 중 하나는 약한 모델 쪽 결을 더 짚는 ([arXiv:2604.05273](https://arxiv.org/abs/2604.05273))을, 다음 글에서 우선 다뤄보자. ARA가 강한 모델 전용이라는 한계를 외부 증거로 보강할 수 있는 자연스러운 흐름이다.
 
 [^taxes]: "This compilation imposes two structural costs: a Storytelling Tax, where failed experiments, rejected hypotheses, and the branching exploration process are discarded to fit a linear narrative; and an Engineering Tax, where the gap between reviewer-sufficient prose and agent-sufficient specification leaves critical implementation details unwritten." — Liu et al. (2026), Abstract.
 

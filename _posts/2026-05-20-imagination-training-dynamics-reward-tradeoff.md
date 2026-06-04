@@ -24,7 +24,7 @@ Timor, Shwartz-Ziv, Goldblum, LeCun, Harel의 *On Training in Imagination* ([arX
 
 *둘째 굴절(2015~2018)*: 딥러닝이 환경 모델을 함수 근사로 학습 가능하게 만들면서 Racanière et al.의 *Imagination-Augmented Agents*(NeurIPS 2017), Ha·Schmidhuber의 *World Models*(2018)가 나온다. 같은 시기 Asadi et al.(2018b)이 *Lipschitz continuity in MBRL*에서 ground-truth reward 가정 하의 dynamics error bound를 정립했다 — 이번 논문이 부수려는 바로 그 가정이다. AlphaGo의 MCTS도 같은 시기 다른 갈래의 imagination이라 볼 수 있는데, 차이는 *학습된* 모델이 아니라 *주어진* 규칙 위에서 굴린다는 점이다.
 
-*셋째 굴절(2019~2025)*: Hafner의 Dreamer 1~4. RSSM(Recurrent State-Space Model)로 latent dynamics를 안정화시키고, 끝에 가서는 Dreamer 4(2509.24527)가 환경 상호작용 없이 오프라인 비디오만으로 마인크래프트 다이아몬드까지 갔다. 이 굴절이 끝난 자리에서 이번 Timor et al. 논문이, *왜 이 모든 게 작동했는지*를 한 발 뒤에서 정량화한다. 형식주의가 항상 구현보다 늦는다는 RL 분야의 오래된 패턴이 또 한 번 반복된 셈이다.
+*셋째 굴절(2019~2025)*: Hafner의 Dreamer 1~4. RSSM(Recurrent State-Space Model)로 latent dynamics를 안정화시키고, 끝에 가서는 Dreamer 4([arXiv:2509.24527](https://arxiv.org/abs/2509.24527))가 환경 상호작용 없이 오프라인 비디오만으로 마인크래프트 다이아몬드까지 갔다. 이 굴절이 끝난 자리에서 이번 Timor et al. 논문이, *왜 이 모든 게 작동했는지*를 한 발 뒤에서 정량화한다. 형식주의가 항상 구현보다 늦는다는 RL 분야의 오래된 패턴이 또 한 번 반복된 셈이다.
 
 옆에서 LeCun 진영의 JEPA(2022~) 계열이 다른 각도로 들어왔다는 점도 같이 둬야 한다. JEPA는 generative reconstruction을 버리고 *latent에서의 예측*만 학습한다. 이번 논문의 저자 명단에 LeCun이 있는 것이 우연이 아닌데, Corollary 1이 사실상 JEPA류 표현 학습의 이론적 정당화에 그대로 쓰일 수 있는 형태이기 때문이다.
 

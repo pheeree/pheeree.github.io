@@ -6,18 +6,25 @@
   bibliography.md       — citations.yml 을 사람이 읽게 렌더한 페이지
 
 옵션:
-  python scripts/build_citations.py              # citations.yml + bibliography.md 생성
-  python scripts/build_citations.py --link-posts # 위 + 본문 평문 arXiv를 검증된 것만 하이퍼링크화
-  python scripts/build_citations.py --check       # 생성하지 않고 통계만
+  python scripts/build_citations.py                       # citations.yml + bibliography.md 생성
+  python scripts/build_citations.py --link-posts          # 위 + 본문 평문 arXiv를 검증된 것만 하이퍼링크화
+  python scripts/build_citations.py --check               # 생성하지 않고 통계만
+  python scripts/build_citations.py --check-links         # 본문·다음후보 링크 누락 보고 (발행 게이트, 누락 시 exit 1)
+  python scripts/build_citations.py --verify-draft <파일>  # 드래프트 한 편의 id 실재 검증 (환각 id 경고, 비차단)
+
+본문 평문 세 형식 모두 링크화 (--link-posts):
+  1) arXiv:NNNN.NNNNN          2) 괄호 평문 (NNNN.NNNNN)    3) 맨 arXiv URL
+  각주(`[^`)·코드블록·이미 링크된 것은 건드리지 않는다.
 
 검증 정책 (죽은 링크 0):
-  - arXiv id 는 arxiv-cache(우리 PDF 보유) 우선 → 실재 확정.
-  - cache 에 없는 id 는 arXiv API 배치 조회로 실재+메타 확인. 응답에 없으면 죽은 id → 링크 안 함.
-  - --link-posts 는 검증된 id 만 본문 링크화. 각주(`[^`)·코드블록·이미 링크된 것은 건드리지 않는다.
+  - 신뢰 위계: arxiv-cache(미러, 우리 PDF) → 로컬 resolve 캐시 → arxiv.org HEAD 실재 확인.
+  - **실재 확인은 HEAD(arxiv.org/abs)로 한다** — 메타데이터 API(export.arxiv.org)가 막힌 환경에서도
+    동작. 메타 API(제목·저자)는 best-effort 보너스이며 실패해도 링크는 단다.
+  - 404(부재)는 로컬 캐시에 not_found 로 영속 기록 → 환각·오태 id 재조회 방지 + verify-draft 경고.
+  - 검증된 id 만 링크화. resolve 캐시는 배치/건마다 증분 저장(중단 내성, rate-limit 완화).
 
 설계:
   - 블로그 레포 자기완결. KM 미러의 arxiv-cache 는 읽되 없으면 건너뜀(선택적 의존).
-  - arXiv fetch 로직은 작게 내장(KM arxiv_enrich.py 의 fetch_batch 와 같은 형태).
 """
 
 import json
@@ -38,9 +45,17 @@ OUT_YML = DATA_DIR / "citations.yml"
 OUT_BIB = REPO / "bibliography.md"
 # KM 미러의 arxiv 메타 캐시 (선택적 — 없으면 전부 API 로).
 MIRROR_CACHE = Path.home() / "Mirrors/knowledge-mind/raw/arxiv-cache.json"
+# 로컬 resolve 캐시 — 한 번 조회한 id(실재·부재 모두)를 영속화해 arXiv 429 rate limit 완화.
+# 부재(죽은 id)도 기록해 재조회를 막는다. 미러 cache 와 별개로 블로그 레포가 자체 보유.
+RESOLVE_CACHE = REPO / "_data" / "arxiv-resolved.json"
 
 ARXIV_ID = re.compile(r"\b(\d{4}\.\d{4,5})(v\d+)?\b")
 ARXIV_MENTION = re.compile(r"arXiv:(\d{4}\.\d{4,5})(v\d+)?", re.IGNORECASE)
+# 접두어 없는 괄호 id `(2510.19771)` — '다음 읽을 후보'에 흔한 형식. 오태(연도.숫자) 방지 위해
+#   링크 시점에 arXiv 실재 확인된 id 만 채택한다.
+BARE_PAREN_ID = re.compile(r"\((\d{4}\.\d{4,5})(v\d+)?\)")
+# 맨 arXiv URL (마크다운 링크 ( ) 안이 아닌 것) — 작성 에이전트가 링크 대신 raw URL 단 경우.
+RAW_ARXIV_URL = re.compile(r"(?<![(\]])https?://arxiv\.org/(?:abs|html|pdf)/(\d{4}\.\d{4,5})(v\d+)?\S*")
 SOURCE_LINE = re.compile(r'^source:\s*["\']?PAPER/(\d{4}\.\d{4,5})', re.MULTILINE)
 FM_TITLE = re.compile(r'^title:\s*["\']?(.+?)["\']?\s*$', re.MULTILINE)
 
@@ -61,34 +76,56 @@ def load_mirror_cache() -> dict:
         return {}
 
 
-def fetch_batch(ids: list[str]) -> dict[str, dict]:
-    """arXiv API 배치 조회. 반환 dict 에 없는 id = 죽은(존재 안 함) id."""
+def load_resolve_cache() -> dict:
+    """로컬 resolve 캐시. {id: {title,authors,published}} 또는 {id: {not_found: true}}."""
+    if not RESOLVE_CACHE.exists():
+        return {}
+    try:
+        return json.loads(RESOLVE_CACHE.read_text())
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def save_resolve_cache(rc: dict) -> None:
+    RESOLVE_CACHE.parent.mkdir(exist_ok=True)
+    RESOLVE_CACHE.write_text(json.dumps(rc, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def head_exists(arxiv_id: str) -> bool | None:
+    """arxiv.org/abs/{id} HEAD 로 실재 확인. True=실재, False=부재(404), None=불확정(네트워크 실패).
+    메타데이터 API(export.arxiv.org)가 막힌 환경에서도 실재 확인은 이 경로로 빠르게(0.1초) 된다."""
+    url = f"https://arxiv.org/abs/{arxiv_id}"
+    req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=15) as r:
+            return 200 <= r.status < 300
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return False
+        return None  # 403·429 등은 불확정 — 죽은 id 로 굳히지 않는다
+    except (TimeoutError, urllib.error.URLError):
+        return None
+
+
+def fetch_meta_batch(ids: list[str]) -> dict[str, dict]:
+    """arXiv 메타데이터 API 배치 조회(제목·저자). best-effort — 막힌 환경에선 빈 dict 반환.
+    실재 확인은 head_exists 가 담당하고, 이쪽은 제목 보강용 보너스다."""
     if not ids:
         return {}
     q = urllib.parse.urlencode({"id_list": ",".join(ids), "max_results": len(ids)})
     url = f"http://export.arxiv.org/api/query?{q}"
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    last_exc = None
-    for attempt in range(RETRY_MAX):
-        try:
-            with urllib.request.urlopen(req, timeout=30) as r:
-                data = r.read().decode("utf-8")
-            break
-        except urllib.error.HTTPError as e:
-            last_exc = e
-            if e.code != 429 or attempt == RETRY_MAX - 1:
-                raise
-            time.sleep(RETRY_BACKOFF[attempt])
-        except (TimeoutError, urllib.error.URLError) as e:
-            last_exc = e
-            if attempt == RETRY_MAX - 1:
-                raise
-            time.sleep(RETRY_BACKOFF[attempt])
-    else:
-        raise last_exc or RuntimeError("재시도 루프 비정상 종료")
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            data = r.read().decode("utf-8")
+    except Exception:
+        return {}  # 메타 API 실패는 치명적이지 않음 — 제목 없이 링크만 단다
 
     out = {}
-    root = ET.fromstring(data)
+    try:
+        root = ET.fromstring(data)
+    except ET.ParseError:
+        return {}
     for entry in root.findall("a:entry", NS):
         full_id = entry.find("a:id", NS).text.strip()
         arxiv_id = full_id.split("/abs/")[-1]
@@ -99,17 +136,17 @@ def fetch_batch(ids: list[str]) -> dict[str, dict]:
             for a in entry.findall("a:author", NS)
         ]
         published = (entry.find("a:published", NS).text or "")[:10]
-        out[base_id] = {
-            "title": title,
-            "authors": authors,
-            "published": published,
-        }
+        out[base_id] = {"title": title, "authors": authors, "published": published}
     return out
 
 
 def resolve_ids(ids: set[str], cache: dict, do_fetch: bool) -> dict[str, dict]:
-    """id → 메타. cache 우선, 없으면 (do_fetch 시) API. 응답 없는 id 는 제외(죽은 링크)."""
+    """id → 메타. 신뢰 위계: 미러 cache → 로컬 resolve 캐시 → (실재) HEAD + (제목) 메타 API.
+    실재 확인은 HEAD(arxiv.org/abs)로 — export.arxiv.org 가 막힌 환경에서도 동작.
+    메타데이터 API 는 best-effort 보너스. 실재 확인된 id 는 제목이 없어도 resolved 에 넣어 링크는 단다.
+    부재(404)는 로컬 캐시에 not_found 로 영속 기록해 재조회를 막는다."""
     resolved = {}
+    rc = load_resolve_cache()
     missing = []
     for i in ids:
         entry = cache.get(i)
@@ -119,21 +156,36 @@ def resolve_ids(ids: set[str], cache: dict, do_fetch: bool) -> dict[str, dict]:
                 "authors": entry.get("authors", []),
                 "published": entry.get("published", ""),
             }
-        else:
-            missing.append(i)
+            continue
+        rentry = rc.get(i)
+        if rentry is not None:
+            if not rentry.get("not_found"):
+                resolved[i] = {
+                    "title": rentry.get("title", ""),
+                    "authors": rentry.get("authors", []),
+                    "published": rentry.get("published", ""),
+                }
+            continue  # not_found 면 죽은 id — 재조회 안 함
+        missing.append(i)
 
     if do_fetch and missing:
-        # arXiv API 배치 한도 고려해 50개씩.
-        for k in range(0, len(missing), 50):
-            chunk = missing[k:k + 50]
-            try:
-                got = fetch_batch(chunk)
-            except Exception as e:
-                print(f"    · API 조회 실패 (이 묶음 평문 유지): {e}", file=sys.stderr)
-                got = {}
-            resolved.update(got)
-            if k + 50 < len(missing):
-                time.sleep(3)  # arXiv 예의상 간격
+        # 1) 제목 보강: 메타 API 배치 시도 (막힌 환경이면 빈 dict — 치명적 아님)
+        meta = fetch_meta_batch(missing)
+        # 2) 실재 확인: id 별 HEAD (빠름·안정). meta 에 있으면 실재 확정이라 HEAD 생략.
+        for cid in missing:
+            if cid in meta:
+                rc[cid] = meta[cid]
+                resolved[cid] = meta[cid]
+                continue
+            exists = head_exists(cid)
+            if exists is True:
+                rc[cid] = {"title": "", "authors": [], "published": ""}  # 실재하나 제목 미상
+                resolved[cid] = rc[cid]
+            elif exists is False:
+                rc[cid] = {"not_found": True}  # 404 — 환각·오태, 영속 기록
+            # exists is None → 불확정(네트워크 실패): 캐시에 안 굳히고 다음 실행 재시도
+            save_resolve_cache(rc)  # 건마다 증분 저장 — 중단돼도 성과 보존
+
     return resolved
 
 
@@ -144,12 +196,16 @@ def post_slug(path: Path) -> str:
 
 
 def collect_ids_from_post(text: str) -> tuple[str | None, set[str]]:
-    """(중심 논문 id 또는 None, 본문 등장 모든 id set)."""
+    """(중심 논문 id 또는 None, 본문 등장 모든 id set).
+    세 형식 모두 수집 — arXiv:id / 괄호 id (2510.19771) / 맨 arXiv URL.
+    괄호 id는 오태(연도.숫자) 위험이 있으나, 후속 resolve 단계에서 arXiv 실재 확인으로 걸러진다."""
     central = None
     m = SOURCE_LINE.search(text)
     if m:
         central = m.group(1)
     body_ids = {m.group(1) for m in ARXIV_MENTION.finditer(text)}
+    body_ids |= {m.group(1) for m in BARE_PAREN_ID.finditer(text)}
+    body_ids |= {m.group(1) for m in RAW_ARXIV_URL.finditer(text)}
     if central:
         body_ids.add(central)
     return central, body_ids
@@ -229,38 +285,113 @@ def build_bibliography(posts_meta: list[dict]) -> str:
 
 # ---------- 본문 링크화 ----------
 
-def link_post_body(text: str, valid_ids: set[str]) -> tuple[str, int]:
-    """본문의 평문 `arXiv:ID` 를 검증된 id 만 하이퍼링크화.
-    각주 정의 줄(`[^`)·코드블록·이미 링크 안에 있는 것은 제외."""
-    lines = text.split("\n")
+def _linkable_lines(text: str):
+    """(idx, line) 중 링크 대상 줄만 yield — 코드블록·각주 정의 줄 제외."""
     in_fence = False
-    changed = 0
-    for idx, line in enumerate(lines):
+    for idx, line in enumerate(text.split("\n")):
         stripped = line.lstrip()
         if stripped.startswith("```"):
             in_fence = not in_fence
             continue
-        if in_fence:
+        if in_fence or stripped.startswith("[^"):
             continue
-        if stripped.startswith("[^"):  # 각주 정의 줄은 보수적으로 건너뜀
-            continue
+        yield idx, line
 
-        def repl(m):
+
+def link_post_body(text: str, valid_ids: set[str]) -> tuple[str, int]:
+    """본문의 평문 arXiv 인용을 검증된 id 만 하이퍼링크화. 세 형식 처리:
+      1) `arXiv:ID`            → `[arXiv:ID](url)`
+      2) `(ID)` 괄호 평문       → `([arXiv:ID](url))`  (실재 확인된 id 만)
+      3) 맨 `https://arxiv.org/abs/ID` → `[arXiv:ID](url)`
+    각주 정의 줄·코드블록·이미 링크된 것은 제외."""
+    lines = text.split("\n")
+    targets = dict(_linkable_lines(text))
+    changed = 0
+
+    for idx, line in targets.items():
+        # 3) 맨 arXiv URL 먼저 (URL 안 숫자가 다른 패턴에 안 걸리게)
+        def repl_url(m):
             nonlocal changed
             base = m.group(1)
-            ver = m.group(2) or ""
             if base not in valid_ids:
                 return m.group(0)
-            # 직전이 `[` 면 이미 링크 텍스트(`[arXiv:..](url)`)이므로 건드리지 않는다.
-            # 단순히 뒤가 `)`인 경우(예: 평문 `(arXiv:1234.5678)`)는 보호 아님 — 링크 대상.
-            start = m.start()
-            if start > 0 and line[start - 1] == "[":
+            changed += 1
+            return f"[arXiv:{base}](https://arxiv.org/abs/{base})"
+        line = RAW_ARXIV_URL.sub(repl_url, line)
+
+        # 1) arXiv:ID
+        def repl_mention(m):
+            nonlocal changed
+            base, ver = m.group(1), m.group(2) or ""
+            if base not in valid_ids:
                 return m.group(0)
+            if m.start() > 0 and line[m.start() - 1] == "[":
+                return m.group(0)  # 이미 링크 텍스트
             changed += 1
             return f"[arXiv:{base}{ver}](https://arxiv.org/abs/{base})"
+        line = ARXIV_MENTION.sub(repl_mention, line)
 
-        lines[idx] = ARXIV_MENTION.sub(repl, line)
+        # 2) 괄호 평문 (ID) — 실재 확인된 id 만. 이미 [arXiv 로 시작하는 링크 괄호는 건드리지 않음.
+        def repl_bare(m):
+            nonlocal changed
+            base, ver = m.group(1), m.group(2) or ""
+            if base not in valid_ids:
+                return m.group(0)
+            # 바로 앞이 ']' 면 마크다운 링크 꼬리 `](...)` 일 수 있음 — 건너뜀
+            if m.start() > 0 and line[m.start() - 1] == "]":
+                return m.group(0)
+            changed += 1
+            return f"([arXiv:{base}{ver}](https://arxiv.org/abs/{base}))"
+        line = BARE_PAREN_ID.sub(repl_bare, line)
+
+        lines[idx] = line
     return "\n".join(lines), changed
+
+
+def find_unlinked(text: str, valid_ids: set[str]) -> list[tuple[int, str]]:
+    """링크 안 된 채 남은 검증된 arXiv 인용을 (줄번호, 스니펫)으로 반환.
+    --check-links 게이트용. 각주·코드는 의도적 제외라 보지 않는다."""
+    out = []
+    for idx, line in _linkable_lines(text):
+        for m in ARXIV_MENTION.finditer(line):
+            if m.group(1) in valid_ids and not (m.start() > 0 and line[m.start() - 1] == "["):
+                out.append((idx + 1, line.strip()[:80]))
+                break
+        else:
+            for m in BARE_PAREN_ID.finditer(line):
+                if m.group(1) in valid_ids and not (m.start() > 0 and line[m.start() - 1] == "]"):
+                    out.append((idx + 1, line.strip()[:80]))
+                    break
+            else:
+                if RAW_ARXIV_URL.search(line):
+                    out.append((idx + 1, line.strip()[:80]))
+    return out
+
+
+def verify_draft(path: Path, cache: dict) -> int:
+    """드래프트 한 편의 본문 arXiv id 를 실재 확인. 실재 안 하는 id(환각·추정 추정)를 경고.
+    비차단 — 경고만 출력하고 발행은 막지 않는다. 반환: 의심 id 수."""
+    text = path.read_text(encoding="utf-8")
+    _, ids = collect_ids_from_post(text)
+    if not ids:
+        print(f"  (arXiv 인용 없음: {path.name})")
+        return 0
+    resolved = resolve_ids(ids, cache, do_fetch=True)
+    dead = sorted(ids - set(resolved.keys()))
+    print(f"=== 드래프트 id 실재 검증: {path.name} ===")
+    print(f"  본문 arXiv id {len(ids)}개 중 실재 확인 {len(resolved)}, 미확인 {len(dead)}")
+    if dead:
+        print(f"  ⚠ 실재 확인 안 됨 (환각·추정·미래 id 의심 — 본문 대조 권장):")
+        for d in dead:
+            # 그 id 가 본문 어디서 쓰였는지 한 줄 보여줌
+            for ln in text.split("\n"):
+                if d in ln:
+                    print(f"      {d}: {ln.strip()[:75]}")
+                    break
+        print("  → claim-check 와 함께 검토. 비차단 — 발행은 진행됨.")
+    else:
+        print("  ✓ 본문 arXiv id 전부 실재 확인됨.")
+    return len(dead)
 
 
 # ---------- main ----------
@@ -268,6 +399,16 @@ def link_post_body(text: str, valid_ids: set[str]) -> tuple[str, int]:
 def main() -> None:
     check_only = "--check" in sys.argv
     link_posts = "--link-posts" in sys.argv
+    check_links = "--check-links" in sys.argv
+    # --verify-draft <파일경로>: 드래프트 한 편의 id 실재 검증 (B-3 저장 직후용)
+    if "--verify-draft" in sys.argv:
+        i = sys.argv.index("--verify-draft")
+        draft = Path(sys.argv[i + 1]) if i + 1 < len(sys.argv) else None
+        if not draft or not draft.exists():
+            print("사용: build_citations.py --verify-draft <드래프트.md>", file=sys.stderr)
+            sys.exit(2)
+        verify_draft(draft, load_mirror_cache())
+        sys.exit(0)
 
     cache = load_mirror_cache()
     posts = sorted(POSTS.glob("*.md"), reverse=True)
@@ -286,9 +427,25 @@ def main() -> None:
         })
         all_ids |= ids
 
-    # id 해소 (cache + API)
-    do_fetch = not check_only or "--check" in sys.argv  # check 에서도 커버리지 보려면 fetch
+    # id 해소 (cache + API). check_links 도 실재 확인이 필요하므로 fetch 한다.
     resolved = resolve_ids(all_ids, cache, do_fetch=not check_only)
+
+    # --check-links: 본문/다음후보에 링크 안 된 검증된 arXiv 인용을 보고. 발행 전 게이트용.
+    if check_links:
+        valid_ids = set(resolved.keys())
+        total = 0
+        for pp in parsed:
+            miss = find_unlinked(pp["text"], valid_ids)
+            if miss:
+                total += len(miss)
+                print(f"⚠ {pp['slug']}")
+                for ln, snip in miss:
+                    print(f"    L{ln}: {snip}")
+        if total == 0:
+            print("✓ 링크 누락 없음 — 본문·다음후보의 검증된 arXiv 인용은 모두 하이퍼링크.")
+            sys.exit(0)
+        print(f"\n✗ 링크 안 된 검증 인용 {total}건. `--link-posts` 로 보완 가능.")
+        sys.exit(1)
 
     if check_only:
         in_cache = sum(1 for i in all_ids if i in cache and not cache[i].get("not_found"))
@@ -338,13 +495,24 @@ def main() -> None:
     if link_posts:
         linked_posts = 0
         linked_total = 0
+        residual = 0
         for pp in parsed:
             new_text, n = link_post_body(pp["text"], valid_ids)
             if n > 0:
                 pp["path"].write_text(new_text, encoding="utf-8")
                 linked_posts += 1
                 linked_total += n
+            # 처리 후에도 링크 안 된 검증 인용이 남으면 보고 (침묵 금지).
+            left = find_unlinked(new_text, valid_ids)
+            if left:
+                residual += len(left)
+                for ln, snip in left:
+                    print(f"  · 잔존 미링크 {pp['slug']} L{ln}: {snip}", file=sys.stderr)
         print(f"본문 링크화: {linked_posts}편에서 {linked_total}개 평문 arXiv → 하이퍼링크")
+        if residual:
+            print(f"⚠ 처리 후 잔존 미링크 {residual}건 (위 stderr 목록) — 패턴 확장 필요 신호.")
+        else:
+            print("✓ 잔존 미링크 0 — 검증된 인용은 모두 링크됨.")
 
 
 if __name__ == "__main__":

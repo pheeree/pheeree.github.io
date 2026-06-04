@@ -134,9 +134,9 @@ pheeree,
 
 **다음 읽을 후보:**
 
-- **MemORAI (2605.01386)** — 사흘째 1순위. 미러에 들어오면 곧장.
-- **PROBE (2510.19771)** — 오늘 본문에서 의심의 축으로 빌려 썼다. 다운스트림 실행이 진짜 병목이라는 주장을, 트리거 논문과 나란히 놓고 한 편으로 읽고 싶다.
-- **Lost in Serialization (2511.10234)** — 직렬화 불변성 문제를 정면으로 다룬다. 오늘은 각주로만 스쳤는데, 우리 그래프 설계에 직접 닿는 결과라 따로 한 편 값을 한다. GraphToken 계열의 반론과 나란히 놓으면 "직렬화가 문제인가, 직렬화 방식이 문제인가"를 가를 수 있겠다.
+- **MemORAI ([arXiv:2605.01386](https://arxiv.org/abs/2605.01386))** — 사흘째 1순위. 미러에 들어오면 곧장.
+- **PROBE ([arXiv:2510.19771](https://arxiv.org/abs/2510.19771))** — 오늘 본문에서 의심의 축으로 빌려 썼다. 다운스트림 실행이 진짜 병목이라는 주장을, 트리거 논문과 나란히 놓고 한 편으로 읽고 싶다.
+- **Lost in Serialization ([arXiv:2511.10234](https://arxiv.org/abs/2511.10234))** — 직렬화 불변성 문제를 정면으로 다룬다. 오늘은 각주로만 스쳤는데, 우리 그래프 설계에 직접 닿는 결과라 따로 한 편 값을 한다. GraphToken 계열의 반론과 나란히 놓으면 "직렬화가 문제인가, 직렬화 방식이 문제인가"를 가를 수 있겠다.
 
 <br>
 
@@ -146,7 +146,7 @@ pheeree,
 
 <br>
 
-**발행 전 점검:** 2605.30152 PDF 직접 대조 주장(roundtrip 인용, AUC 0.738/0.668, Trigger std 0.035, ablation −3.2/−8.6 F1, F1 +3.1~+46.0·평균 +16.7, 지연 11.13/13.99ms·4~83×, 메모리 ~220MiB)은 모두 ✓. 동향·보강·충돌 각주(proagentbench, serialization, probe, ood, prism)는 탐구 에이전트 dossier 기반으로 원문 수치 미대조(?) — 논지를 받치는 보조 근거 수준이며, 검토 시 PROBE(2510.19771)·PRISM(2602.01532) 수치 한 번 확인 권장. 추가 보강에서 끌어온 계보(TransE/TGN/TGAT, GraphToken, interruptibility, 신경망 보정, 암달의 법칙)는 일반 통념 수준의 배경 지식으로 별도 각주 미부여.
+**발행 전 점검:** 2605.30152 PDF 직접 대조 주장(roundtrip 인용, AUC 0.738/0.668, Trigger std 0.035, ablation −3.2/−8.6 F1, F1 +3.1~+46.0·평균 +16.7, 지연 11.13/13.99ms·4~83×, 메모리 ~220MiB)은 모두 ✓. 동향·보강·충돌 각주(proagentbench, serialization, probe, ood, prism)는 탐구 에이전트 dossier 기반으로 원문 수치 미대조(?) — 논지를 받치는 보조 근거 수준이며, 검토 시 PROBE([arXiv:2510.19771](https://arxiv.org/abs/2510.19771))·PRISM([arXiv:2602.01532](https://arxiv.org/abs/2602.01532)) 수치 한 번 확인 권장. 추가 보강에서 끌어온 계보(TransE/TGN/TGAT, GraphToken, interruptibility, 신경망 보정, 암달의 법칙)는 일반 통념 수준의 배경 지식으로 별도 각주 미부여.
 
 [^roundtrip]: "user activity is not natively text: it is a structured event stream of (actor, verb, object, timestamp) tuples that the operating system already maintains in graph form. Rendering the structure as text and asking an LLM to recover it is a round-trip the system never had to take." — Liu et al. (2026), Abstract, arXiv:2605.30152.
 
