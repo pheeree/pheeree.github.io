@@ -80,7 +80,7 @@ DRIFT를 입힌 Claude-Sonnet-4.6은 전체 F1이 21.89에서 54.91로, first-er
 
 ### 다음 읽을 후보
 
-- **(a) AgentPRM (arXiv:2511.08325)** — 각 스텝을 Promise(목표 도달 확률)·Progress(이전 스텝 대비 기여)로 이중 평가하는 process reward model. TD 추정과 GAE로 베이스라인 대비 8배 계산 효율. DRIFT가 *사후 감사*라면 이건 *실시간 보상* 쪽 — Lightman의 PRM 계보를 에이전트로 끌어온 직계. https://arxiv.org/abs/2511.08325
+- **(a) AgentPRM ([arXiv:2511.08325](https://arxiv.org/abs/2511.08325))** — 각 스텝을 Promise(목표 도달 확률)·Progress(이전 스텝 대비 기여)로 이중 평가하는 process reward model. TD 추정과 GAE로 베이스라인 대비 8배 계산 효율. DRIFT가 *사후 감사*라면 이건 *실시간 보상* 쪽 — Lightman의 PRM 계보를 에이전트로 끌어온 직계. https://arxiv.org/abs/2511.08325
 - **(b) DataPRM (2604.24198)** — 데이터 분석 에이전트의 "silent error"(예외 없이 통과하는 논리적 결함)를 환경 인식형 삼진 보상으로 수정 가능 오류와 회복 불가 오류로 가른다. 우리 36.9% 중 어느 쪽이 "silent"인지 가르는 렌즈. https://arxiv.org/abs/2604.24198
 - **(c) ReasonRAG (openreview h3LlJ6Bh4S)** — 결과 보상이 탐색 비효율·경사 충돌을 부른다는 진단 위에, 과정 세분화 보상으로 훈련 데이터를 90k에서 5k로 줄이고도 성능을 올렸다. "결과를 올리면 과정도 풀린다"는 가설을 RAG 도메인에서 정면으로 반박. https://openreview.net/forum?id=h3LlJ6Bh4S
 

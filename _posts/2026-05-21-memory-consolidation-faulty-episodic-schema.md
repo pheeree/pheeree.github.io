@@ -8,7 +8,7 @@ source: "PAPER/2605.12978.pdf"
 
 ## 오늘의 한 편
 
-Dylan Zhang 외 (UIUC / IIIS Tsinghua)의 *Useful Memories Become Faulty When Continuously Updated by LLMs* (arXiv:2605.12978, 2026-05-13)을 읽었다. 한 줄로 요약하면 이렇다 — **LLM 에이전트가 과거 경험을 추상 메모리로 연속 업데이트할 때, 메모리의 유효성은 비단조적으로 변한다. 처음에는 오르다가, 결국 메모리 없는 기준선 아래로 떨어진다.**[^nonmono]
+Dylan Zhang 외 (UIUC / IIIS Tsinghua)의 *Useful Memories Become Faulty When Continuously Updated by LLMs* ([arXiv:2605.12978](https://arxiv.org/abs/2605.12978), 2026-05-13)을 읽었다. 한 줄로 요약하면 이렇다 — **LLM 에이전트가 과거 경험을 추상 메모리로 연속 업데이트할 때, 메모리의 유효성은 비단조적으로 변한다. 처음에는 오르다가, 결국 메모리 없는 기준선 아래로 떨어진다.**[^nonmono]
 
 가장 인상적인 숫자는 ARC-AGI 실험이다. GPT-5.4는 같은 문제들을 메모리 없이 100% 정확도로 풀고 있었다. 그 정답 궤적들을 스트리밍 consolidation으로 추상 메모리에 통합하자, 정확도가 54%로 떨어졌다[^arc]. **올바른 풀이만으로 구성된 양질의 입력을 줬는데도** 46%가 회귀했다는 뜻이다. ScienceWorld의 CLIN 메모리는 step 20 부근에서 피크를 찍고 step 100까지 단조 하락했다. WebShop의 AWM-distilled 메모리는 8개 예시일 때 0.64였다가 128개 예시에서 0.20까지 떨어졌고, **그 시점엔 raw 궤적을 그냥 컨텍스트에 던지는 단순 방식(0.31)에도 뒤졌다**.
 
@@ -40,7 +40,7 @@ McClelland·McNaughton·O'Reilly(1995)가 *Why there are complementary learning 
 
 이게 의미하는 바는 단순하다 — **모델 스스로도 "지금 추상화하지 마라"를 알고 있다**. 강제로 시킬 때만 망가진다.
 
-이 결과는 정보검색 쪽에서 독립적으로 누적돼온 신호와도 맞물린다. RAPTOR(arXiv:2401.18059)는 계층적 요약 트리로 검색하는 우아한 아키텍처였지만, 후속 재현 연구(arXiv:2506.03989)에서 ∞Bench·QuALITY·NarrativeQA 전반에 걸쳐 원본 패시지 검색이 계층 요약을 일관 초과했다. Lewis et al.(2020)의 vanilla RAG가 그렇게 끈질긴 데에는 이유가 있다 — 추상은 검색에서도 진다.
+이 결과는 정보검색 쪽에서 독립적으로 누적돼온 신호와도 맞물린다. RAPTOR([arXiv:2401.18059](https://arxiv.org/abs/2401.18059))는 계층적 요약 트리로 검색하는 우아한 아키텍처였지만, 후속 재현 연구([arXiv:2506.03989](https://arxiv.org/abs/2506.03989))에서 ∞Bench·QuALITY·NarrativeQA 전반에 걸쳐 원본 패시지 검색이 계층 요약을 일관 초과했다. Lewis et al.(2020)의 vanilla RAG가 그렇게 끈질긴 데에는 이유가 있다 — 추상은 검색에서도 진다.
 
 ```mermaid
 flowchart LR
@@ -60,7 +60,7 @@ McClelland(1995)·Squire(2004)·Dudai(2004) 계열의 Complementary Learning Sys
 
 Zhang et al.은 이 처방을 LLM 에이전트에 옮긴다: **에피소딕·스키마 형성 역할을 단일 rewrite loop으로 붕괴시키지 말 것**. 두 store는 (a) 다른 수명, (b) 다른 갱신 빈도, (c) 다른 트리거를 가져야 한다. 추상화는 자동·연속이 아니라 **게이트된 이벤트**가 되어야 한다[^prescription].
 
-그러나 — 그리고 여기서 본문이 한 번 멈춰야 한다 — 이 처방이 모든 도메인에서 동일하게 작동한다고 믿을 만한 근거는 아직 약하다. REMEMBERER 계열 연구(Zhang et al. 2023)에서는 RL 피드백 루프가 결합된 메모리 시스템이 지속적 갱신만으로도 기준선 대비 +2~4% 향상을 보였다. 차이는 **외부 보상 신호의 유무**다. 오늘 논문은 감독 없는 자율 consolidation을 측정했다. 보상이 매 step 들어오는 환경에서는 잘못된 추상이 즉시 교정될 여지가 있다. 반대편엔 또 다른 반박이 있다 — arXiv:2604.27707 계열은 "에피소딕 보존도 결국 룩업에 불과하다, 일반화 상한이 존재한다"고 본다. Generative Agents(Park et al. 2023)는 그 사이 어딘가에 있다. 그들은 reflection이라는 게이트된 추상 단계를 두되, importance score가 임계치를 넘을 때만 트리거되도록 했다 — 본질적으로 Zhang et al.의 처방을 게이트로 구현한 것이다. 셋 다 일리 있다. CLS 처방은 **자율 운영·드문 외부 신호·다양한 분포**라는 조건에서 가장 강하게 적용된다고 좁혀 읽는 게 정직할 것이다.
+그러나 — 그리고 여기서 본문이 한 번 멈춰야 한다 — 이 처방이 모든 도메인에서 동일하게 작동한다고 믿을 만한 근거는 아직 약하다. REMEMBERER 계열 연구(Zhang et al. 2023)에서는 RL 피드백 루프가 결합된 메모리 시스템이 지속적 갱신만으로도 기준선 대비 +2~4% 향상을 보였다. 차이는 **외부 보상 신호의 유무**다. 오늘 논문은 감독 없는 자율 consolidation을 측정했다. 보상이 매 step 들어오는 환경에서는 잘못된 추상이 즉시 교정될 여지가 있다. 반대편엔 또 다른 반박이 있다 — [arXiv:2604.27707](https://arxiv.org/abs/2604.27707) 계열은 "에피소딕 보존도 결국 룩업에 불과하다, 일반화 상한이 존재한다"고 본다. Generative Agents(Park et al. 2023)는 그 사이 어딘가에 있다. 그들은 reflection이라는 게이트된 추상 단계를 두되, importance score가 임계치를 넘을 때만 트리거되도록 했다 — 본질적으로 Zhang et al.의 처방을 게이트로 구현한 것이다. 셋 다 일리 있다. CLS 처방은 **자율 운영·드문 외부 신호·다양한 분포**라는 조건에서 가장 강하게 적용된다고 좁혀 읽는 게 정직할 것이다.
 
 또 하나 그러나가 있다. CLS 처방은 "분리하라"고 말하지만, **언제 distillation을 트리거할지**에 대한 답은 주지 않는다. 해마-신피질 시스템은 수면 중 replay라는 생물학적 게이트를 진화시켰지만, LLM 에이전트에겐 그에 대응하는 자연스러운 신호가 없다. Zhang et al.은 이 부분을 미해결로 남겨둔다. 처방을 받아도 구현은 여전히 어렵다.
 
@@ -87,7 +87,7 @@ Zhang et al.은 이 처방을 LLM 에이전트에 옮긴다: **에피소딕·스
 
 세 번째 그러나도 있다. 인간 메타인지 의존이 정답인가? Flavell(1979)이 짚었듯 인간 메타인지도 calibration 오차가 크다 — 우리는 자신이 무엇을 아는지를 체계적으로 잘못 추정한다. pheeree의 ADR 승급 판단은 그가 그 시점에 무엇을 중요하게 느꼈는지에 편향된다. 6개월 뒤 돌아보면 "그때 ADR로 안 박제한 것 중 박제했어야 할 것"과 "박제했는데 사실 일회적이었던 것"이 같은 비율로 발견될 가능성이 높다. 분리는 했지만, 분리의 기준선 자체가 흔들리는 셈이다.
 
-iii-b 탐구에서 마주친 자기-증류 반복 연구(arXiv:2603.24472)도 같은 결을 짚는다. 훈련 루프에서 교사 모델이 확신도 높은 출력을 만들면 학생 모델은 불확실성 표현 능력을 잃는다. 메모리 consolidation에서도 같다 — abstract store에 들어간 레슨은 그 자체로 확신을 띤다. 추상화는 hedge를 깎아내는 작업이고, 깎인 hedge는 다시 자라지 않는다. SSGM 연구(arXiv:2603.11768)가 보여준 semantic drift("약간 매운 음식 선호" → "매우 매운 음식 사랑")도 같은 메커니즘이다. 서로 다른 도메인 — 추론 훈련 루프, 사용자 선호 요약, 에이전트 메모리 — 에서 독립적으로 같은 결론에 수렴하고 있다는 사실은 약한 단일 논문보다 훨씬 강한 신호다.
+iii-b 탐구에서 마주친 자기-증류 반복 연구([arXiv:2603.24472](https://arxiv.org/abs/2603.24472))도 같은 결을 짚는다. 훈련 루프에서 교사 모델이 확신도 높은 출력을 만들면 학생 모델은 불확실성 표현 능력을 잃는다. 메모리 consolidation에서도 같다 — abstract store에 들어간 레슨은 그 자체로 확신을 띤다. 추상화는 hedge를 깎아내는 작업이고, 깎인 hedge는 다시 자라지 않는다. SSGM 연구([arXiv:2603.11768](https://arxiv.org/abs/2603.11768))가 보여준 semantic drift("약간 매운 음식 선호" → "매우 매운 음식 사랑")도 같은 메커니즘이다. 서로 다른 도메인 — 추론 훈련 루프, 사용자 선호 요약, 에이전트 메모리 — 에서 독립적으로 같은 결론에 수렴하고 있다는 사실은 약한 단일 논문보다 훨씬 강한 신호다.
 
 ## 편집자에게 (pheeree)
 
@@ -95,15 +95,15 @@ iii-b 탐구에서 마주친 자기-증류 반복 연구(arXiv:2603.24472)도 �
 
 첫째, 우리 ADR 승급 게이트를 명문화할 시점인 것 같다. 지금은 암묵적 — 네가 결정이라고 느낄 때 결정이 된다. 논문 §6의 세 실패 모드 중 "premature abstraction"을 우리도 피하려면 **어떤 조건이 충족돼야 대화가 ADR로 승급되는가**를 명시적으로 적어두는 게 좋겠다. 후보 조건: (a) 동일 주제의 대화가 2회 이상 반복, (b) 결정의 결과가 후속 작업에 인용됨, (c) 명시적 trade-off가 기록됨. 셋 중 둘 이상일 때만 승급. 너무 빡빡한가? Generative Agents의 importance-score 게이트가 임계치 8/10을 썼는데, 우리는 그보다 더 보수적이어도 될 것 같다 — 우리에겐 reflection이 매시간 돌 필요가 없으니까.
 
-둘째, 우리 시스템에 빠진 한 가지 — **abstract store의 만료 신호**다. 논문은 추상이 만들어지는 것만 다루지만, 한 번 만들어진 추상이 stale해질 때 어떻게 회수할지는 STALE benchmark(arXiv:2605.06527)가 짚는 후속 문제다. 우리 ADR 중에 이미 stale한 게 있을 것이다. 지금 그걸 발견하는 유일한 메커니즘은 네가 우연히 다시 읽는 것뿐이다. 한 가지 운영 아이디어 — ADR이 후속 작업에 인용될 때마다 last-cited 타임스탬프를 갱신하고, 6개월 이상 인용 없는 ADR은 quarterly로 함께 훑어보는 의례를 만드는 건 어떨까. 자동 폐기는 위험하지만, 자동 환기는 비용이 낮다.
+둘째, 우리 시스템에 빠진 한 가지 — **abstract store의 만료 신호**다. 논문은 추상이 만들어지는 것만 다루지만, 한 번 만들어진 추상이 stale해질 때 어떻게 회수할지는 STALE benchmark([arXiv:2605.06527](https://arxiv.org/abs/2605.06527))가 짚는 후속 문제다. 우리 ADR 중에 이미 stale한 게 있을 것이다. 지금 그걸 발견하는 유일한 메커니즘은 네가 우연히 다시 읽는 것뿐이다. 한 가지 운영 아이디어 — ADR이 후속 작업에 인용될 때마다 last-cited 타임스탬프를 갱신하고, 6개월 이상 인용 없는 ADR은 quarterly로 함께 훑어보는 의례를 만드는 건 어떨까. 자동 폐기는 위험하지만, 자동 환기는 비용이 낮다.
 
 **다음 읽을 후보**:
 
-- **MemMachine** (arXiv:2604.04853, 2026-04) — "lossy extraction"을 설계 동기로 채택하고 원시 에피소드 보존 아키텍처를 만든 사례. Zhang et al.의 처방을 시스템으로 옮긴 가장 가까운 구현체로 보인다. 우리 knowledge-mind와 비교해보고 싶다.
-- **STALE benchmark** (arXiv:2605.06527, 2026-05) — 메모리가 암묵적으로 무효화됐을 때 LLM이 탐지에 실패하는 비율(55.2%). "검색하는 것 vs 반영하는 것" 사이 갭. 우리의 stale ADR 문제와 직결.
-- **Anatomy of Agentic Memory** (arXiv:2602.19320, 2026-02) — 현 벤치마크가 정적 사실 검색에 편향돼 있고 선택적 망각·시간적 유효성·장기 열화를 측정하지 못한다는 분석. 평가 측면에서 빈자리를 짚는다.
-- **RAPTOR vs vanilla RAG** (arXiv:2506.03989, 2025-06) — ∞Bench·QuALITY·NarrativeQA에서 원본 패시지 검색이 계층적 요약을 일관 초과. 추상이 검색에서도 진다는 별개 증거.
-- **Generative Agents** (Park et al. 2023, arXiv:2304.03442) — reflection을 importance-score 게이트로 구현한 선례. 우리 ADR 게이트 명문화에 직접 참고할 만한 디자인 디테일이 있다.
+- **MemMachine** ([arXiv:2604.04853](https://arxiv.org/abs/2604.04853), 2026-04) — "lossy extraction"을 설계 동기로 채택하고 원시 에피소드 보존 아키텍처를 만든 사례. Zhang et al.의 처방을 시스템으로 옮긴 가장 가까운 구현체로 보인다. 우리 knowledge-mind와 비교해보고 싶다.
+- **STALE benchmark** ([arXiv:2605.06527](https://arxiv.org/abs/2605.06527), 2026-05) — 메모리가 암묵적으로 무효화됐을 때 LLM이 탐지에 실패하는 비율(55.2%). "검색하는 것 vs 반영하는 것" 사이 갭. 우리의 stale ADR 문제와 직결.
+- **Anatomy of Agentic Memory** ([arXiv:2602.19320](https://arxiv.org/abs/2602.19320), 2026-02) — 현 벤치마크가 정적 사실 검색에 편향돼 있고 선택적 망각·시간적 유효성·장기 열화를 측정하지 못한다는 분석. 평가 측면에서 빈자리를 짚는다.
+- **RAPTOR vs vanilla RAG** ([arXiv:2506.03989](https://arxiv.org/abs/2506.03989), 2025-06) — ∞Bench·QuALITY·NarrativeQA에서 원본 패시지 검색이 계층적 요약을 일관 초과. 추상이 검색에서도 진다는 별개 증거.
+- **Generative Agents** (Park et al. 2023, [arXiv:2304.03442](https://arxiv.org/abs/2304.03442)) — reflection을 importance-score 게이트로 구현한 선례. 우리 ADR 게이트 명문화에 직접 참고할 만한 디자인 디테일이 있다.
 
 [^nonmono]: "Abstracted memory utility is non-monotonic in updates. Starting from an empty memory store, abstracted-memory utility rises early and then falls below the no-memory baseline as updates accumulate." — Zhang et al. (2026), §4 (Fig. 1a).
 

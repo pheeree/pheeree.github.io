@@ -8,7 +8,7 @@ source: "PAPER/2605.20173.pdf"
 
 ## 오늘의 한 편
 
-Vasundra Srinivasan (Stanford School of Engineering / O'Reilly), "A Methodology for Selecting and Composing Runtime Architecture Patterns for Production LLM Agents" (arXiv:2605.20173, 2026-05-19).
+Vasundra Srinivasan (Stanford School of Engineering / O'Reilly), "A Methodology for Selecting and Composing Runtime Architecture Patterns for Production LLM Agents" ([arXiv:2605.20173](https://arxiv.org/abs/2605.20173), 2026-05-19).
 
 어제 나는 Nakajima의 글을 닫으며, "편집자에게"에서 재현 발산(replay divergence)의 가능성을 결론부에 슬쩍 걸어두고 수치 검증으로 넘겼다. 미뤄둔 빚 같은 것이었다. 그런데 오늘 펼친 논문이 — 공교롭게도 어제 논문보다 이틀 앞서 발표된 — 바로 그 빚의 정확한 채점표였다. Srinivasan은 어제 내가 찬탄한 "로그 = 진실" 아키텍처가 **정확히 어느 이음새에서, 어떤 메커니즘으로 깨지는지**를 이름까지 붙여 보여준다. 그래서 오늘 글은 어제 글의 후속이 아니라 어제 글에 대한 반대신문이다.
 
@@ -63,7 +63,7 @@ $$y(t) = \mu t + \sigma\,\xi(t)$$
 
 σ는 호출별 분산 — 모델이 좋아질수록 줄어드는 noise다. μ는 **아키텍처 모멘텀**, 패턴 선택으로 제어되며 모델 품질과 구조적으로 독립인 drift다. 이 분해의 형태 자체가 낯익다 — drift + 확산항은 정확히 브라운 운동의 표류 방정식이고, 신뢰성을 시간의 함수로 적분하면 μ항(선형)이 σ항(√t로 자라는 확산)을 장기적으로 압도한다는 건 확률과정의 기본 결과다. 저자는 에이전트 신뢰성을 굳이 이 형식에 얹음으로써, "장기엔 drift가 이긴다"는 수학적 필연을 아키텍처 논증으로 빌려온 셈이다. 함의는 단순하고 무겁다. **모델이 충분히 좋아진 세계에서 장기 신뢰성을 지배하는 레버는 μ — 곧 아키텍처**다. "더 좋은 모델을 기다리면 된다"는 흔한 낙관이 정확히 어디서 무너지는지를 한 줄로 박은 것.
 
-이 주장은 혼자 서 있지 않다. DFAH(arXiv:2601.15322)가 4,700회+ 실행에서 결정론성과 정확성의 상관을 r = −0.11로 보고했는데 — 사실상 무관 — 그게 바로 "σ를 줄여도 μ가 자동으로 따라오지 않는다"의 데이터다. 소형 모델(7–20B)은 거의 완벽한 결정론을 보이지만(rigid pattern matching) 정확도는 20–42%에 그쳤다[^dfah]. 되감을 수 있다는 것이 옳다는 것을 보장하지 않는다. "Towards a Science of AI Agent Reliability"(arXiv:2602.16666)도 18개월치 종단 데이터로 같은 결론에 독립 도달했다 — 능력 향상이 신뢰성 향상을 자동으로 수반하지 않는다.
+이 주장은 혼자 서 있지 않다. DFAH([arXiv:2601.15322](https://arxiv.org/abs/2601.15322))가 4,700회+ 실행에서 결정론성과 정확성의 상관을 r = −0.11로 보고했는데 — 사실상 무관 — 그게 바로 "σ를 줄여도 μ가 자동으로 따라오지 않는다"의 데이터다. 소형 모델(7–20B)은 거의 완벽한 결정론을 보이지만(rigid pattern matching) 정확도는 20–42%에 그쳤다[^dfah]. 되감을 수 있다는 것이 옳다는 것을 보장하지 않는다. "Towards a Science of AI Agent Reliability"([arXiv:2602.16666](https://arxiv.org/abs/2602.16666))도 18개월치 종단 데이터로 같은 결론에 독립 도달했다 — 능력 향상이 신뢰성 향상을 자동으로 수반하지 않는다.
 
 [^dfah]: 4,700회+ 실행에서 결정론성과 정확성의 상관 r=−0.11. 소형 모델(7–20B)은 거의 완벽한 결정론에 정확도 20–42%, 프론티어 모델은 결정론 50–96%에 가변 정확도. — DFAH / Replayable Financial Agents (arXiv:2601.15322).
 
@@ -94,7 +94,7 @@ Srinivasan의 처방은 도망이 아니라 마이그레이션이다. P3(이벤�
 
 흥미로운 건 같은 주에 발표된 두 논문이 정면으로 부딪힌다는 사실이다. Nakajima(05-21)는 "로그 = 에이전트 진실"을 주장하면서 replay divergence를 명시적으로 다루지 않는다 — Srinivasan(05-19)의 핵심 비판이 Nakajima 설계의 가장 큰 블라인드 스팟에 정확히 들어맞는다. 이건 해소된 논쟁이 아니라 지금 진행 중인 live debate다.
 
-그러나 — 여기서 한 번 멈추고 Srinivasan 쪽에도 칼을 댄다. SDB의 4부 계약에는 "검증을 통과하면 올바른 결정"이라는 암묵적 가정이 숨어 있다. 그런데 DFAH가 보여준 r = −0.11은 정확히 이 가정의 반례다 — verifier를 통과하는 것과 결과가 옳은 것은 상관이 없을 수 있다. 이건 verifier의 표현력 한계에서 오는 구조적 누수다 — 결정론적 정책으로 인코딩할 수 있는 건 *형식*(스키마, 권한, 불변식)뿐이고, *내용의 타당성*은 대개 그 표현력 바깥에 있다. 결국 SDB는 "막을 수 있는 종류의 오류"만 막는다는, 그 자체로 정직한 한계를 안고 있다. 그리고 "The Six Sigma Agent"(arXiv:2601.22290)는 아예 다른 길을 간다 — 동일 모델 5개 합의에서 오류율 5%→0.11%, 13개에서 Six Sigma(3.4 DPMO)에 도달한다. μ > σ를 극단적으로 지지하면서도 SDB와 다른 아키텍처(다수결)로 같은 목표에 닿는다. SDB는 μ를 올리는 *하나의* 길이지 유일한 길이 아니다.
+그러나 — 여기서 한 번 멈추고 Srinivasan 쪽에도 칼을 댄다. SDB의 4부 계약에는 "검증을 통과하면 올바른 결정"이라는 암묵적 가정이 숨어 있다. 그런데 DFAH가 보여준 r = −0.11은 정확히 이 가정의 반례다 — verifier를 통과하는 것과 결과가 옳은 것은 상관이 없을 수 있다. 이건 verifier의 표현력 한계에서 오는 구조적 누수다 — 결정론적 정책으로 인코딩할 수 있는 건 *형식*(스키마, 권한, 불변식)뿐이고, *내용의 타당성*은 대개 그 표현력 바깥에 있다. 결국 SDB는 "막을 수 있는 종류의 오류"만 막는다는, 그 자체로 정직한 한계를 안고 있다. 그리고 "The Six Sigma Agent"([arXiv:2601.22290](https://arxiv.org/abs/2601.22290))는 아예 다른 길을 간다 — 동일 모델 5개 합의에서 오류율 5%→0.11%, 13개에서 Six Sigma(3.4 DPMO)에 도달한다. μ > σ를 극단적으로 지지하면서도 SDB와 다른 아키텍처(다수결)로 같은 목표에 닿는다. SDB는 μ를 올리는 *하나의* 길이지 유일한 길이 아니다.
 
 ## 내 연구에 어떻게 맞물리나
 
@@ -120,6 +120,6 @@ Srinivasan의 처방은 도망이 아니라 마이그레이션이다. P3(이벤�
 
 **다음 읽을 후보**:
 
-- **DSAP: Dual-State Action Pair** (Li et al., arXiv:2512.20660, 2025-12). LLM의 확률적 공간 S_env와 검증 가능한 워크플로 상태 S_workflow를 분리하고, guard function이 불투명한 출력을 관측 가능한 상태로 투영하는 실행 원시형. 3단계 회복(context refinement → informed backtracking → human escalation)으로 신뢰성 65포인트 향상. SDB가 *경계*를 정의했다면 DSAP는 그 경계에서 *회복*을 정의한다 — "실행 회복은 필요조건이지 충분조건이 아니다"라는 결론이 Srinivasan의 아키텍처 모멘텀과 어디서 수렴하고 어디서 갈라지는지 가르고 싶다.
-- **ESAA: Event Sourcing for Agents** (arXiv:2602.23193, 2026-02). 에이전트가 상태를 직접 쓰지 않고 구조화된 JSON 의도만 방출하면 결정론적 오케스트레이터가 검증·커밋, SHA-256으로 재현 상태 대조. SDB 4부 계약의 독립적 재발견인데, 정작 이 논문도 모델 버전 교체 시 이전 이벤트 재해석(=replay divergence) 문제를 다루지 않는다. 같은 블라인드 스팟을 공유하는 두 SDB 구현을 나란히 놓으면, replay divergence가 한 논문의 실수가 아니라 *이 설계 계열 전체의 구조적 사각지대*인지가 드러날 것이다.
-- **The Six Sigma Agent** (arXiv:2601.22290, 2026-01). n개 합의로 오류율을 Six Sigma까지 끌어내리는 경로. SDB(단일 proposer→verifier)와 다수결이 μ를 올리는 두 직교하는 길이라면, 둘을 합성했을 때(검증된 제안 n개의 합의) μ가 곱으로 줄어드는지 한계 수확이 오는지 — 아키텍처 선택의 복수성을 비용·신뢰성 평면에 좌표로 찍어보고 싶다.
+- **DSAP: Dual-State Action Pair** (Li et al., [arXiv:2512.20660](https://arxiv.org/abs/2512.20660), 2025-12). LLM의 확률적 공간 S_env와 검증 가능한 워크플로 상태 S_workflow를 분리하고, guard function이 불투명한 출력을 관측 가능한 상태로 투영하는 실행 원시형. 3단계 회복(context refinement → informed backtracking → human escalation)으로 신뢰성 65포인트 향상. SDB가 *경계*를 정의했다면 DSAP는 그 경계에서 *회복*을 정의한다 — "실행 회복은 필요조건이지 충분조건이 아니다"라는 결론이 Srinivasan의 아키텍처 모멘텀과 어디서 수렴하고 어디서 갈라지는지 가르고 싶다.
+- **ESAA: Event Sourcing for Agents** ([arXiv:2602.23193](https://arxiv.org/abs/2602.23193), 2026-02). 에이전트가 상태를 직접 쓰지 않고 구조화된 JSON 의도만 방출하면 결정론적 오케스트레이터가 검증·커밋, SHA-256으로 재현 상태 대조. SDB 4부 계약의 독립적 재발견인데, 정작 이 논문도 모델 버전 교체 시 이전 이벤트 재해석(=replay divergence) 문제를 다루지 않는다. 같은 블라인드 스팟을 공유하는 두 SDB 구현을 나란히 놓으면, replay divergence가 한 논문의 실수가 아니라 *이 설계 계열 전체의 구조적 사각지대*인지가 드러날 것이다.
+- **The Six Sigma Agent** ([arXiv:2601.22290](https://arxiv.org/abs/2601.22290), 2026-01). n개 합의로 오류율을 Six Sigma까지 끌어내리는 경로. SDB(단일 proposer→verifier)와 다수결이 μ를 올리는 두 직교하는 길이라면, 둘을 합성했을 때(검증된 제안 n개의 합의) μ가 곱으로 줄어드는지 한계 수확이 오는지 — 아키텍처 선택의 복수성을 비용·신뢰성 평면에 좌표로 찍어보고 싶다.

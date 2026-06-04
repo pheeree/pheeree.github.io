@@ -9,7 +9,7 @@ source: "PAPER/2605.06638.pdf"
 
 ## 오늘의 한 편
 
-Wang 외(Purdue·UNC·GT·UCSD)의 *Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key* (arXiv:2605.06638, 2026-05-07)를 읽었다. 합성 논리 환경 ScaleLogic을 두 축 — 추론 깊이 D와 논리 표현성 5단계(Implication-only → +Conjunction → +Negation → +Disjunction → +Quantification) — 으로 독립 제어하면서 DAPO·GRPO·GSPO로 Qwen3-4B/8B를 RL 포스트 트레이닝한 연구다[^scalelogic]. 핵심 발견은 깔끔하다. 정확도가 일정 임계 위로 가는 데 필요한 토큰 수 T가 깊이 D에 대해 멱법칙을 따르고(T ∝ D^γ, 결정계수 0.99 이상), 그 지수 γ가 표현성 단계에 따라 1.04 → 2.60까지 단조 증가한다[^powerlaw]. 같은 깊이라도 더 풍부한 논리 연결자 위에서 훈련된 모델이 같은 정확도에 도달하기 위해 본질적으로 더 긴 사고를 토큰으로 펼친다.
+Wang 외(Purdue·UNC·GT·UCSD)의 *Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key* ([arXiv:2605.06638](https://arxiv.org/abs/2605.06638), 2026-05-07)를 읽었다. 합성 논리 환경 ScaleLogic을 두 축 — 추론 깊이 D와 논리 표현성 5단계(Implication-only → +Conjunction → +Negation → +Disjunction → +Quantification) — 으로 독립 제어하면서 DAPO·GRPO·GSPO로 Qwen3-4B/8B를 RL 포스트 트레이닝한 연구다[^scalelogic]. 핵심 발견은 깔끔하다. 정확도가 일정 임계 위로 가는 데 필요한 토큰 수 T가 깊이 D에 대해 멱법칙을 따르고(T ∝ D^γ, 결정계수 0.99 이상), 그 지수 γ가 표현성 단계에 따라 1.04 → 2.60까지 단조 증가한다[^powerlaw]. 같은 깊이라도 더 풍부한 논리 연결자 위에서 훈련된 모델이 같은 정확도에 도달하기 위해 본질적으로 더 긴 사고를 토큰으로 펼친다.
 
 표현성 단계를 그대로 1879년 Frege의 *Begriffsschrift* 위계로 읽어도 무방하다. 명제논리(함의·논리곱·부정·논리합)에서 술어논리(전칭·존재 양화사)로 넘어가는 그 한 칸이 ScaleLogic에서는 γ를 2.06에서 2.60으로 끌어올린다. 한 세기 반 전 논리학자들이 손으로 발견한 표현력 위계가, 이제 토큰 곡률의 멱법칙 지수로 외화된 셈이다. Cobham(1965)·Edmonds(1965)의 계산복잡도 위계가 *어떤 문제가 풀릴 수 있는가*를 다뤘다면, 오늘 논문은 한 단계 안쪽 — *같은 문제를 어느 정도의 토큰 비용으로 푸는가* — 를 묻는다. 이게 내가 이 논문에 끌린 첫 번째 이유다.
 
@@ -46,11 +46,11 @@ graph LR
 
 여기서 멈추면 너무 매끈하다. 같은 시기에 나온 두 편의 논문이 이 그림을 다른 방향에서 흔든다.
 
-하나는 Yue 외의 *Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?* (arXiv:2504.13837, NeurIPS 2025). pass@k를 충분히 키우면 RLVR로 훈련한 모델보다 기반 모델이 역전한다는 결과 — 구체적으로 k=256에서 Qwen-Math-7B 기반 모델이 RL 후 모델을 약 4-7pp 앞선다. 6개 RL 알고리즘 전부에서 같은 한계가 관찰됐다. 또 하나는 ReasonMaxxer 계열(arXiv:2605.06241, 2026-05) — RL 전후의 토큰 수준 차이는 1-3%, 그것도 기반 모델의 상위 5개 후보 안에서만 일어난다. 즉 RL은 추론 용량을 늘리는 게 아니라, 이미 모델 안에 있던 경로 중 어느 것을 선택할지의 정책을 좁히는 작업이라는 것.
+하나는 Yue 외의 *Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?* ([arXiv:2504.13837](https://arxiv.org/abs/2504.13837), NeurIPS 2025). pass@k를 충분히 키우면 RLVR로 훈련한 모델보다 기반 모델이 역전한다는 결과 — 구체적으로 k=256에서 Qwen-Math-7B 기반 모델이 RL 후 모델을 약 4-7pp 앞선다. 6개 RL 알고리즘 전부에서 같은 한계가 관찰됐다. 또 하나는 ReasonMaxxer 계열([arXiv:2605.06241](https://arxiv.org/abs/2605.06241), 2026-05) — RL 전후의 토큰 수준 차이는 1-3%, 그것도 기반 모델의 상위 5개 후보 안에서만 일어난다. 즉 RL은 추론 용량을 늘리는 게 아니라, 이미 모델 안에 있던 경로 중 어느 것을 선택할지의 정책을 좁히는 작업이라는 것.
 
 이 시각에서 다시 읽으면 오늘 논문의 γ 곡선은 어떻게 해석되나. 표현성이 늘면서 γ가 가팔라지는 건 *모델이 더 풍부한 추론을 학습했기 때문*이 아니라 *기반 모델 안에 이미 잠재된 더 긴 경로 중 더 정교한 선택을 강요받기 때문*일 수 있다. 즉 ScaleLogic의 발견은 RL이 가르친 것의 한계를 드러내는 동시에, 그 한계가 기반 모델의 사전 학습 분포 안에 어떻게 분포해 있는지에 강하게 의존한다는 신호이기도 하다. 이건 우리가 직전 글에서 짚었던 "잠재공간이 텍스트 병목을 우회한다"는 주장과도 충돌한다 — 우회하는 게 아니라, 사전 학습 때 이미 새겨진 경로 중 다른 분포로 옮겨가는 것에 가깝다면.
 
-다른 한 편 — Park 외의 *Horizon Generalization in Long-Horizon RL* (arXiv:2605.02572, ICML 2026) — 은 추론 깊이 자체가 학습 불안정의 독립 원인이라고 주장한다. 최적 궤적 확률의 시퀀스 길이에 따른 지수적 감소(이건 Bellman 1957 이래 RL 이론의 오랜 두통이다), 희소 보상이 어휘 전체에 만드는 음의 기울기 분산. 표현적 데이터로는 우회되지 않고, 구조적 개입이 필요하다는 결론. 이 결과를 옆에 두면 ScaleLogic의 멱법칙은 *우아한 경험적 관찰*이지 *근본 원인의 진단*이 아닐 가능성이 있다. 그러나 — 그리고 이게 본문 안의 두 번째 그러나다 — Park의 구조적 개입(서브골 분해)이 효과적인 도메인은 명확한 이행성 구조가 있는 그래프 탐색에 한정된다. ScaleLogic의 +Quantification 단계처럼 술어논리적 풍부함이 들어오는 순간, 서브골 자체를 정의하기가 어려워진다. 두 시각은 서로를 반박하기보다 *어디서 멱법칙이 깨지는가*의 경계를 함께 그린다.
+다른 한 편 — Park 외의 *Horizon Generalization in Long-Horizon RL* ([arXiv:2605.02572](https://arxiv.org/abs/2605.02572), ICML 2026) — 은 추론 깊이 자체가 학습 불안정의 독립 원인이라고 주장한다. 최적 궤적 확률의 시퀀스 길이에 따른 지수적 감소(이건 Bellman 1957 이래 RL 이론의 오랜 두통이다), 희소 보상이 어휘 전체에 만드는 음의 기울기 분산. 표현적 데이터로는 우회되지 않고, 구조적 개입이 필요하다는 결론. 이 결과를 옆에 두면 ScaleLogic의 멱법칙은 *우아한 경험적 관찰*이지 *근본 원인의 진단*이 아닐 가능성이 있다. 그러나 — 그리고 이게 본문 안의 두 번째 그러나다 — Park의 구조적 개입(서브골 분해)이 효과적인 도메인은 명확한 이행성 구조가 있는 그래프 탐색에 한정된다. ScaleLogic의 +Quantification 단계처럼 술어논리적 풍부함이 들어오는 순간, 서브골 자체를 정의하기가 어려워진다. 두 시각은 서로를 반박하기보다 *어디서 멱법칙이 깨지는가*의 경계를 함께 그린다.
 
 ## 내 연구에 어떻게 맞물리나
 
@@ -71,9 +71,9 @@ graph LR
 - **검증 포인트**: 잠재 어휘 크기 K가 표현성 단계와 동형이라는 가설은 실험 가능하다. Abstract-CoT 설정에서 K를 256/512/1024/2048/4096으로 스윕하면서 깊이별 토큰 곡선의 γ를 측정해보면, 오늘 논문의 1.04→2.60 곡선과 정량적으로 비교할 수 있을 것이다.
 - **남은 질문 1**: ScaleLogic의 표현성 단계가 *모델이 학습한 것*인지 *기반 모델에서 선택된 것*인지를 가르는 실험이 빠져 있다. pass@k 곡선을 표현성 단계별로 그렸다면 결론이 달라졌을 것 같다.
 - **남은 질문 2**: 커리큘럼이 γ를 2.60→2.30으로 누르는 효과가 통계적으로 robust한지. 분산 보고가 약하다.
-- **다음 읽을 후보 1순위**: Yue 외 *Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?* (arXiv:2504.13837). 오늘 논문의 멱법칙을 "용량 확장이 아닌 정책 선택"의 시각에서 다시 해석하기 위한 가장 직접적인 반론.
-- **다음 읽을 후보 2순위**: Park 외 *Horizon Generalization* (arXiv:2605.02572). 짧은 지평에서 훈련한 모델이 긴 변형으로 일반화한다는 결과. 오늘의 깊이-멱법칙과 어떻게 충돌·공존하는지가 흥미롭다.
-- **다음 읽을 후보 3순위**: Qwen 팀의 RL 포스트 트레이닝 스케일링 법칙(arXiv:2509.25300). 모델 크기·데이터·컴퓨트의 멱법칙을 직접 다룬 대규모 연구. 표현성 축이 거기 어떻게 들어가는지를 묻고 싶다.
+- **다음 읽을 후보 1순위**: Yue 외 *Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?* ([arXiv:2504.13837](https://arxiv.org/abs/2504.13837)). 오늘 논문의 멱법칙을 "용량 확장이 아닌 정책 선택"의 시각에서 다시 해석하기 위한 가장 직접적인 반론.
+- **다음 읽을 후보 2순위**: Park 외 *Horizon Generalization* ([arXiv:2605.02572](https://arxiv.org/abs/2605.02572)). 짧은 지평에서 훈련한 모델이 긴 변형으로 일반화한다는 결과. 오늘의 깊이-멱법칙과 어떻게 충돌·공존하는지가 흥미롭다.
+- **다음 읽을 후보 3순위**: Qwen 팀의 RL 포스트 트레이닝 스케일링 법칙([arXiv:2509.25300](https://arxiv.org/abs/2509.25300)). 모델 크기·데이터·컴퓨트의 멱법칙을 직접 다룬 대규모 연구. 표현성 축이 거기 어떻게 들어가는지를 묻고 싶다.
 - **개인 메모**: 유효 채널(K-스타) 프레임 ↔ 표현성 단계 ↔ 코드북 크기의 세 변수가 같은 자원의 다른 좌표라는 가설을 별도 노트로 빼두자. 한 번 더 읽어야 할 자료가 쌓이고 있다.
 
 [^scalelogic]: "We introduce ScaleLogic, a synthetic logical reasoning framework that offers independent control over two axes of difficulty: the depth of the required proof planning (i.e., the horizon) and the expressiveness of the underlying logic." — Wang et al. (2026), Abstract.

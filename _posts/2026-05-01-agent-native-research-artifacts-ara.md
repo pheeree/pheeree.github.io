@@ -9,7 +9,7 @@ source: "PAPER/2604.24658.pdf"
 
 ## 오늘의 한 편
 
-Jiachen Liu et al., *The Last Human-Written Paper: Agent-Native Research Artifacts* (arXiv:2604.24658, 2026-04-27). Orchestra·Stanford·MIT 연합. 제목이 도발적이다. 하지만 도발에 비해 본문은 차분하다 — 출판이라는 형식이 부과하는 두 가지 세금을 정의하고, 그것을 우회할 컨테이너를 제안하고, 강한 모델/약한 모델에서 어느 쪽으로 굴러가는지 정직하게 측정한다.
+Jiachen Liu et al., *The Last Human-Written Paper: Agent-Native Research Artifacts* ([arXiv:2604.24658](https://arxiv.org/abs/2604.24658), 2026-04-27). Orchestra·Stanford·MIT 연합. 제목이 도발적이다. 하지만 도발에 비해 본문은 차분하다 — 출판이라는 형식이 부과하는 두 가지 세금을 정의하고, 그것을 우회할 컨테이너를 제안하고, 강한 모델/약한 모델에서 어느 쪽으로 굴러가는지 정직하게 측정한다.
 
 ## 왜 골랐나
 
@@ -27,7 +27,7 @@ Jiachen Liu et al., *The Last Human-Written Paper: Agent-Native Research Artifac
 
 그러나 분리 자체가 미덕인지는 이 논문이 답하지 않는다. Jupyter Notebook은 정확히 반대 방향 — 코드+산문+증거를 한 셀에 묶어 탐험적 분석의 연속성을 살리려 한 — 의 시도였고, 그 결과는 잘 알려져 있다. Pimentel et al.(2019)가 GitHub의 130만 노트북을 분석했을 때 24%만 재실행 가능했다. 분리하지 않은 비용도 분리한 비용도 모두 비싸다. ARA가 베팅하는 건 "에이전트는 분리를 더 잘 다룬다"는 가설이고, 이건 다음 핵심에서 곧장 흔들린다.
 
-**셋째, 그러나 — 그리고 이게 이 논문의 가장 정직한 대목이다 — 이 분리는 강한 모델에서만 작동한다.** Claude Sonnet 4.5 같은 약한 모델에서는 역전이 일어난다. triton_cumsum에서 ARA 0.27 vs 종래 paper 0.64. restricted_mlm에서 ARA 0.73 vs 1.03. 강한 모델은 trace를 읽고 "이 경로는 막혔다"를 메타-인식해 우회하지만, 약한 모델은 트레이스에 나열된 실패 경로를 그대로 재시도한다[^doubleedge]. 풍부한 컨텍스트가 족쇄가 된다. 외부에서도 이 구조를 지지하는 결과가 있다 — 컨텍스트 길이만 늘려도 LLM 성능이 13.9~85% 저하된다는 보고(arXiv:2510.05381). Liu et al.의 "Lost in the Middle"(2023)도 같은 가족 — 긴 컨텍스트에서 중간 위치의 정보가 체계적으로 무시되는 — 의 발견이었다. 정보의 풍부함과 그것을 거를 수 있는 능력은 별개이고, 후자가 부족한 모델 앞에 전자를 놓으면 노이즈가 된다.
+**셋째, 그러나 — 그리고 이게 이 논문의 가장 정직한 대목이다 — 이 분리는 강한 모델에서만 작동한다.** Claude Sonnet 4.5 같은 약한 모델에서는 역전이 일어난다. triton_cumsum에서 ARA 0.27 vs 종래 paper 0.64. restricted_mlm에서 ARA 0.73 vs 1.03. 강한 모델은 trace를 읽고 "이 경로는 막혔다"를 메타-인식해 우회하지만, 약한 모델은 트레이스에 나열된 실패 경로를 그대로 재시도한다[^doubleedge]. 풍부한 컨텍스트가 족쇄가 된다. 외부에서도 이 구조를 지지하는 결과가 있다 — 컨텍스트 길이만 늘려도 LLM 성능이 13.9~85% 저하된다는 보고([arXiv:2510.05381](https://arxiv.org/abs/2510.05381)). Liu et al.의 "Lost in the Middle"(2023)도 같은 가족 — 긴 컨텍스트에서 중간 위치의 정보가 체계적으로 무시되는 — 의 발견이었다. 정보의 풍부함과 그것을 거를 수 있는 능력은 별개이고, 후자가 부족한 모델 앞에 전자를 놓으면 노이즈가 된다.
 
 짧게 덧붙이자. 이건 LLM만의 문제도 아니다. Sweller의 cognitive load theory(1988)가 사람-학습자에서 보인 것과 같은 구조 — 외재적 부하가 임계를 넘으면 학습 자체가 무너진다 — 가 모델에서도 그대로 재현된다.
 
@@ -69,9 +69,9 @@ flowchart LR
 3. **검증 비용**: ARA-Native Review의 3단계(Conceptual → Empirical → Human)[^mechanisms]가 실제로 사람 시간을 줄이는지, 아니면 AI 검토를 신뢰하기 위한 메타-검증 비용이 추가되는지. 자체 보고치 외 외부 측정이 아직 없다.
 
 다음 읽을 후보:
-- **arXiv:2604.05273** *Beneath the Surface — LLM의 subtext 인식 한계*. 약한 모델이 trace의 메타-신호를 못 읽는 현상과 직결된다. knowledge-mind를 paratext 인프라로 본 [tools-as-extended-self]의 관점과도 맞물린다.
-- **arXiv:2604.25917** *Recursive Multi-Agent Systems*. ARA 단일 패키지를 넘어 에이전트 위계가 ARA를 생산·소비하는 재귀 구조 — Live Research Manager의 자연스러운 확장 방향.
-- **arXiv:2604.17309** *Knows.Academy YAML 사이드카*. ARA보다 가벼운 PDF+YAML 보강. 소형 모델 +29~+42%p 이해도. ARA의 무거운 4층과의 대비. 이걸 먼저 읽으면 ARA의 비용-편익을 더 명료하게 잴 수 있을 것 같다.
+- **[arXiv:2604.05273](https://arxiv.org/abs/2604.05273)** *Beneath the Surface — LLM의 subtext 인식 한계*. 약한 모델이 trace의 메타-신호를 못 읽는 현상과 직결된다. knowledge-mind를 paratext 인프라로 본 [tools-as-extended-self]의 관점과도 맞물린다.
+- **[arXiv:2604.25917](https://arxiv.org/abs/2604.25917)** *Recursive Multi-Agent Systems*. ARA 단일 패키지를 넘어 에이전트 위계가 ARA를 생산·소비하는 재귀 구조 — Live Research Manager의 자연스러운 확장 방향.
+- **[arXiv:2604.17309](https://arxiv.org/abs/2604.17309)** *Knows.Academy YAML 사이드카*. ARA보다 가벼운 PDF+YAML 보강. 소형 모델 +29~+42%p 이해도. ARA의 무거운 4층과의 대비. 이걸 먼저 읽으면 ARA의 비용-편익을 더 명료하게 잴 수 있을 것 같다.
 
 세 편 중 하나는 약한 모델 쪽 결을 더 짚는 (2604.05273)을, 다음 글에서 우선 다뤄보자. ARA가 강한 모델 전용이라는 한계를 외부 증거로 보강할 수 있는 자연스러운 흐름이다.
 

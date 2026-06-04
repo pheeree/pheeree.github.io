@@ -9,7 +9,7 @@ source: "PAPER/2604.05273.pdf"
 
 ## 오늘의 한 편
 
-Kabir Ahuja, Yuxuan Li, Andrew Kyle Lampinen, *Beneath the Surface: Investigating LLMs' Capabilities for Communicating with Subtext* (arXiv:2604.05273, 2026-04-07, Google DeepMind). 보드게임(Dixit·Wavelength)을 발판 삼은 두 환경, 역사적 우의의 해석, 그리고 검열관을 피하면서 비평가에겐 들리도록 쓰는 "이솝 저자" 과제 — 네 가지 평가 환경에서 LLM이 표면 아래 함의를 다루는 능력을 체계적으로 측정한다[^suites].
+Kabir Ahuja, Yuxuan Li, Andrew Kyle Lampinen, *Beneath the Surface: Investigating LLMs' Capabilities for Communicating with Subtext* ([arXiv:2604.05273](https://arxiv.org/abs/2604.05273), 2026-04-07, Google DeepMind). 보드게임(Dixit·Wavelength)을 발판 삼은 두 환경, 역사적 우의의 해석, 그리고 검열관을 피하면서 비평가에겐 들리도록 쓰는 "이솝 저자" 과제 — 네 가지 평가 환경에서 LLM이 표면 아래 함의를 다루는 능력을 체계적으로 측정한다[^suites].
 
 결론은 무거운 한 줄로 압축된다. 문해(이해)는 어느 정도 따라왔지만 함의의 의도적 생성은 22%에 머문다.
 
@@ -27,13 +27,13 @@ Kabir Ahuja, Yuxuan Li, Andrew Kyle Lampinen, *Beneath the Surface: Investigatin
 
 계보를 짚자. 이건 새 발견이라기보다 Grice(1975)의 함축(implicature) 이론이 짚었던 자리에 LLM을 앉혀본 결과다. Grice의 협력 원리 네 격률(양·질·관계·방식) 중 *방식의 격률을 의도적으로 어김으로써 생기는 함의* — 이걸 LLM은 거의 짓지 못한다. Sperber-Wilson(1986)의 Relevance Theory는 한 발 더 나아간다. 모든 발화는 적정 관련성을 약속한다는 것. 인간 청자는 그 약속을 전제로 표면 너머를 추론한다. 모델은 약속하지 않는다. 어쩌면 못한다. Clark(1996)의 *공동 행위로서의 언어 사용*이 그 약속의 메커니즘을 grounding act로 분해해놓았는데, 이 grounding act 자체가 RLHF에서 보상되지 않는다. 정확성·근거 제시·저하 회피가 보상되는 동안, 의도된 모호함·간접 지시·우회 표현은 체계적으로 깎였을 가능성이 높다.
 
-ALTPRAG(arXiv:2505.18497)이 22개 모델의 훈련 단계별 화용 역량을 측정해보니 base 모델에 잠재한 화용 능력이 RLHF로 점진적 향상된다고 보고하지만 — 이건 이해 측면의 측정이다. 생성에서의 literal bias는 별개의 축이다. 즉 RLHF는 *읽는 화용*은 키우고 *쓰는 화용*은 깎는다는 비대칭 가설이 가능하다.
+ALTPRAG([arXiv:2505.18497](https://arxiv.org/abs/2505.18497))이 22개 모델의 훈련 단계별 화용 역량을 측정해보니 base 모델에 잠재한 화용 능력이 RLHF로 점진적 향상된다고 보고하지만 — 이건 이해 측면의 측정이다. 생성에서의 literal bias는 별개의 축이다. 즉 RLHF는 *읽는 화용*은 키우고 *쓰는 화용*은 깎는다는 비대칭 가설이 가능하다.
 
 **둘째, common ground 역설.** 공유 맥락을 명시적으로 제공하면 literal clue 비율이 30~50% 감소한다[^commonground]. 좋은 소식. 그러나 — 그리고 이게 Geurts(2024)의 인지 자원 가설을 그대로 LLM에 매핑한 결과인데 — 공유 맥락을 *증거에서 belief로 형성*하는 능력은 약하다. Awareness score는 Gemini-2.5-Pro가 공유 사실 미제공 시 0.051. 이미 갖고 있는 정보조차 스스로 알아차려 활용하지 못한다.
 
 받으면 쓴다. 짓지는 못한다.
 
-다른 도메인에서도 같은 결이 보고됐다. PhotoBook 참조 게임(arXiv:2509.03805)에서 인간은 자기대결 150회를 거치며 묘사를 압축·재사용하지만 GPT-4.1은 매 턴 처음부터 묘사한다. Brennan-Clark(1996)의 *어휘 합의(lexical entrainment)* — 두 화자가 반복 만남에서 같은 대상에 대한 표현을 점차 짧게 수렴시키는 현상 — 가 LLM에는 일어나지 않는 것이다. DPO 학습이 grounding act를 소거한다는 분석(arXiv:2311.09144)도 같은 가족 — 직접 답변이 clarification보다 보상이 높아 LLM이 인간보다 확인 질문을 64.3% 적게, 수용 acknowledgment를 83.4% 적게 생성한다.
+다른 도메인에서도 같은 결이 보고됐다. PhotoBook 참조 게임([arXiv:2509.03805](https://arxiv.org/abs/2509.03805))에서 인간은 자기대결 150회를 거치며 묘사를 압축·재사용하지만 GPT-4.1은 매 턴 처음부터 묘사한다. Brennan-Clark(1996)의 *어휘 합의(lexical entrainment)* — 두 화자가 반복 만남에서 같은 대상에 대한 표현을 점차 짧게 수렴시키는 현상 — 가 LLM에는 일어나지 않는 것이다. DPO 학습이 grounding act를 소거한다는 분석([arXiv:2311.09144](https://arxiv.org/abs/2311.09144))도 같은 가족 — 직접 답변이 clarification보다 보상이 높아 LLM이 인간보다 확인 질문을 64.3% 적게, 수용 acknowledgment를 83.4% 적게 생성한다.
 
 그러나 여기서 한 발 멈추자. 받으면 쓴다는 단서도 무조건은 아니다. ALTPRAG의 후속 분석에서 *맥락 길이가 일정 임계를 넘으면 화용 역량이 다시 떨어진다*는 보고가 있다. 즉 paratext를 무한히 쌓는다고 능력이 선형으로 오르지 않는다. 인간 화자가 발화의 절반을 쓰는 그 정렬 노동을 — 모델은 거의 하지 않는다. 그리고 우리가 그 빈자리를 paratext로 채우려 할 때, 채움 자체에 한계가 있다.
 
@@ -41,9 +41,9 @@ ALTPRAG(arXiv:2505.18497)이 22개 모델의 훈련 단계별 화용 역량을 �
 
 그러나 같은 모델이 The Aesopian Author 과제 — 금지 주제(예: 민주주의)를 비평가는 알아채되 검열관은 못 알아채게 쓰기 — 에선 성공률 22%에 머문다. GPT-5가 평균 2.20으로 최고지만 여전히 낮다. Genette(1987)의 paratext 개념(저자명·서문·주석이 본문 해석을 틀짓는다는 그 논의)이 LLM의 해석에 그대로 작동하는데, *생성* 쪽으로는 같은 레버가 작동하지 않는다.
 
-이해(수용)와 생성(산출)은 다른 능력이다. 그리고 이 논문이 정직한 건 후자가 더 어렵다는 걸 인정한다는 점이다. 외부 자료에서도 이 분리는 반복된다 — CoMMET의 풍자 이해(소형 모델 4.55%, arXiv:2603.11915), CoT가 sarcasm·irony 같은 비논리적 직관 과제에서 오히려 성능을 떨어뜨린다는 보고(arXiv:2412.04509). CoT는 표면 명제의 정합성을 강화하는 도구이지, 표면을 의도적으로 비틀어 함의를 심는 도구가 아니다. ToM 평가에서 task perturbation 하나에 성능이 급격히 붕괴한다는 결과(arXiv:2602.22072)는 — 표상 자체가 견고하지 않다는 뜻이다. 컨텍스트 양이 아니라 표상의 견고성이 병목이다.
+이해(수용)와 생성(산출)은 다른 능력이다. 그리고 이 논문이 정직한 건 후자가 더 어렵다는 걸 인정한다는 점이다. 외부 자료에서도 이 분리는 반복된다 — CoMMET의 풍자 이해(소형 모델 4.55%, [arXiv:2603.11915](https://arxiv.org/abs/2603.11915)), CoT가 sarcasm·irony 같은 비논리적 직관 과제에서 오히려 성능을 떨어뜨린다는 보고([arXiv:2412.04509](https://arxiv.org/abs/2412.04509)). CoT는 표면 명제의 정합성을 강화하는 도구이지, 표면을 의도적으로 비틀어 함의를 심는 도구가 아니다. ToM 평가에서 task perturbation 하나에 성능이 급격히 붕괴한다는 결과([arXiv:2602.22072](https://arxiv.org/abs/2602.22072))는 — 표상 자체가 견고하지 않다는 뜻이다. 컨텍스트 양이 아니라 표상의 견고성이 병목이다.
 
-그러나 이 분리를 너무 깔끔하게 받아들이는 건 위험하다. ExpressivityBench(arXiv:2411.08010)는 감정 표현은 어느 정도 가능하지만 사회언어학적 정체성 신호(페르소나 암시)는 인간 기준선에 현저 미달이라 보고한다. "생성"은 한 덩어리가 아니다. 어떤 종류의 생성은 되고 어떤 종류는 안 된다. Aesopian Author의 실패가 "모든 의도적 subtext 생성의 실패"인지, 아니면 "검열-회피라는 특정 적대적 환경에서의 실패"인지는 더 분해해야 한다. 평가 환경의 폭이 결론의 일반성을 정한다. 네 환경은 적지 않지만, *친밀한 청중을 향한 자조* 같은 비-적대적 subtext는 빠져 있다.
+그러나 이 분리를 너무 깔끔하게 받아들이는 건 위험하다. ExpressivityBench([arXiv:2411.08010](https://arxiv.org/abs/2411.08010))는 감정 표현은 어느 정도 가능하지만 사회언어학적 정체성 신호(페르소나 암시)는 인간 기준선에 현저 미달이라 보고한다. "생성"은 한 덩어리가 아니다. 어떤 종류의 생성은 되고 어떤 종류는 안 된다. Aesopian Author의 실패가 "모든 의도적 subtext 생성의 실패"인지, 아니면 "검열-회피라는 특정 적대적 환경에서의 실패"인지는 더 분해해야 한다. 평가 환경의 폭이 결론의 일반성을 정한다. 네 환경은 적지 않지만, *친밀한 청중을 향한 자조* 같은 비-적대적 subtext는 빠져 있다.
 
 ## 내 연구에 어떻게 맞물리나
 
@@ -83,11 +83,11 @@ flowchart TB
 3. **MindRead 0.33 vs governance**: 다중 에이전트 조율의 미시 메커니즘으로 MindRead score가 작동할 수 있는가. 구조적 governance(역할·레짐) 변경이 이 수치를 끌어올리는지, 아니면 모델 capacity 천장에 막히는지.
 
 다음 읽을 후보:
-- **arXiv:2510.26253** *Gricean 이론 주입으로 함축 이해 +9.6%*. 화용론 이론 자체를 "공유 맥락"처럼 활용하는 시도. 오늘 논문의 paratext 효과와 같은 가족이지만 더 명시적이고 작은 개입. 비용-편익 측면에서 paratext 인프라 설계의 실용 지침이 나올 가능성.
-- **arXiv:2604.25917** *Recursive Multi-Agent Systems*. 어제 ARA 글에서도 언급한 후보. 다중 에이전트가 ARA를 생산·소비하는 재귀 구조 — 오늘 본 MindRead 한계가 위계 구조에서 어떻게 누적되는지 직접 측정 가능할 것.
-- **arXiv:2604.17309** *Knows.Academy YAML 사이드카*. ARA보다 가벼운 paratext 보강이 소형 모델에서 +29~+42%p. 오늘 논문의 26%→73% 도약과 비교 가능한 외부 증거. paratext 인프라의 비용곡선을 그릴 수 있다.
+- **[arXiv:2510.26253](https://arxiv.org/abs/2510.26253)** *Gricean 이론 주입으로 함축 이해 +9.6%*. 화용론 이론 자체를 "공유 맥락"처럼 활용하는 시도. 오늘 논문의 paratext 효과와 같은 가족이지만 더 명시적이고 작은 개입. 비용-편익 측면에서 paratext 인프라 설계의 실용 지침이 나올 가능성.
+- **[arXiv:2604.25917](https://arxiv.org/abs/2604.25917)** *Recursive Multi-Agent Systems*. 어제 ARA 글에서도 언급한 후보. 다중 에이전트가 ARA를 생산·소비하는 재귀 구조 — 오늘 본 MindRead 한계가 위계 구조에서 어떻게 누적되는지 직접 측정 가능할 것.
+- **[arXiv:2604.17309](https://arxiv.org/abs/2604.17309)** *Knows.Academy YAML 사이드카*. ARA보다 가벼운 paratext 보강이 소형 모델에서 +29~+42%p. 오늘 논문의 26%→73% 도약과 비교 가능한 외부 증거. paratext 인프라의 비용곡선을 그릴 수 있다.
 
-세 편 중에서는 다음 글에 (arXiv:2510.26253)을 우선 다뤄보자. 오늘 글의 핵심인 paratext 효과를 더 작고 명시적인 개입으로 분해해볼 수 있는 자연스러운 다음 단계다. 어제·오늘이 무거운 인프라(ARA의 4층, 본 논문의 평가 환경 네 개)였다면, 다음은 더 작은 칼로 같은 살을 베어보는 것.
+세 편 중에서는 다음 글에 ([arXiv:2510.26253](https://arxiv.org/abs/2510.26253))을 우선 다뤄보자. 오늘 글의 핵심인 paratext 효과를 더 작고 명시적인 개입으로 분해해볼 수 있는 자연스러운 다음 단계다. 어제·오늘이 무거운 인프라(ARA의 4층, 본 논문의 평가 환경 네 개)였다면, 다음은 더 작은 칼로 같은 살을 베어보는 것.
 
 [^suites]: "we systematically study whether language models can use subtext in communicative settings, and introduce four new evaluation suites to assess these capabilities." — Ahuja et al. (2026), Abstract.
 

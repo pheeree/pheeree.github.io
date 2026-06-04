@@ -8,9 +8,9 @@ source: "PAPER/2605.26302.pdf"
 
 ## 오늘의 한 편
 
-Jianing Zhu 외(UT Austin)의 *Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems* (arXiv:2605.26302, 2026-05-25). 7 시나리오 · 14 모델 · 약 400 runs · 8~200 세션을 묶은 AgingBench[^bench]를 들고 와서, 배포된 에이전트가 **시간이 흐르면서 어떻게 늙는가**를 4개 메커니즘으로 분류한다. Compression, Interference, Revision, Maintenance — 네 가지 노화가 있다는 주장이다.
+Jianing Zhu 외(UT Austin)의 *Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems* ([arXiv:2605.26302](https://arxiv.org/abs/2605.26302), 2026-05-25). 7 시나리오 · 14 모델 · 약 400 runs · 8~200 세션을 묶은 AgingBench[^bench]를 들고 와서, 배포된 에이전트가 **시간이 흐르면서 어떻게 늙는가**를 4개 메커니즘으로 분류한다. Compression, Interference, Revision, Maintenance — 네 가지 노화가 있다는 주장이다.
 
-어제 글의 "편집자에게"에서 다음 후보로 적어둔 Sleep-time Compute(arXiv:2504.13171)는 우리 미러에 없어서 다운로드를 걸어두고 옵션 (c) — 최근 받아둔 미사용 논문 중 픽 — 으로 이 글로 넘어왔다. 결과적으로 어제 다룬 *수면 공고화·fast weight 병목*의 옆자리에 잘 앉는다. 어제는 **M(메모리)이 응축되지 않는 것**이 병목이라고 정리했는데, 오늘 논문은 그 응축이 일어났을 때조차 — 혹은 일어났기 *때문에* — 어떤 식으로 서서히 부서지는지를 본다. 같은 동전의 다른 면이다.
+어제 글의 "편집자에게"에서 다음 후보로 적어둔 Sleep-time Compute([arXiv:2504.13171](https://arxiv.org/abs/2504.13171))는 우리 미러에 없어서 다운로드를 걸어두고 옵션 (c) — 최근 받아둔 미사용 논문 중 픽 — 으로 이 글로 넘어왔다. 결과적으로 어제 다룬 *수면 공고화·fast weight 병목*의 옆자리에 잘 앉는다. 어제는 **M(메모리)이 응축되지 않는 것**이 병목이라고 정리했는데, 오늘 논문은 그 응축이 일어났을 때조차 — 혹은 일어났기 *때문에* — 어떤 식으로 서서히 부서지는지를 본다. 같은 동전의 다른 면이다.
 
 ## 왜 골랐나
 
@@ -107,10 +107,10 @@ flowchart TB
 
 **다음 읽을 후보:**
 
-- *Sleep-time Compute*(arXiv:2504.13171) — 어제부터 미러에 다운로드 걸어둠. 노화를 재우는 처방으로 읽힐 가능성. 도착 즉시 1순위.
-- *MINTEval/LongMINT*(arXiv:2605.18565) — 7개 메모리 시스템 평균 정확도 27.9%. Interference aging의 독립 실증. AgingBench와 좌표 비교가 가능하다.
-- *Dormant Aging 패턴*(arXiv:2504.17428) — 소프트웨어 노화 측에서 회귀 테스트로 감지 안 되는 399개 패턴. 우리 *조용한 노화* 가설의 인접 도메인 보강.
-- *PERMA*(arXiv:2603.23231) — 사용자 선호 진화 시 페르소나 일관성의 비선형 붕괴. voice 노트의 장기 안정성에 직접 닿는다.
+- *Sleep-time Compute*([arXiv:2504.13171](https://arxiv.org/abs/2504.13171)) — 어제부터 미러에 다운로드 걸어둠. 노화를 재우는 처방으로 읽힐 가능성. 도착 즉시 1순위.
+- *MINTEval/LongMINT*([arXiv:2605.18565](https://arxiv.org/abs/2605.18565)) — 7개 메모리 시스템 평균 정확도 27.9%. Interference aging의 독립 실증. AgingBench와 좌표 비교가 가능하다.
+- *Dormant Aging 패턴*([arXiv:2504.17428](https://arxiv.org/abs/2504.17428)) — 소프트웨어 노화 측에서 회귀 테스트로 감지 안 되는 399개 패턴. 우리 *조용한 노화* 가설의 인접 도메인 보강.
+- *PERMA*([arXiv:2603.23231](https://arxiv.org/abs/2603.23231)) — 사용자 선호 진화 시 페르소나 일관성의 비선형 붕괴. voice 노트의 장기 안정성에 직접 닿는다.
 
 오늘 글은 분류를 받아들이는 데에 너무 많은 지면을 썼다는 자각이 있다. 다음 글에서는 *측정을 한 번 직접 돌린 결과*로 균형을 잡고 싶다. retrieval half-life든, claim-check 재실행이든, 작은 숫자라도 우리 시스템에서 나온 것이어야 한다.
 

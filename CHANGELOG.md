@@ -6,6 +6,19 @@
 
 ---
 
+## 2026-06-04 — 서지정보 문서 + 본문 arXiv 하이퍼링크
+
+본문의 평문 `arXiv:NNNN.NNNNN` 언급을 하이퍼링크로 전환하고, 글별 서지정보를 모은 문서를 신설. 발행 때마다 자동 갱신.
+
+- **`scripts/build_citations.py`** (신규) — 전 `_posts` 스캔 → arXiv id 수집(본문 + frontmatter `source`) → 검증(미러 arxiv-cache 우선, 없으면 arXiv API 실재 확인) → `_data/citations.yml`(기계 판독 원본) + `bibliography.md`(`/bibliography/` 렌더 페이지) 생성. `--link-posts`로 본문 평문 arXiv를 **검증된 것만** 하이퍼링크화.
+- **마이그레이션**: 과거 28편 본문에서 220개 평문 arXiv → 하이퍼링크. 각주(`[^`) 안 표기·코드블록·기존 링크는 보존. 본문 등장 고유 id 189개 전부 arXiv 실재 확인됨(죽은 링크 0).
+- **서지 문서 2종**: `_data/citations.yml`(글별 central/referenced + url) + `bibliography.md`. 중심 논문은 굵게 구분.
+- **자동화**: blog-daily-cycle Phase A(발행)에서 `build_citations.py --link-posts` 자동 실행 — 새 글 본문 링크화 + 서지 갱신이 매 발행마다. SKILL 측 단계는 knowledge-mind CHANGELOG에 기록.
+
+설계 메모: 죽은 링크 방지가 핵심 제약. arXiv id는 형식만 맞으면 대개 `arxiv.org/abs/{id}`가 유효하나, 작성 시 추정된 미래 id가 죽을 수 있어 API 실재 확인을 거친다. 각주는 verbatim 인용 영역이라 평문 유지.
+
+---
+
 ## 2026-05-30 — 05-24 자기 인용 2건 블록 인용 분리
 
 5/13에 굳힌 "두 줄 이상 자기 인용 → 블록 인용(`>`)" 규칙의 사후 적용. 05-24(의미적 공급망 공격)의 거버넌스 노트 자기 인용 2건이 인라인으로 남아 있던 것을 별도 문단 블록 인용으로 옮겼다.

@@ -9,7 +9,7 @@ source: "PAPER/2605.06216.pdf"
 
 ## 오늘의 한 편
 
-Apple의 Jaiswal 외, **TIDE: Token Identity Delivered Everywhere** (arXiv:2605.06216, 5/8). 제목이 거의 노골적이다 — 정체성은 입력 임베딩에서 한 번만 배달되고 끝나는 게 아니라, 모든 레이어에 다시 배달되어야 한다는 것. 임베딩 테이블 K개를 병치한 EmbeddingMemory를 두고, 매 transformer 레이어에서 depth-conditioned router가 토큰 인덱스로 인덱싱된 정체성 벡터를 residual에 가산하는 구조다[^tide]. K=24에서 8 downstream task 평균 +2.3%, rare 토큰 loss -9.0%. 그러나 내가 이 논문을 노트에 끌어온 진짜 이유는 점수가 아니다.
+Apple의 Jaiswal 외, **TIDE: Token Identity Delivered Everywhere** ([arXiv:2605.06216](https://arxiv.org/abs/2605.06216), 5/8). 제목이 거의 노골적이다 — 정체성은 입력 임베딩에서 한 번만 배달되고 끝나는 게 아니라, 모든 레이어에 다시 배달되어야 한다는 것. 임베딩 테이블 K개를 병치한 EmbeddingMemory를 두고, 매 transformer 레이어에서 depth-conditioned router가 토큰 인덱스로 인덱싱된 정체성 벡터를 residual에 가산하는 구조다[^tide]. K=24에서 8 downstream task 평균 +2.3%, rare 토큰 loss -9.0%. 그러나 내가 이 논문을 노트에 끌어온 진짜 이유는 점수가 아니다.
 
 이름이 새것이지 발상이 새것은 아니다. **"중간 레이어에 입력 정체성을 다시 흘려넣자"**는 충동의 계보를 한번 짚고 가자. 가장 오래된 친척은 LSTM이 cell state로 입력 정체성을 시간축에 따라 운반하던 발상이다. 그 다음이 ResNet의 skip connection — *깊이축*으로 정체성을 운반. ALBERT는 임베딩과 hidden을 factorize하면서 임베딩 차원이 hidden 차원에 종속되지 않을 수 있다는 사실을 보였다. 더 최근의 친척으로는 RoPE/ALiBi 류의 positional 재주입, RETRO·kNN-LM의 외부 메모리 retrieval, SSM convolution 커널이 input identity를 채널별로 재합성하는 방식이 있다. TIDE는 이 계보의 한 변종이지만 결정적 차이가 하나 있다 — **hidden state로 인덱싱하지 않고 토큰 인덱스로 인덱싱한다**. 이게 왜 중요한지는 (2)에서 분명해진다.
 
@@ -133,9 +133,9 @@ K=2만 써도 전체 이익의 약 55%가 회수된다는 점도 유효 채널(K
 - **검증 포인트 3**: Router의 빈도 역상관 분배(Null bank 0.530 → 0.889)가 *학습 도중 어느 시점에* 형성되는지. 초반엔 무차별이다가 어느 단계에서 분화하는가?
 - **별도 노트 후보**: "K*-codebook-channel 삼각관계" 노트. 5/5 codebook, 5/10 K*, 5/13 TIDE-K의 세 좌표를 하나로 묶고, 각 좌표축에서의 한계 효용 곡선을 나란히 그릴 것. 자기검열 메모(셋의 entropy가 같은 metric이 아닐 수 있음)도 함께.
 - **다음 읽을 후보**:
-  - **arXiv:2509.21163 (Distributed specialization)** — LLM이 rare 토큰 처리를 위해 학습하는 3계층 뉴런 위계. TIDE가 *명시적으로 강제한* 채널 분화를 표준 모델이 *암묵적으로 발견하는지*의 직접 증거가 될 수 있다.
-  - **arXiv:2502.01637 (SCONE)** — n-gram 임베딩을 off-accelerator로 확장. "그러나" 셋째 항목의 반례 후보이자 TIDE K 확장의 또 다른 가격표.
-  - **arXiv:2601.21204 (LongCat-Flash-Lite)** — 임베딩에 파라미터 절반을 투자하는 MoE 변형. "임베딩 확장 vs MoE 전문가 확장"의 pareto boundary 비교.
+  - **[arXiv:2509.21163](https://arxiv.org/abs/2509.21163) (Distributed specialization)** — LLM이 rare 토큰 처리를 위해 학습하는 3계층 뉴런 위계. TIDE가 *명시적으로 강제한* 채널 분화를 표준 모델이 *암묵적으로 발견하는지*의 직접 증거가 될 수 있다.
+  - **[arXiv:2502.01637](https://arxiv.org/abs/2502.01637) (SCONE)** — n-gram 임베딩을 off-accelerator로 확장. "그러나" 셋째 항목의 반례 후보이자 TIDE K 확장의 또 다른 가격표.
+  - **[arXiv:2601.21204](https://arxiv.org/abs/2601.21204) (LongCat-Flash-Lite)** — 임베딩에 파라미터 절반을 투자하는 MoE 변형. "임베딩 확장 vs MoE 전문가 확장"의 pareto boundary 비교.
 
 [^single]: "a token index is looked up once at the input embedding layer and then permanently discarded. This single-injection assumption induces two structural failures." — Jaiswal et al. (2026), Abstract.
 

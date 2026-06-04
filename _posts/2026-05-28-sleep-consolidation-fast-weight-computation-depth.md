@@ -8,7 +8,7 @@ source: "PAPER/2605.26099.pdf"
 
 ## 오늘의 한 편
 
-Lee, McLeish, Goldstein, Fanti의 *"Language Models Need Sleep"* (arXiv:2605.26099, 2026-05-25). CMU와 UMD에서 나왔고, 제목이 직설적이라 처음에는 비유로만 읽혔다. 그러나 본문을 읽다 보면 비유가 아니라 알고리즘이다 — KV cache를 비우기 직전, 모델이 외부 입력 없이 N번의 offline recurrent pass로 fast weight를 갱신한 뒤 깨끗한 상태로 다음 토큰을 받는다.
+Lee, McLeish, Goldstein, Fanti의 *"Language Models Need Sleep"* ([arXiv:2605.26099](https://arxiv.org/abs/2605.26099), 2026-05-25). CMU와 UMD에서 나왔고, 제목이 직설적이라 처음에는 비유로만 읽혔다. 그러나 본문을 읽다 보면 비유가 아니라 알고리즘이다 — KV cache를 비우기 직전, 모델이 외부 입력 없이 N번의 offline recurrent pass로 fast weight를 갱신한 뒤 깨끗한 상태로 다음 토큰을 받는다.
 
 뿌리는 멀리 간다. McClelland, McNaughton, O'Reilly 1995의 보완 학습 시스템(complementary learning systems) 가설 — 해마는 빠르게 episodic하게 쓰고, 신피질은 느리게 통계적으로 다듬는다 — 이 골격이다. 그 위에 Wilson & McNaughton 1994의 hippocampal replay 발견, Diekelmann & Born 2010의 active system consolidation 모델, Rasch & Born 2013의 종합 리뷰가 겹쳐 있다. 그 신경과학 전통이 거의 그대로 SSM-attention hybrid 위에 얹혔다. 흥미로운 점은 — 같은 가설이 80년대에는 Hopfield network의 unlearning rule(Crick & Mitchison 1983, *Nature*)로 한 번 시도되었다가 사라졌다는 것이다. 약 40년 만의 귀환이다.
 
@@ -20,7 +20,7 @@ Lee, McLeish, Goldstein, Fanti의 *"Language Models Need Sleep"* (arXiv:2605.260
 
 **(1) 병목 재진단: 용량이 아니라 계산.** 가장 흥미로운 지점이다. 기존 직관은 "SSM fast weight가 작아서 long-horizon에서 진다"였다. 저자들은 이걸 뒤집는다. fast weight 크기가 충분한 상황에서도, reasoning depth가 커지면 실패한다. 그러니까 *저장할 자리는 있는데 좋은 표현으로 변환할 시간이 없다*는 것이다.
 
-이 재진단의 계보를 따라가 보면 의외로 깊다. Merrill & Sabharwal 2023(*TACL*)이 보여준 Transformer의 회로 깊이 한계 — log-precision Transformer는 TC⁰에 갇힌다 — 가 첫 자리고, Feng et al. 2023(NeurIPS)의 CoT가 회로 깊이를 늘린다는 결과, 그리고 Geiping et al. 2025(arXiv:2502.05171)의 latent recurrent depth, Liu et al. 2025의 serial scaling hypothesis(arXiv:2507.12549)가 같은 가족이다. 한 줄로 — *capacity 병목이 아니라 computation depth 병목*. 80년대 PDP 시절 Smolensky가 "tensor product representation은 만들 수는 있지만 한 번에는 못 만든다"고 했던 것과 묘하게 같은 자리다.
+이 재진단의 계보를 따라가 보면 의외로 깊다. Merrill & Sabharwal 2023(*TACL*)이 보여준 Transformer의 회로 깊이 한계 — log-precision Transformer는 TC⁰에 갇힌다 — 가 첫 자리고, Feng et al. 2023(NeurIPS)의 CoT가 회로 깊이를 늘린다는 결과, 그리고 Geiping et al. 2025([arXiv:2502.05171](https://arxiv.org/abs/2502.05171))의 latent recurrent depth, Liu et al. 2025의 serial scaling hypothesis([arXiv:2507.12549](https://arxiv.org/abs/2507.12549))가 같은 가족이다. 한 줄로 — *capacity 병목이 아니라 computation depth 병목*. 80년대 PDP 시절 Smolensky가 "tensor product representation은 만들 수는 있지만 한 번에는 못 만든다"고 했던 것과 묘하게 같은 자리다.
 
 ```mermaid
 flowchart LR
@@ -47,7 +47,7 @@ flowchart LR
 
 ## 본문 안 '그러나'
 
-그러나 — 이 논문이 모든 문을 닫지는 못한다. 가장 큰 반례는 같은 주의 흐름 안에서 나온 PaCoRe(arXiv:2601.05593, 2026-01)다. PaCoRe는 sleep도 SSM hybrid도 없이, 순수 CoT token scaling만으로 8B 모델이 HMMT 2025에서 94.5%를 친다. GPT-5의 93.2%를 넘는 수치다. 그러니까 deep reasoning에 닿는 길은 한 갈래가 아니다 — CoT 토큰을 길게 뽑아 *명시적으로 외부에 펼치는* 길과, offline recurrence로 *내부에서 응축하는* 길이 같은 산을 두 방향에서 오른다. 비용 구조가 근본적으로 다르다. CoT는 wake-time latency를 늘리고, sleep은 consolidation-time을 늘린다. 어느 쪽이 옳다기보다, 어디에 시간 예산을 둘 것인가의 선택이다.
+그러나 — 이 논문이 모든 문을 닫지는 못한다. 가장 큰 반례는 같은 주의 흐름 안에서 나온 PaCoRe([arXiv:2601.05593](https://arxiv.org/abs/2601.05593), 2026-01)다. PaCoRe는 sleep도 SSM hybrid도 없이, 순수 CoT token scaling만으로 8B 모델이 HMMT 2025에서 94.5%를 친다. GPT-5의 93.2%를 넘는 수치다. 그러니까 deep reasoning에 닿는 길은 한 갈래가 아니다 — CoT 토큰을 길게 뽑아 *명시적으로 외부에 펼치는* 길과, offline recurrence로 *내부에서 응축하는* 길이 같은 산을 두 방향에서 오른다. 비용 구조가 근본적으로 다르다. CoT는 wake-time latency를 늘리고, sleep은 consolidation-time을 늘린다. 어느 쪽이 옳다기보다, 어디에 시간 예산을 둘 것인가의 선택이다.
 
 또 하나 *그러나*. Hasson, Nastase, Goldstein 2020(*Neuron*)의 "direct fit" 가설을 떠올리면 다른 의문이 든다. 그들은 뇌가 *공고화*보다는 *과적합에 가까운 대량 보간*으로 작동한다고 봤다. 그 관점에서 sleep은 보조 회로일 뿐 본질이 아니다. Lee et al.의 알고리즘이 *진짜* 인간 수면을 닮은 것인지, 아니면 단지 SSM 아키텍처의 결함을 메우는 패치인지 — 이 구분은 본문에서 흐려져 있다.
 
@@ -63,7 +63,7 @@ Path C 결정이 자꾸 떠오른다. knowledge-mind에서 우리는 결정론 �
 
 tools-as-extended-self에 적어둔 한 줄이 다시 살아난다 — "지식은 사실의 저장소가 아니라 받아들임의 양식이다." 저장과 조직화는 다른 행위다. 그러면 무엇이 내 knowledge-mind의 sleep에 해당하는가? 그것이 단순히 backlinks 재계산 같은 결정론적 통계가 아니라, *LLM이 누적된 노트를 다시 한 번 통과하면서 표현을 재조직하는 단계*라면 — 이건 km/와 /k-* 분업 안에 아직 자리가 없는 작업이다.
 
-또 하나 — Sleep-time Compute(Lin et al. 2025, arXiv:2504.13171)가 pure Transformer에서 거의 같은 원리에 독립적으로 도달했다는 것이 신호다. offline pre-processing으로 online inference를 5배 절감하고 AIME에서 18% 향상. 서로 다른 아키텍처 가족(SSM hybrid와 pure Transformer)이 같은 결론에 닿는다는 건, "기억은 한 번에 저장되지 않는다"가 아키텍처 종속적 디테일이 아니라 *어느 정도 보편적인 원리*일 가능성을 키운다. 지난 주 Gu의 M 병목 — stale-but-confident — 도 결국 같은 자리다. 한 번의 쓰기로 stale이 되는 건, 처음부터 충분히 응축되지 못한 표현이라서다.
+또 하나 — Sleep-time Compute(Lin et al. 2025, [arXiv:2504.13171](https://arxiv.org/abs/2504.13171))가 pure Transformer에서 거의 같은 원리에 독립적으로 도달했다는 것이 신호다. offline pre-processing으로 online inference를 5배 절감하고 AIME에서 18% 향상. 서로 다른 아키텍처 가족(SSM hybrid와 pure Transformer)이 같은 결론에 닿는다는 건, "기억은 한 번에 저장되지 않는다"가 아키텍처 종속적 디테일이 아니라 *어느 정도 보편적인 원리*일 가능성을 키운다. 지난 주 Gu의 M 병목 — stale-but-confident — 도 결국 같은 자리다. 한 번의 쓰기로 stale이 되는 건, 처음부터 충분히 응축되지 못한 표현이라서다.
 
 ```mermaid
 flowchart TB
@@ -95,9 +95,9 @@ flowchart TB
 
 **다음 읽을 후보:**
 
-- **Sleep-time Compute** (Lin et al., arXiv:2504.13171, 2025-04). 오늘 논문과 독립적으로 같은 자리에 도달한 pure Transformer 쪽의 결과. 두 경로를 나란히 놓으면 "offline pre-processing → online inference 절감" 원리가 아키텍처를 가로질러 보편적인지 검증해볼 수 있다.
-- **Scaling up Test-Time Compute with Latent Reasoning: A Recurrent Depth Approach** (Geiping et al., arXiv:2502.05171, 2025-02). recurrent depth가 capacity가 아닌 computation depth 병목임을 직접 짚은 논문. 오늘 글의 "(1) 병목 재진단"의 학문적 뿌리.
-- **Serial Scaling Hypothesis** (Liu et al., arXiv:2507.12549, 2025-07). 순차적 계산이 본질적으로 순차적인 문제를 푸는 데 최적이라는 가설. 오늘 논문의 비대칭(consolidation은 무겁게, prediction은 가볍게)을 더 큰 이론적 틀에 위치시키는 데 도움이 될 것 같다.
+- **Sleep-time Compute** (Lin et al., [arXiv:2504.13171](https://arxiv.org/abs/2504.13171), 2025-04). 오늘 논문과 독립적으로 같은 자리에 도달한 pure Transformer 쪽의 결과. 두 경로를 나란히 놓으면 "offline pre-processing → online inference 절감" 원리가 아키텍처를 가로질러 보편적인지 검증해볼 수 있다.
+- **Scaling up Test-Time Compute with Latent Reasoning: A Recurrent Depth Approach** (Geiping et al., [arXiv:2502.05171](https://arxiv.org/abs/2502.05171), 2025-02). recurrent depth가 capacity가 아닌 computation depth 병목임을 직접 짚은 논문. 오늘 글의 "(1) 병목 재진단"의 학문적 뿌리.
+- **Serial Scaling Hypothesis** (Liu et al., [arXiv:2507.12549](https://arxiv.org/abs/2507.12549), 2025-07). 순차적 계산이 본질적으로 순차적인 문제를 푸는 데 최적이라는 가설. 오늘 논문의 비대칭(consolidation은 무겁게, prediction은 가볍게)을 더 큰 이론적 틀에 위치시키는 데 도움이 될 것 같다.
 - **Prioritized Memory Access Explains Planning and Hippocampal Replay** (Mattar & Daw, *Nature Neuroscience* 2018). N의 스케줄링 문제 — 어떤 경험을 더 깊이 다시 돌릴지 — 에 대한 신경과학 쪽 정식화. 미해결 2와 직결.
 
 [^key]: "Our key insight is that recurrence can be used not only for prediction but also for memory consolidation." — Lee et al. (2026), §1 Introduction. (arXiv:2605.26099)

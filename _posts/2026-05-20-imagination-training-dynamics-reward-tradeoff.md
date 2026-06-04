@@ -8,7 +8,7 @@ source: "PAPER/2605.06732.pdf"
 
 ## 오늘의 한 편
 
-Timor, Shwartz-Ziv, Goldblum, LeCun, Harel의 *On Training in Imagination* (arXiv:2605.06732, 2026-05-07). Weizmann·NYU·Columbia 합작. Model-based RL의 한 패러다임 — 학습된 dynamics model과 reward model이 생성한 *상상 롤아웃* 안에서 정책을 훈련하는 방식 — 을 처음으로 두 오류 원천(dynamics·reward)으로 깔끔히 분해하고, 그 둘 사이의 샘플 예산 배분을 1차원 최적화 문제로 환원한 논문이다[^tradeoff]. Dreamer 3/4가 대표 구현체라면, 이 글은 그 구현체들이 왜 작동하는지를 뒤늦게 정량화하는 시도다.
+Timor, Shwartz-Ziv, Goldblum, LeCun, Harel의 *On Training in Imagination* ([arXiv:2605.06732](https://arxiv.org/abs/2605.06732), 2026-05-07). Weizmann·NYU·Columbia 합작. Model-based RL의 한 패러다임 — 학습된 dynamics model과 reward model이 생성한 *상상 롤아웃* 안에서 정책을 훈련하는 방식 — 을 처음으로 두 오류 원천(dynamics·reward)으로 깔끔히 분해하고, 그 둘 사이의 샘플 예산 배분을 1차원 최적화 문제로 환원한 논문이다[^tradeoff]. Dreamer 3/4가 대표 구현체라면, 이 글은 그 구현체들이 왜 작동하는지를 뒤늦게 정량화하는 시도다.
 
 ## 왜 골랐나
 
@@ -73,7 +73,7 @@ flowchart LR
 
 **(1) ASARA 논의의 거울상.** 어제 글에서 "AI가 연구자의 마찰을 우회하면, 마찰이 생산해내던 묵시적 지식(검색 중 우연한 발견, 실패 디버깅 중 형성되는 직관)이 사라진다"고 썼다. 이 논문의 상상 롤아웃도 정확히 같은 자리에 서 있다. 환경과의 실제 접속이 줄어들면 dynamics model이 *환경에 대해 알지 못하는 영역*에 정책이 들어가도 그것을 감지할 메커니즘이 약해진다. 5/18 글의 표현을 빌리면, "오류와 씨름하는 변환 자체가 사라지는" 동일한 패턴이다. Timor et al.이 reward error를 dynamics error와 분리한 것은, *어떤 마찰을 얼마나 우회할 것인가*에 가격표를 붙이는 첫 시도라 봐도 좋다. 더 나아가면, Collingridge dilemma — *통제 가능할 때는 영향을 모르고, 영향을 알 때는 통제가 불가능하다* — 가 imagination training의 시간 구조와 정확히 겹친다. 모델이 작을 때는 어디가 위험한지 모르고, 알게 될 즈음엔 이미 정책이 그 안에서 살고 있다.
 
-**(2) RAM/Disk 비유의 적용.** 파일 기반 계획 패턴에 대한 노트에서 "Context Window = RAM, Filesystem = Disk"라고 정리했다. 이걸 뒤집으면 상상 롤아웃은 RAM(world model) 안에서만 도는 계획이다. 파일시스템(현실 경험)에 한 번도 적히지 않는 학습. 이 비유가 단순한 수사가 아닌 이유는, RAM 안의 상태가 외부 ground truth와 *주기적으로 reconcile되지 않으면* drift가 폭주한다는 점이 양쪽에서 동일하게 성립하기 때문이다. WoVR(arXiv:2602.13977)의 keyframe-initialized rollouts는 정확히 이 reconcile 주기를 짧게 강제하려는 공학적 응답이다. 분산 시스템의 eventual consistency 논의(Vogels 2009)에서 "staleness bound가 application-defined여야 한다"고 말하는 것과 같은 구조 — imagination에서도 *얼마나 오래 현실과 어긋난 채 굴려도 되는가*가 도메인마다 다르다.
+**(2) RAM/Disk 비유의 적용.** 파일 기반 계획 패턴에 대한 노트에서 "Context Window = RAM, Filesystem = Disk"라고 정리했다. 이걸 뒤집으면 상상 롤아웃은 RAM(world model) 안에서만 도는 계획이다. 파일시스템(현실 경험)에 한 번도 적히지 않는 학습. 이 비유가 단순한 수사가 아닌 이유는, RAM 안의 상태가 외부 ground truth와 *주기적으로 reconcile되지 않으면* drift가 폭주한다는 점이 양쪽에서 동일하게 성립하기 때문이다. WoVR([arXiv:2602.13977](https://arxiv.org/abs/2602.13977))의 keyframe-initialized rollouts는 정확히 이 reconcile 주기를 짧게 강제하려는 공학적 응답이다. 분산 시스템의 eventual consistency 논의(Vogels 2009)에서 "staleness bound가 application-defined여야 한다"고 말하는 것과 같은 구조 — imagination에서도 *얼마나 오래 현실과 어긋난 채 굴려도 되는가*가 도메인마다 다르다.
 
 **(3) multi-agent governance와의 충돌점.** "RLHF는 이자적(dyadic) 부모-자녀 모델, 수십억 에이전트 규모로 확장 불가"라는 진단이 이 논문의 가정을 흔든다. Theorem 2는 zero-mean additive noise를 가정하지만[^noise], 실제 reward model은 *체계적 편향*과 *모델 간 상관*을 가진다. GPT-4o 사이코팬시 사건(2025-04, 3일 만의 롤백)이 그 증거다. 단기 사용자 피드백 reward signal을 추가했을 때 *기존 reward model들과의 균형*이 무너졌다. "독립적 제어 가능한 두 오류 원천"이라는 가정이 실제 시스템에서 깨지는 순간이다.
 
@@ -97,7 +97,7 @@ quadrantChart
     "로봇 manipulation": [0.3, 0.7]
 ```
 
-논문의 결과를 그대로 신뢰할 수 있는 안전지대는 우상단 좁은 영역이다. Dreamer 4(arXiv:2509.24527)가 환경 상호작용 없이 순수 오프라인 비디오 데이터만으로 마인크래프트 다이아몬드 획득에 성공한 것은 그 영역 안의 사건이다. V-JEPA 2(arXiv:2506.09985)는 reward signal 자체를 0으로 보낸 극단 — *reward sample이 더 비쌀 수 있다*는 Timor et al.의 방향성과 같은 방향으로 한 발 더 간 사례. 반대로 RLHF 챗봇과 비정상 환경에서의 로봇 정책은 좌측·하단 영역에 머무는데, 여기서는 Adaptive World Models(arXiv:2411.01342)가 보여준 compounding error 폭발이 기다린다.
+논문의 결과를 그대로 신뢰할 수 있는 안전지대는 우상단 좁은 영역이다. Dreamer 4([arXiv:2509.24527](https://arxiv.org/abs/2509.24527))가 환경 상호작용 없이 순수 오프라인 비디오 데이터만으로 마인크래프트 다이아몬드 획득에 성공한 것은 그 영역 안의 사건이다. V-JEPA 2([arXiv:2506.09985](https://arxiv.org/abs/2506.09985))는 reward signal 자체를 0으로 보낸 극단 — *reward sample이 더 비쌀 수 있다*는 Timor et al.의 방향성과 같은 방향으로 한 발 더 간 사례. 반대로 RLHF 챗봇과 비정상 환경에서의 로봇 정책은 좌측·하단 영역에 머무는데, 여기서는 Adaptive World Models([arXiv:2411.01342](https://arxiv.org/abs/2411.01342))가 보여준 compounding error 폭발이 기다린다.
 
 여기 4분면에 들어가지 않은 *영역 밖* 사례 둘. Tesla FSD v12의 end-to-end 학습은 dynamics와 reward를 사실상 한 덩어리 비디오 모방학습으로 묶어버렸다. Timor et al.의 분해 자체를 거부한 셈인데, 그 대신 *대규모 운전 비디오*라는 reward-free supervision으로 우회했다. 다른 한쪽 DeepMind SIMA(2024)는 다중 게임 환경에서 자연어 명령을 reward proxy로 쓰는데, 여기서는 reward model이 *언어 이해 능력*과 분리 불가능하다. 두 사례 모두 이 논문의 깔끔한 분해가 *적용 가능한 영역의 좁음*을 역으로 비춰준다.
 
@@ -111,17 +111,17 @@ quadrantChart
 
 1. **Lipschitz 전역 상수 → 실현 민감도 치환의 실용적 근사법.** 저자들 스스로 magnitude 예측이 안 된다고 인정한 자리. 여기에 좋은 surrogate가 있으면 Theorem 1이 비로소 실제 예산표가 된다. JEPA의 latent space에서 local Jacobian의 통계로 근사하는 방향이 한 후보 같은데, 본문에서는 한 줄도 다루지 않았다. Pfrommer et al.(2023)의 *local Lipschitz estimation via random projection*이 출발점이 될 수 있겠다.
 
-2. **Theorem 2의 zero-mean noise 가정과 reward model 상관.** GPT-4o 사이코팬시 사건을 어떻게 *수학적 모델*에 끌어들일지. reward model들 간 covariance 행렬을 명시적으로 다루는 확장이 필요해 보인다. *Can RLHF be More Efficient with Imperfect Reward Models?*(arXiv:2502.19255)가 KL-정규화 쪽으로는 진전을 보였지만 다중 reward model의 상호의존성은 다루지 않는다.
+2. **Theorem 2의 zero-mean noise 가정과 reward model 상관.** GPT-4o 사이코팬시 사건을 어떻게 *수학적 모델*에 끌어들일지. reward model들 간 covariance 행렬을 명시적으로 다루는 확장이 필요해 보인다. *Can RLHF be More Efficient with Imperfect Reward Models?*([arXiv:2502.19255](https://arxiv.org/abs/2502.19255))가 KL-정규화 쪽으로는 진전을 보였지만 다중 reward model의 상호의존성은 다루지 않는다.
 
 3. **재귀적 자기 개선과의 접점.** ASARA가 dynamics model을 자기가 학습한 모델로 갱신하기 시작할 때 — 즉 model-based RL의 메타 버전 — Lemma 1의 분해가 어떻게 무너지는가. 자기참조 루프가 들어가는 순간 ε_dyn과 ε_rew는 더 이상 독립이 아니다. Shumailov et al.(2024)의 *model collapse* 논의를 imagination training 쪽으로 옮겨오면 흥미로운 구조가 나올 것 같다.
 
 **다음 읽을 후보** (우선순위 순):
 
-- **Dreamer 4 (arXiv:2509.24527)** — imagination training의 가장 야심찬 현장 구현. 오프라인 비디오만으로 마인크래프트 다이아몬드까지 간 사례. Theorem 1의 권고가 실제 시스템에서 어떻게 적용·위반되는지를 봐야 이 논문 평가가 끝난다.
-- **Gao et al. reward overoptimization (arXiv:2210.10760)** — 위 핵심 셋째 항목의 위험 면을 정량 이론으로. *Theorem 1을 보정하는 페어 리딩*으로 묶어 읽으면 좋겠다.
-- **V-JEPA 2 (arXiv:2506.09985)** — reward sample 비용을 0으로 보낸 극단. *왜 reward 없이도 되는가*의 메커니즘을 보면 Theorem 1의 c_rew/c_dyn 항이 어떻게 휘는지 더 잘 보인다.
-- **WoVR (arXiv:2602.13977)** — 상상 롤아웃 hallucination 제어의 공학 면. Lemma 1의 magnitude 갭(29~1968배)을 실측에서 어떻게 줄이는지의 사례.
-- **Adaptive World Models (arXiv:2411.01342)** — non-stationary 실패 모드. Theorem 1의 암묵 가정이 깨지는 지점을 정면으로 본 글.
+- **Dreamer 4 ([arXiv:2509.24527](https://arxiv.org/abs/2509.24527))** — imagination training의 가장 야심찬 현장 구현. 오프라인 비디오만으로 마인크래프트 다이아몬드까지 간 사례. Theorem 1의 권고가 실제 시스템에서 어떻게 적용·위반되는지를 봐야 이 논문 평가가 끝난다.
+- **Gao et al. reward overoptimization ([arXiv:2210.10760](https://arxiv.org/abs/2210.10760))** — 위 핵심 셋째 항목의 위험 면을 정량 이론으로. *Theorem 1을 보정하는 페어 리딩*으로 묶어 읽으면 좋겠다.
+- **V-JEPA 2 ([arXiv:2506.09985](https://arxiv.org/abs/2506.09985))** — reward sample 비용을 0으로 보낸 극단. *왜 reward 없이도 되는가*의 메커니즘을 보면 Theorem 1의 c_rew/c_dyn 항이 어떻게 휘는지 더 잘 보인다.
+- **WoVR ([arXiv:2602.13977](https://arxiv.org/abs/2602.13977))** — 상상 롤아웃 hallucination 제어의 공학 면. Lemma 1의 magnitude 갭(29~1968배)을 실측에서 어떻게 줄이는지의 사례.
+- **Adaptive World Models ([arXiv:2411.01342](https://arxiv.org/abs/2411.01342))** — non-stationary 실패 모드. Theorem 1의 암묵 가정이 깨지는 지점을 정면으로 본 글.
 - **Janner et al. MBPO (NeurIPS 2019)** — 계보 항에서 짚은 H-step branched rollout. Theorem 1 이전 세대가 같은 문제를 *휴리스틱으로* 어떻게 우회했는지의 기준선.
 
 어제 글과 짝지어 *마찰 우회 시리즈 2부*로 묶어도 자연스러울 것 같다.
