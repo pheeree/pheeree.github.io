@@ -6,6 +6,14 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-04] 정책은 결정만 하라, 장부는 환경이 쥔다 — Harness-1이 검색 상태를 외부화하는 방식
+
+- **중심**: Pengcheng Jiang 외. *Harness-1: Reinforcement Learning for Search Agents with State-Externalizing Harnesses*. [arXiv:2606.02373](https://arxiv.org/abs/2606.02373)
+- [arXiv:2508.19828](https://arxiv.org/abs/2508.19828)
+- [arXiv:2509.21240](https://arxiv.org/abs/2509.21240)
+- [arXiv:2510.04695](https://arxiv.org/abs/2510.04695)
+- *Retrieval, Reward, and Training Protocols: What Matters in Training Search Agents?*. [arXiv:2605.27881](https://arxiv.org/abs/2605.27881)
+
 ## [2026-06-03] 맞은 답에도 새는 곳이 있다 — TELBench·DRIFT가 궤적에서 오류의 발원지를 짚는 법
 
 - **중심**: Jiaming Wang 외. *Where Do Deep-Research Agents Go Wrong? Span-Level Error Localization in Agent Trajectories*. [arXiv:2606.02060](https://arxiv.org/abs/2606.02060)

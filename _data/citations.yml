@@ -1,6 +1,19 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-04-harness-1-stateful-cognitive-offloading-search-state:
+  title: "정책은 결정만 하라, 장부는 환경이 쥔다 — Harness-1이 검색 상태를 외부화하는 방식"
+  central:
+    id: "2606.02373"
+    title: "Harness-1: Reinforcement Learning for Search Agents with State-Externalizing Harnesses"
+    authors: "Pengcheng Jiang 외"
+    url: "https://arxiv.org/abs/2606.02373"
+  referenced:
+    - { id: "2508.19828", url: "https://arxiv.org/abs/2508.19828" }
+    - { id: "2509.21240", url: "https://arxiv.org/abs/2509.21240" }
+    - { id: "2510.04695", url: "https://arxiv.org/abs/2510.04695" }
+    - { id: "2605.27881", title: "Retrieval, Reward, and Training Protocols: What Matters in Training Search Agents?", url: "https://arxiv.org/abs/2605.27881" }
+
 2026-06-03-telbench-drift-span-level-error-localization:
   title: "맞은 답에도 새는 곳이 있다 — TELBench·DRIFT가 궤적에서 오류의 발원지를 짚는 법"
   central:
