@@ -1,6 +1,23 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-05-arbor-rubric-memory-process-reward-search-agents:
+  title: "기준을 정책이 들지 않는다, 메모리가 들고 키운다 — ARBOR가 process reward를 살려두는 법"
+  central:
+    id: "2606.03239"
+    title: "ARBOR: Online Process Rewards via a Reusable Rubric Buffer for Search Agents"
+    authors: "Zheng Liu 외"
+    url: "https://arxiv.org/abs/2606.03239"
+  referenced:
+    - { id: "2410.15115", url: "https://arxiv.org/abs/2410.15115" }
+    - { id: "2509.03403", url: "https://arxiv.org/abs/2509.03403" }
+    - { id: "2510.06214", url: "https://arxiv.org/abs/2510.06214" }
+    - { id: "2602.01511", url: "https://arxiv.org/abs/2602.01511" }
+    - { id: "2602.14338", url: "https://arxiv.org/abs/2602.14338" }
+    - { id: "2604.03098", url: "https://arxiv.org/abs/2604.03098" }
+    - { id: "2605.23454", title: "ARES: Automated Rubric Synthesis for Scalable LLM Reinforcement Learning", url: "https://arxiv.org/abs/2605.23454" }
+    - { id: "2605.31584", url: "https://arxiv.org/abs/2605.31584" }
+
 2026-06-04-harness-1-stateful-cognitive-offloading-search-state:
   title: "정책은 결정만 하라, 장부는 환경이 쥔다 — Harness-1이 검색 상태를 외부화하는 방식"
   central:

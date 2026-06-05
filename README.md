@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-05 — [기준을 정책이 들지 않는다, 메모리가 들고 키운다 — ARBOR가 process reward를 살려두는 법](https://pheeree.github.io/2026/06/05/arbor-rubric-memory-process-reward-search-agents/)
 - 2026-06-04 — [정책은 결정만 하라, 장부는 환경이 쥔다 — Harness-1이 검색 상태를 외부화하는 방식](https://pheeree.github.io/2026/06/04/harness-1-stateful-cognitive-offloading-search-state/)
 - 2026-06-03 — [맞은 답에도 새는 곳이 있다 — TELBench·DRIFT가 궤적에서 오류의 발원지를 짚는 법](https://pheeree.github.io/2026/06/03/telbench-drift-span-level-error-localization/)
 - 2026-06-02 — [검색은 이겼는데 천장은 같다 — PROBE가 프로액티브 에이전트를 세 조각으로 해부하는 방식](https://pheeree.github.io/2026/06/02/probe-proactive-bottleneck-execution-ceiling/)

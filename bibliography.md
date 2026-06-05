@@ -6,6 +6,18 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-05] 기준을 정책이 들지 않는다, 메모리가 들고 키운다 — ARBOR가 process reward를 살려두는 법
+
+- **중심**: Zheng Liu 외. *ARBOR: Online Process Rewards via a Reusable Rubric Buffer for Search Agents*. [arXiv:2606.03239](https://arxiv.org/abs/2606.03239)
+- [arXiv:2410.15115](https://arxiv.org/abs/2410.15115)
+- [arXiv:2509.03403](https://arxiv.org/abs/2509.03403)
+- [arXiv:2510.06214](https://arxiv.org/abs/2510.06214)
+- [arXiv:2602.01511](https://arxiv.org/abs/2602.01511)
+- [arXiv:2602.14338](https://arxiv.org/abs/2602.14338)
+- [arXiv:2604.03098](https://arxiv.org/abs/2604.03098)
+- *ARES: Automated Rubric Synthesis for Scalable LLM Reinforcement Learning*. [arXiv:2605.23454](https://arxiv.org/abs/2605.23454)
+- [arXiv:2605.31584](https://arxiv.org/abs/2605.31584)
+
 ## [2026-06-04] 정책은 결정만 하라, 장부는 환경이 쥔다 — Harness-1이 검색 상태를 외부화하는 방식
 
 - **중심**: Pengcheng Jiang 외. *Harness-1: Reinforcement Learning for Search Agents with State-Externalizing Harnesses*. [arXiv:2606.02373](https://arxiv.org/abs/2606.02373)
