@@ -6,6 +6,15 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-06] 기준의 탄생을 누가 결정하나 — ARES가 사전훈련 문서에서 루브릭을 길어 올리는 법
+
+- **중심**: Xiaoyuan Li 외. *ARES: Automated Rubric Synthesis for Scalable LLM Reinforcement Learning*. [arXiv:2605.23454](https://arxiv.org/abs/2605.23454)
+- [arXiv:2510.15859](https://arxiv.org/abs/2510.15859)
+- [arXiv:2602.01511](https://arxiv.org/abs/2602.01511)
+- [arXiv:2602.05125](https://arxiv.org/abs/2602.05125)
+- *RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards*. [arXiv:2605.10899](https://arxiv.org/abs/2605.10899)
+- [arXiv:2605.12474](https://arxiv.org/abs/2605.12474)
+
 ## [2026-06-05] 기준을 정책이 들지 않는다, 메모리가 들고 키운다 — ARBOR가 process reward를 살려두는 법
 
 - **중심**: Zheng Liu 외. *ARBOR: Online Process Rewards via a Reusable Rubric Buffer for Search Agents*. [arXiv:2606.03239](https://arxiv.org/abs/2606.03239)

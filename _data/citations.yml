@@ -1,6 +1,20 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-06-ares-rubric-synthesis-scalable-rl:
+  title: "기준의 탄생을 누가 결정하나 — ARES가 사전훈련 문서에서 루브릭을 길어 올리는 법"
+  central:
+    id: "2605.23454"
+    title: "ARES: Automated Rubric Synthesis for Scalable LLM Reinforcement Learning"
+    authors: "Xiaoyuan Li 외"
+    url: "https://arxiv.org/abs/2605.23454"
+  referenced:
+    - { id: "2510.15859", url: "https://arxiv.org/abs/2510.15859" }
+    - { id: "2602.01511", url: "https://arxiv.org/abs/2602.01511" }
+    - { id: "2602.05125", url: "https://arxiv.org/abs/2602.05125" }
+    - { id: "2605.10899", title: "RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards", url: "https://arxiv.org/abs/2605.10899" }
+    - { id: "2605.12474", url: "https://arxiv.org/abs/2605.12474" }
+
 2026-06-05-arbor-rubric-memory-process-reward-search-agents:
   title: "기준을 정책이 들지 않는다, 메모리가 들고 키운다 — ARBOR가 process reward를 살려두는 법"
   central:
