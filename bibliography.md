@@ -6,6 +6,19 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-07] 루브릭이 공유 인터페이스가 될 때 — RubricEM이 정책·판사·기억을 하나로 묶는 방식
+
+- **중심**: Gaotang Li 외. *RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards*. [arXiv:2605.10899](https://arxiv.org/abs/2605.10899)
+- [arXiv:2505.11821](https://arxiv.org/abs/2505.11821)
+- [arXiv:2511.19399](https://arxiv.org/abs/2511.19399)
+- [arXiv:2603.08754](https://arxiv.org/abs/2603.08754)
+- *Meta-Reinforcement Learning with Self-Reflection for Agentic Search*. [arXiv:2603.11327](https://arxiv.org/abs/2603.11327)
+- [arXiv:2603.21362](https://arxiv.org/abs/2603.21362)
+- [arXiv:2604.06996](https://arxiv.org/abs/2604.06996)
+- [arXiv:2604.14820](https://arxiv.org/abs/2604.14820)
+- *SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution*. [arXiv:2605.18401](https://arxiv.org/abs/2605.18401)
+- [arXiv:2606.04923](https://arxiv.org/abs/2606.04923)
+
 ## [2026-06-06] 기준의 탄생을 누가 결정하나 — ARES가 사전훈련 문서에서 루브릭을 길어 올리는 법
 
 - **중심**: Xiaoyuan Li 외. *ARES: Automated Rubric Synthesis for Scalable LLM Reinforcement Learning*. [arXiv:2605.23454](https://arxiv.org/abs/2605.23454)

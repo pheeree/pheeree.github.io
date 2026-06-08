@@ -1,6 +1,24 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-07-rubricem-shared-interface-meta-rl:
+  title: "루브릭이 공유 인터페이스가 될 때 — RubricEM이 정책·판사·기억을 하나로 묶는 방식"
+  central:
+    id: "2605.10899"
+    title: "RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards"
+    authors: "Gaotang Li 외"
+    url: "https://arxiv.org/abs/2605.10899"
+  referenced:
+    - { id: "2505.11821", url: "https://arxiv.org/abs/2505.11821" }
+    - { id: "2511.19399", url: "https://arxiv.org/abs/2511.19399" }
+    - { id: "2603.08754", url: "https://arxiv.org/abs/2603.08754" }
+    - { id: "2603.11327", title: "Meta-Reinforcement Learning with Self-Reflection for Agentic Search", url: "https://arxiv.org/abs/2603.11327" }
+    - { id: "2603.21362", url: "https://arxiv.org/abs/2603.21362" }
+    - { id: "2604.06996", url: "https://arxiv.org/abs/2604.06996" }
+    - { id: "2604.14820", url: "https://arxiv.org/abs/2604.14820" }
+    - { id: "2605.18401", title: "SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution", url: "https://arxiv.org/abs/2605.18401" }
+    - { id: "2606.04923", url: "https://arxiv.org/abs/2606.04923" }
+
 2026-06-06-ares-rubric-synthesis-scalable-rl:
   title: "기준의 탄생을 누가 결정하나 — ARES가 사전훈련 문서에서 루브릭을 길어 올리는 법"
   central:
