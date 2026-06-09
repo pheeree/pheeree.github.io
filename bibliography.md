@@ -6,6 +6,16 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-09] 무너지는 자리에 이름을 붙이는 일 — MAST가 다중 에이전트 시스템의 실패를 해부하는 법
+
+- **중심**: Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657)
+- *LLM Multi-Agent Systems: Challenges and Open Problems*. [arXiv:2402.03578](https://arxiv.org/abs/2402.03578)
+- *Multi-Agent Risks from Advanced AI*. [arXiv:2502.14143](https://arxiv.org/abs/2502.14143)
+- [arXiv:2505.00212](https://arxiv.org/abs/2505.00212)
+- [arXiv:2505.11556](https://arxiv.org/abs/2505.11556)
+- *Beyond the Strongest LLM: Multi-Turn Multi-Agent Orchestration vs. Single LLMs on Benchmarks*. [arXiv:2509.23537](https://arxiv.org/abs/2509.23537)
+- [arXiv:2601.22290](https://arxiv.org/abs/2601.22290)
+
 ## [2026-06-08] 에이전트가 에이전트를 짜는 날 — MAC가 벤치마크에 없던 질문을 던지다
 
 - **중심**: Xinyu Lu 외. *The Meta-Agent Challenge: Are Current Agents Capable of Autonomous Agent Development?*. [arXiv:2606.04455](https://arxiv.org/abs/2606.04455)

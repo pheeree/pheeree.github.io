@@ -1,6 +1,21 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-09-mast-multi-agent-failure-taxonomy:
+  title: "무너지는 자리에 이름을 붙이는 일 — MAST가 다중 에이전트 시스템의 실패를 해부하는 법"
+  central:
+    id: "2503.13657"
+    title: "Why Do Multi-Agent LLM Systems Fail?"
+    authors: "Mert Cemri 외"
+    url: "https://arxiv.org/abs/2503.13657"
+  referenced:
+    - { id: "2402.03578", title: "LLM Multi-Agent Systems: Challenges and Open Problems", url: "https://arxiv.org/abs/2402.03578" }
+    - { id: "2502.14143", title: "Multi-Agent Risks from Advanced AI", url: "https://arxiv.org/abs/2502.14143" }
+    - { id: "2505.00212", url: "https://arxiv.org/abs/2505.00212" }
+    - { id: "2505.11556", url: "https://arxiv.org/abs/2505.11556" }
+    - { id: "2509.23537", title: "Beyond the Strongest LLM: Multi-Turn Multi-Agent Orchestration vs. Single LLMs on Benchmarks", url: "https://arxiv.org/abs/2509.23537" }
+    - { id: "2601.22290", url: "https://arxiv.org/abs/2601.22290" }
+
 2026-06-08-meta-agent-challenge-autonomous-agent-design:
   title: "에이전트가 에이전트를 짜는 날 — MAC가 벤치마크에 없던 질문을 던지다"
   central:
