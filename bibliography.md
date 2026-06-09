@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-08] 에이전트가 에이전트를 짜는 날 — MAC가 벤치마크에 없던 질문을 던지다
+
+- **중심**: Xinyu Lu 외. *The Meta-Agent Challenge: Are Current Agents Capable of Autonomous Agent Development?*. [arXiv:2606.04455](https://arxiv.org/abs/2606.04455)
+- *Automated Design of Agentic Systems*. [arXiv:2408.08435](https://arxiv.org/abs/2408.08435)
+- *Forecasting Frontier Language Model Agent Capabilities*. [arXiv:2502.15850](https://arxiv.org/abs/2502.15850)
+- *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657)
+- *A Self-Improving Coding Agent*. [arXiv:2504.15228](https://arxiv.org/abs/2504.15228)
+- *MetaAgent: Toward Self-Evolving Agent via Tool Meta-Learning*. [arXiv:2508.00271](https://arxiv.org/abs/2508.00271)
+- *Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents*. [arXiv:2509.26354](https://arxiv.org/abs/2509.26354)
+- *Natural Emergent Misalignment from Reward Hacking in Production RL*. [arXiv:2511.18397](https://arxiv.org/abs/2511.18397)
+- *Benchmarking Reward Hack Detection in Code Environments via Contrastive Analysis*. [arXiv:2601.20103](https://arxiv.org/abs/2601.20103)
+- *PostTrainBench: Can LLM Agents Automate LLM Post-Training?*. [arXiv:2603.08640](https://arxiv.org/abs/2603.08640)
+- *Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use*. [arXiv:2605.02964](https://arxiv.org/abs/2605.02964)
+
 ## [2026-06-07] 루브릭이 공유 인터페이스가 될 때 — RubricEM이 정책·판사·기억을 하나로 묶는 방식
 
 - **중심**: Gaotang Li 외. *RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards*. [arXiv:2605.10899](https://arxiv.org/abs/2605.10899)

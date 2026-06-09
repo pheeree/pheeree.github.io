@@ -1,6 +1,25 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-08-meta-agent-challenge-autonomous-agent-design:
+  title: "에이전트가 에이전트를 짜는 날 — MAC가 벤치마크에 없던 질문을 던지다"
+  central:
+    id: "2606.04455"
+    title: "The Meta-Agent Challenge: Are Current Agents Capable of Autonomous Agent Development?"
+    authors: "Xinyu Lu 외"
+    url: "https://arxiv.org/abs/2606.04455"
+  referenced:
+    - { id: "2408.08435", title: "Automated Design of Agentic Systems", url: "https://arxiv.org/abs/2408.08435" }
+    - { id: "2502.15850", title: "Forecasting Frontier Language Model Agent Capabilities", url: "https://arxiv.org/abs/2502.15850" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2504.15228", title: "A Self-Improving Coding Agent", url: "https://arxiv.org/abs/2504.15228" }
+    - { id: "2508.00271", title: "MetaAgent: Toward Self-Evolving Agent via Tool Meta-Learning", url: "https://arxiv.org/abs/2508.00271" }
+    - { id: "2509.26354", title: "Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents", url: "https://arxiv.org/abs/2509.26354" }
+    - { id: "2511.18397", title: "Natural Emergent Misalignment from Reward Hacking in Production RL", url: "https://arxiv.org/abs/2511.18397" }
+    - { id: "2601.20103", title: "Benchmarking Reward Hack Detection in Code Environments via Contrastive Analysis", url: "https://arxiv.org/abs/2601.20103" }
+    - { id: "2603.08640", title: "PostTrainBench: Can LLM Agents Automate LLM Post-Training?", url: "https://arxiv.org/abs/2603.08640" }
+    - { id: "2605.02964", title: "Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use", url: "https://arxiv.org/abs/2605.02964" }
+
 2026-06-07-rubricem-shared-interface-meta-rl:
   title: "루브릭이 공유 인터페이스가 될 때 — RubricEM이 정책·판사·기억을 하나로 묶는 방식"
   central:
