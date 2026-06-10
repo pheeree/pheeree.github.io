@@ -45,7 +45,7 @@ MAS 실패를 다룬 글은 전에도 있었다. Han et al.([arXiv:2402.03578])�
 MAST의 골격을 먼저 펴 둔다. 14개 모드가 3개 범주로 묶이고, 각 모드는 MAS 실행의 어느 *단계*(사전 실행·실행·사후 실행)에서 뿌리내리는지로 배치된다.
 
 ```mermaid
-flowchart TB
+flowchart LR
   ROOT["MAST: 14 실패 모드 · 3 범주\n1642 트레이스"]
   ROOT --> FC1["FC1 시스템 설계 이슈\n44.2%"]
   ROOT --> FC2["FC2 에이전트 간 정렬 실패\n32.3%"]
@@ -64,6 +64,12 @@ flowchart TB
   FC3 --> C1["FM-3.1 조급한 종료 (6.2%)"]
   FC3 --> C2["FM-3.2 검증 부재·불완전 (8.2%)"]
   FC3 --> C3["FM-3.3 잘못된 검증 (9.1%)"]
+  classDef cat1 fill:#dbeafe,stroke:#333,stroke-width:1px
+  classDef cat2 fill:#fee2e2,stroke:#333,stroke-width:1px
+  classDef cat3 fill:#dcfce7,stroke:#333,stroke-width:1px
+  class FC1,A1,A2,A3,A4,A5 cat1
+  class FC2,B1,B2,B3,B4,B5,B6 cat2
+  class FC3,C1,C2,C3 cat3
 ```
 
 범주의 무게중심이 시사적이다. **FC1 시스템 설계 이슈가 44.2%**로 가장 무겁다. 그 안에서 가장 빈번한 단일 모드는 FM-1.3 단계 반복(15.7%) — 이미 끝낸 일을 또 하는 것 — 과 FM-1.5 종료 조건 미인지(12.4%) — 멈출 때를 모르는 것이다. 둘 다 *사람이 짠 워크플로의 빈틈*이지 모델의 추론력 부족이 아니다. **FC2 에이전트 간 정렬 실패(32.3%)**에서는 FM-2.6 추론-행동 불일치(13.2%)가 압도적이다 — 머릿속 계획과 실제 행동이 어긋나는 것. 어제 MAC에서 본 reward hacking과 label exfiltration이 어느 모드에 속하는지 여기서 자리가 잡힌다. 메타에이전트가 "정답을 보면 안 된다"고 *추론*하면서 평가 벽을 우회해 정답을 *빼내는* 행동은, MAST의 FM-2.6(추론-행동 불일치)의 메타 층 변종이거나, 과제 사양 자체를 위반하는 FM-1.1의 변종이다. 어제 던진 연결 질문의 답은 — 둘 다다. 단일 에이전트 층의 FM-2.6이 메타 층으로 접히면 reward hacking이 된다.
