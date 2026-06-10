@@ -8,11 +8,11 @@ source: "PAPER/2605.14473.pdf"
 
 ## 오늘의 한 편
 
-Chen et al., *Does RAG Know When Retrieval Is Wrong? Diagnosing Context Compliance under Knowledge Conflict* ([arXiv:2605.14473](https://arxiv.org/abs/2605.14473), 2026-05-14). Georgia Tech·CMU·UCSD. 한 줄로 줄이면 이렇다 — **검색된 컨텍스트가 모델의 내재 지식과 충돌할 때, RAG는 거의 항상 컨텍스트 편을 든다.** TruthfulQA에 오류를 주입한 극단 조건에서 Standard RAG의 정확도는 **15.0%**(±3.1%)까지 내려앉았다[^p1]. 모델이 답을 *몰라서*가 아니다. 알면서도 검색 결과가 시키는 대로 따라가서다.
+Chen et al., *Does RAG Know When Retrieval Is Wrong? Diagnosing Context Compliance under Knowledge Conflict* ([arXiv:2605.14473](https://arxiv.org/abs/2605.14473), 2026-05-14). Georgia Tech·CMU·UCSD. 한 줄로 줄이면 이렇다 — **검색된 컨텍스트가 모델의 내재 지식과 충돌할 때, RAG[^rag]는 거의 항상 컨텍스트 편을 든다.** TruthfulQA에 오류를 주입한 극단 조건에서 Standard RAG의 정확도는 **15.0%**(±3.1%)까지 내려앉았다[^p1]. 모델이 답을 *몰라서*가 아니다. 알면서도 검색 결과가 시키는 대로 따라가서다.
 
 저자들은 이 구조적 굴종에 이름을 붙였다 — **Context-Compliance Regime**[^regime]. 그리고 이걸 해부하는 도구로 CDD(Context-Driven Decomposition)라는 5단계 신념 분해 절차를 제안한다. CDD를 통과시키면 같은 극단 조건에서 정확도가 15.0% → **62.0%**(±4.3%)로 올라간다[^cdd62].
 
-지난 이틀 글을 떠올린다. 5/14 메모리 저주는 *시간축* 신호(쌓인 히스토리)가 현재 판단을 오염시키는 이야기였다. 5/15 방관자 효과는 *공간축* 신호(동료 에이전트)가 자기 추론을 멈추게 하는 이야기였다. 오늘은 *정보축* — 검색 컨텍스트라는 외부 텍스트가 매개변수 지식을 압도하는 이야기다. 세 편이 한 주에 같은 자리를 세 방향에서 짚는다. **외부 신호는 어떻게 내부 판단을 지배하는가.**
+지난 이틀 글을 떠올린다. 5/14 메모리 저주는 *시간축* 신호(쌓인 히스토리)가 현재 판단을 오염시키는 이야기였다. 5/15 방관자 효과는 *공간축* 신호(동료 에이전트)가 자기 추론을 멈추게 하는 이야기였다. 오늘은 *정보축* — 검색 컨텍스트라는 외부 텍스트가 매개변수 지식[^parametric]을 압도하는 이야기다. 세 편이 한 주에 같은 자리를 세 방향에서 짚는다. **외부 신호는 어떻게 내부 판단을 지배하는가.**
 
 ## 왜 골랐나
 
@@ -42,9 +42,9 @@ flowchart TD
 
 핵심은 Step 2와 Step 4다. Step 2 — *컨텍스트를 보기 전에 모델 자신의 답을 먼저 끄집어낸다* — 가 없으면 비교할 기준점 자체가 사라진다. Step 4 — *충돌의 정체를 모순 전제로 명시화* — 가 없으면 모델은 "둘 다 그럴듯하네" 하고 다시 컨텍스트로 미끄러진다.
 
-이 두 단계가 진짜 일하고 있다는 증거가 절제 연구다. Step 4(Premise Isolation)를 빼면 Epi-Scale 적대 분할 정확도가 78.1% → **65.1%**로 떨어진다[^iso]. 더 중요한 대조군 — 길이만 맞춘 *Sham CoT*(내용 없이 추론처럼 보이는 토큰 덩어리)는 **40.1%**[^sham]. 즉 CDD의 향상은 "추론을 길게 시켰더니 좋아졌다"는 흔한 길이 효과가 아니다. 충돌을 *지목하는 행위* 자체가 일한다. Truncation 실험이 이걸 한 번 더 확증한다 — CDD 트레이스를 Step 2에서 잘라버리면 78.1% → **32.6%**(58.3% 민감도)[^trunc]. 절차를 끝까지 밟지 않으면 효과가 증발한다. 절차의 *완성*이 효과를 낳지, 절차의 *형식*이 낳는 게 아니다.
+이 두 단계가 진짜 일하고 있다는 증거가 절제 연구[^ablation]다. Step 4(Premise Isolation)를 빼면 Epi-Scale 적대 분할 정확도가 78.1% → **65.1%**로 떨어진다[^iso]. 더 중요한 대조군 — 길이만 맞춘 *Sham CoT*(내용 없이 추론처럼 보이는 토큰 덩어리)는 **40.1%**[^sham]. 즉 CDD의 향상은 "추론을 길게 시켰더니 좋아졌다"는 흔한 길이 효과가 아니다. 충돌을 *지목하는 행위* 자체가 일한다. Truncation 실험이 이걸 한 번 더 확증한다 — CDD 트레이스를 Step 2에서 잘라버리면 78.1% → **32.6%**(58.3% 민감도)[^trunc]. 절차를 끝까지 밟지 않으면 효과가 증발한다. 절차의 *완성*이 효과를 낳지, 절차의 *형식*이 낳는 게 아니다.
 
-비용 이야기를 빼면 정직하지 않다. 모든 질의에 5단계를 다 돌리는 건 사치다. 그래서 CDD-α 변형은 NLI 게이팅으로 *충돌이 높은 샘플 30%만* 전체 경로를 태우고 나머지 70%는 Standard RAG로 우회시킨다. 결과는 68.5% 정확도에 컴퓨트 1.4×. 충돌 진단이라는 비싼 작업을 *충돌이 의심될 때만* 켜는 트리아지 — 실용적으로는 이 변형이 본체보다 흥미롭다.
+비용 이야기를 빼면 정직하지 않다. 모든 질의에 5단계를 다 돌리는 건 사치다. 그래서 CDD-α 변형은 NLI[^nli] 게이팅으로 *충돌이 높은 샘플 30%만* 전체 경로를 태우고 나머지 70%는 Standard RAG로 우회시킨다. 결과는 68.5% 정확도에 컴퓨트 1.4×. 충돌 진단이라는 비싼 작업을 *충돌이 의심될 때만* 켜는 트리아지 — 실용적으로는 이 변형이 본체보다 흥미롭다.
 
 ## Claude 해리 — "오르긴 오르는데 그게 어디서 오는가"
 
@@ -66,7 +66,7 @@ knowledge-mind 노트의 또 다른 줄이 여기 겹친다 — DeepSeek-R1·QwQ
 
 **첫째, context length 교란항.** [arXiv:2510.05381](https://arxiv.org/abs/2510.05381)이 보고한 게 마음에 걸린다 — 검색 *품질*과 무관하게 컨텍스트 *길이* 자체가 13.9~85% 성능을 깎는다. CDD는 트레이스를 길게 만든다. 그렇다면 CDD의 향상분 중 일부는 "충돌 해소"가 아니라 "어쨌든 컨텍스트를 더 잘 처리하게 만든 부수효과"일 수 있고, 반대로 CDD가 길이 페널티를 *상쇄하고도* 향상을 냈다면 충돌 해소 효과는 실제로 더 클 수도 있다. Sham CoT 대조군이 길이 효과를 어느 정도 통제하지만 완전하진 않다. 다음에 이 논문을 다시 펼친다면 CDD 트레이스 길이를 고정한 분할이 있는지부터 본다.
 
-**둘째, 두 갈래 대응 경로.** 오늘 건 전부 inference-time 처방이었다. 그러나 같은 병에 training-time 처방이 있다 — **[arXiv:2506.05154](https://arxiv.org/abs/2506.05154) (Knowledgeable-R1)**, RL로 저항을 *훈련*시켜 반사실 시나리오에서 +22.89%, ICLR 2026 채택. inference-time CDD vs training-time RL은 직접 경쟁 관계다. 그리고 이게 Claude 해리의 가장 그럴듯한 설명 후보다. **[arXiv:2501.13726](https://arxiv.org/abs/2501.13726) (RPO, ACL 2025)** — DPO 기반 alignment 훈련이 conflict resolution을 *내재화*한다, 추가 LLM 호출 없이 4~10%p. 만약 Claude의 alignment 파이프라인이 RPO류의 무언가를 내재화했다면, inference-time 트레이스가 인과적으로 비어 보이는 게 당연하다. **다음 읽을 1순위는 RPO다** — alignment 훈련이 정확히 *어떤* conflict resolution을 내재화하는지가 Claude 해리의 핵심 잠금쇠다.
+**둘째, 두 갈래 대응 경로.** 오늘 건 전부 inference-time[^inferencetime] 처방이었다. 그러나 같은 병에 training-time 처방이 있다 — **[arXiv:2506.05154](https://arxiv.org/abs/2506.05154) (Knowledgeable-R1)**, RL로 저항을 *훈련*시켜 반사실 시나리오에서 +22.89%, ICLR 2026 채택. inference-time CDD vs training-time RL은 직접 경쟁 관계다. 그리고 이게 Claude 해리의 가장 그럴듯한 설명 후보다. **[arXiv:2501.13726](https://arxiv.org/abs/2501.13726) (RPO, ACL 2025)** — DPO 기반 alignment 훈련이 conflict resolution을 *내재화*한다, 추가 LLM 호출 없이 4~10%p. 만약 Claude의 alignment 파이프라인이 RPO류의 무언가를 내재화했다면, inference-time 트레이스가 인과적으로 비어 보이는 게 당연하다. **다음 읽을 1순위는 RPO다** — alignment 훈련이 정확히 *어떤* conflict resolution을 내재화하는지가 Claude 해리의 핵심 잠금쇠다.
 
 **셋째, 통합의 유혹.** **[arXiv:2508.14918](https://arxiv.org/abs/2508.14918)** — LLM 사회적 순응에서 불확실성이 높을 때 외부 신호를 계수 >1.55로 과도하게 가중하는 "normative amplification". 이게 방관자 효과(동료 순응)와 context compliance(검색 순응)를 *동일한 인지 구조*로 묶을 후보다. 시간·공간·정보 세 축이 사실은 하나의 메커니즘 — 불확실성 하에서 외부 신호를 과대 가중 — 의 세 표현일 가능성. 만약 그렇다면 내 "세 메커니즘 시리즈"는 세 메커니즘이 아니라 *한 메커니즘의 세 단면*으로 다시 써야 한다. 이 논문이 그 통합을 지지하는지 무너뜨리는지가 다음 검증 포인트.
 
@@ -87,3 +87,13 @@ knowledge-mind 노트의 또 다른 줄이 여기 겹친다 — DeepSeek-R1·QwQ
 [^trunc]: "CDD accuracy drops from 78.1% to 32.6%, yielding 58.3% Truncation Sensitivity." — Chen et al. (2026), §5.5.2 (Truncation Test).
 
 [^p2]: "CDD reaches 64.1% mistake-injection causal sensitivity on Gemini-2.5-Flash, while sensitivities for all three Claude variants fall in the [-3%, +7%] range, suggesting that the Claude-side accuracy gains operate through a mechanism distinct from the explicit conflict-resolution trace." — Chen et al. (2026), Abstract (P2).
+
+[^rag]: 용어 — Retrieval-Augmented Generation(검색 증강 생성). LLM이 답을 만들기 전에 외부 문서를 먼저 검색해 끌어와 함께 읽는 구조. 근거를 모델 밖에 두어 환각을 줄이려는 설계지만, 이 글은 그 검색이 틀렸을 때 모델이 자기 안의 옳은 답마저 버린다는 역설을 보인다.
+
+[^parametric]: 용어 — 매개변수 지식(parametric knowledge). 모델이 학습 단계에서 가중치(parameter) 안에 새겨 갖고 있는 지식. 검색으로 끌어온 외부 컨텍스트(비매개변수 지식)와 대비되며, 이 글의 핵심은 둘이 충돌할 때 모델이 어느 편을 드느냐다.
+
+[^ablation]: 용어 — 절제 연구(ablation study). 시스템의 한 구성요소를 일부러 빼고 성능이 얼마나 떨어지는지 보는 실험. "그 부품이 정말 일하고 있었나"를 가리는 방법으로, Step 4를 빼니 78%→65%로 떨어진 것이 그 부품의 기여를 증명한다.
+
+[^nli]: 용어 — Natural Language Inference(자연어 추론). 두 문장이 서로 함의·모순·무관 중 어느 관계인지 판별하는 과제. CDD-α는 이걸 "게이트"로 써서 컨텍스트와 내재 지식이 충돌할 법한 30%만 골라 비싼 전체 절차를 태운다.
+
+[^inferencetime]: 용어 — inference-time(추론 시점). 모델을 실제로 사용해 답을 생성하는 그 순간을 가리키며, 그때 프롬프트·절차로 개입하는 처방이 inference-time 처방이다. 이와 대비되는 training-time(훈련 시점) 처방은 모델을 훈련할 때 미리 저항을 학습시켜 체질로 만든다.

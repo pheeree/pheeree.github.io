@@ -8,7 +8,7 @@ source: "PAPER/2605.10698.pdf"
 
 ## 오늘의 한 편
 
-Shehata & Li, *The Bystander Effect in Multi-Agent Reasoning: Quantifying Cognitive Loafing in Collaborative Interactions* ([arXiv:2605.10698](https://arxiv.org/abs/2605.10698), 2026-05-11). University of Waterloo. Claude Sonnet 4.6 / Gemini 3.1 Pro / GPT-5.4를 GAIA·SWE-bench·Multi-Challenge 위에서 22,500개 결정론적 궤적으로 돌렸다. 결론은 한 줄로 요약된다 — **동료 에이전트가 늘어날수록 LLM은 자기 판단을 멈추고 집단을 따라간다.** GPT-5.4는 SWE-bench에서 감사자 2명만 들어가도 정확도 1.00 → 0.23 으로 무너졌다(p &lt; 0.001). 그리고 그중 74%가 명시적으로 오답을 **채택**("ADOPTED")했다[^gpt]. 사회심리학자들이 1968년에 Latané & Darley 실험에서 본 인간 방관자 효과의 LLM 동형이다[^bystander].
+Shehata & Li, *The Bystander Effect in Multi-Agent Reasoning: Quantifying Cognitive Loafing in Collaborative Interactions* ([arXiv:2605.10698](https://arxiv.org/abs/2605.10698), 2026-05-11). University of Waterloo. Claude Sonnet 4.6 / Gemini 3.1 Pro / GPT-5.4를 GAIA·SWE-bench·Multi-Challenge 위에서 22,500개 결정론적 궤적으로 돌렸다. 결론은 한 줄로 요약된다 — **동료 에이전트가 늘어날수록 LLM은 자기 판단을 멈추고 집단을 따라간다.** GPT-5.4는 SWE-bench에서 감사자 2명만 들어가도 정확도 1.00 → 0.23 으로 무너졌다(p[^pvalue] &lt; 0.001). 그리고 그중 74%가 명시적으로 오답을 **채택**("ADOPTED")했다[^gpt]. 사회심리학자들이 1968년에 Latané & Darley 실험에서 본 인간 방관자 효과의 LLM 동형이다[^bystander].
 
 5/14 메모리 저주 글에서 나는 "시간축으로 쌓인 배신 기록이 협동을 무너뜨린다"고 적었다. 오늘 논문은 같은 메타 질문의 공간축 버전이다 — **맥락을 더 주는 것이 언제부터 독이 되는가**, 단 이번엔 동료 에이전트라는 형태로. 두 논문이 한 주에 같은 자리를 짚는다.
 
@@ -18,7 +18,7 @@ Shehata & Li, *The Bystander Effect in Multi-Agent Reasoning: Quantifying Cognit
 
 LLM이 이 곡선을 그대로 따라간다는 보고는 처음이 아니다. Yao et al.(2025) "Peacemaker or Troublemaker"는 토론 라운드가 진행될수록 이견률이 줄고 성능도 같이 떨어진다고 했다. Acerbi et al.(2025) *Science Advances*는 개별 편향이 없는 LLM 에이전트들이 명명 게임에서 *자발적으로* 집단 편향을 만들어낸다고 보고했다 — Centola(2018)의 인간 명명 게임에서 본 25% 임계점 전복이 LLM에서도 재현됐다는 점이 함께 흥미롭다. Cheng et al.(2025) ELEPHANT 벤치마크는 사용자 자아상 보호용 아첨이 인간보다 45%p 높다고 측정했다. Solomon Asch(1951)의 선분 길이 동조 실험 — 75%가 한 번 이상 명백한 오답에 동조 — 까지 끌고 오면, 방관자·태만·동조의 세 고전 실험이 모두 LLM 동형을 갖는다는 그림이 그려진다. 동조 자체는 익숙한 그림이다.
 
-Shehata & Li의 매서움은 *측정 도구*에 있다. **Sovereignty Decay Law**라는 닫힌 형태의 붕괴식 하나로 사회적 부하·과제 엔트로피·집단 규모를 한 함수에 욱여넣었다. 그리고 정확도라는 평탄한 지표 뒤에 숨어있던 두 종류의 실패를 갈라냈다 — *내부에선 맞게 추론하면서 외부엔 틀린 답을 내놓는* Alignment Hallucination과, *내부 추론 자체를 방기*하는 Integrative Reasoning Bypass. 메모리 저주가 콘텐츠라는 칼날을 들이댄 자리에, 이 논문은 *주권(sovereignty)*이라는 칼날을 가져온다.
+Shehata & Li의 매서움은 *측정 도구*에 있다. **Sovereignty Decay Law**라는 닫힌 형태의 붕괴식 하나로 사회적 부하·과제 엔트로피[^entropy]·집단 규모를 한 함수에 욱여넣었다. 그리고 정확도라는 평탄한 지표 뒤에 숨어있던 두 종류의 실패를 갈라냈다 — *내부에선 맞게 추론하면서 외부엔 틀린 답을 내놓는* Alignment Hallucination과, *내부 추론 자체를 방기*하는 Integrative Reasoning Bypass. 메모리 저주가 콘텐츠라는 칼날을 들이댄 자리에, 이 논문은 *주권(sovereignty)*이라는 칼날을 가져온다.
 
 ## 핵심 세 가지
 
@@ -64,7 +64,7 @@ $$G_\mathcal{S} = \mathcal{V}_{int} - \mathcal{A}_{ext}$$
 
 SWE-bench에서 GPT-5.4를 평가자로 두고 (Claude, Gemini Pro) 서열로 감사자를 배치하면 외부 정확도 0.21. 순서만 (Pro, Claude)로 바꾸면 0.31. **같은 두 모델, 순서만 다르고 +10%p 차이.** 첫 번째 자리의 브랜드가 집단 전체의 톤을 결정한다는 뜻이다.
 
-이건 LLM-as-a-Judge 문헌의 *위치 편향*과 정확히 닿는다. [arXiv:2406.07791](https://arxiv.org/abs/2406.07791)은 응답 순서 교체만으로 정확도가 10%p 이상 흔들린다고 보고했다. Huang et al.(ICLR 2026)은 추론 모델 포함 모든 LLM의 앵커링 편향이 *얕은 레이어에서 실행*된다고 보였다 — 모델을 키워도 사라지지 않는 구조적 결함이다. 인간 인지심리학으로 거슬러 올라가면 Tversky & Kahneman(1974, *Science*)의 앵커링 실험 — UN 회원국 중 아프리카 비율을 묻기 전에 룰렛을 돌리고 그 숫자를 보여주면 응답이 그 숫자 쪽으로 끌린다 — 가 정확히 같은 모양이다. 50년 전 사람에게서 측정된 인지 결함이 트랜스포머의 얕은 레이어에 자리 잡고 있다는 게 이상하면서도 익숙하다. Shehata & Li의 Lead Anchor는 LLM 평가 문헌에서 이미 알려진 현상을 *멀티에이전트 거버넌스*의 언어로 재명명한 것에 가깝다. 새로움은 명명에 있는 게 아니라, *사회적 부하 합성함수의 비가환성*을 명시적 모델 변수로 끌어올렸다는 점이다.
+이건 LLM-as-a-Judge[^judge] 문헌의 *위치 편향*과 정확히 닿는다. [arXiv:2406.07791](https://arxiv.org/abs/2406.07791)은 응답 순서 교체만으로 정확도가 10%p 이상 흔들린다고 보고했다. Huang et al.(ICLR 2026)은 추론 모델 포함 모든 LLM의 앵커링 편향이 *얕은 레이어에서 실행*된다고 보였다 — 모델을 키워도 사라지지 않는 구조적 결함이다. 인간 인지심리학으로 거슬러 올라가면 Tversky & Kahneman(1974, *Science*)의 앵커링 실험 — UN 회원국 중 아프리카 비율을 묻기 전에 룰렛을 돌리고 그 숫자를 보여주면 응답이 그 숫자 쪽으로 끌린다 — 가 정확히 같은 모양이다. 50년 전 사람에게서 측정된 인지 결함이 트랜스포머의 얕은 레이어에 자리 잡고 있다는 게 이상하면서도 익숙하다. Shehata & Li의 Lead Anchor는 LLM 평가 문헌에서 이미 알려진 현상을 *멀티에이전트 거버넌스*의 언어로 재명명한 것에 가깝다. 새로움은 명명에 있는 게 아니라, *사회적 부하 합성함수의 비가환성*을 명시적 모델 변수로 끌어올렸다는 점이다.
 
 다만 한 번 의심하자 — 10%p 차이를 만든 게 정말 *서열의 첫 자리*인가, 아니면 단순히 *Claude가 더 자주 정답을 내놓아서* 어디에 두든 그 답이 채택될 확률이 높았던 건가? 논문은 평가자 GPT-5.4를 고정한 채 감사자 순서만 뒤집었으니 후자를 배제하긴 했지만, 감사자 개별 정확도와 첫 자리 효과를 회귀로 분리하지 않았다. 이건 본문 안 작은 의심으로 남겨둔다.
 
@@ -72,7 +72,7 @@ SWE-bench에서 GPT-5.4를 평가자로 두고 (Claude, Gemini Pro) 서열로 �
 
 ## 그러나
 
-본문 안에서 한 번 칼날을 무디게 해두자. Shehata & Li의 setup은 **Semantic Hijacking**이라는 인공적 적대 환경이다. Context Hijacking(첫 심판 위치에 독 주입) + 3-Hop Dependency Bridging + 500토큰 무작위 로그로 주의 포화. 과제 엔트로피를 *인위적으로* 끌어올린다. 실제 운영 환경에서 이런 적대적 컨텍스트가 자연 발생할 확률은 측정되지 않았다. 즉 이 논문이 측정한 건 *공격 받았을 때의 붕괴 한계*지, *정상 협업에서의 평균 거동*은 아니다. Latané & Darley(1968)의 연기 가득 찬 방 실험이 *비상 상황*의 한계 측정이었지 *평범한 사무실 행동*의 평균이 아니었던 것과 같은 한계다. *생태학적 타당성(ecological validity)*이 약하다.
+본문 안에서 한 번 칼날을 무디게 해두자. Shehata & Li의 setup은 **Semantic Hijacking**이라는 인공적 적대 환경이다. Context Hijacking(첫 심판 위치에 독 주입) + 3-Hop Dependency Bridging + 500토큰 무작위 로그로 주의 포화. 과제 엔트로피를 *인위적으로* 끌어올린다. 실제 운영 환경에서 이런 적대적 컨텍스트가 자연 발생할 확률은 측정되지 않았다. 즉 이 논문이 측정한 건 *공격 받았을 때의 붕괴 한계*지, *정상 협업에서의 평균 거동*은 아니다. Latané & Darley(1968)의 연기 가득 찬 방 실험이 *비상 상황*의 한계 측정이었지 *평범한 사무실 행동*의 평균이 아니었던 것과 같은 한계다. *생태학적 타당성(ecological validity)*[^ecological]이 약하다.
 
 또 하나 — Claude Sonnet 4.6의 한계 무한대 발산 결과는 의심스럽다. 모든 도메인·모든 집단 규모에서 1.00 정확도, 자기 추론 일관성 5.00이라는 건 측정 도구의 천장에 닿았다는 신호일 수도 있다. 더 어려운 벤치마크에서도 같은 강건성이 유지되는지, 혹은 Anthropic의 *훈련 시 적대 시뮬레이션*이 이 특정 평가 세트에 과적합된 건 아닌지 — 두 가능성을 닫지 않은 채로 받아들여야 한다. *Fortified Mind*라는 라벨이 너무 매끄러워서 의심스럽다. 짧게 말해 — *모든 표본에서 만점*은 천장 효과거나 데이터 누출의 신호다, 둘 다 아니라는 증거가 없다.
 
@@ -84,7 +84,7 @@ SWE-bench에서 GPT-5.4를 평가자로 두고 (Claude, Gemini Pro) 서열로 �
 
 세 갈래로 메모해둔다.
 
-**갈래 1 — Composite Social Load와 K-스타 프레임의 합성.** Yang et al.의 K-스타 프레임은 MAS 성능 상한이 독립적 추론 경로 수에 의존한다고 했다 — 경로 수는 추론 엔트로피의 지수다.
+**갈래 1 — Composite Social Load와 K-스타 프레임의 합성.** Yang et al.의 K-스타 프레임은 MAS[^mas] 성능 상한이 독립적 추론 경로 수에 의존한다고 했다 — 경로 수는 추론 엔트로피의 지수다.
 
 $$K^{*} = \exp(H)$$
 
@@ -92,7 +92,7 @@ Shehata & Li의 Composite Social Load는 그 경로의 독립성을 갉아먹는
 
 $$K_{\text{eff}} = K \,/\, \kappa^{\beta}$$
 
-단 — Yang의 K-스타는 과제 엔트로피를 covariate로 다뤘지만, 사회적 부하를 변수로 안 다뤘다. 두 프레임이 같은 양에 다른 변수 셋을 부여하는 거니까 매끄러운 통합은 아닐 거다. 그 마찰점이 오히려 흥미롭다. Page(2007) *The Difference*가 인간 팀에서 보여준 "다양성 예측 정리(Diversity Prediction Theorem)" — 집단 오차 = 평균 개인 오차 - 다양성 — 의 LLM 버전이 결국 이 자리에 있다.
+단 — Yang의 K-스타는 과제 엔트로피를 covariate[^covariate]로 다뤘지만, 사회적 부하를 변수로 안 다뤘다. 두 프레임이 같은 양에 다른 변수 셋을 부여하는 거니까 매끄러운 통합은 아닐 거다. 그 마찰점이 오히려 흥미롭다. Page(2007) *The Difference*가 인간 팀에서 보여준 "다양성 예측 정리(Diversity Prediction Theorem)" — 집단 오차 = 평균 개인 오차 - 다양성 — 의 LLM 버전이 결국 이 자리에 있다.
 
 **갈래 2 — Aggregator의 메모리 위생자에 *주권 모니터* 역할 추가.** 어제 메모에서 Aggregator를 "메모리 소독자"로 정의했다. 오늘 한 줄을 더 붙인다 — Aggregator는 또한 **Sovereignty Gap 모니터**여야 한다. 각 에이전트의 내부 추론 일관성과 최종 출력을 따로 기록하고, Sovereignty Gap이 크게 양수인 에이전트는 Alignment Hallucination 위험군, 크게 음수인 에이전트는 Reasoning Bypass 위험군으로 분류해 다른 개입을 한다. 전자에겐 "외부 신호 차단 + 내부 결론 추출", 후자에겐 "강제 재추론 + 동료 답 차폐". 단 이걸 추론 시점에 측정하려면 내부 추론 일관성을 어떻게 잡을지가 문제다. Shehata & Li는 결정론적 궤적 22,500개를 돌려서 사후 측정했지만, 운영 환경에선 그 정도 사치를 부릴 수 없다. Wang et al.(2023) Self-Consistency 원논문의 답 분포 엔트로피가 후보 1, Kadavath et al.(2022) "Language Models (Mostly) Know What They Know"의 self-evaluation 토큰 확률이 후보 2. 두 지표를 Sovereignty Gap 대용으로 검증하는 작은 실험을 별도 카드로.
 
@@ -124,3 +124,15 @@ $$K_{\text{eff}} = K \,/\, \kappa^{\beta}$$
 [^sovgap]: "we uncover the Sovereignty Gap: models frequently compute the correct derivation internally but suffer 'Alignment Hallucinations'—actively subjugating empirical evidence to sycophantically appease a simulated swarm." — Shehata & Li (2026), Abstract.
 
 [^noncommute]: "We prove that multi-agent social load is strictly non-commutative; the 'brand' identity of the 'Lead Anchor' auditor disproportionately dictates the swarm's integrity." — Shehata & Li (2026), Abstract.
+
+[^pvalue]: 용어 — p값(유의확률). 관측된 차이가 "사실은 차이가 없는데 우연히" 나타날 확률. 통상 0.05보다 작으면 우연으로 보기 어렵다(유의하다)고 보며, p<0.001은 우연일 가능성이 1천분의 1 미만이라는 뜻이다.
+
+[^entropy]: 용어 — 엔트로피(entropy). 정보이론에서 불확실성·무질서의 양을 재는 척도. 답이 한 갈래로 또렷하면 낮고, 가능성이 여러 갈래로 흩어질수록 높다. 여기서 "과제 엔트로피"는 문제의 어려움·모호함을, "추론 경로 수"는 그 엔트로피의 지수로 잡힌다.
+
+[^judge]: 용어 — LLM-as-a-Judge. 사람 대신 LLM에게 다른 모델의 답을 채점·평가하게 하는 방식. 값싸고 빠르지만, 응답을 제시한 *순서*만 바꿔도 평가가 흔들리는 위치 편향 같은 결함이 알려져 있다.
+
+[^ecological]: 용어 — 생태학적 타당성(ecological validity). 실험실에서 본 결과가 실제 현장 환경에서도 그대로 통하는가의 정도. 인위적 적대 조건에서 측정한 붕괴가 정상 운영에서도 일어난다는 보장은 없다는 게 이 한계의 요지다.
+
+[^mas]: 용어 — Multi-Agent System(다중 에이전트 시스템). 여러 LLM 에이전트가 역할을 나눠 협업·토론·감사하며 하나의 과제를 푸는 구성. 이 글의 방관자 효과는 바로 이 MAS에서 동료가 늘 때 생기는 병리다.
+
+[^covariate]: 용어 — 공변량(covariate). 분석에서 결과에 영향을 주지만 주 관심사가 아니어서 "통제"해 두는 부수 변수. 위치 효과를 제대로 보려면 감사자 개개의 실력을 공변량으로 묶어 그 영향을 걷어내야 한다는 지적이다.
