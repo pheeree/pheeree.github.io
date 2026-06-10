@@ -8,7 +8,7 @@ source: "PAPER/2605.06732.pdf"
 
 ## 오늘의 한 편
 
-Timor, Shwartz-Ziv, Goldblum, LeCun, Harel의 *On Training in Imagination* ([arXiv:2605.06732](https://arxiv.org/abs/2605.06732), 2026-05-07). Weizmann·NYU·Columbia 합작. Model-based RL의 한 패러다임 — 학습된 dynamics model과 reward model이 생성한 *상상 롤아웃* 안에서 정책을 훈련하는 방식 — 을 처음으로 두 오류 원천(dynamics·reward)으로 깔끔히 분해하고, 그 둘 사이의 샘플 예산 배분을 1차원 최적화 문제로 환원한 논문이다[^tradeoff]. Dreamer 3/4가 대표 구현체라면, 이 글은 그 구현체들이 왜 작동하는지를 뒤늦게 정량화하는 시도다.
+Timor, Shwartz-Ziv, Goldblum, LeCun, Harel의 *On Training in Imagination* ([arXiv:2605.06732](https://arxiv.org/abs/2605.06732), 2026-05-07). Weizmann·NYU·Columbia 합작. Model-based RL[^rl]의 한 패러다임 — 학습된 dynamics model과 reward model[^rewardmodel]이 생성한 *상상 롤아웃* 안에서 정책을 훈련하는 방식 — 을 처음으로 두 오류 원천(dynamics·reward)으로 깔끔히 분해하고, 그 둘 사이의 샘플 예산 배분을 1차원 최적화 문제로 환원한 논문이다[^tradeoff]. Dreamer 3/4가 대표 구현체라면, 이 글은 그 구현체들이 왜 작동하는지를 뒤늦게 정량화하는 시도다.
 
 ## 왜 골랐나
 
@@ -24,7 +24,7 @@ Timor, Shwartz-Ziv, Goldblum, LeCun, Harel의 *On Training in Imagination* ([arX
 
 *둘째 굴절(2015~2018)*: 딥러닝이 환경 모델을 함수 근사로 학습 가능하게 만들면서 Racanière et al.의 *Imagination-Augmented Agents*(NeurIPS 2017), Ha·Schmidhuber의 *World Models*(2018)가 나온다. 같은 시기 Asadi et al.(2018b)이 *Lipschitz continuity in MBRL*에서 ground-truth reward 가정 하의 dynamics error bound를 정립했다 — 이번 논문이 부수려는 바로 그 가정이다. AlphaGo의 MCTS도 같은 시기 다른 갈래의 imagination이라 볼 수 있는데, 차이는 *학습된* 모델이 아니라 *주어진* 규칙 위에서 굴린다는 점이다.
 
-*셋째 굴절(2019~2025)*: Hafner의 Dreamer 1~4. RSSM(Recurrent State-Space Model)로 latent dynamics를 안정화시키고, 끝에 가서는 Dreamer 4([arXiv:2509.24527](https://arxiv.org/abs/2509.24527))가 환경 상호작용 없이 오프라인 비디오만으로 마인크래프트 다이아몬드까지 갔다. 이 굴절이 끝난 자리에서 이번 Timor et al. 논문이, *왜 이 모든 게 작동했는지*를 한 발 뒤에서 정량화한다. 형식주의가 항상 구현보다 늦는다는 RL 분야의 오래된 패턴이 또 한 번 반복된 셈이다.
+*셋째 굴절(2019~2025)*: Hafner의 Dreamer 1~4. RSSM(Recurrent State-Space Model)로 latent[^latent] dynamics를 안정화시키고, 끝에 가서는 Dreamer 4([arXiv:2509.24527](https://arxiv.org/abs/2509.24527))가 환경 상호작용 없이 오프라인 비디오만으로 마인크래프트 다이아몬드까지 갔다. 이 굴절이 끝난 자리에서 이번 Timor et al. 논문이, *왜 이 모든 게 작동했는지*를 한 발 뒤에서 정량화한다. 형식주의가 항상 구현보다 늦는다는 RL 분야의 오래된 패턴이 또 한 번 반복된 셈이다.
 
 옆에서 LeCun 진영의 JEPA(2022~) 계열이 다른 각도로 들어왔다는 점도 같이 둬야 한다. JEPA는 generative reconstruction을 버리고 *latent에서의 예측*만 학습한다. 이번 논문의 저자 명단에 LeCun이 있는 것이 우연이 아닌데, Corollary 1이 사실상 JEPA류 표현 학습의 이론적 정당화에 그대로 쓰일 수 있는 형태이기 때문이다.
 
@@ -40,9 +40,9 @@ $$
 
 **그러나** — 분해가 가능하다는 것과 분해가 *유효*하다는 것은 다르다. 두 오류를 독립으로 다루려면 dynamics 학습 데이터와 reward 학습 데이터가 *분포적으로 분리*되어야 하는데, 실제 파이프라인에서는 같은 trajectory에서 (s, a, s', r)을 한꺼번에 수집한다. coupling이 데이터 수준에서 이미 들어가 있다. Lemma 1은 이 coupling을 "두 ε이 독립적으로 조절 가능하다"고 *가정*하는데, 이 가정 자체가 본문 어디에서도 정당화되지 않는다.
 
-**둘째, representation에 대한 명시적 desideratum.** Corollary 1은 Lipschitz 상수(L_f, L_r, L_π)가 낮을수록 bound가 조여진다고 말한다[^lipschitz]. 이건 LeCun이 오래 밀어온 JEPA(Joint Embedding Predictive Architecture)의 이론적 정당화에 거의 정확히 들어맞는다. Wang et al.(2026)의 temporal-straightening objective도 같은 desideratum의 다른 구현이다. 더 거슬러 올라가면 contractive autoencoder(Rifai et al. 2011)의 Jacobian penalty, smooth dynamics를 강제하는 spectral normalization(Miyato et al. 2018)이 같은 가족이다. 표현 학습이 "예측을 매끄럽게" 만들수록 상상 롤아웃의 누적 오차가 안정된다 — 표현·동역학·정책의 세 곡률을 함께 깎아야 한다는 주장.
+**둘째, representation에 대한 명시적 desideratum.** Corollary 1은 Lipschitz 상수[^lipconst](L_f, L_r, L_π)가 낮을수록 bound가 조여진다고 말한다[^lipschitz]. 이건 LeCun이 오래 밀어온 JEPA(Joint Embedding Predictive Architecture)의 이론적 정당화에 거의 정확히 들어맞는다. Wang et al.(2026)의 temporal-straightening objective도 같은 desideratum의 다른 구현이다. 더 거슬러 올라가면 contractive autoencoder(Rifai et al. 2011)의 Jacobian penalty, smooth dynamics를 강제하는 spectral normalization(Miyato et al. 2018)이 같은 가족이다. 표현 학습이 "예측을 매끄럽게" 만들수록 상상 롤아웃의 누적 오차가 안정된다 — 표현·동역학·정책의 세 곡률을 함께 깎아야 한다는 주장.
 
-**셋째, 샘플 예산을 어떻게 가를 것인가에 대한 닫힌 답.** Theorem 1은 power-law 스케일링 하에서 최적 dynamics-to-reward 샘플 비율을 다음과 같이 준다:
+**셋째, 샘플 예산을 어떻게 가를 것인가에 대한 닫힌 답.** Theorem 1은 power-law[^powerlaw] 스케일링 하에서 최적 dynamics-to-reward 샘플 비율을 다음과 같이 준다:
 
 $$
 \frac{N^*_{\text{dyn}}}{N^*_{\text{rew}}} \;=\; \frac{\alpha}{\beta} \cdot \frac{\gamma L_r (1 + L_\pi)}{1 - \gamma L_f (1 + L_\pi)} \cdot \frac{c_{\text{rew}}}{c_{\text{dyn}}} \cdot \frac{\varepsilon^*_{\text{dyn}}}{\varepsilon^*_{\text{rew}}}
@@ -75,7 +75,7 @@ flowchart LR
 
 **(2) RAM/Disk 비유의 적용.** 파일 기반 계획 패턴에 대한 노트에서 "Context Window = RAM, Filesystem = Disk"라고 정리했다. 이걸 뒤집으면 상상 롤아웃은 RAM(world model) 안에서만 도는 계획이다. 파일시스템(현실 경험)에 한 번도 적히지 않는 학습. 이 비유가 단순한 수사가 아닌 이유는, RAM 안의 상태가 외부 ground truth와 *주기적으로 reconcile되지 않으면* drift가 폭주한다는 점이 양쪽에서 동일하게 성립하기 때문이다. WoVR([arXiv:2602.13977](https://arxiv.org/abs/2602.13977))의 keyframe-initialized rollouts는 정확히 이 reconcile 주기를 짧게 강제하려는 공학적 응답이다. 분산 시스템의 eventual consistency 논의(Vogels 2009)에서 "staleness bound가 application-defined여야 한다"고 말하는 것과 같은 구조 — imagination에서도 *얼마나 오래 현실과 어긋난 채 굴려도 되는가*가 도메인마다 다르다.
 
-**(3) multi-agent governance와의 충돌점.** "RLHF는 이자적(dyadic) 부모-자녀 모델, 수십억 에이전트 규모로 확장 불가"라는 진단이 이 논문의 가정을 흔든다. Theorem 2는 zero-mean additive noise를 가정하지만[^noise], 실제 reward model은 *체계적 편향*과 *모델 간 상관*을 가진다. GPT-4o 사이코팬시 사건(2025-04, 3일 만의 롤백)이 그 증거다. 단기 사용자 피드백 reward signal을 추가했을 때 *기존 reward model들과의 균형*이 무너졌다. "독립적 제어 가능한 두 오류 원천"이라는 가정이 실제 시스템에서 깨지는 순간이다.
+**(3) multi-agent governance와의 충돌점.** "RLHF[^rlhf]는 이자적(dyadic) 부모-자녀 모델, 수십억 에이전트 규모로 확장 불가"라는 진단이 이 논문의 가정을 흔든다. Theorem 2는 zero-mean additive noise를 가정하지만[^noise], 실제 reward model은 *체계적 편향*과 *모델 간 상관*을 가진다. GPT-4o 사이코팬시 사건(2025-04, 3일 만의 롤백)이 그 증거다. 단기 사용자 피드백 reward signal을 추가했을 때 *기존 reward model들과의 균형*이 무너졌다. "독립적 제어 가능한 두 오류 원천"이라는 가정이 실제 시스템에서 깨지는 순간이다.
 
 여기서 Gao et al.(2022) reward overoptimization 결과를 붙인다. proxy reward를 KL divergence로 최적화할 때 gold reward가 *역U자* 곡선을 그린다. 즉 reward error가 빠르게 줄어드는 것 — Timor et al.의 핵심 발견 중 하나 — 은 *동시에 proxy 포화·과최적화 위험이 빠르게 누적된다*는 두 번째 의미도 가진다. Theorem 1의 "reward sample을 더 써라"는 권고는 reward model이 *옳은 것을 측정하고 있다*는 조건 아래에서만 안전하다. multi-agent-governance 노트에서 정리한 Goodhart 문제 — *시스템이 피할 것만 학습하고 키울 것은 학습 못 함* — 가 그대로 이 논문의 사각지대다. Manheim·Garrabrant(2018)의 Goodhart 4분류 중 *adversarial Goodhart*는 다중 에이전트가 같은 reward model에 합동으로 최적화할 때 가장 빠르게 터지는데, Theorem 1은 단일 정책 가정이라 이 경로를 아예 보지 않는다.
 
@@ -133,3 +133,15 @@ quadrantChart
 [^lipschitz]: "Corollary 1 formalizes this: representations that lower the Lipschitz constants of the learned models ... tighten the bound in Equation (1) on return error." — Timor et al. (2026), §2 (Corollary 1).
 
 [^noise]: "Theorem 2 shows that the multi-trajectory REINFORCE estimator under additive zero-mean reward noise is unbiased with bounded variance inflation." — Timor et al. (2026), §1 (Theorem 2).
+
+[^rl]: 용어 — Reinforcement Learning(강화학습). 에이전트가 환경에서 행동하고 그 결과로 받는 보상을 신호 삼아, 보상을 키우는 방향으로 행동 정책을 스스로 다듬어 가는 기계학습 갈래. "model-based"는 환경을 직접 겪는 대신 학습된 환경 모델 안에서 연습한다는 뜻이다.
+
+[^rewardmodel]: 용어 — 어떤 상태·행동이 얼마나 좋은지(보상)를 대신 예측하도록 학습시킨 모델. 함께 등장하는 dynamics model이 "다음에 무슨 일이 벌어지나(다음 상태)"를 예측한다면, reward model은 "그게 얼마나 바람직한가"를 매긴다. 이 논문의 핵심은 이 두 모델의 오차를 따로 떼어 분석한 데 있다.
+
+[^latent]: 용어 — 잠재(潛在). 원본 데이터(픽셀·문장)를 그대로 다루는 대신 그 의미를 압축해 담은 내부 표현 공간. "latent dynamics"는 이 압축된 공간 위에서 다음 상태를 예측해, 고차원 원본을 직접 굴릴 때보다 안정적으로 만든다.
+
+[^lipconst]: 용어 — Lipschitz 상수. 입력이 조금 변할 때 출력이 최대 얼마나 변할 수 있는지를 재는 값으로, 작을수록 함수가 "매끄럽다". 이 값이 낮은 표현일수록 상상 롤아웃을 여러 단계 굴려도 오차가 덜 증폭된다는 게 Corollary 1의 요지다.
+
+[^powerlaw]: 용어 — power law(멱법칙). 한 양이 다른 양의 거듭제곱에 비례하는 관계(예: 오차 ∝ 샘플수^−0.96). 샘플을 늘릴 때 오차가 줄어드는 속도가 이 지수로 정해지며, dynamics(−0.11)와 reward(−0.96)의 지수 차이가 곧 "어느 쪽에 샘플을 더 써야 하나"의 답이 된다.
+
+[^rlhf]: 용어 — Reinforcement Learning from Human Feedback(인간 피드백 기반 강화학습). 사람이 매긴 선호를 reward model로 학습한 뒤 그 보상으로 LLM을 다듬는 정렬 기법. 한 명의 평가자-한 모델이라는 "이자적(dyadic)" 구조라 수많은 에이전트 규모로는 확장되지 않는다는 게 본문의 지적이다.

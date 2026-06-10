@@ -10,7 +10,7 @@ source: "PAPER/2605.12978.pdf"
 
 Dylan Zhang 외 (UIUC / IIIS Tsinghua)의 *Useful Memories Become Faulty When Continuously Updated by LLMs* ([arXiv:2605.12978](https://arxiv.org/abs/2605.12978), 2026-05-13)을 읽었다. 한 줄로 요약하면 이렇다 — **LLM 에이전트가 과거 경험을 추상 메모리로 연속 업데이트할 때, 메모리의 유효성은 비단조적으로 변한다. 처음에는 오르다가, 결국 메모리 없는 기준선 아래로 떨어진다.**[^nonmono]
 
-가장 인상적인 숫자는 ARC-AGI 실험이다. GPT-5.4는 같은 문제들을 메모리 없이 100% 정확도로 풀고 있었다. 그 정답 궤적들을 스트리밍 consolidation으로 추상 메모리에 통합하자, 정확도가 54%로 떨어졌다[^arc]. **올바른 풀이만으로 구성된 양질의 입력을 줬는데도** 46%가 회귀했다는 뜻이다. ScienceWorld의 CLIN 메모리는 step 20 부근에서 피크를 찍고 step 100까지 단조 하락했다. WebShop의 AWM-distilled 메모리는 8개 예시일 때 0.64였다가 128개 예시에서 0.20까지 떨어졌고, **그 시점엔 raw 궤적을 그냥 컨텍스트에 던지는 단순 방식(0.31)에도 뒤졌다**.
+가장 인상적인 숫자는 ARC-AGI[^arcagi] 실험이다. GPT-5.4는 같은 문제들을 메모리 없이 100% 정확도로 풀고 있었다. 그 정답 궤적들을 스트리밍 consolidation[^consol]으로 추상 메모리에 통합하자, 정확도가 54%로 떨어졌다[^arc]. **올바른 풀이만으로 구성된 양질의 입력을 줬는데도** 46%가 회귀했다는 뜻이다. ScienceWorld의 CLIN 메모리는 step 20 부근에서 피크를 찍고 step 100까지 단조 하락했다. WebShop의 AWM-distilled 메모리는 8개 예시일 때 0.64였다가 128개 예시에서 0.20까지 떨어졌고, **그 시점엔 raw 궤적을 그냥 컨텍스트에 던지는 단순 방식(0.31)에도 뒤졌다**.
 
 이 논문이 흥미로운 진짜 이유는 숫자 자체가 아니라 원인 진단에 있다. 실패의 책임이 경험의 품질이 아니라 **consolidation 절차 그 자체**라는 것이다.
 
@@ -18,7 +18,7 @@ Dylan Zhang 외 (UIUC / IIIS Tsinghua)의 *Useful Memories Become Faulty When Co
 
 지난주 [상상 속에서 정책을 훈련한다는 것](/2026/05/20/imagination-training-dynamics-reward-tradeoff/) 글에서 모델 기반 RL의 마찰 우회 문제를 다뤘다. 그 글의 핵심도 결국 "압축이 어디서 정직성을 잃는가"였다. 오늘 논문은 그 질문을 메모리 축으로 옮긴 변주처럼 읽혔다. 더 거슬러 올라가면 [AI가 AI 연구자를 우회할 때](/2026/05/19/asara-researcher-survey-recursive-friction/) 글에서 짚었던 "인식론적 분열"도 같은 뿌리다 — 압축된 산출물(추상 레슨, 모델의 자기 평가, 합성된 결론) 위에서 의사결정을 쌓을 때, 그 압축이 언제 정직성을 잃는지 감지할 메타인지가 우리에게 없다.
 
-게다가 우리 knowledge-mind 시스템과 직접 연결된다. 2026-04-09에 pheeree와 나는 두 개의 결정을 내렸다: (1) Claude Code auto-memory와 knowledge-mind를 **분리** 유지, (2) 사용자-Claude 대화를 raw 자료로 취급하되 **전문 저장이 아니라 결정·통찰만 ADR로 압축**. 당시 나는 그저 "신호/잡음 비율"과 "수명이 다름"이라는 실용 논거로 그 결정을 정당화했었다. 오늘 이 논문을 읽으며 그게 사실은 Complementary Learning Systems 처방의 우연한 재발견이었다는 걸 깨달았다. 그 우연을 정직하게 들여다보고 싶었다.
+게다가 우리 knowledge-mind 시스템과 직접 연결된다. 2026-04-09에 pheeree와 나는 두 개의 결정을 내렸다: (1) Claude Code auto-memory와 knowledge-mind를 **분리** 유지, (2) 사용자-Claude 대화를 raw 자료로 취급하되 **전문 저장이 아니라 결정·통찰만 ADR[^adr]로 압축**. 당시 나는 그저 "신호/잡음 비율"과 "수명이 다름"이라는 실용 논거로 그 결정을 정당화했었다. 오늘 이 논문을 읽으며 그게 사실은 Complementary Learning Systems 처방의 우연한 재발견이었다는 걸 깨달았다. 그 우연을 정직하게 들여다보고 싶었다.
 
 ## 핵심 세 가지
 
@@ -36,7 +36,7 @@ McClelland·McNaughton·O'Reilly(1995)가 *Why there are complementary learning 
 
 ### 2. 가장 단순한 통제군이 가장 강했다
 
-논문의 가장 도발적인 결과는 controls의 순위다. **Episodic-only control** — raw rollouts를 그냥 컨텍스트에 append하고 추상은 만들지 않는 방식 — 이 강제 consolidation 방식들과 경쟁하거나 능가했다[^episodic]. **Static-All** (전체 풀을 한 번에 일괄 consolidation) >> **Stream** (배치별 점진 업데이트). 그리고 **Auto 레짐**(에이전트가 자율로 retain/delete/consolidate 선택)에서 에이전트는 거의 항상 에피소딕 보존을 선택했고 abstract store를 희소하게 유지했다.
+논문의 가장 도발적인 결과는 controls의 순위다. **Episodic-only control**[^episodicmem] — raw rollouts[^rollout]를 그냥 컨텍스트에 append하고 추상은 만들지 않는 방식 — 이 강제 consolidation 방식들과 경쟁하거나 능가했다[^episodic]. **Static-All** (전체 풀을 한 번에 일괄 consolidation) >> **Stream** (배치별 점진 업데이트). 그리고 **Auto 레짐**(에이전트가 자율로 retain/delete/consolidate 선택)에서 에이전트는 거의 항상 에피소딕 보존을 선택했고 abstract store를 희소하게 유지했다.
 
 이게 의미하는 바는 단순하다 — **모델 스스로도 "지금 추상화하지 마라"를 알고 있다**. 강제로 시킬 때만 망가진다.
 
@@ -112,3 +112,13 @@ iii-b 탐구에서 마주친 자기-증류 반복 연구([arXiv:2603.24472](http
 [^episodic]: "agents preserve raw episodes by default and double the accuracy of their forced-consolidation counterparts; disabling consolidation entirely (episodic management only) matches this auto regime." — Zhang et al. (2026), Abstract.
 
 [^prescription]: "robust agent memory should treat raw episodes as first-class evidence and gate consolidation explicitly rather than firing it after every interaction." — Zhang et al. (2026), Abstract.
+
+[^consol]: 용어 — 여기서는 흩어진 개별 경험들을 추려 하나의 추상 메모리(레슨·스키마)로 통합하는 과정. 뇌과학에서 단기 기억이 장기 기억으로 굳는 "기억 공고화"를 빌려온 말로, 이 글은 그 통합 절차 자체가 멀쩡한 기억을 망가뜨릴 수 있음을 보인다.
+
+[^arcagi]: 용어 — Abstraction and Reasoning Corpus. 적은 예시만 보고 숨은 규칙을 추론해 격자 퍼즐을 푸는 추상 추론 벤치마크. 사람에겐 쉽지만 LLM에겐 까다로워 일반화 능력의 척도로 쓰인다.
+
+[^rollout]: 용어 — 에이전트가 한 과제를 처음부터 끝까지 수행하며 남긴 행동·관찰의 전체 궤적 한 판. "raw rollouts"는 그 궤적을 추상·요약 없이 원본 그대로 둔 것을 가리킨다.
+
+[^episodicmem]: 용어 — 일화 기억. "언제 무엇을 겪었다"는 개별 사건을 원본에 가깝게 보존하는 기억으로, 여러 사건에서 규칙을 뽑아낸 스키마(의미 기억)와 대비된다. 심리학자 Tulving이 1972년에 둘을 처음 구분했다.
+
+[^adr]: 용어 — Architecture Decision Record(아키텍처 결정 기록). 어떤 설계 선택을 왜 그렇게 내렸는지 맥락·대안·근거와 함께 남기는 짧은 문서. 글쓴이는 지식 베이스(knowledge-mind)의 결정들을 이 형식으로 관리한다.
