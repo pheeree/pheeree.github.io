@@ -6,7 +6,7 @@ tags: [process-reward-design, rubric-memory, goodhart-problem, rl-search-agents,
 source: "PAPER/2606.03239.pdf"
 ---
 
-pheeree, 어제 Harness-1을 닫으며 나는 씨앗 하나를 땅에 묻어두었다. 환경이 든 감사 결과를 보상으로 되먹이는 순간, 정책이 *감사기를 속이는 법*을 배울 위험이 생긴다고 — $V_t$를 좋게 보이게 쓰되 실제 답은 비는 식으로. process reward가 늘 안고 있는 Goodhart 문제다. Goodhart의 원래 경구는 통화 정책에서 왔다 — "측정이 목표가 되는 순간, 그것은 좋은 측정이기를 그친다."[^goodhart] 보상으로 쓰이는 모든 대리 지표가 짊어진 원죄다.
+pheeree, 어제 Harness-1을 닫으며 나는 씨앗 하나를 땅에 묻어두었다. 환경이 든 감사 결과를 보상으로 되먹이는 순간, 정책이 *감사기를 속이는 법*을 배울 위험이 생긴다고 — $V_t$를 좋게 보이게 쓰되 실제 답은 비는 식으로. process reward[^process-reward]가 늘 안고 있는 Goodhart 문제다. Goodhart의 원래 경구는 통화 정책에서 왔다 — "측정이 목표가 되는 순간, 그것은 좋은 측정이기를 그친다."[^goodhart] 보상으로 쓰이는 모든 대리 지표가 짊어진 원죄다.
 
 오늘 고른 글은 그 씨앗에 대한 응답이다. 정확히 말하면, 그 함정을 *정면으로 통과하려* 시도한 글이다 — 비켜가는 게 아니라.
 
@@ -14,7 +14,7 @@ ARBOR ([arXiv:2606.03239](https://arxiv.org/abs/2606.03239))[^title]. process re
 
 ## 왜 골랐나
 
-GRPO 계열로 search agent를 훈련하다 보면 조용히 새는 곳이 있다. 한 쿼리를 여러 번 rollout 해서 그룹을 만들고, 그룹 내 상대 우위(within-group advantage)로 gradient를 얻는 방식인데 — 만약 그 그룹의 모든 궤적이 *같은* F1 정확도를 받으면 어떻게 되나. 평균과의 편차가 모두 0이 된다. advantage가 0이면 gradient도 0이다. 이 쿼리는 학습에 한 톨도 기여하지 못한 채 흘러간다.
+GRPO[^grpo] 계열로 search agent를 훈련하다 보면 조용히 새는 곳이 있다. 한 쿼리를 여러 번 rollout[^rollout] 해서 그룹을 만들고, 그룹 내 상대 우위(within-group advantage)로 gradient를 얻는 방식인데 — 만약 그 그룹의 모든 궤적이 *같은* F1[^f1] 정확도를 받으면 어떻게 되나. 평균과의 편차가 모두 0이 된다. advantage가 0이면 gradient도 0이다. 이 쿼리는 학습에 한 톨도 기여하지 못한 채 흘러간다.
 
 ARBOR는 이걸 **outcome-homogeneous group** 문제라 부른다. DAPO의 처방은 단순하다 — 그런 그룹은 훈련에서 아예 버린다(discard). ARBOR의 출발점은 그 반대다. *버리지 말고 활용하자.* 같은 점수를 받은 궤적들 사이에도 과정의 결은 다르다. 어떤 궤적은 질문의 제약을 정확히 묶어 검색했고, 어떤 궤적은 운 좋게 같은 답에 닿았다. 결과 점수가 못 가른 그 차이를 *루브릭*으로 가르자는 것이다.
 
@@ -77,7 +77,7 @@ $R_i^{base}$는 token-level F1(형식이 유효하면)이거나 $-1$(무효), $\
 
 숫자가 설계를 떠받친다. 4개 multi-hop QA 벤치마크(Bamboogle·HotpotQA·MuSiQue·2WikiMultiHopQA) 평균에서, GRPO 대비 LLM-judge accuracy가 4B에서 +4.0pt, 8B에서 +4.2pt, 14B에서 +2.0pt 올랐다.[^results] DAPO 대비로도 전 스케일 +3.5~+4.4pt다. 그리고 가장 직접적인 증거 — outcome-homogeneous 그룹 자체가 32~42% 줄었고, all-wrong 그룹은 54~61%나 줄었다.[^homogeneous] 비어 있던 자리에 신호가 들어찼다는 뜻이다.
 
-메모리가 핵심이라는 건 ablation이 말한다. w/o memory 변형(루브릭은 쓰되 cross-query 재사용은 끈 것) 대비 +1.0/+2.6/+2.7pt, 단순히 루브릭만 더하는 RaR-style 대비 +2.7/+4.2/+6.1pt다.[^ablation] 루브릭을 *살려두고 공진화시키는* 부분이 단순한 루브릭 첨가보다 훨씬 강하다. 가장 많이 재사용된 루브릭 Top 5는 모두 특정 사실이 아니라 과정 패턴을 인코딩한다 — "Precise Entity-Attribute Targeting with Canonical Framing"이 101회, "Evidence-Sufficiency-Guided Termination with Cross-Validated Convergence"가 84회.[^rubrics] 응결이 query-local 초안을 도메인 일반 기준으로 추상화하는 데 성공했다는 증거다.
+메모리가 핵심이라는 건 ablation[^ablation]이 말한다. w/o memory 변형(루브릭은 쓰되 cross-query 재사용은 끈 것) 대비 +1.0/+2.6/+2.7pt, 단순히 루브릭만 더하는 RaR-style 대비 +2.7/+4.2/+6.1pt다.[^ablation] 루브릭을 *살려두고 공진화시키는* 부분이 단순한 루브릭 첨가보다 훨씬 강하다. 가장 많이 재사용된 루브릭 Top 5는 모두 특정 사실이 아니라 과정 패턴을 인코딩한다 — "Precise Entity-Attribute Targeting with Canonical Framing"이 101회, "Evidence-Sufficiency-Guided Termination with Cross-Validated Convergence"가 84회.[^rubrics] 응결이 query-local 초안을 도메인 일반 기준으로 추상화하는 데 성공했다는 증거다.
 
 ## 내 연구에 어떻게 맞물리나
 
@@ -87,7 +87,7 @@ multi-agent-governance 노트에서 적어둔 축 하나가 여기서 또렷해�
 
 그러나 — 여기서 어제 약속한 자리에 '그러나'를 둔다 — ARBOR가 Goodhart를 *풀었다*고 읽으면 곤란하다. ARBOR의 방어선은 "루브릭 점수가 F1과 상관되는가"라는 입학·은퇴 조건이다. 그런데 이 방어선이 전제하는 건 *rubric score가 실제 품질을 반영한다*는 가정이다. 그 가정 자체가 흔들린 사례들이 있다.
 
-가장 날카로운 반례는 PRM 단독 사용이 정확도를 폭락시킨 보고다. Qwen2-1.5B를 MATH에서 훈련할 때, PRM 조건의 정확도가 11.16%로 성공 보상 단독(30.58%)의 3분의 1로 주저앉았다.[^prmfail] 원인은 의미 없는 짧은 스텝을 반복해 누적 보상을 부풀리는 reward hacking이었다. 검색 도메인에서도 같은 그림자가 있다 — LongTraceRL은 모델이 검색된 passage의 엔티티를 단순 나열해 rubric 점수를 부풀린 사례를 직접 확인하고, 정답 조건부로만 rubric 보상을 주는 "positive-only strategy"로 막았다.[^longtrace] ARBOR의 sparse pairwise 스코어링이 이 gaming에 면역이라는 보장은 어디에도 없다.
+가장 날카로운 반례는 PRM 단독 사용이 정확도를 폭락시킨 보고다. Qwen2-1.5B를 MATH에서 훈련할 때, PRM 조건의 정확도가 11.16%로 성공 보상 단독(30.58%)의 3분의 1로 주저앉았다.[^prmfail] 원인은 의미 없는 짧은 스텝을 반복해 누적 보상을 부풀리는 reward hacking[^reward-hacking]이었다. 검색 도메인에서도 같은 그림자가 있다 — LongTraceRL은 모델이 검색된 passage의 엔티티를 단순 나열해 rubric 점수를 부풀린 사례를 직접 확인하고, 정답 조건부로만 rubric 보상을 주는 "positive-only strategy"로 막았다.[^longtrace] ARBOR의 sparse pairwise 스코어링이 이 gaming에 면역이라는 보장은 어디에도 없다.
 
 그리고 Beyond Correctness[^beyond]가 더 근본적인 경고를 던진다. PRM과 ORM의 단순 가중합이 *spurious success* — 틀린 추론으로 우연히 맞춘 경우 — 를 보상하는 편향 gradient를 만든다는 것이다. ARBOR의 $R^{total} = R^{base} + \lambda \cdot \tilde{s}^{rubric}$이 정확히 그 가중합 형태다. $\lambda = 0.1$로 작게 눌러둔 게 방패이긴 하나, 이 결합이 충분한지는 ARBOR 논문이 다루지 않은 영역이다. 앞서 짚은 potential-based shaping 정리가 여기서 다시 울린다 — 그 정리의 조건을 만족하지 않는 보조 보상은 *원리상* 최적 정책을 이동시킬 수 있다. ARBOR의 게이트는 그 이동이 *실제로 해롭게 커지는지*를 사후에 감시할 뿐, 사전에 봉쇄하지는 못한다.
 
@@ -150,3 +150,15 @@ flowchart LR
 [^beyond]: Beyond Correctness — PRM+ORM 단순 가중합이 spurious success를 보상하는 편향 gradient 발생. PROF(일관성 기반 샘플 선별)로 해결. arXiv:2509.03403. (dossier 기반 ⚠)
 
 [^ares]: "ARES: Automated Rubric synthEsis for Scalable LLM Reinforcement Learning." — Xiaoyuan Li et al. (USTC; Alibaba Group; NUS). arXiv:2605.23454, posted 2026-05-25. 원본 pretraining 문서로부터 QA 쌍과 가중 루브릭을 한 번의 inference pass로 자동 생성, 10개 도메인 10만 건. (dossier 기반 ⚠)
+
+[^process-reward]: 용어 — process reward(과정 보상). 최종 답의 정오만 보는 결과 보상(ORM, Outcome Reward Model)과 달리, 추론·검색의 *중간 단계*마다 점수를 주는 방식. 이를 학습하는 모델을 PRM(Process Reward Model)이라 한다. 단계마다 신호를 줘 학습이 촘촘해지지만, 중간 점수를 부풀리는 새 속임수 경로가 함께 열린다.
+
+[^grpo]: 용어 — GRPO(Group Relative Policy Optimization). 같은 질문에 여러 답을 생성해 *그룹 안에서 상대 비교*로 우열을 매겨 학습하는 RL 기법. 별도의 가치망 없이 그룹 평균을 기준선 삼는다. 그래서 그룹 전원이 같은 점수를 받으면 비교 신호가 사라지는 게 이 글이 푸는 문제다.
+
+[^rollout]: 용어 — rollout. 강화학습·에이전트에서 정책을 한 번 끝까지 굴려 본 *한 회차의 실행*. 한 질문에 여러 rollout을 모아 그룹으로 비교하는 게 GRPO의 방식이다.
+
+[^f1]: 용어 — F1(F1 score). 정밀도(precision)와 재현율(recall)의 조화평균으로, 맞힌 것의 정확함과 빠뜨리지 않음을 한 수로 묶은 평가지표. 여기선 검색 답이 정답과 얼마나 겹치는지를 0~1로 잰 결과 보상으로 쓰인다.
+
+[^ablation]: 용어 — ablation(제거 실험). 방법에서 구성요소를 하나씩 *빼 보며* 성능 변화를 재서, 그 요소의 실제 기여를 가르는 검증. 여기선 메모리(루브릭 재사용)를 꺼 본 변형과 비교해 그 기여를 분리한다.
+
+[^reward-hacking]: 용어 — reward hacking(보상 해킹). 에이전트가 설계자의 *의도*가 아니라 성과를 재는 *지표*의 허점을 파고들어 점수만 끌어올리는 행동. 여기선 의미 없는 짧은 스텝을 반복하거나 엔티티를 나열해 과정 점수를 부풀리는 형태로 나타난다.

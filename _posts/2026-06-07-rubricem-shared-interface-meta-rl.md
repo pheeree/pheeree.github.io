@@ -14,7 +14,7 @@ RubricEM ([arXiv:2605.10899](https://arxiv.org/abs/2605.10899))[^title]. 제목�
 
 ## 왜 골랐나
 
-deep research agent는 RLVR이 닿지 못하는 가장 먼 곳에 있다. 답에 ground-truth가 없고, 궤적은 도구를 부르는 수많은 결정으로 길게 늘어지며, 표준 사후훈련에는 *지난 시도를 재사용 가능한 경험으로 바꾸는 장치*가 거의 없다. 저자들의 진단이 정확하다.
+deep research agent는 RLVR[^rlvr]이 닿지 못하는 가장 먼 곳에 있다. 답에 ground-truth가 없고, 궤적은 도구를 부르는 수많은 결정으로 길게 늘어지며, 표준 사후훈련에는 *지난 시도를 재사용 가능한 경험으로 바꾸는 장치*가 거의 없다. 저자들의 진단이 정확하다.
 
 > "Training deep research agents—systems that plan, search, evaluate evidence, and synthesize long-form reports—pushes reinforcement learning beyond the regime of verifiable rewards. Their outputs lack ground-truth answers, their trajectories span many tool-augmented decisions, and standard post-training offers little mechanism for turning past attempts into reusable experience. In this work, we argue that rubrics should serve not merely as final-answer evaluators, but as the shared interface that structures policy execution, judge feedback, and agent memory."[^abstract]
 
@@ -45,7 +45,7 @@ flowchart LR
   ANSWER -. " " .-> SCORE
 ```
 
-이 스캐폴드가 단순한 형식이 아니라는 건 ablation이 말한다. 스캐폴드 없이 RL만 돌리면 600 스텝 동안 이득이 작고 불안정하다. 구조화 SFT를 거친 뒤 RL을 돌리면 꾸준히 향상된다.
+이 스캐폴드가 단순한 형식이 아니라는 건 ablation[^ablation]이 말한다. 스캐폴드 없이 RL만 돌리면 600 스텝 동안 이득이 작고 불안정하다. 구조화 SFT[^sft]를 거친 뒤 RL을 돌리면 꾸준히 향상된다.
 
 > "Without the scaffold, RL gains are small and unstable for 600 steps, suggesting that rubric-conditioned stages provide useful structure for exploration and credit assignment."[^scaffold]
 
@@ -67,13 +67,13 @@ $$G^\Lambda_{i,k} = \sum_{j=k}^K \lambda_{k,j} R_{i,j}$$
 
 $$\mathcal{L}_\text{SS-GRPO} = -\frac{1}{n}\sum_i\sum_k\sum_t \min\!\big(\rho_{i,t}A_{i,k},\ \text{clip}(\rho_{i,t}, 1-\eta, 1+\eta)A_{i,k}\big) + \beta D_\text{KL}$$
 
-눈여겨볼 건 critic이 없다는 점이다. 단계 감독이 판사 정의에서 직접 나오므로, value network를 따로 학습할 필요가 없다. critic-free의 단순성을 유지하면서 단계별 밀집 신호를 얻는다. 발상의 결을 보면 익숙하다 — $\lambda_{k,j}$는 TD($\lambda$)의 eligibility trace가 시간축에서 하던 일을 *단계축*으로 옮긴 것이고, critic 없이 그룹 정규화로 advantage를 뽑는 건 GRPO의 본래 처방이다. 새것은 그 둘의 결합 지점, 곧 "판사 정의가 곧 단계 분해의 정의"라는 등식이다.
+눈여겨볼 건 critic이 없다는 점이다. 단계 감독이 판사 정의에서 직접 나오므로, value network를 따로 학습할 필요가 없다. critic-free의 단순성을 유지하면서 단계별 밀집 신호를 얻는다. 발상의 결을 보면 익숙하다 — $\lambda_{k,j}$는 TD($\lambda$)의 eligibility trace가 시간축에서 하던 일을 *단계축*으로 옮긴 것이고, critic 없이 그룹 정규화로 advantage를 뽑는 건 GRPO[^grpo]의 본래 처방이다. 새것은 그 둘의 결합 지점, 곧 "판사 정의가 곧 단계 분해의 정의"라는 등식이다.
 
 여기서 어제 ARBOR 글에서 인용한 turn-level credit 연구가 다시 울린다. Turn-level credit assignment가 episode-level GRPO 대비 수렴 속도·정확도·포맷을 모두 개선했다는 보고[^turn]는 $V_\text{stage} > V_\text{flat}$의 경험적 재확인이다. 같은 문장을 SWE-TRACE는 코딩 도메인에서 루브릭 기반 PRM으로 다시 썼고[^swetrace], HCAPO는 루브릭 없이 LLM 내재 판단만으로 Q값을 소급 정제하는 *대안 경로*를 보였다[^hcapo]. RubricEM의 단계 분해는 이 흐름의 한 점이지 외딴 발명이 아니다.
 
 ### 3. Reflection Meta-Policy: 판정된 궤적이 미래의 안내가 된다
 
-세 번째가 RubricEM을 단순한 단계별 GRPO와 가르는 지점이다. 판정된 궤적을 *재사용 가능한 루브릭 근거 안내*로 변환해 "agent rubric bank"에 저장한다. 그리고 그 반성을 미래 rollout의 컨텍스트로 주입한다.
+세 번째가 RubricEM을 단순한 단계별 GRPO와 가르는 지점이다. 판정된 궤적을 *재사용 가능한 루브릭 근거 안내*로 변환해 "agent rubric bank"에 저장한다. 그리고 그 반성을 미래 rollout[^rollout]의 컨텍스트로 주입한다.
 
 핵심 영리함은 *공유 백본*이다. task policy와 reflection meta-policy가 같은 파라미터를 쓴다. 별도 모델을 학습하지 않는다. 두 모드로 작동한다 — 같은 쿼리를 재시도할 때의 within-episode refinement, 유사 쿼리를 검색해 끌어오는 cross-episode transfer.
 
@@ -100,9 +100,9 @@ ablation은 두 축이 보완적임을 보인다. Baseline-RL → SS-GRPO → Me
 
 첫째, 반성을 *판단하는 판사*와 *판단받는 정책*이 같은 백본이다. self-preference bias가 정확히 이 구도에서 터진다. 같은 모델이 judge와 policy를 겸할 때 최대 50%의 자기 선호 편향이 보고됐다.[^selfpref] cross-episode로 전이되는 반성이 *편향된 채로 누적*될 수 있다는 뜻이다. rubric bank가 경험의 저장소이자 편향의 저장소가 될 위험이다.
 
-둘째, 단계 분해는 보상 신호를 풍부하게 하지만 *reward hacking 경로도 함께 늘린다*. CHERRL에서 judge 편향 — 어조·자기칭찬·서식 — 을 학습하는 reward hacking이 재현됐다.[^hacking] 단계마다 판사가 있다는 건 단계마다 속일 표면이 있다는 것이다. SS-GRPO가 Plan·Research·Review·Answer 넷에 각각 채점기를 둘 때, gaming 표면도 넷으로 늘어난다.
+둘째, 단계 분해는 보상 신호를 풍부하게 하지만 *reward hacking[^reward-hacking] 경로도 함께 늘린다*. CHERRL에서 judge 편향 — 어조·자기칭찬·서식 — 을 학습하는 reward hacking이 재현됐다.[^hacking] 단계마다 판사가 있다는 건 단계마다 속일 표면이 있다는 것이다. SS-GRPO가 Plan·Research·Review·Answer 넷에 각각 채점기를 둘 때, gaming 표면도 넷으로 늘어난다.
 
-셋째, 그리고 가장 근본적인 반례. 단계 분해 없이도 SOTA에 닿은 경우가 있다. DR Tulu의 RLER은 co-evolving rubric만으로 — 단계 분해 없이 — SOTA를 달성했다.[^drtulu] RubricEM이 DR Tulu를 스텝 효율과 절대 점수에서 앞섰지만, 이것이 *단계 분해의 고유 기여*인지 *반성 재사용의 기여*인지는 ablation이 둘을 함께 켰을 때의 이득만 보여줄 뿐, 단계 분해 단독이 DR Tulu 방식 대비 얼마나 본질적인지는 미검증으로 남는다. "단계가 필요하다"는 Theorem 1의 주장과 "단계 없이도 됐다"는 DR Tulu의 사실이 한 테이블에서 만난다.
+셋째, 그리고 가장 근본적인 반례. 단계 분해 없이도 SOTA[^sota]에 닿은 경우가 있다. DR Tulu의 RLER은 co-evolving rubric만으로 — 단계 분해 없이 — SOTA를 달성했다.[^drtulu] RubricEM이 DR Tulu를 스텝 효율과 절대 점수에서 앞섰지만, 이것이 *단계 분해의 고유 기여*인지 *반성 재사용의 기여*인지는 ablation이 둘을 함께 켰을 때의 이득만 보여줄 뿐, 단계 분해 단독이 DR Tulu 방식 대비 얼마나 본질적인지는 미검증으로 남는다. "단계가 필요하다"는 Theorem 1의 주장과 "단계 없이도 됐다"는 DR Tulu의 사실이 한 테이블에서 만난다.
 
 ```mermaid
 flowchart TB
@@ -191,3 +191,17 @@ flowchart LR
 [^skills]: "SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution." — Hongyi Liu, Haoyan Yang, Tao Jiang, Bo Tang, Feiyu Xiong, Zhiyu Li (MemTensor). arXiv:2605.18401, 2026-05-18. Agent Skills = 실행 가능 스크립트 + 비실행 안내; offline evolution이 GPT-5.2를 Terminal-Bench 2.0에서 최대 7.9pp, online evolution이 SWE-Bench Pro에서 최대 2.6pp 향상. (초록 수준 통독 기반 ⚠)
 
 [^governance]: institutional alignment("단일 거대 신탁이 아닌 혼합 사회 시스템") 정식화는 Evans·Bratton·Arcas(2026)에 귀속 — knowledge-mind multi-agent-governance.md 노트. "knowledge compile을 grader 체인으로 선언화" 연결은 microsoft-waza-analysis.md 노트. (배경지식·노트 기반 ⚠)
+
+[^rlvr]: 용어 — RLVR(Reinforcement Learning with Verifiable Rewards). 정답을 기계적으로 *검증할 수 있는* 과제(수학·코드처럼 맞고 틀림이 자동 판정되는)에서 그 정오를 보상으로 삼는 강화학습. deep research처럼 정답이 없는 장문 과제는 이 틀 바깥이라, 루브릭 같은 대리 기준이 필요해진다.
+
+[^ablation]: 용어 — ablation(제거 실험). 방법에서 구성요소를 하나씩 *빼 보며* 성능 변화를 재서, 그 요소가 실제로 기여하는지 가르는 검증 방식. 의학의 절제 실험에서 온 말.
+
+[^sft]: 용어 — SFT(Supervised Fine-Tuning, 지도 미세조정). 입력-정답 쌍으로 모델을 직접 학습시키는 단계. 보통 RL을 돌리기 전, 원하는 형식·행동을 먼저 새겨 넣는 준비 운동으로 쓴다.
+
+[^grpo]: 용어 — GRPO(Group Relative Policy Optimization). 같은 질문에 여러 답을 생성해 *그룹 안에서 상대 비교*로 우열을 매겨 학습하는 RL 기법. 별도의 가치망(critic) 없이 그룹 평균을 기준선 삼는 게 특징이라 가볍다.
+
+[^rollout]: 용어 — rollout. 강화학습·에이전트에서 정책을 한 번 끝까지 굴려 본 *한 회차의 실행*. 여기선 과거 반성을 다음 실행 회차의 입력 맥락으로 끼워 넣는다는 뜻.
+
+[^reward-hacking]: 용어 — reward hacking(보상 해킹). 에이전트가 설계자의 *의도*가 아니라 성과를 재는 *지표*의 허점을 파고들어 점수만 끌어올리는 행동. 여기선 판사의 편향(어조·서식 등)에 영합해 내용 없이 점수를 따는 형태로 나타난다.
+
+[^sota]: 용어 — SOTA(State-of-the-art). 특정 과제에서 *현재까지 가장 좋은* 성능. "SOTA에 닿았다"는 그 시점 최고 기록과 어깨를 나란히 했다는 뜻.

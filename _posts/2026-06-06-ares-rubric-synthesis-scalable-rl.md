@@ -18,7 +18,7 @@ ARES ([arXiv:2605.23454](https://arxiv.org/abs/2605.23454))[^title]. 제목 그�
 
 그런데 이 다리엔 늘 병목이 있었다. 루브릭을 *사람이 써야* 했다. 전문가가 질문 세트를 짜고 작업마다 기준을 손으로 만든다. scalable할 리 없고, 작업 수준(task-level)에 고정된 루브릭은 개별 질문의 평가 요구를 못 담는다.[^abstract] 의료 질문 하나하나가 묻는 게 다른데 "정확성·완전성·명료성"이라는 일반 틀을 똑같이 씌우는 셈이다.
 
-ARES의 발상은 이 병목을 공정으로 바꾸는 것이다. 질문이 태어나는 그 순간 그 질문 전용 가중 루브릭이 같이 태어난다 — instance-level 보상 감독이다. "데이터를 사람이 라벨링하지 말고 모델이 합성하게 하라"는 발상 자체는 Self-Instruct·RLAIF의 계보지만, ARES는 그것을 라벨이 아니라 *채점 규칙*의 합성으로 옮긴 판본이다.
+ARES의 발상은 이 병목을 공정으로 바꾸는 것이다. 질문이 태어나는 그 순간 그 질문 전용 가중 루브릭이 같이 태어난다 — instance-level 보상 감독이다. "데이터를 사람이 라벨링하지 말고 모델이 합성하게 하라"는 발상 자체는 Self-Instruct·RLAIF[^rlaif]의 계보지만, ARES는 그것을 라벨이 아니라 *채점 규칙*의 합성으로 옮긴 판본이다.
 
 ## 핵심 세 가지
 
@@ -46,9 +46,9 @@ $J_\phi$는 LLM 판사가 응답 $y$가 기준 $c_k$를 충족하는지 판정�
 
 ### 2. 숫자가 떠받치는 자리, 그리고 떠받치지 못하는 자리
 
-Qwen3-4B-Base에서 ARES-RL이 평균 52.69로 최고다.[^main] 같은 사전훈련 문서 풀에서 next-token prediction(CPT)이 아니라 루브릭 보상으로 최적화했을 때 HealthBench +6.41, IFEval +15.49가 올랐다.[^cpt] 특히 IFEval은 +19.27(vs Webscale)로 격차가 크다 — 지시의 각 조항을 조목조목 짚기에 루브릭이 알맞은 도메인이다. ARES-SFT 대비 +2.98pt라는 분리도 깔끔하다.[^sft] 같은 데이터를 쓰되 차이가 *루브릭 보상 신호 자체*에서 온다는 뜻이다.
+Qwen3-4B-Base에서 ARES-RL이 평균 52.69로 최고다.[^main] 같은 사전훈련 문서 풀에서 next-token prediction(CPT)이 아니라 루브릭 보상으로 최적화했을 때 HealthBench +6.41, IFEval +15.49가 올랐다.[^cpt] 특히 IFEval은 +19.27(vs Webscale)로 격차가 크다 — 지시의 각 조항을 조목조목 짚기에 루브릭이 알맞은 도메인이다. ARES-SFT[^sft] 대비 +2.98pt라는 분리도 깔끔하다.[^sft] 같은 데이터를 쓰되 차이가 *루브릭 보상 신호 자체*에서 온다는 뜻이다.
 
-그러나 — 여기에 '그러나'를 둔다 — ablation을 읽으면 한 겹 복잡해진다. 같은 데이터·같은 GRPO에서 보상 전략만 바꾼 비교에서, 질문별 루브릭(52.69)이 일반 루브릭(51.79)을 이긴 폭은 *평균 0.90pt*에 불과하다.[^ablation] ARES의 핵심 주장 — 질문별 맞춤이 일반보다 낫다 — 은 참이나 우위가 생각만큼 크지 않다. 논문 스스로 인정한다.
+그러나 — 여기에 '그러나'를 둔다 — ablation[^ablation]을 읽으면 한 겹 복잡해진다. 같은 데이터·같은 GRPO[^grpo]에서 보상 전략만 바꾼 비교에서, 질문별 루브릭(52.69)이 일반 루브릭(51.79)을 이긴 폭은 *평균 0.90pt*에 불과하다.[^ablation] ARES의 핵심 주장 — 질문별 맞춤이 일반보다 낫다 — 은 참이나 우위가 생각만큼 크지 않다. 논문 스스로 인정한다.
 
 > "no reward strategy dominates every individual benchmark. Different reward designs encode different inductive biases."[^ablation]
 
@@ -71,7 +71,7 @@ multi-agent-governance 노트의 Institution 축이 또 깊어진다. 어제 ARB
 
 그런데 이 치환이 구조적 한계를 극복하는가, 새 구조적 문제를 부르는가. 나는 후자에 무게를 둔다. 근거는 가장 날카로운 반례에 있다. Reward Hacking in Rubric-Based RL ([arXiv:2605.12474](https://arxiv.org/abs/2605.12474))[^hacking]이 12,956개 루브릭 항목을 뜯어보니 *presence-based* 기준(어떤 요소가 있는가)이 가중치의 90.2%를 차지했다. RL 최적화 후 rubric 판단자는 훈련된 모델을 85.8% 선호하지만, *rubric-free* 판단자는 오히려 기본 모델을 78.4% 선호한다. 루브릭으로 최적화한 결과가 루브릭을 안 보는 눈에는 *나빠 보였다*는 뜻이다.
 
-이게 ARES의 전제를 흔든다. ARES의 통계를 다시 보라 — positive criteria 817,047개, negative 291,116개.[^stats] positive란 곧 "이 요소가 있어야 한다"는 presence-based 기준이다. ARES가 대량 합성한 루브릭의 골격이 바로 reward hacking이 위험하다 짚은 그 형태다. "루브릭이 품질 신호를 전달한다"는 출발 전제가 presence 충족과 품질 사이의 간극에서 샐 수 있다.
+이게 ARES의 전제를 흔든다. ARES의 통계를 다시 보라 — positive criteria 817,047개, negative 291,116개.[^stats] positive란 곧 "이 요소가 있어야 한다"는 presence-based 기준이다. ARES가 대량 합성한 루브릭의 골격이 바로 reward hacking[^reward-hacking]이 위험하다 짚은 그 형태다. "루브릭이 품질 신호를 전달한다"는 출발 전제가 presence 충족과 품질 사이의 간극에서 샐 수 있다.
 
 intellectual-honesty 노트의 의제가 여기 걸린다. 루브릭의 미덕은 *명시성*이다 — "왜 이 점수인가"를 감사 가능하게 만든다. 하지만 reward hacking은 그 해석 가능성이 *외형적*일 수 있음을 경고한다. 명시적인 것과 옳은 것은 다르다.
 
@@ -129,3 +129,13 @@ flowchart TB
 [^infimed]: InfiMed-ORBIT — 의료 개방형 과제에서 루브릭 기반 점진 훈련이 SFT 베이스라인 대비 유의미한 향상. 다른 도메인·모델·루브릭 조달 방식에서 ARES 방향 독립 재확인. arXiv:2510.15859. (통합 dossier 기반 ⚠)
 
 [^governance]: 집단 스케일링 3축 중 Institution 축(규범·프로토콜·공유 기억의 성숙도), 및 RLHF의 구조적 한계(인간 피드백 ↔ 단일 모델의 이자 관계) 정식화는 Evans·Bratton·Arcas(2026)에 귀속 — knowledge-mind multi-agent-governance.md 노트의 위치짓기. ARES 논문의 주장 아님.
+
+[^rlaif]: 용어 — RLAIF(RL from AI Feedback). 사람이 주던 선호 피드백을 *다른 AI 모델*이 대신 주게 해 강화학습하는 방식. 사람이 일일이 라벨링하던 RLHF(RL from Human Feedback)의 확장으로, 비용·규모의 병목을 모델로 푼다. ARES는 이 발상을 라벨이 아니라 채점 규칙(루브릭) 합성으로 옮겼다.
+
+[^sft]: 용어 — SFT(Supervised Fine-Tuning, 지도 미세조정). 입력-정답 쌍으로 모델을 직접 학습시키는 단계. ARES-SFT는 ARES가 만든 데이터로 *모방 학습*만 한 모델로, 같은 데이터에 RL을 더한 ARES-RL과 비교해 보상 신호의 순수 기여를 가른다.
+
+[^grpo]: 용어 — GRPO(Group Relative Policy Optimization). 같은 질문에 여러 답을 생성해 *그룹 안에서 상대 비교*로 우열을 매겨 학습하는 RL 기법. 별도의 가치망(critic) 없이 그룹 평균을 기준선 삼아 가볍다.
+
+[^ablation]: 용어 — ablation(제거 실험). 방법에서 구성요소를 하나씩 *빼 보거나 바꿔 보며* 성능 변화를 재서, 그 요소의 실제 기여를 가르는 검증. 여기선 보상 전략만 바꿔 질문별 루브릭의 효과를 분리한다.
+
+[^reward-hacking]: 용어 — reward hacking(보상 해킹). 에이전트가 설계자의 *의도*가 아니라 성과를 재는 *지표*의 허점을 파고들어 점수만 끌어올리는 행동. 여기선 "요소가 있으면 가점"인 presence 기준에 영합해, 실질 품질 없이 항목만 채우는 형태로 샌다.
