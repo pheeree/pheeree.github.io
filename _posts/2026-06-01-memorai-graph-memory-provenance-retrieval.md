@@ -20,7 +20,7 @@ TGL(Temporal Graph Learning) 트리거를 다룬 어제 글에서 나는 한 가
 
 4월에 스스로 적어둔 이 의심을 아직 해소하지 못했다. MemORAI는 그 의심의 반대편에서 나온 답이다. 그래프를 버리지 않고, 오히려 그래프를 *정교하게 만들어* 검색의 품질을 올리겠다는 선택.
 
-계보를 짚고 가자. PageRank는 Brin·Page 1998의 웹 그래프 링크 분석에서 왔다. 그것이 KG 검색에 들어오면서 Personalized PageRank(PPR)가 되었고 — 쿼리 노드를 seed로 두어 관련 부분에서 랜덤 워크를 시작한다 — HippoRAG 2가 이 방향에서 대화 메모리에 처음 진지하게 적용했다. MemORAI의 Dynamic Weighted PageRank(DW-PR)는 그 후속 물음이다: PPR이 엣지를 모두 균등하게 취급한다면, *쿼리와 의미적으로 더 가까운 엣지에 더 많은 흐름을 실어*도 되지 않을까?
+계보를 짚고 가자. PageRank는 Brin·Page 1998의 웹 그래프 링크 분석에서 왔다. 그것이 KG[^kg] 검색에 들어오면서 Personalized PageRank(PPR)가 되었고 — 쿼리 노드를 seed로 두어 관련 부분에서 랜덤 워크를 시작한다 — HippoRAG 2가 이 방향에서 대화 메모리에 처음 진지하게 적용했다. MemORAI의 Dynamic Weighted PageRank(DW-PR)는 그 후속 물음이다: PPR이 엣지를 모두 균등하게 취급한다면, *쿼리와 의미적으로 더 가까운 엣지에 더 많은 흐름을 실어*도 되지 않을까?
 
 20년 묵은 알고리즘이 대화 메모리에 와서 다시 묻는 셈이다.
 
@@ -30,7 +30,7 @@ TGL(Temporal Graph Learning) 트리거를 다룬 어제 글에서 나는 한 가
 
 대부분의 대화 메모리 시스템은 무엇을 버릴지 결정하는 데 소극적이다. 대화를 그대로 쌓거나, 조각으로 자른 뒤 유사도 순으로 검색하거나. MemORAI는 오프라인 인덱싱 단계에서 먼저 "사용자-페르소나 관련 내용"만 걸러낸다. 선호, 습관, 의도, 정체성 마커 — 이것들만 그래프에 들어간다. 버려진 메시지는 세그먼트 요약($\sigma_i$)이라는 전역 맥락 앵커로 남아 정보 손실을 최소화한다.
 
-에블레이션 결과가 흥미롭다. 선택적 필터링을 제거하면 턴 R@10이 91.63 → 73.85로 내려간다 (LongMemEval-s 기준).[^seg] 약 18포인트 손실. 큰 숫자지만, 같은 실험에서 토픽 분절화를 제거했을 때의 91.63 → 23.86과 비교하면 훨씬 완만하다. **분절화가 더 강한 구조 선행정보를 제공한다**는 것이다. 이 비대칭이 나는 예상 밖이었다.
+에블레이션[^ablation] 결과가 흥미롭다. 선택적 필터링을 제거하면 턴 R@10[^recall-at-k]이 91.63 → 73.85로 내려간다 (LongMemEval-s 기준).[^seg] 약 18포인트 손실. 큰 숫자지만, 같은 실험에서 토픽 분절화를 제거했을 때의 91.63 → 23.86과 비교하면 훨씬 완만하다. **분절화가 더 강한 구조 선행정보를 제공한다**는 것이다. 이 비대칭이 나는 예상 밖이었다.
 
 무엇을 버릴까보다 어디서 자를까가 먼저다.
 
@@ -42,7 +42,7 @@ MemORAI의 그래프는 세 가지 노드 타입을 갖는다. Entity 노드($e 
 
 출처 추적이 생성 품질에 얼마나 기여하는가? Turn + Triplets 조건 vs Turn only: GPT4o-J가 LongMemEval-s에서 61.72 → 75.55, 즉 +13.83포인트 오른다.[^triplet] LOCOMO-10에서는 51.66 → 60.22 (+8.45). 어디서 왔는지를 아는 것이 *무엇을* 검색했는지 못지않게 생성 품질에 중요하다는 뜻이다.
 
-별도의 연구([arXiv:2411.01022](https://arxiv.org/abs/2411.01022), EMNLP 2024)도 같은 방향을 가리킨다. NLI 기반 경량 출처 추적으로 LLM 출력 오류를 특정 컨텍스트 청크로 역추적하는 방법이 넓은 범위의 데이터셋에서 유효함을 보였다. 그래프 없이 순수한 RAG 파이프라인에서 나온 결과지만, 출처가 있으면 오류가 줄어든다는 결론은 같다.
+별도의 연구([arXiv:2411.01022](https://arxiv.org/abs/2411.01022), EMNLP 2024)도 같은 방향을 가리킨다. NLI[^nli] 기반 경량 출처 추적으로 LLM 출력 오류를 특정 컨텍스트 청크로 역추적하는 방법이 넓은 범위의 데이터셋에서 유효함을 보였다. 그래프 없이 순수한 RAG[^rag] 파이프라인에서 나온 결과지만, 출처가 있으면 오류가 줄어든다는 결론은 같다.
 
 ### 3. 동적 가중 PageRank — 균등하게 흐르지 않는 그래프
 
@@ -115,3 +115,13 @@ pheeree,
 [^triplet]: "Augmenting turns with their associated relational context consistently improves output quality: on LOCOMO-10, GPT4o judge scores increase from 51.66 to 60.22 (+8.45), and BLEU more than doubles (13.58 → 33.00). Larger gains are observed on LongMemEval-s (GPT4o-J: +13.83)." — Pham Van et al. (2026), §4.3.3.
 
 [^dwpr]: "Table 5 shows that dynamic edge weighting consistently improves retrieval across both benchmarks and granularities. For instance, turn-level R@10 increases by +1.88 on LongMemEval-s (89.75 → 91.63) and +2.67 on LOCOMO-10 (62.01 → 64.68) over uniform weighting." — Pham Van et al. (2026), §4.3.2.
+
+[^kg]: 용어 — KG(Knowledge Graph, 지식 그래프). 개체(entity)를 노드로, 그들 사이 관계를 엣지로 표현한 그래프형 지식 표현. "Alex —Visited→ Paris"처럼 사실을 삼중항으로 잇는다.
+
+[^recall-at-k]: 용어 — R@K(Recall@K). 검색이 돌려준 상위 K개 안에 정답이 들어 있는 비율. R@10이면 상위 10개 기준이다. 순위 매기기 품질을 재는 표준 지표로, 숫자가 클수록 좋다.
+
+[^ablation]: 용어 — ablation(제거 실험, 본문 표기 "에블레이션"). 시스템에서 구성요소를 하나씩 *빼 보며* 성능 변화를 재서 그 요소의 기여를 가르는 검증. 여기선 필터링·분절화를 각각 꺼 보아 어느 쪽이 더 결정적인지 비교한다.
+
+[^nli]: 용어 — NLI(Natural Language Inference, 자연어 추론). 전제 문장이 가설 문장을 *함의/모순/중립* 중 무엇으로 처리하는지 판정하는 과제. 출처 추적에선 "이 출력이 이 근거로 뒷받침되는가"를 이 함의 판정으로 가린다.
+
+[^rag]: 용어 — RAG(Retrieval-Augmented Generation, 검색 증강 생성). 답을 바로 생성하지 않고 외부 문서를 먼저 *검색*해 그 내용을 근거로 생성하는 방식. 여기선 그래프 메모리를 얹지 않은 "순수 RAG"가 비교 기준이 된다.

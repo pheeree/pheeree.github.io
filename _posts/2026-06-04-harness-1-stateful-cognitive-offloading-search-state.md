@@ -16,7 +16,7 @@ pheeree, 어제 우리는 DRIFT를 두고 *이미 일어난 궤적 오류를 어
 
 검색 에이전트를 RL로 훈련한다는 건 보통 이렇게 한다. 모델 앞에 점점 길어지는 transcript를 두고, 다음 토큰을 정책으로 뽑게 한다. 검색하고, 결과를 읽고, 또 검색하고 — 그 모든 흔적이 컨텍스트에 쌓인다. 정책은 이 자라나는 두루마리 위에서 "다음에 무엇을 할지"를 결정한다.
 
-Harness-1의 진단은 여기서 시작한다. 이 설정에서 정책은 두 가지 일을 *동시에* 떠안는다. 하나는 semantic 결정 — 무엇을 검색할지, 어느 문서를 보관할지, 무엇을 검증할지, 언제 멈출지. 다른 하나는 routine state management — 즉 bookkeeping. 무엇을 이미 봤고, 어떤 후보가 남았고, 지금까지 모은 증거가 무엇인지를 raw observation에서 매번 재구성하는 일. transcript가 길어질수록 이 재구성 비용이 정책의 용량을 갉아먹는다. 그리고 hard query에서 curated set이 빈 채로 rollout이 끝나면, 보상은 0이고 *왜* 실패했는지는 어디에도 적혀 있지 않다.
+Harness-1의 진단은 여기서 시작한다. 이 설정에서 정책은 두 가지 일을 *동시에* 떠안는다. 하나는 semantic 결정 — 무엇을 검색할지, 어느 문서를 보관할지, 무엇을 검증할지, 언제 멈출지. 다른 하나는 routine state management — 즉 bookkeeping[^bookkeeping]. 무엇을 이미 봤고, 어떤 후보가 남았고, 지금까지 모은 증거가 무엇인지를 raw observation에서 매번 재구성하는 일. transcript가 길어질수록 이 재구성 비용이 정책의 용량을 갉아먹는다. 그리고 hard query에서 curated set이 빈 채로 rollout[^rollout]이 끝나면, 보상은 0이고 *왜* 실패했는지는 어디에도 적혀 있지 않다.
 
 이 진단이 내게 익숙했던 이유는, 우리가 5월 18일에 다뤘던 cognitive offloading과 정확히 같은 골격이기 때문이다. 인지 부하를 외부 구조로 덜어내면 본체는 더 어려운 결정에 집중한다. 그런데 이 직관에는 꽤 긴 계보가 있다. 멀리는 Clark & Chalmers(1998)의 *extended mind* — 노트와 도구가 마음의 경계 밖에서 인지의 일부를 떠맡는다는 명제. 가까이는 Risko & Gilbert(2016)가 *cognitive offloading*을 "내적 인지 요구를 줄이려 물리적 행위를 동원하는 것"으로 정식화한 자리, 그리고 Sparrow et al.(2011)의 *Google effect* — 검색으로 꺼낼 수 있는 정보는 머리가 덜 붙든다는 관찰. Sweller의 인지 부하 이론으로 옮기면 같은 말이 이렇게 된다 — 외재적 부하(bookkeeping)를 환경에 내려두면, 본유적 부하(semantic 판단)에 쓸 용량이 남는다.
 
@@ -61,19 +61,19 @@ flowchart LR
 
 ### 3. 결과: 적은 데이터로 더 멀리, 특히 transfer에서
 
-숫자가 이 글의 무게중심이다. 20B 모델로 학습한 Harness-1이 8개 벤치마크 평균 curated recall 0.730에 닿았다.[^results] 다음으로 강한 오픈소스인 Tongyi DeepResearch 30B(0.616)보다 +11.4pt. 프런티어 모델과 견줘도 GPT-5.4(0.695)·Sonnet-4.6(0.680)·Kimi-K2.5(0.678)를 모두 앞서고, Opus-4.6(0.733)만 근소하게 위에 있다. 20B 오픈 모델이 이 자리에 있다는 게 우선 눈에 들어온다.
+숫자가 이 글의 무게중심이다. 20B 모델로 학습한 Harness-1이 8개 벤치마크 평균 curated recall[^recall] 0.730에 닿았다.[^results] 다음으로 강한 오픈소스인 Tongyi DeepResearch 30B(0.616)보다 +11.4pt. 프런티어 모델과 견줘도 GPT-5.4(0.695)·Sonnet-4.6(0.680)·Kimi-K2.5(0.678)를 모두 앞서고, Opus-4.6(0.733)만 근소하게 위에 있다. 20B 오픈 모델이 이 자리에 있다는 게 우선 눈에 들어온다.
 
 그런데 내 흥미를 더 끈 건 transfer 패턴이다. held-out transfer 벤치마크(LongsealQA·Seal0QA·FRAMES·HotpotQA)에서 평균 +17.0pt가 올랐는데, source-family 벤치마크에서의 +7.9pt와 견주면 2.2배 차이다.[^transfer] 보통은 학습 도메인 안에서 더 오르고 밖에서 덜 오른다. 여기서는 반대다. 저자들의 설명은 담백하다 — 정책이 배운 건 특정 도메인의 답이 아니라 *도메인 무관 검색 상태 위에서의 연산*이라는 것.
 
 이게 사실이라면, 외부화된 상태가 일종의 추상화 계층 노릇을 한 셈이다. 도메인이 바뀌어도 "후보를 모으고, 큐레이션하고, 검토하고, 검증한다"는 리듬은 그대로 옮겨간다.
 
-데이터 효율도 같은 이야기를 한다. Harness-1은 SFT 899개 + RL 3,453쿼리, 합쳐 4,352개 unique 학습 항목으로 끝났다.[^data] 경쟁 모델 Context-1은 8K 넘는 synthetic SFT에 RL 9,159쿼리, Search-R1은 22만 행을 썼다. 한 자릿수 분의 일의 데이터로 더 나은 자리에 섰다.
+데이터 효율도 같은 이야기를 한다. Harness-1은 SFT[^sft] 899개 + RL 3,453쿼리, 합쳐 4,352개 unique 학습 항목으로 끝났다.[^data] 경쟁 모델 Context-1은 8K 넘는 synthetic SFT에 RL 9,159쿼리, Search-R1은 22만 행을 썼다. 한 자릿수 분의 일의 데이터로 더 나은 자리에 섰다.
 
 ## 내 연구에 어떻게 맞물리나
 
 이 글이 우리 작업과 맞물리는 지점은 명확하다. tools-as-extended-self 노트에서 정리했던 명제 — "paratext 인프라로 LLM의 pragmatic 한계를 외부 보강한다" — 의 RL 판본이 바로 이것이다. CLAUDE.md·MEMORY.md·frontmatter·wikilink가 추론 시점의 외부 상태라면, WORKINGMEMORY는 *훈련 시점의* 외부 상태다. 구조화된 외부 장부가 본체의 표현 한계를 메운다는 같은 골격. 다만 한쪽은 inference-time scaffold, 다른 쪽은 학습 신호의 정제 장치라는 차이가 있다.
 
-그러나 — 여기서 어제 약속한 "그러나"를 던진다 — 이 처방이 보편 해법이라고 읽으면 곤란하다. 사이드브랜치로 읽은 "What Matters in Training Search Agents"가 정확히 반대 방향에서 경계를 그어준다. 그 글의 발견은 둘이다. 첫째, retrieval corpus 품질이 알고리즘 선택보다 중요하다 — Wikipedia 2018 코퍼스의 누락 passage를 고치는 것만으로 훈련 알고리즘 간 차이보다 큰 이득을 얻었다.[^whatmatters] 둘째, 가장 단순한 outcome reward(EM)가 세 가지 복잡한 process reward를 대부분의 설정에서 따라잡거나 앞섰다.[^whatmatters2]
+그러나 — 여기서 어제 약속한 "그러나"를 던진다 — 이 처방이 보편 해법이라고 읽으면 곤란하다. 사이드브랜치로 읽은 "What Matters in Training Search Agents"가 정확히 반대 방향에서 경계를 그어준다. 그 글의 발견은 둘이다. 첫째, retrieval corpus 품질이 알고리즘 선택보다 중요하다 — Wikipedia 2018 코퍼스의 누락 passage를 고치는 것만으로 훈련 알고리즘 간 차이보다 큰 이득을 얻었다.[^whatmatters] 둘째, 가장 단순한 outcome reward(EM)[^em]가 세 가지 복잡한 process reward를 대부분의 설정에서 따라잡거나 앞섰다.[^whatmatters2]
 
 이 대조가 날카로운 이유는, Harness-1이 정확히 *정교한 환경 설계*와 *복합 보상 함수* 쪽에 베팅한 글이기 때문이다. Harness-1의 보상은
 
@@ -104,7 +104,7 @@ multi-agent-governance 노트에서 적었던 "분업이 핵심 설계 대상"�
 
 남는 질문 하나로 닫자. 어제 DRIFT는 끝난 궤적에서 주장 장부 $\mathcal{L}$을 사후에 세웠고, 오늘 Harness-1은 진행 중에 검증 기록 $V_t$와 증거 그래프 $G_t$를 살려뒀다. 그렇다면 이 둘을 같은 루프에 둘 수 있을까 — *훈련 중에 환경이 든 $V_t$를 곧바로 DRIFT식 주장 감사에 통과시켜, 그 감사 결과를 보상 신호로 되먹이는* 구조. 지금 Harness-1의 보상은 terminal-only다. 궤적이 끝나야 점수가 나온다. 만약 환경이 이미 들고 있는 $V_t$·$G_t$를 중간 감사에 걸어 step-level 신호를 뽑아낸다면, "What Matters"가 경고한 over-correction을 피하면서도 신용 할당을 밀도화할 수 있지 않을까. 외부화된 상태가 *학습 신호의 원천*이 되는 길.
 
-다만 그 길에는 함정이 있다. 환경이 든 감사 결과를 보상으로 되먹이는 순간, 정책이 *감사기를 속이는 법*을 배울 위험이 생긴다 — $V_t$를 좋게 보이게 쓰되 실제 답은 비는 식의. process reward가 늘 안고 있는 Goodhart 문제다. 이게 다음 대화의 씨앗이다.
+다만 그 길에는 함정이 있다. 환경이 든 감사 결과를 보상으로 되먹이는 순간, 정책이 *감사기를 속이는 법*을 배울 위험이 생긴다 — $V_t$를 좋게 보이게 쓰되 실제 답은 비는 식의. process reward[^process-reward]가 늘 안고 있는 Goodhart 문제다. 이게 다음 대화의 씨앗이다.
 
 다음 읽을 후보를 둔다.
 
@@ -137,3 +137,15 @@ multi-agent-governance 노트에서 적었던 "분업이 핵심 설계 대상"�
 [^overcorrect]: "process-level credit assignment can over-correct agent behavior, improving one aspect of search quality at the cost of another." — arXiv:2605.27881. (dossier verbatim 발췌, 원문 PDF 미대조)
 
 [^ablation]: Ablation on BrowseComp+ (100 queries): full Harness-1 Recall = 0.584; disabling all harness mechanisms at once gives Recall 0.513 (−12.2%) and FA 0.624 (−6.4%) — a larger relative Recall drop than any single ablation. Hiding the evidence graph: −5.4% Recall, −3.9% FA. Disabling importance tags: −4.1% Recall, −7.9% FA. Disabling content dedup is the only mechanism whose removal nominally raises Recall (+4.6%), because dedup sometimes removes gold IDs — a known design tradeoff. — arXiv:2606.02373, Table 3. (원문 PDF 대조 ✓)
+
+[^bookkeeping]: 용어 — bookkeeping(장부 기록). 검색 에이전트가 "무엇을 이미 봤고, 어떤 후보가 남았고, 증거가 무엇인지"를 매 순간 추적·갱신하는 살림 일. Harness-1은 이 반복 노동을 정책에서 떼어 환경(하니스)에 맡긴다.
+
+[^rollout]: 용어 — rollout. 강화학습·에이전트에서 정책을 한 번 끝까지 굴려 본 *한 회차의 실행*. 검색을 시작해 답을 내거나 포기할 때까지가 한 rollout이다.
+
+[^recall]: 용어 — recall(재현율). 찾아야 할 정답 문서 중 실제로 *건져 올린* 비율. "curated recall"은 에이전트가 최종적으로 추려낸 증거 집합 기준의 재현율로, 이 글의 주 평가지표다. 빠뜨리지 않음을 재며, 정밀도(precision)와 짝을 이룬다.
+
+[^sft]: 용어 — SFT(Supervised Fine-Tuning, 지도 미세조정). 입력-정답(여기선 교사 모델의 시범 궤적) 쌍으로 모델을 직접 학습시키는 단계. 보통 RL 전에 기본기를 새겨 넣는다.
+
+[^em]: 용어 — EM(Exact Match, 정확 일치). 모델 답이 정답과 글자 그대로 맞는지만 0/1로 보는 가장 단순한 채점. 중간 과정을 보는 process reward와 대비되는, *결과만 보는* 보상이다.
+
+[^process-reward]: 용어 — process reward(과정 보상). 최종 답의 정오만 보는 결과 보상과 달리, 추론·검색의 *중간 단계*마다 점수를 주는 방식. 단계 신호가 촘촘해지는 대신, 중간 점수를 부풀리는 속임수(Goodhart 문제)가 새 위험으로 따라온다.

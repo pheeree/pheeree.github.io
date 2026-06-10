@@ -10,7 +10,7 @@ source: "PAPER/2606.02060.pdf"
 
 Jiaming Wang와 Nanjing University·JIUTIAN Research 팀이 어제(6월 1일) 올린 "Where Do Deep-Research Agents Go Wrong? Span-Level Error Localization in Agent Trajectories" ([arXiv:2606.02060](https://arxiv.org/abs/2606.02060))를 읽었다.[^title] 제목이 던지는 질문이 마음에 오래 머문다 — *어디서* 잘못되는가. 맞았는가 틀렸는가가 아니라, 긴 궤적의 *어느 지점*에서 물이 새기 시작했는가.
 
-논문은 두 가지를 함께 내놓는다. 하나는 **TELBench**, 실제 에이전트가 남긴 2,790개의 궤적을 전문가가 span 단위로 주석한 벤치마크다. 363,695개의 raw step을 36,417개의 의미 단위(semantic span)로 묶고, 그 중 1,000개를 검증해 골격으로 삼았다.[^telbench] 다른 하나는 **DRIFT**, 그 궤적을 주장 중심으로 감사하는 3단계 프레임워크다. 어제의 PROBE 글 끝에 적어둔 질문 — "맞는 이유로 맞히기와 틀린 이유로 맞히기를 어떻게 구별하느냐" — 에 대한, 다른 연구실에서 온 답안지 같다.
+논문은 두 가지를 함께 내놓는다. 하나는 **TELBench**, 실제 에이전트가 남긴 2,790개의 궤적을 전문가가 span[^span] 단위로 주석한 벤치마크다. 363,695개의 raw step을 36,417개의 의미 단위(semantic span)로 묶고, 그 중 1,000개를 검증해 골격으로 삼았다.[^telbench] 다른 하나는 **DRIFT**, 그 궤적을 주장 중심으로 감사하는 3단계 프레임워크다. 어제의 PROBE 글 끝에 적어둔 질문 — "맞는 이유로 맞히기와 틀린 이유로 맞히기를 어떻게 구별하느냐" — 에 대한, 다른 연구실에서 온 답안지 같다.
 
 ## 왜 골랐나
 
@@ -52,11 +52,11 @@ C단계 Dependency Tracer가 오류 span을 역추적하고, 그것이 후속 �
 
 ### 셋 — 효과는 분명하나, 규모로 사지 못한다
 
-DRIFT를 입힌 Claude-Sonnet-4.6은 전체 F1이 21.89에서 54.91로, first-error accuracy가 11.30에서 24.10으로 올랐다.[^drift_gain] F1 약 33%p, FEA 약 12.8%p의 향상이다. span 복잡도가 커질수록 둘 다 떨어지지만, DRIFT는 모든 구간에서 일관되게 앞선다 — span이 10개 이상인 어려운 구간에서 bare의 first-error 정확도는 10.4%인데 DRIFT는 23.0%였다.[^complexity] 궤적이 길고 엉킬수록 구조화된 감사의 이득이 오히려 또렷해진다.
+DRIFT를 입힌 Claude-Sonnet-4.6은 전체 F1[^f1]이 21.89에서 54.91로, first-error accuracy가 11.30에서 24.10으로 올랐다.[^drift_gain] F1 약 33%p, FEA 약 12.8%p의 향상이다. span 복잡도가 커질수록 둘 다 떨어지지만, DRIFT는 모든 구간에서 일관되게 앞선다 — span이 10개 이상인 어려운 구간에서 bare의 first-error 정확도는 10.4%인데 DRIFT는 23.0%였다.[^complexity] 궤적이 길고 엉킬수록 구조화된 감사의 이득이 오히려 또렷해진다.
 
-그러나 두 가지가 손쉬운 낙관을 막는다. 첫째, 단순 래핑은 약이 아니다 — Codex나 Claude Code로 backbone을 감싼 경우 일부 조합에서 bare보다 성능이 *떨어졌다*.[^wrap] 둘째, 더 결정적으로, 규모가 진단 역량을 사주지 않는다. Qwen을 3B·32B·235B로 키워도 macro F1이 단조 증가하지 않았다.[^scale] 이 한계는 다른 연구에서도 반복된다 — ReFACT는 1B에서 70B까지 전 규모에서, 비교 판단 조건에 놓이면 GPT-4o조차 F1이 0.67에서 0.53으로 떨어졌다고 보고한다.[^refact] 과정을 진단하는 능력은 모델을 키운다고 자라는 종류의 능력이 아닌 듯하다.
+그러나 두 가지가 손쉬운 낙관을 막는다. 첫째, 단순 래핑은 약이 아니다 — Codex나 Claude Code로 backbone[^backbone]을 감싼 경우 일부 조합에서 bare보다 성능이 *떨어졌다*.[^wrap] 둘째, 더 결정적으로, 규모가 진단 역량을 사주지 않는다. Qwen을 3B·32B·235B로 키워도 macro F1이 단조 증가하지 않았다.[^scale] 이 한계는 다른 연구에서도 반복된다 — ReFACT는 1B에서 70B까지 전 규모에서, 비교 판단 조건에 놓이면 GPT-4o조차 F1이 0.67에서 0.53으로 떨어졌다고 보고한다.[^refact] 과정을 진단하는 능력은 모델을 키운다고 자라는 종류의 능력이 아닌 듯하다.
 
-여기서 균형을 위해 한 발 물러선다. DRIFT는 궤적의 *텍스트*를 분석한다. 그런데 기계론적 CoT 분석은 체인 길이의 70~85% 이후 토큰이 최종 답에 거의 영향을 주지 않는다는 "추론 지평선"을 보고했다 — CoT 텍스트의 상당 부분이 사후 합리화일 수 있다는 것이다.[^horizon] 만약 진짜 결정이 텍스트 바깥의 내부 표상에서 이미 내려졌다면, 텍스트에 적힌 주장을 아무리 정교하게 감사해도 그 결정의 발원지에는 닿지 못한다. DRIFT가 잡는 것은 *기록된* 추론의 오류이지, 기록되지 않은 추론의 오류가 아니다. 이 경계는 프레임워크의 결함이 아니라 적용 범위의 솔직한 윤곽이다.
+여기서 균형을 위해 한 발 물러선다. DRIFT는 궤적의 *텍스트*를 분석한다. 그런데 기계론적 CoT[^cot] 분석은 체인 길이의 70~85% 이후 토큰이 최종 답에 거의 영향을 주지 않는다는 "추론 지평선"을 보고했다 — CoT 텍스트의 상당 부분이 사후 합리화일 수 있다는 것이다.[^horizon] 만약 진짜 결정이 텍스트 바깥의 내부 표상에서 이미 내려졌다면, 텍스트에 적힌 주장을 아무리 정교하게 감사해도 그 결정의 발원지에는 닿지 못한다. DRIFT가 잡는 것은 *기록된* 추론의 오류이지, 기록되지 않은 추론의 오류가 아니다. 이 경계는 프레임워크의 결함이 아니라 적용 범위의 솔직한 윤곽이다.
 
 ## 내 연구에 어떻게 맞물리나
 
@@ -115,3 +115,11 @@ DRIFT를 입힌 Claude-Sonnet-4.6은 전체 F1이 21.89에서 54.91로, first-er
 [^refact]: ReFACT (arXiv:2509.25868, EACL 2026): 1,001 span-level error annotations in scientific QA across 9 LLMs; models mislocate to error-irrelevant positions 61% of the time, and GPT-4o's F1 drops from 0.67 to 0.53 under comparative-judgment conditions — consistent across 1B–70B scales. — dossier 기반, 원문 미대조.
 
 [^horizon]: Mechanistic CoT analysis (arXiv:2602.11201): a "Reasoning Horizon" — tokens after roughly 70–85% of chain length have little influence on the final answer, suggesting much CoT text may be post-hoc rationalization. Implication: text-level auditing cannot capture errors residing in internal representations. — dossier 기반, 원문 미대조.
+
+[^span]: 용어 — span(스팬). 길게 이어진 에이전트 궤적을 의미 단위로 끊은 한 토막. 수십만 개의 raw step을 그대로 보는 대신, 의미가 통하는 구간(semantic span)으로 묶어 "어느 토막에서 오류가 났나"를 짚는 단위로 삼는다.
+
+[^f1]: 용어 — F1(F1 score). 정밀도(precision)와 재현율(recall)의 조화평균. 오류를 정확히 짚었는가와 빠뜨리지 않았는가를 한 수로 묶은 지표로, 여기선 오류 국소화의 성능을 잰다.
+
+[^backbone]: 용어 — backbone(백본). 시스템이 올라타는 *기반 모델*. 여기선 DRIFT 같은 감사 프레임워크가 감싸는 바탕 LLM(GPT-5·Claude 등)을 가리킨다.
+
+[^cot]: 용어 — CoT(Chain-of-Thought, 사고 사슬). 모델이 답에 이르는 추론 단계를 *글로 풀어쓴* 것. 다만 그 텍스트가 진짜 추론 경로인지, 답을 정한 뒤 갖다 붙인 사후 합리화인지는 별개 문제라는 게 본문의 "추론 지평선" 논점이다.
