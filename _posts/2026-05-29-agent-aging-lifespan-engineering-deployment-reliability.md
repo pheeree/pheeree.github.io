@@ -65,7 +65,7 @@ flowchart LR
 
 Finding III·IV·V를 묶으면 한 줄로 요약된다 — **노화의 원인이 모델마다 다르기 때문에 처방도 달라야 한다**. P1/P2/P3 반사실 프로브는 실패 지점을 W·R·U 중 하나로 국소화한다. 같은 에러율이라도 U-dominant 상황은 검색 강화가, W-dominant 상황은 쓰기 시점 보존 정책이, R-dominant 상황은 충돌 해소 전략이 처방이다. 논문 Figure 6은 이 W/R/U 분해가 *시나리오마다 갈린다*는 걸 보여준다 — S1은 활용(U) 지배, S2는 쓰기(W) 지배, S5는 거의 순수 쓰기 실패(gpt4o-mini)와 큰 검색·간섭 성분(llama) 사이를 오간다[^find_attr]. "범용 메모리 패치"가 평균적으로 통할 거란 기대가 위태로운 이유다.
 
-특히 Finding III가 아프다. Revision aging은 *용량 문제가 아니라 표현 문제*다 — 메모리 정책을 바꿔도 Tier 1 전반에서 오류가 안정적으로 줄지 않고, 스케일이 달라도 모델들이 비슷한 수준의 accumulator drift를 낸다[^find3]. S2 accumulator error 열만 봐도 더 큰 모델이 더 낫다는 일관된 신호가 없다 — 120B인 gpt-oss-120B의 누적 오차(124)가 14B인 Qwen3-14B(64)보다 오히려 두 배 가깝게 크다. "more memory"는 노화에 대한 처방이 아니다 — 오히려 표면적 활성 메모리를 늘릴수록 interference의 base rate가 커질 수 있다.
+특히 Finding III가 아프다. Revision aging은 *용량 문제가 아니라 표현 문제*다 — 메모리 정책을 바꿔도 Tier 1 전반에서 오류가 안정적으로 줄지 않고, 스케일이 달라도 모델들이 비슷한 수준의 accumulator drift[^drift]를 낸다[^find3]. S2 accumulator error 열만 봐도 더 큰 모델이 더 낫다는 일관된 신호가 없다 — 120B인 gpt-oss-120B의 누적 오차(124)가 14B인 Qwen3-14B(64)보다 오히려 두 배 가깝게 크다. "more memory"는 노화에 대한 처방이 아니다 — 오히려 표면적 활성 메모리를 늘릴수록 interference의 base rate[^base-rate]가 커질 수 있다.
 
 **그러나 — 여기서 균형을 한 번 잡고 가야 한다.** 이 논문의 분류가 모든 도메인에서 동등하게 분해되는지는 아직 모른다. AgingBench의 7 시나리오는 비교적 *기억 의존도가 높은* 태스크에 편중되어 있다(개인 비서, 누적 추론, 의존성 추적). 단발성 응답 위주 워크로드, 혹은 매 세션 컨텍스트를 새로 받는 단기 도구 호출 워크로드에서는 네 축이 균등하게 의미 있는지 불확실하다. 그리고 *축의 독립성* 주장 자체도 미묘하다 — Compression이 심한 노트는 Revision 시점에 *무엇을 갱신해야 하는지조차 식별 못 하게* 만든다. 즉 두 축은 측정상 분리되지만 인과적으로는 상류·하류 관계일 수 있다. 분류 자체가 도메인 보편이라고 단정하기보다, *분류가 측정 가능해졌다*는 사실에 더 무게를 두고 읽는 게 정직할 것 같다.
 
@@ -80,7 +80,7 @@ knowledge-mind의 구조를 이 네 축에 비춰보면 노출 표면이 그대�
 
 P1/P2/P3 프로브의 발상은 우리에게도 곧장 적용 가능하다. 어떤 인용이 어긋났을 때 — 원문이 그렇게 안 적혀 있었나(W), 검색이 못 찾았나(R), 찾고도 안 썼나(U) — 를 분리하는 건 claim-check 스킬이 이미 부분적으로 하는 일이다. 다만 *세션을 가로지르는* 프로브, 즉 한 달 전 노트를 지금 쿼리해서 W/R/U 어디서 깨졌는지를 보는 패널은 아직 없다.
 
-작은 실험 한 가지를 적어둔다. 최근 30일 분량의 노트를 대상으로 *오늘 시점에서* 원래 의도한 검색 쿼리를 다시 던졌을 때, 의도한 노트가 top-K(K=5)에 들어오는 비율을 재본다. 그게 우리 시스템의 retrieval half-life의 1차 근사일 것이다. 가설로는 *4월 이전*과 *4월 이후* 노트 사이에 인용 본문 격상 결정 때문에 격차가 보여야 한다 — 그게 안 보이면 그 결정이 효과가 없었다는 뜻이고, 보이면 처방이 작동하고 있다는 뜻이다.
+작은 실험 한 가지를 적어둔다. 최근 30일 분량의 노트를 대상으로 *오늘 시점에서* 원래 의도한 검색 쿼리를 다시 던졌을 때, 의도한 노트가 top-K(K=5)[^top-k]에 들어오는 비율을 재본다. 그게 우리 시스템의 retrieval half-life[^half-life]의 1차 근사일 것이다. 가설로는 *4월 이전*과 *4월 이후* 노트 사이에 인용 본문 격상 결정 때문에 격차가 보여야 한다 — 그게 안 보이면 그 결정이 효과가 없었다는 뜻이고, 보이면 처방이 작동하고 있다는 뜻이다.
 
 ```mermaid
 flowchart TB
@@ -129,3 +129,11 @@ flowchart TB
 [^find_attr]: "the U/W/R composition is heterogeneous: S1 is Utilization-dominated, S2 is Write-dominated, and S5 flips between near-pure Write failure (gpt4o-mini) and a large Read/Interference component (llama)." — Zhu et al. (2026), §6 (Figure 6).
 
 [^find3]: "Finding III: Revision aging appears to be representational, not purely a capacity problem. ... changing the memory policy does not reliably reduce error across the Tier 1 rows (Figure 7c). ... models often produce similar levels of accumulator drift despite differences in scale." — Zhu et al. (2026), §6.2.
+
+[^drift]: 용어 — drift(드리프트, 표류). 시간이 지나며 값·상태가 원래 자리에서 조금씩 *어긋나 쌓이는* 현상. "accumulator drift"는 누적해 더해 온 수치가 슬금슬금 정답에서 멀어지는 것을 말한다.
+
+[^base-rate]: 용어 — base rate(기저율). 어떤 일이 *바탕에서 일어나는 기본 빈도*. 활성 메모리가 많아질수록 서로 비슷한 기억이 충돌할 "기본 확률" 자체가 올라간다는 뜻이다.
+
+[^top-k]: 용어 — top-K. 검색이 점수순으로 돌려준 결과 중 *상위 K개*. "top-5에 든다"는 가장 관련 높다고 판정된 다섯 개 안에 정답이 들어온다는 뜻으로, 검색 품질을 가늠하는 흔한 기준이다.
+
+[^half-life]: 용어 — half-life(반감기). 본디 방사성 물질이 절반으로 줄기까지의 시간. 여기선 비유로, *검색이 닿던 노트가 시간이 흐르며 절반만 닿게 되기까지*의 기간 — 기억이 얼마나 빨리 늙는지를 한 수로 잡으려는 측정이다.

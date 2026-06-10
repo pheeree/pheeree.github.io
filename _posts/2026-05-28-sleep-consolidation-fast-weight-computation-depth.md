@@ -8,9 +8,9 @@ source: "PAPER/2605.26099.pdf"
 
 ## 오늘의 한 편
 
-Lee, McLeish, Goldstein, Fanti의 *"Language Models Need Sleep"* ([arXiv:2605.26099](https://arxiv.org/abs/2605.26099), 2026-05-25). CMU와 UMD에서 나왔고, 제목이 직설적이라 처음에는 비유로만 읽혔다. 그러나 본문을 읽다 보면 비유가 아니라 알고리즘이다 — KV cache를 비우기 직전, 모델이 외부 입력 없이 N번의 offline recurrent pass로 fast weight를 갱신한 뒤 깨끗한 상태로 다음 토큰을 받는다.
+Lee, McLeish, Goldstein, Fanti의 *"Language Models Need Sleep"* ([arXiv:2605.26099](https://arxiv.org/abs/2605.26099), 2026-05-25). CMU와 UMD에서 나왔고, 제목이 직설적이라 처음에는 비유로만 읽혔다. 그러나 본문을 읽다 보면 비유가 아니라 알고리즘이다 — KV cache[^kv-cache]를 비우기 직전, 모델이 외부 입력 없이 N번의 offline recurrent pass[^recurrence]로 fast weight[^fast-weight]를 갱신한 뒤 깨끗한 상태로 다음 토큰을 받는다.
 
-뿌리는 멀리 간다. McClelland, McNaughton, O'Reilly 1995의 보완 학습 시스템(complementary learning systems) 가설 — 해마는 빠르게 episodic하게 쓰고, 신피질은 느리게 통계적으로 다듬는다 — 이 골격이다. 그 위에 Wilson & McNaughton 1994의 hippocampal replay 발견, Diekelmann & Born 2010의 active system consolidation 모델, Rasch & Born 2013의 종합 리뷰가 겹쳐 있다. 그 신경과학 전통이 거의 그대로 SSM-attention hybrid 위에 얹혔다. 흥미로운 점은 — 같은 가설이 80년대에는 Hopfield network의 unlearning rule(Crick & Mitchison 1983, *Nature*)로 한 번 시도되었다가 사라졌다는 것이다. 약 40년 만의 귀환이다.
+뿌리는 멀리 간다. McClelland, McNaughton, O'Reilly 1995의 보완 학습 시스템(complementary learning systems) 가설 — 해마는 빠르게 episodic하게 쓰고, 신피질은 느리게 통계적으로 다듬는다 — 이 골격이다. 그 위에 Wilson & McNaughton 1994의 hippocampal replay 발견, Diekelmann & Born 2010의 active system consolidation 모델, Rasch & Born 2013의 종합 리뷰가 겹쳐 있다. 그 신경과학 전통이 거의 그대로 SSM[^ssm]-attention hybrid 위에 얹혔다. 흥미로운 점은 — 같은 가설이 80년대에는 Hopfield network의 unlearning rule(Crick & Mitchison 1983, *Nature*)로 한 번 시도되었다가 사라졌다는 것이다. 약 40년 만의 귀환이다.
 
 ## 왜 골랐나
 
@@ -20,7 +20,7 @@ Lee, McLeish, Goldstein, Fanti의 *"Language Models Need Sleep"* ([arXiv:2605.26
 
 **(1) 병목 재진단: 용량이 아니라 계산.** 가장 흥미로운 지점이다. 기존 직관은 "SSM fast weight가 작아서 long-horizon에서 진다"였다. 저자들은 이걸 뒤집는다. fast weight 크기가 충분한 상황에서도, reasoning depth가 커지면 실패한다. 그러니까 *저장할 자리는 있는데 좋은 표현으로 변환할 시간이 없다*는 것이다.
 
-이 재진단의 계보를 따라가 보면 의외로 깊다. Merrill & Sabharwal 2023(*TACL*)이 보여준 Transformer의 회로 깊이 한계 — log-precision Transformer는 TC⁰에 갇힌다 — 가 첫 자리고, Feng et al. 2023(NeurIPS)의 CoT가 회로 깊이를 늘린다는 결과, 그리고 Geiping et al. 2025([arXiv:2502.05171](https://arxiv.org/abs/2502.05171))의 latent recurrent depth, Liu et al. 2025의 serial scaling hypothesis([arXiv:2507.12549](https://arxiv.org/abs/2507.12549))가 같은 가족이다. 한 줄로 — *capacity 병목이 아니라 computation depth 병목*. 80년대 PDP 시절 Smolensky가 "tensor product representation은 만들 수는 있지만 한 번에는 못 만든다"고 했던 것과 묘하게 같은 자리다.
+이 재진단의 계보를 따라가 보면 의외로 깊다. Merrill & Sabharwal 2023(*TACL*)이 보여준 Transformer의 회로 깊이 한계 — log-precision Transformer는 TC⁰에 갇힌다 — 가 첫 자리고, Feng et al. 2023(NeurIPS)의 CoT[^cot]가 회로 깊이를 늘린다는 결과, 그리고 Geiping et al. 2025([arXiv:2502.05171](https://arxiv.org/abs/2502.05171))의 latent recurrent depth, Liu et al. 2025의 serial scaling hypothesis([arXiv:2507.12549](https://arxiv.org/abs/2507.12549))가 같은 가족이다. 한 줄로 — *capacity 병목이 아니라 computation depth 병목*. 80년대 PDP 시절 Smolensky가 "tensor product representation은 만들 수는 있지만 한 번에는 못 만든다"고 했던 것과 묘하게 같은 자리다.
 
 ```mermaid
 flowchart LR
@@ -105,3 +105,13 @@ flowchart TB
 [^depo]: "We see that increasing the number of offline loops improves learning speed for queries that require 4 or more hops. The 1-loop model makes little progress on 4-hop and harder queries, and the 2-loop model similarly stalls on 8-hop and harder queries. Within our training budget, only the 4-loop model begins to improve on the hardest 16-hop task." — Lee et al. (2026), §6.2 / Figure 3.
 [^gsm]: "For Jet, six loops improves final accuracy on six-operation problems from 0.742 to 0.812 and on eight-operation problems from 0.351 to 0.388. For Ouro, four loops improves final accuracy on six-operation problems from 0.419 to 0.615 and from 0.210 to 0.272 on eight-operation problems." — Lee et al. (2026), §6.3 / Figure 4 (op8 영역).
 [^swa]: "using loops drastically improves accuracy from 0.596 to 0.905, an 52% improvement." (Ouro 1.4B, sliding-window eviction, L=512) — Lee et al. (2026), §6.4 / Figure 5.
+
+[^kv-cache]: 용어 — KV cache(키-값 캐시). 트랜스포머가 이미 처리한 토큰들의 중간 계산(키·값)을 저장해 두는 임시 기억. 다음 토큰을 빠르게 내놓게 해주지만, 길어지면 부담이라 주기적으로 비운다(evict).
+
+[^recurrence]: 용어 — recurrence(순환)·offline recurrent pass. 같은 입력을 *반복해서 다시 통과*시키는 것. 보통은 다음 토큰 예측에 쓰지만, 이 글은 외부 입력 없이 도는 추가 순환(offline)을 *기억 공고화*에 쓴다 — 깨어 있을 때가 아니라 "자는 동안" 도는 셈이다.
+
+[^fast-weight]: 용어 — fast weight(빠른 가중치). 입력에 따라 *빠르게 바뀌는* 모델 내부 상태. 천천히 학습되는 본체 가중치와 달리 그때그때의 맥락을 담는데, 이 글은 그 자리가 좁아서가 아니라 *좋은 표현으로 빚을 시간*이 모자라 병목이 생긴다고 본다.
+
+[^ssm]: 용어 — SSM(State Space Model, 상태공간 모델). 트랜스포머의 어텐션 대신 *하나의 압축된 상태*를 갱신해 가며 시퀀스를 처리하는 구조(예: Mamba). 길이에 효율적이지만 그 상태가 작아 긴 추론에 약하다는 통념을 이 글이 다시 따진다.
+
+[^cot]: 용어 — CoT(Chain-of-Thought, 사고 사슬). 답에 이르는 추론 단계를 *글로 풀어 쓰는* 것. 토큰을 더 쓰는 만큼 사실상 계산을 더 하는 효과라, 회로 깊이를 늘린다고 본다.
