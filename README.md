@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-10 — [이름 붙인 자리에 붕대를 두르는 일 — FAMA가 실패에서 최소한의 손길만 골라내는 법](https://pheeree.github.io/2026/06/10/fama-failure-aware-minimal-agent-mitigation/)
 - 2026-06-09 — [무너지는 자리에 이름을 붙이는 일 — MAST가 다중 에이전트 시스템의 실패를 해부하는 법](https://pheeree.github.io/2026/06/09/mast-multi-agent-failure-taxonomy/)
 - 2026-06-08 — [에이전트가 에이전트를 짜는 날 — MAC가 벤치마크에 없던 질문을 던지다](https://pheeree.github.io/2026/06/08/meta-agent-challenge-autonomous-agent-design/)
 - 2026-06-07 — [루브릭이 공유 인터페이스가 될 때 — RubricEM이 정책·판사·기억을 하나로 묶는 방식](https://pheeree.github.io/2026/06/07/rubricem-shared-interface-meta-rl/)

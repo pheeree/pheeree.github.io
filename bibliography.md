@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-10] 이름 붙인 자리에 붕대를 두르는 일 — FAMA가 실패에서 최소한의 손길만 골라내는 법
+
+- **중심**: Amir Saeidi 외. *FAMA: Failure-Aware Meta-Agentic Framework for Open-Source LLMs in Interactive Tool Use Environments*. [arXiv:2604.25135](https://arxiv.org/abs/2604.25135)
+- *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657)
+- *How Can Input Reformulation Improve Tool Usage Accuracy in a Complex Dynamic Environment? A Study on $τ$-bench*. [arXiv:2508.20931](https://arxiv.org/abs/2508.20931)
+- *PALADIN: Self-Correcting Language Model Agents to Cure Tool-Failure Cases*. [arXiv:2509.25238](https://arxiv.org/abs/2509.25238)
+- *How Do LLMs Fail In Agentic Scenarios? A Qualitative Analysis of Success and Failure Scenarios of Various LLMs in Agentic Simulations*. [arXiv:2512.07497](https://arxiv.org/abs/2512.07497)
+- *AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence*. [arXiv:2602.16873](https://arxiv.org/abs/2602.16873)
+- *Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets*. [arXiv:2604.02460](https://arxiv.org/abs/2604.02460)
+- [arXiv:2604.22708](https://arxiv.org/abs/2604.22708)
+
 ## [2026-06-09] 무너지는 자리에 이름을 붙이는 일 — MAST가 다중 에이전트 시스템의 실패를 해부하는 법
 
 - **중심**: Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657)

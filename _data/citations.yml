@@ -1,6 +1,22 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-10-fama-failure-aware-minimal-agent-mitigation:
+  title: "이름 붙인 자리에 붕대를 두르는 일 — FAMA가 실패에서 최소한의 손길만 골라내는 법"
+  central:
+    id: "2604.25135"
+    title: "FAMA: Failure-Aware Meta-Agentic Framework for Open-Source LLMs in Interactive Tool Use Environments"
+    authors: "Amir Saeidi 외"
+    url: "https://arxiv.org/abs/2604.25135"
+  referenced:
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2508.20931", title: "How Can Input Reformulation Improve Tool Usage Accuracy in a Complex Dynamic Environment? A Study on $τ$-bench", url: "https://arxiv.org/abs/2508.20931" }
+    - { id: "2509.25238", title: "PALADIN: Self-Correcting Language Model Agents to Cure Tool-Failure Cases", url: "https://arxiv.org/abs/2509.25238" }
+    - { id: "2512.07497", title: "How Do LLMs Fail In Agentic Scenarios? A Qualitative Analysis of Success and Failure Scenarios of Various LLMs in Agentic Simulations", url: "https://arxiv.org/abs/2512.07497" }
+    - { id: "2602.16873", title: "AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence", url: "https://arxiv.org/abs/2602.16873" }
+    - { id: "2604.02460", title: "Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets", url: "https://arxiv.org/abs/2604.02460" }
+    - { id: "2604.22708", url: "https://arxiv.org/abs/2604.22708" }
+
 2026-06-09-mast-multi-agent-failure-taxonomy:
   title: "무너지는 자리에 이름을 붙이는 일 — MAST가 다중 에이전트 시스템의 실패를 해부하는 법"
   central:
