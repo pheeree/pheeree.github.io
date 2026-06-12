@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-12] 환각은 출력에 머물지 않고 연쇄를 따라 흐른다 — Hallucination Cascade가 본 전파의 동역학
+
+- **중심**: Saeid Jamshidi 외. *Hallucination Cascade: Analyzing Error Propagation in Multi-Agent LLM Systems*. [arXiv:2606.07937](https://arxiv.org/abs/2606.07937)
+- *Multi-agent Undercover Gaming: Hallucination Removal via Counterfactual Test for Multimodal Reasoning*. [arXiv:2511.11182](https://arxiv.org/abs/2511.11182)
+- *AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents*. [arXiv:2601.06818](https://arxiv.org/abs/2601.06818)
+- *When Agents "Misremember" Collectively: Exploring the Mandela Effect in LLM-based Multi-Agent Systems*. [arXiv:2602.00428](https://arxiv.org/abs/2602.00428)
+- *From Flat Logs to Causal Graphs: Hierarchical Failure Attribution for LLM-based Multi-Agent Systems*. [arXiv:2602.23701](https://arxiv.org/abs/2602.23701)
+- *From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration*. [arXiv:2603.04474](https://arxiv.org/abs/2603.04474)
+- *Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias*. [arXiv:2604.02923](https://arxiv.org/abs/2604.02923)
+- *The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment*. [arXiv:2606.08457](https://arxiv.org/abs/2606.08457)
+
 ## [2026-06-11] 장부를 쥔 손이 장부를 고쳐 쓸 때 — Self-Harness가 에이전트에게 자기 하니스를 맡기는 법
 
 - **중심**: Hangfan Zhang 외. *Self-Harness: Harnesses That Improve Themselves*. [arXiv:2606.09498](https://arxiv.org/abs/2606.09498)
@@ -26,15 +37,15 @@ permalink: /bibliography/
 - *How Do LLMs Fail In Agentic Scenarios? A Qualitative Analysis of Success and Failure Scenarios of Various LLMs in Agentic Simulations*. [arXiv:2512.07497](https://arxiv.org/abs/2512.07497)
 - *AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence*. [arXiv:2602.16873](https://arxiv.org/abs/2602.16873)
 - *Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets*. [arXiv:2604.02460](https://arxiv.org/abs/2604.02460)
-- [arXiv:2604.22708](https://arxiv.org/abs/2604.22708)
+- *Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems*. [arXiv:2604.22708](https://arxiv.org/abs/2604.22708)
 
 ## [2026-06-09] 무너지는 자리에 이름을 붙이는 일 — MAST가 다중 에이전트 시스템의 실패를 해부하는 법
 
 - **중심**: Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657)
 - *LLM Multi-Agent Systems: Challenges and Open Problems*. [arXiv:2402.03578](https://arxiv.org/abs/2402.03578)
 - *Multi-Agent Risks from Advanced AI*. [arXiv:2502.14143](https://arxiv.org/abs/2502.14143)
-- [arXiv:2505.00212](https://arxiv.org/abs/2505.00212)
-- [arXiv:2505.11556](https://arxiv.org/abs/2505.11556)
+- *Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems*. [arXiv:2505.00212](https://arxiv.org/abs/2505.00212)
+- *Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs*. [arXiv:2505.11556](https://arxiv.org/abs/2505.11556)
 - *Beyond the Strongest LLM: Multi-Turn Multi-Agent Orchestration vs. Single LLMs on Benchmarks*. [arXiv:2509.23537](https://arxiv.org/abs/2509.23537)
 - [arXiv:2601.22290](https://arxiv.org/abs/2601.22290)
 
@@ -109,10 +120,10 @@ permalink: /bibliography/
 - **중심**: Gil Pasternak 외. *Beyond Reactivity: Measuring Proactive Problem Solving in LLM Agents*. [arXiv:2510.19771](https://arxiv.org/abs/2510.19771)
 - [arXiv:2405.13966](https://arxiv.org/abs/2405.13966)
 - [arXiv:2406.14673](https://arxiv.org/abs/2406.14673)
-- [arXiv:2505.00212](https://arxiv.org/abs/2505.00212)
+- *Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems*. [arXiv:2505.00212](https://arxiv.org/abs/2505.00212)
 - [arXiv:2602.04482](https://arxiv.org/abs/2602.04482)
 - [arXiv:2604.00842](https://arxiv.org/abs/2604.00842)
-- [arXiv:2604.22708](https://arxiv.org/abs/2604.22708)
+- *Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems*. [arXiv:2604.22708](https://arxiv.org/abs/2604.22708)
 - [arXiv:2604.23455](https://arxiv.org/abs/2604.23455)
 - [arXiv:2605.24900](https://arxiv.org/abs/2605.24900)
 
@@ -275,7 +286,7 @@ permalink: /bibliography/
 - [arXiv:2509.21305](https://arxiv.org/abs/2509.21305)
 - *Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)*. [arXiv:2510.22954](https://arxiv.org/abs/2510.22954)
 - [arXiv:2602.01002](https://arxiv.org/abs/2602.01002)
-- [arXiv:2602.19141](https://arxiv.org/abs/2602.19141)
+- *Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians*. [arXiv:2602.19141](https://arxiv.org/abs/2602.19141)
 
 ## [2026-05-16] 맥락 순응 — 검색이 틀렸을 때 RAG는 그것을 아는가
 
@@ -291,7 +302,7 @@ permalink: /bibliography/
 - **중심**: Dahlia Shehata, Ming Li. *The Bystander Effect in Multi-Agent Reasoning: Quantifying Cognitive Loafing in Collaborative Interactions*. [arXiv:2605.10698](https://arxiv.org/abs/2605.10698)
 - [arXiv:2406.07791](https://arxiv.org/abs/2406.07791)
 - [arXiv:2502.00674](https://arxiv.org/abs/2502.00674)
-- [arXiv:2505.11556](https://arxiv.org/abs/2505.11556)
+- *Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs*. [arXiv:2505.11556](https://arxiv.org/abs/2505.11556)
 - [arXiv:2508.02087](https://arxiv.org/abs/2508.02087)
 - [arXiv:2511.02303](https://arxiv.org/abs/2511.02303)
 

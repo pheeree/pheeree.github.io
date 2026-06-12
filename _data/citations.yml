@@ -1,6 +1,22 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-12-hallucination-cascade-dynamic-propagation:
+  title: "환각은 출력에 머물지 않고 연쇄를 따라 흐른다 — Hallucination Cascade가 본 전파의 동역학"
+  central:
+    id: "2606.07937"
+    title: "Hallucination Cascade: Analyzing Error Propagation in Multi-Agent LLM Systems"
+    authors: "Saeid Jamshidi 외"
+    url: "https://arxiv.org/abs/2606.07937"
+  referenced:
+    - { id: "2511.11182", title: "Multi-agent Undercover Gaming: Hallucination Removal via Counterfactual Test for Multimodal Reasoning", url: "https://arxiv.org/abs/2511.11182" }
+    - { id: "2601.06818", title: "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents", url: "https://arxiv.org/abs/2601.06818" }
+    - { id: "2602.00428", title: "When Agents \"Misremember\" Collectively: Exploring the Mandela Effect in LLM-based Multi-Agent Systems", url: "https://arxiv.org/abs/2602.00428" }
+    - { id: "2602.23701", title: "From Flat Logs to Causal Graphs: Hierarchical Failure Attribution for LLM-based Multi-Agent Systems", url: "https://arxiv.org/abs/2602.23701" }
+    - { id: "2603.04474", title: "From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration", url: "https://arxiv.org/abs/2603.04474" }
+    - { id: "2604.02923", title: "Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias", url: "https://arxiv.org/abs/2604.02923" }
+    - { id: "2606.08457", title: "The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment", url: "https://arxiv.org/abs/2606.08457" }
+
 2026-06-11-self-harness-iterative-harness-improvement:
   title: "장부를 쥔 손이 장부를 고쳐 쓸 때 — Self-Harness가 에이전트에게 자기 하니스를 맡기는 법"
   central:
@@ -31,7 +47,7 @@
     - { id: "2512.07497", title: "How Do LLMs Fail In Agentic Scenarios? A Qualitative Analysis of Success and Failure Scenarios of Various LLMs in Agentic Simulations", url: "https://arxiv.org/abs/2512.07497" }
     - { id: "2602.16873", title: "AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence", url: "https://arxiv.org/abs/2602.16873" }
     - { id: "2604.02460", title: "Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets", url: "https://arxiv.org/abs/2604.02460" }
-    - { id: "2604.22708", url: "https://arxiv.org/abs/2604.22708" }
+    - { id: "2604.22708", title: "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems", url: "https://arxiv.org/abs/2604.22708" }
 
 2026-06-09-mast-multi-agent-failure-taxonomy:
   title: "무너지는 자리에 이름을 붙이는 일 — MAST가 다중 에이전트 시스템의 실패를 해부하는 법"
@@ -43,8 +59,8 @@
   referenced:
     - { id: "2402.03578", title: "LLM Multi-Agent Systems: Challenges and Open Problems", url: "https://arxiv.org/abs/2402.03578" }
     - { id: "2502.14143", title: "Multi-Agent Risks from Advanced AI", url: "https://arxiv.org/abs/2502.14143" }
-    - { id: "2505.00212", url: "https://arxiv.org/abs/2505.00212" }
-    - { id: "2505.11556", url: "https://arxiv.org/abs/2505.11556" }
+    - { id: "2505.00212", title: "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems", url: "https://arxiv.org/abs/2505.00212" }
+    - { id: "2505.11556", title: "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs", url: "https://arxiv.org/abs/2505.11556" }
     - { id: "2509.23537", title: "Beyond the Strongest LLM: Multi-Turn Multi-Agent Orchestration vs. Single LLMs on Benchmarks", url: "https://arxiv.org/abs/2509.23537" }
     - { id: "2601.22290", url: "https://arxiv.org/abs/2601.22290" }
 
@@ -154,10 +170,10 @@
   referenced:
     - { id: "2405.13966", url: "https://arxiv.org/abs/2405.13966" }
     - { id: "2406.14673", url: "https://arxiv.org/abs/2406.14673" }
-    - { id: "2505.00212", url: "https://arxiv.org/abs/2505.00212" }
+    - { id: "2505.00212", title: "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems", url: "https://arxiv.org/abs/2505.00212" }
     - { id: "2602.04482", url: "https://arxiv.org/abs/2602.04482" }
     - { id: "2604.00842", url: "https://arxiv.org/abs/2604.00842" }
-    - { id: "2604.22708", url: "https://arxiv.org/abs/2604.22708" }
+    - { id: "2604.22708", title: "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems", url: "https://arxiv.org/abs/2604.22708" }
     - { id: "2604.23455", url: "https://arxiv.org/abs/2604.23455" }
     - { id: "2605.24900", url: "https://arxiv.org/abs/2605.24900" }
 
@@ -400,7 +416,7 @@
     - { id: "2509.21305", url: "https://arxiv.org/abs/2509.21305" }
     - { id: "2510.22954", title: "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)", url: "https://arxiv.org/abs/2510.22954" }
     - { id: "2602.01002", url: "https://arxiv.org/abs/2602.01002" }
-    - { id: "2602.19141", url: "https://arxiv.org/abs/2602.19141" }
+    - { id: "2602.19141", title: "Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians", url: "https://arxiv.org/abs/2602.19141" }
 
 2026-05-16-context-compliance-knowledge-conflict:
   title: "맥락 순응 — 검색이 틀렸을 때 RAG는 그것을 아는가"
@@ -426,7 +442,7 @@
   referenced:
     - { id: "2406.07791", url: "https://arxiv.org/abs/2406.07791" }
     - { id: "2502.00674", url: "https://arxiv.org/abs/2502.00674" }
-    - { id: "2505.11556", url: "https://arxiv.org/abs/2505.11556" }
+    - { id: "2505.11556", title: "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs", url: "https://arxiv.org/abs/2505.11556" }
     - { id: "2508.02087", url: "https://arxiv.org/abs/2508.02087" }
     - { id: "2511.02303", url: "https://arxiv.org/abs/2511.02303" }
 
