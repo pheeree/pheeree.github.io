@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-11] 장부를 쥔 손이 장부를 고쳐 쓸 때 — Self-Harness가 에이전트에게 자기 하니스를 맡기는 법
+
+- **중심**: Hangfan Zhang 외. *Self-Harness: Harnesses That Improve Themselves*. [arXiv:2606.09498](https://arxiv.org/abs/2606.09498)
+- *Meta-Harness: End-to-End Optimization of Model Harnesses*. [arXiv:2603.28052](https://arxiv.org/abs/2603.28052)
+- [arXiv:2604.25850](https://arxiv.org/abs/2604.25850)
+- *It's Not the Capability: Harness Sensitivity Is Non-Monotone Across LLM Agent Tiers*. [arXiv:2605.26731](https://arxiv.org/abs/2605.26731)
+- *SIA: Self Improving AI with Harness & Weight Updates*. [arXiv:2605.27276](https://arxiv.org/abs/2605.27276)
+- *Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents*. [arXiv:2605.30621](https://arxiv.org/abs/2605.30621)
+- *Evolving Agents in the Dark: Retrospective Harness Optimization via Self-Preference*. [arXiv:2606.05922](https://arxiv.org/abs/2606.05922)
+- *From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws*. [arXiv:2606.06324](https://arxiv.org/abs/2606.06324)
+
 ## [2026-06-10] 이름 붙인 자리에 붕대를 두르는 일 — FAMA가 실패에서 최소한의 손길만 골라내는 법
 
 - **중심**: Amir Saeidi 외. *FAMA: Failure-Aware Meta-Agentic Framework for Open-Source LLMs in Interactive Tool Use Environments*. [arXiv:2604.25135](https://arxiv.org/abs/2604.25135)

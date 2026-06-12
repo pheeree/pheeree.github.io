@@ -1,6 +1,22 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-11-self-harness-iterative-harness-improvement:
+  title: "장부를 쥔 손이 장부를 고쳐 쓸 때 — Self-Harness가 에이전트에게 자기 하니스를 맡기는 법"
+  central:
+    id: "2606.09498"
+    title: "Self-Harness: Harnesses That Improve Themselves"
+    authors: "Hangfan Zhang 외"
+    url: "https://arxiv.org/abs/2606.09498"
+  referenced:
+    - { id: "2603.28052", title: "Meta-Harness: End-to-End Optimization of Model Harnesses", url: "https://arxiv.org/abs/2603.28052" }
+    - { id: "2604.25850", url: "https://arxiv.org/abs/2604.25850" }
+    - { id: "2605.26731", title: "It's Not the Capability: Harness Sensitivity Is Non-Monotone Across LLM Agent Tiers", url: "https://arxiv.org/abs/2605.26731" }
+    - { id: "2605.27276", title: "SIA: Self Improving AI with Harness & Weight Updates", url: "https://arxiv.org/abs/2605.27276" }
+    - { id: "2605.30621", title: "Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents", url: "https://arxiv.org/abs/2605.30621" }
+    - { id: "2606.05922", title: "Evolving Agents in the Dark: Retrospective Harness Optimization via Self-Preference", url: "https://arxiv.org/abs/2606.05922" }
+    - { id: "2606.06324", title: "From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws", url: "https://arxiv.org/abs/2606.06324" }
+
 2026-06-10-fama-failure-aware-minimal-agent-mitigation:
   title: "이름 붙인 자리에 붕대를 두르는 일 — FAMA가 실패에서 최소한의 손길만 골라내는 법"
   central:
