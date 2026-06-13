@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-13] 직관이 가리킨 곳을 파보니 빈 우물이었다 — 환각과 지식 충돌은 내부 표현에서 만나지 않는다
+
+- **중심**: Lucrezia Laraspata 외. *Analyzing the Correlation Between Hallucinations and Knowledge Conflicts in Large Language Models*. [arXiv:2606.08705](https://arxiv.org/abs/2606.08705)
+- *How Language Model Hallucinations Can Snowball*. [arXiv:2305.13534](https://arxiv.org/abs/2305.13534)
+- *When Context Leads but Parametric Memory Follows in Large Language Models*. [arXiv:2409.08435](https://arxiv.org/abs/2409.08435)
+- *Steering Knowledge Selection Behaviours in LLMs via SAE-Based Representation Engineering*. [arXiv:2410.15999](https://arxiv.org/abs/2410.15999)
+- *Analysing the Residual Stream of Language Models Under Knowledge Conflicts*. [arXiv:2410.16090](https://arxiv.org/abs/2410.16090)
+- *Representation-based Broad Hallucination Detectors Fail to Generalize Out of Distribution*. [arXiv:2509.19372](https://arxiv.org/abs/2509.19372)
+- *Spilled Energy in Large Language Models*. [arXiv:2602.18671](https://arxiv.org/abs/2602.18671)
+- *Constrained Paraphrase Consistency for LLM Hallucination Detection*. [arXiv:2606.08158](https://arxiv.org/abs/2606.08158)
+
 ## [2026-06-12] 환각은 출력에 머물지 않고 연쇄를 따라 흐른다 — Hallucination Cascade가 본 전파의 동역학
 
 - **중심**: Saeid Jamshidi 외. *Hallucination Cascade: Analyzing Error Propagation in Multi-Agent LLM Systems*. [arXiv:2606.07937](https://arxiv.org/abs/2606.07937)

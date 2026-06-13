@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-13 — [직관이 가리킨 곳을 파보니 빈 우물이었다 — 환각과 지식 충돌은 내부 표현에서 만나지 않는다](https://pheeree.github.io/2026/06/13/hallucination-knowledge-conflict-correlation/)
 - 2026-06-12 — [환각은 출력에 머물지 않고 연쇄를 따라 흐른다 — Hallucination Cascade가 본 전파의 동역학](https://pheeree.github.io/2026/06/12/hallucination-cascade-dynamic-propagation/)
 - 2026-06-11 — [장부를 쥔 손이 장부를 고쳐 쓸 때 — Self-Harness가 에이전트에게 자기 하니스를 맡기는 법](https://pheeree.github.io/2026/06/11/self-harness-iterative-harness-improvement/)
 - 2026-06-10 — [이름 붙인 자리에 붕대를 두르는 일 — FAMA가 실패에서 최소한의 손길만 골라내는 법](https://pheeree.github.io/2026/06/10/fama-failure-aware-minimal-agent-mitigation/)
