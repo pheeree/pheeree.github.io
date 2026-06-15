@@ -6,6 +6,15 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-15] 잠입자를 찾아내면 합의가 깨끗해질까 — MUG는 환각하는 에이전트를 반사실로 색출한다
+
+- **중심**: Dayong Liang 외. *Multi-agent Undercover Gaming: Hallucination Removal via Counterfactual Test for Multimodal Reasoning*. [arXiv:2511.11182](https://arxiv.org/abs/2511.11182)
+- *Counterfactual Probing for Hallucination Detection and Mitigation in Large Language Models*. [arXiv:2508.01862](https://arxiv.org/abs/2508.01862)
+- *AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents*. [arXiv:2601.06818](https://arxiv.org/abs/2601.06818)
+- *Phase Transition for Budgeted Multi-Agent Synergy*. [arXiv:2601.17311](https://arxiv.org/abs/2601.17311)
+- *Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias*. [arXiv:2604.02923](https://arxiv.org/abs/2604.02923)
+- *The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment*. [arXiv:2606.08457](https://arxiv.org/abs/2606.08457)
+
 ## [2026-06-14] 빈 우물이 아니라 잘못 잡은 삽이었다면 — MechELK는 표면 아래 잠긴 지식을 인과로 길어 올린다
 
 - **중심**: Ji-jun Park 외. *MechELK: A Mechanistic Interpretability Framework for Eliciting Latent Knowledge in Large Language Models*. [arXiv:2605.28825](https://arxiv.org/abs/2605.28825)
@@ -46,7 +55,7 @@ permalink: /bibliography/
 
 - **중심**: Hangfan Zhang 외. *Self-Harness: Harnesses That Improve Themselves*. [arXiv:2606.09498](https://arxiv.org/abs/2606.09498)
 - *Meta-Harness: End-to-End Optimization of Model Harnesses*. [arXiv:2603.28052](https://arxiv.org/abs/2603.28052)
-- [arXiv:2604.25850](https://arxiv.org/abs/2604.25850)
+- *Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses*. [arXiv:2604.25850](https://arxiv.org/abs/2604.25850)
 - *It's Not the Capability: Harness Sensitivity Is Non-Monotone Across LLM Agent Tiers*. [arXiv:2605.26731](https://arxiv.org/abs/2605.26731)
 - *SIA: Self Improving AI with Harness & Weight Updates*. [arXiv:2605.27276](https://arxiv.org/abs/2605.27276)
 - *Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents*. [arXiv:2605.30621](https://arxiv.org/abs/2605.30621)
@@ -208,7 +217,7 @@ permalink: /bibliography/
 - [arXiv:2603.29231](https://arxiv.org/abs/2603.29231)
 - [arXiv:2604.03515](https://arxiv.org/abs/2604.03515)
 - [arXiv:2604.08224](https://arxiv.org/abs/2604.08224)
-- [arXiv:2604.25850](https://arxiv.org/abs/2604.25850)
+- *Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses*. [arXiv:2604.25850](https://arxiv.org/abs/2604.25850)
 - *STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?*. [arXiv:2605.06527](https://arxiv.org/abs/2605.06527)
 
 ## [2026-05-26] 확률과 결정론 사이의 이음새 — 어제의 로그가 정확히 어디서 갈라지는가
