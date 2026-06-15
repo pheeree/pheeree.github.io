@@ -56,7 +56,7 @@ flowchart LR
 
 ### 하나 — Locate: 어느 레이어, 어느 특징인가
 
-먼저 후보를 좁힌다. 각 레이어에서 SAE로 활성화를 희소 특징 벡터로 분해한 뒤, 정답을 담은 입력 $x_{y^*}$의 특징에서 오답들의 평균 특징을 뺀 차분 $\Delta\mathbf{f}_\ell(q) = \mathbf{f}_\ell(x_{y^*}) - \frac{1}{|\mathcal{Y}|-1}\sum_{y\neq y^*}\mathbf{f}_\ell(x_y)$을 본다. 정답과 오답을 가르는 데 기여하는 특징이 큰 값으로 떠오른다. 그다음 activation patching으로 — 한 레이어의 활성화를 다른 실행의 것으로 갈아끼웠을 때 출력이 얼마나 흔들리는지 측정해 — 잠재 지식이 가장 또렷한 레이어 $\ell^*$를 고른다.
+먼저 후보를 좁힌다. 각 레이어에서 SAE로 활성화를 희소 특징 벡터로 분해한 뒤, 정답을 담은 입력 $x_{y^*}$의 특징에서 오답들의 평균 특징을 뺀 차분 $\Delta\mathbf{f}_\ell(q) = \mathbf{f}_\ell(x_{y^*}) - \frac{1}{\lvert\mathcal{Y}\rvert-1}\sum_{y\neq y^*}\mathbf{f}_\ell(x_y)$을 본다. 정답과 오답을 가르는 데 기여하는 특징이 큰 값으로 떠오른다. 그다음 activation patching으로 — 한 레이어의 활성화를 다른 실행의 것으로 갈아끼웠을 때 출력이 얼마나 흔들리는지 측정해 — 잠재 지식이 가장 또렷한 레이어 $\ell^*$를 고른다.
 
 이 단계가 어제의 첫 번째 실패 가능성을 직접 겨눈다. 어제 FEPoID([arXiv:2605.26366](https://arxiv.org/abs/2605.26366))를 곁가지로 적어둔 이유가 여기 있다 — 환각 탐지의 최적 레이어는 일관되게 중간에 있지만 그 정확한 위치는 모델·태스크마다 크게 다르다. 고정 레이어에서 probe를 훈련하면 물맥을 비껴가기 쉽다. MechELK의 Locate는 레이어를 *데이터에서* 고른다.
 
@@ -66,7 +66,7 @@ flowchart LR
 
 이 단계가 이 논문의 심장이다. SAE가 골라준 특징이 정말 *지식*을 담고 있는지, 아니면 정답과 우연히 상관할 뿐인 허위 특징(spurious correlation)인지를 가른다. 도구는 Causal Knowledge Score다.
 
-$$\text{CKS}(i,q) = \frac{P_\mathcal{M}(y^*|x;\mathbf{h}_x^{(\ell^*)}+\varepsilon\mathbf{v}_i) - P_\mathcal{M}(y^*|x;\mathbf{h}_x^{(\ell^*)}-\varepsilon\mathbf{v}_i)}{2\varepsilon}$$
+$$\text{CKS}(i,q) = \frac{P_\mathcal{M}(y^*\mid x;\mathbf{h}_x^{(\ell^*)}+\varepsilon\mathbf{v}_i) - P_\mathcal{M}(y^*\mid x;\mathbf{h}_x^{(\ell^*)}-\varepsilon\mathbf{v}_i)}{2\varepsilon}$$
 
 읽는 법은 단순하다. 특징 방향 $\mathbf{v}_i$로 표현을 살짝 밀었을 때($+\varepsilon\mathbf{v}_i$)와 반대로 당겼을 때($-\varepsilon\mathbf{v}_i$) 정답 확률이 얼마나 갈리는가 — 그 차이를 $2\varepsilon$로 나눈, 사실상 정답 확률의 방향 미분이다. 이 값이 크면, 그 방향을 건드리는 것이 정답 확률을 *인과적으로* 움직인다는 뜻이다. 단지 상관하는 게 아니라. CKS가 문턱 $\tau$를 넘는 특징만 진짜 잠재 지식으로 남긴다.
 
