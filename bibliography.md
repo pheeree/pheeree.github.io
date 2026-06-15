@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-14] 빈 우물이 아니라 잘못 잡은 삽이었다면 — MechELK는 표면 아래 잠긴 지식을 인과로 길어 올린다
+
+- **중심**: Ji-jun Park 외. *MechELK: A Mechanistic Interpretability Framework for Eliciting Latent Knowledge in Large Language Models*. [arXiv:2605.28825](https://arxiv.org/abs/2605.28825)
+- *Truth-value judgment in language models: 'truth directions' are context sensitive*. [arXiv:2404.18865](https://arxiv.org/abs/2404.18865)
+- *Transformer Circuit Faithfulness Metrics are not Robust*. [arXiv:2407.08734](https://arxiv.org/abs/2407.08734)
+- *Analyzing the Generalization and Reliability of Steering Vectors*. [arXiv:2407.12404](https://arxiv.org/abs/2407.12404)
+- *LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations*. [arXiv:2410.02707](https://arxiv.org/abs/2410.02707)
+- *Steering Knowledge Selection Behaviours in LLMs via SAE-Based Representation Engineering*. [arXiv:2410.15999](https://arxiv.org/abs/2410.15999)
+- *On the Limits of Sparse Autoencoders: A Theoretical Framework and Reweighted Remedy*. [arXiv:2506.15963](https://arxiv.org/abs/2506.15963)
+- *Do LLMs Really Know What They Don't Know? Internal States Mainly Reflect Knowledge Recall Rather Than Truthfulness*. [arXiv:2510.09033](https://arxiv.org/abs/2510.09033)
+- *Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?*. [arXiv:2602.14111](https://arxiv.org/abs/2602.14111)
+- *Are Sparse Autoencoder Benchmarks Reliable?*. [arXiv:2605.18229](https://arxiv.org/abs/2605.18229)
+- *Automatic Layer Selection for Hallucination Detection*. [arXiv:2605.26366](https://arxiv.org/abs/2605.26366)
+
 ## [2026-06-13] 직관이 가리킨 곳을 파보니 빈 우물이었다 — 환각과 지식 충돌은 내부 표현에서 만나지 않는다
 
 - **중심**: Lucrezia Laraspata 외. *Analyzing the Correlation Between Hallucinations and Knowledge Conflicts in Large Language Models*. [arXiv:2606.08705](https://arxiv.org/abs/2606.08705)

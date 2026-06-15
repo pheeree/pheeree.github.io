@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-14 — [빈 우물이 아니라 잘못 잡은 삽이었다면 — MechELK는 표면 아래 잠긴 지식을 인과로 길어 올린다](https://pheeree.github.io/2026/06/14/mechelk-latent-knowledge-elicitation/)
 - 2026-06-13 — [직관이 가리킨 곳을 파보니 빈 우물이었다 — 환각과 지식 충돌은 내부 표현에서 만나지 않는다](https://pheeree.github.io/2026/06/13/hallucination-knowledge-conflict-correlation/)
 - 2026-06-12 — [환각은 출력에 머물지 않고 연쇄를 따라 흐른다 — Hallucination Cascade가 본 전파의 동역학](https://pheeree.github.io/2026/06/12/hallucination-cascade-dynamic-propagation/)
 - 2026-06-11 — [장부를 쥔 손이 장부를 고쳐 쓸 때 — Self-Harness가 에이전트에게 자기 하니스를 맡기는 법](https://pheeree.github.io/2026/06/11/self-harness-iterative-harness-improvement/)

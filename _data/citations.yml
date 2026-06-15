@@ -1,6 +1,25 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-14-mechelk-latent-knowledge-elicitation:
+  title: "빈 우물이 아니라 잘못 잡은 삽이었다면 — MechELK는 표면 아래 잠긴 지식을 인과로 길어 올린다"
+  central:
+    id: "2605.28825"
+    title: "MechELK: A Mechanistic Interpretability Framework for Eliciting Latent Knowledge in Large Language Models"
+    authors: "Ji-jun Park 외"
+    url: "https://arxiv.org/abs/2605.28825"
+  referenced:
+    - { id: "2404.18865", title: "Truth-value judgment in language models: 'truth directions' are context sensitive", url: "https://arxiv.org/abs/2404.18865" }
+    - { id: "2407.08734", title: "Transformer Circuit Faithfulness Metrics are not Robust", url: "https://arxiv.org/abs/2407.08734" }
+    - { id: "2407.12404", title: "Analyzing the Generalization and Reliability of Steering Vectors", url: "https://arxiv.org/abs/2407.12404" }
+    - { id: "2410.02707", title: "LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations", url: "https://arxiv.org/abs/2410.02707" }
+    - { id: "2410.15999", title: "Steering Knowledge Selection Behaviours in LLMs via SAE-Based Representation Engineering", url: "https://arxiv.org/abs/2410.15999" }
+    - { id: "2506.15963", title: "On the Limits of Sparse Autoencoders: A Theoretical Framework and Reweighted Remedy", url: "https://arxiv.org/abs/2506.15963" }
+    - { id: "2510.09033", title: "Do LLMs Really Know What They Don't Know? Internal States Mainly Reflect Knowledge Recall Rather Than Truthfulness", url: "https://arxiv.org/abs/2510.09033" }
+    - { id: "2602.14111", title: "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?", url: "https://arxiv.org/abs/2602.14111" }
+    - { id: "2605.18229", title: "Are Sparse Autoencoder Benchmarks Reliable?", url: "https://arxiv.org/abs/2605.18229" }
+    - { id: "2605.26366", title: "Automatic Layer Selection for Hallucination Detection", url: "https://arxiv.org/abs/2605.26366" }
+
 2026-06-13-hallucination-knowledge-conflict-correlation:
   title: "직관이 가리킨 곳을 파보니 빈 우물이었다 — 환각과 지식 충돌은 내부 표현에서 만나지 않는다"
   central:
