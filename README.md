@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-18 — [공동 실패를 어렵게 짓는다 — Council Mode는 이질 합의를 구조로 설계한다](https://pheeree.github.io/2026/06/18/council-mode-heterogeneous-ensemble/)
 - 2026-06-17 — [모델은 자기가 틀린 걸 알까 — 숨겨진 상태는 진실이 아니라 회상을 비춘다](https://pheeree.github.io/2026/06/17/internal-states-knowledge-recall-not-truthfulness/)
 - 2026-06-16 — [답이 맞아도 이유는 달랐다 — 합의가 가린 것을 CARA가 재는 법](https://pheeree.github.io/2026/06/16/consistency-illusion-cara-reasoning-alignment/)
 - 2026-06-15 — [잠입자를 찾아내면 합의가 깨끗해질까 — MUG는 환각하는 에이전트를 반사실로 색출한다](https://pheeree.github.io/2026/06/15/mug-multiagent-undercover-gaming-hallucination/)

@@ -6,6 +6,26 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-18] 공동 실패를 어렵게 짓는다 — Council Mode는 이질 합의를 구조로 설계한다
+
+- **중심**: Shuai Wu 외. *Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias*. [arXiv:2604.02923](https://arxiv.org/abs/2604.02923)
+- [arXiv:2502.00674](https://arxiv.org/abs/2502.00674)
+- *Correlated Errors in Large Language Models*. [arXiv:2506.07962](https://arxiv.org/abs/2506.07962)
+- *The Majority is not always right: RL training for solution aggregation*. [arXiv:2509.06870](https://arxiv.org/abs/2509.06870)
+- *MALBO: Optimizing LLM-Based Multi-Agent Teams via Multi-Objective Bayesian Optimization*. [arXiv:2511.11788](https://arxiv.org/abs/2511.11788)
+- *Towards a Science of Scaling Agent Systems*. [arXiv:2512.08296](https://arxiv.org/abs/2512.08296)
+- *Auditing Multi-Agent LLM Reasoning Trees Outperforms Majority Vote and LLM-as-Judge*. [arXiv:2602.09341](https://arxiv.org/abs/2602.09341)
+- *MARCH: Multi-Agent Reinforced Self-Check for LLM Hallucination*. [arXiv:2603.24579](https://arxiv.org/abs/2603.24579)
+- *Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal*. [arXiv:2606.04223](https://arxiv.org/abs/2606.04223)
+
+## [2026-06-17] 모델은 자기가 틀린 걸 알까 — 숨겨진 상태는 진실이 아니라 회상을 비춘다
+
+- **중심**: Chi Seng Cheang 외. *Do LLMs Really Know What They Don't Know? Internal States Mainly Reflect Knowledge Recall Rather Than Truthfulness*. [arXiv:2510.09033](https://arxiv.org/abs/2510.09033)
+- *LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations*. [arXiv:2410.02707](https://arxiv.org/abs/2410.02707)
+- *When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models*. [arXiv:2508.02087](https://arxiv.org/abs/2508.02087)
+- *When Bias Pretends to Be Truth: How Spurious Correlations Undermine Hallucination Detection in LLMs*. [arXiv:2511.07318](https://arxiv.org/abs/2511.07318)
+- *PARALLAX: Separating Genuine Hallucination Detection from Benchmark Construction Artifacts*. [arXiv:2605.17028](https://arxiv.org/abs/2605.17028)
+
 ## [2026-06-16] 답이 맞아도 이유는 달랐다 — 합의가 가린 것을 CARA가 재는 법
 
 - **중심**: Xiaoyang Wang, Christopher C. Yang. *The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment*. [arXiv:2606.08457](https://arxiv.org/abs/2606.08457)
@@ -344,7 +364,7 @@ permalink: /bibliography/
 - [arXiv:2406.07791](https://arxiv.org/abs/2406.07791)
 - [arXiv:2502.00674](https://arxiv.org/abs/2502.00674)
 - *Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs*. [arXiv:2505.11556](https://arxiv.org/abs/2505.11556)
-- [arXiv:2508.02087](https://arxiv.org/abs/2508.02087)
+- *When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models*. [arXiv:2508.02087](https://arxiv.org/abs/2508.02087)
 - [arXiv:2511.02303](https://arxiv.org/abs/2511.02303)
 
 ## [2026-05-14] 메모리 저주 — 더 많이 기억할수록 덜 협동하는 LLM

@@ -1,6 +1,36 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-18-council-mode-heterogeneous-ensemble:
+  title: "공동 실패를 어렵게 짓는다 — Council Mode는 이질 합의를 구조로 설계한다"
+  central:
+    id: "2604.02923"
+    title: "Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias"
+    authors: "Shuai Wu 외"
+    url: "https://arxiv.org/abs/2604.02923"
+  referenced:
+    - { id: "2502.00674", url: "https://arxiv.org/abs/2502.00674" }
+    - { id: "2506.07962", title: "Correlated Errors in Large Language Models", url: "https://arxiv.org/abs/2506.07962" }
+    - { id: "2509.06870", title: "The Majority is not always right: RL training for solution aggregation", url: "https://arxiv.org/abs/2509.06870" }
+    - { id: "2511.11788", title: "MALBO: Optimizing LLM-Based Multi-Agent Teams via Multi-Objective Bayesian Optimization", url: "https://arxiv.org/abs/2511.11788" }
+    - { id: "2512.08296", title: "Towards a Science of Scaling Agent Systems", url: "https://arxiv.org/abs/2512.08296" }
+    - { id: "2602.09341", title: "Auditing Multi-Agent LLM Reasoning Trees Outperforms Majority Vote and LLM-as-Judge", url: "https://arxiv.org/abs/2602.09341" }
+    - { id: "2603.24579", title: "MARCH: Multi-Agent Reinforced Self-Check for LLM Hallucination", url: "https://arxiv.org/abs/2603.24579" }
+    - { id: "2606.04223", title: "Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal", url: "https://arxiv.org/abs/2606.04223" }
+
+2026-06-17-internal-states-knowledge-recall-not-truthfulness:
+  title: "모델은 자기가 틀린 걸 알까 — 숨겨진 상태는 진실이 아니라 회상을 비춘다"
+  central:
+    id: "2510.09033"
+    title: "Do LLMs Really Know What They Don't Know? Internal States Mainly Reflect Knowledge Recall Rather Than Truthfulness"
+    authors: "Chi Seng Cheang 외"
+    url: "https://arxiv.org/abs/2510.09033"
+  referenced:
+    - { id: "2410.02707", title: "LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations", url: "https://arxiv.org/abs/2410.02707" }
+    - { id: "2508.02087", title: "When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models", url: "https://arxiv.org/abs/2508.02087" }
+    - { id: "2511.07318", title: "When Bias Pretends to Be Truth: How Spurious Correlations Undermine Hallucination Detection in LLMs", url: "https://arxiv.org/abs/2511.07318" }
+    - { id: "2605.17028", title: "PARALLAX: Separating Genuine Hallucination Detection from Benchmark Construction Artifacts", url: "https://arxiv.org/abs/2605.17028" }
+
 2026-06-16-consistency-illusion-cara-reasoning-alignment:
   title: "답이 맞아도 이유는 달랐다 — 합의가 가린 것을 CARA가 재는 법"
   central:
@@ -504,7 +534,7 @@
     - { id: "2406.07791", url: "https://arxiv.org/abs/2406.07791" }
     - { id: "2502.00674", url: "https://arxiv.org/abs/2502.00674" }
     - { id: "2505.11556", title: "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs", url: "https://arxiv.org/abs/2505.11556" }
-    - { id: "2508.02087", url: "https://arxiv.org/abs/2508.02087" }
+    - { id: "2508.02087", title: "When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models", url: "https://arxiv.org/abs/2508.02087" }
     - { id: "2511.02303", url: "https://arxiv.org/abs/2511.02303" }
 
 2026-05-14-memory-curse-cooperation-collapse:
