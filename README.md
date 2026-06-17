@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-16 — [답이 맞아도 이유는 달랐다 — 합의가 가린 것을 CARA가 재는 법](https://pheeree.github.io/2026/06/16/consistency-illusion-cara-reasoning-alignment/)
 - 2026-06-15 — [잠입자를 찾아내면 합의가 깨끗해질까 — MUG는 환각하는 에이전트를 반사실로 색출한다](https://pheeree.github.io/2026/06/15/mug-multiagent-undercover-gaming-hallucination/)
 - 2026-06-14 — [빈 우물이 아니라 잘못 잡은 삽이었다면 — MechELK는 표면 아래 잠긴 지식을 인과로 길어 올린다](https://pheeree.github.io/2026/06/14/mechelk-latent-knowledge-elicitation/)
 - 2026-06-13 — [직관이 가리킨 곳을 파보니 빈 우물이었다 — 환각과 지식 충돌은 내부 표현에서 만나지 않는다](https://pheeree.github.io/2026/06/13/hallucination-knowledge-conflict-correlation/)

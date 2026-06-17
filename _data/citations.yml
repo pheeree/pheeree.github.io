@@ -1,6 +1,18 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-16-consistency-illusion-cara-reasoning-alignment:
+  title: "답이 맞아도 이유는 달랐다 — 합의가 가린 것을 CARA가 재는 법"
+  central:
+    id: "2606.08457"
+    title: "The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment"
+    authors: "Xiaoyang Wang, Christopher C. Yang"
+    url: "https://arxiv.org/abs/2606.08457"
+  referenced:
+    - { id: "2509.05396", title: "Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate", url: "https://arxiv.org/abs/2509.05396" }
+    - { id: "2605.00914", title: "The Cost of Consensus: Isolated Self-Correction Prevails Over Unguided Homogeneous Multi-Agent Debate", url: "https://arxiv.org/abs/2605.00914" }
+    - { id: "2606.04223", title: "Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal", url: "https://arxiv.org/abs/2606.04223" }
+
 2026-06-15-mug-multiagent-undercover-gaming-hallucination:
   title: "잠입자를 찾아내면 합의가 깨끗해질까 — MUG는 환각하는 에이전트를 반사실로 색출한다"
   central:

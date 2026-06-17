@@ -6,6 +6,13 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-16] 답이 맞아도 이유는 달랐다 — 합의가 가린 것을 CARA가 재는 법
+
+- **중심**: Xiaoyang Wang, Christopher C. Yang. *The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment*. [arXiv:2606.08457](https://arxiv.org/abs/2606.08457)
+- *Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate*. [arXiv:2509.05396](https://arxiv.org/abs/2509.05396)
+- *The Cost of Consensus: Isolated Self-Correction Prevails Over Unguided Homogeneous Multi-Agent Debate*. [arXiv:2605.00914](https://arxiv.org/abs/2605.00914)
+- *Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal*. [arXiv:2606.04223](https://arxiv.org/abs/2606.04223)
+
 ## [2026-06-15] 잠입자를 찾아내면 합의가 깨끗해질까 — MUG는 환각하는 에이전트를 반사실로 색출한다
 
 - **중심**: Dayong Liang 외. *Multi-agent Undercover Gaming: Hallucination Removal via Counterfactual Test for Multimodal Reasoning*. [arXiv:2511.11182](https://arxiv.org/abs/2511.11182)
