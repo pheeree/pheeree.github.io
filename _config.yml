@@ -7,6 +7,7 @@ url: "https://pheeree.github.io"
 
 lang: ko-KR
 timezone: Asia/Seoul
+future: true   # 발행시각보다 이른 빌드에도 당일 글이 미래 글로 제외되지 않도록
 
 theme: minima
 minima:
