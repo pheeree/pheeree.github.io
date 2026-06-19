@@ -1,6 +1,21 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-19-correlated-errors-monoculture-risk:
+  title: "닮아가는 오답들 — 더 똑똑한 모델일수록 같은 자리에서 함께 틀린다"
+  central:
+    id: "2506.07962"
+    title: "Correlated Errors in Large Language Models"
+    authors: "Elliot Kim 외"
+    url: "https://arxiv.org/abs/2506.07962"
+  referenced:
+    - { id: "2502.04313", url: "https://arxiv.org/abs/2502.04313" }
+    - { id: "2509.00462", title: "AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights", url: "https://arxiv.org/abs/2509.00462" }
+    - { id: "2510.04226", url: "https://arxiv.org/abs/2510.04226" }
+    - { id: "2602.03794", url: "https://arxiv.org/abs/2602.03794" }
+    - { id: "2602.16873", title: "AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence", url: "https://arxiv.org/abs/2602.16873" }
+    - { id: "2602.24086", url: "https://arxiv.org/abs/2602.24086" }
+
 2026-06-18-council-mode-heterogeneous-ensemble:
   title: "공동 실패를 어렵게 짓는다 — Council Mode는 이질 합의를 구조로 설계한다"
   central:

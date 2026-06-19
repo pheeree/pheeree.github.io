@@ -6,6 +6,16 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-19] 닮아가는 오답들 — 더 똑똑한 모델일수록 같은 자리에서 함께 틀린다
+
+- **중심**: Elliot Kim 외. *Correlated Errors in Large Language Models*. [arXiv:2506.07962](https://arxiv.org/abs/2506.07962)
+- [arXiv:2502.04313](https://arxiv.org/abs/2502.04313)
+- *AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights*. [arXiv:2509.00462](https://arxiv.org/abs/2509.00462)
+- [arXiv:2510.04226](https://arxiv.org/abs/2510.04226)
+- [arXiv:2602.03794](https://arxiv.org/abs/2602.03794)
+- *AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence*. [arXiv:2602.16873](https://arxiv.org/abs/2602.16873)
+- [arXiv:2602.24086](https://arxiv.org/abs/2602.24086)
+
 ## [2026-06-18] 공동 실패를 어렵게 짓는다 — Council Mode는 이질 합의를 구조로 설계한다
 
 - **중심**: Shuai Wu 외. *Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias*. [arXiv:2604.02923](https://arxiv.org/abs/2604.02923)
