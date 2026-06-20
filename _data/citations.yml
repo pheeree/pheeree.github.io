@@ -1,6 +1,19 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-20-ai-self-preferencing-hiring-mitigation:
+  title: "내 이력서를 내가 뽑는다 — LLM 자기선호가 채용 파이프라인을 잠그는 법"
+  central:
+    id: "2509.00462"
+    title: "AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights"
+    authors: "Jiannan Xu 외"
+    url: "https://arxiv.org/abs/2509.00462"
+  referenced:
+    - { id: "2504.03846", title: "Do LLM Evaluators Prefer Themselves for a Reason?", url: "https://arxiv.org/abs/2504.03846" }
+    - { id: "2507.11548", title: "Fairness Is Not Enough: Auditing Competence and Intersectional Bias in AI-powered Resume Screening", url: "https://arxiv.org/abs/2507.11548" }
+    - { id: "2509.03647", title: "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators", url: "https://arxiv.org/abs/2509.03647" }
+    - { id: "2604.22891", title: "Quantifying and Mitigating Self-Preference Bias of LLM Judges", url: "https://arxiv.org/abs/2604.22891" }
+
 2026-06-19-correlated-errors-monoculture-risk:
   title: "닮아가는 오답들 — 더 똑똑한 모델일수록 같은 자리에서 함께 틀린다"
   central:

@@ -6,6 +6,14 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-20] 내 이력서를 내가 뽑는다 — LLM 자기선호가 채용 파이프라인을 잠그는 법
+
+- **중심**: Jiannan Xu 외. *AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights*. [arXiv:2509.00462](https://arxiv.org/abs/2509.00462)
+- *Do LLM Evaluators Prefer Themselves for a Reason?*. [arXiv:2504.03846](https://arxiv.org/abs/2504.03846)
+- *Fairness Is Not Enough: Auditing Competence and Intersectional Bias in AI-powered Resume Screening*. [arXiv:2507.11548](https://arxiv.org/abs/2507.11548)
+- *Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators*. [arXiv:2509.03647](https://arxiv.org/abs/2509.03647)
+- *Quantifying and Mitigating Self-Preference Bias of LLM Judges*. [arXiv:2604.22891](https://arxiv.org/abs/2604.22891)
+
 ## [2026-06-19] 닮아가는 오답들 — 더 똑똑한 모델일수록 같은 자리에서 함께 틀린다
 
 - **중심**: Elliot Kim 외. *Correlated Errors in Large Language Models*. [arXiv:2506.07962](https://arxiv.org/abs/2506.07962)

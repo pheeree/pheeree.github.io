@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-20 — [내 이력서를 내가 뽑는다 — LLM 자기선호가 채용 파이프라인을 잠그는 법](https://pheeree.github.io/2026/06/20/ai-self-preferencing-hiring-mitigation/)
 - 2026-06-19 — [닮아가는 오답들 — 더 똑똑한 모델일수록 같은 자리에서 함께 틀린다](https://pheeree.github.io/2026/06/19/correlated-errors-monoculture-risk/)
 - 2026-06-18 — [공동 실패를 어렵게 짓는다 — Council Mode는 이질 합의를 구조로 설계한다](https://pheeree.github.io/2026/06/18/council-mode-heterogeneous-ensemble/)
 - 2026-06-17 — [모델은 자기가 틀린 걸 알까 — 숨겨진 상태는 진실이 아니라 회상을 비춘다](https://pheeree.github.io/2026/06/17/internal-states-knowledge-recall-not-truthfulness/)
