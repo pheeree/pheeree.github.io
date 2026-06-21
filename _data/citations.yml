@@ -1,6 +1,34 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-21-llm-evaluators-prefer-themselves-legitimate-vs-harmful:
+  title: "이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점"
+  central:
+    id: "2504.03846"
+    title: "Do LLM Evaluators Prefer Themselves for a Reason?"
+    authors: "Wei-Lin Chen 외"
+    url: "https://arxiv.org/abs/2504.03846"
+  referenced:
+    - { id: "2404.13076", title: "LLM Evaluators Recognize and Favor Their Own Generations", url: "https://arxiv.org/abs/2404.13076" }
+    - { id: "2410.21819", title: "Self-Preference Bias in LLM-as-a-Judge", url: "https://arxiv.org/abs/2410.21819" }
+    - { id: "2509.03647", title: "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators", url: "https://arxiv.org/abs/2509.03647" }
+    - { id: "2604.06996", url: "https://arxiv.org/abs/2604.06996" }
+    - { id: "2606.20093", title: "Self-Preference Is Weak or Absent in Verifiable Instruction-Following Revision: A Four-Model Test Under Genuine Authorship", url: "https://arxiv.org/abs/2606.20093" }
+
+2026-06-21-llm-evaluators-legitimate-vs-harmful-self-preference:
+  title: "이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점"
+  central:
+    id: "2504.03846"
+    title: "Do LLM Evaluators Prefer Themselves for a Reason?"
+    authors: "Wei-Lin Chen 외"
+    url: "https://arxiv.org/abs/2504.03846"
+  referenced:
+    - { id: "2404.13076", title: "LLM Evaluators Recognize and Favor Their Own Generations", url: "https://arxiv.org/abs/2404.13076" }
+    - { id: "2410.21819", title: "Self-Preference Bias in LLM-as-a-Judge", url: "https://arxiv.org/abs/2410.21819" }
+    - { id: "2509.03647", title: "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators", url: "https://arxiv.org/abs/2509.03647" }
+    - { id: "2604.06996", url: "https://arxiv.org/abs/2604.06996" }
+    - { id: "2606.20093", title: "Self-Preference Is Weak or Absent in Verifiable Instruction-Following Revision: A Four-Model Test Under Genuine Authorship", url: "https://arxiv.org/abs/2606.20093" }
+
 2026-06-20-ai-self-preferencing-hiring-mitigation:
   title: "내 이력서를 내가 뽑는다 — LLM 자기선호가 채용 파이프라인을 잠그는 법"
   central:

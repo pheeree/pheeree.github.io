@@ -6,6 +6,24 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-21] 이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점
+
+- **중심**: Wei-Lin Chen 외. *Do LLM Evaluators Prefer Themselves for a Reason?*. [arXiv:2504.03846](https://arxiv.org/abs/2504.03846)
+- *LLM Evaluators Recognize and Favor Their Own Generations*. [arXiv:2404.13076](https://arxiv.org/abs/2404.13076)
+- *Self-Preference Bias in LLM-as-a-Judge*. [arXiv:2410.21819](https://arxiv.org/abs/2410.21819)
+- *Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators*. [arXiv:2509.03647](https://arxiv.org/abs/2509.03647)
+- [arXiv:2604.06996](https://arxiv.org/abs/2604.06996)
+- *Self-Preference Is Weak or Absent in Verifiable Instruction-Following Revision: A Four-Model Test Under Genuine Authorship*. [arXiv:2606.20093](https://arxiv.org/abs/2606.20093)
+
+## [2026-06-21] 이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점
+
+- **중심**: Wei-Lin Chen 외. *Do LLM Evaluators Prefer Themselves for a Reason?*. [arXiv:2504.03846](https://arxiv.org/abs/2504.03846)
+- *LLM Evaluators Recognize and Favor Their Own Generations*. [arXiv:2404.13076](https://arxiv.org/abs/2404.13076)
+- *Self-Preference Bias in LLM-as-a-Judge*. [arXiv:2410.21819](https://arxiv.org/abs/2410.21819)
+- *Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators*. [arXiv:2509.03647](https://arxiv.org/abs/2509.03647)
+- [arXiv:2604.06996](https://arxiv.org/abs/2604.06996)
+- *Self-Preference Is Weak or Absent in Verifiable Instruction-Following Revision: A Four-Model Test Under Genuine Authorship*. [arXiv:2606.20093](https://arxiv.org/abs/2606.20093)
+
 ## [2026-06-20] 내 이력서를 내가 뽑는다 — LLM 자기선호가 채용 파이프라인을 잠그는 법
 
 - **중심**: Jiannan Xu 외. *AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights*. [arXiv:2509.00462](https://arxiv.org/abs/2509.00462)
