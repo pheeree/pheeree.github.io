@@ -6,22 +6,24 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-22] 거울을 깨는 한 방향 — 유해 자기선호만 또렷한 선, 정당 편애는 흩어진 안개
+
+- **중심**: Dani Roytburg 외. *Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators*. [arXiv:2509.03647](https://arxiv.org/abs/2509.03647)
+- *Analyzing the Generalization and Reliability of Steering Vectors*. [arXiv:2407.12404](https://arxiv.org/abs/2407.12404)
+- *Self-Preference Bias in LLM-as-a-Judge*. [arXiv:2410.21819](https://arxiv.org/abs/2410.21819)
+- *SteeringSafety: A Systematic Safety Evaluation Framework of Representation Steering in LLMs*. [arXiv:2509.13450](https://arxiv.org/abs/2509.13450)
+- *Extreme Self-Preference in Language Models*. [arXiv:2509.26464](https://arxiv.org/abs/2509.26464)
+- *Steering Evaluation-Aware Language Models to Act Like They Are Deployed*. [arXiv:2510.20487](https://arxiv.org/abs/2510.20487)
+- *Self-Preference Bias in Rubric-Based Evaluation of Large Language Models*. [arXiv:2604.06996](https://arxiv.org/abs/2604.06996)
+- *Quantifying and Mitigating Self-Preference Bias of LLM Judges*. [arXiv:2604.22891](https://arxiv.org/abs/2604.22891)
+
 ## [2026-06-21] 이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점
 
 - **중심**: Wei-Lin Chen 외. *Do LLM Evaluators Prefer Themselves for a Reason?*. [arXiv:2504.03846](https://arxiv.org/abs/2504.03846)
 - *LLM Evaluators Recognize and Favor Their Own Generations*. [arXiv:2404.13076](https://arxiv.org/abs/2404.13076)
 - *Self-Preference Bias in LLM-as-a-Judge*. [arXiv:2410.21819](https://arxiv.org/abs/2410.21819)
 - *Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators*. [arXiv:2509.03647](https://arxiv.org/abs/2509.03647)
-- [arXiv:2604.06996](https://arxiv.org/abs/2604.06996)
-- *Self-Preference Is Weak or Absent in Verifiable Instruction-Following Revision: A Four-Model Test Under Genuine Authorship*. [arXiv:2606.20093](https://arxiv.org/abs/2606.20093)
-
-## [2026-06-21] 이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점
-
-- **중심**: Wei-Lin Chen 외. *Do LLM Evaluators Prefer Themselves for a Reason?*. [arXiv:2504.03846](https://arxiv.org/abs/2504.03846)
-- *LLM Evaluators Recognize and Favor Their Own Generations*. [arXiv:2404.13076](https://arxiv.org/abs/2404.13076)
-- *Self-Preference Bias in LLM-as-a-Judge*. [arXiv:2410.21819](https://arxiv.org/abs/2410.21819)
-- *Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators*. [arXiv:2509.03647](https://arxiv.org/abs/2509.03647)
-- [arXiv:2604.06996](https://arxiv.org/abs/2604.06996)
+- *Self-Preference Bias in Rubric-Based Evaluation of Large Language Models*. [arXiv:2604.06996](https://arxiv.org/abs/2604.06996)
 - *Self-Preference Is Weak or Absent in Verifiable Instruction-Following Revision: A Four-Model Test Under Genuine Authorship*. [arXiv:2606.20093](https://arxiv.org/abs/2606.20093)
 
 ## [2026-06-20] 내 이력서를 내가 뽑는다 — LLM 자기선호가 채용 파이프라인을 잠그는 법
@@ -168,7 +170,7 @@ permalink: /bibliography/
 - [arXiv:2603.08754](https://arxiv.org/abs/2603.08754)
 - *Meta-Reinforcement Learning with Self-Reflection for Agentic Search*. [arXiv:2603.11327](https://arxiv.org/abs/2603.11327)
 - [arXiv:2603.21362](https://arxiv.org/abs/2603.21362)
-- [arXiv:2604.06996](https://arxiv.org/abs/2604.06996)
+- *Self-Preference Bias in Rubric-Based Evaluation of Large Language Models*. [arXiv:2604.06996](https://arxiv.org/abs/2604.06996)
 - [arXiv:2604.14820](https://arxiv.org/abs/2604.14820)
 - *SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution*. [arXiv:2605.18401](https://arxiv.org/abs/2605.18401)
 - [arXiv:2606.04923](https://arxiv.org/abs/2606.04923)

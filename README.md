@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-22 — [거울을 깨는 한 방향 — 유해 자기선호만 또렷한 선, 정당 편애는 흩어진 안개](https://pheeree.github.io/2026/06/22/breaking-the-mirror-activation-steering-self-preference/)
 - 2026-06-21 — [이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점](https://pheeree.github.io/2026/06/21/llm-evaluators-legitimate-vs-harmful-self-preference/)
 - 2026-06-20 — [내 이력서를 내가 뽑는다 — LLM 자기선호가 채용 파이프라인을 잠그는 법](https://pheeree.github.io/2026/06/20/ai-self-preferencing-hiring-mitigation/)
 - 2026-06-19 — [닮아가는 오답들 — 더 똑똑한 모델일수록 같은 자리에서 함께 틀린다](https://pheeree.github.io/2026/06/19/correlated-errors-monoculture-risk/)

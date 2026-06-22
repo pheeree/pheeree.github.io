@@ -1,19 +1,21 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
-2026-06-21-llm-evaluators-prefer-themselves-legitimate-vs-harmful:
-  title: "이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점"
+2026-06-22-breaking-the-mirror-activation-steering-self-preference:
+  title: "거울을 깨는 한 방향 — 유해 자기선호만 또렷한 선, 정당 편애는 흩어진 안개"
   central:
-    id: "2504.03846"
-    title: "Do LLM Evaluators Prefer Themselves for a Reason?"
-    authors: "Wei-Lin Chen 외"
-    url: "https://arxiv.org/abs/2504.03846"
+    id: "2509.03647"
+    title: "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators"
+    authors: "Dani Roytburg 외"
+    url: "https://arxiv.org/abs/2509.03647"
   referenced:
-    - { id: "2404.13076", title: "LLM Evaluators Recognize and Favor Their Own Generations", url: "https://arxiv.org/abs/2404.13076" }
+    - { id: "2407.12404", title: "Analyzing the Generalization and Reliability of Steering Vectors", url: "https://arxiv.org/abs/2407.12404" }
     - { id: "2410.21819", title: "Self-Preference Bias in LLM-as-a-Judge", url: "https://arxiv.org/abs/2410.21819" }
-    - { id: "2509.03647", title: "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators", url: "https://arxiv.org/abs/2509.03647" }
-    - { id: "2604.06996", url: "https://arxiv.org/abs/2604.06996" }
-    - { id: "2606.20093", title: "Self-Preference Is Weak or Absent in Verifiable Instruction-Following Revision: A Four-Model Test Under Genuine Authorship", url: "https://arxiv.org/abs/2606.20093" }
+    - { id: "2509.13450", title: "SteeringSafety: A Systematic Safety Evaluation Framework of Representation Steering in LLMs", url: "https://arxiv.org/abs/2509.13450" }
+    - { id: "2509.26464", title: "Extreme Self-Preference in Language Models", url: "https://arxiv.org/abs/2509.26464" }
+    - { id: "2510.20487", title: "Steering Evaluation-Aware Language Models to Act Like They Are Deployed", url: "https://arxiv.org/abs/2510.20487" }
+    - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", url: "https://arxiv.org/abs/2604.06996" }
+    - { id: "2604.22891", title: "Quantifying and Mitigating Self-Preference Bias of LLM Judges", url: "https://arxiv.org/abs/2604.22891" }
 
 2026-06-21-llm-evaluators-legitimate-vs-harmful-self-preference:
   title: "이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점"
@@ -26,7 +28,7 @@
     - { id: "2404.13076", title: "LLM Evaluators Recognize and Favor Their Own Generations", url: "https://arxiv.org/abs/2404.13076" }
     - { id: "2410.21819", title: "Self-Preference Bias in LLM-as-a-Judge", url: "https://arxiv.org/abs/2410.21819" }
     - { id: "2509.03647", title: "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators", url: "https://arxiv.org/abs/2509.03647" }
-    - { id: "2604.06996", url: "https://arxiv.org/abs/2604.06996" }
+    - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", url: "https://arxiv.org/abs/2604.06996" }
     - { id: "2606.20093", title: "Self-Preference Is Weak or Absent in Verifiable Instruction-Following Revision: A Four-Model Test Under Genuine Authorship", url: "https://arxiv.org/abs/2606.20093" }
 
 2026-06-20-ai-self-preferencing-hiring-mitigation:
@@ -243,7 +245,7 @@
     - { id: "2603.08754", url: "https://arxiv.org/abs/2603.08754" }
     - { id: "2603.11327", title: "Meta-Reinforcement Learning with Self-Reflection for Agentic Search", url: "https://arxiv.org/abs/2603.11327" }
     - { id: "2603.21362", url: "https://arxiv.org/abs/2603.21362" }
-    - { id: "2604.06996", url: "https://arxiv.org/abs/2604.06996" }
+    - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", url: "https://arxiv.org/abs/2604.06996" }
     - { id: "2604.14820", url: "https://arxiv.org/abs/2604.14820" }
     - { id: "2605.18401", title: "SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution", url: "https://arxiv.org/abs/2605.18401" }
     - { id: "2606.04923", url: "https://arxiv.org/abs/2606.04923" }
