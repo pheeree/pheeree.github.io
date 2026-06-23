@@ -9,13 +9,13 @@ source: "PAPER/2604.22709.pdf"
 
 ## 오늘의 한 편
 
-Keshav Ramji, Tahira Naseem, Ramón Fernandez Astudillo (IBM Research AI)가 4월 27일에 올린 *Thinking Without Words: Efficient Latent Reasoning with Abstract Chain-of-Thought* ([arXiv:2604.22709](https://arxiv.org/abs/2604.22709)). 한 줄로 요약하면 — *언어 CoT를 64개 이산 추상 토큰의 짧은 시퀀스로 대체하고, 정확도는 거의 유지하면서 토큰을 한 자릿수에서 두 자릿수 배 줄인다*. `<beginabstract>...<endabstract>` 사이에 추상 토큰들이 들어가고, 그 뒤에 답이 나온다. 추상 토큰의 임베딩은 무작위에서 시작해 두 단계 후처리 훈련을 거치며 의미 있는 추론 계산을 인코딩하게 된다[^acot].
+Keshav Ramji, Tahira Naseem, Ramón Fernandez Astudillo (IBM Research AI)가 4월 27일에 올린 *Thinking Without Words: Efficient Latent Reasoning with Abstract Chain-of-Thought* ([arXiv:2604.22709](https://arxiv.org/abs/2604.22709)). 한 줄로 요약하면 — *언어 CoT[^cot]를 64개 이산[^discrete] 추상 토큰의 짧은 시퀀스로 대체하고, 정확도는 거의 유지하면서 토큰을 한 자릿수에서 두 자릿수 배 줄인다*. `<beginabstract>...<endabstract>` 사이에 추상 토큰들이 들어가고, 그 뒤에 답이 나온다. 추상 토큰의 임베딩은 무작위에서 시작해 두 단계 후처리 훈련을 거치며 의미 있는 추론 계산을 인코딩하게 된다[^acot].
 
-수치는 깔끔하다. Qwen3-8B 기준 MATH-500에서 90.8% (Abstract-CoT Warm+RL) vs 92.6% (언어 SFT+RL), 정확도는 1.8%p 양보하면서 토큰은 144 vs 1671 — **11.6배 감소**[^116x]. AlpacaEval에서는 60.8% vs 58.4%로 *언어보다 2.4%p 우위*에 토큰 2.2배 감소. HotpotQA 4.3배, AIME'25 2.7배, GPQA-Diamond 7.9배. 어휘 크기 64개, 최대 128 추상 토큰. 작은 어휘 위에 짧은 시퀀스로 추론 계산이 압축된다.
+수치는 깔끔하다. Qwen3-8B 기준 MATH-500에서 90.8% (Abstract-CoT Warm+RL) vs 92.6% (언어 SFT[^sft]+RL), 정확도는 1.8%p 양보하면서 토큰은 144 vs 1671 — **11.6배 감소**[^116x]. AlpacaEval에서는 60.8% vs 58.4%로 *언어보다 2.4%p 우위*에 토큰 2.2배 감소. HotpotQA 4.3배, AIME'25 2.7배, GPQA-Diamond 7.9배. 어휘 크기 64개, 최대 128 추상 토큰. 작은 어휘 위에 짧은 시퀀스로 추론 계산이 압축된다.
 
 ## 왜 이걸 골랐나
 
-직전 글(5/3 RecursiveMAS)의 "편집자에게"에서 2순위 다음 읽을 후보로 **COCONUT ([arXiv:2412.06769](https://arxiv.org/abs/2412.06769), Meta)**을 적어두었다. 단일 모델 재귀의 시발점 — 연속 잠재공간에서 사고를 펼치는 방식. 오늘 픽한 Abstract-CoT는 COCONUT과 *같은 문제* — 언어 병목 우회 — 를 *다른 갈래*로 푼다. COCONUT이 연속 잠재라면 Abstract-CoT는 이산 추상이다. 같은 산을 동쪽과 서쪽에서 오르는 두 등반대를 비교해보고 싶었다.
+직전 글(5/3 RecursiveMAS)의 "편집자에게"에서 2순위 다음 읽을 후보로 **COCONUT ([arXiv:2412.06769](https://arxiv.org/abs/2412.06769), Meta)**을 적어두었다. 단일 모델 재귀의 시발점 — 연속 잠재[^latent]공간에서 사고를 펼치는 방식. 오늘 픽한 Abstract-CoT는 COCONUT과 *같은 문제* — 언어 병목 우회 — 를 *다른 갈래*로 푼다. COCONUT이 연속 잠재라면 Abstract-CoT는 이산 추상이다. 같은 산을 동쪽과 서쪽에서 오르는 두 등반대를 비교해보고 싶었다.
 
 내 유효 채널(K-스타) 다양성 노트의 맥락에서도 이 픽은 자연스러웠다. RecursiveMAS는 *에이전트 간* 채널을 잠재로 옮긴 사례였다면, Abstract-CoT는 *단일 모델 내부* 추론 채널을 이산 토큰으로 재편한 사례다. 같은 가설 — 텍스트로 표현 가능한 채널에 갇혀 있던 표현 다양성이 다른 매체로 가면 늘어난다 — 의 또 다른 시험대다. 5/2 글(literal bias)에서 짚은 "이해는 늘었지만 함의는 못 짓는다"의 정반대 극단도 본다 — 함의가 아니라 아예 *텍스트 자체가 없는* 토큰으로 추론한다는 시도. 5/1 ARA의 "사람도 읽을 수 있어야 한다"는 요구와는 정면 충돌하므로, 이 충돌이 어떻게 해소되는지(혹은 해소 안 되는지)도 보고 싶었다.
 
@@ -23,9 +23,9 @@ Keshav Ramji, Tahira Naseem, Ramón Fernandez Astudillo (IBM Research AI)가 4�
 
 학문적 뿌리를 셋으로 갈라보면 이렇다.
 
-첫째 갈래는 **이산 잠재 표현의 학습**이다. **VQ-VAE (van den Oord et al., 2017, [arXiv:1711.00937](https://arxiv.org/abs/1711.00937))**가 연속 분포를 코드북의 이산 인덱스로 양자화하는 발상을 깔았다 — 원 논문의 기본값이 코드북 크기 512, 임베딩 차원 64였고, Abstract-CoT의 64개 어휘는 그 임베딩 차원과 우연이 아닌 메아리처럼 들린다. NLP로 들어오면 **BPE (Sennrich et al., 2016, ACL)**가 서브워드 분절의 기원으로 이산 어휘를 만들어 왔지만, 이들은 *표면 형태*에서 출발한다. Abstract-CoT의 토큰들은 처음부터 *내부 계산용*으로 설계된 어휘 — 출력에 등장하지 않고 추론에만 쓰인다. **Token Assorted ([arXiv:2502.03275](https://arxiv.org/abs/2502.03275))**가 한 발 먼저 같은 방향을 시도했다 — VQ-VAE 이산 잠재 토큰과 텍스트 토큰을 *혼합*해 GSM8K에서 17% 토큰 감소를 얻으면서 AlpacaEval 점수를 유지했다. 핵심 차별점은 *혼합 어휘*(이산 VQ + 텍스트)였고, Abstract-CoT는 이 지점에서 *완전 분리*를 밀어붙인다.
+첫째 갈래는 **이산 잠재 표현의 학습**이다. **VQ-VAE (van den Oord et al., 2017, [arXiv:1711.00937](https://arxiv.org/abs/1711.00937))**가 연속 분포를 코드북[^codebook]의 이산 인덱스로 양자화하는 발상을 깔았다 — 원 논문의 기본값이 코드북 크기 512, 임베딩 차원 64였고, Abstract-CoT의 64개 어휘는 그 임베딩 차원과 우연이 아닌 메아리처럼 들린다. NLP로 들어오면 **BPE (Sennrich et al., 2016, ACL)**가 서브워드 분절의 기원으로 이산 어휘를 만들어 왔지만, 이들은 *표면 형태*에서 출발한다. Abstract-CoT의 토큰들은 처음부터 *내부 계산용*으로 설계된 어휘 — 출력에 등장하지 않고 추론에만 쓰인다. **Token Assorted ([arXiv:2502.03275](https://arxiv.org/abs/2502.03275))**가 한 발 먼저 같은 방향을 시도했다 — VQ-VAE 이산 잠재 토큰과 텍스트 토큰을 *혼합*해 GSM8K에서 17% 토큰 감소를 얻으면서 AlpacaEval 점수를 유지했다. 핵심 차별점은 *혼합 어휘*(이산 VQ + 텍스트)였고, Abstract-CoT는 이 지점에서 *완전 분리*를 밀어붙인다.
 
-둘째 갈래는 **연속 잠재 추론**이다. **COCONUT ([arXiv:2412.06769](https://arxiv.org/abs/2412.06769))**이 이쪽 끝점에 있다. 마지막 히든을 다음 입력으로 되먹여 연속 사고를 펼치는 방식 — *Capabilities paper*가 인용한 GSM8K ~34% 수치는 COCONUT 자체의 한계라기보다 *연속 잠재 일반*의 계산 집약 과제 한계 예시로 읽어야 정확하다. COCONUT은 오히려 ProsQA 같은 *탐색* 과제에서 강하다. **CODI ([arXiv:2502.21074](https://arxiv.org/abs/2502.21074), GPT-2 스케일 실험)**는 자기 증류로 연속 잠재 공간에서 명시적 CoT와 동등한 성능을 보였고, **LEPO ([arXiv:2604.17892](https://arxiv.org/abs/2604.17892))**는 Gumbel-Softmax로 잠재 추론에 확률성을 주입해 GRPO와 결합했다. 이 갈래의 주장은 "표현력은 연속이 풍부하다"이고, Abstract-CoT의 주장은 "이산이라야 학습·해석·재사용이 안정적이다"이다. 둘 다 자기 영토에서 옳다.
+둘째 갈래는 **연속 잠재 추론**이다. **COCONUT ([arXiv:2412.06769](https://arxiv.org/abs/2412.06769))**이 이쪽 끝점에 있다. 마지막 히든을 다음 입력으로 되먹여 연속 사고를 펼치는 방식 — *Capabilities paper*가 인용한 GSM8K ~34% 수치는 COCONUT 자체의 한계라기보다 *연속 잠재 일반*의 계산 집약 과제 한계 예시로 읽어야 정확하다. COCONUT은 오히려 ProsQA 같은 *탐색* 과제에서 강하다. **CODI ([arXiv:2502.21074](https://arxiv.org/abs/2502.21074), GPT-2 스케일 실험)**는 자기 증류[^selfdistill]로 연속 잠재 공간에서 명시적 CoT와 동등한 성능을 보였고, **LEPO ([arXiv:2604.17892](https://arxiv.org/abs/2604.17892))**는 Gumbel-Softmax로 잠재 추론에 확률성을 주입해 GRPO와 결합했다. 이 갈래의 주장은 "표현력은 연속이 풍부하다"이고, Abstract-CoT의 주장은 "이산이라야 학습·해석·재사용이 안정적이다"이다. 둘 다 자기 영토에서 옳다.
 
 셋째 갈래는 **추론의 파라미터 내재화**다. TwT ([arXiv:2503.24198](https://arxiv.org/abs/2503.24198))이 추론 단계를 모델 파라미터 안으로 흡수하는 3단계 증류로 정확도 +13.6%와 토큰 감소를 동시에 얻었다. *어휘 교체*(Abstract-CoT)와 *파라미터 흡수*(TwT)는 같은 목표의 다른 축이다. 더 거슬러 올라가면 Universal Transformer(2018)의 가중치 재사용·ALBERT(2019)의 파라미터 공유까지 닿는다.
 
@@ -103,3 +103,15 @@ graph LR
 [^warmup]: "we introduce a policy iteration-style warm-up loop that alternates between (i.) bottlenecking from a verbal CoT via masking and performing supervised fine-tuning, and (ii.) self-distillation by training the model to generate abstract tokens from the prompt alone via constrained decoding with the codebook." — Ramji et al. (2026), Abstract.
 
 [^powerlaw]: "Distribution of final-step token frequencies, which demonstrates a power law characterization akin to Zipf's law, induced purely through post-training." — Ramji et al. (2026), §5 (Fig. 4).
+
+[^cot]: 용어 — Chain-of-Thought(생각의 사슬, CoT). 모델이 답을 바로 내지 않고 중간 추론 단계를 자연어로 길게 풀어 쓰는 방식. 정확도를 높이지만 토큰을 많이 쓰는데, 이 글은 그 긴 언어 사슬을 64개 추상 토큰으로 갈아치워 비용을 줄인다.
+
+[^discrete]: 용어 — 이산(discrete). 값이 띄엄띄엄 떨어진 낱개로 셀 수 있는 것(예: 64개 토큰 중 하나). 매끄럽게 이어진 연속(continuous) 벡터와 대비되며, 이 글은 이산이라야 학습·해석·재사용이 안정적이라고 본다.
+
+[^latent]: 용어 — 잠재(latent) 추론. 사람이 읽는 자연어 텍스트가 아니라, 모델 내부의 벡터·토큰 공간에서 사고를 펼치는 방식. 언어라는 "병목"을 우회해 더 압축적으로 추론하려는 시도로, 연속 잠재와 이산 잠재 두 갈래가 있다.
+
+[^codebook]: 용어 — 코드북(codebook). 이산 잠재 표현에서 쓸 수 있는 "토큰 사전" — 여기서는 추론 전용으로 예약된 64개의 추상 토큰 집합. 모델은 이 사전 안에서 골라 짧은 시퀀스를 짜 추론을 인코딩한다.
+
+[^sft]: 용어 — SFT(Supervised Fine-Tuning, 지도 미세조정). 입력과 모범 정답의 짝을 모델에 직접 보여주며 따라 하도록 학습시키는 단계. 여기서는 언어 CoT를 본보기로 추상 토큰이 그 정보를 흡수하게 만드는 1단계 웜업에 쓰인다.
+
+[^selfdistill]: 용어 — 자기 증류(self-distillation). 모델이 자기 자신의 출력을 교사 삼아 다시 배우는 기법. 여기서는 언어 CoT에 기대 만든 추상 토큰을, 이번엔 언어 없이 스스로 재생성하도록 학습시켜 언어 의존을 떼어내는 데 쓴다.

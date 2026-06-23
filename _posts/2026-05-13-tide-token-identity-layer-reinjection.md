@@ -9,9 +9,9 @@ source: "PAPER/2605.06216.pdf"
 
 ## 오늘의 한 편
 
-Apple의 Jaiswal 외, **TIDE: Token Identity Delivered Everywhere** ([arXiv:2605.06216](https://arxiv.org/abs/2605.06216), 5/8). 제목이 거의 노골적이다 — 정체성은 입력 임베딩에서 한 번만 배달되고 끝나는 게 아니라, 모든 레이어에 다시 배달되어야 한다는 것. 임베딩 테이블 K개를 병치한 EmbeddingMemory를 두고, 매 transformer 레이어에서 depth-conditioned router가 토큰 인덱스로 인덱싱된 정체성 벡터를 residual에 가산하는 구조다[^tide]. K=24에서 8 downstream task 평균 +2.3%, rare 토큰 loss -9.0%. 그러나 내가 이 논문을 노트에 끌어온 진짜 이유는 점수가 아니다.
+Apple의 Jaiswal 외, **TIDE: Token Identity Delivered Everywhere** ([arXiv:2605.06216](https://arxiv.org/abs/2605.06216), 5/8). 제목이 거의 노골적이다 — 정체성은 입력 임베딩[^embedding]에서 한 번만 배달되고 끝나는 게 아니라, 모든 레이어에 다시 배달되어야 한다는 것. 임베딩 테이블 K개를 병치한 EmbeddingMemory를 두고, 매 transformer 레이어에서 depth-conditioned router가 토큰 인덱스로 인덱싱된 정체성 벡터를 residual[^residual]에 가산하는 구조다[^tide]. K=24에서 8 downstream task 평균 +2.3%, rare 토큰 loss -9.0%. 그러나 내가 이 논문을 노트에 끌어온 진짜 이유는 점수가 아니다.
 
-이름이 새것이지 발상이 새것은 아니다. **"중간 레이어에 입력 정체성을 다시 흘려넣자"**는 충동의 계보를 한번 짚고 가자. 가장 오래된 친척은 LSTM이 cell state로 입력 정체성을 시간축에 따라 운반하던 발상이다. 그 다음이 ResNet의 skip connection — *깊이축*으로 정체성을 운반. ALBERT는 임베딩과 hidden을 factorize하면서 임베딩 차원이 hidden 차원에 종속되지 않을 수 있다는 사실을 보였다. 더 최근의 친척으로는 RoPE/ALiBi 류의 positional 재주입, RETRO·kNN-LM의 외부 메모리 retrieval, SSM convolution 커널이 input identity를 채널별로 재합성하는 방식이 있다. TIDE는 이 계보의 한 변종이지만 결정적 차이가 하나 있다 — **hidden state로 인덱싱하지 않고 토큰 인덱스로 인덱싱한다**. 이게 왜 중요한지는 (2)에서 분명해진다.
+이름이 새것이지 발상이 새것은 아니다. **"중간 레이어에 입력 정체성을 다시 흘려넣자"**는 충동의 계보를 한번 짚고 가자. 가장 오래된 친척은 LSTM이 cell state로 입력 정체성을 시간축에 따라 운반하던 발상이다. 그 다음이 ResNet의 skip connection — *깊이축*으로 정체성을 운반. ALBERT는 임베딩과 hidden을 factorize하면서 임베딩 차원이 hidden 차원에 종속되지 않을 수 있다는 사실을 보였다. 더 최근의 친척으로는 RoPE/ALiBi 류의 positional 재주입, RETRO·kNN-LM의 외부 메모리 retrieval, SSM convolution 커널이 input identity를 채널별로 재합성하는 방식이 있다. TIDE는 이 계보의 한 변종이지만 결정적 차이가 하나 있다 — **hidden state[^hiddenstate]로 인덱싱하지 않고 토큰 인덱스로 인덱싱한다**. 이게 왜 중요한지는 (2)에서 분명해진다.
 
 ## 왜 골랐나
 
@@ -33,13 +33,13 @@ TIDE의 K MemoryBlock은 정확히 그 사고 실험의 구현체다. K개의 �
 
 Zipf 분포(상위 1% 토큰이 코퍼스 80%를 차지)와 minibatch SGD가 만나면, 토큰 임베딩 업데이트의 기대 횟수는 극단적으로 불평등해진다. Hapax 토큰 약 1,660회, 최다빈도 토큰 약 16.6억 회. **6 orders of magnitude**[^rare].
 
-이건 새로운 진단은 아니다. 계보를 거슬러 올라가면 — 2013년 word2vec의 subsampling(빈도 √ 역수로 흔한 토큰을 깎아내는)이 이 문제와 씨름한 가장 이른 인공물이고, GloVe의 weighting function에 들어간 캡 역시 같은 가족이다. NLP 바깥에선 추천 시스템의 long-tail item embedding 문제가 같은 수학이고, 강화학습의 prioritized replay(Schaul 2015)가 "희귀 transition에 gradient를 더 자주 흘리자"는 동일 충동의 다른 분야 표현이다. Gao et al.의 AGG(ACL 2022)는 더 직접적으로 rare 토큰 gradient가 embedding 공간 전체를 narrow cone으로 수렴시키는 **anisotropy**를 보고했고(Ethayarajh 2019의 contextual embedding anisotropy 진단과 한 계통이다), Mu & Viswanath의 ABTT(2018)는 사후적으로 dominant component를 빼는 방식으로 같은 병을 치료하려 했다.
+이건 새로운 진단은 아니다. 계보를 거슬러 올라가면 — 2013년 word2vec의 subsampling(빈도 √ 역수로 흔한 토큰을 깎아내는)이 이 문제와 씨름한 가장 이른 인공물이고, GloVe의 weighting function에 들어간 캡 역시 같은 가족이다. NLP 바깥에선 추천 시스템의 long-tail item embedding 문제가 같은 수학이고, 강화학습의 prioritized replay(Schaul 2015)가 "희귀 transition에 gradient를 더 자주 흘리자"는 동일 충동의 다른 분야 표현이다. Gao et al.의 AGG(ACL 2022)는 더 직접적으로 rare 토큰 gradient[^gradient]가 embedding 공간 전체를 narrow cone으로 수렴시키는 **anisotropy**를 보고했고(Ethayarajh 2019의 contextual embedding anisotropy 진단과 한 계통이다), Mu & Viswanath의 ABTT(2018)는 사후적으로 dominant component를 빼는 방식으로 같은 병을 치료하려 했다.
 
 TIDE의 기여는 진단 자체가 아니라 **LLaMA-Base-1B에서 rare 임베딩 L2 노름이 훈련 진행에 따라 단조 감소함**을 보인 점에 있다. Common 토큰은 노름이 계속 자라는 동안 rare는 0으로 빨려간다. *노이즈로 수렴한다*는 표현이 비유가 아니다. AGG가 anisotropy를 *방향*의 문제로 보았다면, TIDE는 *크기*의 문제로 다시 정의한다 — rare 임베딩은 잘못된 방향을 가리키는 게 아니라, **방향 자체가 사라지고 있다.**
 
 ### (2) Contextual Collapse — Lipschitz 천장의 정체
 
-여기서부터 흥미가 다르게 붙는다. 비슷한 문맥에 등장하는 의미론적으로 다른 두 토큰 — "their"/"there", "1847"/"1851"/"1849", "ibuprofen"/"acetaminophen" — 이 attention 후 거의 같은 hidden state를 받게 되면, FFN의 Lipschitz continuity가 두 토큰 출력의 분리 가능성에 천장을 씌운다 (Proposition 2.2):
+여기서부터 흥미가 다르게 붙는다. 비슷한 문맥에 등장하는 의미론적으로 다른 두 토큰 — "their"/"there", "1847"/"1851"/"1849", "ibuprofen"/"acetaminophen" — 이 attention 후 거의 같은 hidden state를 받게 되면, FFN[^ffn]의 Lipschitz[^lipschitz] continuity가 두 토큰 출력의 분리 가능성에 천장을 씌운다 (Proposition 2.2):
 
 $$
 \lVert \text{FFN}(h_u) - \text{FFN}(h_v) \rVert \;\le\; \frac{C - L_{\text{FFN}} \cdot \delta}{2}
@@ -144,3 +144,15 @@ K=2만 써도 전체 이익의 약 55%가 회수된다는 점도 유효 채널(K
 [^collapse]: "When semantically distinct tokens appear in nearly identical syntactic environments, the context provides limited differentiating signal and their hidden states become nearly indistinguishable across the network (Figure 2)." — Jaiswal et al. (2026), §2.2.
 
 [^tide]: "we propose TIDE, which augments the standard transformer with EmbeddingMemory: an ensemble of K independent MemoryBlocks that map token indices to context-free semantic vectors, computed once and injected into every layer through a depth-conditioned softmax router with a learnable null bank." — Jaiswal et al. (2026), Abstract.
+
+[^embedding]: 용어 — 임베딩(embedding). 토큰(단어 조각)을 의미가 담긴 숫자 벡터로 바꾼 것. 모델은 글자가 아니라 이 벡터로 계산하며, 이 글의 핵심은 그 "정체성 벡터"가 입력에서 한 번만 주어지고 이후 레이어에서 흐려진다는 데 있다.
+
+[^residual]: 용어 — 잔차 연결(residual connection). 한 레이어의 출력에 그 레이어의 입력을 그대로 더해 흘려보내는 우회로. 깊은 신경망이 정보를 잃지 않게 하는 장치로, TIDE는 이 통로에 정체성 벡터를 매 레이어 다시 얹는다.
+
+[^hiddenstate]: 용어 — hidden state(은닉 상태). 토큰이 레이어를 거치며 갖는 중간 표현 벡터. 입력 임베딩이 문맥과 섞여 갱신된 것으로, 비슷한 문맥의 다른 두 토큰이 이 벡터에서 거의 같아져 버리는 게 이 글이 말하는 "붕괴"다.
+
+[^gradient]: 용어 — gradient(기울기). 손실을 줄이려면 각 파라미터를 어느 방향으로 얼마나 고쳐야 하는지를 가리키는 학습 신호. 희귀 토큰은 등장이 드물어 이 신호를 받는 횟수가 흔한 토큰의 100만분의 1 수준이라, 임베딩이 제대로 학습되지 못한다.
+
+[^ffn]: 용어 — FFN(Feed-Forward Network). 트랜스포머의 각 레이어에서 어텐션 다음에 놓여 토큰별로 표현을 변환하는 작은 신경망. 이 글은 FFN을 아무리 키워도 한번 뭉개진 두 토큰을 다시 갈라내지 못한다는 한계를 짚는다.
+
+[^lipschitz]: 용어 — Lipschitz 연속성·상수. 입력이 조금 달라질 때 출력이 최대 얼마나 달라질 수 있는지를 묶는 한계. 이 값이 작으면 함수가 매끄러워 안정적이지만, 입력(두 토큰의 은닉 상태)이 거의 같으면 출력도 거의 같을 수밖에 없어 둘을 분리할 천장이 생긴다.
