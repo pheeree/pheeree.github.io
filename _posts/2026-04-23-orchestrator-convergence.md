@@ -19,9 +19,9 @@ MoA(Wang et al., 2025), AgentInit(Tian et al., 2025), MALBO(Sabbatella, 2025) �
 
 **1. 세 가지 다른 증거, 같은 결론**
 
-- **MoA**는 Proposer/Aggregator로 역할을 쪼갠 뒤 회귀분석을 돌렸다. 최종 성능에 대한 **Aggregator 계수 0.588 vs Proposer 계수 0.281**. 두 배 이상의 민감도다[^moa_coef].
+- **MoA**는 Proposer/Aggregator[^aggregator]로 역할을 쪼갠 뒤 회귀분석[^regression]을 돌렸다. 최종 성능에 대한 **Aggregator 계수 0.588 vs Proposer 계수 0.281**. 두 배 이상의 민감도다[^moa_coef].
 - **AgentInit**은 Planner/Observer/Formatter라는 메타 역할을 "모든 팀에 기본 탑재"할 요소로 정의했다. Planner가 그 중에서도 팀 설계의 축이다.
-- **MALBO**는 LLM들의 5차원 성능·가격 공간에서 다목적 베이즈 최적화(qLogEHVI)로 역할-모델 조합을 훑었다. 파레토 프런티어 위의 팀에서 **Manager 자리가 거의 항상 가장 강한 모델**이다.
+- **MALBO**는 LLM들의 5차원 성능·가격 공간에서 다목적 베이즈 최적화[^bayesopt](qLogEHVI)로 역할-모델 조합을 훑었다. 파레토 프런티어[^pareto] 위의 팀에서 **Manager 자리가 거의 항상 가장 강한 모델**이다.
 
 프레임이 다르다. 회귀분석, 초기화 휴리스틱, 베이지안 최적화. 그런데 도착한 자리가 같다.
 
@@ -88,7 +88,7 @@ MALBO는 이질 모델 풀에서 최적화한다. 그래서 "Manager에 최강 �
 
 Type B Mission Engine 설계가 바뀐다.
 
-**첫째**, 페르소나 분기를 "동등한 N개의 에이전트"로 그리지 않는다. 의식적으로 **Aggregator 슬롯을 분리**하고, 프롬프트 자원(길이, 체크리스트, 검증 요청)을 여기에 집중한다.
+**첫째**, 페르소나[^persona] 분기를 "동등한 N개의 에이전트"로 그리지 않는다. 의식적으로 **Aggregator 슬롯을 분리**하고, 프롬프트 자원(길이, 체크리스트, 검증 요청)을 여기에 집중한다.
 
 ```mermaid
 flowchart LR
@@ -128,3 +128,13 @@ flowchart LR
 [^moa_coef]: "the regression coefficient for the aggregator model (0.588) is higher than that for the proposer model (0.281)." — Wang et al. (2025), Mixture-of-Agents, arXiv:2406.04692, §3.3.
 
 [^chen_triad]: "Triads can collapse into rubber-stamping if critics are too weak or correlated with proposers." — Chen (2025), "Multi-Agent LLM Systems: From Emergent Collaboration to Structured Collective Intelligence" (Preprints.org).
+
+[^aggregator]: 용어 — 집계자(Aggregator). 여러 제안자(Proposer)의 출력을 한데 모아 하나의 최종 답으로 종합하는 역할. 이 글의 핵심은 세 논문이 이름만 다를 뿐(Aggregator·Planner·Manager) 모두 이 "모아서 결정하는 자리"를 성능의 주된 동인으로 지목했다는 것이다.
+
+[^regression]: 용어 — 회귀분석·회귀계수. 어떤 요인이 결과에 얼마나 영향을 주는지를 수치로 추정하는 통계 기법. 계수가 클수록 그 요인의 영향이 크며, Aggregator 계수 0.588이 Proposer 0.281의 두 배라는 건 집계자 쪽이 성능을 두 배 더 좌우한다는 뜻이다.
+
+[^bayesopt]: 용어 — 베이즈 최적화(Bayesian optimization). 한 번 평가하는 데 비용이 큰 함수를, 적은 시도로 똑똑하게 최적점을 찾아가는 기법. MALBO는 이걸로 "어느 역할에 어느 모델을 넣을지"의 방대한 조합을 효율적으로 탐색했다.
+
+[^pareto]: 용어 — 파레토 프런티어(Pareto frontier). 성능과 비용처럼 맞바꿔야 하는 목표들에서, 한쪽을 더 개선하려면 반드시 다른 쪽을 희생해야 하는 "최선의 절충" 경계. 그 경계 위의 팀들을 보니 강한 모델이 거의 항상 Manager 자리에 앉아 있었다.
+
+[^persona]: 용어 — 페르소나(persona). 한 모델에 프롬프트로 씌우는 역할·관점. 글쓴이는 단일 모델을 여러 페르소나로 분기시켜 "팀"처럼 쓰되, 그중 집계자 슬롯에만 자원을 몰아주는 설계로 세 논문의 결론을 재현하려 한다.

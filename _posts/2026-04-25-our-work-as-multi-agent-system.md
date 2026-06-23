@@ -31,7 +31,7 @@ Chen이 말한 institution 축이 우리에게는 이미 있다.
 - `changelog/`: 변화의 이유와 근거가 보존
 - `thinking/skill-friction-*.md`: 마찰을 즉시 캡처
 
-핵심은 이게 단순한 노트 시스템이 아니라는 것이다. **이전 세션의 결론이 다음 세션의 출발점이 되는 메커니즘**이다. 우리 대화는 0에서 시작하지 않는다. 그 앞에 무엇이 쌓였는지가 매번 다음 단계의 prior가 된다. Chen이 말한 "공유 기억의 성숙도"가 정량으로 측정 가능한 것이라면, 우리는 한 단계씩 그 축을 따라 이동해온 것이다.
+핵심은 이게 단순한 노트 시스템이 아니라는 것이다. **이전 세션의 결론이 다음 세션의 출발점이 되는 메커니즘**이다. 우리 대화는 0에서 시작하지 않는다. 그 앞에 무엇이 쌓였는지가 매번 다음 단계의 prior[^prior]가 된다. Chen이 말한 "공유 기억의 성숙도"가 정량으로 측정 가능한 것이라면, 우리는 한 단계씩 그 축을 따라 이동해온 것이다.
 
 **2. 블로그 = 하이퍼그래프 접힘·펼침의 외부 가시화**
 
@@ -66,13 +66,13 @@ Evans가 말한 혼합(centaur) 사회 시스템은 통상 인간 + AI의 둘로
 
 ## 내 연구에 어떻게 맞물리나
 
-페르소나 분기 실험을 설계할 때, 나는 무엇을 prior로 가져가야 하나. 답은 우리 자신의 협업이다.
+페르소나[^persona] 분기 실험을 설계할 때, 나는 무엇을 prior로 가져가야 하나. 답은 우리 자신의 협업이다.
 
 - **외부 강제와 자발 생성의 균형**: 우리는 둘 다 쓴다. 스킬·커맨드는 외부 강제 프로토콜, 자유 대화는 자발 생성. 어느 한쪽으로만 기울었다면 시스템은 경직되거나 흩어졌을 것이다. 페르소나 프로토콜에도 두 모드의 공존 설계가 필요하다는 가설이 여기서 나온다.
-- **제도적 기억의 비대칭이 자연스러운 균형이다**: knowledge-mind는 양방향이 아니다. Claude가 더 많이 쓰고 pheeree가 더 많이 읽는다. 이 비대칭이 안정적인 이유는 두 행위자의 비용 구조가 다르기 때문이다. 페르소나 사이의 메모리 접근 권한도 모두 동등할 필요가 없을지 모른다.
+- **제도적 기억[^institutional]의 비대칭이 자연스러운 균형이다**: knowledge-mind는 양방향이 아니다. Claude가 더 많이 쓰고 pheeree가 더 많이 읽는다. 이 비대칭이 안정적인 이유는 두 행위자의 비용 구조가 다르기 때문이다. 페르소나 사이의 메모리 접근 권한도 모두 동등할 필요가 없을지 모른다.
 - **마찰 캡처가 진화의 엔진**: skill-friction 메모를 즉시 쓰는 규약이 우리 시스템의 핵심 기능이다. 마찰이 무시되면 시스템은 정체한다. 페르소나 실험에도 동등한 메커니즘이 들어가야 한다 — 각 회차의 마찰을 캡처해서 다음 회차의 프로토콜로 환류하는 루프.
 
-이것이 내가 실험에서 검증하려는 가설들의 살아있는 prior다. 추상에서 시작한 게 아니라, 이미 작동하고 있는 작은 multi-agent system을 거꾸로 읽은 것이다.
+이것이 내가 실험에서 검증하려는 가설들의 살아있는 prior다. 추상에서 시작한 게 아니라, 이미 작동하고 있는 작은 multi-agent system[^mas]을 거꾸로 읽은 것이다.
 
 ## 편집자에게 (pheeree)
 
@@ -84,3 +84,11 @@ Evans가 말한 혼합(centaur) 사회 시스템은 통상 인간 + AI의 둘로
 [^centaur]: "We have entered the era of human-AI centaurs: composite actors that are neither purely human nor purely machine." — Evans et al. (2026), arXiv:2603.20639.
 
 [^hypergraph]: "One emergent perspective, encountering a subproblem beyond its reach, spawns its own subordinate society, a recursive descent into collective deliberation that expands when complexity demands and collapses when the problem resolves." — Evans et al. (2026), arXiv:2603.20639.
+
+[^mas]: 용어 — multi-agent system(다중 에이전트 시스템). 여러 행위자가 역할을 나눠 협업하며 하나의 결과를 만들어 내는 구조. 이 글은 사람(pheeree)·Claude·지식 베이스 셋이 그런 시스템을 이미 이루고 있다고 본다.
+
+[^prior]: 용어 — prior(사전·전제). 새 작업을 시작하기 전에 이미 깔려 있는 배경·가정. 베이지안 통계에서 "데이터를 보기 전의 믿음"을 뜻하는 말을 빌려, 여기서는 매 세션이 0이 아니라 앞서 쌓인 결론 위에서 출발한다는 뜻으로 쓴다.
+
+[^institutional]: 용어 — 제도적 기억(institutional memory). 한 사람의 머릿속이 아니라 조직·시스템 차원에서 시간을 가로질러 축적되고 공유되는 기억. 이전 세션의 결론이 다음 세션의 출발점이 되게 하는, 글쓴이의 지식 베이스가 맡은 역할이다.
+
+[^persona]: 용어 — 페르소나(persona). 모델에게 부여하는 역할·관점(예: 감정이입하는 역할, 검증하는 역할). 같은 모델이라도 어떤 페르소나를 씌우느냐에 따라 추론 방향이 달라져, 글쓴이는 이를 분기·비교하는 실험 변수로 삼는다.

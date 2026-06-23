@@ -9,7 +9,7 @@ source: "knowledge-mind / multi-agent-governance (Evans·Bratton·Arcas 2026)"
 
 ## 오늘의 한 편
 
-Evans·Bratton·Arcas(2026)의 Science 논문에는 실험 관찰이 하나 있다. DeepSeek-R1과 QwQ-32B — 두 모델 모두 **정확도만 겨냥한 RL 훈련**을 받았다. 다관점 대화를 생성하라는 지시는 없었다. 그런데 두 모델의 chain-of-thought를 뜯어보면, 자신의 사고 연쇄 안에서 **자발적으로 다자 대화를 생성**하고 있었다[^spontaneous].
+Evans·Bratton·Arcas(2026)의 Science 논문에는 실험 관찰이 하나 있다. DeepSeek-R1과 QwQ-32B — 두 모델 모두 **정확도만 겨냥한 RL[^rl] 훈련**을 받았다. 다관점 대화를 생성하라는 지시는 없었다. 그런데 두 모델의 chain-of-thought[^cot]를 뜯어보면, 자신의 사고 연쇄 안에서 **자발적으로 다자 대화를 생성**하고 있었다[^spontaneous].
 
 "더 오래 생각"이 아니라 "다르게 생각"이다. 내부에 사회를 세운 것이다.
 
@@ -25,7 +25,7 @@ DeepSeek-R1·QwQ-32B에 주어진 보상 신호는 단순했다 — 정답이면
 
 Evans 등은 이것을 **사고의 사회(society of thought)**라고 부른다. 단일 모델 안에서 다자적 심의 구조가 자생한다는 뜻이다[^social].
 
-**외부** — 모델 간 거버넌스(다중 에이전트). 에이전트들이 오케스트레이터로 모인다.
+**외부** — 모델 간 거버넌스(다중 에이전트). 에이전트들이 오케스트레이터[^orchestrator]로 모인다.
 
 ```mermaid
 flowchart LR
@@ -55,7 +55,7 @@ Evans 등의 테제는 여기서 한 발 더 나간다. 단순히 내부와 외�
 
 이 프레임이 맞다면, "몇 개의 에이전트"는 잘못된 질문이다. 에이전트 수는 설계 변수가 아니라 **복잡도의 함수**다. 시스템이 스스로 필요에 따라 접고 펼친다.
 
-Yang et al.(2026)이 K* 다양성 상한을 발견한 것[^yang_kstar], Kim et al.(2025)이 에이전트 수 증가가 오히려 오류를 증폭한다는 것을 보인 것 — 이 두 결과가 하이퍼그래프 프레임에서 자연스럽게 따라 나온다. 강제로 펼쳐 놓으면 오히려 나쁘다.
+Yang et al.(2026)이 K* 다양성 상한을 발견한 것[^yang_kstar], Kim et al.(2025)이 에이전트 수 증가가 오히려 오류를 증폭한다는 것을 보인 것 — 이 두 결과가 하이퍼그래프[^hypergraphterm] 프레임에서 자연스럽게 따라 나온다. 강제로 펼쳐 놓으면 오히려 나쁘다.
 
 **3. 외부 강제 vs 자발 생성 — 페르소나 분기는 어디에 있는가**
 
@@ -99,3 +99,11 @@ chain-of-thought 프롬프팅이 "내부 사회 활성화"라는 Evans의 해석
 [^hypergraph]: "One emergent perspective, encountering a subproblem beyond its reach, spawns its own subordinate society, a recursive descent into collective deliberation that expands when complexity demands and collapses when the problem resolves." — Evans et al. (2026), arXiv:2603.20639.
 
 [^yang_kstar]: "Homogeneous agents saturate early because their outputs are strongly correlated, whereas heterogeneous agents contribute complementary evidence. We further introduce K∗, an effective channel count that quantifies the number of effective channels without ground-truth labels." — Yang et al. (2026), arXiv:2602.03794, Abstract.
+
+[^rl]: 용어 — RL(Reinforcement Learning, 강화학습). 결과에 보상(정답이면 +1 같은)을 매겨 점수를 높이는 방향으로 모델 행동을 다듬는 학습. 이 글의 놀라움은 "정답만 보상"했는데도 모델이 시키지 않은 내부 토론 구조를 스스로 길러냈다는 점이다.
+
+[^cot]: 용어 — chain-of-thought(생각의 사슬, CoT). 모델이 최종 답만 내놓는 대신 중간 추론 단계를 죽 풀어 쓰는 것. 이 글은 그 사슬을 들여다보니 모델이 자기 안에서 반론·평가·종합을 주고받는 "대화"를 하고 있더라는 관찰을 다룬다.
+
+[^hypergraphterm]: 용어 — 하이퍼그래프(hypergraph). 하나의 연결선이 두 점만이 아니라 여러 점을 한꺼번에 묶을 수 있는, 일반화된 그래프. 여기서는 문제가 복잡해지면 하위 사회가 펼쳐지고 풀리면 접히는, 그 가변적 구조를 가리키는 은유로 쓰인다.
+
+[^orchestrator]: 용어 — 오케스트레이터(orchestrator). 여러 에이전트의 작업을 지휘하고 그 출력을 한데 모아 결론으로 합치는 조정자 역할. 이 글은 외부의 이 조정자와 모델 내부의 "합성자"가 같은 자리를 차지한다고 본다.

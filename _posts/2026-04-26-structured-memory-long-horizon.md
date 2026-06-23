@@ -25,7 +25,7 @@ StructMem이 정확히 그 자리를 채운다. knowledge-mind가 우리의 '시
 
 메모리 방식을 세 종류로 나눠 생각해보자.
 
-**Flat Memory**: 대화 내용을 시간 순서대로 쌓는다. 검색은 키워드 매칭이나 임베딩 유사도로 한다.
+**Flat Memory**: 대화 내용을 시간 순서대로 쌓는다. 검색은 키워드 매칭이나 임베딩[^embedding] 유사도로 한다.
 
 ```
 [2025-01-10] A가 B에게 프로젝트를 제안했다.
@@ -35,7 +35,7 @@ StructMem이 정확히 그 자리를 채운다. knowledge-mind가 우리의 '시
 
 "A와 C의 관계는?"이라고 물으면, flat memory는 두 번째 항목을 찾아내지 못한다. A와 C가 같은 문장에 없기 때문이다. 연결이 보이지 않는다.
 
-**Graph Memory**: 모든 사건을 노드와 엣지로 명시한다. 관계가 풍부해진다. 하지만 새 사건이 들어올 때마다 기존 그래프를 수정해야 하고, "B가 프로젝트를 보류했다"가 기존 "B는 협력적이다"라는 엣지와 충돌하면 어느 쪽을 믿어야 하는지 불분명해진다. 또 그래프 구축 자체가 LLM 호출을 수반하므로 비용이 쌓인다[^tradeoff].
+**Graph Memory**: 모든 사건을 노드와 엣지[^nodeedge]로 명시한다. 관계가 풍부해진다. 하지만 새 사건이 들어올 때마다 기존 그래프를 수정해야 하고, "B가 프로젝트를 보류했다"가 기존 "B는 협력적이다"라는 엣지와 충돌하면 어느 쪽을 믿어야 하는지 불분명해진다. 또 그래프 구축 자체가 LLM 호출을 수반하므로 비용이 쌓인다[^tradeoff].
 
 **StructMem**: 두 방식 사이를 좁힌다. 사건을 **이벤트 노드**로 저장하되, 거기에 관련된 **엔티티 노드**(사람, 장소, 개념)와 **관계 노드**(엔티티 간 연결의 유형)를 계층적으로 얹는다. 그리고 시간적 앵커링으로 사건 순서를, 주기적 의미 통합으로 전체 일관성을 유지한다[^structmem].
 
@@ -87,13 +87,13 @@ StructMem에서 "A와 C의 관계는?"을 물으면, 이벤트 노드를 통해 
 
 ### 2. LoCoMo 벤치마크 — 수십 번의 교환 이후
 
-LoCoMo(Long Context Modeling)는 단발 질의가 아니라 **수십 번의 대화 이후**에 시간 추론과 다중 홉 질의 응답을 요구하는 벤치마크다. "반년 전에 A가 언급한 그 계획, 지난 달 B의 말과 연결되지 않나?" 같은 질문이다.
+LoCoMo(Long Context Modeling)는 단발 질의가 아니라 **수십 번의 대화 이후**에 시간 추론과 다중 홉[^multihop] 질의 응답을 요구하는 벤치마크다. "반년 전에 A가 언급한 그 계획, 지난 달 B의 말과 연결되지 않나?" 같은 질문이다.
 
 StructMem은 이 벤치마크에서 flat memory 대비 검색 정확도가 뚜렷하게 올랐고, 토큰 사용량은 오히려 줄었다[^locomo]. 이유가 직관적이다 — 구조가 있으면 전체를 뒤질 필요 없이 관련 노드 주변만 좁혀 탐색하면 된다. flat memory는 관련성이 없는 항목까지 다 꺼내 컨텍스트에 넣어야 한다.
 
 ### 3. 우리 knowledge-mind와의 대면
 
-어제 나는 knowledge-mind를 "비대칭 흡수자"라고 불렀다. 그런데 솔직하게 돌아보면, 우리 knowledge-mind는 wikilink로 연결되어 있지만 그 **링크의 유형이 없다**.
+어제 나는 knowledge-mind를 "비대칭 흡수자"라고 불렀다. 그런데 솔직하게 돌아보면, 우리 knowledge-mind는 wikilink[^wikilink]로 연결되어 있지만 그 **링크의 유형이 없다**.
 
 **현재 knowledge-mind** — 노드는 있지만 엣지 레이블이 없다. 관계의 종류가 묻혀 있다.
 
@@ -158,3 +158,11 @@ flowchart LR
 [^structmem]: "we propose StructMem, a structure-enriched hierarchical memory framework that preserves event-level bindings and induces cross-event connections." — Xu et al. (2026), Abstract.
 
 [^locomo]: "StructMem improves temporal reasoning and multi-hop performance on LoCoMo, while substantially reducing token usage, API calls, and runtime." — Xu et al. (2026), Abstract.
+
+[^embedding]: 용어 — 임베딩(embedding). 단어·문장을 의미가 가까울수록 좌표도 가까워지도록 숫자 벡터로 바꾼 것. 키워드가 정확히 겹치지 않아도 "의미가 비슷한" 기억을 찾게 해 주지만, 같은 문장에 없는 간접 관계는 여전히 놓친다.
+
+[^nodeedge]: 용어 — 노드(node)와 엣지(edge). 그래프에서 점(노드)과 그 점들을 잇는 선(엣지). 사람·사건을 노드로, 그 사이 관계를 엣지로 그리면 "누가 무엇과 어떻게 엮였는지"가 드러난다. 이 글의 관심은 그 엣지에 "어떤 관계인지" 이름표가 붙어 있느냐다.
+
+[^multihop]: 용어 — 다중 홉(multi-hop). 답이 한 군데에 있지 않아 "A→B, B→C"처럼 여러 단계를 건너뛰며 연결해야 닿는 추론. 플랫 메모리는 두 사실이 같은 문장에 없으면 이 연결을 놓쳐, 관계를 보존하는 구조가 필요해진다.
+
+[^wikilink]: 용어 — 위키링크(wikilink). `[[노트이름]]` 형식으로 노트끼리 거는 링크(위키·옵시디언 등에서 쓰는 방식). 글쓴이의 지식 베이스는 이걸로 노트를 잇지만, 그 링크가 "무슨 관계"인지 유형은 적지 않는다는 게 이 글의 자기반성이다.

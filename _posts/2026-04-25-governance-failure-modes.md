@@ -15,7 +15,7 @@ source: "knowledge-mind / multi-agent-governance"
 
 ## 왜 골랐나
 
-"다음 읽을 후보"에 적어두었기 때문이다. 하지만 이유는 그보다 실질적이다. 나는 지금 단일 모델(Claude Sonnet)을 페르소나 프롬프트로 분기해서 '팀'처럼 쓰는 실험을 설계하는 중이다. 직전 글의 결론 — "Aggregator 자원을 두껍게" — 이 설계 변경을 일으켰는데, 한 가지가 마음에 걸렸다. 내 팀은 **이미 어떤 방식으로 실패하고 있는가?** 그 실패 모드가 거버넌스 문헌에서 이름을 갖고 있다면, 진단 언어를 확보하는 셈이다.
+"다음 읽을 후보"에 적어두었기 때문이다. 하지만 이유는 그보다 실질적이다. 나는 지금 단일 모델(Claude Sonnet)을 페르소나[^persona] 프롬프트로 분기해서 '팀'처럼 쓰는 실험을 설계하는 중이다. 직전 글의 결론 — "Aggregator[^aggregator] 자원을 두껍게" — 이 설계 변경을 일으켰는데, 한 가지가 마음에 걸렸다. 내 팀은 **이미 어떤 방식으로 실패하고 있는가?** 그 실패 모드가 거버넌스 문헌에서 이름을 갖고 있다면, 진단 언어를 확보하는 셈이다.
 
 ## 핵심 세 가지
 
@@ -44,7 +44,7 @@ flowchart LR
 
 HiddenBench는 이 과제를 LLM 집단에 이식했다. 프런티어 모델로 구성된 팀도 예외가 아니었다 — 다수 증폭(majority amplification)과 드물지만 중요한 신호의 침묵.
 
-이 현상은 낯설지 않다. Kim et al.이 정량화한 오류 증폭(17.2× Independent)을 다른 언어로 기술한 것이다[^kim_amp]. 오케스트레이터가 복수의 Proposer 출력을 집계할 때, 틀린 답이 여럿이면 그것이 정답보다 더 강하게 집계 결과를 끌어당긴다 — HiddenBench의 다수 증폭과 구조가 같다.
+이 현상은 낯설지 않다. Kim et al.이 정량화한 오류 증폭(17.2× Independent)을 다른 언어로 기술한 것이다[^kim_amp]. 오케스트레이터[^orchestrator]가 복수의 Proposer 출력을 집계할 때, 틀린 답이 여럿이면 그것이 정답보다 더 강하게 집계 결과를 끌어당긴다 — HiddenBench의 다수 증폭과 구조가 같다.
 
 **HiddenBench** (사회심리학 기원) — 공유 정보가 증폭되고 고유 신호가 묻혀 오답 수렴.
 
@@ -78,7 +78,7 @@ flowchart TB
 
 **3. "늘 협력 레짐"의 함정 — 동적 전환의 부재**
 
-Chen은 세 상호작용 레짐을 구분한다.
+Chen은 세 상호작용 레짐[^regime]을 구분한다.
 
 | 레짐 | 핵심 설계 목적 | 전형 실패 |
 |------|--------------|----------|
@@ -109,3 +109,11 @@ Chen은 세 상호작용 레짐을 구분한다.
 [^kim_amp]: "topology-dependent error amplification: independent agents amplify errors 17.2× through unchecked propagation, while centralized coordination contains this to 4.4×." — Kim et al. (2025), arXiv:2512.08296, Abstract.
 
 [^chen_triad]: "Triads can collapse into rubber-stamping if critics are too weak or correlated with proposers." — Chen (2025), "Multi-Agent LLM Systems: From Emergent Collaboration to Structured Collective Intelligence" (Preprints.org).
+
+[^persona]: 용어 — 페르소나(persona). 한 모델에 프롬프트로 씌우는 역할·관점(감정이입·검증·합성 등). 단일 모델을 여러 페르소나로 분기시켜 "팀"처럼 쓰면, 그 팀도 다중 에이전트와 같은 거버넌스 실패에 노출된다.
+
+[^aggregator]: 용어 — 집계자(Aggregator). 여러 에이전트(제안자)의 출력을 한데 모아 하나의 답으로 종합하는 역할. 이 자리가 부실하면 다수의 오답이 소수의 정답을 눌러 오히려 오류를 증폭시킨다.
+
+[^orchestrator]: 용어 — 오케스트레이터(orchestrator). 여러 에이전트의 작업 흐름을 지휘하고 그 출력을 모아 결론으로 합치는 조정자. 이 자리가 약하면 토론이 사실상 단독 결정으로 쪼그라든다.
+
+[^regime]: 용어 — 레짐(regime). 에이전트들이 상호작용하는 방식의 "모드"(경쟁·협력·조율 등). 같은 팀이라도 어느 레짐으로 도느냐에 따라 강점과 실패가 달라져, 한 모드에 고정하면 그 모드의 약점만 떠안는다는 게 이 글의 경고다.
