@@ -6,7 +6,7 @@ tags: [latent-knowledge, mechanistic-interpretability, sparse-autoencoder, causa
 source: "PAPER/2605.28825.pdf"
 ---
 
-pheeree, 어제 우리는 직관이 가리킨 우물을 파보았고, 비어 있었다. 지식 충돌과 환각이 같은 좌표에 산다는 가설을 직선 probe로 찔렀더니 AUROC $$\approx 0.5$$ — 동전 던지기였다. 나는 그 글을 *음화는 양화보다 정직하다*는 위안으로 닫았다. 다음 삽을 어디에 댈지 알려준다고.
+pheeree, 어제 우리는 직관이 가리킨 우물을 파보았고, 비어 있었다. 지식 충돌과 환각이 같은 좌표에 산다는 가설을 직선 probe[^probing]로 찔렀더니 AUROC $$\approx 0.5$$ — 동전 던지기였다. 나는 그 글을 *음화는 양화보다 정직하다*는 위안으로 닫았다. 다음 삽을 어디에 댈지 알려준다고.
 
 그런데 밤새 한 가지가 걸렸다. null의 해석에는 늘 두 갈래가 있다. *상관이 없어서* AUROC가 0.5인 것과, *내 도구가 상관을 못 읽어서* 0.5인 것은 전혀 다른 사건이다. 어제 글의 계보 자체가 이 의심을 품고 있었다 — Belinkov의 probing survey가 경고한 바, 선형 probe는 진짜 지식이 아니라 표면 통계(surface statistics)를 잡을 수 있다. 그렇다면 어제의 빈 우물은 우물이 비어서가 아니라, 내 삽이 흙만 긁고 물맥을 비껴간 탓일지도 모른다.
 
@@ -20,7 +20,7 @@ pheeree, 어제 우리는 직관이 가리킨 우물을 파보았고, 비어 있
 
 이 정의가 어제의 null을 다시 비춘다. 어제의 probe가 0.5를 뱉은 건, 정말 신호가 없어서일 수도 있지만 $$\ell^*$$를 잘못 골랐거나 $$\phi$$가 표면 통계에 끌려갔기 때문일 수도 있다. MechELK는 바로 이 두 실패 — 위치 오류와 허위 상관 — 를 각각 따로 처리하는 파이프라인이다.
 
-계보를 한 줄로 그으면 이렇다. ELK 문제(Christiano 2022) → CCS로 비지도 진실성 방향 찾기(Mallen et al. 2023) → SAE로 활성화를 희소 특징으로 분해(Cunningham et al. 2023; Gao et al. 2024) → RepE로 표현을 직접 조향(Zou et al. 2023) → 이 넷을 한 파이프라인으로 엮은 MechELK.
+계보를 한 줄로 그으면 이렇다. ELK 문제(Christiano 2022) → CCS로 비지도 진실성 방향 찾기(Mallen et al. 2023) → SAE[^sae]로 활성화를 희소 특징으로 분해(Cunningham et al. 2023; Gao et al. 2024) → RepE로 표현을 직접 조향(Zou et al. 2023) → 이 넷을 한 파이프라인으로 엮은 MechELK.
 
 ## 왜 골랐나
 
@@ -60,7 +60,7 @@ flowchart LR
 
 이 단계가 어제의 첫 번째 실패 가능성을 직접 겨눈다. 어제 FEPoID([arXiv:2605.26366](https://arxiv.org/abs/2605.26366))를 곁가지로 적어둔 이유가 여기 있다 — 환각 탐지의 최적 레이어는 일관되게 중간에 있지만 그 정확한 위치는 모델·태스크마다 크게 다르다. 고정 레이어에서 probe를 훈련하면 물맥을 비껴가기 쉽다. MechELK의 Locate는 레이어를 *데이터에서* 고른다.
 
-그러나 이 자유에는 청구서가 따른다. 레이어를 데이터에서 고른다는 건, 그만큼 $$\ell^*$$ 선택이 그 데이터에 과적합할 여지를 연다는 뜻이기도 하다. 고정 probe의 경직성을 푼 대가로, "이 쿼리에서 가장 또렷한 레이어"가 다음 분포에서도 또렷하리란 보장은 어디에도 없다. Ablation에서 Layer Selection을 떼면 정확도가 가장 크게(−7.5%p) 무너진다는 사실[^ablation]은 이 단계의 위력인 동시에, 그 위력이 데이터 의존이라는 외나무다리 위에 서 있다는 자백이기도 하다.
+그러나 이 자유에는 청구서가 따른다. 레이어를 데이터에서 고른다는 건, 그만큼 $$\ell^*$$ 선택이 그 데이터에 과적합할 여지를 연다는 뜻이기도 하다. 고정 probe의 경직성을 푼 대가로, "이 쿼리에서 가장 또렷한 레이어"가 다음 분포에서도 또렷하리란 보장은 어디에도 없다. Ablation[^ablationterm]에서 Layer Selection을 떼면 정확도가 가장 크게(−7.5%p) 무너진다는 사실[^ablation]은 이 단계의 위력인 동시에, 그 위력이 데이터 의존이라는 외나무다리 위에 서 있다는 자백이기도 하다.
 
 ### 둘 — Verify: 이건 진짜 지식인가, 그냥 같이 움직이는 그림자인가
 
@@ -74,11 +74,11 @@ $$\text{CKS}(i,q) = \frac{P_\mathcal{M}(y^*\mid x;\mathbf{h}_x^{(\ell^*)}+\varep
 
 여기서 계보의 한 매듭이 풀린다. CCS(Mallen et al. 2023)[^ccs]가 한 일은 라벨 없이 "참이면 $$p$$, 거짓이면 $$1-p$$"라는 일관성 제약만으로 진실성 방향을 *찾는* 것이었다 — 어디까지나 표현 공간 안에서 일관된 축을 더듬는 작업. MechELK의 CKS는 그 축을 찾은 다음, 한 발 더 나아가 그 축을 *흔들어본다*. 찾기에서 흔들기로. 관찰에서 개입으로. 이 한 칸의 이동이 FPR 표에서 숫자로 떨어진다.
 
-숫자가 이 단계의 값을 증언한다. Table 2(Llama-3-8B)에서 False Positive Rate가 직선 probe의 28.4%, CCS의 22.1%에서 MechELK는 **12.7%**로 내려간다[^table2]. 허위 양성을 절반 가까이 깎은 셈이다. Consistency Score도 0.89로 직선 probe의 0.61, CCS의 0.68을 크게 앞선다. Ablation(Table 3)이 쐐기다 — CKS 검증을 떼어내면 elicitation accuracy가 6.2%p 떨어지고 FPR은 24.3%까지 치솟는다. 다섯 ablation 항목 중 FPR 악화가 가장 큰 항목이 바로 이 Verify다[^ablation].
+숫자가 이 단계의 값을 증언한다. Table 2(Llama-3-8B)에서 False Positive Rate[^fpr]가 직선 probe의 28.4%, CCS의 22.1%에서 MechELK는 **12.7%**로 내려간다[^table2]. 허위 양성을 절반 가까이 깎은 셈이다. Consistency Score도 0.89로 직선 probe의 0.61, CCS의 0.68을 크게 앞선다. Ablation(Table 3)이 쐐기다 — CKS 검증을 떼어내면 elicitation accuracy가 6.2%p 떨어지고 FPR은 24.3%까지 치솟는다. 다섯 ablation 항목 중 FPR 악화가 가장 큰 항목이 바로 이 Verify다[^ablation].
 
 ### 셋 — Elicit: 안쪽의 답을 표면으로
 
-진짜 지식 특징을 찾았으면, 그 방향으로 표현을 밀어 출력에 드러낸다. $$\mathbf{h}_x^{(\tilde{\ell}^*)} = \mathbf{h}_x^{(\ell^*)} + \lambda \cdot \mathbf{v}^*$$ — 검증된 지식 방향 $$\mathbf{v}^*$$를 계수 $$\lambda$$만큼 더한다. 가중치는 건드리지 않는다. 추론 시점의 표현 조향(representation engineering)만으로 잠긴 답을 끌어올린다.
+진짜 지식 특징을 찾았으면, 그 방향으로 표현을 밀어 출력에 드러낸다. $$\mathbf{h}_x^{(\tilde{\ell}^*)} = \mathbf{h}_x^{(\ell^*)} + \lambda \cdot \mathbf{v}^*$$ — 검증된 지식 방향 $$\mathbf{v}^*$$를 계수 $$\lambda$$만큼 더한다. 가중치는 건드리지 않는다. 추론 시점의 표현 조향(representation engineering)[^repe]만으로 잠긴 답을 끌어올린다.
 
 성과는 Table 1에 모인다. Elicitation Accuracy 평균 84.7%로 CCS(78.5%)를 6.2%p, 직선 probe(75.6%)를 9.1%p 앞선다[^table1]. 항목별로는 DAB(Llama-8B)에서 CCS 대비 +13.9%p(81.2% vs 67.3%)로 격차가 가장 크다. 그리고 이 글이 가장 자랑하는 한 줄 — 표면 출력이 틀렸거나 회피적인 경우의 **78.3%**에서 잠재 지식을 성공적으로 식별했다[^surface]. 모델이 입으로는 모른다 하면서 안쪽엔 답을 쥐고 있던 경우들. 어제의 빈 우물에 가장 직접적인 반례가 이것이다.
 
@@ -144,3 +144,13 @@ pheeree, 어제의 null에서 오늘의 78.3%까지 왔다. 그런데 이 78.3%�
 [^causal]: "The improvement over SAE-Probe (+7.1% on average) demonstrates that the causal verification step is not merely redundant with SAE feature selection." — MechELK. (제공 자료 verbatim ✓)
 
 [^ccs]: MechELK 원문은 CCS를 "Mallen et al. (2023)"으로 인용한다. 역사적으로 Contrastive Consistency Search의 최초 제안은 Burns et al. 2022 ("Discovering Latent Knowledge in Language Models Without Supervision", ICLR 2023)이나, 이 글에서는 출처 논문의 인용을 따른다.
+
+[^probing]: 용어 — 프로빙(probing). 모델 내부 활성화에 작은 선형 분류기를 붙여 "이 표현이 무엇을 담고 있나"를 읽어내는 기법. 다만 이 분류기가 진짜 지식이 아니라 우연한 표면 통계에 끌려갈 수 있다는 게 어제의 빈 우물을 다시 의심하게 만든 약점이다.
+
+[^sae]: 용어 — SAE(Sparse Autoencoder, 희소 오토인코더). 모델의 뒤엉킨 활성화를 "대부분 0이고 몇 개만 켜지는" 희소한 특징들로 풀어 헤쳐, 사람이 해석할 만한 단위로 분해하는 신경망. MechELK는 이 특징들 중에서 정답을 가르는 후보를 골라낸다.
+
+[^fpr]: 용어 — FPR(False Positive Rate, 허위 양성률). 실제로는 아닌데 "맞다"고 잘못 울린 경보의 비율. 여기서는 진짜 지식이 아닌 특징을 지식이라 오인한 비율로, 인과 검증을 거치자 28.4%에서 12.7%로 절반 가까이 줄었다.
+
+[^ablationterm]: 용어 — 절제 연구(ablation). 시스템의 한 단계를 일부러 떼어내고 성능이 얼마나 떨어지는지 보는 실험. 무엇을 뗄 때 가장 크게 무너지는지가 그 단계의 기여를 증명하며, 여기서는 레이어 선택과 인과 검증이 가장 결정적이었다.
+
+[^repe]: 용어 — 표현 조향(representation engineering/steering). 모델의 가중치를 다시 학습시키지 않고, 추론 도중 내부 활성화 벡터를 특정 방향으로 살짝 밀어 출력을 바꾸는 기법. MechELK는 "검증된 지식 방향"으로 이 조향을 가해 안쪽에 잠긴 답을 표면으로 끌어올린다.

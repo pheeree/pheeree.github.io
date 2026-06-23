@@ -18,7 +18,7 @@ pheeree, 어제 MUG 글을 닫으면서 나는 한 줄을 미끼처럼 걸어두
 
 논문이 첫 페이지에 내건 장면이 그 간극을 압축한다. 증상성 서맥에 세 에이전트가 독립적으로 "아트로핀"이라는 임상적 정답에 동의한다. 그런데 그 근거를 들여다보면 셋이 서로 배타적인 약리 표적을 댄다 — $\beta_1$-아드레날린 작용, $M_2$-무스카린 차단, 아세틸콜린에스터라제 억제.[^atropine] 같은 답에, 의학적으로 양립 불가능한 세 갈래 추론으로 도달한 것이다. 답은 하나인데 이유가 셋이고, 그 셋은 서로를 부정한다. 이게 consistency illusion이다.
 
-여기서 한 번 계보를 짚어두고 싶다. 이 물음은 갑자기 솟은 게 아니다. 다중 에이전트 토론에 대한 최근의 회의 — Choi 등이 토론 동역학을 "합의를 향한 마팅게일"로 형식화하며 *이득은 토론이 아니라 다수결에서 온다*고 증명한 흐름 — 이 바닥에 깔려 있다.[^martingale] 그 비판들은 토론의 *과정*을 공격했다. Wang과 Yang은 한 칸 옆으로 비켜선다. 과정이 아니라 *결과에 대한 가정*을, 즉 표면 합의가 추론 정렬을 뜻한다는 믿음 자체를 공격한다. 그리고 단일 에이전트의 추론 충실성(faithfulness)을 재던 도구들 — Lanham의 CoT 절단 probe, ROSCOE 같은 — 은 모두 *한 에이전트의 자취*를 검사할 뿐, 같은 답에 모인 에이전트들 *사이*의 정렬은 누구도 재지 않았다고 짚는다.[^orthogonal] 그 빈칸을 메우려고 만든 자가 CARA다.
+여기서 한 번 계보를 짚어두고 싶다. 이 물음은 갑자기 솟은 게 아니다. 다중 에이전트 토론[^mad]에 대한 최근의 회의 — Choi 등이 토론 동역학을 "합의를 향한 마팅게일[^martingaleterm]"로 형식화하며 *이득은 토론이 아니라 다수결에서 온다*고 증명한 흐름 — 이 바닥에 깔려 있다.[^martingale] 그 비판들은 토론의 *과정*을 공격했다. Wang과 Yang은 한 칸 옆으로 비켜선다. 과정이 아니라 *결과에 대한 가정*을, 즉 표면 합의가 추론 정렬을 뜻한다는 믿음 자체를 공격한다. 그리고 단일 에이전트의 추론 충실성(faithfulness)을 재던 도구들 — Lanham의 CoT 절단 probe, ROSCOE 같은 — 은 모두 *한 에이전트의 자취*를 검사할 뿐, 같은 답에 모인 에이전트들 *사이*의 정렬은 누구도 재지 않았다고 짚는다.[^orthogonal] 그 빈칸을 메우려고 만든 자가 CARA다.
 
 CARA의 NLI 모순 탐지기를 따로 짚어두고 싶다. DeBERTa가 모순·중립·함축을 판별하는 방식은 NLI(Natural Language Inference) 과제 — 문장 쌍의 논리 관계를 대규모 레이블 데이터로 학습한 기술 — 에서 발전해 왔다. 단일 텍스트 안에서, 또는 답변 후 충실성(faithfulness) 검증 단계에서 NLI를 쓰는 연구는 이미 있었다. CARA가 새로운 건 *적용 축*이다 — 한 에이전트의 입력과 출력 사이가 아니라, 같은 답에 모인 *에이전트들 사이*의 추론 단계에 NLI를 건다. MUG가 색출 방향을 내부 일관성에서 외부(잠입자)로 틀었듯, CARA는 NLI의 렌즈를 단일 에이전트 자취에서 에이전트 집합의 정렬로 틀었다. 방법은 빌렸고, 적용 축이 새롭다.
 
@@ -30,7 +30,7 @@ CARA의 NLI 모순 탐지기를 따로 짚어두고 싶다. DeBERTa가 모순·�
 
 > standard debate reduces detectable contradictions between agents while simultaneously decreasing the semantic similarity of their reasoning—agents appear to agree more but actually reason less consistently.
 
-셋째, 처방이 가볍다. GDP(Grounded Debate Protocol)는 아키텍처를 건드리지 않는다. LLM 호출을 더 늘리지도 않는다. 그저 프롬프트 수준에서 출력 형식을 바꾼다 — 그런데 효과 크기가 Cohen's d로 +1.43에서 +1.99까지 나온다. 측정 도구를 만들고 끝낸 게 아니라, 그 도구가 가리킨 병을 가장 싼 개입으로 되돌린다.
+셋째, 처방이 가볍다. GDP(Grounded Debate Protocol)는 아키텍처를 건드리지 않는다. LLM 호출을 더 늘리지도 않는다. 그저 프롬프트 수준에서 출력 형식을 바꾼다 — 그런데 효과 크기가 Cohen's d[^cohend]로 +1.43에서 +1.99까지 나온다. 측정 도구를 만들고 끝낸 게 아니라, 그 도구가 가리킨 병을 가장 싼 개입으로 되돌린다.
 
 ## 핵심 세 가지
 
@@ -46,7 +46,7 @@ $$\text{align}_{\text{hyb}}(r_{ik}, r_{jl}) = \begin{cases} -1 & \text{if } P_{\
 
 이 대목에서 내 거버넌스 노트 한 줄이 겹쳐 떠올랐다. 법정이 판사·변호사·배심원이라는 슬롯으로 기능하듯, AI 생태계도 *역할이 무엇으로 정의되는가*가 중요하다는 제도적 정렬의 발상. GDP의 CLAIM+GROUND+STANCE는 정확히 그 공학적 예시다 — 추론을 자유에 맡기지 않고 형식의 슬롯에 끼워 넣어, 집단 스케일링의 "제도 규모" 축을 가장 싼 방식으로 실증한다.
 
-결과는 거울상이다. GDP를 씌우면 r0에서 r1로 가며 SIM이 오르고(D1 0.835→0.912, D2 0.836→0.914) CR은 내려간다(0.117→0.098, 0.137→0.127).[^main] CR↓ + SIM↑ — 표준 토론이 만든 환각의 정확한 반전. 두 데이터셋, 두 백본 모두에서 Tier A 효과(D1 Qwen +1.43, D2 Qwen +1.62, D2 Llama +1.99)로 재현된다.[^cohen]
+결과는 거울상이다. GDP를 씌우면 r0에서 r1로 가며 SIM이 오르고(D1 0.835→0.912, D2 0.836→0.914) CR은 내려간다(0.117→0.098, 0.137→0.127).[^main] CR↓ + SIM↑ — 표준 토론이 만든 환각의 정확한 반전. 두 데이터셋, 두 백본[^backbone] 모두에서 Tier A 효과(D1 Qwen +1.43, D2 Qwen +1.62, D2 Llama +1.99)로 재현된다.[^cohen]
 
 ```mermaid
 flowchart LR
@@ -58,7 +58,7 @@ flowchart LR
 
 **셋. 두 실패 모드를 구조적으로 지웠다.** 가장 낮은 CARA 점수를 받은 정답 사례들을 여섯 모드로 분류했을 때, GDP는 두 심각 모드를 0으로 만든다. FM1(보완적 추론: 서로 다른 비모순 경로로 같은 답)은 D1 23→0, D2 18→0. FM4(아부적 수렴: 추론 단계 없이 다수 답을 채택)는 D1 11→0, D2 15→0.[^fm] 어제 MUG 노트에서 "적대적 설득"과 같은 결이라 적었던 그 FM4를, GDP는 CLAIM+GROUND 의무로 원천 차단한다 — 답을 채택하려면 그 답을 떠받치는 명명된 근거를 내놓아야 하니, 근거 없는 아부가 발붙일 곳이 없다.
 
-그러나 — 여기서 멈춰야 한다. GDP를 씌우면 FM3(모순된 전제: 충돌하는 사실을 인용하면서도 정답에 수렴)이 *오히려 늘어난다*. D1에서 2→12, D2에서 1→15로.[^fm3] 처음엔 이게 GDP의 흠처럼 보였는데, 저자들의 해석은 정반대다 — 구조화된 형식이 *모호한 자유 텍스트라면 매끄럽게 묻혔을 모순을 표면으로 끌어올린* 것이다. 정렬이 나빠진 게 아니라, 측정이 정직해진 것이다. 표준 토론은 모순을 *지워서* CR을 낮췄고, GDP는 모순을 *드러내서* CR이 조금 올랐다. 같은 숫자가 정반대를 뜻할 수 있다는 — CR 하나만 보면 안 되고 SIM과 함께 읽어야 한다는 — 이 논문의 방법론적 양심이 여기서 드러난다. 실제로 생존 편향을 최악으로 보정하면 CR 결론은 뒤집히지만 CARA-HYB 결론은 버틴다.[^survivor] 환각의 핵심 증거는 CR 단독이 아니라 CR과 SIM의 *동시 운동*에 있다.
+그러나 — 여기서 멈춰야 한다. GDP를 씌우면 FM3(모순된 전제: 충돌하는 사실을 인용하면서도 정답에 수렴)이 *오히려 늘어난다*. D1에서 2→12, D2에서 1→15로.[^fm3] 처음엔 이게 GDP의 흠처럼 보였는데, 저자들의 해석은 정반대다 — 구조화된 형식이 *모호한 자유 텍스트라면 매끄럽게 묻혔을 모순을 표면으로 끌어올린* 것이다. 정렬이 나빠진 게 아니라, 측정이 정직해진 것이다. 표준 토론은 모순을 *지워서* CR을 낮췄고, GDP는 모순을 *드러내서* CR이 조금 올랐다. 같은 숫자가 정반대를 뜻할 수 있다는 — CR 하나만 보면 안 되고 SIM과 함께 읽어야 한다는 — 이 논문의 방법론적 양심이 여기서 드러난다. 실제로 생존 편향[^survivorbias]을 최악으로 보정하면 CR 결론은 뒤집히지만 CARA-HYB 결론은 버틴다.[^survivor] 환각의 핵심 증거는 CR 단독이 아니라 CR과 SIM의 *동시 운동*에 있다.
 
 ## 내 연구에 어떻게 맞물리나
 
@@ -116,3 +116,13 @@ flowchart TB
 [^ethics]: Ethics Statement: "We emphasize that CARA measures reasoning alignment, not reasoning correctness. High CARA scores indicate that agents reason consistently, not that they reason correctly." — 같은 논문, Ethics Statement.
 [^accuracy]: §6.5 / Table 6: "Standard debate does not change accuracy on either dataset (D1 ∆=+0.4pp, D2 ∆=0.0pp; both p>0.85) ... GDP shifts accuracy by −2.4pp on Qwen (both D1 and D2) and −6.0pp on Llama D2; none reaches significance at α=0.05." — 같은 논문, §6.5·Table 6.
 [^wawer]: Wawer & Chudziak, "Consensus is Strategically Insufficient" (arXiv:2606.04223), Abstract / §2: 추론 유사도와 결론 일치 두 차원으로 네 상태 정의 — "convergent agreement (CA), divergent agreement (DA), convergent disagreement (CD) and divergent disagreement (DD)." 라우팅: R1 CA⇒Auto, R2 DA⇒AutoExplain, R3 DD⇒SeekContext, R4 CD⇒Escalate. "The state of greatest interest is CD(c): when agents reason similarly but conclude differently ... a candidate signature of normative pluralism rather than error." — §2·§3·Figure 1.
+
+[^mad]: 용어 — MAD(Multi-Agent Debate, 다중 에이전트 토론). 여러 에이전트가 서로의 답을 비판·검증하며 결론에 이르는 방식. 여러 에이전트가 같은 답에 모이면 믿을 만하다는 가정 위에 서 있는데, 이 글은 그 "합의"가 추론의 정렬까지 뜻하진 않음을 보인다.
+
+[^martingaleterm]: 용어 — 마팅게일(martingale). 다음 순간의 기댓값이 지금 값과 같은, "공정한 도박"류의 확률 과정. 토론을 이 과정으로 형식화하면 라운드를 거듭해도 기대 이득이 늘지 않아, 이득의 진짜 출처는 토론이 아니라 다수결이라는 결론이 따라온다.
+
+[^cohend]: 용어 — Cohen's d. 두 조건의 차이가 얼마나 큰지를 표준편차 단위로 잰 효과크기. 절댓값 0.8 이상이면 큰 효과로 보며, GDP의 d=+1.43~+1.99는 정렬을 크게 끌어올렸다는 뜻이다(음수면 외려 깎았다는 뜻).
+
+[^backbone]: 용어 — 백본(backbone). 시스템이 올라타는 토대가 되는 기반 모델(예: Qwen·Llama). 같은 백본을 여러 인스턴스로 복제하면 맹점을 공유해 "독립 추론 경로"가 빨리 포화되는데, CARA는 그 세 인스턴스가 진짜 독립인지를 사후에 잰다.
+
+[^survivorbias]: 용어 — 생존 편향(survivorship bias). 끝까지 "살아남은" 사례만 보고 판단해 결론이 왜곡되는 오류. 여기서는 답이 정의된 사례만 집계하면 결과가 부풀 수 있어, 탈락분을 최악으로 가정해 보정해도 핵심 결론(CARA-HYB)이 버티는지를 점검한다.
