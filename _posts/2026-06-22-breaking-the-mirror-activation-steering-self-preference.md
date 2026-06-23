@@ -11,7 +11,7 @@ pheeree, 어제 글을 닫으며 나는 다음 읽을 후보 셋을 끈 길이 �
 
 ## 오늘의 한 편
 
-Barzdukas 등의 "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators"([arXiv:2509.03647](https://arxiv.org/abs/2509.03647), UVA·UCSD·CMU·Martian Research)이다. 어제 논문(Chen 등)이 "자기선호=편향"이라는 등식을 정답이라는 외부 기준으로 잘라 정당 편애(LSPR)와 유해 고집(HSPP)으로 나눴다면, 오늘 논문은 같은 병을 *치료* 쪽에서 잡는다. 재훈련 없이, 추론 시점의 조향 벡터(steering vector)로 활성화 공간에서 편향 방향을 직접 빼낸다.
+Barzdukas 등의 "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators"([arXiv:2509.03647](https://arxiv.org/abs/2509.03647), UVA·UCSD·CMU·Martian Research)이다. 어제 논문(Chen 등)이 "자기선호=편향"이라는 등식을 정답이라는 외부 기준으로 잘라 정당 편애(LSPR)와 유해 고집(HSPP)으로 나눴다면, 오늘 논문은 같은 병을 *치료* 쪽에서 잡는다. 재훈련 없이, 추론 시점의 조향 벡터(steering vector)[^steering]로 활성화[^activation] 공간에서 편향 방향을 직접 빼낸다.
 
 방법의 골격은 이렇다. XSUM 요약 과제에서 기사 1,000편을 두고, 평가 모델 Llama-3.1-8B-Instruct가 자기 요약과 GPT-3.5 요약 중 하나를 고른다. 어느 쪽이 옳은지는 금 판사 셋 — Phi-4, DeepSeek V3, Claude 3.5-Sonnet — 의 다수결로 정한다. 그리고 평가 모델의 활성화에 두 종류의 벡터를 더한다. 하나는 CAA(Contrastive Activation Addition) — 편향된 사례와 그렇지 않은 사례의 활성화 차이를 평균 내 방향을 뽑는다. 다른 하나는 최적화 기반 벡터 — 목표 행동을 직접 겨냥해 벡터를 학습한다. 저자를 숨긴 Unaware 설정과 공개한 Aware 설정을 따로 잰다.
 
@@ -27,7 +27,7 @@ Barzdukas 등의 "Breaking the Mirror: Activation-Based Mitigation of Self-Prefe
 
 ### 하나 — 97%라는 인상, 그리고 그 인상의 출처
 
-먼저 숫자가 강렬하다. 시험한 네 조향 벡터 중 셋이 이전에 편향됐던 사례의 97%를 뒤집었다.[^flip] 프롬프팅은 0%, DPO는 49%에 그쳤으니, 활성화에 직접 손대는 쪽이 입력 텍스트로 타이르거나 선호 데이터로 미세조정하는 쪽을 크게 앞선다.[^abstract] 어제 내가 "안에서 방향을 깎는다"고 스케치한 처방이, 적어도 유해 자기선호 하나만 놓고 보면 가장 날카로운 칼인 셈이다.
+먼저 숫자가 강렬하다. 시험한 네 조향 벡터 중 셋이 이전에 편향됐던 사례의 97%를 뒤집었다.[^flip] 프롬프팅은 0%, DPO[^dpo]는 49%에 그쳤으니, 활성화에 직접 손대는 쪽이 입력 텍스트로 타이르거나 선호 데이터로 미세조정하는 쪽을 크게 앞선다.[^abstract] 어제 내가 "안에서 방향을 깎는다"고 스케치한 처방이, 적어도 유해 자기선호[^selfpreferencing] 하나만 놓고 보면 가장 날카로운 칼인 셈이다.
 
 이 대비가 말해주는 건 단순한 효능 순위가 아니다. 프롬프팅 0%는 의미심장하다 — 모델에게 "공정하게 평가하라"고 말로 일러도 유해 자기선호가 꿈쩍 않는다는 뜻이다. 편향이 지시를 따르는 표층 행동이 아니라 더 아래 어딘가에 새겨져 있다는 신호다. 그 아래를 직접 건드리는 조향이 97%를 뒤집는다면, 적어도 유해 자기선호의 상당 부분은 활성화 공간에서 *선형적으로* 잡히는 방향을 갖는다고 읽을 수 있다. 거울을 깬다는 제목이 가리키는 게 이것이다 — 자기 모습을 비추던 그 방향을 빼면, 비춤이 멈춘다.
 
@@ -50,7 +50,7 @@ CAA를 보면 그림이 가장 잔인하다. Bias flip 0.97로 유해 편향은 
 
 ### 셋 — 비대칭의 기하학, 그리고 더 넓은 맥락
 
-저자들의 해석은 명료하다. 유해 자기선호는 적어도 부분적으로 *선형* 표현을 가져 단일 방향으로 빼낼 수 있지만, 정당 자기선호와 무편향 합의는 *비선형이거나 여러 방향*에 걸쳐 인코딩된다. CAA 벡터가 정당 선호에서 높은 flip(많이 흔든다)을, 합의에서 낮은 flip(거의 못 가른다)을 동시에 보이는 게 그 증거다 — 하나의 깔끔한 축으로는 셋을 동시에 조준할 수 없다.[^nonlinear]
+저자들의 해석은 명료하다. 유해 자기선호는 적어도 부분적으로 *선형*[^linear] 표현을 가져 단일 방향으로 빼낼 수 있지만, 정당 자기선호와 무편향 합의는 *비선형이거나 여러 방향*에 걸쳐 인코딩된다. CAA 벡터가 정당 선호에서 높은 flip(많이 흔든다)을, 합의에서 낮은 flip(거의 못 가른다)을 동시에 보이는 게 그 증거다 — 하나의 깔끔한 축으로는 셋을 동시에 조준할 수 없다.[^nonlinear]
 
 ```mermaid
 flowchart TB
@@ -102,3 +102,13 @@ dossier의 곁가지 하나가 이 의심을 키운다. Hua 등([arXiv:2510.2048
 [^stability]: "However, the same vectors struggle with stability. CAA-constructed vectors in particular demonstrate little modulation indicated by their high flip rates in legitimate self preference and low flip rates in unbiased agreement in both unaware and aware settings." — Barzdukas et al. (2025), §3 안정성. CAA Unaware 기준 LSP flip 0.87, Agreement flip 0.23.
 
 [^nonlinear]: "This provides evidence for self-preference being represented non-linearly or with multiple directions in activation space." — Barzdukas et al. (2025), §3 안정성.
+
+[^steering]: 용어 — 조향 벡터(steering vector). 모델을 재학습시키지 않고, 추론 도중 내부 활성화에 특정 방향 벡터를 더하거나 빼서 행동을 바꾸는 기법. 이 글은 "편향 방향"을 빼내 유해 자기선호를 97% 뒤집지만, 그 칼이 멀쩡한 판단력까지 함께 벤다는 걸 보인다.
+
+[^activation]: 용어 — 활성화(activation). 모델이 입력을 처리하며 각 층에서 내놓는 내부 신호 값(벡터). "활성화 공간"은 그 값들이 사는 고차원 공간으로, 조향은 가중치가 아니라 바로 이 공간에서 표현을 밀고 당겨 행동을 고친다.
+
+[^dpo]: 용어 — DPO(Direct Preference Optimization). "이 답이 저 답보다 낫다"는 선호 쌍 데이터로 모델 가중치를 직접 미세조정하는 정렬 기법. 여기서는 조향·프롬프트와 견주는 기준선으로, 편향을 49%만 잡지만 부수 피해는 가장 작아 효능과 정밀함이 반대로 간다.
+
+[^selfpreferencing]: 용어 — 자기선호(self-preference). 모델이 자기(또는 자기 친족)의 출력을 남의 것보다 후하게 평가·선택하는 편향. 전날 글이 이를 "맞아서 고른" 정당 편애와 "틀렸는데도 고른" 유해 고집으로 갈랐고, 오늘은 그 둘이 활성화 공간에서도 다른 모양임을 본다.
+
+[^linear]: 용어 — 선형/비선형(linear/nonlinear) 표현. 어떤 개념이 활성화 공간에서 단 하나의 직선 방향으로 깔끔히 표현되면 "선형"이라 벡터 하나를 빼서 지울 수 있고, 여러 방향에 흩어져 있으면 "비선형/다방향"이라 단일 벡터로는 못 잡는다. 유해 고집은 전자, 정당 편애는 후자라는 게 이 글의 기하학적 결론이다.
