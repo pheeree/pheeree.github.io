@@ -62,13 +62,13 @@ flowchart TB
   H1 -. "반복" .-> WM
 ```
 
-세 단계의 결이 각각 다르다. **Weakness Mining**은 *진단만* 한다 — 처방하지 않는다. 실패 궤적 $r_i$를 failure signature $\varphi(r_i) = (c_i, q_i, m_i)$로 표현한다. $c_i$는 verifier 수준의 종말 원인, $q_i$는 인과 상태, $m_i$는 추상적 에이전트 메커니즘. 같은 signature를 가진 실패를 군집화하면 *재사용 가능한 failure mechanism*이 드러난다. 이 단계의 산출은 evidence bundle $B_t$ — 하니스를 어떻게 고치라는 처방이 아니라, *무엇이 어디서 왜 무너졌는가*의 증거 묶음일 뿐이다. 진단과 처방을 *공정으로 분리*한 것 — 그저께 MAST의 "이름 붙이기"가 여기 1단계에 그대로 들어와 있다.
+세 단계의 결이 각각 다르다. **Weakness Mining**은 *진단만* 한다 — 처방하지 않는다. 실패 궤적 $r_i$를 failure signature $\varphi(r_i) = (c_i, q_i, m_i)$로 표현한다. $c_i$는 verifier[^verifier] 수준의 종말 원인, $q_i$는 인과 상태, $m_i$는 추상적 에이전트 메커니즘. 같은 signature를 가진 실패를 군집화하면 *재사용 가능한 failure mechanism*이 드러난다. 이 단계의 산출은 evidence bundle $B_t$ — 하니스를 어떻게 고치라는 처방이 아니라, *무엇이 어디서 왜 무너졌는가*의 증거 묶음일 뿐이다. 진단과 처방을 *공정으로 분리*한 것 — 그저께 MAST의 "이름 붙이기"가 여기 1단계에 그대로 들어와 있다.
 
 **Harness Proposal**은 같은 고정 모델을 이번엔 *proposer* 역할로 부른다. 현재 하니스와 failure pattern을 쥐고, K개의 *서로 구별되고 최소한인* 수정을 병렬로 짓는다. 광범위한 재작성이 아니라 *bounded edit* — 각 제안은 특정 failure mechanism 하나를 겨냥한다. 어제 FAMA의 "최소 부분집합"이 여기선 "최소 편집"으로 옮겨와 있다. 손을 *덜* 대는 절제가 이틀째 핵심어다.
 
 ### 2. 수용 규칙 — 두 무대 모두 지키되 적어도 하나에선 나아질 것
 
-루프의 무게중심은 3단계, **Proposal Validation**에 있다. 각 후보 수정을 held-in과 held-out 두 split에서 회귀 테스트하고, 다음 규칙을 통과한 것만 승격시킨다.
+루프의 무게중심은 3단계, **Proposal Validation**에 있다. 각 후보 수정을 held-in과 held-out[^heldout] 두 split에서 회귀 테스트[^regtest]하고, 다음 규칙을 통과한 것만 승격시킨다.
 
 $$\Delta_\text{in}^{(j)} \geq 0 \;\land\; \Delta_\text{ho}^{(j)} \geq 0 \;\land\; \max\!\big(\Delta_\text{in}^{(j)}, \Delta_\text{ho}^{(j)}\big) > 0$$
 
@@ -98,7 +98,7 @@ flowchart LR
   end
 ```
 
-특히 눈에 들어오는 건 *held-out*의 상승이다.[^results] M2.5는 held-out에서 +53%(40.5→61.9), Qwen3.5는 held-in이 +138%(15.1→36.0)로 두 배를 훌쩍 넘는다. held-in만 올랐다면 과적합을 의심했을 텐데, held-out이 함께 — 때로는 더 크게 — 오른다는 건 수정이 *그 split의 실패만 외운 게 아니라* 일반화 가능한 무언가를 건드렸다는 신호다. 게이트가 과적합을 거르고 있다는 간접 증거다.
+특히 눈에 들어오는 건 *held-out*의 상승이다.[^results] M2.5는 held-out에서 +53%(40.5→61.9), Qwen3.5는 held-in이 +138%(15.1→36.0)로 두 배를 훌쩍 넘는다. held-in만 올랐다면 과적합[^overfit]을 의심했을 텐데, held-out이 함께 — 때로는 더 크게 — 오른다는 건 수정이 *그 split의 실패만 외운 게 아니라* 일반화 가능한 무언가를 건드렸다는 신호다. 게이트가 과적합을 거르고 있다는 간접 증거다.
 
 ### 3. 공통의 결, 모델별 적응 — "artifact reliability"라는 한 가닥
 
@@ -112,7 +112,7 @@ flowchart TB
   T --> GL["GLM-5\npersist environment changes\nexploration → implementation"]
 ```
 
-M2.5는 태스크 초기에 required output artifact를 *먼저 만들고 다듬으라*는 bootstrap 수정, structured tool content에 올바른 type format을 쓰라는 수정, 그리고 50번의 도구 호출 이후 loop를 감지해 redirect하는 runtime 정책을 더했다. Qwen3.5는 더 멀리 갔다 — dependency precheck, FileNotFoundError·의존성 실패 시 *2단계 안에 artifact 생성을 의무화*하는 loop breaker, 같은 명령의 정확한 재시도 회피, 그리고 가장 복잡하게는 *새 middleware 함수*를 지어 tool-error가 나면 artifact 생성을 끼워 넣었다.[^edits] 저자들의 관찰이 이 다양성을 한 줄로 묶는다.
+M2.5는 태스크 초기에 required output artifact[^artif]를 *먼저 만들고 다듬으라*는 bootstrap 수정, structured tool content에 올바른 type format을 쓰라는 수정, 그리고 50번의 도구 호출 이후 loop를 감지해 redirect하는 runtime 정책을 더했다. Qwen3.5는 더 멀리 갔다 — dependency precheck, FileNotFoundError·의존성 실패 시 *2단계 안에 artifact 생성을 의무화*하는 loop breaker, 같은 명령의 정확한 재시도 회피, 그리고 가장 복잡하게는 *새 middleware 함수*를 지어 tool-error가 나면 artifact 생성을 끼워 넣었다.[^edits] 저자들의 관찰이 이 다양성을 한 줄로 묶는다.
 
 > "The three runs show both a shared pattern and model-specific adaptation. A common theme is artifact reliability."[^artifact]
 
@@ -193,3 +193,13 @@ M2.5는 태스크 초기에 required output artifact를 *먼저 만들고 다듬
 [^cho]: "It's Not the Capability: Harness Sensitivity Is Non-Monotone Across LLM Agent Tiers" (Yong-eun Cho, KailosLab). 432회 실험(6모델 × 4 capability tiers × 3 harness conditions). harness-complexity paradox: frontier chat model(Gemini 2.5 Flash)에서 strict harness가 VTSR 29~38pp 하락. frontier reasoning model(Qwen3.5-122B, extended thinking)에서는 strict harness가 최고 VTSR(91.7%)·최저 latency. 결론: harness sensitivity는 model type(chat vs. reasoning) 의존, parameter count는 신뢰할 수 없는 proxy. arXiv:2605.26731 (2026-05-26). (dossier 기반 ✓(provisional))
 
 [^observability]: "Agentic Harness Engineering" — 관찰성 3계층 도입 후 69.7%→77.0%, "능력 부족이 아니라 관찰성 부족이 병목". arXiv:2604.25850. (dossier 기반 ✓(provisional))
+
+[^heldout]: 용어 — held-in / held-out. 수정을 다듬을 때 쓴 평가 집합(held-in, 내부)과, 거기엔 안 쓰고 따로 떼어 둔 평가 집합(held-out, 외부). 외부 집합에서도 성적이 오르면 그 수정이 특정 문제만 외운 게 아니라 일반화됐다는 신호가 된다.
+
+[^regtest]: 용어 — 회귀 테스트(regression test). 무언가를 고친 뒤 "이미 잘 되던 것이 깨지지 않았는지"를 다시 돌려 확인하는 검사(통계의 회귀분석과는 다른 말). Self-Harness는 이 테스트를 수정 승격의 관문으로 삼아, 자기가 자기를 고치다 퇴보하는 일을 막는다.
+
+[^verifier]: 용어 — verifier(검증기). 한 시도가 성공인지 실패인지를 또렷이 판정해 주는 장치(예: 과제 통과/실패). 이 루프의 채점이 통째로 여기에 기대므로, verifier가 흐릿한 도메인에서는 "외부 장부에 채점을 맡겨라"라는 닻 자체가 흔들린다.
+
+[^overfit]: 용어 — 과적합(overfitting). 모델이나 수정이 눈앞의 특정 사례에만 들어맞게 맞춰져, 새로운 상황에는 오히려 못 통하는 현상. held-in만 오르고 held-out은 안 오르면 이 과적합을 의심하게 된다.
+
+[^artif]: 용어 — 아티팩트(artifact). 에이전트가 과제를 풀며 실제로 만들어 내야 하는 산출물(파일·코드·결과물). 약한 모델일수록 이걸 끝에 한 번에 만들려다 실패해 무한 루프에 빠지는데, 세 모델 모두 "제때 믿을 만하게 산출물을 내는" 자리를 각자 메웠다.

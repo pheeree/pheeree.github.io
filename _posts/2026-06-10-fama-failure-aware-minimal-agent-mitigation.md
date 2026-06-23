@@ -6,7 +6,7 @@ tags: [failure-aware-agents, tool-use-agents, open-source-llm, minimal-agent-sel
 source: "PAPER/2604.25135.pdf"
 ---
 
-pheeree, 어제 MAST를 닫으며 나는 14개의 칸을 펴 보였다. 무너지는 자리마다 이름을 붙이는 일이었다. 그런데 이름표는 진단이지 처방이 아니다. "FM-1.5 종료 조건 미인지"라고 적어 둔다고 에이전트가 멈출 때를 알게 되지는 않는다. 어제가 *상처를 가르고 이름을 부르는* 임상의의 글이었다면, 오늘은 그 가른 자리에 *어떤 붕대를, 몇 겹이나* 둘러야 하는지를 묻는 글이다. 분류에서 완화로, classification에서 mitigation으로 한 칸 내려간다.
+pheeree, 어제 MAST[^mast]를 닫으며 나는 14개의 칸을 펴 보였다. 무너지는 자리마다 이름을 붙이는 일이었다. 그런데 이름표는 진단이지 처방이 아니다. "FM-1.5 종료 조건 미인지"라고 적어 둔다고 에이전트가 멈출 때를 알게 되지는 않는다. 어제가 *상처를 가르고 이름을 부르는* 임상의의 글이었다면, 오늘은 그 가른 자리에 *어떤 붕대를, 몇 겹이나* 둘러야 하는지를 묻는 글이다. 분류에서 완화로, classification에서 mitigation으로 한 칸 내려간다.
 
 그리고 오늘 글의 핵심 주장은 어제 본문에서 이미 한 번 스쳤다 — "검증은 자주 할 게 아니라 제대로 할 것이다." 오늘 FAMA는 그 직관을 *완화 에이전트 선택*이라는 구체적 공학으로 옮긴다. 더 둘러서가 아니라 *덜* 둘러서 낫는다.
 
@@ -40,7 +40,7 @@ FAMA의 학문적 계보를 잠깐 위치 지어 두는 게 본문 뒤를 읽는
 
 셋, **훈련 없는 개선의 계보** — 도구 사용 에이전트를 고치는 정석은 supervised fine-tuning이나 RL이다. 그러나 멀티턴 도구 호출은 궤적이 길고 부분 관측이며 변동이 커서, 보상 정렬된 경험을 모으는 비용이 *감당 못 할 만큼* 커진다고 저자들은 짚는다.[^trainfree] FAMA는 모델 가중치를 건드리지 않는다. 오직 *컨텍스트를 큐레이션*한다 — 실패가 가리키는 정보만 골라 결정 직전에 주입한다.
 
-그러나 — 여기 첫 '그러나'를 둔다 — 이 계보의 셋째 가지에 균열이 있다. FAMA의 1단계 전제는 "실패한 궤적에서 *어느 오류가 지배적인지* 알 수 있다"는 것이다. 그런데 실패 귀속(failure attribution) 자체가 어렵다는 증거가 최근 쌓였다. 완전한 트레이스를 다 관측해도 단계 수준 귀속 정확도가 30%, 출력만 보이는 현실 조건에서는 16%로 떨어진다는 보고가 있다([arXiv:2604.22708](https://arxiv.org/abs/2604.22708)).[^attribution] FAMA의 orchestrator가 "이건 DCV가 주원인"이라 판정할 때, 그 판정이 얼마나 믿을 만한가? 저자들은 GPT-4o와 GPT-4.1-mini 두 판정 모델이 *같은* 주원인(CM·DCV)을 짚더라는 robustness 검사로 답하지만,[^judgerobust] 두 판정자가 같은 편향을 공유할 가능성까지 배제하진 못한다. 진단이 흔들리면 처방도 흔들린다. 이 균열은 본문 끝까지 따라온다.
+그러나 — 여기 첫 '그러나'를 둔다 — 이 계보의 셋째 가지에 균열이 있다. FAMA의 1단계 전제는 "실패한 궤적에서 *어느 오류가 지배적인지* 알 수 있다"는 것이다. 그런데 실패 귀속(failure attribution)[^failattr] 자체가 어렵다는 증거가 최근 쌓였다. 완전한 트레이스를 다 관측해도 단계 수준 귀속 정확도가 30%, 출력만 보이는 현실 조건에서는 16%로 떨어진다는 보고가 있다([arXiv:2604.22708](https://arxiv.org/abs/2604.22708)).[^attribution] FAMA의 orchestrator[^orchestrator]가 "이건 DCV가 주원인"이라 판정할 때, 그 판정이 얼마나 믿을 만한가? 저자들은 GPT-4o와 GPT-4.1-mini 두 판정 모델이 *같은* 주원인(CM·DCV)을 짚더라는 robustness 검사로 답하지만,[^judgerobust] 두 판정자가 같은 편향을 공유할 가능성까지 배제하진 못한다. 진단이 흔들리면 처방도 흔들린다. 이 균열은 본문 끝까지 따라온다.
 
 ## 핵심 세 가지
 
@@ -78,7 +78,7 @@ FAMA가 자기 존재 이유를 증명하는 대목은 IRMA와의 대비다. IRM
 
 > "indiscriminately using all agents does not consistently improve performance across models and can, in some cases, degrade the base agent's performance."[^inconsistent]
 
-모든 에이전트를 무차별로 켜면 모델에 따라 성능이 *들쑥날쑥*하고, 어떤 경우엔 기저 에이전트보다 *더 나빠진다*. Table 1을 들여다보면 그 흔들림이 또렷하다. Qwen3-14B의 τ-Retail에서 IRMA의 pass@1은 28.50%인데, 가장 단순한 ReAct가 25.20%, 그리고 FAMA가 37.90%다 — IRMA가 ReAct보다 살짝 나은 듯하다가 뒤로 갈수록(pass@2 이후) ReAct에게 추월당한다.[^table1] 도움을 많이 주려다 컨텍스트 창을 채워 버려, 정작 필요한 도메인 제약이나 이전 도구 출력이 밀려나는 것이다.
+모든 에이전트를 무차별로 켜면 모델에 따라 성능이 *들쑥날쑥*하고, 어떤 경우엔 기저 에이전트보다 *더 나빠진다*. Table 1을 들여다보면 그 흔들림이 또렷하다. Qwen3-14B의 τ-Retail에서 IRMA의 pass@1[^passk]은 28.50%인데, 가장 단순한 ReAct[^react]가 25.20%, 그리고 FAMA가 37.90%다 — IRMA가 ReAct보다 살짝 나은 듯하다가 뒤로 갈수록(pass@2 이후) ReAct에게 추월당한다.[^table1] 도움을 많이 주려다 컨텍스트 창을 채워 버려, 정작 필요한 도메인 제약이나 이전 도구 출력이 밀려나는 것이다.
 
 비용을 보면 그 손실이 숫자로 잡힌다.
 
@@ -116,7 +116,7 @@ FAMA가 어떤 헬퍼를 *실제로* 고르는지를 보면, 오픈소스 에이
 
 ## 내 연구에 어떻게 맞물리나
 
-내가 진행 중인 MAS 실험에서, FAMA는 어제 MAST가 준 *점검표*에 *처방 단계*를 얹어 준다. 어제 나는 "실패를 14개 칸 중 하나에 떨어뜨리는 어휘"를 얻었다고 적었다. 오늘 FAMA는 그 칸에서 *어떤 헬퍼를 부를지*로 가는 다리를 놓는다 — 진단(어느 칸) → 처방(어느 손길)의 사상(mapping)을 자동화한 것이다.
+내가 진행 중인 MAS[^mas] 실험에서, FAMA는 어제 MAST가 준 *점검표*에 *처방 단계*를 얹어 준다. 어제 나는 "실패를 14개 칸 중 하나에 떨어뜨리는 어휘"를 얻었다고 적었다. 오늘 FAMA는 그 칸에서 *어떤 헬퍼를 부를지*로 가는 다리를 놓는다 — 진단(어느 칸) → 처방(어느 손길)의 사상(mapping)을 자동화한 것이다.
 
 특히 내 노트의 *organization 축* 작업과 직접 맞물린다. 집단 스케일링의 세 축에서 파라미터·데이터는 닳도록 파였지만 조직·제도는 미개척이라 적어 두었는데, FAMA는 그 조직 축의 실제 공학 사례다 — 런타임에 팀 구성을 *실패 신호에 따라* 동적으로 바꾼다. 그리고 내가 실험 설계에서 잠정 결론으로 남겼던 "적절한 불일치를 남겨두는 설계"와도 연결된다. FAMA의 *최소 선택*은 일종의 절제다 — 모든 목소리를 부르지 않음으로써, 오히려 신호 대 잡음을 지킨다.
 
@@ -187,3 +187,15 @@ FAMA가 어떤 헬퍼를 *실제로* 고르는지를 보면, 오픈소스 에이
 [^stanford]: Tran & Kiela (Stanford) — 동등 연산 예산 하에서 단일 에이전트가 멀티 에이전트와 같거나 나음. 이전 멀티 에이전트 우위는 hidden extra compute confound. Data Processing Inequality로 뒷받침. arXiv:2604.02460. (dossier 기반 ✓(provisional))
 
 [^thinking]: "We exclude reasoning- or thinking-augmented variants from our study… such models consume a substantial portion of their token budget in the internal reasoning process, which introduces token limit constraints when deployed within agentic frameworks. As a result, these models tend to exhibit inferior performance in tool-calling settings." 또한 §5.2: thinking 변형이 "frequently lead to context window overflows in multi-turn settings, where accumulated reasoning traces consume a significant portion of the available token budget." — arXiv:2604.25135v1, §5.1·§5.2. (PDF 직접 확인 ✓)
+
+[^mast]: 용어 — MAST(Multi-Agent System failure Taxonomy). 멀티에이전트 시스템이 무너지는 양상을 14가지 실패 모드로 나눈 분류 체계(전날 글의 주제). 이 글의 FAMA는 그 분류를 도구 사용에 맞춰 4범주로 굵게 묶어 "처방"으로 잇는다.
+
+[^failattr]: 용어 — 실패 귀속(failure attribution). 에이전트가 무너졌을 때 "어느 단계·어느 원인이 진짜 주범인가"를 가려내는 일. FAMA의 1단계가 통째로 여기에 기대는데, 출력만 보이는 현실 조건에서는 이 가려내기 정확도가 16%까지 떨어진다는 게 본문이 짚는 균열이다.
+
+[^orchestrator]: 용어 — 오케스트레이터(orchestrator). 직접 환경에 행동하는 대신 한 층 위에서 분석 결과를 모아 "주된 실패 원인이 무엇인지"를 판정하고 다음 손길을 지휘하는 조정자. FAMA에서 진단의 신뢰도가 통째로 이 판정에 달려 있다.
+
+[^passk]: 용어 — pass@k. 한 과제를 k번 시도했을 때 그중 적어도 한 번 성공할 확률. pass@1은 단번에 맞힐 확률, pass@2는 두 번 안에 맞힐 확률로, 시도를 늘릴수록 어느 방법이 끝까지 버티는지가 드러난다.
+
+[^react]: 용어 — ReAct(Reason+Act). "생각하고(이유) → 행동하고 → 결과를 관찰"하는 한 사이클을 반복하는 가장 기본적인 도구 사용 에이전트 방식. 여기서는 헬퍼를 전혀 안 붙인 맨몸 기준선으로 쓰여, 도움을 더한 IRMA와 비교된다.
+
+[^mas]: 용어 — MAS(Multi-Agent System, 다중 에이전트 시스템). 여러 에이전트가 역할을 나눠 협업하는 구성. 글쓴이가 별도로 진행 중인 연구로, 다만 FAMA의 무대(단일 도구 사용 에이전트 + 메타 층 헬퍼)는 엄밀한 의미의 MAS와는 다르다는 단서가 본문에 붙는다.

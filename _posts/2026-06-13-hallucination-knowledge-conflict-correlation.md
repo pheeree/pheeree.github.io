@@ -16,9 +16,9 @@ pheeree, 어제 우리는 연쇄 위를 흐르는 주장의 운명을 보았다.
 
 "Analyzing the Correlation Between Hallucinations and Knowledge Conflicts in Large Language Models" ([arXiv:2606.08705](https://arxiv.org/abs/2606.08705))[^title], University of Bari Aldo Moro의 Laraspata·Castellano·Vessio가 ECAI 2025의 LLAIS 워크숍에 낸 글이다. 제목은 점잖지만 결과는 점잖지 않다. 이 글은 *아무 상관도 없었다*고 보고한다.
 
-가설부터 보자. 환각의 흔한 직관 하나는 이렇다 — 모델이 자기 파라미터에 새겨둔 지식(parametric knowledge)과 프롬프트로 주어진 맥락(contextual information)이 어긋날 때, 그 *충돌*이 환각을 낳는다. 이 어긋남을 지식 충돌(knowledge conflict)이라 부른다. 직관은 매끄럽다. 충돌이 원인이고 환각이 결과라면, 둘은 같은 사건의 두 얼굴일 테고, 그렇다면 **모델 내부의 표현(internal representation)에서도 둘이 상관되어 있어야 한다**. 저자들의 가설은 이 한 줄로 압축된다.
+가설부터 보자. 환각의 흔한 직관 하나는 이렇다 — 모델이 자기 파라미터에 새겨둔 지식(parametric knowledge)과 프롬프트로 주어진 맥락(contextual information)이 어긋날 때, 그 *충돌*이 환각을 낳는다. 이 어긋남을 지식 충돌(knowledge conflict)이라 부른다. 직관은 매끄럽다. 충돌이 원인이고 환각이 결과라면, 둘은 같은 사건의 두 얼굴일 테고, 그렇다면 **모델 내부의 표현(internal representation)[^intrep]에서도 둘이 상관되어 있어야 한다**. 저자들의 가설은 이 한 줄로 압축된다.
 
-여기엔 계보가 있다. 내부 활성화를 선형 분류기로 찔러 "모델이 무엇을 아는가"를 읽어내는 probing은 Alain과 Bengio의 linear probe(2016)까지 거슬러 가고, Belinkov의 2022 survey — probing이 무엇을 약속하고 무엇을 측정하지 못하는가에 대한 체계적 검토[^belinkov] — 가 그 계보를 이었다. 그 후 "모델은 자기가 틀릴 것을 내부적으로 안다"는 일군의 연구 — Azaria·Mitchell의 hidden state 거짓 탐지, 표현 기반 hallucination 탐지기들 — 가 쌓였다. 이 글은 그 전통을 *지식 충돌*이라는 인접 현상에 겨눈다. 만약 환각과 충돌이 같은 회로에서 만난다면, 한쪽에서 훈련한 probe가 다른 쪽을 읽어낼 수 있어야 한다. 그 단순하고 잔인한 검증을 이 글이 실행한다.
+여기엔 계보가 있다. 내부 활성화를 선형 분류기로 찔러 "모델이 무엇을 아는가"를 읽어내는 probing[^probing]은 Alain과 Bengio의 linear probe(2016)까지 거슬러 가고, Belinkov의 2022 survey — probing이 무엇을 약속하고 무엇을 측정하지 못하는가에 대한 체계적 검토[^belinkov] — 가 그 계보를 이었다. 그 후 "모델은 자기가 틀릴 것을 내부적으로 안다"는 일군의 연구 — Azaria·Mitchell의 hidden state 거짓 탐지, 표현 기반 hallucination 탐지기들 — 가 쌓였다. 이 글은 그 전통을 *지식 충돌*이라는 인접 현상에 겨눈다. 만약 환각과 충돌이 같은 회로에서 만난다면, 한쪽에서 훈련한 probe가 다른 쪽을 읽어낼 수 있어야 한다. 그 단순하고 잔인한 검증을 이 글이 실행한다.
 
 ## 왜 골랐나
 
@@ -52,7 +52,7 @@ flowchart LR
 
 한 현상의 활성화로 훈련한 probing classifier가 다른 현상을 가려낼 수 있는지를 본다. 각 방향에서 hidden·attention·MLP 레이어별 활성화를 logistic regression 또는 feed-forward 분류기에 통과시킨다.
 
-결과는 두 방향 모두 동전 던지기였다. KC→H에서 AUROC는 전 레이어·전 활성화 유형에 걸쳐 $\approx 0.5$. 원문 표현으로는, 충돌 활성화로 훈련한 probe가 환각 예측에 "largely ineffective"했다[^kc2h]. H→KC도 마찬가지로 $\approx 0.5$ 언저리를 맴돈다[^h2kc].
+결과는 두 방향 모두 동전 던지기였다. KC→H에서 AUROC[^auroc]는 전 레이어·전 활성화 유형에 걸쳐 $\approx 0.5$. 원문 표현으로는, 충돌 활성화로 훈련한 probe가 환각 예측에 "largely ineffective"했다[^kc2h]. H→KC도 마찬가지로 $\approx 0.5$ 언저리를 맴돈다[^h2kc].
 
 여기서 짚어둘 대비가 있다. 같은 probe가 *자기 작업*에서는 멀쩡히 작동한다. Table 2를 보면 TriviaQA 환각 탐지는 accuracy 0.626 / AUROC 0.655로 우연 이상이다. **그러나** 같은 구조가 NQ-Swap 지식 충돌 탐지로 넘어가면 accuracy 0.519 / AUROC 0.517로 무너진다[^table2]. probe가 무능해서가 아니다. 두 현상이 *같은 좌표에 살지 않아서*다.
 
@@ -64,11 +64,11 @@ flowchart LR
 
 > "no significant correlation was observed between hallucinations and knowledge conflicts at the level of internal representations, despite the intuitive assumption of a strong causal link."[^conclusion]
 
-직관적으로는 강한 인과의 끈이 있을 법한데, 내부 표현 수준에서는 유의한 상관이 없었다. 저자들의 해석은 환각이 지식 충돌과 *직교하는*, 더 복잡한 기제에서 비롯될 가능성이다. 충돌은 환각의 한 입구일 수는 있어도, 내부 회로에서 둘이 공유하는 표현 축은 없더라는 것.
+직관적으로는 강한 인과의 끈이 있을 법한데, 내부 표현 수준에서는 유의한 상관이 없었다. 저자들의 해석은 환각이 지식 충돌과 *직교[^orthogonal]하는*, 더 복잡한 기제에서 비롯될 가능성이다. 충돌은 환각의 한 입구일 수는 있어도, 내부 회로에서 둘이 공유하는 표현 축은 없더라는 것.
 
 **그러나** 이 결론의 테두리를 분명히 긋자. 이건 워크숍 논문이고, 검증은 단 두 모델 — LLaMA-3-8B와 Falcon-7B — 에 한정된다. probe가 잡아낼 수 있는 건 *선형적으로 읽히는* 상관뿐이라, 비선형으로 얽힌 관계라면 probe의 침묵이 곧 부재의 증명은 아니다. 게다가 NQ-Swap은 합성(synthetic) 충돌이다 — 답을 인위로 바꿔 만든 충돌과 자연발생 충돌이 같은 표현을 쓴다는 보장도 없다. "상관이 없다"는 "이 설정에서, 이 두 모델에서, 선형 probe로는 안 보였다"로 읽어야 정확하다.
 
-그럼에도 이 null은 인접 증거들과 결이 맞는다. 잔차 스트림(residual stream)에 충돌 신호가 등록되지만 그게 환각으로 이어지지는 않더라는 보고([arXiv:2410.16090](https://arxiv.org/abs/2410.16090))[^residual], 표현 기반 탐지기가 분포 외 데이터에서 무작위 수준으로 붕괴한다는 보고([arXiv:2509.19372](https://arxiv.org/abs/2509.19372))[^ood], 그리고 환각이 지식 공백이 아니라 생성 동역학의 snowballing이라는 Zhang et al.의 관찰([arXiv:2305.13534](https://arxiv.org/abs/2305.13534))[^snowball] — 모두 "내부 상태를 들여다보는 것만으로 환각을 읽어낼 수 있다"는 낙관에 금을 낸다.
+그럼에도 이 null은 인접 증거들과 결이 맞는다. 잔차 스트림(residual stream)에 충돌 신호가 등록되지만 그게 환각으로 이어지지는 않더라는 보고([arXiv:2410.16090](https://arxiv.org/abs/2410.16090))[^residual], 표현 기반 탐지기가 분포 외[^oodterm] 데이터에서 무작위 수준으로 붕괴한다는 보고([arXiv:2509.19372](https://arxiv.org/abs/2509.19372))[^ood], 그리고 환각이 지식 공백이 아니라 생성 동역학의 snowballing이라는 Zhang et al.의 관찰([arXiv:2305.13534](https://arxiv.org/abs/2305.13534))[^snowball] — 모두 "내부 상태를 들여다보는 것만으로 환각을 읽어낼 수 있다"는 낙관에 금을 낸다.
 
 ### 음화의 음화 — 바깥에서 찔러보기
 
@@ -147,3 +147,13 @@ pheeree, 오늘로 환각의 *발생*까지 내려왔으니, 다음은 둘 중 �
 [^ood]: 표현 기반 환각 탐지기가 분포 외(OOD) 데이터에서 무작위 수준으로 붕괴 — 벤치마크 내부 성능이 실제 일반화를 과장한다. — arXiv:2509.19372. (dossier 동향 항목 기반)
 
 [^snowball]: 환각은 지식 공백이 아니라 snowballing — ChatGPT·GPT-4는 자신의 오류 67~87%를 사후 식별할 수 있었으나 생성 단계에서는 반복했다. 지식 보유 여부와 환각 생성 기제는 별개. — Zhang et al., arXiv:2305.13534. (dossier 보강 항목 기반)
+
+[^intrep]: 용어 — 내부 표현(internal representation). 모델이 입력을 처리하며 각 층에 만들어 내는 활성화 벡터, 곧 모델의 "속내"가 새겨진 숫자 패턴. 이 글의 가설은 환각과 지식 충돌이 같은 사건이라면 이 속내에서도 둘이 함께 켜져야 한다는 것이었다.
+
+[^probing]: 용어 — 프로빙(probing). 모델 내부 활성화에 작은 분류기를 붙여 "이 표현 안에 어떤 정보가 들어 있나"를 읽어내는 해석 기법. 한 현상으로 훈련한 프로브가 다른 현상도 맞히면 둘이 같은 회로를 공유한다는 뜻인데, 여기선 그러지 못했다.
+
+[^auroc]: 용어 — AUROC. 분류기가 양·음을 얼마나 잘 가르는지 0~1로 재는 지표. 0.5는 동전 던지기(아무 변별력 없음), 1.0은 완벽. 전 구간에서 AUROC가 0.5라는 건 프로브가 환각을 전혀 못 맞혔다, 곧 상관이 없다는 뜻이다.
+
+[^orthogonal]: 용어 — 직교(orthogonal). 기하에서 직각으로 만나는 두 축처럼, 서로 무관해 한쪽이 다른 쪽을 전혀 설명하지 못하는 관계. 환각과 지식 충돌이 직교한다는 건 둘이 인과로 얽힌 한 사건이 아니라 별개의 독립된 기제라는 결론이다.
+
+[^oodterm]: 용어 — 분포 외(OOD, Out-Of-Distribution). 모델·탐지기가 학습할 때 본 데이터와 통계적으로 다른, 처음 보는 분포의 데이터. 벤치마크 안에서 잘 되던 환각 탐지기가 이 OOD 데이터에서 무작위 수준으로 무너진다는 게 내부 표현 접근의 약점이다.
