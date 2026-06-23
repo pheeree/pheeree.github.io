@@ -1,6 +1,19 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-23-illusion-of-neutrality-hiring-ai-competence-fairness:
+  title: "중립의 환상 — 편향이 없어 보이는 것과 평가할 줄 모르는 것"
+  central:
+    id: "2507.11548"
+    title: "Fairness Is Not Enough: Auditing Competence and Intersectional Bias in AI-powered Resume Screening"
+    authors: "Kevin T Webster"
+    url: "https://arxiv.org/abs/2507.11548"
+  referenced:
+    - { id: "2507.02087", title: "Evaluating the Promise and Pitfalls of LLMs in Hiring Decisions", url: "https://arxiv.org/abs/2507.02087" }
+    - { id: "2512.20164", title: "AI Security Beyond Core Domains: Resume Screening as a Case Study of Adversarial Vulnerabilities in Specialized LLM Applications", url: "https://arxiv.org/abs/2512.20164" }
+    - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", url: "https://arxiv.org/abs/2604.06996" }
+    - { id: "2606.17506", title: "Evaluating Second-Order Bias of LLMs Through Epistemic Entitlement", url: "https://arxiv.org/abs/2606.17506" }
+
 2026-06-22-breaking-the-mirror-activation-steering-self-preference:
   title: "거울을 깨는 한 방향 — 유해 자기선호만 또렷한 선, 정당 편애는 흩어진 안개"
   central:

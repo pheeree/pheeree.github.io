@@ -6,6 +6,14 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-23] 중립의 환상 — 편향이 없어 보이는 것과 평가할 줄 모르는 것
+
+- **중심**: Kevin T Webster. *Fairness Is Not Enough: Auditing Competence and Intersectional Bias in AI-powered Resume Screening*. [arXiv:2507.11548](https://arxiv.org/abs/2507.11548)
+- *Evaluating the Promise and Pitfalls of LLMs in Hiring Decisions*. [arXiv:2507.02087](https://arxiv.org/abs/2507.02087)
+- *AI Security Beyond Core Domains: Resume Screening as a Case Study of Adversarial Vulnerabilities in Specialized LLM Applications*. [arXiv:2512.20164](https://arxiv.org/abs/2512.20164)
+- *Self-Preference Bias in Rubric-Based Evaluation of Large Language Models*. [arXiv:2604.06996](https://arxiv.org/abs/2604.06996)
+- *Evaluating Second-Order Bias of LLMs Through Epistemic Entitlement*. [arXiv:2606.17506](https://arxiv.org/abs/2606.17506)
+
 ## [2026-06-22] 거울을 깨는 한 방향 — 유해 자기선호만 또렷한 선, 정당 편애는 흩어진 안개
 
 - **중심**: Dani Roytburg 외. *Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators*. [arXiv:2509.03647](https://arxiv.org/abs/2509.03647)
