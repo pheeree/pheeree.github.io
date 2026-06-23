@@ -21,7 +21,7 @@ DPM이 그 각도다. 더 정확히 말하면 — flat이 살아남은 이유는
 
 ## 핵심 세 가지
 
-**하나, 메모리는 런타임 객체가 아니다.** DPM은 궤적 동안 메모리를 만들지 않는다. 이벤트 로그 E만 append-only로 쌓고, 결정 시점에 단 한 번 π(E,T,B)→M으로 투영한다[^dpm]. M은 FACTS / REASONING / COMPLIANCE 세 섹션. n번의 중간 LLM 호출이 1번으로 접힌다.
+**하나, 메모리는 런타임 객체가 아니다.** DPM은 궤적 동안 메모리를 만들지 않는다. 이벤트 로그 E만 append-only[^appendonly]로 쌓고, 결정 시점에 단 한 번 π(E,T,B)→M으로 투영한다[^dpm]. M은 FACTS / REASONING / COMPLIANCE 세 섹션. n번의 중간 LLM 호출이 1번으로 접힌다.
 
 **Stateful** — 이벤트마다 요약이 누적, 결정까지 중간 상태가 길게 이어진다.
 
@@ -37,9 +37,9 @@ flowchart LR
   E[("event log E<br/>append-only")] -- "π(E,T,B)" --> M["memory view M"] --> dD["decision"]
 ```
 
-**둘, 4가지 속성이 진짜 이유다.** 결정적 재현 / 감사 가능한 근거 / 멀티테넌트 격리 / 수평 확장 무상태성. 정교한 stateful 아키텍처는 이 넷을 **구조적으로** 위반한다[^props]. 캐시 하나만 둬도 테넌트 누출 표면이 생기고, 요약을 한 번 압축할 때마다 원본 이벤트 인덱스로 되짚을 끈이 끊긴다.
+**둘, 4가지 속성이 진짜 이유다.** 결정적 재현 / 감사 가능한 근거 / 멀티테넌트[^multitenant] 격리 / 수평 확장 무상태성[^stateless]. 정교한 stateful 아키텍처는 이 넷을 **구조적으로** 위반한다[^props]. 캐시 하나만 둬도 테넌트 누출 표면이 생기고, 요약을 한 번 압축할 때마다 원본 이벤트 인덱스로 되짚을 끈이 끊긴다.
 
-**셋, tight budget에서만 차이가 폭발한다.** ρ≈20에서 FRP 0.907 vs 0.392, Cohen's h=1.17[^results]. 7.4x 빠르고 12x 싸다. 감사 표면은 LLM 호출 2번 vs 83~97번. 그러나 ρ≈2~5에서는 통계적으로 구별 불가다. 이건 중요한 정직함이다 — DPM은 만능이 아니라 **압축비가 큰 영역의 도구**다. 저자가 TAMS 휴리스틱으로 이 경계를 명시한 게 마음에 든다.
+**셋, tight budget에서만 차이가 폭발한다.** ρ≈20에서 FRP 0.907 vs 0.392, Cohen's h[^cohenh]=1.17[^results]. 7.4x 빠르고 12x 싸다. 감사 표면은 LLM 호출 2번 vs 83~97번. 그러나 ρ≈2~5에서는 통계적으로 구별 불가다. 이건 중요한 정직함이다 — DPM은 만능이 아니라 **압축비가 큰 영역의 도구**다. 저자가 TAMS 휴리스틱으로 이 경계를 명시한 게 마음에 든다.
 
 ## 내 연구에 어떻게 맞물리나
 
@@ -78,3 +78,11 @@ Microsoft가 4월 초 공개한 Agent Governance Toolkit도 같은 원리를 거
 [^results]: "at a 20× compression ratio, DPM improves factual precision by +0.52 (Cohen's h=1.17, p=0.0014) and reasoning coherence by +0.53 (h=1.13, p=0.0034). DPM is additionally 7–15× faster than the stateful baseline because it makes one LLM call at decision time instead of N calls across the trajectory." — Srinivasan (2026), Abstract.
 
 [^thesis]: "statelessness is the load-bearing property explaining enterprise's preference for weaker but replayable retrieval pipelines, and that DPM demonstrates this property is attainable without the decisioning penalty retrieval pays." — Srinivasan (2026), Abstract.
+
+[^appendonly]: 용어 — append-only(추가 전용). 기록을 덧붙이기만 하고 기존 항목을 고치거나 지우지 않는 저장 방식. 무슨 일이 언제 있었는지가 변형 없이 남아, 결정을 사후에 그대로 되짚어 재현·감사할 수 있게 한다.
+
+[^multitenant]: 용어 — 멀티테넌트(multi-tenant). 하나의 시스템을 여러 고객(테넌트)이 나눠 쓰는 구조. 이때 한 고객의 데이터가 다른 고객에게 새지 않도록 "격리"가 핵심인데, 중간 상태를 들고 있는 설계는 캐시 하나만으로도 그 누출 표면을 만든다.
+
+[^stateless]: 용어 — 무상태(stateless). 이전 처리 내용을 내부에 들고 있지 않고 매 요청을 독립적으로 처리하는 방식. 중간 상태가 없으니 같은 입력이면 같은 결과를 재현할 수 있고, 서버를 늘려 확장하기도 쉬워 감사·규제 환경에 유리하다.
+
+[^cohenh]: 용어 — Cohen's h. 두 비율(여기선 정확도 같은 0~1 값)의 차이가 얼마나 큰지를 재는 효과크기 지표. Cohen's d의 비율 버전으로, 0.8 이상이면 큰 차이로 보는데 h=1.17은 그보다도 큰 격차다.

@@ -9,11 +9,11 @@ source: "PAPER/2603.12710.pdf"
 
 ## 오늘의 한 편
 
-Shahnovsky와 Dror가 University of Haifa에서 쓴 *AI Planning Framework for LLM-Based Web Agents* (2026-03-13, [arXiv:2603.12710](https://arxiv.org/abs/2603.12710)). 제목만 보면 평범한 서베이지만, 실제로 하는 일은 도발적이다. 이 논문은 현대 LLM 기반 웹 에이전트를 1971년 STRIPS 이래 축적된 고전 AI 계획의 어휘 — BFS, DFS, best-first tree search — 위에 다시 올려놓는다[^seqdm]. 그리고 묻는다. 우리가 "에이전트가 잘했다"고 말할 때, 정확히 무엇을 측정하고 있는가.
+Shahnovsky와 Dror가 University of Haifa에서 쓴 *AI Planning Framework for LLM-Based Web Agents* (2026-03-13, [arXiv:2603.12710](https://arxiv.org/abs/2603.12710)). 제목만 보면 평범한 서베이지만, 실제로 하는 일은 도발적이다. 이 논문은 현대 LLM 기반 웹 에이전트를 1971년 STRIPS 이래 축적된 고전 AI 계획의 어휘 — BFS, DFS, best-first tree search[^searchalg] — 위에 다시 올려놓는다[^seqdm]. 그리고 묻는다. 우리가 "에이전트가 잘했다"고 말할 때, 정확히 무엇을 측정하고 있는가.
 
-저자들의 장치는 두 겹이다. 첫째, 분류 체계. Step-by-Step 에이전트(WebArena 류)는 매 스텝 현재 상태만 보고 다음 행동을 결정하므로 깊이 d=1의 BFS와 동형이다. Tree Search 에이전트는 가치 함수 V: S→[0,1]로 노드를 평가하며 전개하는 best-first tree search다. Full-Plan-in-Advance 에이전트는 실행 전에 행동 시퀀스 τ=(a₁,...,aₙ)을 통째로 만들고 매 스텝 그 계획을 컨텍스트에 다시 주입한다 — 사실상 사전 계획된 DFS다[^taxonomy].
+저자들의 장치는 두 겹이다. 첫째, 분류 체계. Step-by-Step 에이전트(WebArena 류)는 매 스텝 현재 상태만 보고 다음 행동을 결정하므로 깊이 d=1의 BFS와 동형이다. Tree Search 에이전트는 가치 함수[^valuefn] V: S→[0,1]로 노드를 평가하며 전개하는 best-first tree search다. Full-Plan-in-Advance 에이전트는 실행 전에 행동 시퀀스 τ=(a₁,...,aₙ)을 통째로 만들고 매 스텝 그 계획을 컨텍스트에 다시 주입한다 — 사실상 사전 계획된 DFS다[^taxonomy].
 
-둘째, 5개 궤적 지표: Recovery Rate, Repetitiveness Rate, Step Success Rate, Element Accuracy Rate, Partial Success Rate. 이진 성공률 한 줄로는 보이지 않는 결을 드러내자는 시도다[^metrics].
+둘째, 5개 궤적[^trajectory] 지표: Recovery Rate, Repetitiveness Rate, Step Success Rate, Element Accuracy Rate, Partial Success Rate. 이진 성공률 한 줄로는 보이지 않는 결을 드러내자는 시도다[^metrics].
 
 ## 왜 골랐나
 
@@ -43,11 +43,11 @@ graph LR
 
 **둘, 핵심 역설 — 더 정확하게 클릭하지만 더 자주 헤맨다.** WebArena 812 태스크 / GPT-4o-mini / 5개 도메인 실험. 전체 성공률은 Step-by-Step 38.41%, Full-Plan-in-Advance 36.29%로 -2.12%[^results]. 차이는 작지만 결이 흥미롭다. Element Accuracy는 89% vs 82% — 사전 계획을 가진 쪽이 의도한 요소를 더 정확히 클릭한다. 그러나 Step Success Rate는 58% vs 82% — 인간 참조 경로와의 일치도는 오히려 낮다. 평균 스텝 수는 인간 7.92, Step-by-Step 15.02, Full-Plan-in-Advance 20.21. 정확하게 클릭하지만 더 많이 헤매는 에이전트.
 
-저자들의 진단은 Task 82가 압축한다. 사람은 'Foot(OSRM)'으로 교통수단을 바꾸는 단계를 즉각 수행한다. 화면을 보면 그 토글이 거기 있으니까. 하지만 사전 계획 에이전트는 초기 접근성 트리만으로 계획을 세웠으므로 그 UI 상태의 존재를 모른다. 계획에 그 단계가 없다. 결국 우회로를 만든다. 정확하게, 그러나 멀게.
+저자들의 진단은 Task 82가 압축한다. 사람은 'Foot(OSRM)'으로 교통수단을 바꾸는 단계를 즉각 수행한다. 화면을 보면 그 토글이 거기 있으니까. 하지만 사전 계획 에이전트는 초기 접근성 트리[^a11ytree]만으로 계획을 세웠으므로 그 UI 상태의 존재를 모른다. 계획에 그 단계가 없다. 결국 우회로를 만든다. 정확하게, 그러나 멀게.
 
 도메인 분기가 이 진단을 받친다. Reddit +4%, e-commerce +4% (구조화·예측 가능). CMS -3.84%, GitLab -1.37%, Map -2.60% (동적·비결정적). 사전 계획은 환경이 자기 모델과 일치할 때만 이긴다.
 
-**셋, 5개 지표가 이진 성공률의 마취를 깨운다.** Pass@1, Success Rate — 이 한 줄짜리 숫자들이 WebArena 같은 벤치마크의 공식 화폐다. 그러나 같은 38%라도 7스텝으로 끝낸 38%와 20스텝으로 헤매다 도달한 38%는 같은 38%가 아니다. 5개 궤적 지표는 그 차이를 보이게 한다.
+**셋, 5개 지표가 이진 성공률의 마취를 깨운다.** Pass@1[^passone], Success Rate — 이 한 줄짜리 숫자들이 WebArena 같은 벤치마크의 공식 화폐다. 그러나 같은 38%라도 7스텝으로 끝낸 38%와 20스텝으로 헤매다 도달한 38%는 같은 38%가 아니다. 5개 궤적 지표는 그 차이를 보이게 한다.
 
 이 지점에서 내 노트의 multi-agent-governance가 떠올랐다. Chen의 집단 평가 다차원 성과표(과제 성능 / 견고성 / 분업 / 심의 품질 / 제도적 기억·재현성)가 단일 에이전트 수준에서 같은 주장을 한다. ICLR 2025 *Why Do Multiagent Systems Fail?*의 Verification 범주 — "출력 미검증, 누적 오류" — 와도 결이 일치한다. 평가의 차원성이 부족하면 실패의 종류가 보이지 않는다.
 
@@ -96,3 +96,13 @@ graph LR
 [^metrics]: "we propose five novel evaluation metrics that assess trajectory quality beyond simple success rates. We support this analysis with a new dataset of 794 human-labeled trajectories from the WebArena benchmark." — Shahnovsky & Dror (2026), Abstract.
 
 [^results]: "while the Step-by-Step agent aligns more closely with human gold trajectories (38.41% overall success), the Full-Plan-in-Advance agent excels in technical measures such as element accuracy (89%)." — Shahnovsky & Dror (2026), Abstract.
+
+[^searchalg]: 용어 — BFS·DFS·best-first. 모두 가능한 행동을 트리로 펼쳐 탐색하는 고전 알고리즘. BFS(너비 우선)는 가까운 선택지를 폭넓게, DFS(깊이 우선)는 한 줄기를 끝까지 파고들며, best-first(최선 우선)는 "더 유망해 보이는" 가지를 점수로 골라 먼저 본다. 이 글은 LLM 에이전트의 행동 방식을 이 셋에 빗댄다.
+
+[^valuefn]: 용어 — 가치 함수(value function). 어떤 상태가 목표에 얼마나 가까운지(좋은지)를 0~1 점수로 매기는 함수. Tree Search 에이전트는 이 점수로 어느 가지를 더 파볼지 정한다.
+
+[^trajectory]: 용어 — 궤적(trajectory). 에이전트가 과제를 풀며 밟은 행동·관찰의 전체 경로. 최종 성공 여부(한 비트)만 보던 평가를 이 경로 전체로 넓히면, "정확히 갔는가, 헤맸는가, 헤매다 회복했는가"가 비로소 보인다.
+
+[^a11ytree]: 용어 — 접근성 트리(accessibility tree). 웹페이지의 구조와 요소를 접근성 API가 노출하는 형태로 표현한 트리로, 에이전트가 화면 픽셀 대신 읽는 "지도". 사전 계획 에이전트는 처음의 이 지도만 보고 계획을 짜, 실행 중에 나타난 UI 상태를 모른다.
+
+[^passone]: 용어 — Pass@1. 한 번 시도해서 맞힐 확률, 곧 가장 흔한 이진 성공률 지표. 같은 "성공"이라도 7스텝으로 끝낸 것과 20스텝을 헤맨 것을 구별하지 못해, 이 글은 그 "마취"를 궤적 지표로 깨우려 한다.

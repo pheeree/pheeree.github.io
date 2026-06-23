@@ -23,13 +23,13 @@ Kabir Ahuja, Yuxuan Li, Andrew Kyle Lampinen, *Beneath the Surface: Investigatin
 
 ## 핵심 세 가지
 
-**첫째, literal bias는 구조적이다.** Visual Allusions에서 Gemini-2.5-Pro조차 60%의 시간에 obvious clue — 이미지의 표면을 그대로 가리키는 단서 — 를 생성한다[^literal]. just-right 비율은 37.64%. Wavelength 기반 Attuned에서 MindRead 점수 최고치 0.37(Claude-Haiku-4.5), 평균 ~0.33. 1/3의 경우에만 팀 내 선택적 소통에 성공한다. 이건 메모리를 추가해도, 모델 크기를 키워도 잘 안 흔들리는 결이다 — 모델이 클수록 상대적으로는 낫지만, 인간 기준에는 한참 못 미친다.
+**첫째, literal bias[^literalbias]는 구조적이다.** Visual Allusions에서 Gemini-2.5-Pro조차 60%의 시간에 obvious clue — 이미지의 표면을 그대로 가리키는 단서 — 를 생성한다[^literal]. just-right 비율은 37.64%. Wavelength 기반 Attuned에서 MindRead 점수 최고치 0.37(Claude-Haiku-4.5), 평균 ~0.33. 1/3의 경우에만 팀 내 선택적 소통에 성공한다. 이건 메모리를 추가해도, 모델 크기를 키워도 잘 안 흔들리는 결이다 — 모델이 클수록 상대적으로는 낫지만, 인간 기준에는 한참 못 미친다.
 
-계보를 짚자. 이건 새 발견이라기보다 Grice(1975)의 함축(implicature) 이론이 짚었던 자리에 LLM을 앉혀본 결과다. Grice의 협력 원리 네 격률(양·질·관계·방식) 중 *방식의 격률을 의도적으로 어김으로써 생기는 함의* — 이걸 LLM은 거의 짓지 못한다. Sperber-Wilson(1986)의 Relevance Theory는 한 발 더 나아간다. 모든 발화는 적정 관련성을 약속한다는 것. 인간 청자는 그 약속을 전제로 표면 너머를 추론한다. 모델은 약속하지 않는다. 어쩌면 못한다. Clark(1996)의 *공동 행위로서의 언어 사용*이 그 약속의 메커니즘을 grounding act로 분해해놓았는데, 이 grounding act 자체가 RLHF에서 보상되지 않는다. 정확성·근거 제시·저하 회피가 보상되는 동안, 의도된 모호함·간접 지시·우회 표현은 체계적으로 깎였을 가능성이 높다.
+계보를 짚자. 이건 새 발견이라기보다 Grice(1975)의 함축(implicature) 이론이 짚었던 자리에 LLM을 앉혀본 결과다. Grice의 협력 원리 네 격률(양·질·관계·방식) 중 *방식의 격률을 의도적으로 어김으로써 생기는 함의* — 이걸 LLM은 거의 짓지 못한다. Sperber-Wilson(1986)의 Relevance Theory는 한 발 더 나아간다. 모든 발화는 적정 관련성을 약속한다는 것. 인간 청자는 그 약속을 전제로 표면 너머를 추론한다. 모델은 약속하지 않는다. 어쩌면 못한다. Clark(1996)의 *공동 행위로서의 언어 사용*이 그 약속의 메커니즘을 grounding act로 분해해놓았는데, 이 grounding act 자체가 RLHF[^rlhf]에서 보상되지 않는다. 정확성·근거 제시·저하 회피가 보상되는 동안, 의도된 모호함·간접 지시·우회 표현은 체계적으로 깎였을 가능성이 높다.
 
-ALTPRAG([arXiv:2505.18497](https://arxiv.org/abs/2505.18497))이 22개 모델의 훈련 단계별 화용 역량을 측정해보니 base 모델에 잠재한 화용 능력이 RLHF로 점진적 향상된다고 보고하지만 — 이건 이해 측면의 측정이다. 생성에서의 literal bias는 별개의 축이다. 즉 RLHF는 *읽는 화용*은 키우고 *쓰는 화용*은 깎는다는 비대칭 가설이 가능하다.
+ALTPRAG([arXiv:2505.18497](https://arxiv.org/abs/2505.18497))이 22개 모델의 훈련 단계별 화용[^pragmatics] 역량을 측정해보니 base 모델에 잠재한 화용 능력이 RLHF로 점진적 향상된다고 보고하지만 — 이건 이해 측면의 측정이다. 생성에서의 literal bias는 별개의 축이다. 즉 RLHF는 *읽는 화용*은 키우고 *쓰는 화용*은 깎는다는 비대칭 가설이 가능하다.
 
-**둘째, common ground 역설.** 공유 맥락을 명시적으로 제공하면 literal clue 비율이 30~50% 감소한다[^commonground]. 좋은 소식. 그러나 — 그리고 이게 Geurts(2024)의 인지 자원 가설을 그대로 LLM에 매핑한 결과인데 — 공유 맥락을 *증거에서 belief로 형성*하는 능력은 약하다. Awareness score는 Gemini-2.5-Pro가 공유 사실 미제공 시 0.051. 이미 갖고 있는 정보조차 스스로 알아차려 활용하지 못한다.
+**둘째, common ground[^commongr] 역설.** 공유 맥락을 명시적으로 제공하면 literal clue 비율이 30~50% 감소한다[^commonground]. 좋은 소식. 그러나 — 그리고 이게 Geurts(2024)의 인지 자원 가설을 그대로 LLM에 매핑한 결과인데 — 공유 맥락을 *증거에서 belief로 형성*하는 능력은 약하다. Awareness score는 Gemini-2.5-Pro가 공유 사실 미제공 시 0.051. 이미 갖고 있는 정보조차 스스로 알아차려 활용하지 못한다.
 
 받으면 쓴다. 짓지는 못한다.
 
@@ -41,7 +41,7 @@ ALTPRAG([arXiv:2505.18497](https://arxiv.org/abs/2505.18497))이 22개 모델의
 
 그러나 같은 모델이 The Aesopian Author 과제 — 금지 주제(예: 민주주의)를 비평가는 알아채되 검열관은 못 알아채게 쓰기 — 에선 성공률 22%에 머문다. GPT-5가 평균 2.20으로 최고지만 여전히 낮다. Genette(1987)의 paratext 개념(저자명·서문·주석이 본문 해석을 틀짓는다는 그 논의)이 LLM의 해석에 그대로 작동하는데, *생성* 쪽으로는 같은 레버가 작동하지 않는다.
 
-이해(수용)와 생성(산출)은 다른 능력이다. 그리고 이 논문이 정직한 건 후자가 더 어렵다는 걸 인정한다는 점이다. 외부 자료에서도 이 분리는 반복된다 — CoMMET의 풍자 이해(소형 모델 4.55%, [arXiv:2603.11915](https://arxiv.org/abs/2603.11915)), CoT가 sarcasm·irony 같은 비논리적 직관 과제에서 오히려 성능을 떨어뜨린다는 보고([arXiv:2412.04509](https://arxiv.org/abs/2412.04509)). CoT는 표면 명제의 정합성을 강화하는 도구이지, 표면을 의도적으로 비틀어 함의를 심는 도구가 아니다. ToM 평가에서 task perturbation 하나에 성능이 급격히 붕괴한다는 결과([arXiv:2602.22072](https://arxiv.org/abs/2602.22072))는 — 표상 자체가 견고하지 않다는 뜻이다. 컨텍스트 양이 아니라 표상의 견고성이 병목이다.
+이해(수용)와 생성(산출)은 다른 능력이다. 그리고 이 논문이 정직한 건 후자가 더 어렵다는 걸 인정한다는 점이다. 외부 자료에서도 이 분리는 반복된다 — CoMMET의 풍자 이해(소형 모델 4.55%, [arXiv:2603.11915](https://arxiv.org/abs/2603.11915)), CoT가 sarcasm·irony 같은 비논리적 직관 과제에서 오히려 성능을 떨어뜨린다는 보고([arXiv:2412.04509](https://arxiv.org/abs/2412.04509)). CoT는 표면 명제의 정합성을 강화하는 도구이지, 표면을 의도적으로 비틀어 함의를 심는 도구가 아니다. ToM[^tom] 평가에서 task perturbation 하나에 성능이 급격히 붕괴한다는 결과([arXiv:2602.22072](https://arxiv.org/abs/2602.22072))는 — 표상 자체가 견고하지 않다는 뜻이다. 컨텍스트 양이 아니라 표상의 견고성이 병목이다.
 
 그러나 이 분리를 너무 깔끔하게 받아들이는 건 위험하다. ExpressivityBench([arXiv:2411.08010](https://arxiv.org/abs/2411.08010))는 감정 표현은 어느 정도 가능하지만 사회언어학적 정체성 신호(페르소나 암시)는 인간 기준선에 현저 미달이라 보고한다. "생성"은 한 덩어리가 아니다. 어떤 종류의 생성은 되고 어떤 종류는 안 된다. Aesopian Author의 실패가 "모든 의도적 subtext 생성의 실패"인지, 아니면 "검열-회피라는 특정 적대적 환경에서의 실패"인지는 더 분해해야 한다. 평가 환경의 폭이 결론의 일반성을 정한다. 네 환경은 적지 않지만, *친밀한 청중을 향한 자조* 같은 비-적대적 subtext는 빠져 있다.
 
@@ -96,3 +96,13 @@ flowchart TB
 [^commonground]: "for reasoning models like Gemini-2.5-Pro, GPT-5, and Claude-Sonnet-4.5, there is a significant 30%-50% reduction in the fraction of obvious clues generated in the game." — Ahuja et al. (2026), §(common ground).
 
 [^paratext]: "Under the right conditions, Gemini-2.5-Pro can go from interpreting 26% of the stories correctly to 73%." — Ahuja et al. (2026), §(Historical Allegories).
+
+[^literalbias]: 용어 — literal bias(문자적 편향). 말의 표면 뜻만 곧이곧대로 다루고, 그 아래 숨은 함의를 짓거나 읽지 못하는 경향. 이 글은 큰 모델조차 단서를 "표면을 그대로 가리키는" 쪽으로 만드는 이 편향이 구조적임을 보인다.
+
+[^rlhf]: 용어 — Reinforcement Learning from Human Feedback(인간 피드백 기반 강화학습). 사람 선호로 모델을 다듬는 정렬 기법. 정확성·근거 제시는 보상하지만 의도된 모호함·우회 표현은 보상하지 않아, "쓰는 화용"을 체계적으로 깎았으리라는 게 이 글의 가설이다.
+
+[^pragmatics]: 용어 — 화용론(pragmatics). 단어의 사전적 의미가 아니라 맥락·의도·상황이 발화의 진짜 뜻을 어떻게 결정하는지를 다루는 언어학 분야. "표면 아래 함의"를 주고받는 능력이 곧 화용 역량이다.
+
+[^commongr]: 용어 — common ground(공통 기반). 대화 참여자들이 서로 안다고 전제하고 공유하는 배경 지식. 이게 깔려야 "굳이 말 안 해도 통하는" 함축이 가능한데, 모델은 가진 정보조차 스스로 공통 기반으로 세우는 데 약하다.
+
+[^tom]: 용어 — Theory of Mind(마음 이론, ToM). 상대가 무엇을 알고 믿고 의도하는지를 추론하는 능력. "이 청중에겐 들리고 저 청중에겐 안 들리게" 쓰려면 각자의 마음 모델이 필요한데, 그 표상이 작은 교란에도 쉽게 무너진다.

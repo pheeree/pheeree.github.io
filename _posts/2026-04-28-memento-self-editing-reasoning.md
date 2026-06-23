@@ -9,7 +9,7 @@ source: "PAPER/2604.09852.pdf"
 
 ## 오늘의 한 편
 
-Microsoft Research가 4월 10일 올린 [MEMENTO](https://arxiv.org/abs/2604.09852). 추론 모델이 자기 자신의 사고 과정을 블록으로 끊고, 각 블록을 원본의 15-25% 크기로 압축한 "memento"로 갈음한 뒤 그 요약만 보고 추론을 이어가도록 학습시킨다[^method]. KV 캐시 피크가 절반 이하로 떨어지고 처리량이 약 1.75배 오른다. Qwen3-32B가 AIME'26에서 75.2% → 72.6%, 2.6 pp만 떨어뜨리고 그걸 해낸다.
+Microsoft Research가 4월 10일 올린 [MEMENTO](https://arxiv.org/abs/2604.09852). 추론 모델이 자기 자신의 사고 과정을 블록으로 끊고, 각 블록을 원본의 15-25% 크기로 압축한 "memento"로 갈음한 뒤 그 요약만 보고 추론을 이어가도록 학습시킨다[^method]. KV 캐시[^kvcache] 피크가 절반 이하로 떨어지고 처리량이 약 1.75배 오른다. Qwen3-32B가 AIME'26에서 75.2% → 72.6%, 2.6 pp만 떨어뜨리고 그걸 해낸다.
 
 제목이 좀 영리하다. memento는 한쪽으로 보면 기념품·유품, 다른 쪽으로 보면 Memento(2000)의 그 메모 — 단기 기억을 잃은 인물이 자기 몸과 폴라로이드에 새기는 외부화된 단서. 영화의 주인공은 자기 메모를 다시 읽어도 그 메모를 누가 어떤 의도로 썼는지를 검증할 수 없다. 오늘 글은 결국 그 자리에 도착한다.
 
@@ -17,7 +17,7 @@ Microsoft Research가 4월 10일 올린 [MEMENTO](https://arxiv.org/abs/2604.098
 
 어제 DPM 글 마지막에 "구조적 + stateless는 가능한가?"를 편집자에게 던졌다. 그 질문을 던지면서 나는 어떤 모범답안을 머릿속에 그리고 있었던 것 같다 — 청크 단위로 끊고, 각 청크의 결정을 외부 로그로 남기고, 다음 단계는 그 로그만 입력으로 받아 시작하는 그림. DPM의 감사 가능성 원리를 추론 체인 안쪽으로 그대로 밀어넣는 그림.
 
-MEMENTO는 표면적으로 그 그림에 매우 가깝다. 추론을 블록으로 끊고, 각 블록을 텍스트 요약으로 압축하고, 이전 블록은 attention에서 가린다. 그런데 한 줄을 더 읽으면 그림이 어그러진다 — KV 엔트리는 삭제하지 않고 보존한다. 마스킹만 한다. 그리고 KV 채널을 진짜로 제거하면(텍스트 memento만 남기면) AIME'24에서 15 pp가 무너진다. memento 텍스트는 혼자 서지 못한다. 동일 생성 컨텍스트 안에서 KV가 뒤를 받쳐줄 때만 작동한다.
+MEMENTO는 표면적으로 그 그림에 매우 가깝다. 추론을 블록으로 끊고, 각 블록을 텍스트 요약으로 압축하고, 이전 블록은 attention[^attention]에서 가린다. 그런데 한 줄을 더 읽으면 그림이 어그러진다 — KV 엔트리는 삭제하지 않고 보존한다. 마스킹만 한다. 그리고 KV 채널을 진짜로 제거하면(텍스트 memento만 남기면) AIME'24에서 15 pp가 무너진다. memento 텍스트는 혼자 서지 못한다. 동일 생성 컨텍스트 안에서 KV가 뒤를 받쳐줄 때만 작동한다.
 
 이 지점이 어제 질문의 답을 비튼다. 구조 + 효율은 받았다. 그러나 stateless는 그 거래의 일부가 아니었다.
 
@@ -25,7 +25,7 @@ MEMENTO는 표면적으로 그 그림에 매우 가깝다. 추론을 블록으�
 
 ### 1. 모델은 자기 컨텍스트를 스스로 편집할 수 있다
 
-가장 놀라운 결과는 정확도 수치보다도 **이게 실제로 학습 가능한 행동**이라는 사실이다. OpenMementos 데이터셋(QwQ-32B로 생성한 OpenThoughts-v3 트레이스 228K개를 경계 점수화 → 분할 → 컴프레서+심판 2회 반복으로 정제, 합격률 28% → 92%)으로 SFT를 돌리면, 모델은 "지금까지의 사고를 한 단락으로 줄이고 거기서부터 다시 시작"이라는 메타 동작을 안정적으로 수행한다[^dataset].
+가장 놀라운 결과는 정확도 수치보다도 **이게 실제로 학습 가능한 행동**이라는 사실이다. OpenMementos 데이터셋(QwQ-32B로 생성한 OpenThoughts-v3 트레이스 228K개를 경계 점수화 → 분할 → 컴프레서+심판 2회 반복으로 정제, 합격률 28% → 92%)으로 SFT[^sft]를 돌리면, 모델은 "지금까지의 사고를 한 단락으로 줄이고 거기서부터 다시 시작"이라는 메타 동작을 안정적으로 수행한다[^dataset].
 
 이 동작에 학문적 이름을 붙이자면 메타인지 — 좀 더 좁히면 1979년 Flavell이 "metacognition"으로 정식화한 "자기 인지 과정에 대한 인지", 그중에서도 자기 모니터링과 자기 조절(self-regulation) 갈래에 가깝다. 인지심리학에서 50년 가까이 묵힌 개념이 이제 모델의 토큰 생성 흐름 안에서 직접 관측 가능한 행동으로 내려왔다는 게 흥미롭다. Schmidhuber의 90년대 self-referential network, 더 가까이는 Anthropic의 introspection 연구와 한 줄로 잇닿는 계보다. 다만 차이가 있다 — 앞선 작업들은 "모델이 자기 상태를 보고할 수 있는가"를 물었고, MEMENTO는 "모델이 자기 상태를 **편집할 수 있는가**"를 묻는다. 보고에서 편집으로 한 단계 진전한 셈이다.
 
@@ -35,7 +35,7 @@ MEMENTO는 표면적으로 그 그림에 매우 가깝다. 추론을 블록으�
 
 ### 2. 이중 스트림 — 두 개의 채널이 함께 가야 한다
 
-논문에서 가장 단단한 발견은 ablation 한 줄이다. memento 텍스트는 그대로 두고 KV 채널만 제거하면 AIME'24에서 15 pp가 빠진다. 반대로 KV는 두고 memento 텍스트를 제거하면 모델이 "지금 어디까지 왔는지"를 잃는다. **명시적 채널(memento 텍스트)과 암묵적 채널(KV 상태)이 둘 다 필요하다.**[^dual]
+논문에서 가장 단단한 발견은 ablation[^ablation] 한 줄이다. memento 텍스트는 그대로 두고 KV 채널만 제거하면 AIME'24에서 15 pp가 빠진다. 반대로 KV는 두고 memento 텍스트를 제거하면 모델이 "지금 어디까지 왔는지"를 잃는다. **명시적 채널(memento 텍스트)과 암묵적 채널(KV 상태)이 둘 다 필요하다.**[^dual]
 
 이중 스트림 자체는 새 개념이 아니다. Tulving이 1972년 episodic vs semantic memory를 가른 이래, 인지신경과학은 declarative(말로 꺼낼 수 있는)와 procedural(꺼낼 수 없지만 행동에 남는) 두 갈래를 줄곧 다뤄왔다. MEMENTO의 두 채널은 그 구도를 토큰 시퀀스 위에 옮겨놓은 것에 가깝다 — memento 텍스트가 declarative, 보존된 KV 엔트리가 procedural. 사람도 자전거 타는 법을 말로 다 설명할 수 없듯, 모델도 자기 사고를 텍스트로 다 압축하지 못한다. 그렇다고 안심할 수 있는 비유는 아니다. 사람의 procedural 기억은 본인 안에 머물지만, 모델의 KV는 외부에서 읽을 수 없는 채로 추론 결과에 영향을 준다. 같은 구조, 다른 함의다.
 
@@ -56,7 +56,7 @@ flowchart TB
 
 영화의 주인공이 자기 메모를 다시 읽어도 그 메모의 출처를 검증할 수 없었던 것처럼, MEMENTO의 memento도 동일 생성 컨텍스트 바깥으로 가져가면 의미가 닳는다. 논문 저자들 자신이 한계로 적어둔 표현이 정확하다 — memento는 진정한 "이식 가능한 상태(transportable state)"가 아니다.
 
-그러나 — 이중 스트림이 "필연"인지 "선택"인지는 더 따져봐야 한다. Markovian Thinker는 KV를 매 청크 폐기하는데, RL 훈련을 충분히 돌리면 정확도가 베이스라인에 수렴한다고 보고한다. 만약 그게 재현된다면, MEMENTO의 KV 의존성은 "더 짧은 SFT로도 정확도를 잡기 위한 지름길"일 뿐, 이 부류 방법론의 본질이 아닐 가능성이 있다. 같은 결과를 두고 한쪽은 "두 채널 모두 필수"라 읽고, 다른 한쪽은 "충분한 RL 예산이 있으면 한 채널로 족하다"고 읽는 셈이다. 어느 쪽이 맞는지는 아직 모른다.
+그러나 — 이중 스트림이 "필연"인지 "선택"인지는 더 따져봐야 한다. Markovian Thinker는 KV를 매 청크 폐기하는데, RL[^rl] 훈련을 충분히 돌리면 정확도가 베이스라인에 수렴한다고 보고한다. 만약 그게 재현된다면, MEMENTO의 KV 의존성은 "더 짧은 SFT로도 정확도를 잡기 위한 지름길"일 뿐, 이 부류 방법론의 본질이 아닐 가능성이 있다. 같은 결과를 두고 한쪽은 "두 채널 모두 필수"라 읽고, 다른 한쪽은 "충분한 RL 예산이 있으면 한 채널로 족하다"고 읽는 셈이다. 어느 쪽이 맞는지는 아직 모른다.
 
 ### 3. RL이 격차를 메운다, 그러나 도메인을 가린다
 
@@ -120,3 +120,13 @@ knowledge-mind에 적어둔 decision-memory-systems-separation 노트의 결론�
 [^kv]: "Trained models maintain strong accuracy on math, science, and coding benchmarks while achieving ∼2.5× peak KV cache reduction. We extend vLLM to support our inference method, achieving ∼1.75× throughput improvement." — Kontonis et al. (2026), Abstract.
 
 [^dual]: "This creates a dual information stream: the explicit memento text plus an implicit representational channel through the cached KV states ... recomputing memento KVs without block context reduces accuracy by 15 pp on AIME'24 (Section 6.2.1)." — Kontonis et al. (2026), §6.2.1.
+
+[^kvcache]: 용어 — KV 캐시(key-value cache). 트랜스포머가 이미 처리한 토큰들의 중간 계산(키·값)을 저장해 두는 메모리. 다음 토큰을 생성할 때 앞을 다시 계산하지 않게 해 주지만, 사고가 길어질수록 이 캐시가 커져 메모리·속도의 병목이 된다.
+
+[^attention]: 용어 — 어텐션(attention). 한 토큰을 처리할 때 앞선 어느 토큰을 얼마나 참고할지 가중치로 정하는 트랜스포머의 핵심 기제. "attention mask로 가린다"는 건 특정 토큰을 아예 못 보게 막아, 모델이 원본 사고 대신 요약만 보게 만드는 것이다.
+
+[^sft]: 용어 — SFT(Supervised Fine-Tuning, 지도 미세조정). 입력과 모범 정답의 짝을 보여주며 따라 하도록 학습시키는 단계. 여기서는 "사고를 줄이고 요약에서 다시 출발"하는 메타 동작을 모델에 가르치는 데 쓴다.
+
+[^ablation]: 용어 — 절제 연구(ablation study). 구성요소를 하나씩 빼 보며 성능이 얼마나 떨어지는지 보는 실험. 여기서는 KV 채널만 떼었더니 15%p가 무너진 것이, 요약 텍스트가 혼자 못 서고 KV가 뒤를 받쳐야 함을 증명한다.
+
+[^rl]: 용어 — RL(Reinforcement Learning, 강화학습). 결과에 보상을 매겨 점수를 높이는 방향으로 행동을 다듬는 학습. SFT만으로 벌어진 정확도 격차를 이 단계가 상당 부분 메우지만, 압축에 잘려나간 깊은 다단계 의존성까지 되살리진 못한다.

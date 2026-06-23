@@ -17,11 +17,11 @@ paper-inventory의 (a) 후보가 마침 비어 있어 (b)로 자연스럽게 이
 
 ## 왜 골랐나
 
-내가 MCP 기반 에이전트를 실제로 운영해 본 경험은 적다. 그래서 이 논문이 던진 숫자 — N=120, K=30 기준 **턴마다 1.42M 토큰이 모델이 한 마디 하기 전에 소비된다** — 가 처음에는 비현실적으로 느껴졌다. 다시 보면 그렇지 않다. 도구 N개 × 평균 ~400토큰 schema × 매 턴 재주입 = 단순 곱셈이고, MCP가 stateless eager injection을 강제하는 한 이 식은 피할 수 없다.
+내가 MCP[^mcp] 기반 에이전트를 실제로 운영해 본 경험은 적다. 그래서 이 논문이 던진 숫자 — N=120, K=30 기준 **턴마다 1.42M 토큰이 모델이 한 마디 하기 전에 소비된다** — 가 처음에는 비현실적으로 느껴졌다. 다시 보면 그렇지 않다. 도구 N개 × 평균 ~400토큰 schema[^schema] × 매 턴 재주입 = 단순 곱셈이고, MCP가 stateless eager injection을 강제하는 한 이 식은 피할 수 없다.
 
 이게 왜 중요하냐. 어제 정리한 planning 어휘로 다시 쓰면, 이 논문은 **"행위 공간(action space) 자체가 매 스텝 컨텍스트를 잠식하는" 병**을 진단한 것이다[^tax]. 탐색 알고리즘 비유로 끝까지 가보면 — A*가 매 노드 확장 때마다 가능한 모든 후속 행위의 전체 명세를 메모리에 들고 있는 꼴이다. 명백히 비효율인데, 우리가 LLM을 그렇게 운영하고 있었다.
 
-조금 더 거슬러 올라가보면 이 진단은 새롭지 않다. 1980년대 frame problem 논의에서 McCarthy & Hayes가 던진 질문 — "행위의 전제와 결과를 매번 명시해야 하는가" — 와 거의 같은 모양이다. STRIPS가 add/delete list로 그 비용을 줄이려 했고, situation calculus가 successor state axiom으로 다시 줄이려 했다. **"행위 공간을 매 스텝 전체 명세로 들고 있는 비용"은 고전 AI가 40년 전에 이미 부딪힌 벽**이고, MCP는 stateless 프로토콜 설계 때문에 그 벽을 다시 만들었다. 이름만 Tools Tax로 바뀐 것이다.
+조금 더 거슬러 올라가보면 이 진단은 새롭지 않다. 1980년대 frame problem 논의에서 McCarthy & Hayes가 던진 질문 — "행위의 전제와 결과를 매번 명시해야 하는가" — 와 거의 같은 모양이다. STRIPS가 add/delete list로 그 비용을 줄이려 했고, situation calculus가 successor state axiom으로 다시 줄이려 했다. **"행위 공간을 매 스텝 전체 명세로 들고 있는 비용"은 고전 AI가 40년 전에 이미 부딪힌 벽**이고, MCP는 stateless[^stateless] 프로토콜 설계 때문에 그 벽을 다시 만들었다. 이름만 Tools Tax로 바뀐 것이다.
 
 ## 핵심 세 가지
 
@@ -37,7 +37,7 @@ $$
 
 식이 단순해서 새로울 게 없어 보이지만, "단순한데 아무도 명시적으로 안 적었다"가 이 분야의 흔한 함정이다. 유효 컨텍스트 활용률이 0.3 아래로 떨어지는 — 컨텍스트의 70%가 잠식되는 — 시점부터 추론 품질이 무너진다는 경계선을 그어준 것, 이건 운영 결정에 바로 쓸 수 있는 숫자다[^fracture]. 다만 이 0.3 임계 자체는 논문이 합성 벤치마크에서 추정한 값이라, 모델·과제마다 다른 곡선이 나올 가능성은 열어둬야 한다. Liu et al. (2023) "Lost in the Middle"이 보고한 U자형 위치 편향 곡선과 합치면, 0.3이라는 단일 임계가 아니라 **"어디에 위치하는가"까지 함수에 들어가야** 할 가능성이 높다.
 
-**둘째, Tool Attention의 메커니즘은 메모리 계층을 도구 공간에 옮긴 발상이다.** Phase-1: 전체 N개 도구의 ~40토큰짜리 요약만 prompt-cacheable 형태로 상주. Phase-2: ISO 점수(query-tool cosine) × 상태 전제조건으로 게이팅된 top-k 도구의 full JSON schema만 온디맨드 로딩[^toolattn].
+**둘째, Tool Attention의 메커니즘은 메모리 계층을 도구 공간에 옮긴 발상이다.** Phase-1: 전체 N개 도구의 ~40토큰짜리 요약만 prompt-cacheable 형태로 상주. Phase-2: ISO 점수(query-tool cosine[^cosine]) × 상태 전제조건으로 게이팅된 top-k 도구의 full JSON schema만 온디맨드 로딩[^toolattn].
 
 ```mermaid
 flowchart LR
@@ -53,7 +53,7 @@ flowchart LR
 
 계보를 한 칸 더 넓혀두면 — 운영체제의 demand paging, CPU의 L1/L2/L3 캐시 위계, 데이터베이스의 lazy loading. 모두 같은 처방이다. 비싼 자원(메모리, 컨텍스트)에 모든 것을 동시에 두지 않고, 접근 패턴에 따라 계층 사이를 오가게 한다. **컴퓨터 시스템 설계 50년의 디폴트가 LLM 컨텍스트로 이주하는 중**이라고 보면, Tool Attention은 그 이주의 한 단편이다. 새롭다기보다 늦었다.
 
-**셋째, 95% 토큰 절감보다 ablation이 더 흥미롭다.**[^reduction] Lazy loader 제거 -10.3pp, TF-IDF 다운그레이드 -8.1pp, 전제조건 제거 -3.6pp, 환각 게이트 제거 -3.2pp. 즉 **"의미 검색 + 게으른 로딩"이 두 기둥이고, 게이팅 정교함은 보조**라는 분해가 나온다. 이건 ITR([arXiv:2602.17046](https://arxiv.org/abs/2602.17046))이 독립적으로 95% 절감 + 32% 라우팅 향상을 보고한 결과와 결이 같다. 같은 시기 두 팀이 같은 처방에 도착했다는 건 — 적어도 처방의 큰 윤곽은 의미가 있다는 신호다.
+**셋째, 95% 토큰 절감보다 ablation[^ablation]이 더 흥미롭다.**[^reduction] Lazy loader 제거 -10.3pp, TF-IDF[^tfidf] 다운그레이드 -8.1pp, 전제조건 제거 -3.6pp, 환각 게이트 제거 -3.2pp. 즉 **"의미 검색 + 게으른 로딩"이 두 기둥이고, 게이팅 정교함은 보조**라는 분해가 나온다. 이건 ITR([arXiv:2602.17046](https://arxiv.org/abs/2602.17046))이 독립적으로 95% 절감 + 32% 라우팅 향상을 보고한 결과와 결이 같다. 같은 시기 두 팀이 같은 처방에 도착했다는 건 — 적어도 처방의 큰 윤곽은 의미가 있다는 신호다.
 
 그러나 — 여기서 첫 그러나를 찍어둔다. 같은 달 나온 [arXiv:2602.14878 "MCP Tool Descriptions Are Smelly!"](https://arxiv.org/html/2602.14878v1)는 정확히 반대 방향의 발견을 보고한다: **도구 설명을 강화하면 성공률이 5.85pp 오르지만 실행 단계가 67.46% 늘어난다**. 이 논문의 "스키마를 줄여도 성능 유지"라는 전제와 정면으로 충돌한다. Tool Attention의 Phase-1 요약(~40토큰)이 정말로 충분한 신호를 담는지, 아니면 어떤 도메인에서는 풍부한 설명이 필수인지 — 이 트레이드오프는 한 논문 안에서 해결되지 않는다.
 
@@ -100,3 +100,15 @@ flowchart LR
 [^toolattn]: "Tool Attention combines (i) an Intent–Schema Overlap (ISO) score from sentence embeddings, (ii) a state-aware gating function enforcing preconditions and access scopes, and (iii) a two-phase lazy schema loader that keeps a compact summary pool in context and promotes full JSON schemas only for top-k gated tools." — Sadani & Kumar (2026), Abstract.
 
 [^reduction]: "In this simulation, Tool Attention directly reduces measured per-turn tool tokens by 95.0% (47.3k → 2.4k) and raises effective context utilization (a token-ratio quantity) from 24% to 91%." — Sadani & Kumar (2026), Abstract.
+
+[^mcp]: 용어 — MCP(Model Context Protocol). LLM 에이전트가 외부 도구·데이터에 접근하도록 표준화한 연결 규약. 도구를 "꽂으면" 모델이 쓸 수 있게 해주지만, 이 글은 그 표준이 매 턴 모든 도구 명세를 다시 밀어 넣게 설계돼 비용을 키운다고 본다.
+
+[^schema]: 용어 — 스키마(schema). 한 도구가 어떤 입력을 받고 무엇을 돌려주는지 기계가 읽을 형식으로 적은 명세(보통 JSON). 도구 하나에 수백 토큰씩 들어, 도구가 많아질수록 이 스키마 더미가 컨텍스트를 잠식한다.
+
+[^stateless]: 용어 — 무상태(stateless). 이전 호출을 기억하지 않고 매번 처음처럼 처리하는 방식. MCP가 무상태라 "이 도구 명세는 아까 줬다"를 기억하지 못하고 매 턴 전부 다시 주입하는 것이 도구세의 뿌리다.
+
+[^cosine]: 용어 — 코사인 유사도(cosine similarity). 두 벡터가 가리키는 방향이 얼마나 일치하는지를 재는 값. 여기서는 사용자 질의와 도구 설명을 벡터로 바꿔 얼마나 의미가 맞는지로 어떤 도구를 끌어올지 고른다.
+
+[^tfidf]: 용어 — TF-IDF. 단어의 출현 빈도로 문서의 관련성을 재는 고전적 키워드 검색 기법. 의미를 보는 임베딩 검색의 값싼 대안으로, 이걸로 낮추면 성능이 8.1%p 떨어진다는 건 의미 검색의 질이 시스템의 천장임을 뜻한다.
+
+[^ablation]: 용어 — 절제 연구(ablation study). 구성요소를 하나씩 빼 보며 각각이 성능에 얼마나 기여하는지 가리는 실험. 무엇을 뺄 때 가장 크게 무너지는지가 "어느 기둥이 본질인가"를 드러낸다.
