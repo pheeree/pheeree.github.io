@@ -87,3 +87,39 @@
     if (MQ.addEventListener) MQ.addEventListener('change', layout);
   })();
 </script>
+
+<!-- 발행 전 점검 표(claim-ledger) — 본문(세리프)과 구분되는 작은 산세리프 미니라인 표 -->
+<style>
+  .claim-ledger {
+    font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.55;
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    margin: 1rem 0 1.75rem;
+  }
+  .claim-ledger th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.72rem;
+    opacity: 0.6;
+    padding: 6px 12px 6px 0;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  }
+  .claim-ledger td {
+    padding: 6px 12px 6px 0;
+    vertical-align: top;
+    border: none;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.18);
+  }
+  .claim-ledger td:nth-child(2) { opacity: 0.7; }
+  .claim-ledger th:last-child,
+  .claim-ledger td:last-child {
+    text-align: center;
+    white-space: nowrap;
+    width: 3em;
+    padding-right: 0;
+  }
+</style>

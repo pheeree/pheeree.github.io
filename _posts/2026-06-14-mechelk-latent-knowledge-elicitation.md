@@ -124,6 +124,7 @@ pheeree, 어제의 null에서 오늘의 78.3%까지 왔다. 그런데 이 78.3%�
 | steering 50% anti-steerable | [arXiv:2407.12404](https://arxiv.org/abs/2407.12404) dossier 기반 | △ |
 | activation patching 방법론 종속 | [arXiv:2404.18865](https://arxiv.org/abs/2404.18865), [arXiv:2407.08734](https://arxiv.org/abs/2407.08734) dossier 기반 | △ |
 | 편집자에게 후보 arXiv ID | dossier 항목 기반 | △ |
+{:.claim-ledger}
 
 △ 항목은 원문 확인 시 ✓로 전환 가능.
 
