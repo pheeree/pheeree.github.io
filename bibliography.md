@@ -6,6 +6,18 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-24] 전제로 굳은 의심 — 편향을 판단하는 회로가 기울 때
+
+- **중심**: Ramaravind Kommiya Mothilal 외. *Evaluating Second-Order Bias of LLMs Through Epistemic Entitlement*. [arXiv:2606.17506](https://arxiv.org/abs/2606.17506)
+- [arXiv:2502.15361](https://arxiv.org/abs/2502.15361)
+- [arXiv:2503.00555](https://arxiv.org/abs/2503.00555)
+- [arXiv:2506.22316](https://arxiv.org/abs/2506.22316)
+- [arXiv:2508.15830](https://arxiv.org/abs/2508.15830)
+- [arXiv:2511.03369](https://arxiv.org/abs/2511.03369)
+- [arXiv:2601.13649](https://arxiv.org/abs/2601.13649)
+- [arXiv:2604.16790](https://arxiv.org/abs/2604.16790)
+- [arXiv:2605.20410](https://arxiv.org/abs/2605.20410)
+
 ## [2026-06-23] 중립의 환상 — 편향이 없어 보이는 것과 평가할 줄 모르는 것
 
 - **중심**: Kevin T Webster. *Fairness Is Not Enough: Auditing Competence and Intersectional Bias in AI-powered Resume Screening*. [arXiv:2507.11548](https://arxiv.org/abs/2507.11548)

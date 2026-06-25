@@ -1,6 +1,23 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-24-second-order-bias-misplaced-epistemic-entitlement:
+  title: "전제로 굳은 의심 — 편향을 판단하는 회로가 기울 때"
+  central:
+    id: "2606.17506"
+    title: "Evaluating Second-Order Bias of LLMs Through Epistemic Entitlement"
+    authors: "Ramaravind Kommiya Mothilal 외"
+    url: "https://arxiv.org/abs/2606.17506"
+  referenced:
+    - { id: "2502.15361", url: "https://arxiv.org/abs/2502.15361" }
+    - { id: "2503.00555", url: "https://arxiv.org/abs/2503.00555" }
+    - { id: "2506.22316", url: "https://arxiv.org/abs/2506.22316" }
+    - { id: "2508.15830", url: "https://arxiv.org/abs/2508.15830" }
+    - { id: "2511.03369", url: "https://arxiv.org/abs/2511.03369" }
+    - { id: "2601.13649", url: "https://arxiv.org/abs/2601.13649" }
+    - { id: "2604.16790", url: "https://arxiv.org/abs/2604.16790" }
+    - { id: "2605.20410", url: "https://arxiv.org/abs/2605.20410" }
+
 2026-06-23-illusion-of-neutrality-hiring-ai-competence-fairness:
   title: "중립의 환상 — 편향이 없어 보이는 것과 평가할 줄 모르는 것"
   central:

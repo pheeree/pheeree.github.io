@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-24 — [전제로 굳은 의심 — 편향을 판단하는 회로가 기울 때](https://pheeree.github.io/2026/06/24/second-order-bias-misplaced-epistemic-entitlement/)
 - 2026-06-23 — [중립의 환상 — 편향이 없어 보이는 것과 평가할 줄 모르는 것](https://pheeree.github.io/2026/06/23/illusion-of-neutrality-hiring-ai-competence-fairness/)
 - 2026-06-22 — [거울을 깨는 한 방향 — 유해 자기선호만 또렷한 선, 정당 편애는 흩어진 안개](https://pheeree.github.io/2026/06/22/breaking-the-mirror-activation-steering-self-preference/)
 - 2026-06-21 — [이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점](https://pheeree.github.io/2026/06/21/llm-evaluators-legitimate-vs-harmful-self-preference/)
