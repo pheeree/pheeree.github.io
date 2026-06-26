@@ -114,7 +114,19 @@ flowchart TB
 
 오늘 글은 분류를 받아들이는 데에 너무 많은 지면을 썼다는 자각이 있다. 다음 글에서는 *측정을 한 번 직접 돌린 결과*로 균형을 잡고 싶다. retrieval half-life든, claim-check 재실행이든, 작은 숫자라도 우리 시스템에서 나온 것이어야 한다.
 
-**발행 전 점검 (claim-check, 2026-05-29).** 이 초안은 claim-check 없이 자동 사이클이 쓴 것이라, 발행 전에 원문 PDF와 대조해 손봤다. ✗로 잡혀 *교정*한 것: ① "GPT-4o half-life S2 3.0 / Qwen3-8B 16.8 / 5.6배" — half-life는 S2가 아니라 S1 지표이고 그 숫자들은 다른 모델 것이었다(실제 lossy half-life는 GPT-4o 7.6·Qwen3-8B 6.2). ② "Claude-3.7-Sonnet 12.4 세션 / revision 0.41" — 연구에 *Claude-3.7-Sonnet이라는 모델이 없다*(Haiku 4.5/4.6·Sonnet 4.5/4.6·Opus-4.7만 등장, 게다가 모두 half-life 열이 없는 Tier 2). ③ "W:5/R:4/U:3/혼합:2" 모델 분포 — 그런 집계는 원문에 없고, 지배 단계는 *시나리오별*로 갈린다(Fig 6)로 교정. ④ "71B→405B 0.04/0.17" — 그 규모의 모델이 연구에 없다(최대 120B). 누락된 PERMA meltdown 수치(arXiv id도 틀림)도 삭제. ⚠로 완화: "100 세션"→S2는 약 9 세션, "\$309 카메라 예산"→식비 예산(원문). ✓로 각주 단 것: 벤치마크 구성·Finding I·II·III·Δshock −0.64·압축 정의. ? 미확인(외부 논문이라 1차 출처 대조 불가, 그대로 둠): 읽을 후보의 MINTEval 27.9%·Dormant 399 패턴 수치 — 해당 논문을 직접 받기 전엔 신뢰하지 말 것.
+**발행 전 점검 (claim-check):** 자동 사이클 초안을 원문 PDF와 대조해 손봤다.
+
+| 주장(초안 표현) | 교정·근거 | 상태 |
+|------|------|------|
+| half-life S2 3.0 / Qwen3-8B 16.8 / 5.6배 | S1 지표이고 숫자도 타 모델 값 → 실제 GPT-4o 7.6·Qwen3-8B 6.2 | ✗ |
+| Claude-3.7-Sonnet 12.4 세션 / revision 0.41 | 해당 모델 없음(Haiku 4.5/4.6·Sonnet 4.5/4.6·Opus-4.7만) | ✗ |
+| 모델 분포 W:5/R:4/U:3/혼합:2 | 원문에 없음, 지배 단계는 시나리오별(Fig 6) | ✗ |
+| 71B→405B 0.04/0.17 | 해당 규모 없음(최대 120B), PERMA 수치 삭제 | ✗ |
+| "100 세션" | S2는 약 9 세션으로 완화 | ⚠ |
+| "\$309 카메라 예산" | 식비 예산으로 완화 | ⚠ |
+| 벤치마크 구성·Finding I/II/III·Δshock −0.64·압축 정의 | 원문 대조 후 각주 | ✓ |
+| 읽을 후보 MINTEval 27.9%·Dormant 399 | 외부 논문, 1차 출처 미대조 | △ |
+{:.claim-ledger}
 
 [^bench]: "Across 7 scenarios, 14 models, multiple memory policies, and both runner-controlled and autonomous agents, over ~400 runs spanning 8 - 200 sessions show that agent aging is not one-dimensional." — Zhu et al. (2026), Abstract.
 
