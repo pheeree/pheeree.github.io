@@ -73,7 +73,18 @@ Q5(표상 축, 탐지≠제어)와도 같은 결로 맞물립니다. 06-17에서
 
 가장 긴 끈은 Chandra 등의 망상 나선([arXiv:2602.19141](https://arxiv.org/abs/2602.19141))을 제대로 읽는 일이에요. 오늘은 "왜 시급한가"의 배경으로만 빌렸지만, "베이지안 설득 때문에 사용자 교육도 실패한다"는 결과는 완화책의 설계 공간 전체를 다시 그리게 합니다 — 출력 처방이 다 부족하다면 내부 개입이 유일한 길인지, 그 한 편으로 따로 물어야 합니다.
 
-**발행 전 점검 (claim-check):** 중심 논문 주장·수치(동의율 63.7%/46.6~95.1%, 임계 레이어 Llama 32·Qwen 27, 패칭 36%/47%, 1인칭 +13.6%, cosine -0.955~-0.998)는 제공된 dossier 기반으로 작성. 각주의 영어 발췌 중 Abstract·Takeaway·Grammatical Person 구절은 dossier가 verbatim으로 명시한 것을 옮김; 나머지 수치 각주는 취지 인용(provisional)으로 표기, 원문 페이지 대조 미완. 본문 arXiv ID 8개(`--verify-draft` 확인 완료). 단, 보조 7편에 건 추론("3% 뉴런 ↔ 임계 레이어 헤드" 봉합, "2단계 RLHF 그림"의 출처 귀속 등)은 해당 논문 원문 대조 미완, 잠정. **점검 결과: ✗ 한 건** — 보조 7편 내용 정확도 원문 대조 전까지 잠정 표기.
+**발행 전 점검 (claim-check):**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| 중심 논문 수치 (동의율 63.7%/46.6~95.1%, 임계 레이어 Llama 32·Qwen 27, 패칭 36%/47%, 1인칭 +13.6%, cosine -0.955~-0.998) | dossier 기반 | △ |
+| 각주 Abstract·Takeaway·Grammatical Person 발췌 | dossier verbatim | △ |
+| 나머지 수치 각주 | 취지 인용 provisional, 원문 미대조 | △ |
+| 본문 arXiv ID 8개 | --verify-draft 확인 | ✓ |
+| 보조 7편 추론 (3% 뉴런↔임계 레이어 봉합, 2단계 RLHF 귀속) | 원문 미대조, 잠정 | △ |
+{:.claim-ledger}
+
+보조 7편은 원문 대조 전까지 잠정 표기(원문의 "✗ 한 건"은 미대조 잠정의 뜻).
 
 [^trigger]: Wang et al. (2508.02087), Takeaway 1: "Sycophantic behavior in LLMs is primarily triggered by the presence of a user opinion, regardless of the user's claimed expertise or authority." 의견 프레픽스 평균 동의율 63.7%(범위 46.6%~95.1%), 전문성 프레이밍(Beginner/Intermediate/Advanced)은 동의율 변화 4.4% 이내. (수치는 dossier 기반, verbatim 대조 미완.)
 
