@@ -1,6 +1,18 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-26-delusional-spiraling-ideal-bayesian-sycophancy:
+  title: "합리적이어도 빠진다 — 아첨하는 챗봇은 이상적 베이지안조차 망상으로 끌고 간다"
+  central:
+    id: "2602.19141"
+    title: "Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians"
+    authors: "Kartik Chandra 외"
+    url: "https://arxiv.org/abs/2602.19141"
+  referenced:
+    - { id: "2507.19218", title: "Technological folie à deux: Feedback Loops Between AI Chatbots and Mental Illness", url: "https://arxiv.org/abs/2507.19218" }
+    - { id: "2510.01395", title: "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence", url: "https://arxiv.org/abs/2510.01395" }
+    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", url: "https://arxiv.org/abs/2605.21778" }
+
 2026-06-25-truth-overridden-internal-origins-sycophancy:
   title: "덮어쓰이는 진실 — 아첨은 저장된 편향이 아니라 후기 레이어의 생성물이다"
   central:
@@ -9,13 +21,13 @@
     authors: "Keyu Wang 외"
     url: "https://arxiv.org/abs/2508.02087"
   referenced:
-    - { id: "2509.21305", url: "https://arxiv.org/abs/2509.21305" }
+    - { id: "2509.21305", title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs", url: "https://arxiv.org/abs/2509.21305" }
     - { id: "2601.16644", url: "https://arxiv.org/abs/2601.16644" }
-    - { id: "2601.18939", url: "https://arxiv.org/abs/2601.18939" }
-    - { id: "2602.01002", url: "https://arxiv.org/abs/2602.01002" }
+    - { id: "2601.18939", title: "A Few Bad Neurons: Isolating and Surgically Correcting Sycophancy", url: "https://arxiv.org/abs/2601.18939" }
+    - { id: "2602.01002", title: "How RLHF Amplifies Sycophancy", url: "https://arxiv.org/abs/2602.01002" }
     - { id: "2602.19141", title: "Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians", url: "https://arxiv.org/abs/2602.19141" }
-    - { id: "2604.27633", url: "https://arxiv.org/abs/2604.27633" }
-    - { id: "2605.12991", url: "https://arxiv.org/abs/2605.12991" }
+    - { id: "2604.27633", title: "Political Bias Audits of LLMs Capture Sycophancy to the Inferred Auditor", url: "https://arxiv.org/abs/2604.27633" }
+    - { id: "2605.12991", title: "Not Just RLHF: Why Alignment Alone Won't Fix Multi-Agent Sycophancy", url: "https://arxiv.org/abs/2605.12991" }
 
 2026-06-24-second-order-bias-misplaced-epistemic-entitlement:
   title: "전제로 굳은 의심 — 편향을 판단하는 회로가 기울 때"
@@ -370,7 +382,6 @@
     - { id: "2604.00842", url: "https://arxiv.org/abs/2604.00842" }
     - { id: "2604.22708", title: "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems", url: "https://arxiv.org/abs/2604.22708" }
     - { id: "2604.23455", url: "https://arxiv.org/abs/2604.23455" }
-    - { id: "2605.24900", url: "https://arxiv.org/abs/2605.24900" }
 
 2026-06-01-memorai-graph-memory-provenance-retrieval:
   title: "출처를 기억하는 그래프 — MemORAI가 대화 메모리에 이력을 새기는 방식"
@@ -608,9 +619,9 @@
     - { id: "2412.16339", url: "https://arxiv.org/abs/2412.16339" }
     - { id: "2505.23840", url: "https://arxiv.org/abs/2505.23840" }
     - { id: "2508.14918", url: "https://arxiv.org/abs/2508.14918" }
-    - { id: "2509.21305", url: "https://arxiv.org/abs/2509.21305" }
+    - { id: "2509.21305", title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs", url: "https://arxiv.org/abs/2509.21305" }
     - { id: "2510.22954", title: "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)", url: "https://arxiv.org/abs/2510.22954" }
-    - { id: "2602.01002", url: "https://arxiv.org/abs/2602.01002" }
+    - { id: "2602.01002", title: "How RLHF Amplifies Sycophancy", url: "https://arxiv.org/abs/2602.01002" }
     - { id: "2602.19141", title: "Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians", url: "https://arxiv.org/abs/2602.19141" }
 
 2026-05-16-context-compliance-knowledge-conflict:

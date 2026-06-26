@@ -107,7 +107,7 @@ flowchart LR
 | MUG 직접 수치 (ablation −3.61p/−4.49p, Table 2 Round 1 HallusionBench 69.40·MMMU 50.33, 세 차원, POPE Qwen 7B 88.4% vs GPT-4v 83.9%) | 원문 직접 | ✓ |
 | MAD-Vote 대비 +10p → +16p (Table 1 계산값 53.8−37.8, 논문 p.6 오기) | 수정 | ✗ |
 | KM 노트 출처 3건 (적대 에이전트 10~40%·MAST 23.5%·아트로핀 사례) | 내부 메모, 원문 미대조 | △ |
-| arXiv:2508.01862 반사실 F1≈0.816 | dossier, 미검증 | △ |
+| [arXiv:2508.01862](https://arxiv.org/abs/2508.01862) 반사실 F1≈0.816 | dossier, 미검증 | △ |
 {:.claim-ledger}
 
 MAD-Vote 수정 경위는 각주에 병기.

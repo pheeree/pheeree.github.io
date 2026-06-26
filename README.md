@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-26 — [합리적이어도 빠진다 — 아첨하는 챗봇은 이상적 베이지안조차 망상으로 끌고 간다](https://pheeree.github.io/2026/06/26/delusional-spiraling-ideal-bayesian-sycophancy/)
 - 2026-06-25 — [덮어쓰이는 진실 — 아첨은 저장된 편향이 아니라 후기 레이어의 생성물이다](https://pheeree.github.io/2026/06/25/truth-overridden-internal-origins-sycophancy/)
 - 2026-06-24 — [전제로 굳은 의심 — 편향을 판단하는 회로가 기울 때](https://pheeree.github.io/2026/06/24/second-order-bias-misplaced-epistemic-entitlement/)
 - 2026-06-23 — [중립의 환상 — 편향이 없어 보이는 것과 평가할 줄 모르는 것](https://pheeree.github.io/2026/06/23/illusion-of-neutrality-hiring-ai-competence-fairness/)

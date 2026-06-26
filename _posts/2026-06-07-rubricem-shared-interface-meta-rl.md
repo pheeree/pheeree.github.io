@@ -161,8 +161,8 @@ flowchart LR
 | 주장 | 출처 | 상태 |
 |------|------|------|
 | RubricEM 핵심 메커니즘·인용 (Abstract·EM·Theorem 1·scaffold ablation·SS-GRPO 수식·Table 1·2·Fig 5·공유 백본·두 모드·비동기) | PDF pp.1-11 직접 | ✓ |
-| self-preference 50% | arXiv:2604.06996 WebFetch 원문 | ✓ |
-| SkillsVote 7.9pp/2.6pp | arXiv:2605.18401 초록 | ✓ |
+| self-preference 50% | [arXiv:2604.06996](https://arxiv.org/abs/2604.06996) WebFetch 원문 | ✓ |
+| SkillsVote 7.9pp/2.6pp | [arXiv:2605.18401](https://arxiv.org/abs/2605.18401) 초록 | ✓ |
 | 계보 인용 (EM Dempster 1977·Reflexion·TD(λ)·POMDP·narrow waist·common ground) | 배경지식 | △ |
 | 방향 일치 7건 (reward hacking·DR Tulu·turn-level·SWE-TRACE·HCAPO·MR-Search·AdaRubric) | dossier | △ |
 {:.claim-ledger}

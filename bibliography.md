@@ -6,16 +6,23 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-26] 합리적이어도 빠진다 — 아첨하는 챗봇은 이상적 베이지안조차 망상으로 끌고 간다
+
+- **중심**: Kartik Chandra 외. *Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians*. [arXiv:2602.19141](https://arxiv.org/abs/2602.19141)
+- *Technological folie à deux: Feedback Loops Between AI Chatbots and Mental Illness*. [arXiv:2507.19218](https://arxiv.org/abs/2507.19218)
+- *Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence*. [arXiv:2510.01395](https://arxiv.org/abs/2510.01395)
+- *What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct*. [arXiv:2605.21778](https://arxiv.org/abs/2605.21778)
+
 ## [2026-06-25] 덮어쓰이는 진실 — 아첨은 저장된 편향이 아니라 후기 레이어의 생성물이다
 
 - **중심**: Keyu Wang 외. *When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models*. [arXiv:2508.02087](https://arxiv.org/abs/2508.02087)
-- [arXiv:2509.21305](https://arxiv.org/abs/2509.21305)
+- *Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs*. [arXiv:2509.21305](https://arxiv.org/abs/2509.21305)
 - [arXiv:2601.16644](https://arxiv.org/abs/2601.16644)
-- [arXiv:2601.18939](https://arxiv.org/abs/2601.18939)
-- [arXiv:2602.01002](https://arxiv.org/abs/2602.01002)
+- *A Few Bad Neurons: Isolating and Surgically Correcting Sycophancy*. [arXiv:2601.18939](https://arxiv.org/abs/2601.18939)
+- *How RLHF Amplifies Sycophancy*. [arXiv:2602.01002](https://arxiv.org/abs/2602.01002)
 - *Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians*. [arXiv:2602.19141](https://arxiv.org/abs/2602.19141)
-- [arXiv:2604.27633](https://arxiv.org/abs/2604.27633)
-- [arXiv:2605.12991](https://arxiv.org/abs/2605.12991)
+- *Political Bias Audits of LLMs Capture Sycophancy to the Inferred Auditor*. [arXiv:2604.27633](https://arxiv.org/abs/2604.27633)
+- *Not Just RLHF: Why Alignment Alone Won't Fix Multi-Agent Sycophancy*. [arXiv:2605.12991](https://arxiv.org/abs/2605.12991)
 
 ## [2026-06-24] 전제로 굳은 의심 — 편향을 판단하는 회로가 기울 때
 
@@ -255,7 +262,6 @@ permalink: /bibliography/
 - [arXiv:2604.00842](https://arxiv.org/abs/2604.00842)
 - *Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems*. [arXiv:2604.22708](https://arxiv.org/abs/2604.22708)
 - [arXiv:2604.23455](https://arxiv.org/abs/2604.23455)
-- [arXiv:2605.24900](https://arxiv.org/abs/2605.24900)
 
 ## [2026-06-01] 출처를 기억하는 그래프 — MemORAI가 대화 메모리에 이력을 새기는 방식
 
@@ -413,9 +419,9 @@ permalink: /bibliography/
 - [arXiv:2412.16339](https://arxiv.org/abs/2412.16339)
 - [arXiv:2505.23840](https://arxiv.org/abs/2505.23840)
 - [arXiv:2508.14918](https://arxiv.org/abs/2508.14918)
-- [arXiv:2509.21305](https://arxiv.org/abs/2509.21305)
+- *Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs*. [arXiv:2509.21305](https://arxiv.org/abs/2509.21305)
 - *Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)*. [arXiv:2510.22954](https://arxiv.org/abs/2510.22954)
-- [arXiv:2602.01002](https://arxiv.org/abs/2602.01002)
+- *How RLHF Amplifies Sycophancy*. [arXiv:2602.01002](https://arxiv.org/abs/2602.01002)
 - *Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians*. [arXiv:2602.19141](https://arxiv.org/abs/2602.19141)
 
 ## [2026-05-16] 맥락 순응 — 검색이 틀렸을 때 RAG는 그것을 아는가

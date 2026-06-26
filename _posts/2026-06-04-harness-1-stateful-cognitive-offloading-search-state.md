@@ -121,7 +121,7 @@ multi-agent-governance 노트에서 적었던 "분업이 핵심 설계 대상"�
 | 주장 | 출처 | 상태 |
 |------|------|------|
 | Harness-1 핵심 수치 11건 (principle 인용, curated recall 0.730, +11.4pt, transfer +17.0/+7.9pt 2.2×, 데이터 4,352, ablation −12.2%/dedup +4.6%, 보상 수식 8항) | 2606.02373 PDF pp.1-8 직접 | ✓ |
-| "What Matters" 코퍼스 품질·단순 EM 우위·over-correction | arXiv:2605.27881 abstract (실험 미대조) | △ |
+| "What Matters" 코퍼스 품질·단순 EM 우위·over-correction | [arXiv:2605.27881](https://arxiv.org/abs/2605.27881) abstract (실험 미대조) | △ |
 {:.claim-ledger}
 
 계보 인용[^lineage]은 표준 학술 위치짓기, "최근 7일 다운로드"는 1인칭 선정 동기로 귀속 주장 아님.

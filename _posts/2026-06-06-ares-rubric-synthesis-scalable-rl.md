@@ -109,7 +109,7 @@ flowchart TB
 | 주장 | 출처 | 상태 |
 |------|------|------|
 | ARES 핵심 메커니즘·수치 (6단계 파이프라인, 데이터셋 101,847건·71.6%·평균 10.88, Main 52.69, CPT +6.41/+15.49, ARES-SFT +2.98, Ablation 49.53/51.79/46.25/52.69, "no reward strategy dominates") | PDF pp.1-8 직접 | ✓ |
-| Reward Hacking (방향은 abstract 확인, 90.2%/85.8%/78.4% 수치는 PDF 미접근) | arXiv:2605.12474 | △ |
+| Reward Hacking (방향은 abstract 확인, 90.2%/85.8%/78.4% 수치는 PDF 미접근) | [arXiv:2605.12474](https://arxiv.org/abs/2605.12474) | △ |
 | RRD·InfiMed-ORBIT 수치 (+17.7pt 등) | dossier | △ |
 | 계보 인용 (Self-Instruct·RLAIF) | 배경지식 | △ |
 {:.claim-ledger}
