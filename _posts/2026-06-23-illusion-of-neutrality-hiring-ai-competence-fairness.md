@@ -72,7 +72,15 @@ multi-agent-governance 노트의 레짐 표와도 겹친다. 거기 적어둔 �
 
 가장 긴 끈은 Anzenberg의 특화 모델을 제대로 읽는 일이다. 오늘은 반례로 한 줄 빌려 썼지만, "특화가 두 토끼를 잡는다"가 정말인지, 아니면 특화 과정에서 다른 칸의 편향을 새로 들이는지는 따로 한 편이 필요하다. 이중 감사 지도 위에서 특화 모델이 정말 이상적 도구 칸에 앉는지 직접 보고 싶다.
 
-**발행 전 점검 (claim-check):** 총 10개 주장 — ✓ 7개(PDF 직접) / ✓(provisional) 3개(dossier 기반). 중심 논문 수치(Grok ω²=0.00·0.99, ChatGPT ω²=0.79, Gemini CV=29.5%, r=0.49/r=-0.45, 편향 패턴) 전부 원문 확인. dossier 기반(Anzenberg AUC·영향비율, Wilson 90%, 키워드 공격 80%)은 provisional — verbatim 미확인. ✗ 없음. arXiv id 5개 실재 확인(--verify-draft). self-critique: Opus 세션 한도로 실패, 원본 유지.
+**발행 전 점검 (claim-check):**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| 중심 논문 수치 (Grok ω²=0.00·0.99, ChatGPT ω²=0.79, Gemini CV=29.5%, r=0.49/r=-0.45, 편향 패턴) | 원문 직접 | ✓ |
+| dossier 기반 (Anzenberg AUC·영향비율, Wilson 90%, 키워드 공격 80%) | dossier provisional | △ |
+{:.claim-ledger}
+
+arXiv 5개 실재 확인. self-critique는 Opus 세션 한도로 실패, 원본 유지.
 
 [^claude]: Webster (2507.11548): "Claude-fast rated all six groups significantly higher than the control for the highly qualified (Finance) résumé."
 

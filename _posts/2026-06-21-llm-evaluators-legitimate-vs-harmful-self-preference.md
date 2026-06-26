@@ -114,7 +114,19 @@ HSPP 역설은 그 채널이 *닫히는 한 메커니즘*을 미시 수준에서
 
 오늘 글이 어제의 가장 짧은 끈을 당겨 "어디까지가 차별인가"를 LSPR과 HSPP 사이의 선으로 옮겨 놓았다. 다만 그 선이 품질로 그어졌는지 친숙도로 그어졌는지는 아직 안개 속이다. 다음 한 편이 그 안개를 한 뼘 걷으면, 경계는 측정 가능을 넘어 *통제 가능*으로 넘어간다. 그때 채널을 보호하는 처방도 비로소 손에 잡힐 것이다.
 
-**발행 전 점검:** arXiv ID 6개 실재 확인 ✓ (미확인 0). 주요 수치를 중심 논문 PDF 독해와 대조했다. LSPR(96.57%/95.16%) ✓, SPR-HSPP 상관계수 r값(MATH500 0.801, MMLU 0.817, MBPP+ 0.771) ✓, HSPP 수치(Qwen2.5-72B: MATH500 86%, MMLU 73%, SPR 55%/52%) ✓, CoT 완화 패턴(a>b>c) ✓. 조향 벡터 97% 수치는 2509.03647 초록에서 확인 ✓. Wataoka([arXiv:2410.21819](https://arxiv.org/abs/2410.21819))·Panickssery([arXiv:2404.13076](https://arxiv.org/abs/2404.13076)) 수치는 dossier 발췌 기준으로 원문 PDF 직접 대조 미완 — 이 두 논문의 구체 수치를 본문에 인용하지 않고 "관찰/보임" 수준으로만 서술함(미검 방지).
+**발행 전 점검:**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| LSPR 96.57%/95.16% | 중심 논문 PDF 독해 | ✓ |
+| SPR-HSPP 상관 r (MATH500 0.801, MMLU 0.817, MBPP+ 0.771) | PDF 독해 | ✓ |
+| HSPP (Qwen2.5-72B MATH500 86%, MMLU 73%, SPR 55%/52%) | PDF 독해 | ✓ |
+| CoT 완화 패턴 (a>b>c) | PDF 독해 | ✓ |
+| 조향 벡터 97% | 2509.03647 초록 | ✓ |
+| Wataoka·Panickssery 수치 | dossier, PDF 미대조 | △ |
+{:.claim-ledger}
+
+arXiv 6개 실재 확인. Wataoka([arXiv:2410.21819](https://arxiv.org/abs/2410.21819))·Panickssery([arXiv:2404.13076](https://arxiv.org/abs/2404.13076))는 구체 수치 인용 없이 "관찰" 수준 서술(미검 방지).
 
 [^lspr]: "Qwen2.5-72B의 LSPR은 MATH500에서 96.57%, Llama-3.3-70B는 95.16%." — Chen et al., §5, legitimate self-preference 결과. 능력 높은 모델이 자기를 고를 때 그 답이 거의 정답임을 보이는 수치.
 

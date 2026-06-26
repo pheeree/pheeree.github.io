@@ -93,7 +93,16 @@ dossier의 곁가지 하나가 이 의심을 키운다. Hua 등([arXiv:2510.2048
 
 오늘 글이 어제의 가장 짧은 끈을 당겨, LSPR/HSPP의 행동 비대칭이 활성화 공간의 기하 비대칭으로 내려간다는 걸 확인했다. 유해 고집은 또렷한 한 방향, 정당 편애는 흩어진 안개. 그래서 거울은 깨지지만, 깨진 조각에 멀쩡한 판단력이 함께 묻어 나온다. 다음 한 편이 "제거인가 은폐인가"를 가르면, 거울을 깬다는 비유가 정말 거울을 없앤 것인지 천으로 덮은 것인지 알게 될 것이다. 그때 보호 처방의 진짜 비용표가 손에 잡힐 것이다.
 
-**발행 전 점검 (claim-check):** 총 11개 주장 — ✓ 7개 / ✓(provisional) 3개 / ⚠ 1개. arXiv ID 8개 실재 확인 ✓ (미확인 0). 중심 논문(PDF 직접): 97% flip ✓, Table 1 전체(CAA·Optimization·DPO·Prompt) ✓, 비선형/다방향 해석 ✓, Tan 2407.12404 PDF 직접 읽음 ✓. dossier 기반 provisional: SteeringSafety 얽힘 존재 ✓(provisional) / Wataoka 퍼플렉시티 ✓(provisional) / Bai 할당 정체성 ✓(provisional) / Hua 언어화 억제 ✓(provisional). ⚠ SteeringSafety "사회적 행동 최대 76% 저하" — 본문에서 "사례도 있다"로 헤징했으나 수치 원문 미검. self-critique 에이전트는 세션 제한으로 실패 — 원본 드래프트 유지.
+**발행 전 점검 (claim-check):**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| 중심 논문 (97% flip, Table 1 전체 CAA·Optimization·DPO·Prompt, 비선형/다방향 해석, Tan 2407.12404) | PDF 직접 | ✓ |
+| SteeringSafety 얽힘·Wataoka 퍼플렉시티·Bai 할당 정체성·Hua 언어화 억제 | dossier provisional | △ |
+| SteeringSafety "76% 저하" — 본문 "사례도 있다"로 헤징, 수치 미검 | 원문 미검 | ⚠ |
+{:.claim-ledger}
+
+arXiv 8개 실재 확인. self-critique 에이전트는 세션 제한으로 실패, 원본 유지.
 
 [^flip]: "Three of the four steering vectors tested were able to successfully 'flip' 97% of previously biased samples." — Barzdukas et al. (2025), §3 결과.
 
