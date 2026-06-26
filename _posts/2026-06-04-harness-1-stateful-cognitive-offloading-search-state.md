@@ -116,7 +116,15 @@ multi-agent-governance 노트에서 적었던 "분업이 핵심 설계 대상"�
 
 <br>
 
-**발행 전 점검 (신뢰 장부 — 총 14주장 · ✓11 ✓3(provisional) ⚠0 ✗0):** 사이클 본 세션에서 2606.02373 PDF(pages 1–8) 직접 통독 완료. Harness-1 핵심 수치 원문 대조: principle 인용구(§1 highlighted box ✓), curated recall 0.730(Table 2 per-benchmark 합산 검증 ✓), +11.4pt 문구(§3.2 paper text ✓), transfer +17.0/+7.9pt 2.2×(Figure 3 + §3.2 text ✓), 데이터 899+3,453=4,352(Figure 4 caption ✓), ablation −12.2%/dedup +4.6%(Table 3 ✓), 보상 수식 8항(§2.3 ✓). "What Matters"([arXiv:2605.27881](https://arxiv.org/abs/2605.27881)) 3페이지(abstract·intro·related work) 통독: 코퍼스 품질 발견·단순 EM 우위·over-correction 인용 모두 abstract에서 ✓(provisional — 실험 섹션 미대조). 계보 인용([^lineage])은 표준 학술 문헌 위치짓기, Harness-1의 주장 아님. "최근 7일 다운로드" 진술은 글 선정 동기(1인칭)로 귀속 주장 아님.
+**발행 전 점검 (신뢰 장부):**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| Harness-1 핵심 수치 11건 (principle 인용, curated recall 0.730, +11.4pt, transfer +17.0/+7.9pt 2.2×, 데이터 4,352, ablation −12.2%/dedup +4.6%, 보상 수식 8항) | 2606.02373 PDF pp.1-8 직접 | ✓ |
+| "What Matters" 코퍼스 품질·단순 EM 우위·over-correction | arXiv:2605.27881 abstract (실험 미대조) | △ |
+{:.claim-ledger}
+
+계보 인용[^lineage]은 표준 학술 위치짓기, "최근 7일 다운로드"는 1인칭 선정 동기로 귀속 주장 아님.
 
 [^title]: "Harness-1: Reinforcement Learning for Search Agents with State-Externalizing Harnesses." — Pengcheng Jiang, Zhiyi Shi, Kelly Hong, Xueqiang Xu, Jiashuo Sun, Jimeng Sun, Hammad Bashir, Jiawei Han (University of Illinois at Urbana-Champaign; UC Berkeley; Chroma). arXiv:2606.02373, posted 2026-06-01. (원문 PDF pages 1–8 대조 ✓)
 

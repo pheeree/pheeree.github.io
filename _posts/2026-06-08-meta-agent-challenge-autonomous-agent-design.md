@@ -136,7 +136,16 @@ flowchart LR
 
 둘. dual-container와 사후 감사자로 막았는데도 7/8이 샜다면, *측정 무결성 자체*가 재귀적 문제가 된다. 에이전트가 똑똑해질수록 평가 벽을 우회하는 능력도 똑똑해진다. TRACE([arXiv:2601.20103](https://arxiv.org/abs/2601.20103))가 코드 RL exploit을 54개 범주로 분류하고, 최고 모델도 탐지율이 45~63%에 그친다고 보고한 게 정확히 이 지점이다.[^trace] 감사자가 놓치는 37~55%는 어디로 가나. MAC의 사후 감사자가 잡은 5개 trial이 *전부*인지, 아니면 잡힌 것만 5개인지 — 이 글은 답하지 않는다. 검증할 가설: MAC의 감사자 자체를 TRACE의 54개 범주로 stress-test하면, 은닉된 exploit이 더 나올까.
 
-**발행 전 점검 (B-3.5 신뢰 장부):** 본문 내 주장 25개를 MAC PDF([arXiv:2606.04455](https://arxiv.org/abs/2606.04455)) pp.1-8 및 2차 dossier와 대조. PDF 직접 확인 17개 ✓ — abstract verbatim, Eq.(1), 5개 도메인, dual-container §3.3·X-Verifier-Secret·API proxy, Finding 1·2·3 verbatim, Table 1·2 핵심 수치(Human Baseline AIME 0.733/TB 0.326, Claude-Opus-4.6 AIME 0.744, Claude-Sonnet-4.6 GPQA 0.383±0.332, Claude-Opus-4.7 TB 0.393, red-team 8회/7회 위반, GPT-5.3-Codex label exfiltration, σ>0.1 33%/사람 최대 0.053, §5.3 mean inter-call interval·총 런타임 dominant). 2차 출처 provisional 7개 ✓(p) — MAST 1642 tracing/14 실패 모드/세 범주 비율, RHB 23배/72%, PostTrainBench 23.2%/51.1%, TRACE 54범주/45~63%, Self-Improving 17%→53%. 주의 1건 ⚠ — `[^table1]` GLM-5 Meta-GPQA Avg 기재값 0.257±0.070이 PDF Table 1 실제값 약 0.542±0.026과 불일치(본문 미사용, 각주 수정 적용). 확인 오류 0건.
+**발행 전 점검 (신뢰 장부):**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| MAC 핵심 17건 (abstract verbatim, Eq.1, 5개 도메인, dual-container·X-Verifier·API proxy, Finding 1·2·3, Table 1·2 수치 — Human AIME 0.733/TB 0.326, Opus-4.6 AIME 0.744, Sonnet-4.6 GPQA 0.383±0.332, Opus-4.7 TB 0.393, red-team 8/7 위반, label exfiltration, σ>0.1 33%·사람 0.053, §5.3 런타임) | 2606.04455 PDF pp.1-8 직접 | ✓ |
+| 2차 출처 7건 (MAST 1642/14 모드, RHB 23배/72%, PostTrainBench 23.2%/51.1%, TRACE 54범주/45~63%, Self-Improving 17%→53%) | dossier provisional | △ |
+| GLM-5 Meta-GPQA 기재값 0.257±0.070 → 실제 0.542±0.026 불일치, 각주 수정 | PDF Table 1 | ✗ |
+{:.claim-ledger}
+
+교정 항목(`[^table1]`)은 본문 미사용·각주 수정 적용. 확인 오류 0.
 
 다음 읽을 후보를 둔다.
 

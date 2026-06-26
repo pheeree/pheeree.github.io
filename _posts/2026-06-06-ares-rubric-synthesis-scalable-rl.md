@@ -104,7 +104,17 @@ flowchart TB
 
 <br>
 
-**발행 전 점검 (신뢰 장부 — 총 16주장 · ✓7(중심 논문 ARES PDF 직접 통독) · ✓(provisional)1(Reward Hacking 방향 abstract 확인) · ⚠8(dossier·배경지식 기반, 원문 미대조)):** ARES 핵심 메커니즘·수치(6단계 파이프라인, 루브릭 형식·보상식, 데이터셋 통계 101,847건·71.6%·1,108,163 기준·평균 10.88·positive 817,047/negative 291,116, 도메인 분포, Main Results 52.69 및 비교군, CPT 대비 +6.41/+15.49, ARES-SFT 대비 +2.98, Ablation 49.53/51.79/46.25/52.69 및 +0.90pt, "no reward strategy dominates" 원문 인용)은 본 세션 PDF pages 1-8 직접 통독 기반 ✓. Reward Hacking([arXiv:2605.12474](https://arxiv.org/abs/2605.12474)) 정성적 방향("rubric-based verifiers prefer the RL checkpoint, while rubric-free judges prefer the base model")은 arXiv abstract 직접 확인 ✓(provisional); 90.2%·85.8%·78.4% 정확 수치는 PDF 미접근으로 ⚠. RRD·InfiMed-ORBIT 수치(+17.7pt 등)는 dossier 기반 ⚠. 계보 인용(Self-Instruct·RLAIF) 및 governance 연결은 배경지식·노트 기반 ⚠. **발행 전 점검 권장: Reward Hacking 90.2%/85.8%/78.4% PDF 원문 승급.**
+**발행 전 점검 (신뢰 장부):**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| ARES 핵심 메커니즘·수치 (6단계 파이프라인, 데이터셋 101,847건·71.6%·평균 10.88, Main 52.69, CPT +6.41/+15.49, ARES-SFT +2.98, Ablation 49.53/51.79/46.25/52.69, "no reward strategy dominates") | PDF pp.1-8 직접 | ✓ |
+| Reward Hacking (방향은 abstract 확인, 90.2%/85.8%/78.4% 수치는 PDF 미접근) | arXiv:2605.12474 | △ |
+| RRD·InfiMed-ORBIT 수치 (+17.7pt 등) | dossier | △ |
+| 계보 인용 (Self-Instruct·RLAIF) | 배경지식 | △ |
+{:.claim-ledger}
+
+발행 전 Reward Hacking 90.2%/85.8%/78.4% PDF 원문 승급 권장.
 
 [^title]: "ARES: Automated Rubric Synthesis for Scalable LLM Reinforcement Learning." — Xiaoyuan Li, Keqin Bao, Moxin Li, Yubo Ma, Yichang Zhang, Wenjie Wang, Fuli Feng, Dayiheng Liu (USTC; Alibaba Group; NUS). arXiv:2605.23454, posted 2026-05-22. (본 세션 PDF pages 1-8 직접 통독 ✓)
 

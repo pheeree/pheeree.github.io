@@ -121,7 +121,16 @@ flowchart LR
 
 <br>
 
-**발행 전 점검 (신뢰 장부 — 총 14주장 · ✓4(원문 PDF 대조) · ⚠10(dossier·배경지식 기반, 원문 미대조)):** ARBOR 핵심 메커니즘·수치(대조적 유도 3궤적, 입학 분산·상관 조건, 응결 $K_{consol}=8$, 은퇴 신호, GRPO 대비 +4.0/+4.2/+2.0pt, DAPO 대비 +3.5~+4.4pt, outcome-homogeneous 32~42%·all-wrong 54~61%, w/o memory +1.0/+2.6/+2.7pt, RaR-style +2.7/+4.2/+6.1pt, Top5 재사용 횟수)은 본 세션이 PDF pages 1-8 직접 통독한 재료 기반 ⚠(원문 대조 ✓는 [^results]/[^homogeneous]/[^ablation]/[^rubrics] 4건). 곁가지·대립 논문(ARES·PRM폭락·LongTraceRL·Beyond Correctness·AERO·Stratified GRPO·Rubric-ARM·Self-Guide)은 탐구 에이전트 dossier 기반 ⚠. 계보 인용(Goodhart·Ng 1999 shaping·대조학습·루브릭 교육평가 기원)은 회고자 배경지식 ⚠. governance 인용은 knowledge-mind 노트 기반. **발행 전 점검 권장: Ng 1999 원전 1건 + dossier 기반 ⚠ 수치 승급.**
+**발행 전 점검 (신뢰 장부):**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| ARBOR 핵심 메커니즘·수치 (대조적 유도 3궤적, 응결 K=8, GRPO +4.0/+4.2/+2.0pt, DAPO +3.5~+4.4pt, homogeneous 32~42%·all-wrong 54~61%, w/o memory, RaR-style, Top5 재사용) | PDF pp.1-8 통독 | △ |
+| 곁가지·대립 논문 8건 (ARES·PRM폭락·LongTraceRL·Beyond Correctness·AERO·Stratified GRPO·Rubric-ARM·Self-Guide) | dossier | △ |
+| 계보 인용 (Goodhart·Ng 1999 shaping·대조학습·루브릭 평가) | 배경지식 | △ |
+{:.claim-ledger}
+
+원문 대조 ✓ 4건은 [^results]·[^homogeneous]·[^ablation]·[^rubrics]. 발행 전 Ng 1999 원전 + dossier △ 수치 승급 권장.
 
 [^title]: "ARBOR: Online Process Rewards via a Reusable Rubric Buffer for Search Agents." — Zheng Liu, Longxiang Zhang, Xintong Wang, Zhiang Xu, Shaoxiong Zhan, Xin Shan, Wen Huang, Tao Dai, Shu-Tao Xia, Chengfu Huo, Liang Ding (Tsinghua University; Alibaba Group; Peking University; Shenzhen University). arXiv:2606.03239, posted 2026-06-02. (본 세션 PDF pages 1-8 직접 통독 ✓)
 

@@ -156,7 +156,16 @@ flowchart LR
 
 <br>
 
-**발행 전 점검 (신뢰 장부 — 총 24주장 · ✓primary 12 · ✓background 5 · ✓(provisional)7 · ⚠0 · ✗0):** RubricEM 핵심 메커니즘·원문 인용(Abstract·EM·Theorem 1·scaffold ablation·SS-GRPO 수식·Table 1·Table 2·Fig 5·공유 백본·두 모드·비동기) — 본 세션 PDF pp.1-11 직접 통독 ✓primary. self-preference 50%([arXiv:2604.06996](https://arxiv.org/abs/2604.06996)) — WebFetch 원문 승급 ✓primary ("judges can be up to 50% more likely to incorrectly mark them as satisfied when the output is their own"). SkillsVote 7.9pp/2.6pp([arXiv:2605.18401](https://arxiv.org/abs/2605.18401)) — 초록 직독 ✓primary. 계보 인용(EM Dempster 1977·Reflexion Shinn 2023·TD(λ)·POMDP·narrow waist·common ground) — 배경지식 ✓background. reward hacking([arXiv:2606.04923](https://arxiv.org/abs/2606.04923))·DR Tulu([arXiv:2511.19399](https://arxiv.org/abs/2511.19399))·turn-level([arXiv:2505.11821](https://arxiv.org/abs/2505.11821))·SWE-TRACE([arXiv:2604.14820](https://arxiv.org/abs/2604.14820))·HCAPO([arXiv:2603.08754](https://arxiv.org/abs/2603.08754))·MR-Search([arXiv:2603.11327](https://arxiv.org/abs/2603.11327))·AdaRubric([arXiv:2603.21362](https://arxiv.org/abs/2603.21362)) — dossier 기반 방향 일치 확인 ✓(provisional). ⚠ 없음. 발행 가능.
+**발행 전 점검 (신뢰 장부):**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| RubricEM 핵심 메커니즘·인용 (Abstract·EM·Theorem 1·scaffold ablation·SS-GRPO 수식·Table 1·2·Fig 5·공유 백본·두 모드·비동기) | PDF pp.1-11 직접 | ✓ |
+| self-preference 50% | arXiv:2604.06996 WebFetch 원문 | ✓ |
+| SkillsVote 7.9pp/2.6pp | arXiv:2605.18401 초록 | ✓ |
+| 계보 인용 (EM Dempster 1977·Reflexion·TD(λ)·POMDP·narrow waist·common ground) | 배경지식 | △ |
+| 방향 일치 7건 (reward hacking·DR Tulu·turn-level·SWE-TRACE·HCAPO·MR-Search·AdaRubric) | dossier | △ |
+{:.claim-ledger}
 
 [^title]: "RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards." — Gaotang Li (UIUC), Bhavana Dalvi Mishra, Zifeng Wang, Jun Yan, Yanfei Chen, Chun-Liang Li, Long T. Le, Rujun Han, George Lee, Hanghang Tong, Chen-Yu Lee, Tomas Pfister (Google Cloud AI Research). arXiv:2605.10899, posted 2026-05-11/12. (본 세션 PDF 직접 통독 기반; 제공 재료 verbatim ✓(provisional))
 
