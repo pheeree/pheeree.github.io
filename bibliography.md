@@ -6,17 +6,28 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-25] 덮어쓰이는 진실 — 아첨은 저장된 편향이 아니라 후기 레이어의 생성물이다
+
+- **중심**: Keyu Wang 외. *When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models*. [arXiv:2508.02087](https://arxiv.org/abs/2508.02087)
+- [arXiv:2509.21305](https://arxiv.org/abs/2509.21305)
+- [arXiv:2601.16644](https://arxiv.org/abs/2601.16644)
+- [arXiv:2601.18939](https://arxiv.org/abs/2601.18939)
+- [arXiv:2602.01002](https://arxiv.org/abs/2602.01002)
+- *Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians*. [arXiv:2602.19141](https://arxiv.org/abs/2602.19141)
+- [arXiv:2604.27633](https://arxiv.org/abs/2604.27633)
+- [arXiv:2605.12991](https://arxiv.org/abs/2605.12991)
+
 ## [2026-06-24] 전제로 굳은 의심 — 편향을 판단하는 회로가 기울 때
 
 - **중심**: Ramaravind Kommiya Mothilal 외. *Evaluating Second-Order Bias of LLMs Through Epistemic Entitlement*. [arXiv:2606.17506](https://arxiv.org/abs/2606.17506)
-- [arXiv:2502.15361](https://arxiv.org/abs/2502.15361)
-- [arXiv:2503.00555](https://arxiv.org/abs/2503.00555)
-- [arXiv:2506.22316](https://arxiv.org/abs/2506.22316)
-- [arXiv:2508.15830](https://arxiv.org/abs/2508.15830)
-- [arXiv:2511.03369](https://arxiv.org/abs/2511.03369)
-- [arXiv:2601.13649](https://arxiv.org/abs/2601.13649)
-- [arXiv:2604.16790](https://arxiv.org/abs/2604.16790)
-- [arXiv:2605.20410](https://arxiv.org/abs/2605.20410)
+- *Does Reasoning Introduce Bias? A Study of Social Bias Evaluation and Mitigation in LLM Reasoning*. [arXiv:2502.15361](https://arxiv.org/abs/2502.15361)
+- *Safety Tax: Safety Alignment Makes Your Large Reasoning Models Less Reasonable*. [arXiv:2503.00555](https://arxiv.org/abs/2503.00555)
+- *Evaluating Scoring Bias in LLM-as-a-Judge*. [arXiv:2506.22316](https://arxiv.org/abs/2506.22316)
+- *DAIQ: Auditing Demographic Attribute Inference from Question in LLMs*. [arXiv:2508.15830](https://arxiv.org/abs/2508.15830)
+- *Silenced Biases: The Dark Side LLMs Learned to Refuse*. [arXiv:2511.03369](https://arxiv.org/abs/2511.03369)
+- *Fairness or Fluency? An Investigation into Language Bias of Pairwise LLM-as-a-Judge*. [arXiv:2601.13649](https://arxiv.org/abs/2601.13649)
+- *Bias in the Loop: Auditing LLM-as-a-Judge for Software Engineering*. [arXiv:2604.16790](https://arxiv.org/abs/2604.16790)
+- *Mechanics of Bias and Reasoning: Interpreting the Impact of Chain-of-Thought Prompting on Gender Bias in LLMs*. [arXiv:2605.20410](https://arxiv.org/abs/2605.20410)
 
 ## [2026-06-23] 중립의 환상 — 편향이 없어 보이는 것과 평가할 줄 모르는 것
 

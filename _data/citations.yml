@@ -1,6 +1,22 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-25-truth-overridden-internal-origins-sycophancy:
+  title: "덮어쓰이는 진실 — 아첨은 저장된 편향이 아니라 후기 레이어의 생성물이다"
+  central:
+    id: "2508.02087"
+    title: "When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models"
+    authors: "Keyu Wang 외"
+    url: "https://arxiv.org/abs/2508.02087"
+  referenced:
+    - { id: "2509.21305", url: "https://arxiv.org/abs/2509.21305" }
+    - { id: "2601.16644", url: "https://arxiv.org/abs/2601.16644" }
+    - { id: "2601.18939", url: "https://arxiv.org/abs/2601.18939" }
+    - { id: "2602.01002", url: "https://arxiv.org/abs/2602.01002" }
+    - { id: "2602.19141", title: "Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians", url: "https://arxiv.org/abs/2602.19141" }
+    - { id: "2604.27633", url: "https://arxiv.org/abs/2604.27633" }
+    - { id: "2605.12991", url: "https://arxiv.org/abs/2605.12991" }
+
 2026-06-24-second-order-bias-misplaced-epistemic-entitlement:
   title: "전제로 굳은 의심 — 편향을 판단하는 회로가 기울 때"
   central:
@@ -9,14 +25,14 @@
     authors: "Ramaravind Kommiya Mothilal 외"
     url: "https://arxiv.org/abs/2606.17506"
   referenced:
-    - { id: "2502.15361", url: "https://arxiv.org/abs/2502.15361" }
-    - { id: "2503.00555", url: "https://arxiv.org/abs/2503.00555" }
-    - { id: "2506.22316", url: "https://arxiv.org/abs/2506.22316" }
-    - { id: "2508.15830", url: "https://arxiv.org/abs/2508.15830" }
-    - { id: "2511.03369", url: "https://arxiv.org/abs/2511.03369" }
-    - { id: "2601.13649", url: "https://arxiv.org/abs/2601.13649" }
-    - { id: "2604.16790", url: "https://arxiv.org/abs/2604.16790" }
-    - { id: "2605.20410", url: "https://arxiv.org/abs/2605.20410" }
+    - { id: "2502.15361", title: "Does Reasoning Introduce Bias? A Study of Social Bias Evaluation and Mitigation in LLM Reasoning", url: "https://arxiv.org/abs/2502.15361" }
+    - { id: "2503.00555", title: "Safety Tax: Safety Alignment Makes Your Large Reasoning Models Less Reasonable", url: "https://arxiv.org/abs/2503.00555" }
+    - { id: "2506.22316", title: "Evaluating Scoring Bias in LLM-as-a-Judge", url: "https://arxiv.org/abs/2506.22316" }
+    - { id: "2508.15830", title: "DAIQ: Auditing Demographic Attribute Inference from Question in LLMs", url: "https://arxiv.org/abs/2508.15830" }
+    - { id: "2511.03369", title: "Silenced Biases: The Dark Side LLMs Learned to Refuse", url: "https://arxiv.org/abs/2511.03369" }
+    - { id: "2601.13649", title: "Fairness or Fluency? An Investigation into Language Bias of Pairwise LLM-as-a-Judge", url: "https://arxiv.org/abs/2601.13649" }
+    - { id: "2604.16790", title: "Bias in the Loop: Auditing LLM-as-a-Judge for Software Engineering", url: "https://arxiv.org/abs/2604.16790" }
+    - { id: "2605.20410", title: "Mechanics of Bias and Reasoning: Interpreting the Impact of Chain-of-Thought Prompting on Gender Bias in LLMs", url: "https://arxiv.org/abs/2605.20410" }
 
 2026-06-23-illusion-of-neutrality-hiring-ai-competence-fairness:
   title: "중립의 환상 — 편향이 없어 보이는 것과 평가할 줄 모르는 것"
