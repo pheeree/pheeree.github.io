@@ -100,7 +100,17 @@ flowchart LR
 
 나는 (a)로 기운다. 오늘 글이 본문 안에서 던진 "그러나"가 거기서 시작하기 때문이다. MUG는 환각하는 자를 잡는 데까지 갔다. 다음 질문은 — *잡고 난 뒤에 남은 합의는 정말 한 방향을 보고 있는가*.
 
-**발행 전 점검:** ✓5 / ✓(잠정)3 / ⚠1 / ?1. MUG 논문 직접 수치 전부 원문 일치 — ablation(−3.61p/−4.49p), Table 2 라운드 수치(Round 1 HallusionBench 69.40·MMMU 50.33), 세 차원 abstract 인용, POPE 소-대형 격차 축소(Qwen 7B 88.4% > GPT-4v 83.9%). ⚠ 예외 1건: 구 본문 "MAD-Vote 대비 +10p"는 논문 텍스트(p.6) 그대로였으나 Table 1 계산값 53.8−37.8=16.0p와 불일치 — 논문 자체의 기술 오류로 판단; 본문을 +16p로 수정하고 각주에 경위 병기. ✓(잠정) KM 노트 출처 3건(적대 에이전트 10~40% 낙폭·MAST 23.5%·Consistency Illusion 아트로핀 사례)은 내부 메모 기반으로 원 논문 미대조이나 맥락·방향 일관. ? [arXiv:2508.01862](https://arxiv.org/abs/2508.01862)(반사실 F1≈0.816) — 외부 탐색 dossier 출처, 수치 미검증.
+**발행 전 점검:**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| MUG 직접 수치 (ablation −3.61p/−4.49p, Table 2 Round 1 HallusionBench 69.40·MMMU 50.33, 세 차원, POPE Qwen 7B 88.4% vs GPT-4v 83.9%) | 원문 직접 | ✓ |
+| MAD-Vote 대비 +10p → +16p (Table 1 계산값 53.8−37.8, 논문 p.6 오기) | 수정 | ✗ |
+| KM 노트 출처 3건 (적대 에이전트 10~40%·MAST 23.5%·아트로핀 사례) | 내부 메모, 원문 미대조 | △ |
+| arXiv:2508.01862 반사실 F1≈0.816 | dossier, 미검증 | △ |
+{:.claim-ledger}
+
+MAD-Vote 수정 경위는 각주에 병기.
 
 [^reframe]: 원문 abstract: "MUG reframes MAD as a process of detecting 'undercover' agents (those suffering from hallucinations) by employing multimodal counterfactual tests."
 [^three]: 원문 abstract: "MUG advances MAD protocols along three key dimensions: (1) enabling factual verification beyond statistical consensus through counterfactual testing; (2) introducing cross-evidence reasoning via dynamically modified evidence sources instead of relying on static inputs; and (3) fostering active reasoning, where agents engage in probing discussions rather than passively answering questions."

@@ -130,7 +130,17 @@ MetaGPT·ChatDev처럼 명시적 검증기를 둔 시스템이 전체적으로 �
 
 둘. LLM-as-Judge(o1, κ=0.77)가 주석한 1642개 중, 인간이 직접 확인한 건 일부다. fine-grained 모드 간 상관(최대 0.63)이 있다고 저자도 인정했다 — 증상이 비슷한 모드를 자동 평가자가 혼동할 수 있다. MAST의 분포 수치 중 어디까지가 *진짜 실패 구조*고 어디부터가 *judge의 분류 편향*인가? 이건 MAST를 운영 점검표로 쓰기 전에 반드시 캘리브레이션해야 할 지점이다.
 
-**발행 전 점검 (신뢰 장부):** 본문 주장을 MAST PDF([arXiv:2503.13657](https://arxiv.org/abs/2503.13657) v3) 및 2차 dossier와 대조. PDF 직접 확인 ✓ — 에피그라프 verbatim(Tolstoy/Berkeley'25), 41~86.7% 실패율·1642 트레이스·7 프레임워크, 14모드 3범주 비율(FC1 44.2%·FC2 32.3%·FC3 23.5%) 및 14개 모드별 % 전부, Grounded Theory(Glaser & Strauss 1967)·150 트레이스·6 주석자·트레이스당 20시간+·κ=0.88, LLM-judge o1 few-shot accuracy 0.94/κ=0.77/OOD κ=0.79, Insight 1·3 verbatim, +9.4%·+15.6% 개입, MetaGPT vs ChatDev verbatim, GPT-4o vs Claude 3.7 FC1 39%, 표면행동 root cause 경고·모드 상관 최대 0.63, 체스 FM-3.2 예시. 2차 출처 provisional ✓(p) — Beyond the Strongest LLM(herding), HiddenBench 30.1%/80.7%, Six Sigma Agent 14,700배/비용 80%. 계보 보강분 — GT 기원·groupthink·앙상블 분해는 학술 상식으로만 비유 사용. (주의: dossier의 FM-2.4 "0.8%"는 PDF 정확값 0.85%로 수정. Kapoor et al. arXiv 번호는 provisional — 발행 전 재확인 권장.)
+**발행 전 점검 (신뢰 장부):**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| MAST 핵심 수치 (에피그라프 verbatim, 41~86.7% 실패율·1642 트레이스·7 프레임워크, 14모드 3범주 FC1 44.2%/FC2 32.3%/FC3 23.5%, Grounded Theory κ=0.88, LLM-judge o1 0.94/κ=0.77/OOD κ=0.79, +9.4%·+15.6% 개입, 모드 상관 0.63) | 2503.13657 PDF 직접 | ✓ |
+| 2차 출처 (Beyond the Strongest LLM herding, HiddenBench 30.1%/80.7%, Six Sigma 14,700배·비용 80%) | dossier provisional | △ |
+| FM-2.4 "0.8%" → 0.85% (PDF 정확값) | PDF 교정 | ✗ |
+| Kapoor et al. arXiv 번호 | provisional, 재확인 권장 | △ |
+{:.claim-ledger}
+
+계보(GT 기원·groupthink·앙상블 분해)는 학술 상식 비유로만 사용.
 
 다음 읽을 후보를 둔다.
 
