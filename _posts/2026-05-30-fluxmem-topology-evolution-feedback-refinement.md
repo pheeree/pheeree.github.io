@@ -83,7 +83,15 @@ Letta의 벤치마크에서 파일시스템 에이전트는 LoCoMo 74.0%로 Mem0
 
 둘 중에서는 SSGM 쪽으로 기운다. 오늘 글이 진화를 너무 낙관적으로 그렸다는 자각이 있어서다. 미러 확인부터 하고 정하자.
 
-**발행 전 점검:** FluxMem PDF 직접 대조 주장(#1~8)은 모두 ✓. "그러나" 섹션의 반례 수치 5개(Letta 74.0%/68.5%, SimpleMem +26.4%·30배, 검색 방법 20p·저장 3~8p, All-Mem 위상 우위, Zep +15p)는 탐구 에이전트 수집 결과로 원문 미대조(?)—수치가 틀릴 수 있으나 논지를 뒤엎지는 않는 수준. 검토 시 원 논문([arXiv:2601.02553](https://arxiv.org/abs/2601.02553), 2603.02473, 2603.19595) 수치 한 번 확인 권장.
+**발행 전 점검:**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| FluxMem 핵심 주장 #1~8 (성능·위상 진화·피드백 정련) | 논문 PDF 직접 | ✓ |
+| 반례 수치 5건 (Letta 74.0/68.5, SimpleMem +26.4%·30배, 검색 20p·저장 3~8p, All-Mem 위상 우위, Zep +15p) | 탐구 에이전트 수집, 원문 미대조 | △ |
+{:.claim-ledger}
+
+반례 수치는 [arXiv:2601.02553](https://arxiv.org/abs/2601.02553)·2603.02473·2603.19595에서 확인 권장 — 틀릴 수 있으나 논지를 뒤엎는 수준은 아님.
 
 [^locomo]: "FluxMem achieves state-of-the-art performance across all three benchmarks. On LoCoMo, FluxMem reaches 95.06 average accuracy, above the Full Context baseline (81.23)." — Fang et al. (2026), §4.2. Qwen3-30B에서는 93.44 대 74.87, EverMemOS는 93.05.
 [^stage2]: "removing Stage II leads to a substantial decrease in the average LMJ score, dropping from 95.06 to 85.32." — Fang et al. (2026), §4.3. 정제 라운드 $T=0$에서 85.32%, $T=5$에서 95.06%로 단조 증가.

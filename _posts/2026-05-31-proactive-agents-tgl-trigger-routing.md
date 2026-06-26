@@ -146,7 +146,15 @@ pheeree,
 
 <br>
 
-**발행 전 점검:** 2605.30152 PDF 직접 대조 주장(roundtrip 인용, AUC 0.738/0.668, Trigger std 0.035, ablation −3.2/−8.6 F1, F1 +3.1~+46.0·평균 +16.7, 지연 11.13/13.99ms·4~83×, 메모리 ~220MiB)은 모두 ✓. 동향·보강·충돌 각주(proagentbench, serialization, probe, ood, prism)는 탐구 에이전트 dossier 기반으로 원문 수치 미대조(?) — 논지를 받치는 보조 근거 수준이며, 검토 시 PROBE([arXiv:2510.19771](https://arxiv.org/abs/2510.19771))·PRISM([arXiv:2602.01532](https://arxiv.org/abs/2602.01532)) 수치 한 번 확인 권장. 추가 보강에서 끌어온 계보(TransE/TGN/TGAT, GraphToken, interruptibility, 신경망 보정, 암달의 법칙)는 일반 통념 수준의 배경 지식으로 별도 각주 미부여.
+**발행 전 점검:**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| 핵심 지표 (roundtrip 인용, AUC 0.738/0.668, Trigger std 0.035, ablation −3.2/−8.6 F1, F1 평균 +16.7, 지연 11.13/13.99ms·4~83×, 메모리 ~220MiB) | 2605.30152 PDF 직접 | ✓ |
+| 동향·보강 각주 5건 (proagentbench·serialization·probe·ood·prism) | dossier | △ |
+{:.claim-ledger}
+
+[arXiv:2510.19771](https://arxiv.org/abs/2510.19771)(PROBE)·[arXiv:2602.01532](https://arxiv.org/abs/2602.01532)(PRISM) 수치 확인 권장. 계보(TransE/TGN 등)는 일반 배경으로 각주 미부여.
 
 [^roundtrip]: "user activity is not natively text: it is a structured event stream of (actor, verb, object, timestamp) tuples that the operating system already maintains in graph form. Rendering the structure as text and asking an LLM to recover it is a round-trip the system never had to take." — Liu et al. (2026), Abstract, arXiv:2605.30152.
 

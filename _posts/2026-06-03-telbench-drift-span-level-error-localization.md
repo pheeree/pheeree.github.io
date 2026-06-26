@@ -86,7 +86,16 @@ DRIFT를 입힌 Claude-Sonnet-4.6은 전체 F1[^f1]이 21.89에서 54.91로, fir
 
 <br>
 
-**발행 전 점검 (신뢰 장부 — 총 13주장 · ✓8 ⚠1 ✗0 ?4):** 핵심 수치는 원문 2606.02060.pdf 직접 대조 완료 — 67.7%·36.9%(§3.2~3.3 ✓), Table 2 F1/FEA 수치(✓), DRIFT $c_k$ 튜플(수식 2 ✓), 단계별 정규화 오류율(§3.3 ✓), Qwen 비단조(Figure 5(a) ✓), 래핑 하락(§5.2 "can even degrade" ✓), TELBench 규모 수치(Figure 1 + §3.1 ✓). ⚠ span≥10 구간 10.4%/23.0% — Figure 5(b) 막대 차트에서 읽었으나 이미지 해상도상 verbatim 확인 권장. ? 외부 dossier 논문 미대조 — Miracle Steps([arXiv:2510.07774](https://arxiv.org/abs/2510.07774)) 71% 감소·AIME2024 수치, Trajel([arXiv:2605.24219](https://arxiv.org/abs/2605.24219)) "절반" 수치, ReFACT([arXiv:2509.25868](https://arxiv.org/abs/2509.25868)) 61%·F1 0.67→0.53, 추론 지평선([arXiv:2602.11201](https://arxiv.org/abs/2602.11201)) 70~85% 구간 — 논지 보강·한계 표시 용도로만 사용, 수치 단독 주장 아님.
+**발행 전 점검 (신뢰 장부):**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| 핵심 수치 8건 (67.7%·36.9% §3.2~3.3, Table 2 F1/FEA, DRIFT 튜플 수식 2, 정규화 오류율 §3.3, Qwen 비단조 Fig 5a, 래핑 하락 §5.2, TELBench 규모 Fig 1) | 2606.02060 PDF 직접 | ✓ |
+| span≥10 구간 10.4%/23.0% | Figure 5(b) 막대 판독, verbatim 미확인 | ⚠ |
+| 외부 인용 (Miracle Steps·Trajel·ReFACT·추론 지평선) | dossier | △ |
+{:.claim-ledger}
+
+⚠ span 구간은 이미지 해상도상 verbatim 확인 권장. 외부 인용([arXiv:2510.07774](https://arxiv.org/abs/2510.07774)·[arXiv:2605.24219](https://arxiv.org/abs/2605.24219)·[arXiv:2509.25868](https://arxiv.org/abs/2509.25868)·[arXiv:2602.11201](https://arxiv.org/abs/2602.11201))은 논지 보강·한계 표시용, 수치 단독 주장 아님.
 
 [^title]: "Where Do Deep-Research Agents Go Wrong? Span-Level Error Localization in Agent Trajectories." — Jiaming Wang, Ziteng Feng, Jiangtao Wu et al. (NJU-LINK Team, Nanjing University; JIUTIAN Research), arXiv:2606.02060, posted 2026-06-01. (제목·귀속 dossier 기반, 원문 미대조)
 

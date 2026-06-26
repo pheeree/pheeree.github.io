@@ -118,7 +118,16 @@ pheeree,
 
 <br>
 
-**발행 전 점검 (신뢰 장부 — 총 10주장 · ✓6 ⚠1 ✗0 ?4):** 논문 PDF 직접 대조(6✓): Search F1 GPT-5 0.65/Opus 0.51 · Identify Claude 0.43/GPT-5 0.42 · Execute 둘 다 0.40 · root cause 평균 73.8% · 프레임워크 ReACT 0.12/Reflexion 0.13/ReWOO 0.25 · 인간 Identify 0.71·Execute 0.67·κ 0.714 — Table 3~5 대조 완료. ⚠ [^shortcut] 각주 verbatim 재구성 가능성 — "As the search space grows" 구절이 원문 §4.1과 일부 다를 수 있음, 발행 전 PDF §4.1 직접 확인 권장. 외부 dossier 기반 인용(4?) — PARE-Bench([arXiv:2604.00842](https://arxiv.org/abs/2604.00842))·Know but don't tell([arXiv:2406.14673](https://arxiv.org/abs/2406.14673))·Which Agent Fails([arXiv:2505.00212](https://arxiv.org/abs/2505.00212))·ReAct Brittle([arXiv:2405.13966](https://arxiv.org/abs/2405.13966))·ProActor([arXiv:2605.24900](https://arxiv.org/abs/2605.24900))·TraceElephant([arXiv:2604.22708](https://arxiv.org/abs/2604.22708))·CUJBench([arXiv:2604.23455](https://arxiv.org/abs/2604.23455))·ProAgentBench([arXiv:2602.04482](https://arxiv.org/abs/2602.04482))·Context Rot(ChromaDB) — 논지 보강·대비 맥락으로만 언급, 원문 수치 미대조. 병목 은유 계보(Goldratt 제약이론·임계경로)는 일반 지식. 검토 시 확인 권장.
+**발행 전 점검 (신뢰 장부):**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| 핵심 지표 6건 (Search F1 0.65/0.51, Identify 0.43/0.42, Execute 0.40, root cause 73.8%, 프레임워크 ReACT/Reflexion/ReWOO, 인간 κ 0.714) | 논문 Table 3~5 직접 | ✓ |
+| shortcut 각주 인용문 verbatim 재구성 가능성 (§4.1 일부 상이) | 원문 §4.1, 미확인 | ⚠ |
+| 외부 인용 9건 (PARE-Bench·Know but don't tell·Which Agent Fails·ReAct Brittle·ProActor·TraceElephant·CUJBench·ProAgentBench·Context Rot) | dossier | △ |
+{:.claim-ledger}
+
+⚠ 항목은 발행 전 PDF §4.1 직접 확인 권장. 병목 은유 계보(Goldratt 등)는 일반 지식.
 
 [^frame]: "PROBE (Proactive Resolution of Bottlenecks) decomposes proactive capability into three sequential subtasks: searching a user's data store for relevant context, identifying the most pressing bottleneck, and executing an appropriate action to resolve it." — Pasternak et al. (2026), Abstract/§3, arXiv:2510.19771v3.
 

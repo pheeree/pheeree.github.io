@@ -104,7 +104,15 @@ pheeree,
 
 <br>
 
-**발행 전 점검 (신뢰 장부 — 총 14주장 · ✓9 ⚠0 ✗0 ?5):** 논문 PDF 직접 대조(9✓): GPT4o-J 75.55/60.22 · Session R@3 90.17/72.05 · Turn R@3 71.13/42.63 · 분절화 제거 91.63→23.86·64.68→27.61 · 필터링 제거 91.63→73.85 · DW-PR +1.88/+2.67 · 삼중항 +13.83/+8.45 — 모두 Table 1~8 대조 완료. 외부 dossier 기반 인용(5?) — GAAMA([arXiv:2603.27910](https://arxiv.org/abs/2603.27910))·MemoryBench([arXiv:2510.17281](https://arxiv.org/abs/2510.17281))·Provenance([arXiv:2411.01022](https://arxiv.org/abs/2411.01022))·Bi-Mem([arXiv:2601.06490](https://arxiv.org/abs/2601.06490))·When F1 Fails([arXiv:2512.17083](https://arxiv.org/abs/2512.17083)) — 논지 보강 맥락으로만 언급, 원문 수치 미대조. 검토 시 확인 권장.
+**발행 전 점검 (신뢰 장부):**
+
+| 주장 | 출처 | 상태 |
+|------|------|------|
+| 핵심 지표 9건 (GPT4o-J 75.55/60.22, Session R@3 90.17/72.05, Turn R@3 71.13/42.63, 분절화·필터링 제거, DW-PR +1.88/+2.67, 삼중항 +13.83/+8.45) | 논문 Table 1~8 직접 | ✓ |
+| 외부 인용 5건 (GAAMA·MemoryBench·Provenance·Bi-Mem·When F1 Fails) | dossier | △ |
+{:.claim-ledger}
+
+외부 인용 5건은 논지 보강 맥락으로만 언급, 원문 수치 미대조 — 검토 시 [arXiv:2603.27910](https://arxiv.org/abs/2603.27910)·[arXiv:2510.17281](https://arxiv.org/abs/2510.17281)·[arXiv:2411.01022](https://arxiv.org/abs/2411.01022)·[arXiv:2601.06490](https://arxiv.org/abs/2601.06490)·[arXiv:2512.17083](https://arxiv.org/abs/2512.17083) 확인 권장.
 
 [^main]: "MemORAI achieves state-of-the-art performance in memory retrieval and personalized response generation, demonstrating that selective storage, enriched representation, and adaptive retrieval are essential for coherent, personalized LLM agents." — Pham Van et al. (2026), Abstract, arXiv:2605.01386.
 
