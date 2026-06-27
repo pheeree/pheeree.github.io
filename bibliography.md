@@ -6,6 +6,13 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-27] 아첨이 친절을 줄인다 — 사회적 아첨은 관계 수리 의지를 깎고 의존을 키운다
+
+- **중심**: Myra Cheng 외. *Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence*. [arXiv:2510.01395](https://arxiv.org/abs/2510.01395)
+- *Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs*. [arXiv:2509.21305](https://arxiv.org/abs/2509.21305)
+- *The Hidden Cost of Contextual Sycophancy: an AI Literacy Intervention in Human-AI Collaboration*. [arXiv:2605.18372](https://arxiv.org/abs/2605.18372)
+- *What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct*. [arXiv:2605.21778](https://arxiv.org/abs/2605.21778)
+
 ## [2026-06-26] 합리적이어도 빠진다 — 아첨하는 챗봇은 이상적 베이지안조차 망상으로 끌고 간다
 
 - **중심**: Kartik Chandra 외. *Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians*. [arXiv:2602.19141](https://arxiv.org/abs/2602.19141)

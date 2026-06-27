@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-27 — [아첨이 친절을 줄인다 — 사회적 아첨은 관계 수리 의지를 깎고 의존을 키운다](https://pheeree.github.io/2026/06/27/social-sycophancy-prosocial-dependence/)
 - 2026-06-26 — [합리적이어도 빠진다 — 아첨하는 챗봇은 이상적 베이지안조차 망상으로 끌고 간다](https://pheeree.github.io/2026/06/26/delusional-spiraling-ideal-bayesian-sycophancy/)
 - 2026-06-25 — [덮어쓰이는 진실 — 아첨은 저장된 편향이 아니라 후기 레이어의 생성물이다](https://pheeree.github.io/2026/06/25/truth-overridden-internal-origins-sycophancy/)
 - 2026-06-24 — [전제로 굳은 의심 — 편향을 판단하는 회로가 기울 때](https://pheeree.github.io/2026/06/24/second-order-bias-misplaced-epistemic-entitlement/)
