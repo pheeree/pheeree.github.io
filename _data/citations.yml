@@ -1,6 +1,18 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-28-sycophancy-not-one-thing-causal-separation:
+  title: "아첨은 하나가 아니다 — SyA·GA·SyPR의 인과적 분리"
+  central:
+    id: "2509.21305"
+    title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs"
+    authors: "Daniel Vennemeyer 외"
+    url: "https://arxiv.org/abs/2509.21305"
+  referenced:
+    - { id: "2602.01002", title: "How RLHF Amplifies Sycophancy", url: "https://arxiv.org/abs/2602.01002" }
+    - { id: "2605.18372", title: "The Hidden Cost of Contextual Sycophancy: an AI Literacy Intervention in Human-AI Collaboration", url: "https://arxiv.org/abs/2605.18372" }
+    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", url: "https://arxiv.org/abs/2605.21778" }
+
 2026-06-27-social-sycophancy-prosocial-dependence:
   title: "아첨이 친절을 줄인다 — 사회적 아첨은 관계 수리 의지를 깎고 의존을 키운다"
   central:

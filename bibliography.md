@@ -6,6 +6,13 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-28] 아첨은 하나가 아니다 — SyA·GA·SyPR의 인과적 분리
+
+- **중심**: Daniel Vennemeyer 외. *Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs*. [arXiv:2509.21305](https://arxiv.org/abs/2509.21305)
+- *How RLHF Amplifies Sycophancy*. [arXiv:2602.01002](https://arxiv.org/abs/2602.01002)
+- *The Hidden Cost of Contextual Sycophancy: an AI Literacy Intervention in Human-AI Collaboration*. [arXiv:2605.18372](https://arxiv.org/abs/2605.18372)
+- *What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct*. [arXiv:2605.21778](https://arxiv.org/abs/2605.21778)
+
 ## [2026-06-27] 아첨이 친절을 줄인다 — 사회적 아첨은 관계 수리 의지를 깎고 의존을 키운다
 
 - **중심**: Myra Cheng 외. *Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence*. [arXiv:2510.01395](https://arxiv.org/abs/2510.01395)
