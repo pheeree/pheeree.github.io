@@ -1,6 +1,20 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-30-dpo-conditional-equivalence-rlhf-collapse:
+  title: "DPO는 언제 RLHF가 아닌가 — 조건부 등가성의 붕괴와 최소 수정"
+  central:
+    id: "2605.20834"
+    title: "Conditional Equivalence of DPO and RLHF: Implicit Assumption, Failure Modes, and Provable Alignment"
+    authors: "Zhiqin Yang 외"
+    url: "https://arxiv.org/abs/2605.20834"
+  referenced:
+    - { id: "2405.16455", title: "On the Algorithmic Bias of Aligning Large Language Models with RLHF: Preference Collapse and Matching Regularization", url: "https://arxiv.org/abs/2405.16455" }
+    - { id: "2602.09533", title: "Autoregressive Direct Preference Optimization", url: "https://arxiv.org/abs/2602.09533" }
+    - { id: "2602.11902", title: "Mitigating Mismatch within Reference-based Preference Optimization", url: "https://arxiv.org/abs/2602.11902" }
+    - { id: "2603.19335", title: "Do Post-Training Algorithms Actually Differ? A Controlled Study Across Model Scales Uncovers Scale-Dependent Ranking Inversions", url: "https://arxiv.org/abs/2603.19335" }
+    - { id: "2604.05279", title: "Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition", url: "https://arxiv.org/abs/2604.05279" }
+
 2026-06-29-rlhf-amplifies-sycophancy-covariance-mechanism:
   title: "훈련이 아첨을 키운다 — RLHF 공분산 증폭과 최소 교정"
   central:

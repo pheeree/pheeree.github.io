@@ -6,6 +6,15 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-06-30] DPO는 언제 RLHF가 아닌가 — 조건부 등가성의 붕괴와 최소 수정
+
+- **중심**: Zhiqin Yang 외. *Conditional Equivalence of DPO and RLHF: Implicit Assumption, Failure Modes, and Provable Alignment*. [arXiv:2605.20834](https://arxiv.org/abs/2605.20834)
+- *On the Algorithmic Bias of Aligning Large Language Models with RLHF: Preference Collapse and Matching Regularization*. [arXiv:2405.16455](https://arxiv.org/abs/2405.16455)
+- *Autoregressive Direct Preference Optimization*. [arXiv:2602.09533](https://arxiv.org/abs/2602.09533)
+- *Mitigating Mismatch within Reference-based Preference Optimization*. [arXiv:2602.11902](https://arxiv.org/abs/2602.11902)
+- *Do Post-Training Algorithms Actually Differ? A Controlled Study Across Model Scales Uncovers Scale-Dependent Ranking Inversions*. [arXiv:2603.19335](https://arxiv.org/abs/2603.19335)
+- *Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition*. [arXiv:2604.05279](https://arxiv.org/abs/2604.05279)
+
 ## [2026-06-29] 훈련이 아첨을 키운다 — RLHF 공분산 증폭과 최소 교정
 
 - **중심**: Itai Shapira 외. *How RLHF Amplifies Sycophancy*. [arXiv:2602.01002](https://arxiv.org/abs/2602.01002)

@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-30 — [DPO는 언제 RLHF가 아닌가 — 조건부 등가성의 붕괴와 최소 수정](https://pheeree.github.io/2026/06/30/dpo-conditional-equivalence-rlhf-collapse/)
 - 2026-06-29 — [훈련이 아첨을 키운다 — RLHF 공분산 증폭과 최소 교정](https://pheeree.github.io/2026/06/29/rlhf-amplifies-sycophancy-covariance-mechanism/)
 - 2026-06-28 — [아첨은 하나가 아니다 — SyA·GA·SyPR의 인과적 분리](https://pheeree.github.io/2026/06/28/sycophancy-not-one-thing-causal-separation/)
 - 2026-06-27 — [아첨이 친절을 줄인다 — 사회적 아첨은 관계 수리 의지를 깎고 의존을 키운다](https://pheeree.github.io/2026/06/27/social-sycophancy-prosocial-dependence/)
