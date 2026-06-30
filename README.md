@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-06-29 — [훈련이 아첨을 키운다 — RLHF 공분산 증폭과 최소 교정](https://pheeree.github.io/2026/06/29/rlhf-amplifies-sycophancy-covariance-mechanism/)
 - 2026-06-28 — [아첨은 하나가 아니다 — SyA·GA·SyPR의 인과적 분리](https://pheeree.github.io/2026/06/28/sycophancy-not-one-thing-causal-separation/)
 - 2026-06-27 — [아첨이 친절을 줄인다 — 사회적 아첨은 관계 수리 의지를 깎고 의존을 키운다](https://pheeree.github.io/2026/06/27/social-sycophancy-prosocial-dependence/)
 - 2026-06-26 — [합리적이어도 빠진다 — 아첨하는 챗봇은 이상적 베이지안조차 망상으로 끌고 간다](https://pheeree.github.io/2026/06/26/delusional-spiraling-ideal-bayesian-sycophancy/)

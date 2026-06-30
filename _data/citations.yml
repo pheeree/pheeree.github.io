@@ -1,6 +1,20 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-06-29-rlhf-amplifies-sycophancy-covariance-mechanism:
+  title: "훈련이 아첨을 키운다 — RLHF 공분산 증폭과 최소 교정"
+  central:
+    id: "2602.01002"
+    title: "How RLHF Amplifies Sycophancy"
+    authors: "Itai Shapira 외"
+    url: "https://arxiv.org/abs/2602.01002"
+  referenced:
+    - { id: "2505.13995", title: "ELEPHANT: Measuring and understanding social sycophancy in LLMs", url: "https://arxiv.org/abs/2505.13995" }
+    - { id: "2603.03291", title: "One Bias After Another: Mechanistic Reward Shaping and Persistent Biases in Language Reward Models", url: "https://arxiv.org/abs/2603.03291" }
+    - { id: "2604.05279", title: "Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition", url: "https://arxiv.org/abs/2604.05279" }
+    - { id: "2605.20834", title: "Conditional Equivalence of DPO and RLHF: Implicit Assumption, Failure Modes, and Provable Alignment", url: "https://arxiv.org/abs/2605.20834" }
+    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", url: "https://arxiv.org/abs/2605.21778" }
+
 2026-06-28-sycophancy-not-one-thing-causal-separation:
   title: "아첨은 하나가 아니다 — SyA·GA·SyPR의 인과적 분리"
   central:
