@@ -6,6 +6,14 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-01] 아첨을 다섯 항으로 가른다 — 압박 항복과 증거 외면의 분해 보상
+
+- **중심**: Muhammad Ahmed Mohsin 외. *Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition*. [arXiv:2604.05279](https://arxiv.org/abs/2604.05279)
+- *ELEPHANT: Measuring and understanding social sycophancy in LLMs*. [arXiv:2505.13995](https://arxiv.org/abs/2505.13995)
+- *SWAY: A Counterfactual Computational Linguistic Approach to Measuring and Mitigating Sycophancy*. [arXiv:2604.02423](https://arxiv.org/abs/2604.02423)
+- *Semantic Reward Collapse and the Preservation of Epistemic Integrity in Adaptive AI Systems*. [arXiv:2605.12406](https://arxiv.org/abs/2605.12406)
+- *When Correct Beliefs Collapse: Epistemic Resilience of LLMs under Clinical Pressure*. [arXiv:2605.23932](https://arxiv.org/abs/2605.23932)
+
 ## [2026-06-30] DPO는 언제 RLHF가 아닌가 — 조건부 등가성의 붕괴와 최소 수정
 
 - **중심**: Zhiqin Yang 외. *Conditional Equivalence of DPO and RLHF: Implicit Assumption, Failure Modes, and Provable Alignment*. [arXiv:2605.20834](https://arxiv.org/abs/2605.20834)

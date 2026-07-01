@@ -1,6 +1,19 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-01-sycophancy-reward-decomposition-two-failure-modes:
+  title: "아첨을 다섯 항으로 가른다 — 압박 항복과 증거 외면의 분해 보상"
+  central:
+    id: "2604.05279"
+    title: "Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition"
+    authors: "Muhammad Ahmed Mohsin 외"
+    url: "https://arxiv.org/abs/2604.05279"
+  referenced:
+    - { id: "2505.13995", title: "ELEPHANT: Measuring and understanding social sycophancy in LLMs", url: "https://arxiv.org/abs/2505.13995" }
+    - { id: "2604.02423", title: "SWAY: A Counterfactual Computational Linguistic Approach to Measuring and Mitigating Sycophancy", url: "https://arxiv.org/abs/2604.02423" }
+    - { id: "2605.12406", title: "Semantic Reward Collapse and the Preservation of Epistemic Integrity in Adaptive AI Systems", url: "https://arxiv.org/abs/2605.12406" }
+    - { id: "2605.23932", title: "When Correct Beliefs Collapse: Epistemic Resilience of LLMs under Clinical Pressure", url: "https://arxiv.org/abs/2605.23932" }
+
 2026-06-30-dpo-conditional-equivalence-rlhf-collapse:
   title: "DPO는 언제 RLHF가 아닌가 — 조건부 등가성의 붕괴와 최소 수정"
   central:
