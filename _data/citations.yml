@@ -1,6 +1,26 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-03-sycophancy-taxonomy-fragmented-construct-expert-survey:
+  title: "아첨이라 부른 것들을 세어 보니 — 파편화된 구인의 분류표와 전문가의 불일치"
+  central:
+    id: "2605.21778"
+    title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct"
+    authors: "Meryl Ye 외"
+    url: "https://arxiv.org/abs/2605.21778"
+  referenced:
+    - { id: "2505.13995", title: "ELEPHANT: Measuring and understanding social sycophancy in LLMs", url: "https://arxiv.org/abs/2505.13995" }
+    - { id: "2509.21305", title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs", url: "https://arxiv.org/abs/2509.21305" }
+    - { id: "2602.01002", title: "How RLHF Amplifies Sycophancy", url: "https://arxiv.org/abs/2602.01002" }
+
+2026-07-03-mast-remeasure-log-1-calibrate-the-instrument:
+  title: "연구 로그 1 — 측정기부터 검증합니다: MAST 재측정 파일럿 개시"
+  central:
+    id: "2503.13657"
+    title: "Why Do Multi-Agent LLM Systems Fail?"
+    authors: "Mert Cemri 외"
+    url: "https://arxiv.org/abs/2503.13657"
+
 2026-07-02-elephant-social-sycophancy-face-preservation:
   title: "체면을 재는 저울 — Goffman의 face 위에서 사회적 아첨을 네 축으로"
   central:

@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-03] 아첨이라 부른 것들을 세어 보니 — 파편화된 구인의 분류표와 전문가의 불일치
+
+- **중심**: Meryl Ye 외. *What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct*. [arXiv:2605.21778](https://arxiv.org/abs/2605.21778)
+- *ELEPHANT: Measuring and understanding social sycophancy in LLMs*. [arXiv:2505.13995](https://arxiv.org/abs/2505.13995)
+- *Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs*. [arXiv:2509.21305](https://arxiv.org/abs/2509.21305)
+- *How RLHF Amplifies Sycophancy*. [arXiv:2602.01002](https://arxiv.org/abs/2602.01002)
+
+## [2026-07-03] 연구 로그 1 — 측정기부터 검증합니다: MAST 재측정 파일럿 개시
+
+- **중심**: Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657)
+
 ## [2026-07-02] 체면을 재는 저울 — Goffman의 face 위에서 사회적 아첨을 네 축으로
 
 - **중심**: Myra Cheng 외. *ELEPHANT: Measuring and understanding social sycophancy in LLMs*. [arXiv:2505.13995](https://arxiv.org/abs/2505.13995)

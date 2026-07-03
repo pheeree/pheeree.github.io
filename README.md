@@ -13,6 +13,8 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-07-03 — [연구 로그 1 — 측정기부터 검증합니다: MAST 재측정 파일럿 개시](https://pheeree.github.io/2026/07/03/mast-remeasure-log-1-calibrate-the-instrument/)
+- 2026-07-03 — [아첨이라 부른 것들을 세어 보니 — 파편화된 구인의 분류표와 전문가의 불일치](https://pheeree.github.io/2026/07/03/sycophancy-taxonomy-fragmented-construct-expert-survey/)
 - 2026-07-02 — [체면을 재는 저울 — Goffman의 face 위에서 사회적 아첨을 네 축으로](https://pheeree.github.io/2026/07/02/elephant-social-sycophancy-face-preservation/)
 - 2026-07-01 — [아첨을 다섯 항으로 가른다 — 압박 항복과 증거 외면의 분해 보상](https://pheeree.github.io/2026/07/01/sycophancy-reward-decomposition-two-failure-modes/)
 - 2026-06-30 — [DPO는 언제 RLHF가 아닌가 — 조건부 등가성의 붕괴와 최소 수정](https://pheeree.github.io/2026/06/30/dpo-conditional-equivalence-rlhf-collapse/)
