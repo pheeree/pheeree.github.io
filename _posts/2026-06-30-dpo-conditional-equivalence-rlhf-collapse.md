@@ -32,7 +32,7 @@ Yang 등의 ["Conditional Equivalence of DPO and RLHF: Implicit Assumption, Fail
 **등가성은 한 부등식에 걸려 있다.** 첫 번째가 이 글의 심장이에요. Yang 등은 DPO의 유도가 한 가지를 *암묵적으로* 전제한다고 짚습니다. 모든 선호 쌍 $$(x, y_w, y_l)$$에서 RLHF-최적 정책이 선호 응답 $$y_w$$에 더 높은 확률을 부여해야 한다는 것 — 식으로는
 
 $$
-\delta_{\pi^*} := \log \pi^*(y_w|x) - \log \pi^*(y_l|x) > 0
+\delta_{\pi^*} := \log \pi^*(y_w \mid x) - \log \pi^*(y_l \mid x) > 0
 $$
 
 이게 양수여야 한다는 거예요.[^assumption] 직관적으로 당연해 보이죠. 인간이 $$y_w$$를 선호했으니 RLHF-최적 정책도 $$y_w$$를 더 좋아할 거라고. 그런데 이 직관이 깨지는 자리가 있어요. RLHF-최적 정책은 참조 정책 위에 보상으로 지수 틸팅한 꼴 $$\pi^* \propto \pi_\text{ref}\,e^{r^*/\beta}$$이라서, $$\delta_{\pi^*}$$를 풀어 쓰면 참조 정책의 기욺 $$\delta_{\pi_\text{ref}}$$과 보상 격차 $$r^*(y_w)-r^*(y_l)$$의 합이에요. 그러니 참조 정책이 충분히 잘못 정렬돼서 $$\delta_{\pi_\text{ref}} \leq -(r^*(y_w) - r^*(y_l))/\beta$$이면, 보상이 $$y_w$$를 가리켜도 최적 정책은 $$y_l$$ 쪽으로 기울어요. 가정이 위반되는 거죠.
@@ -145,7 +145,7 @@ $$
 
 [^abstract]: Yang et al. (2605.20834), Abstract p.1 verbatim: "we prove this equivalence is conditional rather than universal, depending on an implicit assumption frequently violated in practice: the RLHF-optimal policy must prefer human-preferred responses over dispreferred ones."
 
-[^assumption]: Yang et al. (2605.20834), Assumption 3.1 p.3 verbatim: "For all preference data $$(x, y_w, y_l) \in \mathcal{D}$$ where $$y_w \succ y_l$$, the RLHF-optimal policy satisfies: $$\pi^*(y_w|x) > \pi^*(y_l|x)$$." 동치로 $$\delta_{\pi^*}:=\log\pi^*(y_w|x)-\log\pi^*(y_l|x)>0$$. 참조 정책이 $$\delta_{\pi_\text{ref}}\leq -(r^*(y_w)-r^*(y_l))/\beta$$일 때 위반.
+[^assumption]: Yang et al. (2605.20834), Assumption 3.1 p.3 verbatim: "For all preference data $$(x, y_w, y_l) \in \mathcal{D}$$ where $$y_w \succ y_l$$, the RLHF-optimal policy satisfies: $$\pi^*(y_w \mid x) > \pi^*(y_l \mid x)$$." 동치로 $$\delta_{\pi^*}:=\log\pi^*(y_w \mid x)-\log\pi^*(y_l \mid x)>0$$. 참조 정책이 $$\delta_{\pi_\text{ref}}\leq -(r^*(y_w)-r^*(y_l))/\beta$$일 때 위반.
 
 [^violation]: Yang et al. (2605.20834), Appendix A.1 p.12 verbatim: "Assumption 3.1 is violated for 45.5% of preference pairs (Llama-3-8B-Instruct, β = 0.1)."
 

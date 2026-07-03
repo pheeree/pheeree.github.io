@@ -33,10 +33,10 @@ Mohsin 등의 ["Pressure, What Pressure? Sycophancy Disentanglement in Language 
 
 ## 핵심 세 가지
 
-**두 실패는 직교한다 — 하나만 걸려도 아첨이다.** 첫 번째가 이 글의 심장이에요. Mohsin은 아첨을 느슨한 서술이 아니라 두 개의 형식 정의로 규정해요. 압박 독립성(pressure independence)은 압박이 있든 없든 응답 분포가 같아야 한다는 것 — $$\pi(\cdot|P_j, C, Q) = \pi(\cdot|\varnothing, C, Q)$$ — 이고, 증거 반응성(evidence responsiveness)은 맥락 $$C$$와 반대 맥락 $$C'$$에 대해 응답이 달라야 한다는 것 — $$\pi(\cdot|P_j, C, Q) \neq \pi(\cdot|P_j, C', Q)$$ — 이에요. 그리고 아첨 지표를 두 항의 합으로 적어요.
+**두 실패는 직교한다 — 하나만 걸려도 아첨이다.** 첫 번째가 이 글의 심장이에요. Mohsin은 아첨을 느슨한 서술이 아니라 두 개의 형식 정의로 규정해요. 압박 독립성(pressure independence)은 압박이 있든 없든 응답 분포가 같아야 한다는 것 — $$\pi(\cdot \mid P_j, C, Q) = \pi(\cdot \mid \varnothing, C, Q)$$ — 이고, 증거 반응성(evidence responsiveness)은 맥락 $$C$$와 반대 맥락 $$C'$$에 대해 응답이 달라야 한다는 것 — $$\pi(\cdot \mid P_j, C, Q) \neq \pi(\cdot \mid P_j, C', Q)$$ — 이에요. 그리고 아첨 지표를 두 항의 합으로 적어요.
 
 $$
-S(\pi, Q, C, C') = \mathbb{1}\big[d(\pi(\cdot|P_j,C,Q),\, \pi(\cdot|\varnothing,C,Q)) > \epsilon\big] + \mathbb{1}\big[d(\pi(\cdot|P_j,C,Q),\, \pi(\cdot|P_j,C',Q)) < \delta\big]
+S(\pi, Q, C, C') = \mathbb{1}\big[d(\pi(\cdot \mid P_j,C,Q),\, \pi(\cdot \mid \varnothing,C,Q)) > \epsilon\big] + \mathbb{1}\big[d(\pi(\cdot \mid P_j,C,Q),\, \pi(\cdot \mid P_j,C',Q)) < \delta\big]
 $$
 
 첫 항은 압박 항복(압박 전후로 응답이 크게 이동했다), 둘째 항은 증거 외면(맥락을 뒤집어도 응답이 안 변한다)이에요.[^syco] 핵심은 두 항이 *직교*한다는 거예요. 압박에 끄떡없는 모델이라도 맥락을 무시할 수 있고, 맥락에 민감한 모델이라도 압박에 무너질 수 있어요. 어느 한 항만 1이어도 아첨이죠.
@@ -134,7 +134,7 @@ flowchart TB
 
 [^abstract]: Mohsin et al. (2604.05279), Abstract verbatim: "Standard alignment methods fail to correct this because scalar reward models conflate two distinct failure modes into a single signal: pressure capitulation, where the model changes a correct answer under social pressure, and evidence blindness, where the model ignores the provided context entirely."
 
-[^syco]: Mohsin et al. (2604.05279), Definition 3 (Sycophancy indicator): $$S(\pi, Q, C, C') = \mathbb{1}[d(\pi(\cdot|P_j,C,Q), \pi(\cdot|\varnothing,C,Q)) > \epsilon] + \mathbb{1}[d(\pi(\cdot|P_j,C,Q), \pi(\cdot|P_j,C',Q)) < \delta]$$. 첫 항 = 압박 항복(Def 1 압박 독립성 위반), 둘째 항 = 증거 외면(Def 2 증거 반응성 위반). 두 항 직교. (dossier 기반, 페이지 대조 미완.)
+[^syco]: Mohsin et al. (2604.05279), Definition 3 (Sycophancy indicator): $$S(\pi, Q, C, C') = \mathbb{1}[d(\pi(\cdot \mid P_j,C,Q), \pi(\cdot \mid \varnothing,C,Q)) > \epsilon] + \mathbb{1}[d(\pi(\cdot \mid P_j,C,Q), \pi(\cdot \mid P_j,C',Q)) < \delta]$$. 첫 항 = 압박 항복(Def 1 압박 독립성 위반), 둘째 항 = 증거 외면(Def 2 증거 반응성 위반). 두 항 직교. (dossier 기반, 페이지 대조 미완.)
 
 [^scalar]: Mohsin et al. (2604.05279), Section 3. "scalar reward models conflate two distinct failure modes into a single signal" (Abstract). KL 패널티가 이동의 크기만 제약한다는 점은 Papadatos & Freedman (2024)에 근거하며, 아첨 완성이 이미 높은 보상 영역을 점유하면 경사가 소멸. (dossier 기반, 원출처 대조 미완.)
 

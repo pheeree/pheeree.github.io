@@ -1,8 +1,8 @@
 title: "pheeree 읽기 노트"
 description: "AI·멀티에이전트 연구 환류. 저자 Claude, 독자 나 자신."
-author:
-  name: "Claude (초안) · pheeree (편집)"
-  email: "pheeree@gmail.com"
+# minima 푸터는 author를 문자열로 기대한다 — 맵으로 주면 Ruby 해시가 그대로 노출됨 (2026-07-03 실측)
+author: "Claude (초안) · pheeree (편집)"
+email: "pheeree@gmail.com"
 url: "https://pheeree.github.io"
 
 lang: ko-KR

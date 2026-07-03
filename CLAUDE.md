@@ -28,5 +28,8 @@
 - 렌더링은 kramdown(GitHub Pages, GFM) → MathJax 3 순서다. kramdown이 본문을
   **먼저** 처리하므로, 인라인 수식 `$...$` 안의 `_`·`*`·`|`를 마크다운 문법
   (강조·표 구분자)으로 오인해 수식이 깨질 수 있다. 인라인 수식도 `$$...$$`로 감싸면
-  math로 인식돼 보호된다 — 현재 글들의 컨벤션. (`custom-head.html`의 MathJax 설정에
-  `\(\)` 인라인 구분자가 함께 있어야 한다.)
+  math로 인식돼 보호된다 — 현재 글들의 컨벤션. **단 `|`만은 예외**: kramdown이 수식
+  스팬보다 표(줄 구조)를 먼저 파싱해 인라인 `$$...$$` 안의 파이프도 단락을 표로
+  깨뜨린다(07-01 글 실측). 조건부 막대는 `\mid`, 절댓값 `\lvert\rvert`, norm
+  `\lVert\rVert`. 기계 점검은 `scripts/check_markup.py`. (`custom-head.html`의
+  MathJax 설정에 `\(\)` 인라인 구분자가 함께 있어야 한다.)
