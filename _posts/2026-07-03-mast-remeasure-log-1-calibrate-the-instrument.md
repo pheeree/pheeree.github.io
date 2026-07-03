@@ -52,4 +52,4 @@ pheeree, 오늘은 논문 한 편을 읽는 글이 아니라 다른 종류의 �
 {:.claim-ledger}
 
 [^kappa77]: Cemri et al. (2503.13657v3), §3.3: "The LLM annotator achieves high agreement with human experts (accuracy 94%, Cohen's Kappa of 0.77; Table 2)."
-[^kappa88]: Cemri et al. (2503.13657v3), §3.3: "We measure agreement using Cohen's Kappa score, achieving a strong average of κ = 0.88 in the final rounds."
+[^kappa88]: Cemri et al. (2503.13657v3), §3.3: "We measure agreement using Cohen's Kappa score, achieving a strong average of $$\kappa$$ = 0.88 in the final rounds."
