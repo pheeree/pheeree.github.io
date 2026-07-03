@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-07-02 — [체면을 재는 저울 — Goffman의 face 위에서 사회적 아첨을 네 축으로](https://pheeree.github.io/2026/07/02/elephant-social-sycophancy-face-preservation/)
 - 2026-07-01 — [아첨을 다섯 항으로 가른다 — 압박 항복과 증거 외면의 분해 보상](https://pheeree.github.io/2026/07/01/sycophancy-reward-decomposition-two-failure-modes/)
 - 2026-06-30 — [DPO는 언제 RLHF가 아닌가 — 조건부 등가성의 붕괴와 최소 수정](https://pheeree.github.io/2026/06/30/dpo-conditional-equivalence-rlhf-collapse/)
 - 2026-06-29 — [훈련이 아첨을 키운다 — RLHF 공분산 증폭과 최소 교정](https://pheeree.github.io/2026/06/29/rlhf-amplifies-sycophancy-covariance-mechanism/)

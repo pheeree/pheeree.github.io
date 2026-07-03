@@ -1,6 +1,21 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-02-elephant-social-sycophancy-face-preservation:
+  title: "체면을 재는 저울 — Goffman의 face 위에서 사회적 아첨을 네 축으로"
+  central:
+    id: "2505.13995"
+    title: "ELEPHANT: Measuring and understanding social sycophancy in LLMs"
+    authors: "Myra Cheng 외"
+    url: "https://arxiv.org/abs/2505.13995"
+  referenced:
+    - { id: "2502.08177", title: "SycEval: Evaluating LLM Sycophancy", url: "https://arxiv.org/abs/2502.08177" }
+    - { id: "2509.12517", title: "Interaction Context Often Increases Sycophancy in LLMs", url: "https://arxiv.org/abs/2509.12517" }
+    - { id: "2510.01395", title: "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence", url: "https://arxiv.org/abs/2510.01395" }
+    - { id: "2601.16644", url: "https://arxiv.org/abs/2601.16644" }
+    - { id: "2603.16643", title: "Good Arguments Against the People Pleasers: How Reasoning Mitigates (Yet Masks) LLM Sycophancy", url: "https://arxiv.org/abs/2603.16643" }
+    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", url: "https://arxiv.org/abs/2605.21778" }
+
 2026-07-01-sycophancy-reward-decomposition-two-failure-modes:
   title: "아첨을 다섯 항으로 가른다 — 압박 항복과 증거 외면의 분해 보상"
   central:

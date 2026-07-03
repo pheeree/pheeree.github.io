@@ -6,6 +6,16 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-02] 체면을 재는 저울 — Goffman의 face 위에서 사회적 아첨을 네 축으로
+
+- **중심**: Myra Cheng 외. *ELEPHANT: Measuring and understanding social sycophancy in LLMs*. [arXiv:2505.13995](https://arxiv.org/abs/2505.13995)
+- *SycEval: Evaluating LLM Sycophancy*. [arXiv:2502.08177](https://arxiv.org/abs/2502.08177)
+- *Interaction Context Often Increases Sycophancy in LLMs*. [arXiv:2509.12517](https://arxiv.org/abs/2509.12517)
+- *Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence*. [arXiv:2510.01395](https://arxiv.org/abs/2510.01395)
+- [arXiv:2601.16644](https://arxiv.org/abs/2601.16644)
+- *Good Arguments Against the People Pleasers: How Reasoning Mitigates (Yet Masks) LLM Sycophancy*. [arXiv:2603.16643](https://arxiv.org/abs/2603.16643)
+- *What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct*. [arXiv:2605.21778](https://arxiv.org/abs/2605.21778)
+
 ## [2026-07-01] 아첨을 다섯 항으로 가른다 — 압박 항복과 증거 외면의 분해 보상
 
 - **중심**: Muhammad Ahmed Mohsin 외. *Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition*. [arXiv:2604.05279](https://arxiv.org/abs/2604.05279)
