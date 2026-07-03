@@ -220,17 +220,17 @@ th {
   font-size: 0.86em;
   opacity: 0.7;
 }
-// 마스트헤드 — 제목·내비 링크 모두 작고 흐리게(브랜드·메뉴 비강조). 색은 opacity로
+// 마스트헤드 — 타이포만으로 날씬한 한 줄 스트립(브랜드·메뉴 비강조). 색은 opacity로
 .site-title,
 .site-title:visited {
-  font-size: 0.9em;
+  font-size: 0.82em;
   font-weight: 600;
-  letter-spacing: -0.01em;
-  opacity: 0.5;
+  letter-spacing: 0.01em; // 작은 한글은 살짝 벌리는 쪽이 정돈됨
+  opacity: 0.55;
   transition: opacity 0.12s ease;
 }
 .site-nav .page-link {
-  font-size: 0.86em; // 풋노트 정도 크기
+  font-size: 0.8em;
   font-weight: 400;
   color: inherit; // 브랜드색 대신 본문색 + opacity로 흐리게
   opacity: 0.5;
@@ -238,8 +238,18 @@ th {
 }
 .site-title:hover,
 .site-nav .page-link:hover {
-  opacity: 0.8;
+  opacity: 0.85;
   text-decoration: none;
+}
+// 데스크톱: minima의 54px 라인·60px 최소높이를 낮춰 한 줄 띠로 (모바일 햄버거 레이아웃은 그대로)
+@media screen and (min-width: 601px) {
+  .site-header {
+    min-height: 0;
+  }
+  .site-title,
+  .site-nav {
+    line-height: 42px;
+  }
 }
 
 // ── 인용 사이드노트 (kramdown 풋노트 → 넓은 화면에서 우측 마진) ──────────

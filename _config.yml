@@ -14,6 +14,11 @@ minima:
   skin: auto
   date_format: "%Y-%m-%d"
 
+# 헤더 내비 화이트리스트 — GH Pages의 jekyll-optional-front-matter가 루트 .md(CHANGELOG,
+# CLAUDE, voice 등)를 전부 페이지로 만들어 nav에 올리는 것을 차단. index(사이트 제목과 중복)도 제외.
+header_pages:
+  - bibliography.md
+
 permalink: /:year/:month/:day/:title/
 
 plugins:
