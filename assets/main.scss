@@ -223,14 +223,14 @@ th {
 // 마스트헤드 — 타이포만으로 날씬한 한 줄 스트립(브랜드·메뉴 비강조). 색은 opacity로
 .site-title,
 .site-title:visited {
-  font-size: 0.82em;
+  font-size: 0.75em;
   font-weight: 600;
   letter-spacing: 0.01em; // 작은 한글은 살짝 벌리는 쪽이 정돈됨
   opacity: 0.55;
   transition: opacity 0.12s ease;
 }
 .site-nav .page-link {
-  font-size: 0.8em;
+  font-size: 0.72em;
   font-weight: 400;
   color: inherit; // 브랜드색 대신 본문색 + opacity로 흐리게
   opacity: 0.5;
@@ -248,7 +248,7 @@ th {
   }
   .site-title,
   .site-nav {
-    line-height: 42px;
+    line-height: 38px;
   }
 }
 
