@@ -1,7 +1,7 @@
 ---
 title: "연구 로그 1 — 측정기부터 검증합니다: MAST 재측정 파일럿 개시"
 date: 2026-07-03 18:00:00 +0900
-categories: [research]
+categories: [research-log]
 tags: [mast-remeasure, research-log, mast, multi-agent, failure-taxonomy, llm-judge]
 source: "PAPER/2503.13657v3.pdf"
 future: true
