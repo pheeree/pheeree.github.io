@@ -6,6 +6,19 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-04] 메모리를 스킬로 배우다 — AutoMem과 메타기억, 그리고 통제된 실험실의 경계
+
+- **중심**: Shengguang Wu 외. *AutoMem: Automated Learning of Memory as a Cognitive Skill*. [arXiv:2607.01224](https://arxiv.org/abs/2607.01224)
+- [arXiv:2508.19828](https://arxiv.org/abs/2508.19828)
+- [arXiv:2509.12517](https://arxiv.org/abs/2509.12517)
+- [arXiv:2510.07248](https://arxiv.org/abs/2510.07248)
+- [arXiv:2602.02474](https://arxiv.org/abs/2602.02474)
+- [arXiv:2603.16643](https://arxiv.org/abs/2603.16643)
+- [arXiv:2604.20006](https://arxiv.org/abs/2604.20006)
+- [arXiv:2605.30159](https://arxiv.org/abs/2605.30159)
+- [arXiv:2606.00832](https://arxiv.org/abs/2606.00832)
+- *Are We Ready For An Agent-Native Memory System?*. [arXiv:2606.24775](https://arxiv.org/abs/2606.24775)
+
 ## [2026-07-03] 아첨이라 부른 것들을 세어 보니 — 파편화된 구인의 분류표와 전문가의 불일치
 
 - **중심**: Meryl Ye 외. *What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct*. [arXiv:2605.21778](https://arxiv.org/abs/2605.21778)
@@ -20,11 +33,11 @@ permalink: /bibliography/
 ## [2026-07-02] 체면을 재는 저울 — Goffman의 face 위에서 사회적 아첨을 네 축으로
 
 - **중심**: Myra Cheng 외. *ELEPHANT: Measuring and understanding social sycophancy in LLMs*. [arXiv:2505.13995](https://arxiv.org/abs/2505.13995)
-- *SycEval: Evaluating LLM Sycophancy*. [arXiv:2502.08177](https://arxiv.org/abs/2502.08177)
-- *Interaction Context Often Increases Sycophancy in LLMs*. [arXiv:2509.12517](https://arxiv.org/abs/2509.12517)
+- [arXiv:2502.08177](https://arxiv.org/abs/2502.08177)
+- [arXiv:2509.12517](https://arxiv.org/abs/2509.12517)
 - *Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence*. [arXiv:2510.01395](https://arxiv.org/abs/2510.01395)
 - [arXiv:2601.16644](https://arxiv.org/abs/2601.16644)
-- *Good Arguments Against the People Pleasers: How Reasoning Mitigates (Yet Masks) LLM Sycophancy*. [arXiv:2603.16643](https://arxiv.org/abs/2603.16643)
+- [arXiv:2603.16643](https://arxiv.org/abs/2603.16643)
 - *What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct*. [arXiv:2605.21778](https://arxiv.org/abs/2605.21778)
 
 ## [2026-07-01] 아첨을 다섯 항으로 가른다 — 압박 항복과 증거 외면의 분해 보상
@@ -33,7 +46,7 @@ permalink: /bibliography/
 - *ELEPHANT: Measuring and understanding social sycophancy in LLMs*. [arXiv:2505.13995](https://arxiv.org/abs/2505.13995)
 - *SWAY: A Counterfactual Computational Linguistic Approach to Measuring and Mitigating Sycophancy*. [arXiv:2604.02423](https://arxiv.org/abs/2604.02423)
 - *Semantic Reward Collapse and the Preservation of Epistemic Integrity in Adaptive AI Systems*. [arXiv:2605.12406](https://arxiv.org/abs/2605.12406)
-- *When Correct Beliefs Collapse: Epistemic Resilience of LLMs under Clinical Pressure*. [arXiv:2605.23932](https://arxiv.org/abs/2605.23932)
+- [arXiv:2605.23932](https://arxiv.org/abs/2605.23932)
 
 ## [2026-06-30] DPO는 언제 RLHF가 아닌가 — 조건부 등가성의 붕괴와 최소 수정
 
@@ -70,7 +83,7 @@ permalink: /bibliography/
 ## [2026-06-26] 합리적이어도 빠진다 — 아첨하는 챗봇은 이상적 베이지안조차 망상으로 끌고 간다
 
 - **중심**: Kartik Chandra 외. *Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians*. [arXiv:2602.19141](https://arxiv.org/abs/2602.19141)
-- *Technological folie à deux: Feedback Loops Between AI Chatbots and Mental Illness*. [arXiv:2507.19218](https://arxiv.org/abs/2507.19218)
+- [arXiv:2507.19218](https://arxiv.org/abs/2507.19218)
 - *Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence*. [arXiv:2510.01395](https://arxiv.org/abs/2510.01395)
 - *What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct*. [arXiv:2605.21778](https://arxiv.org/abs/2605.21778)
 
@@ -100,8 +113,8 @@ permalink: /bibliography/
 ## [2026-06-23] 중립의 환상 — 편향이 없어 보이는 것과 평가할 줄 모르는 것
 
 - **중심**: Kevin T Webster. *Fairness Is Not Enough: Auditing Competence and Intersectional Bias in AI-powered Resume Screening*. [arXiv:2507.11548](https://arxiv.org/abs/2507.11548)
-- *Evaluating the Promise and Pitfalls of LLMs in Hiring Decisions*. [arXiv:2507.02087](https://arxiv.org/abs/2507.02087)
-- *AI Security Beyond Core Domains: Resume Screening as a Case Study of Adversarial Vulnerabilities in Specialized LLM Applications*. [arXiv:2512.20164](https://arxiv.org/abs/2512.20164)
+- [arXiv:2507.02087](https://arxiv.org/abs/2507.02087)
+- [arXiv:2512.20164](https://arxiv.org/abs/2512.20164)
 - *Self-Preference Bias in Rubric-Based Evaluation of Large Language Models*. [arXiv:2604.06996](https://arxiv.org/abs/2604.06996)
 - *Evaluating Second-Order Bias of LLMs Through Epistemic Entitlement*. [arXiv:2606.17506](https://arxiv.org/abs/2606.17506)
 
@@ -110,11 +123,11 @@ permalink: /bibliography/
 - **중심**: Dani Roytburg 외. *Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators*. [arXiv:2509.03647](https://arxiv.org/abs/2509.03647)
 - *Analyzing the Generalization and Reliability of Steering Vectors*. [arXiv:2407.12404](https://arxiv.org/abs/2407.12404)
 - *Self-Preference Bias in LLM-as-a-Judge*. [arXiv:2410.21819](https://arxiv.org/abs/2410.21819)
-- *SteeringSafety: A Systematic Safety Evaluation Framework of Representation Steering in LLMs*. [arXiv:2509.13450](https://arxiv.org/abs/2509.13450)
-- *Extreme Self-Preference in Language Models*. [arXiv:2509.26464](https://arxiv.org/abs/2509.26464)
-- *Steering Evaluation-Aware Language Models to Act Like They Are Deployed*. [arXiv:2510.20487](https://arxiv.org/abs/2510.20487)
+- [arXiv:2509.13450](https://arxiv.org/abs/2509.13450)
+- [arXiv:2509.26464](https://arxiv.org/abs/2509.26464)
+- [arXiv:2510.20487](https://arxiv.org/abs/2510.20487)
 - *Self-Preference Bias in Rubric-Based Evaluation of Large Language Models*. [arXiv:2604.06996](https://arxiv.org/abs/2604.06996)
-- *Quantifying and Mitigating Self-Preference Bias of LLM Judges*. [arXiv:2604.22891](https://arxiv.org/abs/2604.22891)
+- [arXiv:2604.22891](https://arxiv.org/abs/2604.22891)
 
 ## [2026-06-21] 이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점
 
@@ -131,7 +144,7 @@ permalink: /bibliography/
 - *Do LLM Evaluators Prefer Themselves for a Reason?*. [arXiv:2504.03846](https://arxiv.org/abs/2504.03846)
 - *Fairness Is Not Enough: Auditing Competence and Intersectional Bias in AI-powered Resume Screening*. [arXiv:2507.11548](https://arxiv.org/abs/2507.11548)
 - *Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators*. [arXiv:2509.03647](https://arxiv.org/abs/2509.03647)
-- *Quantifying and Mitigating Self-Preference Bias of LLM Judges*. [arXiv:2604.22891](https://arxiv.org/abs/2604.22891)
+- [arXiv:2604.22891](https://arxiv.org/abs/2604.22891)
 
 ## [2026-06-19] 닮아가는 오답들 — 더 똑똑한 모델일수록 같은 자리에서 함께 틀린다
 
@@ -148,10 +161,10 @@ permalink: /bibliography/
 - **중심**: Shuai Wu 외. *Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias*. [arXiv:2604.02923](https://arxiv.org/abs/2604.02923)
 - [arXiv:2502.00674](https://arxiv.org/abs/2502.00674)
 - *Correlated Errors in Large Language Models*. [arXiv:2506.07962](https://arxiv.org/abs/2506.07962)
-- *The Majority is not always right: RL training for solution aggregation*. [arXiv:2509.06870](https://arxiv.org/abs/2509.06870)
-- *MALBO: Optimizing LLM-Based Multi-Agent Teams via Multi-Objective Bayesian Optimization*. [arXiv:2511.11788](https://arxiv.org/abs/2511.11788)
+- [arXiv:2509.06870](https://arxiv.org/abs/2509.06870)
+- [arXiv:2511.11788](https://arxiv.org/abs/2511.11788)
 - *Towards a Science of Scaling Agent Systems*. [arXiv:2512.08296](https://arxiv.org/abs/2512.08296)
-- *Auditing Multi-Agent LLM Reasoning Trees Outperforms Majority Vote and LLM-as-Judge*. [arXiv:2602.09341](https://arxiv.org/abs/2602.09341)
+- [arXiv:2602.09341](https://arxiv.org/abs/2602.09341)
 - *MARCH: Multi-Agent Reinforced Self-Check for LLM Hallucination*. [arXiv:2603.24579](https://arxiv.org/abs/2603.24579)
 - *Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal*. [arXiv:2606.04223](https://arxiv.org/abs/2606.04223)
 
@@ -166,14 +179,14 @@ permalink: /bibliography/
 ## [2026-06-16] 답이 맞아도 이유는 달랐다 — 합의가 가린 것을 CARA가 재는 법
 
 - **중심**: Xiaoyang Wang, Christopher C. Yang. *The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment*. [arXiv:2606.08457](https://arxiv.org/abs/2606.08457)
-- *Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate*. [arXiv:2509.05396](https://arxiv.org/abs/2509.05396)
-- *The Cost of Consensus: Isolated Self-Correction Prevails Over Unguided Homogeneous Multi-Agent Debate*. [arXiv:2605.00914](https://arxiv.org/abs/2605.00914)
+- [arXiv:2509.05396](https://arxiv.org/abs/2509.05396)
+- [arXiv:2605.00914](https://arxiv.org/abs/2605.00914)
 - *Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal*. [arXiv:2606.04223](https://arxiv.org/abs/2606.04223)
 
 ## [2026-06-15] 잠입자를 찾아내면 합의가 깨끗해질까 — MUG는 환각하는 에이전트를 반사실로 색출한다
 
 - **중심**: Dayong Liang 외. *Multi-agent Undercover Gaming: Hallucination Removal via Counterfactual Test for Multimodal Reasoning*. [arXiv:2511.11182](https://arxiv.org/abs/2511.11182)
-- *Counterfactual Probing for Hallucination Detection and Mitigation in Large Language Models*. [arXiv:2508.01862](https://arxiv.org/abs/2508.01862)
+- [arXiv:2508.01862](https://arxiv.org/abs/2508.01862)
 - *AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents*. [arXiv:2601.06818](https://arxiv.org/abs/2601.06818)
 - *Phase Transition for Budgeted Multi-Agent Synergy*. [arXiv:2601.17311](https://arxiv.org/abs/2601.17311)
 - *Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias*. [arXiv:2604.02923](https://arxiv.org/abs/2604.02923)
@@ -209,8 +222,8 @@ permalink: /bibliography/
 - **중심**: Saeid Jamshidi 외. *Hallucination Cascade: Analyzing Error Propagation in Multi-Agent LLM Systems*. [arXiv:2606.07937](https://arxiv.org/abs/2606.07937)
 - *Multi-agent Undercover Gaming: Hallucination Removal via Counterfactual Test for Multimodal Reasoning*. [arXiv:2511.11182](https://arxiv.org/abs/2511.11182)
 - *AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents*. [arXiv:2601.06818](https://arxiv.org/abs/2601.06818)
-- *When Agents "Misremember" Collectively: Exploring the Mandela Effect in LLM-based Multi-Agent Systems*. [arXiv:2602.00428](https://arxiv.org/abs/2602.00428)
-- *From Flat Logs to Causal Graphs: Hierarchical Failure Attribution for LLM-based Multi-Agent Systems*. [arXiv:2602.23701](https://arxiv.org/abs/2602.23701)
+- [arXiv:2602.00428](https://arxiv.org/abs/2602.00428)
+- [arXiv:2602.23701](https://arxiv.org/abs/2602.23701)
 - *From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration*. [arXiv:2603.04474](https://arxiv.org/abs/2603.04474)
 - *Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias*. [arXiv:2604.02923](https://arxiv.org/abs/2604.02923)
 - *The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment*. [arXiv:2606.08457](https://arxiv.org/abs/2606.08457)
@@ -230,17 +243,17 @@ permalink: /bibliography/
 
 - **중심**: Amir Saeidi 외. *FAMA: Failure-Aware Meta-Agentic Framework for Open-Source LLMs in Interactive Tool Use Environments*. [arXiv:2604.25135](https://arxiv.org/abs/2604.25135)
 - *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657)
-- *How Can Input Reformulation Improve Tool Usage Accuracy in a Complex Dynamic Environment? A Study on $τ$-bench*. [arXiv:2508.20931](https://arxiv.org/abs/2508.20931)
+- [arXiv:2508.20931](https://arxiv.org/abs/2508.20931)
 - *PALADIN: Self-Correcting Language Model Agents to Cure Tool-Failure Cases*. [arXiv:2509.25238](https://arxiv.org/abs/2509.25238)
-- *How Do LLMs Fail In Agentic Scenarios? A Qualitative Analysis of Success and Failure Scenarios of Various LLMs in Agentic Simulations*. [arXiv:2512.07497](https://arxiv.org/abs/2512.07497)
+- [arXiv:2512.07497](https://arxiv.org/abs/2512.07497)
 - *AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence*. [arXiv:2602.16873](https://arxiv.org/abs/2602.16873)
-- *Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets*. [arXiv:2604.02460](https://arxiv.org/abs/2604.02460)
+- [arXiv:2604.02460](https://arxiv.org/abs/2604.02460)
 - *Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems*. [arXiv:2604.22708](https://arxiv.org/abs/2604.22708)
 
 ## [2026-06-09] 무너지는 자리에 이름을 붙이는 일 — MAST가 다중 에이전트 시스템의 실패를 해부하는 법
 
 - **중심**: Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657)
-- *LLM Multi-Agent Systems: Challenges and Open Problems*. [arXiv:2402.03578](https://arxiv.org/abs/2402.03578)
+- [arXiv:2402.03578](https://arxiv.org/abs/2402.03578)
 - *Multi-Agent Risks from Advanced AI*. [arXiv:2502.14143](https://arxiv.org/abs/2502.14143)
 - *Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems*. [arXiv:2505.00212](https://arxiv.org/abs/2505.00212)
 - *Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs*. [arXiv:2505.11556](https://arxiv.org/abs/2505.11556)
@@ -250,15 +263,15 @@ permalink: /bibliography/
 ## [2026-06-08] 에이전트가 에이전트를 짜는 날 — MAC가 벤치마크에 없던 질문을 던지다
 
 - **중심**: Xinyu Lu 외. *The Meta-Agent Challenge: Are Current Agents Capable of Autonomous Agent Development?*. [arXiv:2606.04455](https://arxiv.org/abs/2606.04455)
-- *Automated Design of Agentic Systems*. [arXiv:2408.08435](https://arxiv.org/abs/2408.08435)
-- *Forecasting Frontier Language Model Agent Capabilities*. [arXiv:2502.15850](https://arxiv.org/abs/2502.15850)
+- [arXiv:2408.08435](https://arxiv.org/abs/2408.08435)
+- [arXiv:2502.15850](https://arxiv.org/abs/2502.15850)
 - *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657)
-- *A Self-Improving Coding Agent*. [arXiv:2504.15228](https://arxiv.org/abs/2504.15228)
-- *MetaAgent: Toward Self-Evolving Agent via Tool Meta-Learning*. [arXiv:2508.00271](https://arxiv.org/abs/2508.00271)
+- [arXiv:2504.15228](https://arxiv.org/abs/2504.15228)
+- [arXiv:2508.00271](https://arxiv.org/abs/2508.00271)
 - *Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents*. [arXiv:2509.26354](https://arxiv.org/abs/2509.26354)
 - *Natural Emergent Misalignment from Reward Hacking in Production RL*. [arXiv:2511.18397](https://arxiv.org/abs/2511.18397)
-- *Benchmarking Reward Hack Detection in Code Environments via Contrastive Analysis*. [arXiv:2601.20103](https://arxiv.org/abs/2601.20103)
-- *PostTrainBench: Can LLM Agents Automate LLM Post-Training?*. [arXiv:2603.08640](https://arxiv.org/abs/2603.08640)
+- [arXiv:2601.20103](https://arxiv.org/abs/2601.20103)
+- [arXiv:2603.08640](https://arxiv.org/abs/2603.08640)
 - *Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use*. [arXiv:2605.02964](https://arxiv.org/abs/2605.02964)
 
 ## [2026-06-07] 루브릭이 공유 인터페이스가 될 때 — RubricEM이 정책·판사·기억을 하나로 묶는 방식

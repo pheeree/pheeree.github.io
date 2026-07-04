@@ -1,6 +1,24 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-04-automem-metamemory-as-learnable-skill:
+  title: "메모리를 스킬로 배우다 — AutoMem과 메타기억, 그리고 통제된 실험실의 경계"
+  central:
+    id: "2607.01224"
+    title: "AutoMem: Automated Learning of Memory as a Cognitive Skill"
+    authors: "Shengguang Wu 외"
+    url: "https://arxiv.org/abs/2607.01224"
+  referenced:
+    - { id: "2508.19828", url: "https://arxiv.org/abs/2508.19828" }
+    - { id: "2509.12517", url: "https://arxiv.org/abs/2509.12517" }
+    - { id: "2510.07248", url: "https://arxiv.org/abs/2510.07248" }
+    - { id: "2602.02474", url: "https://arxiv.org/abs/2602.02474" }
+    - { id: "2603.16643", url: "https://arxiv.org/abs/2603.16643" }
+    - { id: "2604.20006", url: "https://arxiv.org/abs/2604.20006" }
+    - { id: "2605.30159", url: "https://arxiv.org/abs/2605.30159" }
+    - { id: "2606.00832", url: "https://arxiv.org/abs/2606.00832" }
+    - { id: "2606.24775", title: "Are We Ready For An Agent-Native Memory System?", url: "https://arxiv.org/abs/2606.24775" }
+
 2026-07-03-sycophancy-taxonomy-fragmented-construct-expert-survey:
   title: "아첨이라 부른 것들을 세어 보니 — 파편화된 구인의 분류표와 전문가의 불일치"
   central:
@@ -29,11 +47,11 @@
     authors: "Myra Cheng 외"
     url: "https://arxiv.org/abs/2505.13995"
   referenced:
-    - { id: "2502.08177", title: "SycEval: Evaluating LLM Sycophancy", url: "https://arxiv.org/abs/2502.08177" }
-    - { id: "2509.12517", title: "Interaction Context Often Increases Sycophancy in LLMs", url: "https://arxiv.org/abs/2509.12517" }
+    - { id: "2502.08177", url: "https://arxiv.org/abs/2502.08177" }
+    - { id: "2509.12517", url: "https://arxiv.org/abs/2509.12517" }
     - { id: "2510.01395", title: "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence", url: "https://arxiv.org/abs/2510.01395" }
     - { id: "2601.16644", url: "https://arxiv.org/abs/2601.16644" }
-    - { id: "2603.16643", title: "Good Arguments Against the People Pleasers: How Reasoning Mitigates (Yet Masks) LLM Sycophancy", url: "https://arxiv.org/abs/2603.16643" }
+    - { id: "2603.16643", url: "https://arxiv.org/abs/2603.16643" }
     - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", url: "https://arxiv.org/abs/2605.21778" }
 
 2026-07-01-sycophancy-reward-decomposition-two-failure-modes:
@@ -47,7 +65,7 @@
     - { id: "2505.13995", title: "ELEPHANT: Measuring and understanding social sycophancy in LLMs", url: "https://arxiv.org/abs/2505.13995" }
     - { id: "2604.02423", title: "SWAY: A Counterfactual Computational Linguistic Approach to Measuring and Mitigating Sycophancy", url: "https://arxiv.org/abs/2604.02423" }
     - { id: "2605.12406", title: "Semantic Reward Collapse and the Preservation of Epistemic Integrity in Adaptive AI Systems", url: "https://arxiv.org/abs/2605.12406" }
-    - { id: "2605.23932", title: "When Correct Beliefs Collapse: Epistemic Resilience of LLMs under Clinical Pressure", url: "https://arxiv.org/abs/2605.23932" }
+    - { id: "2605.23932", url: "https://arxiv.org/abs/2605.23932" }
 
 2026-06-30-dpo-conditional-equivalence-rlhf-collapse:
   title: "DPO는 언제 RLHF가 아닌가 — 조건부 등가성의 붕괴와 최소 수정"
@@ -109,7 +127,7 @@
     authors: "Kartik Chandra 외"
     url: "https://arxiv.org/abs/2602.19141"
   referenced:
-    - { id: "2507.19218", title: "Technological folie à deux: Feedback Loops Between AI Chatbots and Mental Illness", url: "https://arxiv.org/abs/2507.19218" }
+    - { id: "2507.19218", url: "https://arxiv.org/abs/2507.19218" }
     - { id: "2510.01395", title: "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence", url: "https://arxiv.org/abs/2510.01395" }
     - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", url: "https://arxiv.org/abs/2605.21778" }
 
@@ -154,8 +172,8 @@
     authors: "Kevin T Webster"
     url: "https://arxiv.org/abs/2507.11548"
   referenced:
-    - { id: "2507.02087", title: "Evaluating the Promise and Pitfalls of LLMs in Hiring Decisions", url: "https://arxiv.org/abs/2507.02087" }
-    - { id: "2512.20164", title: "AI Security Beyond Core Domains: Resume Screening as a Case Study of Adversarial Vulnerabilities in Specialized LLM Applications", url: "https://arxiv.org/abs/2512.20164" }
+    - { id: "2507.02087", url: "https://arxiv.org/abs/2507.02087" }
+    - { id: "2512.20164", url: "https://arxiv.org/abs/2512.20164" }
     - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", url: "https://arxiv.org/abs/2604.06996" }
     - { id: "2606.17506", title: "Evaluating Second-Order Bias of LLMs Through Epistemic Entitlement", url: "https://arxiv.org/abs/2606.17506" }
 
@@ -169,11 +187,11 @@
   referenced:
     - { id: "2407.12404", title: "Analyzing the Generalization and Reliability of Steering Vectors", url: "https://arxiv.org/abs/2407.12404" }
     - { id: "2410.21819", title: "Self-Preference Bias in LLM-as-a-Judge", url: "https://arxiv.org/abs/2410.21819" }
-    - { id: "2509.13450", title: "SteeringSafety: A Systematic Safety Evaluation Framework of Representation Steering in LLMs", url: "https://arxiv.org/abs/2509.13450" }
-    - { id: "2509.26464", title: "Extreme Self-Preference in Language Models", url: "https://arxiv.org/abs/2509.26464" }
-    - { id: "2510.20487", title: "Steering Evaluation-Aware Language Models to Act Like They Are Deployed", url: "https://arxiv.org/abs/2510.20487" }
+    - { id: "2509.13450", url: "https://arxiv.org/abs/2509.13450" }
+    - { id: "2509.26464", url: "https://arxiv.org/abs/2509.26464" }
+    - { id: "2510.20487", url: "https://arxiv.org/abs/2510.20487" }
     - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", url: "https://arxiv.org/abs/2604.06996" }
-    - { id: "2604.22891", title: "Quantifying and Mitigating Self-Preference Bias of LLM Judges", url: "https://arxiv.org/abs/2604.22891" }
+    - { id: "2604.22891", url: "https://arxiv.org/abs/2604.22891" }
 
 2026-06-21-llm-evaluators-legitimate-vs-harmful-self-preference:
   title: "이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점"
@@ -200,7 +218,7 @@
     - { id: "2504.03846", title: "Do LLM Evaluators Prefer Themselves for a Reason?", url: "https://arxiv.org/abs/2504.03846" }
     - { id: "2507.11548", title: "Fairness Is Not Enough: Auditing Competence and Intersectional Bias in AI-powered Resume Screening", url: "https://arxiv.org/abs/2507.11548" }
     - { id: "2509.03647", title: "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators", url: "https://arxiv.org/abs/2509.03647" }
-    - { id: "2604.22891", title: "Quantifying and Mitigating Self-Preference Bias of LLM Judges", url: "https://arxiv.org/abs/2604.22891" }
+    - { id: "2604.22891", url: "https://arxiv.org/abs/2604.22891" }
 
 2026-06-19-correlated-errors-monoculture-risk:
   title: "닮아가는 오답들 — 더 똑똑한 모델일수록 같은 자리에서 함께 틀린다"
@@ -227,10 +245,10 @@
   referenced:
     - { id: "2502.00674", url: "https://arxiv.org/abs/2502.00674" }
     - { id: "2506.07962", title: "Correlated Errors in Large Language Models", url: "https://arxiv.org/abs/2506.07962" }
-    - { id: "2509.06870", title: "The Majority is not always right: RL training for solution aggregation", url: "https://arxiv.org/abs/2509.06870" }
-    - { id: "2511.11788", title: "MALBO: Optimizing LLM-Based Multi-Agent Teams via Multi-Objective Bayesian Optimization", url: "https://arxiv.org/abs/2511.11788" }
+    - { id: "2509.06870", url: "https://arxiv.org/abs/2509.06870" }
+    - { id: "2511.11788", url: "https://arxiv.org/abs/2511.11788" }
     - { id: "2512.08296", title: "Towards a Science of Scaling Agent Systems", url: "https://arxiv.org/abs/2512.08296" }
-    - { id: "2602.09341", title: "Auditing Multi-Agent LLM Reasoning Trees Outperforms Majority Vote and LLM-as-Judge", url: "https://arxiv.org/abs/2602.09341" }
+    - { id: "2602.09341", url: "https://arxiv.org/abs/2602.09341" }
     - { id: "2603.24579", title: "MARCH: Multi-Agent Reinforced Self-Check for LLM Hallucination", url: "https://arxiv.org/abs/2603.24579" }
     - { id: "2606.04223", title: "Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal", url: "https://arxiv.org/abs/2606.04223" }
 
@@ -255,8 +273,8 @@
     authors: "Xiaoyang Wang, Christopher C. Yang"
     url: "https://arxiv.org/abs/2606.08457"
   referenced:
-    - { id: "2509.05396", title: "Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate", url: "https://arxiv.org/abs/2509.05396" }
-    - { id: "2605.00914", title: "The Cost of Consensus: Isolated Self-Correction Prevails Over Unguided Homogeneous Multi-Agent Debate", url: "https://arxiv.org/abs/2605.00914" }
+    - { id: "2509.05396", url: "https://arxiv.org/abs/2509.05396" }
+    - { id: "2605.00914", url: "https://arxiv.org/abs/2605.00914" }
     - { id: "2606.04223", title: "Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal", url: "https://arxiv.org/abs/2606.04223" }
 
 2026-06-15-mug-multiagent-undercover-gaming-hallucination:
@@ -267,7 +285,7 @@
     authors: "Dayong Liang 외"
     url: "https://arxiv.org/abs/2511.11182"
   referenced:
-    - { id: "2508.01862", title: "Counterfactual Probing for Hallucination Detection and Mitigation in Large Language Models", url: "https://arxiv.org/abs/2508.01862" }
+    - { id: "2508.01862", url: "https://arxiv.org/abs/2508.01862" }
     - { id: "2601.06818", title: "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents", url: "https://arxiv.org/abs/2601.06818" }
     - { id: "2601.17311", title: "Phase Transition for Budgeted Multi-Agent Synergy", url: "https://arxiv.org/abs/2601.17311" }
     - { id: "2604.02923", title: "Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias", url: "https://arxiv.org/abs/2604.02923" }
@@ -318,8 +336,8 @@
   referenced:
     - { id: "2511.11182", title: "Multi-agent Undercover Gaming: Hallucination Removal via Counterfactual Test for Multimodal Reasoning", url: "https://arxiv.org/abs/2511.11182" }
     - { id: "2601.06818", title: "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents", url: "https://arxiv.org/abs/2601.06818" }
-    - { id: "2602.00428", title: "When Agents \"Misremember\" Collectively: Exploring the Mandela Effect in LLM-based Multi-Agent Systems", url: "https://arxiv.org/abs/2602.00428" }
-    - { id: "2602.23701", title: "From Flat Logs to Causal Graphs: Hierarchical Failure Attribution for LLM-based Multi-Agent Systems", url: "https://arxiv.org/abs/2602.23701" }
+    - { id: "2602.00428", url: "https://arxiv.org/abs/2602.00428" }
+    - { id: "2602.23701", url: "https://arxiv.org/abs/2602.23701" }
     - { id: "2603.04474", title: "From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration", url: "https://arxiv.org/abs/2603.04474" }
     - { id: "2604.02923", title: "Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias", url: "https://arxiv.org/abs/2604.02923" }
     - { id: "2606.08457", title: "The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment", url: "https://arxiv.org/abs/2606.08457" }
@@ -349,11 +367,11 @@
     url: "https://arxiv.org/abs/2604.25135"
   referenced:
     - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", url: "https://arxiv.org/abs/2503.13657" }
-    - { id: "2508.20931", title: "How Can Input Reformulation Improve Tool Usage Accuracy in a Complex Dynamic Environment? A Study on $τ$-bench", url: "https://arxiv.org/abs/2508.20931" }
+    - { id: "2508.20931", url: "https://arxiv.org/abs/2508.20931" }
     - { id: "2509.25238", title: "PALADIN: Self-Correcting Language Model Agents to Cure Tool-Failure Cases", url: "https://arxiv.org/abs/2509.25238" }
-    - { id: "2512.07497", title: "How Do LLMs Fail In Agentic Scenarios? A Qualitative Analysis of Success and Failure Scenarios of Various LLMs in Agentic Simulations", url: "https://arxiv.org/abs/2512.07497" }
+    - { id: "2512.07497", url: "https://arxiv.org/abs/2512.07497" }
     - { id: "2602.16873", title: "AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence", url: "https://arxiv.org/abs/2602.16873" }
-    - { id: "2604.02460", title: "Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets", url: "https://arxiv.org/abs/2604.02460" }
+    - { id: "2604.02460", url: "https://arxiv.org/abs/2604.02460" }
     - { id: "2604.22708", title: "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems", url: "https://arxiv.org/abs/2604.22708" }
 
 2026-06-09-mast-multi-agent-failure-taxonomy:
@@ -364,7 +382,7 @@
     authors: "Mert Cemri 외"
     url: "https://arxiv.org/abs/2503.13657"
   referenced:
-    - { id: "2402.03578", title: "LLM Multi-Agent Systems: Challenges and Open Problems", url: "https://arxiv.org/abs/2402.03578" }
+    - { id: "2402.03578", url: "https://arxiv.org/abs/2402.03578" }
     - { id: "2502.14143", title: "Multi-Agent Risks from Advanced AI", url: "https://arxiv.org/abs/2502.14143" }
     - { id: "2505.00212", title: "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems", url: "https://arxiv.org/abs/2505.00212" }
     - { id: "2505.11556", title: "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs", url: "https://arxiv.org/abs/2505.11556" }
@@ -379,15 +397,15 @@
     authors: "Xinyu Lu 외"
     url: "https://arxiv.org/abs/2606.04455"
   referenced:
-    - { id: "2408.08435", title: "Automated Design of Agentic Systems", url: "https://arxiv.org/abs/2408.08435" }
-    - { id: "2502.15850", title: "Forecasting Frontier Language Model Agent Capabilities", url: "https://arxiv.org/abs/2502.15850" }
+    - { id: "2408.08435", url: "https://arxiv.org/abs/2408.08435" }
+    - { id: "2502.15850", url: "https://arxiv.org/abs/2502.15850" }
     - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", url: "https://arxiv.org/abs/2503.13657" }
-    - { id: "2504.15228", title: "A Self-Improving Coding Agent", url: "https://arxiv.org/abs/2504.15228" }
-    - { id: "2508.00271", title: "MetaAgent: Toward Self-Evolving Agent via Tool Meta-Learning", url: "https://arxiv.org/abs/2508.00271" }
+    - { id: "2504.15228", url: "https://arxiv.org/abs/2504.15228" }
+    - { id: "2508.00271", url: "https://arxiv.org/abs/2508.00271" }
     - { id: "2509.26354", title: "Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents", url: "https://arxiv.org/abs/2509.26354" }
     - { id: "2511.18397", title: "Natural Emergent Misalignment from Reward Hacking in Production RL", url: "https://arxiv.org/abs/2511.18397" }
-    - { id: "2601.20103", title: "Benchmarking Reward Hack Detection in Code Environments via Contrastive Analysis", url: "https://arxiv.org/abs/2601.20103" }
-    - { id: "2603.08640", title: "PostTrainBench: Can LLM Agents Automate LLM Post-Training?", url: "https://arxiv.org/abs/2603.08640" }
+    - { id: "2601.20103", url: "https://arxiv.org/abs/2601.20103" }
+    - { id: "2603.08640", url: "https://arxiv.org/abs/2603.08640" }
     - { id: "2605.02964", title: "Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use", url: "https://arxiv.org/abs/2605.02964" }
 
 2026-06-07-rubricem-shared-interface-meta-rl:
