@@ -267,10 +267,13 @@ th {
 }
 
 // 좁은 화면 기본값: 하단 미주(kramdown 기본 위치)
+// 사이드노트(≥1080px)의 왼쪽 회색 선 장치를 하단 블록에도 옮겨, 인용 영역을
+// 왼쪽 얇은 룰로 표시한다. 위쪽 룰은 본문과의 분리로 유지(top+left 두 변).
 .post-content .footnotes {
   margin-top: 2.6em;
-  padding-top: 1.2em;
+  padding: 1.2em 0 0 1.1em;
   border-top: 1px solid var(--rn-rule);
+  border-left: 2px solid var(--rn-rule-soft);
   font-size: 0.86em;
   line-height: 1.6;
   opacity: 0.8;
