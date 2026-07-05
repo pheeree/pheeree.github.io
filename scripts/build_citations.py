@@ -172,7 +172,7 @@ def resolve_ids(ids: set[str], cache: dict, do_fetch: bool) -> dict[str, dict]:
     실재 확인은 HEAD(arxiv.org/abs)로 — export.arxiv.org 가 막힌 환경에서도 동작.
     메타데이터 API 는 best-effort 보너스. 실재 확인된 id 는 제목이 없어도 resolved 에 넣어 링크는 단다.
     부재(404)는 로컬 캐시에 not_found 로 영속 기록해 재조회를 막는다.
-    **제목·카테고리(키워드)가 빈 항목은 영구 확정이 아니라 매 실행 재시도 대상**(미러 캐시가
+    **제목·카테고리(분야)가 빈 항목은 영구 확정이 아니라 매 실행 재시도 대상**(미러 캐시가
     카테고리를 안 주는 경우 포함, 신·구 로컬 캐시 형식 모두) — 한 번의 rate limit·네트워크 실패,
     또는 미러 캐시 쪽 메타 부재가 정보를 영원히 비워두지 않는다."""
     resolved = {}
@@ -332,12 +332,12 @@ def build_bibliography(posts_meta: list[dict]) -> str:
         c = pm.get("central")
         if c:
             who = f"{c['authors']}. " if c.get("authors") else ""
-            kw = f" — 키워드: {', '.join(c['keywords'])}" if c.get("keywords") else ""
+            kw = f" — 분야: {', '.join(c['keywords'])}" if c.get("keywords") else ""
             lines.append(f"- **중심**: {who}*{c['title']}*. [arXiv:{c['id']}]({c['url']}){kw}")
         for r in pm.get("referenced", []):
             who = f"{r['authors']}. " if r.get("authors") else ""
             t = f"*{r['title']}*. " if r.get("title") else ""
-            kw = f" — 키워드: {', '.join(r['keywords'])}" if r.get("keywords") else ""
+            kw = f" — 분야: {', '.join(r['keywords'])}" if r.get("keywords") else ""
             lines.append(f"- {who}{t}[arXiv:{r['id']}]({r['url']}){kw}")
         lines.append("")
     return "\n".join(lines)
