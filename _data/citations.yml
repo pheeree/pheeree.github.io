@@ -1,6 +1,23 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-05-agent-native-memory-workload-alignment:
+  title: "메모리를 워크로드에 맞춘다는 것 — 에이전트 네이티브 메모리 시스템의 해부와 정렬의 문제"
+  central:
+    id: "2606.24775"
+    title: "Are We Ready For An Agent-Native Memory System?"
+    authors: "Wei Zhou 외"
+    keywords: "cs.CL, cs.DB, cs.IR"
+    url: "https://arxiv.org/abs/2606.24775"
+  referenced:
+    - { id: "2508.19828", title: "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning", authors: "Sikuan Yan 외", keywords: "cs.CL, cs.MA", url: "https://arxiv.org/abs/2508.19828" }
+    - { id: "2512.12856", title: "Forgetful but Faithful: A Cognitive Memory Architecture and Benchmark for Privacy-Aware Generative Agents", authors: "Saad Alqithami", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2512.12856" }
+    - { id: "2602.23372", title: "Democratizing GraphRAG: Linear, CPU-Only Graph Retrieval for Multi-Hop QA", authors: "Qizhi Wang", keywords: "cs.IR, cs.AI, cs.CL", url: "https://arxiv.org/abs/2602.23372" }
+    - { id: "2605.23986", title: "MemForest: An Efficient Agent Memory System with Hierarchical Temporal Indexing", authors: "Han Chen 외", keywords: "cs.DB, cs.AI, cs.MA", url: "https://arxiv.org/abs/2605.23986" }
+    - { id: "2605.26252", title: "Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory", authors: "Abdelghny Orogat, Essam Mansour", keywords: "cs.AI, cs.DB", url: "https://arxiv.org/abs/2605.26252" }
+    - { id: "2606.00832", title: "Momento: Evaluating Persistent Memory and Reasoning with Multi-Session Agentic Conversations", authors: "Adril Putra Merin 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.00832" }
+    - { id: "2606.06448", title: "Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads", authors: "Yasmine Omri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.06448" }
+
 2026-07-04-automem-metamemory-as-learnable-skill:
   title: "메모리를 스킬로 배우다 — AutoMem과 메타기억, 그리고 통제된 실험실의 경계"
   central:

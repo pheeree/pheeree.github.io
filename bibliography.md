@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-05] 메모리를 워크로드에 맞춘다는 것 — 에이전트 네이티브 메모리 시스템의 해부와 정렬의 문제
+
+- **중심**: Wei Zhou 외. *Are We Ready For An Agent-Native Memory System?*. [arXiv:2606.24775](https://arxiv.org/abs/2606.24775) — 분야: cs.CL, cs.DB, cs.IR
+- Sikuan Yan 외. *Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning*. [arXiv:2508.19828](https://arxiv.org/abs/2508.19828) — 분야: cs.CL, cs.MA
+- Saad Alqithami. *Forgetful but Faithful: A Cognitive Memory Architecture and Benchmark for Privacy-Aware Generative Agents*. [arXiv:2512.12856](https://arxiv.org/abs/2512.12856) — 분야: cs.AI, cs.LG
+- Qizhi Wang. *Democratizing GraphRAG: Linear, CPU-Only Graph Retrieval for Multi-Hop QA*. [arXiv:2602.23372](https://arxiv.org/abs/2602.23372) — 분야: cs.IR, cs.AI, cs.CL
+- Han Chen 외. *MemForest: An Efficient Agent Memory System with Hierarchical Temporal Indexing*. [arXiv:2605.23986](https://arxiv.org/abs/2605.23986) — 분야: cs.DB, cs.AI, cs.MA
+- Abdelghny Orogat, Essam Mansour. *Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory*. [arXiv:2605.26252](https://arxiv.org/abs/2605.26252) — 분야: cs.AI, cs.DB
+- Adril Putra Merin 외. *Momento: Evaluating Persistent Memory and Reasoning with Multi-Session Agentic Conversations*. [arXiv:2606.00832](https://arxiv.org/abs/2606.00832) — 분야: cs.CL
+- Yasmine Omri 외. *Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads*. [arXiv:2606.06448](https://arxiv.org/abs/2606.06448) — 분야: cs.AI
+
 ## [2026-07-04] 메모리를 스킬로 배우다 — AutoMem과 메타기억, 그리고 통제된 실험실의 경계
 
 - **중심**: Shengguang Wu 외. *AutoMem: Automated Learning of Memory as a Cognitive Skill*. [arXiv:2607.01224](https://arxiv.org/abs/2607.01224) — 분야: cs.AI, cs.CL, cs.MA

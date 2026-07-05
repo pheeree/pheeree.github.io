@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-07-05 — [메모리를 워크로드에 맞춘다는 것 — 에이전트 네이티브 메모리 시스템의 해부와 정렬의 문제](https://pheeree.github.io/2026/07/05/agent-native-memory-workload-alignment/)
 - 2026-07-04 — [메모리를 스킬로 배우다 — AutoMem과 메타기억, 그리고 통제된 실험실의 경계](https://pheeree.github.io/2026/07/04/automem-metamemory-as-learnable-skill/)
 - 2026-07-03 — [연구 로그 1 — 측정기부터 검증합니다: MAST 재측정 파일럿 개시](https://pheeree.github.io/2026/07/03/mast-remeasure-log-1-calibrate-the-instrument/)
 - 2026-07-03 — [아첨이라 부른 것들을 세어 보니 — 파편화된 구인의 분류표와 전문가의 불일치](https://pheeree.github.io/2026/07/03/sycophancy-taxonomy-fragmented-construct-expert-survey/)
