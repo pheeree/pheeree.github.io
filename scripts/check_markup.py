@@ -4,8 +4,10 @@
 kramdown은 수식 스팬보다 줄 구조(표)를 먼저 파싱한다. 그래서 인라인 수식
 `$$...$$` 안이라도 이스케이프 안 된 `|`가 있으면 그 단락이 표로 깨진다
 (2026-07-01 글 실측). mermaid v10의 점선 라벨 결합 실수(`-.- "라벨" .->`)도
-파스 에러를 낸다(2026-07-02 글 실측). 이런 결정론적 함정만 잡는다.
-exit 0 고정 — 보고만 하고 판단은 저자의 몫.
+파스 에러를 낸다(2026-07-02 글 실측). 또 한 다이어그램에 subgraph가 2개 이상이면
+좁은 본문 컬럼(660px)에서 좌우로 짜부된다(2026-07-04 AutoMem 글 실측 — 05-13
+레이아웃 점검이 확립한 "비교 subgraph는 별도 블록으로" 규약의 기계 승격). WARN.
+이런 결정론적 함정만 잡는다. exit 0 고정 — 보고만 하고 판단은 저자의 몫.
 
 사용: check_markup.py <글.md> [글2.md ...]
 """
@@ -19,6 +21,7 @@ CURRENCY = re.compile(r"(?<![\\$\w])\$\d")
 GREEK = re.compile(r"[α-ωΑ-Ω]")
 MERMAID_DOTTED_COMPOUND = re.compile(r"-\.-+\s*\"")  # -.- "라벨" .-> 꼴
 MERMAID_LABEL_NOSPACE = re.compile(r"(?:--|==|-\.)\"")  # 라벨 앞 공백 누락
+MERMAID_SUBGRAPH = re.compile(r"^\s*subgraph\b")  # 한 다이어그램에 2개+면 좁은 컬럼에서 짜부
 
 
 def check(md_path: Path) -> list[str]:
@@ -35,6 +38,8 @@ def check(md_path: Path) -> list[str]:
         offset = 0
 
     fence = None  # None | "mermaid" | "code"
+    mermaid_start = 0
+    mermaid_subgraphs = 0
     in_display_math = False
     for i, line in enumerate(text.splitlines(), start=offset + 1):
         stripped = line.strip()
@@ -42,11 +47,22 @@ def check(md_path: Path) -> list[str]:
         if stripped.startswith("```"):
             if fence is None:
                 fence = "mermaid" if stripped[3:].strip().startswith("mermaid") else "code"
+                if fence == "mermaid":
+                    mermaid_start = i
+                    mermaid_subgraphs = 0
             else:
+                if fence == "mermaid" and mermaid_subgraphs >= 2:
+                    findings.append(
+                        f"{mermaid_start}: [WARN] mermaid 한 다이어그램에 subgraph {mermaid_subgraphs}개 — "
+                        f"좁은 본문 컬럼(660px)에서 짜부된다. 비교용이면 별도 블록 여러 개로 분리, "
+                        f'통합 구조면 방향을 TB로 (formatting.md "Mermaid")'
+                    )
                 fence = None
             continue
 
         if fence == "mermaid":
+            if MERMAID_SUBGRAPH.search(line):
+                mermaid_subgraphs += 1
             if MERMAID_DOTTED_COMPOUND.search(line):
                 findings.append(f'{i}: [ERROR] mermaid 점선 결합 `-.- "라벨" .->` — 정확형은 `-. "라벨" .->`')
             if MERMAID_LABEL_NOSPACE.search(line):

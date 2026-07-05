@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-07-05 — 레이아웃 회귀 수리 (표↔인용컬럼 충돌 + mermaid subgraph 짜부)
+
+07-03 레이아웃 점검이 확립했던 두 규약이 최근 글에서 다시 안 지켜지던 회귀를 잡음.
+
+- **표가 인용 사이드노트 컬럼 침범 (C)**: 넓은 화면(≥1080px)에서 `.post-content > table`이 `max-width:100%`(~940px)로 확장돼, `left:700px`의 사이드노트와 겹쳤다(sycophancy-taxonomy 글 제보). `assets/main.scss`에 `.post.has-sidenotes` 스코프로 표·코드블록을 텍스트 컬럼(660px)에 되돌리는 규칙 추가. 각주 없는 글은 풀폭 유지.
+- **mermaid subgraph 다단 짜부 재발 (A)**: 05-13 점검이 "비교 subgraph는 별도 블록으로" 규약을 세웠으나 기계 점검이 없어 자동 사이클이 놓쳤다(AutoMem 3개·dpo 2개). `scripts/check_markup.py`에 한 다이어그램 subgraph 2개+ WARN 추가 — 파이프·점선 검사와 같은 반열로 승격.
+- **발행글 2편 수리 (B)**: dpo(06-30) 비교 다이어그램을 별도 블록 두 개 + 사이 설명 문장으로 분리. AutoMem(07-04)은 상호 연결된 통합 아키텍처라 `graph LR → TB`로 방향만 전환(의미 보존).
+
+내용(수치·주장)은 불변. 근거·배선은 `knowledge-mind/skills/blog-daily-cycle/CHANGELOG.md` 2026-07-05 항목.
+
 ## 2026-07-03 (3) — 헤더 한 줄 정리 (nav 화이트리스트 + 마스트헤드 축소)
 
 - **nav 중복·오염 정리**: GH Pages의 jekyll-optional-front-matter가 프런트매터 없는 루트 .md(CHANGELOG·CLAUDE·voice)까지 페이지로 만들어 nav에 올리고, index 제목("pheeree 읽기 노트")이 사이트 제목과 중복되던 것 — `_config.yml`에 `header_pages: [bibliography.md]` 화이트리스트를 두어 서지만 남김. 앞으로 루트에 .md를 추가해도 nav는 오염되지 않는다.

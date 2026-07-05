@@ -30,7 +30,7 @@ Stanford의 Shengguang Wu·Hao Zhu·Yuhui Zhang·Xiaohan Wang·Serena Yeung-Levy
 AutoMem의 뼈대는 메모리 스킬이 두 축으로 나뉜다는 데서 시작해요. 하나는 구조(structure) — 프롬프트·파일 스키마·액션 어휘 같은, 에이전트가 딛고 서는 발판이에요. 다른 하나는 능력(proficiency) — 그 발판을 실제로 잘 활용하는 모델의 파라메트릭 역량이죠. 발판이 좋아도 딛는 다리가 서툴면 못 걷고, 다리가 좋아도 발판이 어긋나면 헛디뎌요. AutoMem은 이 둘을 각각 다른 아웃터 루프로 개선해요.
 
 ```mermaid
-graph LR
+graph TB
     subgraph inner["이너 루프 — 게임플레이 (얼려 둠)"]
         A["에이전트 (Qwen2.5-32B)"]
         A -- "LOG / PLAN 매 스텝" --> FS["파일시스템 = 메모리"]

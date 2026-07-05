@@ -307,10 +307,16 @@ th {
   .post-content > blockquote {
     max-width: 660px;
   }
-  // 넓게 써도 되는 블록은 풀폭 허용
+  // 넓게 써도 되는 블록은 풀폭 허용 (각주 사이드노트가 없는 글에서)
   .post-content > pre,
   .post-content > table {
     max-width: 100%;
+  }
+  // 사이드노트가 뜨는 글에선 표·코드블록이 우측 인용 컬럼(left:700px~)을 침범한다.
+  // 텍스트 컬럼(660px)에 맞춰 되돌려 충돌을 없앤다(더 넓은 표는 자체 overflow-x로 스크롤).
+  .post.has-sidenotes .post-content > pre,
+  .post.has-sidenotes .post-content > table {
+    max-width: 660px;
   }
   // 다이어그램은 본문 텍스트 컬럼(660px) 폭에 맞춰 그 중심에 정렬 — 페이지 중심 아님
   .post-content > .mermaid {
