@@ -434,18 +434,27 @@ def find_unlinked(text: str, valid_ids: set[str]) -> list[tuple[int, str]]:
 
 # 중심 논문(source) 링크가 '오늘의 한 편' 섹션에 있는지 점검용.
 TODAY_SECTION = re.compile(r"##\s*오늘의 한 편(.*?)(?=\n##\s|\Z)", re.S)
+# '오늘의 한 편' 헤딩 자체가 없는 글(옛 템플릿·연구 로그 등 다른 장르) 대비 — 그 헤딩이
+# 하려던 일(중심 논문을 독자에게 링크로 소개)이 "편집자에게" 이전 본문 어딘가에서
+# 됐는지 확인한다(도입부에서 바로 소개하거나, 첫 섹션 안에서 소개하는 경우 모두 포함).
+EDITOR_SECTION = re.compile(r"##\s*편집자에게")
 ARXIV_MD_LINK = re.compile(r"\]\(https?://arxiv\.org/abs/(\d{4}\.\d{4,5})")
 
 
 def check_central_link(text: str) -> str | None:
-    """'오늘의 한 편' 섹션에 중심 논문(source PAPER/id) 하이퍼링크가 있는지.
-    누락이면 중심 id 반환, 정상이면 None. arXiv 아닌 source(노트 기반 글)는 대상 외(None)."""
+    """'오늘의 한 편' 섹션(없으면 '편집자에게' 이전 본문 전체)에 중심 논문(source PAPER/id)
+    하이퍼링크가 있는지. 누락이면 중심 id 반환, 정상이면 None.
+    arXiv 아닌 source(노트 기반 글)는 대상 외(None)."""
     m = SOURCE_LINE.search(text)
     if not m:
         return None  # arXiv 중심 논문 아님 — 대상 외
     cid = m.group(1)
     sec = TODAY_SECTION.search(text)
-    body = sec.group(1) if sec else ""
+    if sec:
+        body = sec.group(1)
+    else:
+        em = EDITOR_SECTION.search(text)
+        body = text[:em.start()] if em else text
     if cid in set(ARXIV_MD_LINK.findall(body)):
         return None
     return cid
