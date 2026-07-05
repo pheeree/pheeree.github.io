@@ -66,6 +66,9 @@ FM_TITLE = re.compile(r'^title:\s*["\']?(.+?)["\']?\s*$', re.MULTILINE)
 USER_AGENT = "pheeree-blog/1.0 (mailto:pheeree@gmail.com)"
 RETRY_MAX = 3
 RETRY_BACKOFF = (30, 60, 120)
+# 한 요청에 id 를 너무 많이 실으면(관측상 200개 안팎) 일부가 응답에서 조용히 누락된다 —
+# 실측: 221개 한 배치에서 21개 누락, 그 21개만 단독 조회하면 전부 성공. 청크로 나눠 회피.
+META_BATCH_SIZE = 50
 NS = {"a": "http://www.w3.org/2005/Atom"}
 
 
@@ -81,7 +84,9 @@ def load_mirror_cache() -> dict:
 
 
 def load_resolve_cache() -> dict:
-    """로컬 resolve 캐시. {id: {title,authors,published}} 또는 {id: {not_found: true}}."""
+    """로컬 resolve 캐시. {id: {title,authors,published,categories}} 또는 {id: {not_found: true}}.
+    title·categories 가 빈 문자열/리스트인 항목은 "실재는 확인됐으나 메타 미상"으로,
+    영구 확정이 아니라 매 실행 재시도 대상이다(resolve_ids 참고)."""
     if not RESOLVE_CACHE.exists():
         return {}
     try:
@@ -112,18 +117,30 @@ def head_exists(arxiv_id: str) -> bool | None:
 
 
 def fetch_meta_batch(ids: list[str]) -> dict[str, dict]:
-    """arXiv 메타데이터 API 배치 조회(제목·저자). best-effort — 막힌 환경에선 빈 dict 반환.
-    실재 확인은 head_exists 가 담당하고, 이쪽은 제목 보강용 보너스다."""
+    """arXiv 메타데이터 API 배치 조회(제목·저자·카테고리). best-effort — 막힌 환경에선 빈 dict 반환.
+    실재 확인은 head_exists 가 담당하고, 이쪽은 제목 보강용 보너스다.
+    429(rate limit)는 RETRY_BACKOFF 로 재시도 — 침묵 실패로 영구 캐시되지 않게 한다."""
     if not ids:
         return {}
     q = urllib.parse.urlencode({"id_list": ",".join(ids), "max_results": len(ids)})
     url = f"http://export.arxiv.org/api/query?{q}"
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    try:
-        with urllib.request.urlopen(req, timeout=20) as r:
-            data = r.read().decode("utf-8")
-    except Exception:
-        return {}  # 메타 API 실패는 치명적이지 않음 — 제목 없이 링크만 단다
+
+    data = None
+    for attempt in range(RETRY_MAX):
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                data = r.read().decode("utf-8")
+            break
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and attempt < RETRY_MAX - 1:
+                time.sleep(RETRY_BACKOFF[attempt])
+                continue
+            return {}  # 재시도 소진 또는 429 외 오류 — best-effort 실패
+        except Exception:
+            return {}
+    if data is None:
+        return {}
 
     out = {}
     try:
@@ -140,7 +157,13 @@ def fetch_meta_batch(ids: list[str]) -> dict[str, dict]:
             for a in entry.findall("a:author", NS)
         ]
         published = (entry.find("a:published", NS).text or "")[:10]
-        out[base_id] = {"title": title, "authors": authors, "published": published}
+        categories = [
+            c.get("term", "") for c in entry.findall("a:category", NS) if c.get("term")
+        ]
+        out[base_id] = {
+            "title": title, "authors": authors, "published": published,
+            "categories": categories,
+        }
     return out
 
 
@@ -148,42 +171,63 @@ def resolve_ids(ids: set[str], cache: dict, do_fetch: bool) -> dict[str, dict]:
     """id → 메타. 신뢰 위계: 미러 cache → 로컬 resolve 캐시 → (실재) HEAD + (제목) 메타 API.
     실재 확인은 HEAD(arxiv.org/abs)로 — export.arxiv.org 가 막힌 환경에서도 동작.
     메타데이터 API 는 best-effort 보너스. 실재 확인된 id 는 제목이 없어도 resolved 에 넣어 링크는 단다.
-    부재(404)는 로컬 캐시에 not_found 로 영속 기록해 재조회를 막는다."""
+    부재(404)는 로컬 캐시에 not_found 로 영속 기록해 재조회를 막는다.
+    **제목·카테고리(키워드)가 빈 항목은 영구 확정이 아니라 매 실행 재시도 대상**(미러 캐시가
+    카테고리를 안 주는 경우 포함, 신·구 로컬 캐시 형식 모두) — 한 번의 rate limit·네트워크 실패,
+    또는 미러 캐시 쪽 메타 부재가 정보를 영원히 비워두지 않는다."""
     resolved = {}
     rc = load_resolve_cache()
     missing = []
     for i in ids:
         entry = cache.get(i)
+        rentry = rc.get(i)
         if entry and not entry.get("not_found"):
+            # 미러가 카테고리를 안 주면, 예전에 우리 쪽 API 조회로 이미 받아 둔 게 있는지 먼저 본다
+            # (없으면 매 실행 똑같이 재조회하게 됨).
+            cats = entry.get("categories") or (rentry or {}).get("categories", [])
             resolved[i] = {
                 "title": entry.get("title", ""),
                 "authors": entry.get("authors", []),
                 "published": entry.get("published", ""),
+                "categories": cats,
             }
+            if not resolved[i]["title"] or not resolved[i]["categories"]:
+                missing.append(i)  # 미러·로컬 캐시 모두 카테고리 없음 — 보강 시도(제목은 보존)
             continue
-        rentry = rc.get(i)
         if rentry is not None:
-            if not rentry.get("not_found"):
-                resolved[i] = {
-                    "title": rentry.get("title", ""),
-                    "authors": rentry.get("authors", []),
-                    "published": rentry.get("published", ""),
-                }
-            continue  # not_found 면 죽은 id — 재조회 안 함
+            if rentry.get("not_found"):
+                continue  # 죽은 id — 재조회 안 함
+            resolved[i] = {
+                "title": rentry.get("title", ""),
+                "authors": rentry.get("authors", []),
+                "published": rentry.get("published", ""),
+                "categories": rentry.get("categories", []),
+            }
+            if not rentry.get("title") or not rentry.get("categories"):
+                missing.append(i)  # 제목·카테고리 미상 — 이번 실행에서 재시도
+            continue
         missing.append(i)
 
     if do_fetch and missing:
-        # 1) 제목 보강: 메타 API 배치 시도 (막힌 환경이면 빈 dict — 치명적 아님)
-        meta = fetch_meta_batch(missing)
+        # 1) 제목·카테고리 보강: 메타 API 청크 조회(429 는 내부에서 재시도, 그래도 막히면 빈 dict).
+        # 큰 배치는 일부 id가 응답에서 조용히 빠지는 게 실측돼 META_BATCH_SIZE 로 나눈다.
+        meta = {}
+        for start in range(0, len(missing), META_BATCH_SIZE):
+            chunk = missing[start:start + META_BATCH_SIZE]
+            meta.update(fetch_meta_batch(chunk))
         # 2) 실재 확인: id 별 HEAD (빠름·안정). meta 에 있으면 실재 확정이라 HEAD 생략.
         for cid in missing:
             if cid in meta:
                 rc[cid] = meta[cid]
                 resolved[cid] = meta[cid]
+                save_resolve_cache(rc)
+                continue
+            if cid in resolved:
+                # 이미 값이 있음(미러 유래 제목 등) — 메타 보강만 실패했을 뿐이니 기존 값 보존.
                 continue
             exists = head_exists(cid)
             if exists is True:
-                rc[cid] = {"title": "", "authors": [], "published": ""}  # 실재하나 제목 미상
+                rc[cid] = {"title": "", "authors": [], "published": "", "categories": []}
                 resolved[cid] = rc[cid]
             elif exists is False:
                 rc[cid] = {"not_found": True}  # 404 — 환각·오태, 영속 기록
@@ -246,13 +290,22 @@ def build_yml(posts_meta: list[dict]) -> str:
             lines.append(f'    title: "{yaml_escape(c["title"])}"')
             if c.get("authors"):
                 lines.append(f'    authors: "{yaml_escape(c["authors"])}"')
+            if c.get("keywords"):
+                lines.append(f'    keywords: "{yaml_escape(", ".join(c["keywords"]))}"')
             lines.append(f'    url: "{c["url"]}"')
         refs = pm.get("referenced", [])
         if refs:
             lines.append("  referenced:")
             for r in refs:
                 title = f', title: "{yaml_escape(r["title"])}"' if r.get("title") else ""
-                lines.append(f'    - {{ id: "{r["id"]}"{title}, url: "{r["url"]}" }}')
+                authors = f', authors: "{yaml_escape(r["authors"])}"' if r.get("authors") else ""
+                keywords = (
+                    f', keywords: "{yaml_escape(", ".join(r["keywords"]))}"'
+                    if r.get("keywords") else ""
+                )
+                lines.append(
+                    f'    - {{ id: "{r["id"]}"{title}{authors}{keywords}, url: "{r["url"]}" }}'
+                )
         lines.append("")
     return "\n".join(lines)
 
@@ -279,10 +332,13 @@ def build_bibliography(posts_meta: list[dict]) -> str:
         c = pm.get("central")
         if c:
             who = f"{c['authors']}. " if c.get("authors") else ""
-            lines.append(f"- **중심**: {who}*{c['title']}*. [arXiv:{c['id']}]({c['url']})")
+            kw = f" — 키워드: {', '.join(c['keywords'])}" if c.get("keywords") else ""
+            lines.append(f"- **중심**: {who}*{c['title']}*. [arXiv:{c['id']}]({c['url']}){kw}")
         for r in pm.get("referenced", []):
+            who = f"{r['authors']}. " if r.get("authors") else ""
             t = f"*{r['title']}*. " if r.get("title") else ""
-            lines.append(f"- {t}[arXiv:{r['id']}]({r['url']})")
+            kw = f" — 키워드: {', '.join(r['keywords'])}" if r.get("keywords") else ""
+            lines.append(f"- {who}{t}[arXiv:{r['id']}]({r['url']}){kw}")
         lines.append("")
     return "\n".join(lines)
 
@@ -503,6 +559,7 @@ def main() -> None:
             pm["central"] = {
                 "id": cid, "title": r["title"],
                 "authors": authors_short(r["authors"]),
+                "keywords": r.get("categories", []),
                 "url": f"https://arxiv.org/abs/{cid}",
             }
         refs = []
@@ -510,8 +567,11 @@ def main() -> None:
             if i == cid:
                 continue
             if i in resolved:
+                r = resolved[i]
                 refs.append({
-                    "id": i, "title": resolved[i]["title"],
+                    "id": i, "title": r["title"],
+                    "authors": authors_short(r.get("authors", [])),
+                    "keywords": r.get("categories", []),
                     "url": f"https://arxiv.org/abs/{i}",
                 })
         pm["referenced"] = refs

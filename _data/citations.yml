@@ -7,17 +7,18 @@
     id: "2607.01224"
     title: "AutoMem: Automated Learning of Memory as a Cognitive Skill"
     authors: "Shengguang Wu 외"
+    keywords: "cs.AI, cs.CL, cs.MA"
     url: "https://arxiv.org/abs/2607.01224"
   referenced:
-    - { id: "2508.19828", url: "https://arxiv.org/abs/2508.19828" }
-    - { id: "2509.12517", url: "https://arxiv.org/abs/2509.12517" }
-    - { id: "2510.07248", url: "https://arxiv.org/abs/2510.07248" }
-    - { id: "2602.02474", url: "https://arxiv.org/abs/2602.02474" }
-    - { id: "2603.16643", url: "https://arxiv.org/abs/2603.16643" }
-    - { id: "2604.20006", url: "https://arxiv.org/abs/2604.20006" }
-    - { id: "2605.30159", url: "https://arxiv.org/abs/2605.30159" }
-    - { id: "2606.00832", url: "https://arxiv.org/abs/2606.00832" }
-    - { id: "2606.24775", title: "Are We Ready For An Agent-Native Memory System?", url: "https://arxiv.org/abs/2606.24775" }
+    - { id: "2508.19828", title: "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning", authors: "Sikuan Yan 외", keywords: "cs.CL, cs.MA", url: "https://arxiv.org/abs/2508.19828" }
+    - { id: "2509.12517", title: "Interaction Context Often Increases Sycophancy in LLMs", authors: "Shomik Jain 외", keywords: "cs.HC", url: "https://arxiv.org/abs/2509.12517" }
+    - { id: "2510.07248", title: "Don't Adapt Small Language Models for Tools; Adapt Tool Schemas to the Models", authors: "Jonggeun Lee 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2510.07248" }
+    - { id: "2602.02474", title: "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents", authors: "Haozhen Zhang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2602.02474" }
+    - { id: "2603.16643", title: "Good Arguments Against the People Pleasers: How Reasoning Mitigates (Yet Masks) LLM Sycophancy", authors: "Zhaoxin Feng 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2603.16643" }
+    - { id: "2604.20006", title: "From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents", authors: "Md Nayem Uddin 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2604.20006" }
+    - { id: "2605.30159", title: "Meta-Cognitive Memory Policy Optimization for Long-Horizon LLM Agents", authors: "Ziyan Liu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.30159" }
+    - { id: "2606.00832", title: "Momento: Evaluating Persistent Memory and Reasoning with Multi-Session Agentic Conversations", authors: "Adril Putra Merin 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.00832" }
+    - { id: "2606.24775", title: "Are We Ready For An Agent-Native Memory System?", authors: "Wei Zhou 외", keywords: "cs.CL, cs.DB, cs.IR", url: "https://arxiv.org/abs/2606.24775" }
 
 2026-07-03-sycophancy-taxonomy-fragmented-construct-expert-survey:
   title: "아첨이라 부른 것들을 세어 보니 — 파편화된 구인의 분류표와 전문가의 불일치"
@@ -25,11 +26,12 @@
     id: "2605.21778"
     title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct"
     authors: "Meryl Ye 외"
+    keywords: "cs.AI"
     url: "https://arxiv.org/abs/2605.21778"
   referenced:
-    - { id: "2505.13995", title: "ELEPHANT: Measuring and understanding social sycophancy in LLMs", url: "https://arxiv.org/abs/2505.13995" }
-    - { id: "2509.21305", title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs", url: "https://arxiv.org/abs/2509.21305" }
-    - { id: "2602.01002", title: "How RLHF Amplifies Sycophancy", url: "https://arxiv.org/abs/2602.01002" }
+    - { id: "2505.13995", title: "ELEPHANT: Measuring and understanding social sycophancy in LLMs", authors: "Myra Cheng 외", keywords: "cs.CL, cs.AI, cs.CY", url: "https://arxiv.org/abs/2505.13995" }
+    - { id: "2509.21305", title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs", authors: "Daniel Vennemeyer 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2509.21305" }
+    - { id: "2602.01002", title: "How RLHF Amplifies Sycophancy", authors: "Itai Shapira 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2602.01002" }
 
 2026-07-03-mast-remeasure-log-1-calibrate-the-instrument:
   title: "연구 로그 1 — 측정기부터 검증합니다: MAST 재측정 파일럿 개시"
@@ -37,6 +39,7 @@
     id: "2503.13657"
     title: "Why Do Multi-Agent LLM Systems Fail?"
     authors: "Mert Cemri 외"
+    keywords: "cs.AI"
     url: "https://arxiv.org/abs/2503.13657"
 
 2026-07-02-elephant-social-sycophancy-face-preservation:
@@ -45,14 +48,15 @@
     id: "2505.13995"
     title: "ELEPHANT: Measuring and understanding social sycophancy in LLMs"
     authors: "Myra Cheng 외"
+    keywords: "cs.CL, cs.AI, cs.CY"
     url: "https://arxiv.org/abs/2505.13995"
   referenced:
-    - { id: "2502.08177", url: "https://arxiv.org/abs/2502.08177" }
-    - { id: "2509.12517", url: "https://arxiv.org/abs/2509.12517" }
-    - { id: "2510.01395", title: "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence", url: "https://arxiv.org/abs/2510.01395" }
-    - { id: "2601.16644", url: "https://arxiv.org/abs/2601.16644" }
-    - { id: "2603.16643", url: "https://arxiv.org/abs/2603.16643" }
-    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", url: "https://arxiv.org/abs/2605.21778" }
+    - { id: "2502.08177", title: "SycEval: Evaluating LLM Sycophancy", authors: "Aaron Fanous 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2502.08177" }
+    - { id: "2509.12517", title: "Interaction Context Often Increases Sycophancy in LLMs", authors: "Shomik Jain 외", keywords: "cs.HC", url: "https://arxiv.org/abs/2509.12517" }
+    - { id: "2510.01395", title: "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence", authors: "Myra Cheng 외", keywords: "cs.CY, cs.AI", url: "https://arxiv.org/abs/2510.01395" }
+    - { id: "2601.16644", title: "Sycophancy Hides Linearly in the Attention Heads", authors: "Rifo Genadi 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2601.16644" }
+    - { id: "2603.16643", title: "Good Arguments Against the People Pleasers: How Reasoning Mitigates (Yet Masks) LLM Sycophancy", authors: "Zhaoxin Feng 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2603.16643" }
+    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", authors: "Meryl Ye 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.21778" }
 
 2026-07-01-sycophancy-reward-decomposition-two-failure-modes:
   title: "아첨을 다섯 항으로 가른다 — 압박 항복과 증거 외면의 분해 보상"
@@ -60,12 +64,13 @@
     id: "2604.05279"
     title: "Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition"
     authors: "Muhammad Ahmed Mohsin 외"
+    keywords: "cs.AI"
     url: "https://arxiv.org/abs/2604.05279"
   referenced:
-    - { id: "2505.13995", title: "ELEPHANT: Measuring and understanding social sycophancy in LLMs", url: "https://arxiv.org/abs/2505.13995" }
-    - { id: "2604.02423", title: "SWAY: A Counterfactual Computational Linguistic Approach to Measuring and Mitigating Sycophancy", url: "https://arxiv.org/abs/2604.02423" }
-    - { id: "2605.12406", title: "Semantic Reward Collapse and the Preservation of Epistemic Integrity in Adaptive AI Systems", url: "https://arxiv.org/abs/2605.12406" }
-    - { id: "2605.23932", url: "https://arxiv.org/abs/2605.23932" }
+    - { id: "2505.13995", title: "ELEPHANT: Measuring and understanding social sycophancy in LLMs", authors: "Myra Cheng 외", keywords: "cs.CL, cs.AI, cs.CY", url: "https://arxiv.org/abs/2505.13995" }
+    - { id: "2604.02423", title: "SWAY: A Counterfactual Computational Linguistic Approach to Measuring and Mitigating Sycophancy", authors: "Joy Bhalla, Kristina Gligorić", keywords: "cs.CL, cs.CY", url: "https://arxiv.org/abs/2604.02423" }
+    - { id: "2605.12406", title: "Semantic Reward Collapse and the Preservation of Epistemic Integrity in Adaptive AI Systems", authors: "William Parris", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.12406" }
+    - { id: "2605.23932", title: "When Correct Beliefs Collapse: Epistemic Resilience of LLMs under Clinical Pressure", authors: "Boyu Xiao 외", keywords: "cs.AI, cs.CL, cs.CY, cs.LG", url: "https://arxiv.org/abs/2605.23932" }
 
 2026-06-30-dpo-conditional-equivalence-rlhf-collapse:
   title: "DPO는 언제 RLHF가 아닌가 — 조건부 등가성의 붕괴와 최소 수정"
@@ -73,13 +78,14 @@
     id: "2605.20834"
     title: "Conditional Equivalence of DPO and RLHF: Implicit Assumption, Failure Modes, and Provable Alignment"
     authors: "Zhiqin Yang 외"
+    keywords: "cs.AI, cs.LG"
     url: "https://arxiv.org/abs/2605.20834"
   referenced:
-    - { id: "2405.16455", title: "On the Algorithmic Bias of Aligning Large Language Models with RLHF: Preference Collapse and Matching Regularization", url: "https://arxiv.org/abs/2405.16455" }
-    - { id: "2602.09533", title: "Autoregressive Direct Preference Optimization", url: "https://arxiv.org/abs/2602.09533" }
-    - { id: "2602.11902", title: "Mitigating Mismatch within Reference-based Preference Optimization", url: "https://arxiv.org/abs/2602.11902" }
-    - { id: "2603.19335", title: "Do Post-Training Algorithms Actually Differ? A Controlled Study Across Model Scales Uncovers Scale-Dependent Ranking Inversions", url: "https://arxiv.org/abs/2603.19335" }
-    - { id: "2604.05279", title: "Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition", url: "https://arxiv.org/abs/2604.05279" }
+    - { id: "2405.16455", title: "On the Algorithmic Bias of Aligning Large Language Models with RLHF: Preference Collapse and Matching Regularization", authors: "Jiancong Xiao 외", keywords: "stat.ML, cs.LG, stat.ME", url: "https://arxiv.org/abs/2405.16455" }
+    - { id: "2602.09533", title: "Autoregressive Direct Preference Optimization", authors: "Masanari Oi 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2602.09533" }
+    - { id: "2602.11902", title: "Mitigating Mismatch within Reference-based Preference Optimization", authors: "Suqin Yuan 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2602.11902" }
+    - { id: "2603.19335", title: "Do Post-Training Algorithms Actually Differ? A Controlled Study Across Model Scales Uncovers Scale-Dependent Ranking Inversions", authors: "Xiaoyi Li", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2603.19335" }
+    - { id: "2604.05279", title: "Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition", authors: "Muhammad Ahmed Mohsin 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.05279" }
 
 2026-06-29-rlhf-amplifies-sycophancy-covariance-mechanism:
   title: "훈련이 아첨을 키운다 — RLHF 공분산 증폭과 최소 교정"
@@ -87,13 +93,14 @@
     id: "2602.01002"
     title: "How RLHF Amplifies Sycophancy"
     authors: "Itai Shapira 외"
+    keywords: "cs.AI"
     url: "https://arxiv.org/abs/2602.01002"
   referenced:
-    - { id: "2505.13995", title: "ELEPHANT: Measuring and understanding social sycophancy in LLMs", url: "https://arxiv.org/abs/2505.13995" }
-    - { id: "2603.03291", title: "One Bias After Another: Mechanistic Reward Shaping and Persistent Biases in Language Reward Models", url: "https://arxiv.org/abs/2603.03291" }
-    - { id: "2604.05279", title: "Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition", url: "https://arxiv.org/abs/2604.05279" }
-    - { id: "2605.20834", title: "Conditional Equivalence of DPO and RLHF: Implicit Assumption, Failure Modes, and Provable Alignment", url: "https://arxiv.org/abs/2605.20834" }
-    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", url: "https://arxiv.org/abs/2605.21778" }
+    - { id: "2505.13995", title: "ELEPHANT: Measuring and understanding social sycophancy in LLMs", authors: "Myra Cheng 외", keywords: "cs.CL, cs.AI, cs.CY", url: "https://arxiv.org/abs/2505.13995" }
+    - { id: "2603.03291", title: "One Bias After Another: Mechanistic Reward Shaping and Persistent Biases in Language Reward Models", authors: "Daniel Fein 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2603.03291" }
+    - { id: "2604.05279", title: "Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition", authors: "Muhammad Ahmed Mohsin 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.05279" }
+    - { id: "2605.20834", title: "Conditional Equivalence of DPO and RLHF: Implicit Assumption, Failure Modes, and Provable Alignment", authors: "Zhiqin Yang 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2605.20834" }
+    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", authors: "Meryl Ye 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.21778" }
 
 2026-06-28-sycophancy-not-one-thing-causal-separation:
   title: "아첨은 하나가 아니다 — SyA·GA·SyPR의 인과적 분리"
@@ -101,11 +108,12 @@
     id: "2509.21305"
     title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs"
     authors: "Daniel Vennemeyer 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2509.21305"
   referenced:
-    - { id: "2602.01002", title: "How RLHF Amplifies Sycophancy", url: "https://arxiv.org/abs/2602.01002" }
-    - { id: "2605.18372", title: "The Hidden Cost of Contextual Sycophancy: an AI Literacy Intervention in Human-AI Collaboration", url: "https://arxiv.org/abs/2605.18372" }
-    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", url: "https://arxiv.org/abs/2605.21778" }
+    - { id: "2602.01002", title: "How RLHF Amplifies Sycophancy", authors: "Itai Shapira 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2602.01002" }
+    - { id: "2605.18372", title: "The Hidden Cost of Contextual Sycophancy: an AI Literacy Intervention in Human-AI Collaboration", authors: "Cansu Koyuturk 외", keywords: "cs.HC, cs.AI, cs.CY, cs.ET", url: "https://arxiv.org/abs/2605.18372" }
+    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", authors: "Meryl Ye 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.21778" }
 
 2026-06-27-social-sycophancy-prosocial-dependence:
   title: "아첨이 친절을 줄인다 — 사회적 아첨은 관계 수리 의지를 깎고 의존을 키운다"
@@ -113,11 +121,12 @@
     id: "2510.01395"
     title: "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence"
     authors: "Myra Cheng 외"
+    keywords: "cs.CY, cs.AI"
     url: "https://arxiv.org/abs/2510.01395"
   referenced:
-    - { id: "2509.21305", title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs", url: "https://arxiv.org/abs/2509.21305" }
-    - { id: "2605.18372", title: "The Hidden Cost of Contextual Sycophancy: an AI Literacy Intervention in Human-AI Collaboration", url: "https://arxiv.org/abs/2605.18372" }
-    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", url: "https://arxiv.org/abs/2605.21778" }
+    - { id: "2509.21305", title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs", authors: "Daniel Vennemeyer 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2509.21305" }
+    - { id: "2605.18372", title: "The Hidden Cost of Contextual Sycophancy: an AI Literacy Intervention in Human-AI Collaboration", authors: "Cansu Koyuturk 외", keywords: "cs.HC, cs.AI, cs.CY, cs.ET", url: "https://arxiv.org/abs/2605.18372" }
+    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", authors: "Meryl Ye 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.21778" }
 
 2026-06-26-delusional-spiraling-ideal-bayesian-sycophancy:
   title: "합리적이어도 빠진다 — 아첨하는 챗봇은 이상적 베이지안조차 망상으로 끌고 간다"
@@ -125,11 +134,12 @@
     id: "2602.19141"
     title: "Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians"
     authors: "Kartik Chandra 외"
+    keywords: "cs.AI, cs.CY, cs.HC"
     url: "https://arxiv.org/abs/2602.19141"
   referenced:
-    - { id: "2507.19218", url: "https://arxiv.org/abs/2507.19218" }
-    - { id: "2510.01395", title: "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence", url: "https://arxiv.org/abs/2510.01395" }
-    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", url: "https://arxiv.org/abs/2605.21778" }
+    - { id: "2507.19218", title: "Technological folie à deux: Feedback Loops Between AI Chatbots and Mental Illness", authors: "Sebastian Dohnány 외", keywords: "cs.HC, cs.AI, q-bio.NC", url: "https://arxiv.org/abs/2507.19218" }
+    - { id: "2510.01395", title: "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence", authors: "Myra Cheng 외", keywords: "cs.CY, cs.AI", url: "https://arxiv.org/abs/2510.01395" }
+    - { id: "2605.21778", title: "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct", authors: "Meryl Ye 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.21778" }
 
 2026-06-25-truth-overridden-internal-origins-sycophancy:
   title: "덮어쓰이는 진실 — 아첨은 저장된 편향이 아니라 후기 레이어의 생성물이다"
@@ -137,15 +147,16 @@
     id: "2508.02087"
     title: "When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models"
     authors: "Keyu Wang 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2508.02087"
   referenced:
-    - { id: "2509.21305", title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs", url: "https://arxiv.org/abs/2509.21305" }
-    - { id: "2601.16644", url: "https://arxiv.org/abs/2601.16644" }
-    - { id: "2601.18939", title: "A Few Bad Neurons: Isolating and Surgically Correcting Sycophancy", url: "https://arxiv.org/abs/2601.18939" }
-    - { id: "2602.01002", title: "How RLHF Amplifies Sycophancy", url: "https://arxiv.org/abs/2602.01002" }
-    - { id: "2602.19141", title: "Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians", url: "https://arxiv.org/abs/2602.19141" }
-    - { id: "2604.27633", title: "Political Bias Audits of LLMs Capture Sycophancy to the Inferred Auditor", url: "https://arxiv.org/abs/2604.27633" }
-    - { id: "2605.12991", title: "Not Just RLHF: Why Alignment Alone Won't Fix Multi-Agent Sycophancy", url: "https://arxiv.org/abs/2605.12991" }
+    - { id: "2509.21305", title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs", authors: "Daniel Vennemeyer 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2509.21305" }
+    - { id: "2601.16644", title: "Sycophancy Hides Linearly in the Attention Heads", authors: "Rifo Genadi 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2601.16644" }
+    - { id: "2601.18939", title: "A Few Bad Neurons: Isolating and Surgically Correcting Sycophancy", authors: "Claire O'Brien 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2601.18939" }
+    - { id: "2602.01002", title: "How RLHF Amplifies Sycophancy", authors: "Itai Shapira 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2602.01002" }
+    - { id: "2602.19141", title: "Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians", authors: "Kartik Chandra 외", keywords: "cs.AI, cs.CY, cs.HC", url: "https://arxiv.org/abs/2602.19141" }
+    - { id: "2604.27633", title: "Political Bias Audits of LLMs Capture Sycophancy to the Inferred Auditor", authors: "Petter Törnberg, Michelle Schimmel", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.27633" }
+    - { id: "2605.12991", title: "Not Just RLHF: Why Alignment Alone Won't Fix Multi-Agent Sycophancy", authors: "Adarsh Kumarappan, Ananya Mujoo", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.12991" }
 
 2026-06-24-second-order-bias-misplaced-epistemic-entitlement:
   title: "전제로 굳은 의심 — 편향을 판단하는 회로가 기울 때"
@@ -153,16 +164,17 @@
     id: "2606.17506"
     title: "Evaluating Second-Order Bias of LLMs Through Epistemic Entitlement"
     authors: "Ramaravind Kommiya Mothilal 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2606.17506"
   referenced:
-    - { id: "2502.15361", title: "Does Reasoning Introduce Bias? A Study of Social Bias Evaluation and Mitigation in LLM Reasoning", url: "https://arxiv.org/abs/2502.15361" }
-    - { id: "2503.00555", title: "Safety Tax: Safety Alignment Makes Your Large Reasoning Models Less Reasonable", url: "https://arxiv.org/abs/2503.00555" }
-    - { id: "2506.22316", title: "Evaluating Scoring Bias in LLM-as-a-Judge", url: "https://arxiv.org/abs/2506.22316" }
-    - { id: "2508.15830", title: "DAIQ: Auditing Demographic Attribute Inference from Question in LLMs", url: "https://arxiv.org/abs/2508.15830" }
-    - { id: "2511.03369", title: "Silenced Biases: The Dark Side LLMs Learned to Refuse", url: "https://arxiv.org/abs/2511.03369" }
-    - { id: "2601.13649", title: "Fairness or Fluency? An Investigation into Language Bias of Pairwise LLM-as-a-Judge", url: "https://arxiv.org/abs/2601.13649" }
-    - { id: "2604.16790", title: "Bias in the Loop: Auditing LLM-as-a-Judge for Software Engineering", url: "https://arxiv.org/abs/2604.16790" }
-    - { id: "2605.20410", title: "Mechanics of Bias and Reasoning: Interpreting the Impact of Chain-of-Thought Prompting on Gender Bias in LLMs", url: "https://arxiv.org/abs/2605.20410" }
+    - { id: "2502.15361", title: "Does Reasoning Introduce Bias? A Study of Social Bias Evaluation and Mitigation in LLM Reasoning", authors: "Xuyang Wu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2502.15361" }
+    - { id: "2503.00555", title: "Safety Tax: Safety Alignment Makes Your Large Reasoning Models Less Reasonable", authors: "Tiansheng Huang 외", keywords: "cs.CR, cs.AI, cs.LG", url: "https://arxiv.org/abs/2503.00555" }
+    - { id: "2506.22316", title: "Evaluating Scoring Bias in LLM-as-a-Judge", authors: "Qingquan Li 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2506.22316" }
+    - { id: "2508.15830", title: "DAIQ: Auditing Demographic Attribute Inference from Question in LLMs", authors: "Srikant Panda 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2508.15830" }
+    - { id: "2511.03369", title: "Silenced Biases: The Dark Side LLMs Learned to Refuse", authors: "Rom Himelstein 외", keywords: "cs.CL, stat.ML", url: "https://arxiv.org/abs/2511.03369" }
+    - { id: "2601.13649", title: "Fairness or Fluency? An Investigation into Language Bias of Pairwise LLM-as-a-Judge", authors: "Xiaolin Zhou 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2601.13649" }
+    - { id: "2604.16790", title: "Bias in the Loop: Auditing LLM-as-a-Judge for Software Engineering", authors: "Zixiao Zhao 외", keywords: "cs.SE, cs.AI", url: "https://arxiv.org/abs/2604.16790" }
+    - { id: "2605.20410", title: "Mechanics of Bias and Reasoning: Interpreting the Impact of Chain-of-Thought Prompting on Gender Bias in LLMs", authors: "Edie Pearman 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.20410" }
 
 2026-06-23-illusion-of-neutrality-hiring-ai-competence-fairness:
   title: "중립의 환상 — 편향이 없어 보이는 것과 평가할 줄 모르는 것"
@@ -170,12 +182,13 @@
     id: "2507.11548"
     title: "Fairness Is Not Enough: Auditing Competence and Intersectional Bias in AI-powered Resume Screening"
     authors: "Kevin T Webster"
+    keywords: "cs.CY, cs.AI, cs.CL"
     url: "https://arxiv.org/abs/2507.11548"
   referenced:
-    - { id: "2507.02087", url: "https://arxiv.org/abs/2507.02087" }
-    - { id: "2512.20164", url: "https://arxiv.org/abs/2512.20164" }
-    - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", url: "https://arxiv.org/abs/2604.06996" }
-    - { id: "2606.17506", title: "Evaluating Second-Order Bias of LLMs Through Epistemic Entitlement", url: "https://arxiv.org/abs/2606.17506" }
+    - { id: "2507.02087", title: "Evaluating the Promise and Pitfalls of LLMs in Hiring Decisions", authors: "Eitan Anzenberg 외", keywords: "cs.LG, cs.CL, cs.CY", url: "https://arxiv.org/abs/2507.02087" }
+    - { id: "2512.20164", title: "AI Security Beyond Core Domains: Resume Screening as a Case Study of Adversarial Vulnerabilities in Specialized LLM Applications", authors: "Honglin Mu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2512.20164" }
+    - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", authors: "José Pombal 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2604.06996" }
+    - { id: "2606.17506", title: "Evaluating Second-Order Bias of LLMs Through Epistemic Entitlement", authors: "Ramaravind Kommiya Mothilal 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.17506" }
 
 2026-06-22-breaking-the-mirror-activation-steering-self-preference:
   title: "거울을 깨는 한 방향 — 유해 자기선호만 또렷한 선, 정당 편애는 흩어진 안개"
@@ -183,15 +196,16 @@
     id: "2509.03647"
     title: "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators"
     authors: "Dani Roytburg 외"
+    keywords: "cs.CL, cs.AI, cs.LG"
     url: "https://arxiv.org/abs/2509.03647"
   referenced:
-    - { id: "2407.12404", title: "Analyzing the Generalization and Reliability of Steering Vectors", url: "https://arxiv.org/abs/2407.12404" }
-    - { id: "2410.21819", title: "Self-Preference Bias in LLM-as-a-Judge", url: "https://arxiv.org/abs/2410.21819" }
-    - { id: "2509.13450", url: "https://arxiv.org/abs/2509.13450" }
-    - { id: "2509.26464", url: "https://arxiv.org/abs/2509.26464" }
-    - { id: "2510.20487", url: "https://arxiv.org/abs/2510.20487" }
-    - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", url: "https://arxiv.org/abs/2604.06996" }
-    - { id: "2604.22891", url: "https://arxiv.org/abs/2604.22891" }
+    - { id: "2407.12404", title: "Analyzing the Generalization and Reliability of Steering Vectors", authors: "Daniel Tan 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2407.12404" }
+    - { id: "2410.21819", title: "Self-Preference Bias in LLM-as-a-Judge", authors: "Koki Wataoka 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2410.21819" }
+    - { id: "2509.13450", title: "SteeringSafety: A Systematic Safety Evaluation Framework of Representation Steering in LLMs", authors: "Vincent Siu 외", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2509.13450" }
+    - { id: "2509.26464", title: "Extreme Self-Preference in Language Models", authors: "Steven A. Lehr 외", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2509.26464" }
+    - { id: "2510.20487", title: "Steering Evaluation-Aware Language Models to Act Like They Are Deployed", authors: "Tim Tian Hua 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2510.20487" }
+    - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", authors: "José Pombal 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2604.06996" }
+    - { id: "2604.22891", title: "Quantifying and Mitigating Self-Preference Bias of LLM Judges", authors: "Jinming Yang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.22891" }
 
 2026-06-21-llm-evaluators-legitimate-vs-harmful-self-preference:
   title: "이유 있는 편애와 이유 없는 고집 — 강한 심판이 틀릴 때 가장 깊어지는 맹점"
@@ -199,13 +213,14 @@
     id: "2504.03846"
     title: "Do LLM Evaluators Prefer Themselves for a Reason?"
     authors: "Wei-Lin Chen 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2504.03846"
   referenced:
-    - { id: "2404.13076", title: "LLM Evaluators Recognize and Favor Their Own Generations", url: "https://arxiv.org/abs/2404.13076" }
-    - { id: "2410.21819", title: "Self-Preference Bias in LLM-as-a-Judge", url: "https://arxiv.org/abs/2410.21819" }
-    - { id: "2509.03647", title: "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators", url: "https://arxiv.org/abs/2509.03647" }
-    - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", url: "https://arxiv.org/abs/2604.06996" }
-    - { id: "2606.20093", title: "Self-Preference Is Weak or Absent in Verifiable Instruction-Following Revision: A Four-Model Test Under Genuine Authorship", url: "https://arxiv.org/abs/2606.20093" }
+    - { id: "2404.13076", title: "LLM Evaluators Recognize and Favor Their Own Generations", authors: "Arjun Panickssery 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2404.13076" }
+    - { id: "2410.21819", title: "Self-Preference Bias in LLM-as-a-Judge", authors: "Koki Wataoka 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2410.21819" }
+    - { id: "2509.03647", title: "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators", authors: "Dani Roytburg 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2509.03647" }
+    - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", authors: "José Pombal 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2604.06996" }
+    - { id: "2606.20093", title: "Self-Preference Is Weak or Absent in Verifiable Instruction-Following Revision: A Four-Model Test Under Genuine Authorship", authors: "William Guey, Pierrick Bougault", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.20093" }
 
 2026-06-20-ai-self-preferencing-hiring-mitigation:
   title: "내 이력서를 내가 뽑는다 — LLM 자기선호가 채용 파이프라인을 잠그는 법"
@@ -213,12 +228,13 @@
     id: "2509.00462"
     title: "AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights"
     authors: "Jiannan Xu 외"
+    keywords: "cs.CY"
     url: "https://arxiv.org/abs/2509.00462"
   referenced:
-    - { id: "2504.03846", title: "Do LLM Evaluators Prefer Themselves for a Reason?", url: "https://arxiv.org/abs/2504.03846" }
-    - { id: "2507.11548", title: "Fairness Is Not Enough: Auditing Competence and Intersectional Bias in AI-powered Resume Screening", url: "https://arxiv.org/abs/2507.11548" }
-    - { id: "2509.03647", title: "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators", url: "https://arxiv.org/abs/2509.03647" }
-    - { id: "2604.22891", url: "https://arxiv.org/abs/2604.22891" }
+    - { id: "2504.03846", title: "Do LLM Evaluators Prefer Themselves for a Reason?", authors: "Wei-Lin Chen 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2504.03846" }
+    - { id: "2507.11548", title: "Fairness Is Not Enough: Auditing Competence and Intersectional Bias in AI-powered Resume Screening", authors: "Kevin T Webster", keywords: "cs.CY, cs.AI, cs.CL", url: "https://arxiv.org/abs/2507.11548" }
+    - { id: "2509.03647", title: "Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators", authors: "Dani Roytburg 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2509.03647" }
+    - { id: "2604.22891", title: "Quantifying and Mitigating Self-Preference Bias of LLM Judges", authors: "Jinming Yang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.22891" }
 
 2026-06-19-correlated-errors-monoculture-risk:
   title: "닮아가는 오답들 — 더 똑똑한 모델일수록 같은 자리에서 함께 틀린다"
@@ -226,14 +242,15 @@
     id: "2506.07962"
     title: "Correlated Errors in Large Language Models"
     authors: "Elliot Kim 외"
+    keywords: "cs.CL, cs.AI, cs.CY, stat.ML"
     url: "https://arxiv.org/abs/2506.07962"
   referenced:
-    - { id: "2502.04313", url: "https://arxiv.org/abs/2502.04313" }
-    - { id: "2509.00462", title: "AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights", url: "https://arxiv.org/abs/2509.00462" }
-    - { id: "2510.04226", url: "https://arxiv.org/abs/2510.04226" }
-    - { id: "2602.03794", url: "https://arxiv.org/abs/2602.03794" }
-    - { id: "2602.16873", title: "AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence", url: "https://arxiv.org/abs/2602.16873" }
-    - { id: "2602.24086", url: "https://arxiv.org/abs/2602.24086" }
+    - { id: "2502.04313", title: "Great Models Think Alike and this Undermines AI Oversight", authors: "Shashwat Goel 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2502.04313" }
+    - { id: "2509.00462", title: "AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights", authors: "Jiannan Xu 외", keywords: "cs.CY", url: "https://arxiv.org/abs/2509.00462" }
+    - { id: "2510.04226", title: "Epistemic Diversity and Knowledge Collapse in Large Language Models", authors: "Dustin Wright 외", keywords: "cs.CL, cs.AI, cs.CY, cs.IR, cs.LG", url: "https://arxiv.org/abs/2510.04226" }
+    - { id: "2602.03794", title: "Understanding Agent Scaling in LLM-Based Multi-Agent Systems via Diversity", authors: "Yingxuan Yang 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2602.03794" }
+    - { id: "2602.16873", title: "AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence", authors: "Geunbin Yu", keywords: "cs.MA, cs.AI", url: "https://arxiv.org/abs/2602.16873" }
+    - { id: "2602.24086", title: "The Subjectivity of Monoculture", authors: "Nathanael Jo 외", keywords: "cs.CY, cs.LG", url: "https://arxiv.org/abs/2602.24086" }
 
 2026-06-18-council-mode-heterogeneous-ensemble:
   title: "공동 실패를 어렵게 짓는다 — Council Mode는 이질 합의를 구조로 설계한다"
@@ -241,16 +258,17 @@
     id: "2604.02923"
     title: "Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias"
     authors: "Shuai Wu 외"
+    keywords: "cs.CL, cs.AI"
     url: "https://arxiv.org/abs/2604.02923"
   referenced:
-    - { id: "2502.00674", url: "https://arxiv.org/abs/2502.00674" }
-    - { id: "2506.07962", title: "Correlated Errors in Large Language Models", url: "https://arxiv.org/abs/2506.07962" }
-    - { id: "2509.06870", url: "https://arxiv.org/abs/2509.06870" }
-    - { id: "2511.11788", url: "https://arxiv.org/abs/2511.11788" }
-    - { id: "2512.08296", title: "Towards a Science of Scaling Agent Systems", url: "https://arxiv.org/abs/2512.08296" }
-    - { id: "2602.09341", url: "https://arxiv.org/abs/2602.09341" }
-    - { id: "2603.24579", title: "MARCH: Multi-Agent Reinforced Self-Check for LLM Hallucination", url: "https://arxiv.org/abs/2603.24579" }
-    - { id: "2606.04223", title: "Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal", url: "https://arxiv.org/abs/2606.04223" }
+    - { id: "2502.00674", title: "Rethinking Mixture-of-Agents: Is Mixing Different Large Language Models Beneficial?", authors: "Wenzhe Li 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2502.00674" }
+    - { id: "2506.07962", title: "Correlated Errors in Large Language Models", authors: "Elliot Kim 외", keywords: "cs.CL, cs.AI, cs.CY, stat.ML", url: "https://arxiv.org/abs/2506.07962" }
+    - { id: "2509.06870", title: "The Majority is not always right: RL training for solution aggregation", authors: "Wenting Zhao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2509.06870" }
+    - { id: "2511.11788", title: "MALBO: Optimizing LLM-Based Multi-Agent Teams via Multi-Objective Bayesian Optimization", authors: "Antonio Sabbatella", keywords: "cs.MA, cs.AI", url: "https://arxiv.org/abs/2511.11788" }
+    - { id: "2512.08296", title: "Towards a Science of Scaling Agent Systems", authors: "Yubin Kim 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2512.08296" }
+    - { id: "2602.09341", title: "Auditing Multi-Agent LLM Reasoning Trees Outperforms Majority Vote and LLM-as-Judge", authors: "Wei Yang 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2602.09341" }
+    - { id: "2603.24579", title: "MARCH: Multi-Agent Reinforced Self-Check for LLM Hallucination", authors: "Zhuo Li 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2603.24579" }
+    - { id: "2606.04223", title: "Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal", authors: "Michał Wawer, Jarosław A. Chudziak", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.04223" }
 
 2026-06-17-internal-states-knowledge-recall-not-truthfulness:
   title: "모델은 자기가 틀린 걸 알까 — 숨겨진 상태는 진실이 아니라 회상을 비춘다"
@@ -258,12 +276,13 @@
     id: "2510.09033"
     title: "Do LLMs Really Know What They Don't Know? Internal States Mainly Reflect Knowledge Recall Rather Than Truthfulness"
     authors: "Chi Seng Cheang 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2510.09033"
   referenced:
-    - { id: "2410.02707", title: "LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations", url: "https://arxiv.org/abs/2410.02707" }
-    - { id: "2508.02087", title: "When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models", url: "https://arxiv.org/abs/2508.02087" }
-    - { id: "2511.07318", title: "When Bias Pretends to Be Truth: How Spurious Correlations Undermine Hallucination Detection in LLMs", url: "https://arxiv.org/abs/2511.07318" }
-    - { id: "2605.17028", title: "PARALLAX: Separating Genuine Hallucination Detection from Benchmark Construction Artifacts", url: "https://arxiv.org/abs/2605.17028" }
+    - { id: "2410.02707", title: "LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations", authors: "Hadas Orgad 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2410.02707" }
+    - { id: "2508.02087", title: "When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models", authors: "Keyu Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2508.02087" }
+    - { id: "2511.07318", title: "When Bias Pretends to Be Truth: How Spurious Correlations Undermine Hallucination Detection in LLMs", authors: "Shaowen Wang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2511.07318" }
+    - { id: "2605.17028", title: "PARALLAX: Separating Genuine Hallucination Detection from Benchmark Construction Artifacts", authors: "Khizar Hussain, Murat Kantarcioglu", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.17028" }
 
 2026-06-16-consistency-illusion-cara-reasoning-alignment:
   title: "답이 맞아도 이유는 달랐다 — 합의가 가린 것을 CARA가 재는 법"
@@ -271,11 +290,12 @@
     id: "2606.08457"
     title: "The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment"
     authors: "Xiaoyang Wang, Christopher C. Yang"
+    keywords: "cs.MA"
     url: "https://arxiv.org/abs/2606.08457"
   referenced:
-    - { id: "2509.05396", url: "https://arxiv.org/abs/2509.05396" }
-    - { id: "2605.00914", url: "https://arxiv.org/abs/2605.00914" }
-    - { id: "2606.04223", title: "Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal", url: "https://arxiv.org/abs/2606.04223" }
+    - { id: "2509.05396", title: "Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate", authors: "Andrea Wynn 외", keywords: "cs.CL, cs.AI, cs.MA", url: "https://arxiv.org/abs/2509.05396" }
+    - { id: "2605.00914", title: "The Cost of Consensus: Isolated Self-Correction Prevails Over Unguided Homogeneous Multi-Agent Debate", authors: "Blaž Bertalanič, Carolina Fortuna", keywords: "cs.MA, cs.AI", url: "https://arxiv.org/abs/2605.00914" }
+    - { id: "2606.04223", title: "Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal", authors: "Michał Wawer, Jarosław A. Chudziak", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.04223" }
 
 2026-06-15-mug-multiagent-undercover-gaming-hallucination:
   title: "잠입자를 찾아내면 합의가 깨끗해질까 — MUG는 환각하는 에이전트를 반사실로 색출한다"
@@ -283,13 +303,14 @@
     id: "2511.11182"
     title: "Multi-agent Undercover Gaming: Hallucination Removal via Counterfactual Test for Multimodal Reasoning"
     authors: "Dayong Liang 외"
+    keywords: "cs.AI, cs.CL, cs.MA, cs.MM"
     url: "https://arxiv.org/abs/2511.11182"
   referenced:
-    - { id: "2508.01862", url: "https://arxiv.org/abs/2508.01862" }
-    - { id: "2601.06818", title: "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents", url: "https://arxiv.org/abs/2601.06818" }
-    - { id: "2601.17311", title: "Phase Transition for Budgeted Multi-Agent Synergy", url: "https://arxiv.org/abs/2601.17311" }
-    - { id: "2604.02923", title: "Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias", url: "https://arxiv.org/abs/2604.02923" }
-    - { id: "2606.08457", title: "The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment", url: "https://arxiv.org/abs/2606.08457" }
+    - { id: "2508.01862", title: "Counterfactual Probing for Hallucination Detection and Mitigation in Large Language Models", authors: "Yijun Feng", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2508.01862" }
+    - { id: "2601.06818", title: "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents", authors: "Xuannan Liu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2601.06818" }
+    - { id: "2601.17311", title: "Phase Transition for Budgeted Multi-Agent Synergy", authors: "Bang Liu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2601.17311" }
+    - { id: "2604.02923", title: "Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias", authors: "Shuai Wu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2604.02923" }
+    - { id: "2606.08457", title: "The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment", authors: "Xiaoyang Wang, Christopher C. Yang", keywords: "cs.MA", url: "https://arxiv.org/abs/2606.08457" }
 
 2026-06-14-mechelk-latent-knowledge-elicitation:
   title: "빈 우물이 아니라 잘못 잡은 삽이었다면 — MechELK는 표면 아래 잠긴 지식을 인과로 길어 올린다"
@@ -297,18 +318,19 @@
     id: "2605.28825"
     title: "MechELK: A Mechanistic Interpretability Framework for Eliciting Latent Knowledge in Large Language Models"
     authors: "Ji-jun Park 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2605.28825"
   referenced:
-    - { id: "2404.18865", title: "Truth-value judgment in language models: 'truth directions' are context sensitive", url: "https://arxiv.org/abs/2404.18865" }
-    - { id: "2407.08734", title: "Transformer Circuit Faithfulness Metrics are not Robust", url: "https://arxiv.org/abs/2407.08734" }
-    - { id: "2407.12404", title: "Analyzing the Generalization and Reliability of Steering Vectors", url: "https://arxiv.org/abs/2407.12404" }
-    - { id: "2410.02707", title: "LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations", url: "https://arxiv.org/abs/2410.02707" }
-    - { id: "2410.15999", title: "Steering Knowledge Selection Behaviours in LLMs via SAE-Based Representation Engineering", url: "https://arxiv.org/abs/2410.15999" }
-    - { id: "2506.15963", title: "On the Limits of Sparse Autoencoders: A Theoretical Framework and Reweighted Remedy", url: "https://arxiv.org/abs/2506.15963" }
-    - { id: "2510.09033", title: "Do LLMs Really Know What They Don't Know? Internal States Mainly Reflect Knowledge Recall Rather Than Truthfulness", url: "https://arxiv.org/abs/2510.09033" }
-    - { id: "2602.14111", title: "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?", url: "https://arxiv.org/abs/2602.14111" }
-    - { id: "2605.18229", title: "Are Sparse Autoencoder Benchmarks Reliable?", url: "https://arxiv.org/abs/2605.18229" }
-    - { id: "2605.26366", title: "Automatic Layer Selection for Hallucination Detection", url: "https://arxiv.org/abs/2605.26366" }
+    - { id: "2404.18865", title: "Truth-value judgment in language models: 'truth directions' are context sensitive", authors: "Stefan F. Schouten 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2404.18865" }
+    - { id: "2407.08734", title: "Transformer Circuit Faithfulness Metrics are not Robust", authors: "Joseph Miller 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2407.08734" }
+    - { id: "2407.12404", title: "Analyzing the Generalization and Reliability of Steering Vectors", authors: "Daniel Tan 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2407.12404" }
+    - { id: "2410.02707", title: "LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations", authors: "Hadas Orgad 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2410.02707" }
+    - { id: "2410.15999", title: "Steering Knowledge Selection Behaviours in LLMs via SAE-Based Representation Engineering", authors: "Yu Zhao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2410.15999" }
+    - { id: "2506.15963", title: "On the Limits of Sparse Autoencoders: A Theoretical Framework and Reweighted Remedy", authors: "Jingyi Cui 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2506.15963" }
+    - { id: "2510.09033", title: "Do LLMs Really Know What They Don't Know? Internal States Mainly Reflect Knowledge Recall Rather Than Truthfulness", authors: "Chi Seng Cheang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2510.09033" }
+    - { id: "2602.14111", title: "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?", authors: "Anton Korznikov 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2602.14111" }
+    - { id: "2605.18229", title: "Are Sparse Autoencoder Benchmarks Reliable?", authors: "David Chanin", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.18229" }
+    - { id: "2605.26366", title: "Automatic Layer Selection for Hallucination Detection", authors: "Xinpeng Wang 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2605.26366" }
 
 2026-06-13-hallucination-knowledge-conflict-correlation:
   title: "직관이 가리킨 곳을 파보니 빈 우물이었다 — 환각과 지식 충돌은 내부 표현에서 만나지 않는다"
@@ -316,15 +338,16 @@
     id: "2606.08705"
     title: "Analyzing the Correlation Between Hallucinations and Knowledge Conflicts in Large Language Models"
     authors: "Lucrezia Laraspata 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2606.08705"
   referenced:
-    - { id: "2305.13534", title: "How Language Model Hallucinations Can Snowball", url: "https://arxiv.org/abs/2305.13534" }
-    - { id: "2409.08435", title: "When Context Leads but Parametric Memory Follows in Large Language Models", url: "https://arxiv.org/abs/2409.08435" }
-    - { id: "2410.15999", title: "Steering Knowledge Selection Behaviours in LLMs via SAE-Based Representation Engineering", url: "https://arxiv.org/abs/2410.15999" }
-    - { id: "2410.16090", title: "Analysing the Residual Stream of Language Models Under Knowledge Conflicts", url: "https://arxiv.org/abs/2410.16090" }
-    - { id: "2509.19372", title: "Representation-based Broad Hallucination Detectors Fail to Generalize Out of Distribution", url: "https://arxiv.org/abs/2509.19372" }
-    - { id: "2602.18671", title: "Spilled Energy in Large Language Models", url: "https://arxiv.org/abs/2602.18671" }
-    - { id: "2606.08158", title: "Constrained Paraphrase Consistency for LLM Hallucination Detection", url: "https://arxiv.org/abs/2606.08158" }
+    - { id: "2305.13534", title: "How Language Model Hallucinations Can Snowball", authors: "Muru Zhang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2305.13534" }
+    - { id: "2409.08435", title: "When Context Leads but Parametric Memory Follows in Large Language Models", authors: "Yufei Tao 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2409.08435" }
+    - { id: "2410.15999", title: "Steering Knowledge Selection Behaviours in LLMs via SAE-Based Representation Engineering", authors: "Yu Zhao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2410.15999" }
+    - { id: "2410.16090", title: "Analysing the Residual Stream of Language Models Under Knowledge Conflicts", authors: "Yu Zhao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2410.16090" }
+    - { id: "2509.19372", title: "Representation-based Broad Hallucination Detectors Fail to Generalize Out of Distribution", authors: "Zuzanna Dubanowska 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2509.19372" }
+    - { id: "2602.18671", title: "Spilled Energy in Large Language Models", authors: "Adrian Robert Minut 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2602.18671" }
+    - { id: "2606.08158", title: "Constrained Paraphrase Consistency for LLM Hallucination Detection", authors: "Shanshan Lin 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2606.08158" }
 
 2026-06-12-hallucination-cascade-dynamic-propagation:
   title: "환각은 출력에 머물지 않고 연쇄를 따라 흐른다 — Hallucination Cascade가 본 전파의 동역학"
@@ -332,15 +355,16 @@
     id: "2606.07937"
     title: "Hallucination Cascade: Analyzing Error Propagation in Multi-Agent LLM Systems"
     authors: "Saeid Jamshidi 외"
+    keywords: "cs.CR"
     url: "https://arxiv.org/abs/2606.07937"
   referenced:
-    - { id: "2511.11182", title: "Multi-agent Undercover Gaming: Hallucination Removal via Counterfactual Test for Multimodal Reasoning", url: "https://arxiv.org/abs/2511.11182" }
-    - { id: "2601.06818", title: "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents", url: "https://arxiv.org/abs/2601.06818" }
-    - { id: "2602.00428", url: "https://arxiv.org/abs/2602.00428" }
-    - { id: "2602.23701", url: "https://arxiv.org/abs/2602.23701" }
-    - { id: "2603.04474", title: "From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration", url: "https://arxiv.org/abs/2603.04474" }
-    - { id: "2604.02923", title: "Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias", url: "https://arxiv.org/abs/2604.02923" }
-    - { id: "2606.08457", title: "The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment", url: "https://arxiv.org/abs/2606.08457" }
+    - { id: "2511.11182", title: "Multi-agent Undercover Gaming: Hallucination Removal via Counterfactual Test for Multimodal Reasoning", authors: "Dayong Liang 외", keywords: "cs.AI, cs.CL, cs.MA, cs.MM", url: "https://arxiv.org/abs/2511.11182" }
+    - { id: "2601.06818", title: "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents", authors: "Xuannan Liu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2601.06818" }
+    - { id: "2602.00428", title: "When Agents \"Misremember\" Collectively: Exploring the Mandela Effect in LLM-based Multi-Agent Systems", authors: "Naen Xu 외", keywords: "cs.CL, cs.AI, cs.CR", url: "https://arxiv.org/abs/2602.00428" }
+    - { id: "2602.23701", title: "From Flat Logs to Causal Graphs: Hierarchical Failure Attribution for LLM-based Multi-Agent Systems", authors: "Yawen Wang 외", keywords: "cs.AI, cs.SE", url: "https://arxiv.org/abs/2602.23701" }
+    - { id: "2603.04474", title: "From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration", authors: "Yizhe Xie 외", keywords: "cs.MA, cs.AI", url: "https://arxiv.org/abs/2603.04474" }
+    - { id: "2604.02923", title: "Council Mode: A Heterogeneous Multi-Agent Consensus Framework for Reducing LLM Hallucination and Bias", authors: "Shuai Wu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2604.02923" }
+    - { id: "2606.08457", title: "The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment", authors: "Xiaoyang Wang, Christopher C. Yang", keywords: "cs.MA", url: "https://arxiv.org/abs/2606.08457" }
 
 2026-06-11-self-harness-iterative-harness-improvement:
   title: "장부를 쥔 손이 장부를 고쳐 쓸 때 — Self-Harness가 에이전트에게 자기 하니스를 맡기는 법"
@@ -348,15 +372,16 @@
     id: "2606.09498"
     title: "Self-Harness: Harnesses That Improve Themselves"
     authors: "Hangfan Zhang 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2606.09498"
   referenced:
-    - { id: "2603.28052", title: "Meta-Harness: End-to-End Optimization of Model Harnesses", url: "https://arxiv.org/abs/2603.28052" }
-    - { id: "2604.25850", title: "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses", url: "https://arxiv.org/abs/2604.25850" }
-    - { id: "2605.26731", title: "It's Not the Capability: Harness Sensitivity Is Non-Monotone Across LLM Agent Tiers", url: "https://arxiv.org/abs/2605.26731" }
-    - { id: "2605.27276", title: "SIA: Self Improving AI with Harness & Weight Updates", url: "https://arxiv.org/abs/2605.27276" }
-    - { id: "2605.30621", title: "Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents", url: "https://arxiv.org/abs/2605.30621" }
-    - { id: "2606.05922", title: "Evolving Agents in the Dark: Retrospective Harness Optimization via Self-Preference", url: "https://arxiv.org/abs/2606.05922" }
-    - { id: "2606.06324", title: "From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws", url: "https://arxiv.org/abs/2606.06324" }
+    - { id: "2603.28052", title: "Meta-Harness: End-to-End Optimization of Model Harnesses", authors: "Yoonho Lee 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.28052" }
+    - { id: "2604.25850", title: "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses", authors: "Jiahang Lin 외", keywords: "cs.CL, cs.SE", url: "https://arxiv.org/abs/2604.25850" }
+    - { id: "2605.26731", title: "It's Not the Capability: Harness Sensitivity Is Non-Monotone Across LLM Agent Tiers", authors: "Yong-eun Cho", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2605.26731" }
+    - { id: "2605.27276", title: "SIA: Self Improving AI with Harness & Weight Updates", authors: "Prannay Hebbar 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2605.27276" }
+    - { id: "2605.30621", title: "Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents", authors: "Minhua Lin 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.30621" }
+    - { id: "2606.05922", title: "Evolving Agents in the Dark: Retrospective Harness Optimization via Self-Preference", authors: "Wenbo Pan 외", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2606.05922" }
+    - { id: "2606.06324", title: "From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws", authors: "Mengzhuo Chen 외", keywords: "cs.SE, cs.MA", url: "https://arxiv.org/abs/2606.06324" }
 
 2026-06-10-fama-failure-aware-minimal-agent-mitigation:
   title: "이름 붙인 자리에 붕대를 두르는 일 — FAMA가 실패에서 최소한의 손길만 골라내는 법"
@@ -364,15 +389,16 @@
     id: "2604.25135"
     title: "FAMA: Failure-Aware Meta-Agentic Framework for Open-Source LLMs in Interactive Tool Use Environments"
     authors: "Amir Saeidi 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2604.25135"
   referenced:
-    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", url: "https://arxiv.org/abs/2503.13657" }
-    - { id: "2508.20931", url: "https://arxiv.org/abs/2508.20931" }
-    - { id: "2509.25238", title: "PALADIN: Self-Correcting Language Model Agents to Cure Tool-Failure Cases", url: "https://arxiv.org/abs/2509.25238" }
-    - { id: "2512.07497", url: "https://arxiv.org/abs/2512.07497" }
-    - { id: "2602.16873", title: "AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence", url: "https://arxiv.org/abs/2602.16873" }
-    - { id: "2604.02460", url: "https://arxiv.org/abs/2604.02460" }
-    - { id: "2604.22708", title: "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems", url: "https://arxiv.org/abs/2604.22708" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2508.20931", title: "How Can Input Reformulation Improve Tool Usage Accuracy in a Complex Dynamic Environment? A Study on $τ$-bench", authors: "Venkatesh Mishra 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2508.20931" }
+    - { id: "2509.25238", title: "PALADIN: Self-Correcting Language Model Agents to Cure Tool-Failure Cases", authors: "Sri Vatsa Vuddanti 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2509.25238" }
+    - { id: "2512.07497", title: "How Do LLMs Fail In Agentic Scenarios? A Qualitative Analysis of Success and Failure Scenarios of Various LLMs in Agentic Simulations", authors: "JV Roig", keywords: "cs.AI, cs.SE", url: "https://arxiv.org/abs/2512.07497" }
+    - { id: "2602.16873", title: "AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence", authors: "Geunbin Yu", keywords: "cs.MA, cs.AI", url: "https://arxiv.org/abs/2602.16873" }
+    - { id: "2604.02460", title: "Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets", authors: "Dat Tran, Douwe Kiela", keywords: "cs.CL, cs.MA", url: "https://arxiv.org/abs/2604.02460" }
+    - { id: "2604.22708", title: "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems", authors: "Mengzhuo Chen 외", keywords: "cs.MA", url: "https://arxiv.org/abs/2604.22708" }
 
 2026-06-09-mast-multi-agent-failure-taxonomy:
   title: "무너지는 자리에 이름을 붙이는 일 — MAST가 다중 에이전트 시스템의 실패를 해부하는 법"
@@ -380,14 +406,15 @@
     id: "2503.13657"
     title: "Why Do Multi-Agent LLM Systems Fail?"
     authors: "Mert Cemri 외"
+    keywords: "cs.AI"
     url: "https://arxiv.org/abs/2503.13657"
   referenced:
-    - { id: "2402.03578", url: "https://arxiv.org/abs/2402.03578" }
-    - { id: "2502.14143", title: "Multi-Agent Risks from Advanced AI", url: "https://arxiv.org/abs/2502.14143" }
-    - { id: "2505.00212", title: "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems", url: "https://arxiv.org/abs/2505.00212" }
-    - { id: "2505.11556", title: "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs", url: "https://arxiv.org/abs/2505.11556" }
-    - { id: "2509.23537", title: "Beyond the Strongest LLM: Multi-Turn Multi-Agent Orchestration vs. Single LLMs on Benchmarks", url: "https://arxiv.org/abs/2509.23537" }
-    - { id: "2601.22290", url: "https://arxiv.org/abs/2601.22290" }
+    - { id: "2402.03578", title: "LLM Multi-Agent Systems: Challenges and Open Problems", authors: "Shanshan Han 외", keywords: "cs.MA, cs.AI", url: "https://arxiv.org/abs/2402.03578" }
+    - { id: "2502.14143", title: "Multi-Agent Risks from Advanced AI", authors: "Lewis Hammond 외", keywords: "cs.MA, cs.AI, cs.CY, cs.ET, cs.LG", url: "https://arxiv.org/abs/2502.14143" }
+    - { id: "2505.00212", title: "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems", authors: "Shaokun Zhang 외", keywords: "cs.MA, cs.CL", url: "https://arxiv.org/abs/2505.00212" }
+    - { id: "2505.11556", title: "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs", authors: "Yuxuan Li 외", keywords: "cs.CL, cs.AI, cs.MA", url: "https://arxiv.org/abs/2505.11556" }
+    - { id: "2509.23537", title: "Beyond the Strongest LLM: Multi-Turn Multi-Agent Orchestration vs. Single LLMs on Benchmarks", authors: "Aaron Xuxiang Tian 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2509.23537" }
+    - { id: "2601.22290", title: "The Six Sigma Agent: Achieving Enterprise-Grade Reliability in LLM Systems Through Consensus-Driven Decomposed Execution", authors: "Khush Patel 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2601.22290" }
 
 2026-06-08-meta-agent-challenge-autonomous-agent-design:
   title: "에이전트가 에이전트를 짜는 날 — MAC가 벤치마크에 없던 질문을 던지다"
@@ -395,18 +422,19 @@
     id: "2606.04455"
     title: "The Meta-Agent Challenge: Are Current Agents Capable of Autonomous Agent Development?"
     authors: "Xinyu Lu 외"
+    keywords: "cs.AI, cs.CL"
     url: "https://arxiv.org/abs/2606.04455"
   referenced:
-    - { id: "2408.08435", url: "https://arxiv.org/abs/2408.08435" }
-    - { id: "2502.15850", url: "https://arxiv.org/abs/2502.15850" }
-    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", url: "https://arxiv.org/abs/2503.13657" }
-    - { id: "2504.15228", url: "https://arxiv.org/abs/2504.15228" }
-    - { id: "2508.00271", url: "https://arxiv.org/abs/2508.00271" }
-    - { id: "2509.26354", title: "Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents", url: "https://arxiv.org/abs/2509.26354" }
-    - { id: "2511.18397", title: "Natural Emergent Misalignment from Reward Hacking in Production RL", url: "https://arxiv.org/abs/2511.18397" }
-    - { id: "2601.20103", url: "https://arxiv.org/abs/2601.20103" }
-    - { id: "2603.08640", url: "https://arxiv.org/abs/2603.08640" }
-    - { id: "2605.02964", title: "Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use", url: "https://arxiv.org/abs/2605.02964" }
+    - { id: "2408.08435", title: "Automated Design of Agentic Systems", authors: "Shengran Hu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2408.08435" }
+    - { id: "2502.15850", title: "Forecasting Frontier Language Model Agent Capabilities", authors: "Govind Pimpale 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2502.15850" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2504.15228", title: "A Self-Improving Coding Agent", authors: "Maxime Robeyns 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2504.15228" }
+    - { id: "2508.00271", title: "MetaAgent: Toward Self-Evolving Agent via Tool Meta-Learning", authors: "Hongjin Qian, Zheng Liu", keywords: "cs.AI, cs.CL, cs.IR", url: "https://arxiv.org/abs/2508.00271" }
+    - { id: "2509.26354", title: "Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents", authors: "Shuai Shao 외", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2509.26354" }
+    - { id: "2511.18397", title: "Natural Emergent Misalignment from Reward Hacking in Production RL", authors: "Monte MacDiarmid 외", keywords: "cs.AI, cs.SE", url: "https://arxiv.org/abs/2511.18397" }
+    - { id: "2601.20103", title: "Benchmarking Reward Hack Detection in Code Environments via Contrastive Analysis", authors: "Darshan Deshpande 외", keywords: "cs.SE, cs.AI, cs.LG", url: "https://arxiv.org/abs/2601.20103" }
+    - { id: "2603.08640", title: "PostTrainBench: Can LLM Agents Automate LLM Post-Training?", authors: "Ben Rank 외", keywords: "cs.SE, cs.AI, cs.LG", url: "https://arxiv.org/abs/2603.08640" }
+    - { id: "2605.02964", title: "Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use", authors: "Kunvar Thaman", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.02964" }
 
 2026-06-07-rubricem-shared-interface-meta-rl:
   title: "루브릭이 공유 인터페이스가 될 때 — RubricEM이 정책·판사·기억을 하나로 묶는 방식"
@@ -414,17 +442,18 @@
     id: "2605.10899"
     title: "RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards"
     authors: "Gaotang Li 외"
+    keywords: "cs.CL, cs.LG"
     url: "https://arxiv.org/abs/2605.10899"
   referenced:
-    - { id: "2505.11821", url: "https://arxiv.org/abs/2505.11821" }
-    - { id: "2511.19399", url: "https://arxiv.org/abs/2511.19399" }
-    - { id: "2603.08754", url: "https://arxiv.org/abs/2603.08754" }
-    - { id: "2603.11327", title: "Meta-Reinforcement Learning with Self-Reflection for Agentic Search", url: "https://arxiv.org/abs/2603.11327" }
-    - { id: "2603.21362", url: "https://arxiv.org/abs/2603.21362" }
-    - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", url: "https://arxiv.org/abs/2604.06996" }
-    - { id: "2604.14820", url: "https://arxiv.org/abs/2604.14820" }
-    - { id: "2605.18401", title: "SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution", url: "https://arxiv.org/abs/2605.18401" }
-    - { id: "2606.04923", url: "https://arxiv.org/abs/2606.04923" }
+    - { id: "2505.11821", title: "Reinforcing Multi-Turn Reasoning in LLM Agents via Turn-Level Reward Design", authors: "Quan Wei 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2505.11821" }
+    - { id: "2511.19399", title: "DR Tulu: Reinforcement Learning with Evolving Rubrics for Deep Research", authors: "Rulin Shao 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2511.19399" }
+    - { id: "2603.08754", title: "Hindsight Credit Assignment for Long-Horizon LLM Agents", authors: "Hui-Ze Tan 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2603.08754" }
+    - { id: "2603.11327", title: "Meta-Reinforcement Learning with Self-Reflection for Agentic Search", authors: "Teng Xiao 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2603.11327" }
+    - { id: "2603.21362", title: "AdaRubric: Task-Adaptive Rubrics for Reliable LLM Agent Evaluation and Reward Learning", authors: "Liang Ding", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2603.21362" }
+    - { id: "2604.06996", title: "Self-Preference Bias in Rubric-Based Evaluation of Large Language Models", authors: "José Pombal 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2604.06996" }
+    - { id: "2604.14820", title: "SWE-TRACE: Optimizing Long-Horizon SWE Agents Through Rubric Process Reward Models and Heuristic Test-Time Scaling", authors: "Hao Han 외", keywords: "cs.SE", url: "https://arxiv.org/abs/2604.14820" }
+    - { id: "2605.18401", title: "SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution", authors: "Hongyi Liu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.18401" }
+    - { id: "2606.04923", title: "Reproducing, Analyzing, and Detecting Reward Hacking in Rubric-Based Reinforcement Learning", authors: "Xuekang Wang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.04923" }
 
 2026-06-06-ares-rubric-synthesis-scalable-rl:
   title: "기준의 탄생을 누가 결정하나 — ARES가 사전훈련 문서에서 루브릭을 길어 올리는 법"
@@ -432,13 +461,14 @@
     id: "2605.23454"
     title: "ARES: Automated Rubric Synthesis for Scalable LLM Reinforcement Learning"
     authors: "Xiaoyuan Li 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2605.23454"
   referenced:
-    - { id: "2510.15859", url: "https://arxiv.org/abs/2510.15859" }
-    - { id: "2602.01511", url: "https://arxiv.org/abs/2602.01511" }
-    - { id: "2602.05125", url: "https://arxiv.org/abs/2602.05125" }
-    - { id: "2605.10899", title: "RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards", url: "https://arxiv.org/abs/2605.10899" }
-    - { id: "2605.12474", url: "https://arxiv.org/abs/2605.12474" }
+    - { id: "2510.15859", title: "InfiMed-ORBIT: Aligning LLMs on Open-Ended Complex Tasks via Rubric-Based Incremental Training", authors: "Pengkai Wang 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2510.15859" }
+    - { id: "2602.01511", title: "Alternating Reinforcement Learning for Rubric-Based Reward Modeling in Non-Verifiable LLM Post-Training", authors: "Ran Xu 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2602.01511" }
+    - { id: "2602.05125", title: "Rethinking Rubric Generation for Improving LLM Judge and Reward Modeling for Open-ended Tasks", authors: "William F. Shen 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2602.05125" }
+    - { id: "2605.10899", title: "RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards", authors: "Gaotang Li 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2605.10899" }
+    - { id: "2605.12474", title: "Reward Hacking in Rubric-Based Reinforcement Learning", authors: "Anas Mahmoud 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.12474" }
 
 2026-06-05-arbor-rubric-memory-process-reward-search-agents:
   title: "기준을 정책이 들지 않는다, 메모리가 들고 키운다 — ARBOR가 process reward를 살려두는 법"
@@ -446,16 +476,17 @@
     id: "2606.03239"
     title: "ARBOR: Online Process Rewards via a Reusable Rubric Buffer for Search Agents"
     authors: "Zheng Liu 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2606.03239"
   referenced:
-    - { id: "2410.15115", url: "https://arxiv.org/abs/2410.15115" }
-    - { id: "2509.03403", url: "https://arxiv.org/abs/2509.03403" }
-    - { id: "2510.06214", url: "https://arxiv.org/abs/2510.06214" }
-    - { id: "2602.01511", url: "https://arxiv.org/abs/2602.01511" }
-    - { id: "2602.14338", url: "https://arxiv.org/abs/2602.14338" }
-    - { id: "2604.03098", url: "https://arxiv.org/abs/2604.03098" }
-    - { id: "2605.23454", title: "ARES: Automated Rubric Synthesis for Scalable LLM Reinforcement Learning", url: "https://arxiv.org/abs/2605.23454" }
-    - { id: "2605.31584", url: "https://arxiv.org/abs/2605.31584" }
+    - { id: "2410.15115", title: "On Designing Effective RL Reward at Training Time for LLM Reasoning", authors: "Jiaxuan Gao 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2410.15115" }
+    - { id: "2509.03403", title: "Beyond Correctness: Harmonizing Process and Outcome Rewards through RL Training", authors: "Chenlu Ye 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2509.03403" }
+    - { id: "2510.06214", title: "Stratified GRPO: Handling Structural Heterogeneity in Reinforcement Learning of LLM Search Agents", authors: "Mingkang Zhu 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2510.06214" }
+    - { id: "2602.01511", title: "Alternating Reinforcement Learning for Rubric-Based Reward Modeling in Non-Verifiable LLM Post-Training", authors: "Ran Xu 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2602.01511" }
+    - { id: "2602.14338", title: "Train Less, Learn More: Adaptive Efficient Rollout Optimization for Group-Based Reinforcement Learning", authors: "Zhi Zhang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2602.14338" }
+    - { id: "2604.03098", title: "Co-Evolution of Policy and Internal Reward for Language Agents", authors: "Xinyu Wang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.03098" }
+    - { id: "2605.23454", title: "ARES: Automated Rubric Synthesis for Scalable LLM Reinforcement Learning", authors: "Xiaoyuan Li 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.23454" }
+    - { id: "2605.31584", title: "LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards", authors: "Nianyi Lin 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2605.31584" }
 
 2026-06-04-harness-1-stateful-cognitive-offloading-search-state:
   title: "정책은 결정만 하라, 장부는 환경이 쥔다 — Harness-1이 검색 상태를 외부화하는 방식"
@@ -463,12 +494,13 @@
     id: "2606.02373"
     title: "Harness-1: Reinforcement Learning for Search Agents with State-Externalizing Harnesses"
     authors: "Pengcheng Jiang 외"
+    keywords: "cs.AI, cs.CL, cs.IR"
     url: "https://arxiv.org/abs/2606.02373"
   referenced:
-    - { id: "2508.19828", url: "https://arxiv.org/abs/2508.19828" }
-    - { id: "2509.21240", url: "https://arxiv.org/abs/2509.21240" }
-    - { id: "2510.04695", url: "https://arxiv.org/abs/2510.04695" }
-    - { id: "2605.27881", title: "Retrieval, Reward, and Training Protocols: What Matters in Training Search Agents?", url: "https://arxiv.org/abs/2605.27881" }
+    - { id: "2508.19828", title: "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning", authors: "Sikuan Yan 외", keywords: "cs.CL, cs.MA", url: "https://arxiv.org/abs/2508.19828" }
+    - { id: "2509.21240", title: "Tree Search for LLM Agent Reinforcement Learning", authors: "Yuxiang Ji 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2509.21240" }
+    - { id: "2510.04695", title: "Beyond Outcome Reward: Decoupling Search and Answering Improves LLM Agents", authors: "Yiding Wang 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2510.04695" }
+    - { id: "2605.27881", title: "Retrieval, Reward, and Training Protocols: What Matters in Training Search Agents?", authors: "Yibo Zhao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.27881" }
 
 2026-06-03-telbench-drift-span-level-error-localization:
   title: "맞은 답에도 새는 곳이 있다 — TELBench·DRIFT가 궤적에서 오류의 발원지를 짚는 법"
@@ -476,14 +508,15 @@
     id: "2606.02060"
     title: "Where Do Deep-Research Agents Go Wrong? Span-Level Error Localization in Agent Trajectories"
     authors: "Jiaming Wang 외"
+    keywords: "cs.AI"
     url: "https://arxiv.org/abs/2606.02060"
   referenced:
-    - { id: "2509.25868", url: "https://arxiv.org/abs/2509.25868" }
-    - { id: "2510.07774", url: "https://arxiv.org/abs/2510.07774" }
-    - { id: "2511.08325", url: "https://arxiv.org/abs/2511.08325" }
-    - { id: "2602.11201", url: "https://arxiv.org/abs/2602.11201" }
-    - { id: "2604.24198", url: "https://arxiv.org/abs/2604.24198" }
-    - { id: "2605.24219", url: "https://arxiv.org/abs/2605.24219" }
+    - { id: "2509.25868", title: "ReFACT: A Benchmark for Scientific Confabulation Detection with Positional Error Annotations", authors: "Yindong Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2509.25868" }
+    - { id: "2510.07774", title: "Curing Miracle Steps in LLM Mathematical Reasoning with Rubric Rewards", authors: "Youliang Yuan 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2510.07774" }
+    - { id: "2511.08325", title: "AgentPRM: Process Reward Models for LLM Agents via Step-Wise Promise and Progress", authors: "Zhiheng Xi 외", keywords: "cs.CL, cs.IR, cs.LG", url: "https://arxiv.org/abs/2511.08325" }
+    - { id: "2602.11201", title: "Mechanistic Evidence for Faithfulness Decay in Chain-of-Thought Reasoning", authors: "Donald Ye 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2602.11201" }
+    - { id: "2604.24198", title: "Rewarding the Scientific Process: Process-Level Reward Modeling for Agentic Data Analysis", authors: "Zhisong Qiu 외", keywords: "cs.CL, cs.AI, cs.CE, cs.LG, cs.MA", url: "https://arxiv.org/abs/2604.24198" }
+    - { id: "2605.24219", title: "Beyond Final Answers: Auditing Trajectory-Level Hallucinations in Multi-Agent Industrial Workflows", authors: "Harshada Badave 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.24219" }
 
 2026-06-02-probe-proactive-bottleneck-execution-ceiling:
   title: "검색은 이겼는데 천장은 같다 — PROBE가 프로액티브 에이전트를 세 조각으로 해부하는 방식"
@@ -491,15 +524,16 @@
     id: "2510.19771"
     title: "Beyond Reactivity: Measuring Proactive Problem Solving in LLM Agents"
     authors: "Gil Pasternak 외"
+    keywords: "cs.AI"
     url: "https://arxiv.org/abs/2510.19771"
   referenced:
-    - { id: "2405.13966", url: "https://arxiv.org/abs/2405.13966" }
-    - { id: "2406.14673", url: "https://arxiv.org/abs/2406.14673" }
-    - { id: "2505.00212", title: "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems", url: "https://arxiv.org/abs/2505.00212" }
-    - { id: "2602.04482", url: "https://arxiv.org/abs/2602.04482" }
-    - { id: "2604.00842", url: "https://arxiv.org/abs/2604.00842" }
-    - { id: "2604.22708", title: "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems", url: "https://arxiv.org/abs/2604.22708" }
-    - { id: "2604.23455", url: "https://arxiv.org/abs/2604.23455" }
+    - { id: "2405.13966", title: "On the Brittle Foundations of ReAct Prompting for Agentic Large Language Models", authors: "Mudit Verma 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2405.13966" }
+    - { id: "2406.14673", title: "Insights into LLM Long-Context Failures: When Transformers Know but Don't Tell", authors: "Taiming Lu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2406.14673" }
+    - { id: "2505.00212", title: "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems", authors: "Shaokun Zhang 외", keywords: "cs.MA, cs.CL", url: "https://arxiv.org/abs/2505.00212" }
+    - { id: "2602.04482", title: "ProAgentBench: Evaluating LLM Agents for Proactive Assistance with Real-World Data", authors: "Yuanbo Tang 외", keywords: "cs.HC", url: "https://arxiv.org/abs/2602.04482" }
+    - { id: "2604.00842", title: "Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants", authors: "Deepak Nathani 외", keywords: "cs.AI, cs.LG, cs.MA", url: "https://arxiv.org/abs/2604.00842" }
+    - { id: "2604.22708", title: "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems", authors: "Mengzhuo Chen 외", keywords: "cs.MA", url: "https://arxiv.org/abs/2604.22708" }
+    - { id: "2604.23455", title: "CUJBench: Benchmarking LLM-Agent on Cross-Modal Failure Diagnosis from Browser to Backend", authors: "Haoming Meng", keywords: "cs.SE", url: "https://arxiv.org/abs/2604.23455" }
 
 2026-06-01-memorai-graph-memory-provenance-retrieval:
   title: "출처를 기억하는 그래프 — MemORAI가 대화 메모리에 이력을 새기는 방식"
@@ -507,16 +541,17 @@
     id: "2605.01386"
     title: "MemORAI: Memory Organization and Retrieval via Adaptive Graph Intelligence for LLM Conversational Agents"
     authors: "Hung Pham Van 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2605.01386"
   referenced:
-    - { id: "2411.01022", url: "https://arxiv.org/abs/2411.01022" }
-    - { id: "2510.17281", url: "https://arxiv.org/abs/2510.17281" }
-    - { id: "2510.19771", title: "Beyond Reactivity: Measuring Proactive Problem Solving in LLM Agents", url: "https://arxiv.org/abs/2510.19771" }
-    - { id: "2511.10234", title: "Lost in Serialization: Invariance and Generalization of LLM Graph Reasoners", url: "https://arxiv.org/abs/2511.10234" }
-    - { id: "2512.17083", url: "https://arxiv.org/abs/2512.17083" }
-    - { id: "2601.06490", url: "https://arxiv.org/abs/2601.06490" }
-    - { id: "2603.27910", url: "https://arxiv.org/abs/2603.27910" }
-    - { id: "2604.12285", url: "https://arxiv.org/abs/2604.12285" }
+    - { id: "2411.01022", title: "Provenance: A Light-weight Fact-checker for Retrieval Augmented LLM Generation Output", authors: "Hithesh Sankararaman 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2411.01022" }
+    - { id: "2510.17281", title: "MemoryBench: A Benchmark for Memory and Continual Learning in LLM Systems", authors: "Qingyao Ai 외", keywords: "cs.LG, cs.AI, cs.IR", url: "https://arxiv.org/abs/2510.17281" }
+    - { id: "2510.19771", title: "Beyond Reactivity: Measuring Proactive Problem Solving in LLM Agents", authors: "Gil Pasternak 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2510.19771" }
+    - { id: "2511.10234", title: "Lost in Serialization: Invariance and Generalization of LLM Graph Reasoners", authors: "Daniel Herbst 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2511.10234" }
+    - { id: "2512.17083", title: "When F1 Fails: Granularity-Aware Evaluation for Dialogue Topic Segmentation", authors: "Michael H. Coen", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2512.17083" }
+    - { id: "2601.06490", title: "Bi-Mem: Bidirectional Construction of Hierarchical Memory for Personalized LLMs via Inductive-Reflective Agents", authors: "Wenyu Mao 외", keywords: "cs.MA", url: "https://arxiv.org/abs/2601.06490" }
+    - { id: "2603.27910", title: "GAAMA: Graph Augmented Associative Memory for Agents", authors: "Swarna Kamal Paul 외", keywords: "cs.AI, cs.IR, cs.MA", url: "https://arxiv.org/abs/2603.27910" }
+    - { id: "2604.12285", title: "GAM: Hierarchical Graph-based Agentic Memory for LLM Agents", authors: "Zhaofen Wu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.12285" }
 
 2026-05-31-proactive-agents-tgl-trigger-routing:
   title: "깨어날 때를 누가 정하는가 — 프로액티브 에이전트의 트리거를 그래프에 돌려주다"
@@ -524,15 +559,16 @@
     id: "2605.30152"
     title: "Do Proactive Agents Really Need an LLM to Decide When to Wake and What to Anchor?"
     authors: "Xiaoze Liu 외"
+    keywords: "cs.CL, cs.AI, cs.HC"
     url: "https://arxiv.org/abs/2605.30152"
   referenced:
-    - { id: "2402.16387", url: "https://arxiv.org/abs/2402.16387" }
-    - { id: "2510.19771", title: "Beyond Reactivity: Measuring Proactive Problem Solving in LLM Agents", url: "https://arxiv.org/abs/2510.19771" }
-    - { id: "2511.10234", title: "Lost in Serialization: Invariance and Generalization of LLM Graph Reasoners", url: "https://arxiv.org/abs/2511.10234" }
-    - { id: "2602.01532", url: "https://arxiv.org/abs/2602.01532" }
-    - { id: "2602.04482", url: "https://arxiv.org/abs/2602.04482" }
-    - { id: "2604.02367", url: "https://arxiv.org/abs/2604.02367" }
-    - { id: "2605.01386", title: "MemORAI: Memory Organization and Retrieval via Adaptive Graph Intelligence for LLM Conversational Agents", url: "https://arxiv.org/abs/2605.01386" }
+    - { id: "2402.16387", title: "On the Generalization Capability of Temporal Graph Learning Algorithms: Theoretical Insights and a Simpler Method", authors: "Weilin Cong 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2402.16387" }
+    - { id: "2510.19771", title: "Beyond Reactivity: Measuring Proactive Problem Solving in LLM Agents", authors: "Gil Pasternak 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2510.19771" }
+    - { id: "2511.10234", title: "Lost in Serialization: Invariance and Generalization of LLM Graph Reasoners", authors: "Daniel Herbst 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2511.10234" }
+    - { id: "2602.01532", title: "PRISM: Festina Lente Proactivity -- Risk-Sensitive, Uncertainty-Aware Deliberation for Proactive Agents", authors: "Yuxuan Fu 외", keywords: "cs.AI, cs.HC", url: "https://arxiv.org/abs/2602.01532" }
+    - { id: "2602.04482", title: "ProAgentBench: Evaluating LLM Agents for Proactive Assistance with Real-World Data", authors: "Yuanbo Tang 외", keywords: "cs.HC", url: "https://arxiv.org/abs/2602.04482" }
+    - { id: "2604.02367", title: "Evaluating Small Language Models for Front-Door Routing: A Harmonized Benchmark and Synthetic-Traffic Experiment", authors: "Warren Johnson, Charles Lee", keywords: "cs.NI, cs.CL", url: "https://arxiv.org/abs/2604.02367" }
+    - { id: "2605.01386", title: "MemORAI: Memory Organization and Retrieval via Adaptive Graph Intelligence for LLM Conversational Agents", authors: "Hung Pham Van 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.01386" }
 
 2026-05-30-fluxmem-topology-evolution-feedback-refinement:
   title: "위상은 한 번에 굳지 않는다 — FluxMem이 메모리 그래프를 흐르게 두는 방식"
@@ -540,13 +576,14 @@
     id: "2605.28773"
     title: "Rethinking Memory as Continuously Evolving Connectivity"
     authors: "Jizhan Fang 외"
+    keywords: "cs.CL, cs.AI, cs.LG, cs.MA, cs.MM"
     url: "https://arxiv.org/abs/2605.28773"
   referenced:
-    - { id: "2504.13171", url: "https://arxiv.org/abs/2504.13171" }
-    - { id: "2601.02553", url: "https://arxiv.org/abs/2601.02553" }
-    - { id: "2603.11768", title: "Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework", url: "https://arxiv.org/abs/2603.11768" }
-    - { id: "2603.19595", url: "https://arxiv.org/abs/2603.19595" }
-    - { id: "2605.01386", title: "MemORAI: Memory Organization and Retrieval via Adaptive Graph Intelligence for LLM Conversational Agents", url: "https://arxiv.org/abs/2605.01386" }
+    - { id: "2504.13171", title: "Sleep-time Compute: Beyond Inference Scaling at Test-time", authors: "Kevin Lin 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2504.13171" }
+    - { id: "2601.02553", title: "SimpleMem: Efficient Lifelong Memory for LLM Agents", authors: "Jiaqi Liu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2601.02553" }
+    - { id: "2603.11768", title: "Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework", authors: "Chingkwun Lam 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.11768" }
+    - { id: "2603.19595", title: "All-Mem: Agentic Lifelong Memory via Dynamic Topology Evolution", authors: "Can Lv 외", keywords: "cs.IR, cs.CL", url: "https://arxiv.org/abs/2603.19595" }
+    - { id: "2605.01386", title: "MemORAI: Memory Organization and Retrieval via Adaptive Graph Intelligence for LLM Conversational Agents", authors: "Hung Pham Van 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.01386" }
 
 2026-05-29-agent-aging-lifespan-engineering-deployment-reliability:
   title: "에이전트는 조용히 늙는다 — 배포 후 신뢰성을 라이프스팬으로 측정한다는 것"
@@ -554,12 +591,13 @@
     id: "2605.26302"
     title: "Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems"
     authors: "Jianing Zhu 외"
+    keywords: "cs.AI, cs.CL, cs.MA"
     url: "https://arxiv.org/abs/2605.26302"
   referenced:
-    - { id: "2504.13171", url: "https://arxiv.org/abs/2504.13171" }
-    - { id: "2504.17428", url: "https://arxiv.org/abs/2504.17428" }
-    - { id: "2603.23231", url: "https://arxiv.org/abs/2603.23231" }
-    - { id: "2605.18565", url: "https://arxiv.org/abs/2605.18565" }
+    - { id: "2504.13171", title: "Sleep-time Compute: Beyond Inference Scaling at Test-time", authors: "Kevin Lin 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2504.13171" }
+    - { id: "2504.17428", title: "Detection, Classification and Prevalence of Self-Admitted Aging Debt", authors: "Murali Sridharan 외", keywords: "cs.SE, cs.AI, cs.CE, cs.GL", url: "https://arxiv.org/abs/2504.17428" }
+    - { id: "2603.23231", title: "PERMA: Benchmarking Personalized Memory Agents via Event-Driven Preference and Realistic Task Environments", authors: "Shuochen Liu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.23231" }
+    - { id: "2605.18565", title: "MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems", authors: "Hyunji Lee 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.18565" }
 
 2026-05-28-sleep-consolidation-fast-weight-computation-depth:
   title: "기억은 한 번에 저장되지 않는다 — 수면 공고화로 다시 읽는 fast weight 병목"
@@ -567,12 +605,13 @@
     id: "2605.26099"
     title: "Language Models Need Sleep"
     authors: "Sangyun Lee 외"
+    keywords: "cs.CL, cs.AI"
     url: "https://arxiv.org/abs/2605.26099"
   referenced:
-    - { id: "2502.05171", url: "https://arxiv.org/abs/2502.05171" }
-    - { id: "2504.13171", url: "https://arxiv.org/abs/2504.13171" }
-    - { id: "2507.12549", url: "https://arxiv.org/abs/2507.12549" }
-    - { id: "2601.05593", url: "https://arxiv.org/abs/2601.05593" }
+    - { id: "2502.05171", title: "Scaling up Test-Time Compute with Latent Reasoning: A Recurrent Depth Approach", authors: "Jonas Geiping 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2502.05171" }
+    - { id: "2504.13171", title: "Sleep-time Compute: Beyond Inference Scaling at Test-time", authors: "Kevin Lin 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2504.13171" }
+    - { id: "2507.12549", title: "The Serial Scaling Hypothesis", authors: "Yuxi Liu 외", keywords: "cs.LG, cs.CC, stat.ML", url: "https://arxiv.org/abs/2507.12549" }
+    - { id: "2601.05593", title: "PaCoRe: Learning to Scale Test-Time Compute with Parallel Coordinated Reasoning", authors: "Jingcheng Hu 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2601.05593" }
 
 2026-05-27-system-scaling-harness-architecture-six-factors:
   title: "모델을 키우는 시대에서 하니스를 키우는 시대로 — 어제 그제의 두 글이 사실은 같은 분해의 사례였다"
@@ -580,15 +619,16 @@
     id: "2605.26112"
     title: "From Model Scaling to System Scaling: Scaling the Harness in Agentic AI"
     authors: "Shangding Gu"
+    keywords: "cs.AI, cs.LG"
     url: "https://arxiv.org/abs/2605.26112"
   referenced:
-    - { id: "2509.17158", url: "https://arxiv.org/abs/2509.17158" }
-    - { id: "2603.11768", title: "Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework", url: "https://arxiv.org/abs/2603.11768" }
-    - { id: "2603.29231", url: "https://arxiv.org/abs/2603.29231" }
-    - { id: "2604.03515", url: "https://arxiv.org/abs/2604.03515" }
-    - { id: "2604.08224", url: "https://arxiv.org/abs/2604.08224" }
-    - { id: "2604.25850", title: "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses", url: "https://arxiv.org/abs/2604.25850" }
-    - { id: "2605.06527", title: "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?", url: "https://arxiv.org/abs/2605.06527" }
+    - { id: "2509.17158", title: "ARE: Scaling Up Agent Environments and Evaluations", authors: "Romain Froger 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2509.17158" }
+    - { id: "2603.11768", title: "Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework", authors: "Chingkwun Lam 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.11768" }
+    - { id: "2603.29231", title: "Beyond pass@1: A Reliability Science Framework for Long-Horizon LLM Agents", authors: "Aaditya Khanal 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.29231" }
+    - { id: "2604.03515", title: "Inside the Scaffold: A Source-Code Taxonomy of Coding Agent Architectures", authors: "Benjamin Rombaut", keywords: "cs.SE, cs.AI, cs.ET", url: "https://arxiv.org/abs/2604.03515" }
+    - { id: "2604.08224", title: "Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering", authors: "Chenyu Zhou 외", keywords: "cs.SE, cs.MA", url: "https://arxiv.org/abs/2604.08224" }
+    - { id: "2604.25850", title: "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses", authors: "Jiahang Lin 외", keywords: "cs.CL, cs.SE", url: "https://arxiv.org/abs/2604.25850" }
+    - { id: "2605.06527", title: "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?", authors: "Hanxiang Chao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.06527" }
 
 2026-05-26-stochastic-deterministic-boundary-architectural-momentum:
   title: "확률과 결정론 사이의 이음새 — 어제의 로그가 정확히 어디서 갈라지는가"
@@ -596,13 +636,14 @@
     id: "2605.20173"
     title: "A Methodology for Selecting and Composing Runtime Architecture Patterns for Production LLM Agents"
     authors: "Vasundra Srinivasan"
+    keywords: "cs.AI, cs.SE"
     url: "https://arxiv.org/abs/2605.20173"
   referenced:
-    - { id: "2512.20660", url: "https://arxiv.org/abs/2512.20660" }
-    - { id: "2601.15322", url: "https://arxiv.org/abs/2601.15322" }
-    - { id: "2601.22290", url: "https://arxiv.org/abs/2601.22290" }
-    - { id: "2602.16666", url: "https://arxiv.org/abs/2602.16666" }
-    - { id: "2602.23193", url: "https://arxiv.org/abs/2602.23193" }
+    - { id: "2512.20660", title: "The Dual-State Architecture for Reliable LLM Agents", authors: "Matthew Thompson", keywords: "cs.LG, cs.AI, cs.SE", url: "https://arxiv.org/abs/2512.20660" }
+    - { id: "2601.15322", title: "Replayable Financial Agents: A Determinism-Faithfulness Assurance Harness for Tool-Using LLM Agents", authors: "Raffi Khatchadourian", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2601.15322" }
+    - { id: "2601.22290", title: "The Six Sigma Agent: Achieving Enterprise-Grade Reliability in LLM Systems Through Consensus-Driven Decomposed Execution", authors: "Khush Patel 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2601.22290" }
+    - { id: "2602.16666", title: "Towards a Science of AI Agent Reliability", authors: "Stephan Rabanser 외", keywords: "cs.AI, cs.CY, cs.LG", url: "https://arxiv.org/abs/2602.16666" }
+    - { id: "2602.23193", title: "ESAA: Event Sourcing for Autonomous Agents in LLM-Based Software Engineering", authors: "Elzo Brito dos Santos Filho", keywords: "cs.AI", url: "https://arxiv.org/abs/2602.23193" }
 
 2026-05-25-log-is-the-agent-event-sourced-reactive-graph:
   title: "로그가 곧 에이전트다 — 상태를 쌓지 말고 이벤트를 재투영하라"
@@ -610,13 +651,14 @@
     id: "2605.21997"
     title: "The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems"
     authors: "Yohei Nakajima"
+    keywords: "cs.AI, cs.MA"
     url: "https://arxiv.org/abs/2605.21997"
   referenced:
-    - { id: "2505.17716", url: "https://arxiv.org/abs/2505.17716" }
-    - { id: "2601.15322", url: "https://arxiv.org/abs/2601.15322" }
-    - { id: "2602.23193", url: "https://arxiv.org/abs/2602.23193" }
-    - { id: "2604.05485", url: "https://arxiv.org/abs/2604.05485" }
-    - { id: "2605.06365", url: "https://arxiv.org/abs/2605.06365" }
+    - { id: "2505.17716", title: "Get Experience from Practice: LLM Agents with Record & Replay", authors: "Erhu Feng 외", keywords: "cs.LG, cs.MA", url: "https://arxiv.org/abs/2505.17716" }
+    - { id: "2601.15322", title: "Replayable Financial Agents: A Determinism-Faithfulness Assurance Harness for Tool-Using LLM Agents", authors: "Raffi Khatchadourian", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2601.15322" }
+    - { id: "2602.23193", title: "ESAA: Event Sourcing for Autonomous Agents in LLM-Based Software Engineering", authors: "Elzo Brito dos Santos Filho", keywords: "cs.AI", url: "https://arxiv.org/abs/2602.23193" }
+    - { id: "2604.05485", title: "Auditable Agents", authors: "Yi Nian 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.05485" }
+    - { id: "2605.06365", title: "From Agent Loops to Deterministic Graphs: Execution Lineage for Reproducible AI-Native Work", authors: "Josh Rosen, Seth Rosen", keywords: "cs.AI, cs.MA, cs.SE", url: "https://arxiv.org/abs/2605.06365" }
 
 2026-05-24-skill-md-semantic-supply-chain-attack:
   title: "SKILL.md는 수동 문서가 아니다 — 자연어만으로 레지스트리를 조작하는 의미적 공급망 공격"
@@ -624,14 +666,15 @@
     id: "2605.11418"
     title: "Under the Hood of SKILL.md: Semantic Supply-chain Attacks on AI Agent Skill Registry"
     authors: "Shoumik Saha 외"
+    keywords: "cs.AI, cs.CR"
     url: "https://arxiv.org/abs/2605.11418"
   referenced:
-    - { id: "2510.02554", url: "https://arxiv.org/abs/2510.02554" }
-    - { id: "2511.05797", url: "https://arxiv.org/abs/2511.05797" }
-    - { id: "2601.17548", url: "https://arxiv.org/abs/2601.17548" }
-    - { id: "2602.06547", url: "https://arxiv.org/abs/2602.06547" }
-    - { id: "2604.02837", url: "https://arxiv.org/abs/2604.02837" }
-    - { id: "2604.04989", url: "https://arxiv.org/abs/2604.04989" }
+    - { id: "2510.02554", title: "ToolTweak: An Attack on Tool Selection in LLM-based Agents", authors: "Jonathan Sneh 외", keywords: "cs.CR, cs.AI", url: "https://arxiv.org/abs/2510.02554" }
+    - { id: "2511.05797", title: "When AI Meets the Web: Prompt Injection Risks in Third-Party AI Chatbot Plugins", authors: "Yigitcan Kaya 외", keywords: "cs.CR, cs.AI", url: "https://arxiv.org/abs/2511.05797" }
+    - { id: "2601.17548", title: "Prompt Injection Attacks on Agentic Coding Assistants: A Systematic Analysis of Vulnerabilities in Skills, Tools, and Protocol Ecosystems", authors: "Narek Maloyan, Dmitry Namiot", keywords: "cs.CR", url: "https://arxiv.org/abs/2601.17548" }
+    - { id: "2602.06547", title: "\"Do Not Mention This to the User\": Detecting and Understanding Malicious Agent Skills in the Wild", authors: "Yi Liu 외", keywords: "cs.CR, cs.AI, cs.CL, cs.ET", url: "https://arxiv.org/abs/2602.06547" }
+    - { id: "2604.02837", title: "Towards Secure Agent Skills: Architecture, Threat Taxonomy, and Security Analysis", authors: "Zhiyuan Li 외", keywords: "cs.CR, cs.AI", url: "https://arxiv.org/abs/2604.02837" }
+    - { id: "2604.04989", title: "SkillAttack: Automated Red Teaming of Agent Skills through Attack Path Refinement", authors: "Zenghao Duan 외", keywords: "cs.CR", url: "https://arxiv.org/abs/2604.04989" }
 
 2026-05-23-interactive-evaluation-design-science:
   title: "측정을 측정하기 — 평가가 설계 과학이 되지 않으면 남는 것은 숫자뿐이다"
@@ -639,16 +682,17 @@
     id: "2605.17829"
     title: "Interactive Evaluation Requires a Design Science"
     authors: "Keyang Xuan 외"
+    keywords: "cs.AI"
     url: "https://arxiv.org/abs/2605.17829"
   referenced:
-    - { id: "2506.02064", url: "https://arxiv.org/abs/2506.02064" }
-    - { id: "2506.07982", url: "https://arxiv.org/abs/2506.07982" }
-    - { id: "2601.22352", url: "https://arxiv.org/abs/2601.22352" }
-    - { id: "2604.02022", url: "https://arxiv.org/abs/2604.02022" }
-    - { id: "2604.05172", url: "https://arxiv.org/abs/2604.05172" }
-    - { id: "2604.19818", url: "https://arxiv.org/abs/2604.19818" }
-    - { id: "2605.12673", url: "https://arxiv.org/abs/2605.12673" }
-    - { id: "2605.20251", url: "https://arxiv.org/abs/2605.20251" }
+    - { id: "2506.02064", title: "The Measurement Imbalance in Agentic AI Evaluation Undermines Industry Productivity Claims", authors: "Kiana Jafari Meimandi 외", keywords: "cs.CY, cs.HC", url: "https://arxiv.org/abs/2506.02064" }
+    - { id: "2506.07982", title: "$τ^2$-Bench: Evaluating Conversational Agents in a Dual-Control Environment", authors: "Victor Barres 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2506.07982" }
+    - { id: "2601.22352", title: "Recoverability Has a Law: The ERR Measure for Tool-Augmented Agents", authors: "Sri Vatsa Vuddanti, Satwik Kumar Chittiprolu", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2601.22352" }
+    - { id: "2604.02022", title: "ATBench: A Diverse and Realistic Agent Trajectory Benchmark for Safety Evaluation and Diagnosis", authors: "Yu Li 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.02022" }
+    - { id: "2604.05172", title: "ClawsBench: Evaluating Capability and Safety of LLM Productivity Agents in Simulated Workspaces", authors: "Xiangyi Li 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.05172" }
+    - { id: "2604.19818", title: "Beyond Task Success: An Evidence-Synthesis Framework for Evaluating, Governing, and Orchestrating Agentic AI", authors: "Christopher Koch, Joshua Andreas Wellbrock", keywords: "cs.SE, cs.HC, cs.MA", url: "https://arxiv.org/abs/2604.19818" }
+    - { id: "2605.12673", title: "Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack", authors: "Hao Wang 외", keywords: "cs.AI, cs.CR", url: "https://arxiv.org/abs/2605.12673" }
+    - { id: "2605.20251", title: "ProcCtrlBench: Evaluating Process-Level Defects and Control Preservation in LLM Coding Agents", authors: "Jiawei He 외", keywords: "cs.SE, cs.AI", url: "https://arxiv.org/abs/2605.20251" }
 
 2026-05-22-stale-implicit-conflict-write-side-adjudication:
   title: "기억이 가시권에 있어도 권위는 없다 — 암묵적 무효화와 쓰기측 판결"
@@ -656,16 +700,17 @@
     id: "2605.06527"
     title: "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?"
     authors: "Hanxiang Chao 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2605.06527"
   referenced:
-    - { id: "2507.05257", url: "https://arxiv.org/abs/2507.05257" }
-    - { id: "2508.01273", url: "https://arxiv.org/abs/2508.01273" }
-    - { id: "2601.07468", url: "https://arxiv.org/abs/2601.07468" }
-    - { id: "2601.15495", url: "https://arxiv.org/abs/2601.15495" }
-    - { id: "2603.00026", url: "https://arxiv.org/abs/2603.00026" }
-    - { id: "2603.11768", title: "Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework", url: "https://arxiv.org/abs/2603.11768" }
-    - { id: "2604.09515", url: "https://arxiv.org/abs/2604.09515" }
-    - { id: "2604.20006", url: "https://arxiv.org/abs/2604.20006" }
+    - { id: "2507.05257", title: "Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions", authors: "Yuanzhe Hu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2507.05257" }
+    - { id: "2508.01273", title: "Disentangling Reasoning Logic to Resolve Explicit Knowledge Conflicts", authors: "Xianda Zheng 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2508.01273" }
+    - { id: "2601.07468", title: "Beyond Dialogue Time: Temporal Semantic Memory for Personalized LLM Agents", authors: "Miao Su 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2601.07468" }
+    - { id: "2601.15495", title: "Tracking the Limits of Knowledge Propagation: How LLMs Fail at Multi-Step Reasoning with Conflicting Knowledge", authors: "Yiyang Feng 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2601.15495" }
+    - { id: "2603.00026", title: "ActMem: Bridging the Gap Between Memory Retrieval and Reasoning in LLM Agents", authors: "Xiaohui Zhang 외", keywords: "cs.CL, cs.AI, cs.IR", url: "https://arxiv.org/abs/2603.00026" }
+    - { id: "2603.11768", title: "Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework", authors: "Chingkwun Lam 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.11768" }
+    - { id: "2604.09515", title: "When LLMs Lag Behind: Knowledge Conflicts from Evolving APIs in Code Generation", authors: "Ahmed Nusayer Ashik 외", keywords: "cs.SE", url: "https://arxiv.org/abs/2604.09515" }
+    - { id: "2604.20006", title: "From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents", authors: "Md Nayem Uddin 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2604.20006" }
 
 2026-05-21-memory-consolidation-faulty-episodic-schema:
   title: "유용한 기억이 망가질 때 — Consolidation 절차가 만드는 비단조적 붕괴"
@@ -673,17 +718,18 @@
     id: "2605.12978"
     title: "Useful Memories Become Faulty When Continuously Updated by LLMs"
     authors: "Dylan Zhang 외"
+    keywords: "cs.AI"
     url: "https://arxiv.org/abs/2605.12978"
   referenced:
-    - { id: "2304.03442", url: "https://arxiv.org/abs/2304.03442" }
-    - { id: "2401.18059", url: "https://arxiv.org/abs/2401.18059" }
-    - { id: "2506.03989", url: "https://arxiv.org/abs/2506.03989" }
-    - { id: "2602.19320", url: "https://arxiv.org/abs/2602.19320" }
-    - { id: "2603.11768", title: "Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework", url: "https://arxiv.org/abs/2603.11768" }
-    - { id: "2603.24472", url: "https://arxiv.org/abs/2603.24472" }
-    - { id: "2604.04853", url: "https://arxiv.org/abs/2604.04853" }
-    - { id: "2604.27707", url: "https://arxiv.org/abs/2604.27707" }
-    - { id: "2605.06527", title: "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?", url: "https://arxiv.org/abs/2605.06527" }
+    - { id: "2304.03442", title: "Generative Agents: Interactive Simulacra of Human Behavior", authors: "Joon Sung Park 외", keywords: "cs.HC, cs.AI, cs.LG", url: "https://arxiv.org/abs/2304.03442" }
+    - { id: "2401.18059", title: "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval", authors: "Parth Sarthi 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2401.18059" }
+    - { id: "2506.03989", title: "Stronger Baselines for Retrieval-Augmented Generation with Long-Context Language Models", authors: "Alex Laitenberger 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2506.03989" }
+    - { id: "2602.19320", title: "Anatomy of Agentic Memory: Taxonomy and Empirical Analysis of Evaluation and System Limitations", authors: "Dongming Jiang 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2602.19320" }
+    - { id: "2603.11768", title: "Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework", authors: "Chingkwun Lam 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.11768" }
+    - { id: "2603.24472", title: "Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?", authors: "Jeonghye Kim 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2603.24472" }
+    - { id: "2604.04853", title: "MemMachine: A Ground-Truth-Preserving Memory System for Personalized AI Agents", authors: "Shu Wang 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.04853" }
+    - { id: "2604.27707", title: "Contextual Agentic Memory is a Memo, Not True Memory", authors: "Binyan Xu 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.27707" }
+    - { id: "2605.06527", title: "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?", authors: "Hanxiang Chao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.06527" }
 
 2026-05-20-imagination-training-dynamics-reward-tradeoff:
   title: "상상 속에서 정책을 훈련한다는 것 — 마찰 우회의 두 번째 얼굴"
@@ -691,14 +737,15 @@
     id: "2605.06732"
     title: "On Training in Imagination"
     authors: "Nadav Timor 외"
+    keywords: "cs.LG"
     url: "https://arxiv.org/abs/2605.06732"
   referenced:
-    - { id: "2210.10760", url: "https://arxiv.org/abs/2210.10760" }
-    - { id: "2411.01342", url: "https://arxiv.org/abs/2411.01342" }
-    - { id: "2502.19255", url: "https://arxiv.org/abs/2502.19255" }
-    - { id: "2506.09985", url: "https://arxiv.org/abs/2506.09985" }
-    - { id: "2509.24527", url: "https://arxiv.org/abs/2509.24527" }
-    - { id: "2602.13977", url: "https://arxiv.org/abs/2602.13977" }
+    - { id: "2210.10760", title: "Scaling Laws for Reward Model Overoptimization", authors: "Leo Gao 외", keywords: "cs.LG, stat.ML", url: "https://arxiv.org/abs/2210.10760" }
+    - { id: "2411.01342", title: "Adaptive World Models: Learning Behaviors by Latent Imagination Under Non-Stationarity", authors: "Emiliyan Gospodinov 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2411.01342" }
+    - { id: "2502.19255", title: "Can RLHF be More Efficient with Imperfect Reward Models? A Policy Coverage Perspective", authors: "Jiawei Huang 외", keywords: "cs.LG, cs.AI, stat.ML", url: "https://arxiv.org/abs/2502.19255" }
+    - { id: "2506.09985", title: "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning", authors: "Mido Assran 외", keywords: "cs.AI, cs.CV, cs.LG, cs.RO", url: "https://arxiv.org/abs/2506.09985" }
+    - { id: "2509.24527", title: "Training Agents Inside of Scalable World Models", authors: "Danijar Hafner 외", keywords: "cs.AI, cs.LG, cs.RO, stat.ML", url: "https://arxiv.org/abs/2509.24527" }
+    - { id: "2602.13977", title: "WoVR: World Models as Reliable Simulators for Post-Training VLA Policies with RL", authors: "Zhennan Jiang 외", keywords: "cs.RO, cs.AI", url: "https://arxiv.org/abs/2602.13977" }
 
 2026-05-19-asara-researcher-survey-recursive-friction:
   title: "AI가 AI 연구자를 우회할 때 — 25명의 인터뷰가 드러낸 인식론적 분열"
@@ -706,11 +753,12 @@
     id: "2603.03338"
     title: "AI Researchers' Views on Automating AI R&D and Intelligence Explosions"
     authors: "Severin Field 외"
+    keywords: "cs.CY"
     url: "https://arxiv.org/abs/2603.03338"
   referenced:
-    - { id: "2502.14870", url: "https://arxiv.org/abs/2502.14870" }
-    - { id: "2504.15416", url: "https://arxiv.org/abs/2504.15416" }
-    - { id: "2604.03338", url: "https://arxiv.org/abs/2604.03338" }
+    - { id: "2502.14870", title: "Why do Experts Disagree on Existential Risk and P(doom)? A Survey of AI Experts", authors: "Severin Field", keywords: "cs.CY, cs.AI, cs.HC", url: "https://arxiv.org/abs/2502.14870" }
+    - { id: "2504.15416", title: "Bare Minimum Mitigations for Autonomous AI Development", authors: "Joshua Clymer 외", keywords: "cs.CY", url: "https://arxiv.org/abs/2504.15416" }
+    - { id: "2604.03338", title: "The Ideation Bottleneck: Decomposing the Quality Gap Between AI-Generated and Human Economics Research", authors: "Ning Li", keywords: "econ.GN, cs.AI, cs.CY", url: "https://arxiv.org/abs/2604.03338" }
 
 2026-05-18-skill-formation-cognitive-offloading:
   title: "스킬의 침식 — AI에 순응하는 인간이 잃는 것은 답이 아니라 오류와 씨름할 기회다"
@@ -718,11 +766,12 @@
     id: "2601.20245"
     title: "How AI Impacts Skill Formation"
     authors: "Judy Hanwen Shen, Alex Tamkin"
+    keywords: "cs.CY, cs.AI, cs.HC"
     url: "https://arxiv.org/abs/2601.20245"
   referenced:
-    - { id: "2502.02880", url: "https://arxiv.org/abs/2502.02880" }
-    - { id: "2507.09089", url: "https://arxiv.org/abs/2507.09089" }
-    - { id: "2605.11350", url: "https://arxiv.org/abs/2605.11350" }
+    - { id: "2502.02880", title: "Coach not crutch: Evidence that AI can improve writing skill despite reducing effort", authors: "Benjamin Lira 외", keywords: "cs.HC", url: "https://arxiv.org/abs/2502.02880" }
+    - { id: "2507.09089", title: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity", authors: "Joel Becker 외", keywords: "cs.AI, cs.HC, cs.SE", url: "https://arxiv.org/abs/2507.09089" }
+    - { id: "2605.11350", title: "Human-AI Productivity Paradoxes: Modeling the Interplay of Skill, Effort, and AI Assistance", authors: "Ali Aouad 외", keywords: "cs.GT, cs.AI, econ.TH", url: "https://arxiv.org/abs/2605.11350" }
 
 2026-05-17-sycophantic-consensus-pluralistic-repair:
   title: "합의의 붕괴 — 다원성은 분포가 아니라 대화에서 살거나 죽는다"
@@ -730,17 +779,18 @@
     id: "2605.14912"
     title: "From Sycophantic Consensus to Pluralistic Repair: Why AI Alignment Must Surface Disagreement"
     authors: "Varad Vishwarupe 외"
+    keywords: "cs.AI, cs.CY, cs.HC, cs.LG"
     url: "https://arxiv.org/abs/2605.14912"
   referenced:
-    - { id: "2310.13548", url: "https://arxiv.org/abs/2310.13548" }
-    - { id: "2402.05070", url: "https://arxiv.org/abs/2402.05070" }
-    - { id: "2412.16339", url: "https://arxiv.org/abs/2412.16339" }
-    - { id: "2505.23840", url: "https://arxiv.org/abs/2505.23840" }
-    - { id: "2508.14918", url: "https://arxiv.org/abs/2508.14918" }
-    - { id: "2509.21305", title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs", url: "https://arxiv.org/abs/2509.21305" }
-    - { id: "2510.22954", title: "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)", url: "https://arxiv.org/abs/2510.22954" }
-    - { id: "2602.01002", title: "How RLHF Amplifies Sycophancy", url: "https://arxiv.org/abs/2602.01002" }
-    - { id: "2602.19141", title: "Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians", url: "https://arxiv.org/abs/2602.19141" }
+    - { id: "2310.13548", title: "Towards Understanding Sycophancy in Language Models", authors: "Mrinank Sharma 외", keywords: "cs.CL, cs.AI, cs.LG, stat.ML", url: "https://arxiv.org/abs/2310.13548" }
+    - { id: "2402.05070", title: "A Roadmap to Pluralistic Alignment", authors: "Taylor Sorensen 외", keywords: "cs.AI, cs.CL, cs.IR", url: "https://arxiv.org/abs/2402.05070" }
+    - { id: "2412.16339", title: "Deliberative Alignment: Reasoning Enables Safer Language Models", authors: "Melody Y. Guan 외", keywords: "cs.CL, cs.AI, cs.CY, cs.LG", url: "https://arxiv.org/abs/2412.16339" }
+    - { id: "2505.23840", title: "Measuring Sycophancy of Language Models in Multi-turn Dialogues", authors: "Jiseung Hong 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2505.23840" }
+    - { id: "2508.14918", title: "Disentangling the Drivers of LLM Social Conformity: An Uncertainty-Moderated Dual-Process Mechanism", authors: "Huixin Zhong 외", keywords: "cs.CY, cs.AI", url: "https://arxiv.org/abs/2508.14918" }
+    - { id: "2509.21305", title: "Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs", authors: "Daniel Vennemeyer 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2509.21305" }
+    - { id: "2510.22954", title: "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)", authors: "Liwei Jiang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2510.22954" }
+    - { id: "2602.01002", title: "How RLHF Amplifies Sycophancy", authors: "Itai Shapira 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2602.01002" }
+    - { id: "2602.19141", title: "Sycophantic Chatbots Cause Delusional Spiraling, Even in Ideal Bayesians", authors: "Kartik Chandra 외", keywords: "cs.AI, cs.CY, cs.HC", url: "https://arxiv.org/abs/2602.19141" }
 
 2026-05-16-context-compliance-knowledge-conflict:
   title: "맥락 순응 — 검색이 틀렸을 때 RAG는 그것을 아는가"
@@ -748,13 +798,14 @@
     id: "2605.14473"
     title: "Does RAG Know When Retrieval Is Wrong? Diagnosing Context Compliance under Knowledge Conflict"
     authors: "Yihang Chen 외"
+    keywords: "cs.CL, cs.AI"
     url: "https://arxiv.org/abs/2605.14473"
   referenced:
-    - { id: "2501.13726", url: "https://arxiv.org/abs/2501.13726" }
-    - { id: "2506.05154", url: "https://arxiv.org/abs/2506.05154" }
-    - { id: "2508.14918", url: "https://arxiv.org/abs/2508.14918" }
-    - { id: "2510.05381", url: "https://arxiv.org/abs/2510.05381" }
-    - { id: "2604.23750", url: "https://arxiv.org/abs/2604.23750" }
+    - { id: "2501.13726", title: "RPO: Retrieval Preference Optimization for Robust Retrieval-Augmented Generation", authors: "Shi-Qi Yan 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2501.13726" }
+    - { id: "2506.05154", title: "Resisting Contextual Interference in RAG via Parametric-Knowledge Reinforcement", authors: "Chenyu Lin 외", keywords: "cs.CL, cs.AI, cs.IR", url: "https://arxiv.org/abs/2506.05154" }
+    - { id: "2508.14918", title: "Disentangling the Drivers of LLM Social Conformity: An Uncertainty-Moderated Dual-Process Mechanism", authors: "Huixin Zhong 외", keywords: "cs.CY, cs.AI", url: "https://arxiv.org/abs/2508.14918" }
+    - { id: "2510.05381", title: "Context Length Alone Hurts LLM Performance Despite Perfect Retrieval", authors: "Yufeng Du 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2510.05381" }
+    - { id: "2604.23750", title: "The Override Gap: A Magnitude Account of Knowledge Conflict Failure in Hypernetwork-Based Instant LLM Adaptation", authors: "Shuaizhi Cheng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.23750" }
 
 2026-05-15-bystander-effect-sovereignty-decay:
   title: "방관자 효과 — 동료가 많아질수록 스스로 사고하기를 멈추는 LLM"
@@ -762,13 +813,14 @@
     id: "2605.10698"
     title: "The Bystander Effect in Multi-Agent Reasoning: Quantifying Cognitive Loafing in Collaborative Interactions"
     authors: "Dahlia Shehata, Ming Li"
+    keywords: "cs.MA, cs.AI"
     url: "https://arxiv.org/abs/2605.10698"
   referenced:
-    - { id: "2406.07791", url: "https://arxiv.org/abs/2406.07791" }
-    - { id: "2502.00674", url: "https://arxiv.org/abs/2502.00674" }
-    - { id: "2505.11556", title: "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs", url: "https://arxiv.org/abs/2505.11556" }
-    - { id: "2508.02087", title: "When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models", url: "https://arxiv.org/abs/2508.02087" }
-    - { id: "2511.02303", url: "https://arxiv.org/abs/2511.02303" }
+    - { id: "2406.07791", title: "Judging the Judges: A Systematic Study of Position Bias in LLM-as-a-Judge", authors: "Lin Shi 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2406.07791" }
+    - { id: "2502.00674", title: "Rethinking Mixture-of-Agents: Is Mixing Different Large Language Models Beneficial?", authors: "Wenzhe Li 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2502.00674" }
+    - { id: "2505.11556", title: "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs", authors: "Yuxuan Li 외", keywords: "cs.CL, cs.AI, cs.MA", url: "https://arxiv.org/abs/2505.11556" }
+    - { id: "2508.02087", title: "When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models", authors: "Keyu Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2508.02087" }
+    - { id: "2511.02303", title: "Unlocking the Power of Multi-Agent LLM for Reasoning: From Lazy Agents to Deliberation", authors: "Zhiwei Zhang 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2511.02303" }
 
 2026-05-14-memory-curse-cooperation-collapse:
   title: "메모리 저주 — 더 많이 기억할수록 덜 협동하는 LLM"
@@ -776,11 +828,12 @@
     id: "2605.08060"
     title: "The Memory Curse: How Expanded Recall Erodes Cooperative Intent in LLM Agents"
     authors: "Jiayuan Liu 외"
+    keywords: "cs.CL, cs.AI, cs.GT, cs.MA"
     url: "https://arxiv.org/abs/2605.08060"
   referenced:
-    - { id: "2502.20432", url: "https://arxiv.org/abs/2502.20432" }
-    - { id: "2604.12250", url: "https://arxiv.org/abs/2604.12250" }
-    - { id: "2604.15267", url: "https://arxiv.org/abs/2604.15267" }
+    - { id: "2502.20432", title: "LLM Strategic Reasoning: Agentic Study through Behavioral Game Theory", authors: "Jingru Jia 외", keywords: "cs.AI, cs.CY, cs.GT, cs.LG", url: "https://arxiv.org/abs/2502.20432" }
+    - { id: "2604.12250", title: "How memory can affect collective and cooperative behaviors in an LLM-Based Social Particle Swarm", authors: "Taisei Hishiki 외", keywords: "cs.AI, cs.CL, cs.GT, cs.MA", url: "https://arxiv.org/abs/2604.12250" }
+    - { id: "2604.15267", title: "CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas", authors: "Emanuel Tewolde 외", keywords: "cs.GT, cs.AI, cs.CL, cs.CY, cs.MA", url: "https://arxiv.org/abs/2604.15267" }
 
 2026-05-13-tide-token-identity-layer-reinjection:
   title: "토큰이 자신을 잊지 않으려면 — TIDE와 레이어마다 되새기는 정체성"
@@ -788,11 +841,12 @@
     id: "2605.06216"
     title: "TIDE: Every Layer Knows the Token Beneath the Context"
     authors: "Ajay Jaiswal 외"
+    keywords: "cs.CL, cs.AI, cs.LG"
     url: "https://arxiv.org/abs/2605.06216"
   referenced:
-    - { id: "2502.01637", url: "https://arxiv.org/abs/2502.01637" }
-    - { id: "2509.21163", url: "https://arxiv.org/abs/2509.21163" }
-    - { id: "2601.21204", url: "https://arxiv.org/abs/2601.21204" }
+    - { id: "2502.01637", title: "Scaling Embedding Layers in Language Models", authors: "Da Yu 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2502.01637" }
+    - { id: "2509.21163", title: "Distributed Specialization: Rare-Token Neurons in Large Language Models", authors: "Jing Liu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2509.21163" }
+    - { id: "2601.21204", title: "Scaling Embeddings Outperforms Scaling Experts in Language Models", authors: "Hong Liu 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2601.21204" }
 
 2026-05-10-rl-long-horizon-reasoning-expressiveness:
   title: "RL이 가르칠 수 있는 것의 모양 — 표현성이 멱법칙을 어떻게 휘게 하는가"
@@ -800,12 +854,13 @@
     id: "2605.06638"
     title: "Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key"
     authors: "Tianle Wang 외"
+    keywords: "cs.AI, cs.CL"
     url: "https://arxiv.org/abs/2605.06638"
   referenced:
-    - { id: "2504.13837", url: "https://arxiv.org/abs/2504.13837" }
-    - { id: "2509.25300", url: "https://arxiv.org/abs/2509.25300" }
-    - { id: "2605.02572", url: "https://arxiv.org/abs/2605.02572" }
-    - { id: "2605.06241", url: "https://arxiv.org/abs/2605.06241" }
+    - { id: "2504.13837", title: "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?", authors: "Yang Yue 외", keywords: "cs.AI, cs.CL, cs.CV", url: "https://arxiv.org/abs/2504.13837" }
+    - { id: "2509.25300", title: "Scaling Behaviors of LLM Reinforcement Learning Post-Training: An Empirical Study in Mathematical Reasoning", authors: "Zelin Tan 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2509.25300" }
+    - { id: "2605.02572", title: "On Training Large Language Models for Long-Horizon Tasks: An Empirical Study of Horizon Length", authors: "Sunghwan Kim 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2605.02572" }
+    - { id: "2605.06241", title: "Rethinking RL for LLM Reasoning: It's Sparse Policy Selection, Not Capability Learning", authors: "Ömer Faruk Akgül 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.06241" }
 
 2026-05-05-abstract-cot-discrete-latent-reasoning:
   title: "단어 없이 생각하기 — 64개 추상 토큰이 만드는 이산 잠재 추론"
@@ -813,17 +868,18 @@
     id: "2604.22709"
     title: "Thinking Without Words: Efficient Latent Reasoning with Abstract Chain-of-Thought"
     authors: "Keshav Ramji 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2604.22709"
   referenced:
-    - { id: "1711.00937", url: "https://arxiv.org/abs/1711.00937" }
-    - { id: "2412.06769", url: "https://arxiv.org/abs/2412.06769" }
-    - { id: "2502.03275", url: "https://arxiv.org/abs/2502.03275" }
-    - { id: "2502.21074", url: "https://arxiv.org/abs/2502.21074" }
-    - { id: "2503.24198", url: "https://arxiv.org/abs/2503.24198" }
-    - { id: "2601.22311", url: "https://arxiv.org/abs/2601.22311" }
-    - { id: "2602.01148", url: "https://arxiv.org/abs/2602.01148" }
-    - { id: "2604.15726", url: "https://arxiv.org/abs/2604.15726" }
-    - { id: "2604.17892", url: "https://arxiv.org/abs/2604.17892" }
+    - { id: "1711.00937", title: "Neural Discrete Representation Learning", authors: "Aaron van den Oord 외", keywords: "cs.LG", url: "https://arxiv.org/abs/1711.00937" }
+    - { id: "2412.06769", title: "Training Large Language Models to Reason in a Continuous Latent Space", authors: "Shibo Hao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2412.06769" }
+    - { id: "2502.03275", title: "Token Assorted: Mixing Latent and Text Tokens for Improved Language Model Reasoning", authors: "DiJia Su 외", keywords: "cs.CL, cs.AI, cs.LG, cs.LO", url: "https://arxiv.org/abs/2502.03275" }
+    - { id: "2502.21074", title: "CODI: Compressing Chain-of-Thought into Continuous Space via Self-Distillation", authors: "Zhenyi Shen 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2502.21074" }
+    - { id: "2503.24198", title: "TwT: Thinking without Tokens by Habitual Reasoning Distillation with Multi-Teachers' Guidance", authors: "Jingxian Xu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2503.24198" }
+    - { id: "2601.22311", title: "Why Reasoning Fails to Plan: A Planning-Centric Analysis of Long-Horizon Decision Making in LLM Agents", authors: "Zehong Wang 외", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2601.22311" }
+    - { id: "2602.01148", title: "Capabilities and Fundamental Limits of Latent Chain-of-Thought", authors: "Jiaxuan Zou 외", keywords: "cs.AI, cs.IT, cs.LG, math.OC", url: "https://arxiv.org/abs/2602.01148" }
+    - { id: "2604.15726", title: "LLM Reasoning Is Latent, Not the Chain of Thought", authors: "Wenshuo Wang", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.15726" }
+    - { id: "2604.17892", title: "LEPO: Latent Reasoning Policy Optimization for Large Language Models", authors: "Yuyan Zhou 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.17892" }
 
 2026-05-03-recursive-mas-latent-space-agent-collaboration:
   title: "재귀로 묶인 다중 에이전트 — 잠재공간이 텍스트 병목을 우회할 때"
@@ -831,23 +887,24 @@
     id: "2604.25917"
     title: "Recursive Multi-Agent Systems"
     authors: "Xiyuan Yang 외"
+    keywords: "cs.AI, cs.CL, cs.LG"
     url: "https://arxiv.org/abs/2604.25917"
   referenced:
-    - { id: "1605.06676", url: "https://arxiv.org/abs/1605.06676" }
-    - { id: "1605.07736", url: "https://arxiv.org/abs/1605.07736" }
-    - { id: "1807.03819", url: "https://arxiv.org/abs/1807.03819" }
-    - { id: "1909.11942", url: "https://arxiv.org/abs/1909.11942" }
-    - { id: "2401.05566", url: "https://arxiv.org/abs/2401.05566" }
-    - { id: "2405.07987", title: "The Platonic Representation Hypothesis", url: "https://arxiv.org/abs/2405.07987" }
-    - { id: "2412.06769", url: "https://arxiv.org/abs/2412.06769" }
-    - { id: "2503.04412", url: "https://arxiv.org/abs/2503.04412" }
-    - { id: "2503.09066", url: "https://arxiv.org/abs/2503.09066" }
-    - { id: "2503.18891", url: "https://arxiv.org/abs/2503.18891" }
-    - { id: "2510.25741", url: "https://arxiv.org/abs/2510.25741" }
-    - { id: "2511.03945", url: "https://arxiv.org/abs/2511.03945" }
-    - { id: "2511.09149", url: "https://arxiv.org/abs/2511.09149" }
-    - { id: "2511.20639", url: "https://arxiv.org/abs/2511.20639" }
-    - { id: "2604.12946", url: "https://arxiv.org/abs/2604.12946" }
+    - { id: "1605.06676", title: "Learning to Communicate with Deep Multi-Agent Reinforcement Learning", authors: "Jakob N. Foerster 외", keywords: "cs.AI, cs.LG, cs.MA", url: "https://arxiv.org/abs/1605.06676" }
+    - { id: "1605.07736", title: "Learning Multiagent Communication with Backpropagation", authors: "Sainbayar Sukhbaatar 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/1605.07736" }
+    - { id: "1807.03819", title: "Universal Transformers", authors: "Mostafa Dehghani 외", keywords: "cs.CL, cs.LG, stat.ML", url: "https://arxiv.org/abs/1807.03819" }
+    - { id: "1909.11942", title: "ALBERT: A Lite BERT for Self-supervised Learning of Language Representations", authors: "Zhenzhong Lan 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/1909.11942" }
+    - { id: "2401.05566", title: "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training", authors: "Evan Hubinger 외", keywords: "cs.CR, cs.AI, cs.CL, cs.LG, cs.SE", url: "https://arxiv.org/abs/2401.05566" }
+    - { id: "2405.07987", title: "The Platonic Representation Hypothesis", authors: "Minyoung Huh 외", keywords: "cs.LG, cs.AI, cs.CV, cs.NE", url: "https://arxiv.org/abs/2405.07987" }
+    - { id: "2412.06769", title: "Training Large Language Models to Reason in a Continuous Latent Space", authors: "Shibo Hao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2412.06769" }
+    - { id: "2503.04412", title: "Wider or Deeper? Scaling LLM Inference-Time Compute with Adaptive Branching Tree Search", authors: "Yuichi Inoue 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.04412" }
+    - { id: "2503.09066", title: "Probing Latent Subspaces in LLM for AI Security: Identifying and Manipulating Adversarial States", authors: "Xin Wei Chia 외", keywords: "cs.LG, cs.AI, cs.CR", url: "https://arxiv.org/abs/2503.09066" }
+    - { id: "2503.18891", title: "AgentDropout: Dynamic Agent Elimination for Token-Efficient and High-Performance LLM-Based Multi-Agent Collaboration", authors: "Zhexuan Wang 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2503.18891" }
+    - { id: "2510.25741", title: "Scaling Latent Reasoning via Looped Language Models", authors: "Rui-Jie Zhu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2510.25741" }
+    - { id: "2511.03945", title: "Direct Semantic Communication Between Large Language Models via Vector Translation", authors: "Fu-Chun Yang, Jason Eshraghian", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2511.03945" }
+    - { id: "2511.09149", title: "Enabling Agents to Communicate Entirely in Latent Space", authors: "Zhuoyun Du 외", keywords: "cs.LG, cs.AI, cs.MA", url: "https://arxiv.org/abs/2511.09149" }
+    - { id: "2511.20639", title: "Latent Collaboration in Multi-Agent Systems", authors: "Jiaru Zou 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2511.20639" }
+    - { id: "2604.12946", title: "Parcae: Scaling Laws For Stable Looped Language Models", authors: "Hayden Prairie 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2604.12946" }
 
 2026-05-02-beneath-surface-llm-subtext-literal-bias:
   title: "표면 아래의 LLM — 문해는 늘었지만 함의는 못 짓는다"
@@ -855,18 +912,19 @@
     id: "2604.05273"
     title: "Beneath the Surface: Investigating LLMs' Capabilities for Communicating with Subtext"
     authors: "Kabir Ahuja 외"
+    keywords: "cs.CL"
     url: "https://arxiv.org/abs/2604.05273"
   referenced:
-    - { id: "2311.09144", url: "https://arxiv.org/abs/2311.09144" }
-    - { id: "2411.08010", url: "https://arxiv.org/abs/2411.08010" }
-    - { id: "2412.04509", url: "https://arxiv.org/abs/2412.04509" }
-    - { id: "2505.18497", url: "https://arxiv.org/abs/2505.18497" }
-    - { id: "2509.03805", url: "https://arxiv.org/abs/2509.03805" }
-    - { id: "2510.26253", url: "https://arxiv.org/abs/2510.26253" }
-    - { id: "2602.22072", url: "https://arxiv.org/abs/2602.22072" }
-    - { id: "2603.11915", url: "https://arxiv.org/abs/2603.11915" }
-    - { id: "2604.17309", url: "https://arxiv.org/abs/2604.17309" }
-    - { id: "2604.25917", title: "Recursive Multi-Agent Systems", url: "https://arxiv.org/abs/2604.25917" }
+    - { id: "2311.09144", title: "Grounding Gaps in Language Model Generations", authors: "Omar Shaikh 외", keywords: "cs.CL, cs.HC", url: "https://arxiv.org/abs/2311.09144" }
+    - { id: "2411.08010", title: "ExpressivityBench: Can LLMs Communicate Implicitly?", authors: "Joshua Tint 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2411.08010" }
+    - { id: "2412.04509", title: "Pragmatic Metacognitive Prompting Improves LLM Performance on Sarcasm Detection", authors: "Joshua Lee 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2412.04509" }
+    - { id: "2505.18497", title: "The Pragmatic Mind of Machines: Tracing the Emergence of Pragmatic Competence in Large Language Models", authors: "Kefan Yu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2505.18497" }
+    - { id: "2509.03805", title: "Measuring How (Not Just Whether) VLMs Build Common Ground", authors: "Saki Imai 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2509.03805" }
+    - { id: "2510.26253", title: "Pragmatic Theories Enhance Understanding of Implied Meanings in LLMs", authors: "Takuma Sato 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2510.26253" }
+    - { id: "2602.22072", title: "Understanding Artificial Theory of Mind: Perturbed Tasks and Reasoning in Large Language Models", authors: "Christian Nickel 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2602.22072" }
+    - { id: "2603.11915", title: "CoMMET: To What Extent Can LLMs Perform Theory of Mind Tasks?", authors: "Ruirui Chen 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2603.11915" }
+    - { id: "2604.17309", title: "Knows: Agent-Native Structured Research Representations", authors: "Guangsheng Yu, Xu Wang", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.17309" }
+    - { id: "2604.25917", title: "Recursive Multi-Agent Systems", authors: "Xiyuan Yang 외", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2604.25917" }
 
 2026-05-01-agent-native-research-artifacts-ara:
   title: "마지막 사람-쓴 논문 — 두 가지 세금과 ARA의 약속, 그리고 족쇄"
@@ -874,12 +932,13 @@
     id: "2604.24658"
     title: "The Last Human-Written Paper: Agent-Native Research Artifacts"
     authors: "Jiachen Liu 외"
+    keywords: "cs.LG"
     url: "https://arxiv.org/abs/2604.24658"
   referenced:
-    - { id: "2510.05381", url: "https://arxiv.org/abs/2510.05381" }
-    - { id: "2604.05273", title: "Beneath the Surface: Investigating LLMs' Capabilities for Communicating with Subtext", url: "https://arxiv.org/abs/2604.05273" }
-    - { id: "2604.17309", url: "https://arxiv.org/abs/2604.17309" }
-    - { id: "2604.25917", title: "Recursive Multi-Agent Systems", url: "https://arxiv.org/abs/2604.25917" }
+    - { id: "2510.05381", title: "Context Length Alone Hurts LLM Performance Despite Perfect Retrieval", authors: "Yufeng Du 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2510.05381" }
+    - { id: "2604.05273", title: "Beneath the Surface: Investigating LLMs' Capabilities for Communicating with Subtext", authors: "Kabir Ahuja 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2604.05273" }
+    - { id: "2604.17309", title: "Knows: Agent-Native Structured Research Representations", authors: "Guangsheng Yu, Xu Wang", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.17309" }
+    - { id: "2604.25917", title: "Recursive Multi-Agent Systems", authors: "Xiyuan Yang 외", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2604.25917" }
 
 2026-04-30-mcp-tools-tax-tool-attention:
   title: "MCP의 도구세 — Tool Attention이 제안한 해법과 그 한계"
@@ -887,12 +946,13 @@
     id: "2604.21816"
     title: "Tool Attention Is All You Need: Dynamic Tool Gating and Lazy Schema Loading for Eliminating the MCP/Tools Tax in Scalable Agentic Workflows"
     authors: "Anuj Sadani, Deepak Kumar"
+    keywords: "cs.AI"
     url: "https://arxiv.org/abs/2604.21816"
   referenced:
-    - { id: "2601.11564", url: "https://arxiv.org/abs/2601.11564" }
-    - { id: "2602.14878", url: "https://arxiv.org/abs/2602.14878" }
-    - { id: "2602.17046", url: "https://arxiv.org/abs/2602.17046" }
-    - { id: "2603.22489", url: "https://arxiv.org/abs/2603.22489" }
+    - { id: "2601.11564", title: "Context Discipline and Performance Correlation: Analyzing LLM Performance and Quality Degradation Under Varying Context Lengths", authors: "Ahilan Ayyachamy Nadar Ponnusamy 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2601.11564" }
+    - { id: "2602.14878", title: "Model Context Protocol (MCP) Tool Descriptions Are Smelly! Towards Improving AI Agent Efficiency with Augmented MCP Tool Descriptions", authors: "Mohammed Mehedi Hasan 외", keywords: "cs.SE, cs.ET", url: "https://arxiv.org/abs/2602.14878" }
+    - { id: "2602.17046", title: "Dynamic System Instructions and Tool Exposure for Efficient Agentic LLMs", authors: "Uria Franko", keywords: "cs.AI", url: "https://arxiv.org/abs/2602.17046" }
+    - { id: "2603.22489", title: "Model Context Protocol Threat Modeling and Analyzing Vulnerabilities to Prompt Injection with Tool Poisoning", authors: "Charoes Huang 외", keywords: "cs.CR, cs.SE", url: "https://arxiv.org/abs/2603.22489" }
 
 2026-04-29-web-agent-planning-taxonomy-evaluation:
   title: "웹 에이전트의 계획 — 탐색 알고리즘으로 다시 본 LLM 행위자"
@@ -900,12 +960,13 @@
     id: "2603.12710"
     title: "AI Planning Framework for LLM-Based Web Agents"
     authors: "Orit Shahnovsky, Rotem Dror"
+    keywords: "cs.AI, cs.CL"
     url: "https://arxiv.org/abs/2603.12710"
   referenced:
-    - { id: "2504.08942", url: "https://arxiv.org/abs/2504.08942" }
-    - { id: "2509.03581", url: "https://arxiv.org/abs/2509.03581" }
-    - { id: "2602.21230", url: "https://arxiv.org/abs/2602.21230" }
-    - { id: "2603.14248", url: "https://arxiv.org/abs/2603.14248" }
+    - { id: "2504.08942", title: "AgentRewardBench: Evaluating Automatic Evaluations of Web Agent Trajectories", authors: "Xing Han Lù 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2504.08942" }
+    - { id: "2509.03581", title: "Learning When to Plan: Efficiently Allocating Test-Time Compute for LLM Agents", authors: "Davide Paglieri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2509.03581" }
+    - { id: "2602.21230", title: "TRACE: Trajectory-Aware Comprehensive Evaluation for Deep Research Agents", authors: "Yanyu Chen 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2602.21230" }
+    - { id: "2603.14248", title: "Why Do LLM-based Web Agents Fail? A Hierarchical Planning Perspective", authors: "Mohamed Aghzal 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2603.14248" }
 
 2026-04-28-memento-self-editing-reasoning:
   title: "자기 자신을 편집하는 모델 — MEMENTO가 보여준 것과 포기한 것"
@@ -913,6 +974,7 @@
     id: "2604.09852"
     title: "MEMENTO: Teaching LLMs to Manage Their Own Context"
     authors: "Vasilis Kontonis 외"
+    keywords: "cs.AI, cs.LG"
     url: "https://arxiv.org/abs/2604.09852"
 
 2026-04-27-stateless-decision-memory-enterprise:
@@ -921,6 +983,7 @@
     id: "2604.20158"
     title: "Stateless Decision Memory for Enterprise AI Agents"
     authors: "Vasundra Srinivasan"
+    keywords: "cs.AI"
     url: "https://arxiv.org/abs/2604.20158"
 
 2026-04-26-structured-memory-long-horizon:
@@ -929,32 +992,33 @@
     id: "2604.21748"
     title: "StructMem: Structured Memory for Long-Horizon Behavior in LLMs"
     authors: "Buqiang Xu 외"
+    keywords: "cs.CL, cs.AI, cs.IR, cs.LG, cs.MA"
     url: "https://arxiv.org/abs/2604.21748"
 
 2026-04-25-society-of-thought:
   title: "모델 안의 사회 — RL이 스스로 발견한 다관점 대화"
   referenced:
-    - { id: "2602.03794", url: "https://arxiv.org/abs/2602.03794" }
-    - { id: "2603.20639", title: "Agentic AI and the next intelligence explosion", url: "https://arxiv.org/abs/2603.20639" }
+    - { id: "2602.03794", title: "Understanding Agent Scaling in LLM-Based Multi-Agent Systems via Diversity", authors: "Yingxuan Yang 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2602.03794" }
+    - { id: "2603.20639", title: "Agentic AI and the next intelligence explosion", authors: "James Evans 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.20639" }
 
 2026-04-25-our-work-as-multi-agent-system:
   title: "재귀의 안쪽 — 우리 작업 자체가 multi-agent system인 이유"
   referenced:
-    - { id: "2603.20639", title: "Agentic AI and the next intelligence explosion", url: "https://arxiv.org/abs/2603.20639" }
+    - { id: "2603.20639", title: "Agentic AI and the next intelligence explosion", authors: "James Evans 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.20639" }
 
 2026-04-25-governance-failure-modes:
   title: "고무 도장 심판, 숨겨진 프로파일 — 거버넌스 실패가 공학 실험에 나타나는 방식"
   referenced:
-    - { id: "2512.08296", title: "Towards a Science of Scaling Agent Systems", url: "https://arxiv.org/abs/2512.08296" }
+    - { id: "2512.08296", title: "Towards a Science of Scaling Agent Systems", authors: "Yubin Kim 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2512.08296" }
 
 2026-04-23-orchestrator-convergence:
   title: "Aggregator, Planner, Manager — 다른 이름, 같은 자리"
   referenced:
-    - { id: "2406.04692", url: "https://arxiv.org/abs/2406.04692" }
-    - { id: "2512.08296", title: "Towards a Science of Scaling Agent Systems", url: "https://arxiv.org/abs/2512.08296" }
+    - { id: "2406.04692", title: "Mixture-of-Agents Enhances Large Language Model Capabilities", authors: "Junlin Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2406.04692" }
+    - { id: "2512.08296", title: "Towards a Science of Scaling Agent Systems", authors: "Yubin Kim 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2512.08296" }
 
 2026-04-21-upper-lower-bound-mas:
   title: "에이전트를 더 넣으면 왜 나아지지 않는가 — 상한과 하한의 공존"
   referenced:
-    - { id: "2512.08296", title: "Towards a Science of Scaling Agent Systems", url: "https://arxiv.org/abs/2512.08296" }
-    - { id: "2602.03794", url: "https://arxiv.org/abs/2602.03794" }
+    - { id: "2512.08296", title: "Towards a Science of Scaling Agent Systems", authors: "Yubin Kim 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2512.08296" }
+    - { id: "2602.03794", title: "Understanding Agent Scaling in LLM-Based Multi-Agent Systems via Diversity", authors: "Yingxuan Yang 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2602.03794" }
