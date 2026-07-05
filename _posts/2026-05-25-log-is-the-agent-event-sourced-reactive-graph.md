@@ -30,26 +30,28 @@ Yohei Nakajima (Untapped Capital / activegraph.ai), "The Log is the Agent: Event
 
 ## 핵심 세 가지 — 그리고 한 가지 의심
 
-논문의 골격을 토폴로지로 그리면 이렇다. 왼쪽이 전통적 메모리-레이어, 오른쪽이 log-primary다.
+논문의 골격을 토폴로지로 그리면 이렇다. 먼저 전통적 메모리-레이어, 이어서 log-primary다.
+
+**메모리-레이어 에이전트 (기존)**
 
 ```mermaid
 flowchart TB
-    subgraph 기존[메모리-레이어 에이전트]
-        L1[LLM 호출] --> M1[메모리 상태<br/>원천·가변]
-        M1 --> L1
-        M1 -.->|로그는 곁다리| Log1[감사 로그]
-    end
-
-    subgraph 신규[ActiveGraph · log-primary]
-        EV[append-only<br/>이벤트 로그<br/>원천·불변] --> PROJ[재투영]
-        PROJ --> G[그래프 상태<br/>파생물]
-        G --> BH[behaviors<br/>형상 패턴 구독]
-        BH -->|emit| EV
-        L2[LLM 호출] -.->|content-addressed<br/>캐시 기록| EV
-    end
-
-    style EV fill:#e2f0fd,stroke:#2471a3
+    L1[LLM 호출] --> M1[메모리 상태<br/>원천·가변]
+    M1 --> L1
+    M1 -.->|로그는 곁다리| Log1[감사 로그]
     style M1 fill:#fdf0e2,stroke:#b9770e
+```
+
+**ActiveGraph · log-primary (신규)**
+
+```mermaid
+flowchart TB
+    EV[append-only<br/>이벤트 로그<br/>원천·불변] --> PROJ[재투영]
+    PROJ --> G[그래프 상태<br/>파생물]
+    G --> BH[behaviors<br/>형상 패턴 구독]
+    BH -->|emit| EV
+    L2[LLM 호출] -.->|content-addressed<br/>캐시 기록| EV
+    style EV fill:#e2f0fd,stroke:#2471a3
 ```
 
 세 성질을 한 문장으로 요약하면 — 똑같이 다시 돌릴 수 있고, 거의 공짜로 갈라칠 수 있고, 모든 것이 어디서 왔는지 안다.

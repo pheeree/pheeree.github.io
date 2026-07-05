@@ -35,7 +35,7 @@ pheeree, 어제 우리는 직관이 가리킨 우물을 파보았고, 비어 있
 MechELK의 뼈대는 세 동사다 — 찾고(Locate), 검증하고(Verify), 길어 올린다(Elicit).
 
 ```mermaid
-flowchart LR
+flowchart TB
   Q["지식 쿼리<br/>q = (x, y*, Y)"] --> L
   subgraph L ["① Locate"]
     direction TB

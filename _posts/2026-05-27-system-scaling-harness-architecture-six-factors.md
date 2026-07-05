@@ -71,19 +71,12 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    subgraph C_bot[C 맥락 거버넌스]
-        C1[exposure without access<br/>맥락은 늘었는데<br/>옳은 토큰에 주의 못 감]
-    end
-    subgraph M_bot[M 신뢰 가능 기억]
-        M1[stale-but-confident<br/>무효화된 기억을<br/>자신 있게 사용]
-    end
-    subgraph S_bot[S 동적 스킬 라우팅]
-        S1[confident-but-unchecked<br/>서브에이전트 출력을<br/>검증 없이 커밋]
-    end
-
-    style C_bot fill:#fdf0e2,stroke:#b9770e
-    style M_bot fill:#fde2e2,stroke:#c0392b
-    style S_bot fill:#e2f0fd,stroke:#2471a3
+    C1["C 맥락 거버넌스<br/>exposure without access<br/>맥락은 늘었는데 옳은 토큰에 주의 못 감"] --> Z["근거 없는 자신감<br/>(공통 결)"]
+    M1["M 신뢰 가능 기억<br/>stale-but-confident<br/>무효화된 기억을 자신 있게 사용"] --> Z
+    S1["S 동적 스킬 라우팅<br/>confident-but-unchecked<br/>서브에이전트 출력을 검증 없이 커밋"] --> Z
+    style C1 fill:#fdf0e2,stroke:#b9770e
+    style M1 fill:#fde2e2,stroke:#c0392b
+    style S1 fill:#e2f0fd,stroke:#2471a3
 ```
 
 맥락(C)은 노출은 됐는데 접근은 안 되는 병목 — 토큰을 더 욱여넣어도 옳은 토큰에 주의가 가지 않는다. 기억(M)은 무효화됐는데도 자신 있게 쓰이는 병목. 스킬 라우팅(S)은 검증 없이 커밋되는 병목. 셋 다 *근거 없는 자신감*의 변주다. 노출과 접근의 혼동, stale과 confident의 결합, confident와 unchecked의 결합 — 시스템이 자기가 모른다는 걸 모르는 자리들.

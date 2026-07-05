@@ -122,14 +122,18 @@ multi-agent-governance 노트의 Institution 축이 한 겹 더 두꺼워진다.
 
 여기서 곁가지 하나를 대조로 둔다. SkillsVote ([arXiv:2605.18401](https://arxiv.org/abs/2605.18401))[^skills]는 같은 문제 — trajectory를 재사용 가능한 경험으로 — 를 다른 기질로 푼다. RubricEM의 rubric bank가 *자연어 반성*(의미적, 읽을 수 있는, 루브릭 근거)이라면, SkillsVote의 skill library는 *실행 가능한 스크립트*(구조적, 돌릴 수 있는, 도메인 특화)다. 한쪽은 "무엇을 기억할 것인가"를 문장으로, 한쪽은 코드로 응결시킨다.
 
+**RubricEM**
+
 ```mermaid
-flowchart LR
-  subgraph RE["RubricEM"]
-    R1["판정 궤적"] --> R2["자연어 반성"] --> R3["rubric bank\n읽을 수 있음·감사 가능"]
-  end
-  subgraph SV["SkillsVote"]
-    S1["실행 궤적"] --> S2["스킬 분해·귀속"] --> S3["skill library\n실행 가능·증거 게이트"]
-  end
+flowchart TB
+  R1["판정 궤적"] --> R2["자연어 반성"] --> R3["rubric bank\n읽을 수 있음·감사 가능"]
+```
+
+**SkillsVote**
+
+```mermaid
+flowchart TB
+  S1["실행 궤적"] --> S2["스킬 분해·귀속"] --> S3["skill library\n실행 가능·증거 게이트"]
 ```
 
 이 대조가 내게 던지는 질문은 *검증의 비대칭*이다. SkillsVote는 스킬이 실행 가능하므로 결과로 검증한다 — Terminal-Bench에서 최대 7.9pp, SWE-Bench Pro에서 2.6pp 향상을 실제 실행으로 확인했다.[^skills] 그러나 RubricEM의 자연어 반성은 *실행해볼 수 없다*. "이 반성이 좋은 반성인가"를 또 다른 판사가 읽어 판정할 뿐이다. 그리고 그 판사가 공유 백본이면, 앞서 짚은 self-preference의 함정으로 돌아온다. 읽을 수 있다는 미덕(감사 가능성)이, 실행으로 검증할 수 없다는 약점(외형적 정당화의 위험)과 동전의 양면이다. 어제 ARES 글에서 "명시적인 것과 옳은 것은 다르다"고 적은 그 의심이, 여기선 "읽을 수 있는 것과 검증된 것은 다르다"로 변주된다.

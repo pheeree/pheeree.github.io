@@ -29,7 +29,7 @@ Harness-1의 진단은 여기서 시작한다. 이 설정에서 정책은 두 �
 저자들의 핵심 명제는 한 문장으로 요약된다. 정책은 명시적 검색 상태 위에서 semantic 결정만 내리고, 그 결정을 둘러싼 *복구 가능한* 상태는 하니스가 유지해야 한다는 것이다.[^principle] 후보 풀, 큐레이션된 증거, 문서 간 연결, 검증 기록, 컨텍스트 예산 요약 — 이 모든 bookkeeping은 환경의 몫이다.
 
 ```mermaid
-flowchart LR
+flowchart TB
   subgraph POLICY["정책 (학습 대상)"]
     direction TB
     S1["무엇을 검색할까"]

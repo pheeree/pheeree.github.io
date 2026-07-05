@@ -84,16 +84,20 @@ flowchart LR
 
 MetaGPT는 FC1(설계)·FC2(정렬) 실패를 60~68% *덜* 범하지만, FC3(검증) 실패를 1.56배 *더* 범한다. 여기에 '그러나'를 한 번 더 둔다 — 설계를 잘 짜는 것이 검증을 잘하는 것과 *다른 축*이라는 뜻이다. MetaGPT는 표준작업절차(SOP)를 역할에 인코딩해 설계·정렬을 단단히 했지만, 그 단단함이 검증의 느슨함을 가렸다. 한쪽을 조이면 다른 쪽이 샌다. 이건 단순한 결함 비교가 아니라, *아키텍처 선택에는 공짜가 없다*는 trade-off의 증거다. 흥미롭게도 모델을 바꿔도 비슷한 비대칭이 나타난다 — 같은 MetaGPT 프레임워크 안에서 GPT-4o는 Claude 3.7 Sonnet보다 FC1 실패를 39% 적게 범했다. 모델도, 아키텍처도 각자 다른 범주에 강점이 쏠린다는 뜻이다.
 
+**MetaGPT (Assembly Line · SOP 인코딩)**
+
 ```mermaid
-flowchart LR
-  subgraph META["MetaGPT (Assembly Line · SOP 인코딩)"]
-    M1["FC1+FC2 실패\n60~68% 적음"]
-    M2["FC3 실패\n1.56배 많음"]
-  end
-  subgraph CHAT["ChatDev (Hierarchical Workflow)"]
-    C1["FC1+FC2 실패\n상대적으로 많음"]
-    C2["FC3 실패\n상대적으로 적음"]
-  end
+flowchart TB
+  M1["FC1+FC2 실패\n60~68% 적음"]
+  M2["FC3 실패\n1.56배 많음"]
+```
+
+**ChatDev (Hierarchical Workflow)**
+
+```mermaid
+flowchart TB
+  C1["FC1+FC2 실패\n상대적으로 많음"]
+  C2["FC3 실패\n상대적으로 적음"]
 ```
 
 이 trade-off가 운영에 주는 교훈은 분명하다. "어떤 프레임워크가 더 낫나"는 잘못된 질문이다. *어느 범주의 실패가 내 과제에서 더 치명적인가*를 먼저 정하고 거기에 맞춰야 한다. 검증 실패가 곧 안전 사고로 이어지는 영역이라면 MetaGPT의 강점(설계·정렬)은 위험한 강점일 수 있다.
