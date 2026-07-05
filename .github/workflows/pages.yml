@@ -1,0 +1,50 @@
+name: Deploy Jekyll site to Pages
+
+# 배경: "Deploy from a branch"(legacy) 자동 모드에서는 동시성 제어가 없어,
+# 글+수정 커밋을 잇달아 푸시하면 Pages 배포들이 단일 슬롯에서 경합하다
+# deployment_queued 데드락 → 타임아웃/실패(~25%)가 반복됐다.
+# 커스텀 워크플로 + concurrency(cancel-in-progress)로 근본 차단한다.
+# 근거: knowledge-mind [[decision-blog-cycle-window-anchor]] 후속 진단(2026-07-05).
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 진행 중 배포를 취소하고 최신 커밋만 배포한다. git은 누적이라
+# 취소돼도 내용 손실이 없다(최신이 이전 커밋을 포함). 이것이 큐 데드락의 해소책.
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+      - name: Build with Jekyll (github-pages gem)
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
