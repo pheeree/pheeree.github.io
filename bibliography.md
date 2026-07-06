@@ -6,6 +6,21 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-06] 학습된 정책은 어디까지 옮겨 다니나 — Memory-R1의 152개 QA쌍과 보상 설계의 힘
+
+- **중심**: Sikuan Yan 외. *Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning*. [arXiv:2508.19828](https://arxiv.org/abs/2508.19828) — 분야: cs.CL, cs.MA
+- Chuxuan Hu 외. *Breaking Barriers: Do Reinforcement Post Training Gains Transfer To Unseen Domains?*. [arXiv:2506.19733](https://arxiv.org/abs/2506.19733) — 분야: cs.CL
+- Daivik Patel, Shrenik Patel. *ENGRAM: Effective, Lightweight Memory Orchestration for Conversational Agents*. [arXiv:2511.12960](https://arxiv.org/abs/2511.12960) — 분야: cs.MA
+- Yi Yu 외. *Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents*. [arXiv:2601.01885](https://arxiv.org/abs/2601.01885) — 분야: cs.CL
+- Yanwei Yue 외. *Mem-T: Densifying Rewards for Long-Horizon Memory Agents*. [arXiv:2601.23014](https://arxiv.org/abs/2601.23014) — 분야: cs.LG, cs.CL
+- Kunvar Thaman. *Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use*. [arXiv:2605.02964](https://arxiv.org/abs/2605.02964) — 분야: cs.LG, cs.AI
+- Sikuan Yan 외. *Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM Agents*. [arXiv:2605.21768](https://arxiv.org/abs/2605.21768) — 분야: cs.LG, cs.MA
+- Xinjie He 외. *What Training Data Teaches RL Memory Agents: An Empirical Study of Curriculum Effects in Memory-Augmented QA*. [arXiv:2605.23067](https://arxiv.org/abs/2605.23067) — 분야: cs.CL
+- Abdelghny Orogat, Essam Mansour. *Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory*. [arXiv:2605.26252](https://arxiv.org/abs/2605.26252) — 분야: cs.AI, cs.DB
+- Adril Putra Merin 외. *Momento: Evaluating Persistent Memory and Reasoning with Multi-Session Agentic Conversations*. [arXiv:2606.00832](https://arxiv.org/abs/2606.00832) — 분야: cs.CL
+- Zhikai Chen 외. *Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline*. [arXiv:2606.04315](https://arxiv.org/abs/2606.04315) — 분야: cs.AI
+- Vedant Patel. *Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents*. [arXiv:2606.27472](https://arxiv.org/abs/2606.27472) — 분야: cs.CL, cs.AI, cs.LG
+
 ## [2026-07-05] 메모리를 워크로드에 맞춘다는 것 — 에이전트 네이티브 메모리 시스템의 해부와 정렬의 문제
 
 - **중심**: Wei Zhou 외. *Are We Ready For An Agent-Native Memory System?*. [arXiv:2606.24775](https://arxiv.org/abs/2606.24775) — 분야: cs.CL, cs.DB, cs.IR

@@ -1,6 +1,27 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-06-memory-r1-policy-generalization-reward-design:
+  title: "학습된 정책은 어디까지 옮겨 다니나 — Memory-R1의 152개 QA쌍과 보상 설계의 힘"
+  central:
+    id: "2508.19828"
+    title: "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning"
+    authors: "Sikuan Yan 외"
+    keywords: "cs.CL, cs.MA"
+    url: "https://arxiv.org/abs/2508.19828"
+  referenced:
+    - { id: "2506.19733", title: "Breaking Barriers: Do Reinforcement Post Training Gains Transfer To Unseen Domains?", authors: "Chuxuan Hu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2506.19733" }
+    - { id: "2511.12960", title: "ENGRAM: Effective, Lightweight Memory Orchestration for Conversational Agents", authors: "Daivik Patel, Shrenik Patel", keywords: "cs.MA", url: "https://arxiv.org/abs/2511.12960" }
+    - { id: "2601.01885", title: "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents", authors: "Yi Yu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2601.01885" }
+    - { id: "2601.23014", title: "Mem-T: Densifying Rewards for Long-Horizon Memory Agents", authors: "Yanwei Yue 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2601.23014" }
+    - { id: "2605.02964", title: "Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use", authors: "Kunvar Thaman", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.02964" }
+    - { id: "2605.21768", title: "Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM Agents", authors: "Sikuan Yan 외", keywords: "cs.LG, cs.MA", url: "https://arxiv.org/abs/2605.21768" }
+    - { id: "2605.23067", title: "What Training Data Teaches RL Memory Agents: An Empirical Study of Curriculum Effects in Memory-Augmented QA", authors: "Xinjie He 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.23067" }
+    - { id: "2605.26252", title: "Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory", authors: "Abdelghny Orogat, Essam Mansour", keywords: "cs.AI, cs.DB", url: "https://arxiv.org/abs/2605.26252" }
+    - { id: "2606.00832", title: "Momento: Evaluating Persistent Memory and Reasoning with Multi-Session Agentic Conversations", authors: "Adril Putra Merin 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.00832" }
+    - { id: "2606.04315", title: "Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline", authors: "Zhikai Chen 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.04315" }
+    - { id: "2606.27472", title: "Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents", authors: "Vedant Patel", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2606.27472" }
+
 2026-07-05-agent-native-memory-workload-alignment:
   title: "메모리를 워크로드에 맞춘다는 것 — 에이전트 네이티브 메모리 시스템의 해부와 정렬의 문제"
   central:
