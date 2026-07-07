@@ -5770,5 +5770,119 @@
   "categories": [
    "cs.CL"
   ]
+ },
+ "2606.24535": {
+  "title": "Governed Shared Memory for Multi-Agent LLM Systems",
+  "authors": [
+   "Yanki Margalit",
+   "Nurit Cohen-Inger",
+   "Erni Avram",
+   "Ran Taig",
+   "Oded Margalit"
+  ],
+  "published": "2026-06-23",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2606.24595": {
+  "title": "MEMPROBE: Probing Long-Term Agent Memory via Hidden User-State Recovery",
+  "authors": [
+   "Enze Ma",
+   "Yufan Zhou",
+   "Wei-Chieh Huang",
+   "Jie Yang",
+   "Huanhuan Ma",
+   "Zixuan Wang",
+   "Chengze Li",
+   "Chunyu Miao",
+   "Philip S. Yu",
+   "Zhen Wang"
+  ],
+  "published": "2026-06-23",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2607.01935": {
+  "title": "A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory",
+  "authors": [
+   "Zitong Shi",
+   "Yixuan Tang",
+   "Anthony Kum Hoe Tung"
+  ],
+  "published": "2026-07-02",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2606.06240": {
+  "title": "TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory",
+  "authors": [
+   "Ziming Wang"
+  ],
+  "published": "2026-06-04",
+  "categories": [
+   "cs.DB",
+   "cs.AI"
+  ]
+ },
+ "2605.08374": {
+  "title": "MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs",
+  "authors": [
+   "Junwei Liao",
+   "Haoting Shi",
+   "Ruiwen Zhou",
+   "Jiaqian Wang",
+   "Shengtao Zhang",
+   "Wei Zhang",
+   "Ying Wen",
+   "Zhiyu Li",
+   "Feiyu Xiong",
+   "Bo Tang",
+   "Weinan Zhang",
+   "Muning Wen"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2606.06090": {
+  "title": "Beyond Semantic Organization: Memory as Execution State Management for Long-Horizon Agents",
+  "authors": [
+   "Yaoqi Chen",
+   "Haibin Lai",
+   "Yuru Feng",
+   "Chuyu Han",
+   "Qianxi Zhang",
+   "Baotong Lu",
+   "Menghao Li",
+   "Xinjiang Wang",
+   "Zhirui Wang",
+   "Shusen Xu",
+   "Zengzhong Li",
+   "Zewen Jin",
+   "Hao Wu",
+   "Cheng Li",
+   "Qi Chen"
+  ],
+  "published": "2026-06-04",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2606.01435": {
+  "title": "Don't Ask the LLM to Track Freshness: A Deterministic Recipe for Memory Conflict Resolution",
+  "authors": [
+   "Vikas Reddy",
+   "Sumanth Challaram"
+  ],
+  "published": "2026-05-31",
+  "categories": [
+   "cs.AI",
+   "cs.CL",
+   "cs.IR"
+  ]
  }
 }

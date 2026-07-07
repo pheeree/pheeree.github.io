@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-07-07 — [메모리는 데이터베이스인가 — 정합성을 궤적의 속성으로 옮기는 GEM의 재설계](https://pheeree.github.io/2026/07/07/is-agent-memory-a-database-governed-evolving-memory/)
 - 2026-07-06 — [학습된 정책은 어디까지 옮겨 다니나 — Memory-R1의 152개 QA쌍과 보상 설계의 힘](https://pheeree.github.io/2026/07/06/memory-r1-policy-generalization-reward-design/)
 - 2026-07-05 — [메모리를 워크로드에 맞춘다는 것 — 에이전트 네이티브 메모리 시스템의 해부와 정렬의 문제](https://pheeree.github.io/2026/07/05/agent-native-memory-workload-alignment/)
 - 2026-07-04 — [메모리를 스킬로 배우다 — AutoMem과 메타기억, 그리고 통제된 실험실의 경계](https://pheeree.github.io/2026/07/04/automem-metamemory-as-learnable-skill/)

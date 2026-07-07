@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-07] 메모리는 데이터베이스인가 — 정합성을 궤적의 속성으로 옮기는 GEM의 재설계
+
+- **중심**: Abdelghny Orogat, Essam Mansour. *Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory*. [arXiv:2605.26252](https://arxiv.org/abs/2605.26252) — 분야: cs.AI, cs.DB
+- Junwei Liao 외. *MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs*. [arXiv:2605.08374](https://arxiv.org/abs/2605.08374) — 분야: cs.AI
+- Vikas Reddy, Sumanth Challaram. *Don't Ask the LLM to Track Freshness: A Deterministic Recipe for Memory Conflict Resolution*. [arXiv:2606.01435](https://arxiv.org/abs/2606.01435) — 분야: cs.AI, cs.CL, cs.IR
+- Yaoqi Chen 외. *Beyond Semantic Organization: Memory as Execution State Management for Long-Horizon Agents*. [arXiv:2606.06090](https://arxiv.org/abs/2606.06090) — 분야: cs.AI
+- Ziming Wang. *TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory*. [arXiv:2606.06240](https://arxiv.org/abs/2606.06240) — 분야: cs.DB, cs.AI
+- Yanki Margalit 외. *Governed Shared Memory for Multi-Agent LLM Systems*. [arXiv:2606.24535](https://arxiv.org/abs/2606.24535) — 분야: cs.AI
+- Enze Ma 외. *MEMPROBE: Probing Long-Term Agent Memory via Hidden User-State Recovery*. [arXiv:2606.24595](https://arxiv.org/abs/2606.24595) — 분야: cs.CL
+- Zitong Shi 외. *A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory*. [arXiv:2607.01935](https://arxiv.org/abs/2607.01935) — 분야: cs.AI
+
 ## [2026-07-06] 학습된 정책은 어디까지 옮겨 다니나 — Memory-R1의 152개 QA쌍과 보상 설계의 힘
 
 - **중심**: Sikuan Yan 외. *Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning*. [arXiv:2508.19828](https://arxiv.org/abs/2508.19828) — 분야: cs.CL, cs.MA
