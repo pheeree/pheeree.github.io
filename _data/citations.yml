@@ -1,6 +1,37 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-08-memprobe-auditing-what-memory-leaves-behind:
+  title: "메모리에 무엇이 남았나 — 다운스트림 성공이 아니라 복원 가능성으로 재는 MemProbe"
+  central:
+    id: "2606.24595"
+    title: "MEMPROBE: Probing Long-Term Agent Memory via Hidden User-State Recovery"
+    authors: "Enze Ma 외"
+    keywords: "cs.CL"
+    url: "https://arxiv.org/abs/2606.24595"
+  referenced:
+    - { id: "2505.15935", title: "MAPS: A Multilingual Benchmark for Agent Performance and Security", authors: "Omer Hofman 외", keywords: "cs.DB, cs.CL, cs.CR", url: "https://arxiv.org/abs/2505.15935" }
+    - { id: "2601.17087", title: "Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations", authors: "Preethi Seshadri 외", keywords: "cs.HC, cs.AI, cs.CY, cs.LG", url: "https://arxiv.org/abs/2601.17087" }
+    - { id: "2602.16313", title: "MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks", authors: "Zexue He 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2602.16313" }
+    - { id: "2603.11768", title: "Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework", authors: "Chingkwun Lam 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.11768" }
+    - { id: "2603.23231", title: "PERMA: Benchmarking Personalized Memory Agents via Event-Driven Preference and Realistic Task Environments", authors: "Shuochen Liu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.23231" }
+    - { id: "2605.06527", title: "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?", authors: "Hanxiang Chao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.06527" }
+    - { id: "2605.08374", title: "MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs", authors: "Junwei Liao 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.08374" }
+    - { id: "2605.26252", title: "Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory", authors: "Abdelghny Orogat, Essam Mansour", keywords: "cs.AI, cs.DB", url: "https://arxiv.org/abs/2605.26252" }
+    - { id: "2606.04315", title: "Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline", authors: "Zhikai Chen 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.04315" }
+    - { id: "2606.06240", title: "TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory", authors: "Ziming Wang", keywords: "cs.DB, cs.AI", url: "https://arxiv.org/abs/2606.06240" }
+    - { id: "2606.09863", title: "From Confident Closing to Silent Failure: Characterizing False Success in LLM Agents", authors: "Laksh Advani", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.09863" }
+    - { id: "2606.14571", title: "StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance", authors: "Guanming Liu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.14571" }
+
+2026-07-08-mast-remeasure-log-2-when-the-scale-disagrees:
+  title: "연구 로그 2 — 저울이 저울과 안 맞을 때: judge 이전 실패의 기록"
+  central:
+    id: "2503.13657"
+    title: "Why Do Multi-Agent LLM Systems Fail?"
+    authors: "Mert Cemri 외"
+    keywords: "cs.AI"
+    url: "https://arxiv.org/abs/2503.13657"
+
 2026-07-07-is-agent-memory-a-database-governed-evolving-memory:
   title: "메모리는 데이터베이스인가 — 정합성을 궤적의 속성으로 옮기는 GEM의 재설계"
   central:

@@ -5884,5 +5884,93 @@
    "cs.CL",
    "cs.IR"
   ]
+ },
+ "2505.15935": {
+  "title": "MAPS: A Multilingual Benchmark for Agent Performance and Security",
+  "authors": [
+   "Omer Hofman",
+   "Jonathan Brokman",
+   "Oren Rachmil",
+   "Shamik Bose",
+   "Vikas Pahuja",
+   "Toshiya Shimizu",
+   "Trisha Starostina",
+   "Kelly Marchisio",
+   "Seraphina Goldfarb-Tarrant",
+   "Roman Vainshtein"
+  ],
+  "published": "2025-05-21",
+  "categories": [
+   "cs.DB",
+   "cs.CL",
+   "cs.CR"
+  ]
+ },
+ "2602.16313": {
+  "title": "MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks",
+  "authors": [
+   "Zexue He",
+   "Yu Wang",
+   "Churan Zhi",
+   "Yuanzhe Hu",
+   "Tzu-Ping Chen",
+   "Lang Yin",
+   "Ze Chen",
+   "Tong Arthur Wu",
+   "Siru Ouyang",
+   "Zihan Wang",
+   "Jiaxin Pei",
+   "Julian McAuley",
+   "Yejin Choi",
+   "Alex Pentland"
+  ],
+  "published": "2026-02-18",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2601.17087": {
+  "title": "Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations",
+  "authors": [
+   "Preethi Seshadri",
+   "Samuel Cahyawijaya",
+   "Ayomide Odumakinde",
+   "Sameer Singh",
+   "Seraphina Goldfarb-Tarrant"
+  ],
+  "published": "2026-01-23",
+  "categories": [
+   "cs.HC",
+   "cs.AI",
+   "cs.CY",
+   "cs.LG"
+  ]
+ },
+ "2606.09863": {
+  "title": "From Confident Closing to Silent Failure: Characterizing False Success in LLM Agents",
+  "authors": [
+   "Laksh Advani"
+  ],
+  "published": "2026-06-01",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2606.14571": {
+  "title": "StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance",
+  "authors": [
+   "Guanming Liu",
+   "Yuqi Ren",
+   "Hansu Gu",
+   "Peng Zhang",
+   "Weihang Wang",
+   "Jiahao Liu",
+   "Ning Gu",
+   "Tun Lu"
+  ],
+  "published": "2026-06-12",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }

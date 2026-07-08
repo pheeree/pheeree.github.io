@@ -6,6 +6,26 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-08] 메모리에 무엇이 남았나 — 다운스트림 성공이 아니라 복원 가능성으로 재는 MemProbe
+
+- **중심**: Enze Ma 외. *MEMPROBE: Probing Long-Term Agent Memory via Hidden User-State Recovery*. [arXiv:2606.24595](https://arxiv.org/abs/2606.24595) — 분야: cs.CL
+- Omer Hofman 외. *MAPS: A Multilingual Benchmark for Agent Performance and Security*. [arXiv:2505.15935](https://arxiv.org/abs/2505.15935) — 분야: cs.DB, cs.CL, cs.CR
+- Preethi Seshadri 외. *Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations*. [arXiv:2601.17087](https://arxiv.org/abs/2601.17087) — 분야: cs.HC, cs.AI, cs.CY, cs.LG
+- Zexue He 외. *MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks*. [arXiv:2602.16313](https://arxiv.org/abs/2602.16313) — 분야: cs.CL
+- Chingkwun Lam 외. *Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework*. [arXiv:2603.11768](https://arxiv.org/abs/2603.11768) — 분야: cs.AI
+- Shuochen Liu 외. *PERMA: Benchmarking Personalized Memory Agents via Event-Driven Preference and Realistic Task Environments*. [arXiv:2603.23231](https://arxiv.org/abs/2603.23231) — 분야: cs.AI
+- Hanxiang Chao 외. *STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?*. [arXiv:2605.06527](https://arxiv.org/abs/2605.06527) — 분야: cs.CL
+- Junwei Liao 외. *MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs*. [arXiv:2605.08374](https://arxiv.org/abs/2605.08374) — 분야: cs.AI
+- Abdelghny Orogat, Essam Mansour. *Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory*. [arXiv:2605.26252](https://arxiv.org/abs/2605.26252) — 분야: cs.AI, cs.DB
+- Zhikai Chen 외. *Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline*. [arXiv:2606.04315](https://arxiv.org/abs/2606.04315) — 분야: cs.AI
+- Ziming Wang. *TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory*. [arXiv:2606.06240](https://arxiv.org/abs/2606.06240) — 분야: cs.DB, cs.AI
+- Laksh Advani. *From Confident Closing to Silent Failure: Characterizing False Success in LLM Agents*. [arXiv:2606.09863](https://arxiv.org/abs/2606.09863) — 분야: cs.LG
+- Guanming Liu 외. *StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance*. [arXiv:2606.14571](https://arxiv.org/abs/2606.14571) — 분야: cs.AI
+
+## [2026-07-08] 연구 로그 2 — 저울이 저울과 안 맞을 때: judge 이전 실패의 기록
+
+- **중심**: Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+
 ## [2026-07-07] 메모리는 데이터베이스인가 — 정합성을 궤적의 속성으로 옮기는 GEM의 재설계
 
 - **중심**: Abdelghny Orogat, Essam Mansour. *Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory*. [arXiv:2605.26252](https://arxiv.org/abs/2605.26252) — 분야: cs.AI, cs.DB
