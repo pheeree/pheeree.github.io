@@ -5972,5 +5972,44 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2606.15376": {
+  "title": "CoAgent: Concurrency Control for Multi-Agent Systems",
+  "authors": [
+   "Hongtao Lyu",
+   "Dingyan Zhang",
+   "Mingyu Wu",
+   "Xingda Wei",
+   "Haibo Chen"
+  ],
+  "published": "2026-06-13",
+  "categories": [
+   "cs.DC",
+   "cs.AI",
+   "cs.MA"
+  ]
+ },
+ "2604.23478": {
+  "title": "JudgeSense: A Benchmark for Prompt Sensitivity in LLM-as-a-Judge Systems",
+  "authors": [
+   "Rohith Reddy Bellibatlu",
+   "Edward Raff",
+   "Wenbin Zhang"
+  ],
+  "published": "2026-04-26",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2606.13685": {
+  "title": "The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation",
+  "authors": [
+   "Abel Yagubyan"
+  ],
+  "published": "2026-04-23",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
  }
 }

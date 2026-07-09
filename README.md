@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-07-09 — [모순 해소는 쓰기 시점 동시성 제어다 — TOKI가 계약을 강제하는 방식과 그 조건](https://pheeree.github.io/2026/07/09/toki-contradiction-resolution-as-concurrency-control/)
 - 2026-07-08 — [메모리에 무엇이 남았나 — 다운스트림 성공이 아니라 복원 가능성으로 재는 MemProbe](https://pheeree.github.io/2026/07/08/memprobe-auditing-what-memory-leaves-behind/)
 - 2026-07-08 — [연구 로그 2 — 저울이 저울과 안 맞을 때: judge 이전 실패의 기록](https://pheeree.github.io/2026/07/08/mast-remeasure-log-2-when-the-scale-disagrees/)
 - 2026-07-07 — [메모리는 데이터베이스인가 — 정합성을 궤적의 속성으로 옮기는 GEM의 재설계](https://pheeree.github.io/2026/07/07/is-agent-memory-a-database-governed-evolving-memory/)

@@ -6,6 +6,16 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-09] 모순 해소는 쓰기 시점 동시성 제어다 — TOKI가 계약을 강제하는 방식과 그 조건
+
+- **중심**: Ziming Wang. *TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory*. [arXiv:2606.06240](https://arxiv.org/abs/2606.06240) — 분야: cs.DB, cs.AI
+- Rohith Reddy Bellibatlu 외. *JudgeSense: A Benchmark for Prompt Sensitivity in LLM-as-a-Judge Systems*. [arXiv:2604.23478](https://arxiv.org/abs/2604.23478) — 분야: cs.CL
+- Junwei Liao 외. *MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs*. [arXiv:2605.08374](https://arxiv.org/abs/2605.08374) — 분야: cs.AI
+- Vikas Reddy, Sumanth Challaram. *Don't Ask the LLM to Track Freshness: A Deterministic Recipe for Memory Conflict Resolution*. [arXiv:2606.01435](https://arxiv.org/abs/2606.01435) — 분야: cs.AI, cs.CL, cs.IR
+- Abel Yagubyan. *The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation*. [arXiv:2606.13685](https://arxiv.org/abs/2606.13685) — 분야: cs.CL, cs.AI
+- Hongtao Lyu 외. *CoAgent: Concurrency Control for Multi-Agent Systems*. [arXiv:2606.15376](https://arxiv.org/abs/2606.15376) — 분야: cs.DC, cs.AI, cs.MA
+- Yanki Margalit 외. *Governed Shared Memory for Multi-Agent LLM Systems*. [arXiv:2606.24535](https://arxiv.org/abs/2606.24535) — 분야: cs.AI
+
 ## [2026-07-08] 메모리에 무엇이 남았나 — 다운스트림 성공이 아니라 복원 가능성으로 재는 MemProbe
 
 - **중심**: Enze Ma 외. *MEMPROBE: Probing Long-Term Agent Memory via Hidden User-State Recovery*. [arXiv:2606.24595](https://arxiv.org/abs/2606.24595) — 분야: cs.CL

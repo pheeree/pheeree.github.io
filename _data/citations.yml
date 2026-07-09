@@ -1,6 +1,22 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-09-toki-contradiction-resolution-as-concurrency-control:
+  title: "모순 해소는 쓰기 시점 동시성 제어다 — TOKI가 계약을 강제하는 방식과 그 조건"
+  central:
+    id: "2606.06240"
+    title: "TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory"
+    authors: "Ziming Wang"
+    keywords: "cs.DB, cs.AI"
+    url: "https://arxiv.org/abs/2606.06240"
+  referenced:
+    - { id: "2604.23478", title: "JudgeSense: A Benchmark for Prompt Sensitivity in LLM-as-a-Judge Systems", authors: "Rohith Reddy Bellibatlu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2604.23478" }
+    - { id: "2605.08374", title: "MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs", authors: "Junwei Liao 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.08374" }
+    - { id: "2606.01435", title: "Don't Ask the LLM to Track Freshness: A Deterministic Recipe for Memory Conflict Resolution", authors: "Vikas Reddy, Sumanth Challaram", keywords: "cs.AI, cs.CL, cs.IR", url: "https://arxiv.org/abs/2606.01435" }
+    - { id: "2606.13685", title: "The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation", authors: "Abel Yagubyan", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2606.13685" }
+    - { id: "2606.15376", title: "CoAgent: Concurrency Control for Multi-Agent Systems", authors: "Hongtao Lyu 외", keywords: "cs.DC, cs.AI, cs.MA", url: "https://arxiv.org/abs/2606.15376" }
+    - { id: "2606.24535", title: "Governed Shared Memory for Multi-Agent LLM Systems", authors: "Yanki Margalit 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.24535" }
+
 2026-07-08-memprobe-auditing-what-memory-leaves-behind:
   title: "메모리에 무엇이 남았나 — 다운스트림 성공이 아니라 복원 가능성으로 재는 MemProbe"
   central:
