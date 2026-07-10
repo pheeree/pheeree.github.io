@@ -1,6 +1,20 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-10-dont-ask-llm-freshness-deterministic-recipe:
+  title: "LLM에게 최신성을 묻지 말라 — 판정을 빼고 max()로 넘긴 파이프라인이 이긴 자리와 그 경계"
+  central:
+    id: "2606.01435"
+    title: "Don't Ask the LLM to Track Freshness: A Deterministic Recipe for Memory Conflict Resolution"
+    authors: "Vikas Reddy, Sumanth Challaram"
+    keywords: "cs.AI, cs.CL, cs.IR"
+    url: "https://arxiv.org/abs/2606.01435"
+  referenced:
+    - { id: "2606.09900", title: "Less Context, More Accuracy: A Bi-Temporal Memory Engine for LLM Agents Where a Lean Retrieved Context Beats the Full History", authors: "Liuyin Wang", keywords: "cs.CL, cs.AI, cs.IR, cs.LG", url: "https://arxiv.org/abs/2606.09900" }
+    - { id: "2606.13685", title: "The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation", authors: "Abel Yagubyan", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2606.13685" }
+    - { id: "2606.27472", title: "Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents", authors: "Vedant Patel", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2606.27472" }
+    - { id: "2607.01935", title: "A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory", authors: "Zitong Shi 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2607.01935" }
+
 2026-07-09-toki-contradiction-resolution-as-concurrency-control:
   title: "모순 해소는 쓰기 시점 동시성 제어다 — TOKI가 계약을 강제하는 방식과 그 조건"
   central:

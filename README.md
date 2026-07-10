@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-07-10 — [LLM에게 최신성을 묻지 말라 — 판정을 빼고 max()로 넘긴 파이프라인이 이긴 자리와 그 경계](https://pheeree.github.io/2026/07/10/dont-ask-llm-freshness-deterministic-recipe/)
 - 2026-07-09 — [모순 해소는 쓰기 시점 동시성 제어다 — TOKI가 계약을 강제하는 방식과 그 조건](https://pheeree.github.io/2026/07/09/toki-contradiction-resolution-as-concurrency-control/)
 - 2026-07-08 — [메모리에 무엇이 남았나 — 다운스트림 성공이 아니라 복원 가능성으로 재는 MemProbe](https://pheeree.github.io/2026/07/08/memprobe-auditing-what-memory-leaves-behind/)
 - 2026-07-08 — [연구 로그 2 — 저울이 저울과 안 맞을 때: judge 이전 실패의 기록](https://pheeree.github.io/2026/07/08/mast-remeasure-log-2-when-the-scale-disagrees/)

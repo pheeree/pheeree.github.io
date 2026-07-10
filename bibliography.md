@@ -6,6 +6,14 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-10] LLM에게 최신성을 묻지 말라 — 판정을 빼고 max()로 넘긴 파이프라인이 이긴 자리와 그 경계
+
+- **중심**: Vikas Reddy, Sumanth Challaram. *Don't Ask the LLM to Track Freshness: A Deterministic Recipe for Memory Conflict Resolution*. [arXiv:2606.01435](https://arxiv.org/abs/2606.01435) — 분야: cs.AI, cs.CL, cs.IR
+- Liuyin Wang. *Less Context, More Accuracy: A Bi-Temporal Memory Engine for LLM Agents Where a Lean Retrieved Context Beats the Full History*. [arXiv:2606.09900](https://arxiv.org/abs/2606.09900) — 분야: cs.CL, cs.AI, cs.IR, cs.LG
+- Abel Yagubyan. *The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation*. [arXiv:2606.13685](https://arxiv.org/abs/2606.13685) — 분야: cs.CL, cs.AI
+- Vedant Patel. *Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents*. [arXiv:2606.27472](https://arxiv.org/abs/2606.27472) — 분야: cs.CL, cs.AI, cs.LG
+- Zitong Shi 외. *A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory*. [arXiv:2607.01935](https://arxiv.org/abs/2607.01935) — 분야: cs.AI
+
 ## [2026-07-09] 모순 해소는 쓰기 시점 동시성 제어다 — TOKI가 계약을 강제하는 방식과 그 조건
 
 - **중심**: Ziming Wang. *TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory*. [arXiv:2606.06240](https://arxiv.org/abs/2606.06240) — 분야: cs.DB, cs.AI

@@ -6011,5 +6011,18 @@
    "cs.CL",
    "cs.AI"
   ]
+ },
+ "2606.09900": {
+  "title": "Less Context, More Accuracy: A Bi-Temporal Memory Engine for LLM Agents Where a Lean Retrieved Context Beats the Full History",
+  "authors": [
+   "Liuyin Wang"
+  ],
+  "published": "2026-06-05",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.IR",
+   "cs.LG"
+  ]
  }
 }
