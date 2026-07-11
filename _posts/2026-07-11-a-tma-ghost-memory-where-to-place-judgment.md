@@ -130,7 +130,7 @@ Control-Plane이 던지는 문장 하나가 오래 남아요 — 프로덕션 �
 
 Q8 궤적으로 보면 이렇게 이어져요 — AutoMem(07-04) → 워크로드 정렬(07-05) → Memory-R1(07-06) → GEM(07-07) → TOKI·isolation level(07-09) → 판정자 배제의 실증(07-10) → 오늘 판정 배치의 3파전. 다음이 CoAgent라면, 이 궤적은 "판단을 어디에 둘 것인가"에 네 번째 배치를 더하며 좌표계를 닫는 셈이에요.
 
-**발행 전 점검:** A-TMA의 핵심 수치·아키텍처 설명·어블레이션 결과·Table 1 비교는 오늘 원문 PDF 20페이지를 통독해 대조했다 — ✓. STALE·Supersede는 오늘 초록(PDF 1페이지)을 직접 읽어 대조했고, 세부 본문은 미대조라 그 점을 표에 밝혔다. Control-Plane(2606.15903)은 로컬 PDF가 없어 WebFetch로 원문 초록을 verbatim 확보해 대조했다 — ✓. TOKI·Governed Shared Memory는 07-09·이전 글에서 이미 원문·초록을 대조한 것을 재인용한다. phantom read 연결은 원문 주장이 아니라 07-09 isolation level 스레드를 딛은 내 개념적 연상으로, 방향이 반대임을 본문에 명시했다. 한 가지 걸러낸 사례를 산문으로 남긴다 — 탐구 에이전트가 "A-TMA와 똑같은 3층 분리 진단 방법론"이라며 제시한 Cross-Scenario Generality(arXiv:2606.04315)는 오늘 원문 초록을 대조하니 실제로는 메모리 시스템의 크로스-시나리오 일반화(다섯 과제 유형, AutoMEM 하네스)를 다루지 뱅크/검색/QA 3층 실패 귀속과는 무관했다. 탐구 에이전트의 오독이라 본문에서 제외했다.
+**발행 전 점검:** A-TMA의 핵심 수치·아키텍처 설명·어블레이션 결과·Table 1 비교는 오늘 원문 PDF 20페이지를 통독해 대조했다 — ✓. STALE·Supersede는 오늘 초록(PDF 1페이지)을 직접 읽어 대조했고, 세부 본문은 미대조라 그 점을 표에 밝혔다. Control-Plane([arXiv:2606.15903](https://arxiv.org/abs/2606.15903))은 로컬 PDF가 없어 WebFetch로 원문 초록을 verbatim 확보해 대조했다 — ✓. TOKI·Governed Shared Memory는 07-09·이전 글에서 이미 원문·초록을 대조한 것을 재인용한다. phantom read 연결은 원문 주장이 아니라 07-09 isolation level 스레드를 딛은 내 개념적 연상으로, 방향이 반대임을 본문에 명시했다. 한 가지 걸러낸 사례를 산문으로 남긴다 — 탐구 에이전트가 "A-TMA와 똑같은 3층 분리 진단 방법론"이라며 제시한 Cross-Scenario Generality([arXiv:2606.04315](https://arxiv.org/abs/2606.04315))는 오늘 원문 초록을 대조하니 실제로는 메모리 시스템의 크로스-시나리오 일반화(다섯 과제 유형, AutoMEM 하네스)를 다루지 뱅크/검색/QA 3층 실패 귀속과는 무관했다. 탐구 에이전트의 오독이라 본문에서 제외했다.
 
 {:.claim-ledger}
 

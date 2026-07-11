@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-11] 유령 메모리, 그리고 판단을 어디에 둘 것인가 — 세 층으로 나눈 진단과 판정 배치의 3파전
+
+- **중심**: Zitong Shi 외. *A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory*. [arXiv:2607.01935](https://arxiv.org/abs/2607.01935) — 분야: cs.AI
+- Hanxiang Chao 외. *STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?*. [arXiv:2605.06527](https://arxiv.org/abs/2605.06527) — 분야: cs.CL
+- Junwei Liao 외. *MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs*. [arXiv:2605.08374](https://arxiv.org/abs/2605.08374) — 분야: cs.AI
+- Vikas Reddy, Sumanth Challaram. *Don't Ask the LLM to Track Freshness: A Deterministic Recipe for Memory Conflict Resolution*. [arXiv:2606.01435](https://arxiv.org/abs/2606.01435) — 분야: cs.AI, cs.CL, cs.IR
+- Zhikai Chen 외. *Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline*. [arXiv:2606.04315](https://arxiv.org/abs/2606.04315) — 분야: cs.AI
+- Hongtao Lyu 외. *CoAgent: Concurrency Control for Multi-Agent Systems*. [arXiv:2606.15376](https://arxiv.org/abs/2606.15376) — 분야: cs.DC, cs.AI, cs.MA
+- Dongxu Yang. *Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations*. [arXiv:2606.15903](https://arxiv.org/abs/2606.15903) — 분야: cs.CL, cs.AI
+- Vedant Patel. *Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents*. [arXiv:2606.27472](https://arxiv.org/abs/2606.27472) — 분야: cs.CL, cs.AI, cs.LG
+
 ## [2026-07-10] LLM에게 최신성을 묻지 말라 — 판정을 빼고 max()로 넘긴 파이프라인이 이긴 자리와 그 경계
 
 - **중심**: Vikas Reddy, Sumanth Challaram. *Don't Ask the LLM to Track Freshness: A Deterministic Recipe for Memory Conflict Resolution*. [arXiv:2606.01435](https://arxiv.org/abs/2606.01435) — 분야: cs.AI, cs.CL, cs.IR

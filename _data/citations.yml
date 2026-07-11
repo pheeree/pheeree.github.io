@@ -1,6 +1,23 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-11-a-tma-ghost-memory-where-to-place-judgment:
+  title: "유령 메모리, 그리고 판단을 어디에 둘 것인가 — 세 층으로 나눈 진단과 판정 배치의 3파전"
+  central:
+    id: "2607.01935"
+    title: "A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory"
+    authors: "Zitong Shi 외"
+    keywords: "cs.AI"
+    url: "https://arxiv.org/abs/2607.01935"
+  referenced:
+    - { id: "2605.06527", title: "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?", authors: "Hanxiang Chao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.06527" }
+    - { id: "2605.08374", title: "MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs", authors: "Junwei Liao 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.08374" }
+    - { id: "2606.01435", title: "Don't Ask the LLM to Track Freshness: A Deterministic Recipe for Memory Conflict Resolution", authors: "Vikas Reddy, Sumanth Challaram", keywords: "cs.AI, cs.CL, cs.IR", url: "https://arxiv.org/abs/2606.01435" }
+    - { id: "2606.04315", title: "Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline", authors: "Zhikai Chen 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.04315" }
+    - { id: "2606.15376", title: "CoAgent: Concurrency Control for Multi-Agent Systems", authors: "Hongtao Lyu 외", keywords: "cs.DC, cs.AI, cs.MA", url: "https://arxiv.org/abs/2606.15376" }
+    - { id: "2606.15903", title: "Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations", authors: "Dongxu Yang", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2606.15903" }
+    - { id: "2606.27472", title: "Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents", authors: "Vedant Patel", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2606.27472" }
+
 2026-07-10-dont-ask-llm-freshness-deterministic-recipe:
   title: "LLM에게 최신성을 묻지 말라 — 판정을 빼고 max()로 넘긴 파이프라인이 이긴 자리와 그 경계"
   central:

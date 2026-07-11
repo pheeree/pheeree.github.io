@@ -6024,5 +6024,16 @@
    "cs.IR",
    "cs.LG"
   ]
+ },
+ "2606.15903": {
+  "title": "Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations",
+  "authors": [
+   "Dongxu Yang"
+  ],
+  "published": "2026-06-14",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
  }
 }
