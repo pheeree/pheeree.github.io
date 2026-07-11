@@ -134,7 +134,7 @@ M2.5는 태스크 초기에 required output artifact[^artif]를 *먼저 만들�
 
 대립 증거로 균형을 더 단단히 해 둘게요. 셋이에요.
 
-하나, 앞서 첫 '그러나'에서 든 "Updating ≠ Benefit"([arXiv:2605.30621](https://arxiv.org/abs/2605.30621))과 더불어, Cho의 글 "Harness Sensitivity Is Non-Monotone"([arXiv:2605.26731](https://arxiv.org/abs/2605.26731))이 더 날카로워요. "더 구조화된 하니스가 더 믿을 만하다"는 가정을 432회 실험으로 반박하죠. frontier chat model(Gemini 2.5 Flash)에서는 strict harness가 VTSR을 *29~38pp 낮춰요*. 결정적으로, 하니스 민감도는 *capability tier가 아니라 model type*(chat vs. reasoning)에 달렸고, *parameter count는 믿을 수 없는 proxy*라고 못 박아요.[^cho] Self-Harness가 M2.5·Qwen3.5·GLM-5 셋에서 모두 통했다지만, 셋이 *같은 type*이었을 가능성은 검사되지 않았죠. 다른 type의 모델에서도 같은 루프가 도는지는 열린 질문이에요.
+하나, 앞서 첫 '그러나'에서 든 "Updating ≠ Benefit"([arXiv:2605.30621](https://arxiv.org/abs/2605.30621))과 더불어, Cho의 글 "Harness Sensitivity Is Non-Monotone"([arXiv:2605.26731](https://arxiv.org/abs/2605.26731))이 더 날카로워요. "더 구조화된 하니스가 더 믿을 만하다"는 가정을 432회 실험으로 반박하죠. frontier chat model(Gemini 2.5 Flash)에서는 strict harness가 VTSR을 *29~38pp 낮춰요*. 결정적으로, 하니스 민감도는 *capability tier가 아니라 model type*(chat vs. reasoning)에 달렸고, *parameter count는 믿을 수 없는 proxy*라고 분명히 해요.[^cho] Self-Harness가 M2.5·Qwen3.5·GLM-5 셋에서 모두 통했다지만, 셋이 *같은 type*이었을 가능성은 검사되지 않았죠. 다른 type의 모델에서도 같은 루프가 도는지는 열린 질문이에요.
 
 둘, Meta-Harness([arXiv:2603.28052](https://arxiv.org/abs/2603.28052))는 *방향이 다른* 증거를 줘요. 외부 강한 에이전트가 설계한 하니스가 *5개의 held-out 모델에 일반화*됐죠. 이건 Self-Harness의 출발 전제 — "효과적 하니스는 모델 특화적"과 결이 어긋나요. 하니스가 모델을 넘어 옮겨 간다면, 굳이 *각 모델이 자기 것을* 고쳐 써야 할 이유가 약해지죠. 다만 둘은 화해의 여지가 있어요 — Meta-Harness는 *강한 외부 설계자*의 산출이 일반화된다는 것이고, Self-Harness는 *약한 모델도 자기 손으로* 개선할 수 있다는 거예요. "일반화 가능한 좋은 하니스가 있다"와 "각자도 스스로 도달할 수 있다"는 공존하죠.
 

@@ -51,7 +51,7 @@ flowchart LR
 
 탐색과 크레딧 할당 모두에 구조가 필요하다는 뜻이에요. 평평한 궤적은 어디서 보상을 주고 어디서 탐색을 넓혀야 할지 신호가 흩어지죠. 단계 경계가 그 신호를 묶는 격자가 돼요.
 
-이 발상에 이론적 뒷받침이 있다는 게 RubricEM의 강점이에요. Theorem 1이 단계 정보의 가치를 못 박아요 — 같은 국소 맥락이 단계에 따라 다른 행동을 요구할 때, 평평한 정책은 *aliasing*에 걸리지만 단계 인식 정책은 결정 모드에 조건을 걸 수 있죠.
+이 발상에 이론적 뒷받침이 있다는 게 RubricEM의 강점이에요. Theorem 1이 단계 정보의 가치를 분명히 해요 — 같은 국소 맥락이 단계에 따라 다른 행동을 요구할 때, 평평한 정책은 *aliasing*에 걸리지만 단계 인식 정책은 결정 모드에 조건을 걸 수 있죠.
 
 > "If there exists a measurable set C_0 with positive probability and two task-relevant stages such that for every c ∈ C_0, p(z|c) > 0, p(z'|c) > 0, and arg max_{a∈A} E[U(h,a)|c,z] ∩ arg max_{a∈A} E[U(h,a)|c,z'] = ∅. Then V_stage > V_flat."[^theorem]
 
