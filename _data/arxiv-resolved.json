@@ -6035,5 +6035,89 @@
    "cs.CL",
    "cs.AI"
   ]
+ },
+ "2606.17182": {
+  "title": "Verified Detection and Prevention of Concurrency Anomalies in Multi-Agent Large Language Model Systems",
+  "authors": [
+   "Sajjad Khan"
+  ],
+  "published": "2026-06-15",
+  "categories": [
+   "cs.LG",
+   "cs.DC",
+   "cs.LO",
+   "cs.MA",
+   "cs.PL"
+  ]
+ },
+ "2606.21666": {
+  "title": "Hallucination as Context Drift: Synchronization Protocols for Multi-Agent LLM Systems",
+  "authors": [
+   "Carson Rodrigues"
+  ],
+  "published": "2026-06-19",
+  "categories": [
+   "cs.AI",
+   "cs.CL",
+   "cs.MA"
+  ]
+ },
+ "2602.14849": {
+  "title": "Atomix: Timely, Transactional Tool Use for Reliable Agentic Workflows",
+  "authors": [
+   "Bardia Mohammadi",
+   "Nearchos Potamitis",
+   "Lars Klein",
+   "Akhil Arora",
+   "Laurent Bindschaedler"
+  ],
+  "published": "2026-02-16",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.DC",
+   "cs.MA"
+  ]
+ },
+ "2606.05976": {
+  "title": "The Self-Correction Illusion: LLMs Correct Others but Not Themselves",
+  "authors": [
+   "Kuan-Yen Chen",
+   "Fang-Yi Su",
+   "Jung-Hsien Chiang"
+  ],
+  "published": "2026-06-04",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2606.17573": {
+  "title": "Cordon: Semantic Transactions for Tool-Using LLM Agents",
+  "authors": [
+   "Zheng Chen",
+   "Hanqing Liu",
+   "Duling Xu",
+   "Dong Dong",
+   "Jialin Li",
+   "Bangzheng Pu",
+   "Jidong Zhai"
+  ],
+  "published": "2026-06-16",
+  "categories": [
+   "cs.OS",
+   "cs.CR"
+  ]
+ },
+ "2503.11951": {
+  "title": "SagaLLM: Context Management, Validation, and Transaction Guarantees for Multi-Agent LLM Planning",
+  "authors": [
+   "Edward Y. Chang",
+   "Longling Geng"
+  ],
+  "published": "2025-03-15",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }

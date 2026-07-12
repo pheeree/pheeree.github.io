@@ -1,6 +1,22 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-12-coagent-notify-dont-lock-fourth-placement:
+  title: "알리되 잠그지도 되돌리지도 말라 — 판정을 에이전트 자신에게 돌려주는 네 번째 자리"
+  central:
+    id: "2606.15376"
+    title: "CoAgent: Concurrency Control for Multi-Agent Systems"
+    authors: "Hongtao Lyu 외"
+    keywords: "cs.DC, cs.AI, cs.MA"
+    url: "https://arxiv.org/abs/2606.15376"
+  referenced:
+    - { id: "2503.11951", title: "SagaLLM: Context Management, Validation, and Transaction Guarantees for Multi-Agent LLM Planning", authors: "Edward Y. Chang, Longling Geng", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.11951" }
+    - { id: "2602.14849", title: "Atomix: Timely, Transactional Tool Use for Reliable Agentic Workflows", authors: "Bardia Mohammadi 외", keywords: "cs.LG, cs.AI, cs.DC, cs.MA", url: "https://arxiv.org/abs/2602.14849" }
+    - { id: "2606.05976", title: "The Self-Correction Illusion: LLMs Correct Others but Not Themselves", authors: "Kuan-Yen Chen 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.05976" }
+    - { id: "2606.17182", title: "Verified Detection and Prevention of Concurrency Anomalies in Multi-Agent Large Language Model Systems", authors: "Sajjad Khan", keywords: "cs.LG, cs.DC, cs.LO, cs.MA, cs.PL", url: "https://arxiv.org/abs/2606.17182" }
+    - { id: "2606.17573", title: "Cordon: Semantic Transactions for Tool-Using LLM Agents", authors: "Zheng Chen 외", keywords: "cs.OS, cs.CR", url: "https://arxiv.org/abs/2606.17573" }
+    - { id: "2606.21666", title: "Hallucination as Context Drift: Synchronization Protocols for Multi-Agent LLM Systems", authors: "Carson Rodrigues", keywords: "cs.AI, cs.CL, cs.MA", url: "https://arxiv.org/abs/2606.21666" }
+
 2026-07-11-a-tma-ghost-memory-where-to-place-judgment:
   title: "유령 메모리, 그리고 판단을 어디에 둘 것인가 — 세 층으로 나눈 진단과 판정 배치의 3파전"
   central:

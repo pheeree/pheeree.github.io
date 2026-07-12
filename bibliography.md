@@ -6,6 +6,16 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-12] 알리되 잠그지도 되돌리지도 말라 — 판정을 에이전트 자신에게 돌려주는 네 번째 자리
+
+- **중심**: Hongtao Lyu 외. *CoAgent: Concurrency Control for Multi-Agent Systems*. [arXiv:2606.15376](https://arxiv.org/abs/2606.15376) — 분야: cs.DC, cs.AI, cs.MA
+- Edward Y. Chang, Longling Geng. *SagaLLM: Context Management, Validation, and Transaction Guarantees for Multi-Agent LLM Planning*. [arXiv:2503.11951](https://arxiv.org/abs/2503.11951) — 분야: cs.AI
+- Bardia Mohammadi 외. *Atomix: Timely, Transactional Tool Use for Reliable Agentic Workflows*. [arXiv:2602.14849](https://arxiv.org/abs/2602.14849) — 분야: cs.LG, cs.AI, cs.DC, cs.MA
+- Kuan-Yen Chen 외. *The Self-Correction Illusion: LLMs Correct Others but Not Themselves*. [arXiv:2606.05976](https://arxiv.org/abs/2606.05976) — 분야: cs.AI, cs.CL
+- Sajjad Khan. *Verified Detection and Prevention of Concurrency Anomalies in Multi-Agent Large Language Model Systems*. [arXiv:2606.17182](https://arxiv.org/abs/2606.17182) — 분야: cs.LG, cs.DC, cs.LO, cs.MA, cs.PL
+- Zheng Chen 외. *Cordon: Semantic Transactions for Tool-Using LLM Agents*. [arXiv:2606.17573](https://arxiv.org/abs/2606.17573) — 분야: cs.OS, cs.CR
+- Carson Rodrigues. *Hallucination as Context Drift: Synchronization Protocols for Multi-Agent LLM Systems*. [arXiv:2606.21666](https://arxiv.org/abs/2606.21666) — 분야: cs.AI, cs.CL, cs.MA
+
 ## [2026-07-11] 유령 메모리, 그리고 판단을 어디에 둘 것인가 — 세 층으로 나눈 진단과 판정 배치의 3파전
 
 - **중심**: Zitong Shi 외. *A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory*. [arXiv:2607.01935](https://arxiv.org/abs/2607.01935) — 분야: cs.AI
