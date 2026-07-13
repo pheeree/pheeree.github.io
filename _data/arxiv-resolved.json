@@ -6119,5 +6119,34 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2605.14421": {
+  "title": "MemLineage: Lineage-Guided Enforcement for LLM Agent Memory",
+  "authors": [
+   "Ciyan Ouyang",
+   "Rui Hou"
+  ],
+  "published": "2026-05-14",
+  "categories": [
+   "cs.CR",
+   "cs.AI"
+  ]
+ },
+ "2605.26684": {
+  "title": "Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning",
+  "authors": [
+   "Xin Cheng",
+   "Shuo He",
+   "Lang Feng",
+   "HaiYang Xu",
+   "Ming Yan",
+   "Lei Feng",
+   "Bo An"
+  ],
+  "published": "2026-05-26",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  }
 }

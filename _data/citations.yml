@@ -1,6 +1,20 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-13-memq-credit-assignment-over-provenance-dag:
+  title: "메모리가 메모리를 낳은 사슬에 공을 매기다 — MemQ의 구조적 신용 배분"
+  central:
+    id: "2605.08374"
+    title: "MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs"
+    authors: "Junwei Liao 외"
+    keywords: "cs.AI"
+    url: "https://arxiv.org/abs/2605.08374"
+  referenced:
+    - { id: "2602.02474", title: "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents", authors: "Haozhen Zhang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2602.02474" }
+    - { id: "2605.12978", title: "Useful Memories Become Faulty When Continuously Updated by LLMs", authors: "Dylan Zhang 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.12978" }
+    - { id: "2605.14421", title: "MemLineage: Lineage-Guided Enforcement for LLM Agent Memory", authors: "Ciyan Ouyang, Rui Hou", keywords: "cs.CR, cs.AI", url: "https://arxiv.org/abs/2605.14421" }
+    - { id: "2605.26684", title: "Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning", authors: "Xin Cheng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.26684" }
+
 2026-07-12-coagent-notify-dont-lock-fourth-placement:
   title: "알리되 잠그지도 되돌리지도 말라 — 판정을 에이전트 자신에게 돌려주는 네 번째 자리"
   central:

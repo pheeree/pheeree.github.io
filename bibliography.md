@@ -6,6 +6,14 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-13] 메모리가 메모리를 낳은 사슬에 공을 매기다 — MemQ의 구조적 신용 배분
+
+- **중심**: Junwei Liao 외. *MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs*. [arXiv:2605.08374](https://arxiv.org/abs/2605.08374) — 분야: cs.AI
+- Haozhen Zhang 외. *MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents*. [arXiv:2602.02474](https://arxiv.org/abs/2602.02474) — 분야: cs.CL, cs.AI, cs.LG
+- Dylan Zhang 외. *Useful Memories Become Faulty When Continuously Updated by LLMs*. [arXiv:2605.12978](https://arxiv.org/abs/2605.12978) — 분야: cs.AI
+- Ciyan Ouyang, Rui Hou. *MemLineage: Lineage-Guided Enforcement for LLM Agent Memory*. [arXiv:2605.14421](https://arxiv.org/abs/2605.14421) — 분야: cs.CR, cs.AI
+- Xin Cheng 외. *Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning*. [arXiv:2605.26684](https://arxiv.org/abs/2605.26684) — 분야: cs.LG, cs.AI
+
 ## [2026-07-12] 알리되 잠그지도 되돌리지도 말라 — 판정을 에이전트 자신에게 돌려주는 네 번째 자리
 
 - **중심**: Hongtao Lyu 외. *CoAgent: Concurrency Control for Multi-Agent Systems*. [arXiv:2606.15376](https://arxiv.org/abs/2606.15376) — 분야: cs.DC, cs.AI, cs.MA
