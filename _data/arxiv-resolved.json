@@ -6148,5 +6148,112 @@
    "cs.LG",
    "cs.AI"
   ]
+ },
+ "2602.01869": {
+  "title": "Skill-Pro: Learning Reusable Skills from Experience via Non-Parametric PPO for LLM Agents",
+  "authors": [
+   "Qirui Mi",
+   "Zhijian Ma",
+   "Mengyue Yang",
+   "Haoxuan Li",
+   "Yisen Wang",
+   "Haifeng Zhang",
+   "Jun Wang"
+  ],
+  "published": "2026-02-02",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2605.21384": {
+  "title": "SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents",
+  "authors": [
+   "Bingchen Zhao",
+   "Dhruv Srikanth",
+   "Yuxiang Wu",
+   "Zhengyao Jiang"
+  ],
+  "published": "2026-05-20",
+  "categories": [
+   "cs.SE",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2607.00394": {
+  "title": "When Classic Cache Policies Fail: Learning-Augmented Replacement for Semantic Retrieval Buffers",
+  "authors": [
+   "Yushi Sun",
+   "Bowen Cao",
+   "Wai Lam"
+  ],
+  "published": "2026-07-01",
+  "categories": [
+   "cs.DB",
+   "cs.CL"
+  ]
+ },
+ "2606.23127": {
+  "title": "Managing Procedural Memory in LLM Agents: Control, Adaptation, and Evaluation",
+  "authors": [
+   "Julia Belikova",
+   "Rauf Parchiev",
+   "Evgeny Egorov",
+   "Grigorii Davydenko",
+   "Gleb Gusev",
+   "Andrey Savchenko",
+   "Maksim Makarenko"
+  ],
+  "published": "2026-06-22",
+  "categories": [
+   "cs.AI",
+   "cs.CL",
+   "cs.SE"
+  ]
+ },
+ "2603.02766": {
+  "title": "EvoSkill: Automated Skill Discovery for Multi-Agent Systems",
+  "authors": [
+   "Salaheddin Alzubi",
+   "Noah Provenzano",
+   "Jaydon Bingham",
+   "Weiyuan Chen",
+   "Tu Vu"
+  ],
+  "published": "2026-03-03",
+  "categories": [
+   "cs.AI",
+   "cs.MA"
+  ]
+ },
+ "2503.08322": {
+  "title": "Evaluating Interpretable Reinforcement Learning by Distilling Policies into Programs",
+  "authors": [
+   "Hector Kohler",
+   "Quentin Delfosse",
+   "Waris Radji",
+   "Riad Akrour",
+   "Philippe Preux"
+  ],
+  "published": "2025-03-11",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2605.24660": {
+  "title": "How Many Tools Should an LLM Agent See? A Chance-Corrected Answer",
+  "authors": [
+   "Vyzantinos Repantis",
+   "Ameya Gawde",
+   "Harshvardhan Singh",
+   "Joey Blackwell"
+  ],
+  "published": "2026-05-23",
+  "categories": [
+   "cs.IR",
+   "cs.AI",
+   "cs.LG"
+  ]
  }
 }
