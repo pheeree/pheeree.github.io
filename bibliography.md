@@ -6,6 +6,19 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-14] 메모리를 만드는 절차를 스킬로 길러 내다 — MemSkill, 사후 평가에서 사전 생성으로 옮겨 간 축
+
+- **중심**: Haozhen Zhang 외. *MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents*. [arXiv:2602.02474](https://arxiv.org/abs/2602.02474) — 분야: cs.CL, cs.AI, cs.LG
+- Hector Kohler 외. *Evaluating Interpretable Reinforcement Learning by Distilling Policies into Programs*. [arXiv:2503.08322](https://arxiv.org/abs/2503.08322) — 분야: cs.LG, cs.AI
+- Yi Yu 외. *Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents*. [arXiv:2601.01885](https://arxiv.org/abs/2601.01885) — 분야: cs.CL
+- Qirui Mi 외. *Skill-Pro: Learning Reusable Skills from Experience via Non-Parametric PPO for LLM Agents*. [arXiv:2602.01869](https://arxiv.org/abs/2602.01869) — 분야: cs.AI
+- Salaheddin Alzubi 외. *EvoSkill: Automated Skill Discovery for Multi-Agent Systems*. [arXiv:2603.02766](https://arxiv.org/abs/2603.02766) — 분야: cs.AI, cs.MA
+- Chingkwun Lam 외. *Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework*. [arXiv:2603.11768](https://arxiv.org/abs/2603.11768) — 분야: cs.AI
+- Bingchen Zhao 외. *SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents*. [arXiv:2605.21384](https://arxiv.org/abs/2605.21384) — 분야: cs.SE, cs.AI, cs.CL
+- Vyzantinos Repantis 외. *How Many Tools Should an LLM Agent See? A Chance-Corrected Answer*. [arXiv:2605.24660](https://arxiv.org/abs/2605.24660) — 분야: cs.IR, cs.AI, cs.LG
+- Julia Belikova 외. *Managing Procedural Memory in LLM Agents: Control, Adaptation, and Evaluation*. [arXiv:2606.23127](https://arxiv.org/abs/2606.23127) — 분야: cs.AI, cs.CL, cs.SE
+- Yushi Sun 외. *When Classic Cache Policies Fail: Learning-Augmented Replacement for Semantic Retrieval Buffers*. [arXiv:2607.00394](https://arxiv.org/abs/2607.00394) — 분야: cs.DB, cs.CL
+
 ## [2026-07-13] 메모리가 메모리를 낳은 사슬에 공을 매기다 — MemQ의 구조적 신용 배분
 
 - **중심**: Junwei Liao 외. *MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs*. [arXiv:2605.08374](https://arxiv.org/abs/2605.08374) — 분야: cs.AI

@@ -1,6 +1,25 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-14-memskill-evolving-memory-skills:
+  title: "메모리를 만드는 절차를 스킬로 길러 내다 — MemSkill, 사후 평가에서 사전 생성으로 옮겨 간 축"
+  central:
+    id: "2602.02474"
+    title: "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents"
+    authors: "Haozhen Zhang 외"
+    keywords: "cs.CL, cs.AI, cs.LG"
+    url: "https://arxiv.org/abs/2602.02474"
+  referenced:
+    - { id: "2503.08322", title: "Evaluating Interpretable Reinforcement Learning by Distilling Policies into Programs", authors: "Hector Kohler 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2503.08322" }
+    - { id: "2601.01885", title: "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents", authors: "Yi Yu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2601.01885" }
+    - { id: "2602.01869", title: "Skill-Pro: Learning Reusable Skills from Experience via Non-Parametric PPO for LLM Agents", authors: "Qirui Mi 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2602.01869" }
+    - { id: "2603.02766", title: "EvoSkill: Automated Skill Discovery for Multi-Agent Systems", authors: "Salaheddin Alzubi 외", keywords: "cs.AI, cs.MA", url: "https://arxiv.org/abs/2603.02766" }
+    - { id: "2603.11768", title: "Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework", authors: "Chingkwun Lam 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.11768" }
+    - { id: "2605.21384", title: "SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents", authors: "Bingchen Zhao 외", keywords: "cs.SE, cs.AI, cs.CL", url: "https://arxiv.org/abs/2605.21384" }
+    - { id: "2605.24660", title: "How Many Tools Should an LLM Agent See? A Chance-Corrected Answer", authors: "Vyzantinos Repantis 외", keywords: "cs.IR, cs.AI, cs.LG", url: "https://arxiv.org/abs/2605.24660" }
+    - { id: "2606.23127", title: "Managing Procedural Memory in LLM Agents: Control, Adaptation, and Evaluation", authors: "Julia Belikova 외", keywords: "cs.AI, cs.CL, cs.SE", url: "https://arxiv.org/abs/2606.23127" }
+    - { id: "2607.00394", title: "When Classic Cache Policies Fail: Learning-Augmented Replacement for Semantic Retrieval Buffers", authors: "Yushi Sun 외", keywords: "cs.DB, cs.CL", url: "https://arxiv.org/abs/2607.00394" }
+
 2026-07-13-memq-credit-assignment-over-provenance-dag:
   title: "메모리가 메모리를 낳은 사슬에 공을 매기다 — MemQ의 구조적 신용 배분"
   central:
