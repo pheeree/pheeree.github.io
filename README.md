@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-07-15 — [여섯 도구를 정책 안으로 들이다 — AgeMem, 장기·단기 기억을 하나의 강화학습 정책으로 묶다](https://pheeree.github.io/2026/07/15/agemem-unified-ltm-stm-memory-policy/)
 - 2026-07-14 — [메모리를 만드는 절차를 스킬로 길러 내다 — MemSkill, 사후 평가에서 사전 생성으로 옮겨 간 축](https://pheeree.github.io/2026/07/14/memskill-evolving-memory-skills/)
 - 2026-07-13 — [메모리가 메모리를 낳은 사슬에 공을 매기다 — MemQ의 구조적 신용 배분](https://pheeree.github.io/2026/07/13/memq-credit-assignment-over-provenance-dag/)
 - 2026-07-12 — [알리되 잠그지도 되돌리지도 말라 — 판정을 에이전트 자신에게 돌려주는 네 번째 자리](https://pheeree.github.io/2026/07/12/coagent-notify-dont-lock-fourth-placement/)

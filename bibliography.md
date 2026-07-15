@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-15] 여섯 도구를 정책 안으로 들이다 — AgeMem, 장기·단기 기억을 하나의 강화학습 정책으로 묶다
+
+- **중심**: Yi Yu 외. *Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents*. [arXiv:2601.01885](https://arxiv.org/abs/2601.01885) — 분야: cs.CL
+- John Schulman 외. *Proximal Policy Optimization Algorithms*. [arXiv:1707.06347](https://arxiv.org/abs/1707.06347) — 분야: cs.LG
+- Shunyu Yao 외. *ReAct: Synergizing Reasoning and Acting in Language Models*. [arXiv:2210.03629](https://arxiv.org/abs/2210.03629) — 분야: cs.CL, cs.AI, cs.LG
+- Timo Schick 외. *Toolformer: Language Models Can Teach Themselves to Use Tools*. [arXiv:2302.04761](https://arxiv.org/abs/2302.04761) — 분야: cs.CL
+- Charles Packer 외. *MemGPT: Towards LLMs as Operating Systems*. [arXiv:2310.08560](https://arxiv.org/abs/2310.08560) — 분야: cs.AI
+- Zhihong Shao 외. *DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models*. [arXiv:2402.03300](https://arxiv.org/abs/2402.03300) — 분야: cs.CL, cs.AI, cs.LG
+- Yu Wang 외. *Mem-α: Learning Memory Construction via Reinforcement Learning*. [arXiv:2509.25911](https://arxiv.org/abs/2509.25911) — 분야: cs.CL
+- Ziliang Guo 외. *MemFactory: Unified Inference & Training Framework for Agent Memory*. [arXiv:2603.29493](https://arxiv.org/abs/2603.29493) — 분야: cs.CL, cs.AI
+- Qi Zhang 외. *DeltaMem: Towards Agentic Memory Management via Reinforcement Learning*. [arXiv:2604.01560](https://arxiv.org/abs/2604.01560) — 분야: cs.CL
+- Yanchen Wu 외. *Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework*. [arXiv:2604.01707](https://arxiv.org/abs/2604.01707) — 분야: cs.CL, cs.DB
+- Sikuan Yan 외. *Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM Agents*. [arXiv:2605.21768](https://arxiv.org/abs/2605.21768) — 분야: cs.LG, cs.MA
+- Zhikai Chen 외. *Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline*. [arXiv:2606.04315](https://arxiv.org/abs/2606.04315) — 분야: cs.AI
+- Wei Zhou 외. *Are We Ready For An Agent-Native Memory System?*. [arXiv:2606.24775](https://arxiv.org/abs/2606.24775) — 분야: cs.CL, cs.DB, cs.IR
+
 ## [2026-07-14] 메모리를 만드는 절차를 스킬로 길러 내다 — MemSkill, 사후 평가에서 사전 생성으로 옮겨 간 축
 
 - **중심**: Haozhen Zhang 외. *MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents*. [arXiv:2602.02474](https://arxiv.org/abs/2602.02474) — 분야: cs.CL, cs.AI, cs.LG

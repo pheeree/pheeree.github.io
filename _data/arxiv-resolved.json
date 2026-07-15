@@ -6255,5 +6255,159 @@
    "cs.AI",
    "cs.LG"
   ]
+ },
+ "2603.29493": {
+  "title": "MemFactory: Unified Inference & Training Framework for Agent Memory",
+  "authors": [
+   "Ziliang Guo",
+   "Ziheng Li",
+   "Bo Tang",
+   "Feiyu Xiong",
+   "Zhiyu Li"
+  ],
+  "published": "2026-03-31",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2604.01560": {
+  "title": "DeltaMem: Towards Agentic Memory Management via Reinforcement Learning",
+  "authors": [
+   "Qi Zhang",
+   "Shen Huang",
+   "Chu Liu",
+   "Shouqing Yang",
+   "Junbo Zhao",
+   "Haobo Wang",
+   "Pengjun Xie"
+  ],
+  "published": "2026-04-02",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2604.01707": {
+  "title": "Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework",
+  "authors": [
+   "Yanchen Wu",
+   "Tenghui Lin",
+   "Yingli Zhou",
+   "Fangyuan Zhang",
+   "Qintian Guo",
+   "Xun Zhou",
+   "Sibo Wang",
+   "Xilin Liu",
+   "Yuchi Ma",
+   "Yixiang Fang"
+  ],
+  "published": "2026-04-02",
+  "categories": [
+   "cs.CL",
+   "cs.DB"
+  ]
+ },
+ "2509.25911": {
+  "title": "Mem-α: Learning Memory Construction via Reinforcement Learning",
+  "authors": [
+   "Yu Wang",
+   "Ryuichi Takanobu",
+   "Zhiqi Liang",
+   "Yuzhen Mao",
+   "Yuanzhe Hu",
+   "Julian McAuley",
+   "Xiaojian Wu"
+  ],
+  "published": "2025-09-30",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2302.04761": {
+  "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+  "authors": [
+   "Timo Schick",
+   "Jane Dwivedi-Yu",
+   "Roberto Dessì",
+   "Roberta Raileanu",
+   "Maria Lomeli",
+   "Luke Zettlemoyer",
+   "Nicola Cancedda",
+   "Thomas Scialom"
+  ],
+  "published": "2023-02-09",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2310.08560": {
+  "title": "MemGPT: Towards LLMs as Operating Systems",
+  "authors": [
+   "Charles Packer",
+   "Sarah Wooders",
+   "Kevin Lin",
+   "Vivian Fang",
+   "Shishir G. Patil",
+   "Ion Stoica",
+   "Joseph E. Gonzalez"
+  ],
+  "published": "2023-10-12",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "1707.06347": {
+  "title": "Proximal Policy Optimization Algorithms",
+  "authors": [
+   "John Schulman",
+   "Filip Wolski",
+   "Prafulla Dhariwal",
+   "Alec Radford",
+   "Oleg Klimov"
+  ],
+  "published": "2017-07-20",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2210.03629": {
+  "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+  "authors": [
+   "Shunyu Yao",
+   "Jeffrey Zhao",
+   "Dian Yu",
+   "Nan Du",
+   "Izhak Shafran",
+   "Karthik Narasimhan",
+   "Yuan Cao"
+  ],
+  "published": "2022-10-06",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2402.03300": {
+  "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+  "authors": [
+   "Zhihong Shao",
+   "Peiyi Wang",
+   "Qihao Zhu",
+   "Runxin Xu",
+   "Junxiao Song",
+   "Xiao Bi",
+   "Haowei Zhang",
+   "Mingchuan Zhang",
+   "Y. K. Li",
+   "Y. Wu",
+   "Daya Guo"
+  ],
+  "published": "2024-02-05",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
  }
 }

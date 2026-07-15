@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-15-agemem-unified-ltm-stm-memory-policy:
+  title: "여섯 도구를 정책 안으로 들이다 — AgeMem, 장기·단기 기억을 하나의 강화학습 정책으로 묶다"
+  central:
+    id: "2601.01885"
+    title: "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents"
+    authors: "Yi Yu 외"
+    keywords: "cs.CL"
+    url: "https://arxiv.org/abs/2601.01885"
+  referenced:
+    - { id: "1707.06347", title: "Proximal Policy Optimization Algorithms", authors: "John Schulman 외", keywords: "cs.LG", url: "https://arxiv.org/abs/1707.06347" }
+    - { id: "2210.03629", title: "ReAct: Synergizing Reasoning and Acting in Language Models", authors: "Shunyu Yao 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2210.03629" }
+    - { id: "2302.04761", title: "Toolformer: Language Models Can Teach Themselves to Use Tools", authors: "Timo Schick 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2302.04761" }
+    - { id: "2310.08560", title: "MemGPT: Towards LLMs as Operating Systems", authors: "Charles Packer 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2310.08560" }
+    - { id: "2402.03300", title: "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models", authors: "Zhihong Shao 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2402.03300" }
+    - { id: "2509.25911", title: "Mem-α: Learning Memory Construction via Reinforcement Learning", authors: "Yu Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2509.25911" }
+    - { id: "2603.29493", title: "MemFactory: Unified Inference & Training Framework for Agent Memory", authors: "Ziliang Guo 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2603.29493" }
+    - { id: "2604.01560", title: "DeltaMem: Towards Agentic Memory Management via Reinforcement Learning", authors: "Qi Zhang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2604.01560" }
+    - { id: "2604.01707", title: "Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework", authors: "Yanchen Wu 외", keywords: "cs.CL, cs.DB", url: "https://arxiv.org/abs/2604.01707" }
+    - { id: "2605.21768", title: "Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM Agents", authors: "Sikuan Yan 외", keywords: "cs.LG, cs.MA", url: "https://arxiv.org/abs/2605.21768" }
+    - { id: "2606.04315", title: "Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline", authors: "Zhikai Chen 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.04315" }
+    - { id: "2606.24775", title: "Are We Ready For An Agent-Native Memory System?", authors: "Wei Zhou 외", keywords: "cs.CL, cs.DB, cs.IR", url: "https://arxiv.org/abs/2606.24775" }
+
 2026-07-14-memskill-evolving-memory-skills:
   title: "메모리를 만드는 절차를 스킬로 길러 내다 — MemSkill, 사후 평가에서 사전 생성으로 옮겨 간 축"
   central:
