@@ -1,6 +1,20 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-16-memory-r2-fair-credit-assignment:
+  title: "메모리가 환경을 바꾸면 그룹 비교가 무너진다 — Memory-R2, 같은 출발선에서만 견주는 신용 배분"
+  central:
+    id: "2605.21768"
+    title: "Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM Agents"
+    authors: "Sikuan Yan 외"
+    keywords: "cs.LG, cs.MA"
+    url: "https://arxiv.org/abs/2605.21768"
+  referenced:
+    - { id: "2603.08754", title: "Hindsight Credit Assignment for Long-Horizon LLM Agents", authors: "Hui-Ze Tan 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2603.08754" }
+    - { id: "2605.23067", title: "What Training Data Teaches RL Memory Agents: An Empirical Study of Curriculum Effects in Memory-Augmented QA", authors: "Xinjie He 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.23067" }
+    - { id: "2605.26684", title: "Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning", authors: "Xin Cheng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.26684" }
+    - { id: "2606.08656", title: "From Player to Master: Enhancing Test-Time Learning of LLM Agents via Reinforcement Learning over Memory", authors: "Yishuo Cai 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.08656" }
+
 2026-07-15-agemem-unified-ltm-stm-memory-policy:
   title: "여섯 도구를 정책 안으로 들이다 — AgeMem, 장기·단기 기억을 하나의 강화학습 정책으로 묶다"
   central:

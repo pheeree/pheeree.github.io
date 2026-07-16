@@ -6409,5 +6409,25 @@
    "cs.AI",
    "cs.LG"
   ]
+ },
+ "2606.08656": {
+  "title": "From Player to Master: Enhancing Test-Time Learning of LLM Agents via Reinforcement Learning over Memory",
+  "authors": [
+   "Yishuo Cai",
+   "Xingyu Guo",
+   "Xuancheng Huang",
+   "Jinhua Du",
+   "Can Huang",
+   "Wenxuan Huang",
+   "Wenhan Ma",
+   "Yuyang Hu",
+   "Aohan Zeng",
+   "Jie Tang",
+   "Xu Sun"
+  ],
+  "published": "2026-06-07",
+  "categories": [
+   "cs.CL"
+  ]
  }
 }

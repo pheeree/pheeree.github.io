@@ -6,6 +6,14 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-16] 메모리가 환경을 바꾸면 그룹 비교가 무너진다 — Memory-R2, 같은 출발선에서만 견주는 신용 배분
+
+- **중심**: Sikuan Yan 외. *Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM Agents*. [arXiv:2605.21768](https://arxiv.org/abs/2605.21768) — 분야: cs.LG, cs.MA
+- Hui-Ze Tan 외. *Hindsight Credit Assignment for Long-Horizon LLM Agents*. [arXiv:2603.08754](https://arxiv.org/abs/2603.08754) — 분야: cs.LG, cs.AI
+- Xinjie He 외. *What Training Data Teaches RL Memory Agents: An Empirical Study of Curriculum Effects in Memory-Augmented QA*. [arXiv:2605.23067](https://arxiv.org/abs/2605.23067) — 분야: cs.CL
+- Xin Cheng 외. *Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning*. [arXiv:2605.26684](https://arxiv.org/abs/2605.26684) — 분야: cs.LG, cs.AI
+- Yishuo Cai 외. *From Player to Master: Enhancing Test-Time Learning of LLM Agents via Reinforcement Learning over Memory*. [arXiv:2606.08656](https://arxiv.org/abs/2606.08656) — 분야: cs.CL
+
 ## [2026-07-15] 여섯 도구를 정책 안으로 들이다 — AgeMem, 장기·단기 기억을 하나의 강화학습 정책으로 묶다
 
 - **중심**: Yi Yu 외. *Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents*. [arXiv:2601.01885](https://arxiv.org/abs/2601.01885) — 분야: cs.CL
