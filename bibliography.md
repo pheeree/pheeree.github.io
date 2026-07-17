@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-17] 궤적을 한 장의 그래프로 겹쳐 놓다 — GraphGPO, 목표까지의 거리로 스텝마다 공을 가르다
+
+- **중심**: Xin Cheng 외. *Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning*. [arXiv:2605.26684](https://arxiv.org/abs/2605.26684) — 분야: cs.LG, cs.AI
+- Lang Feng 외. *Group-in-Group Policy Optimization for LLM Agent Training*. [arXiv:2505.10978](https://arxiv.org/abs/2505.10978) — 분야: cs.LG, cs.AI
+- Hui-Ze Tan 외. *Hindsight Credit Assignment for Long-Horizon LLM Agents*. [arXiv:2603.08754](https://arxiv.org/abs/2603.08754) — 분야: cs.LG, cs.AI
+- Mingchen Li 외. *RICE-PO: Turning Retrieval Interactions into Credit Signals for Reasoning Agents*. [arXiv:2605.26352](https://arxiv.org/abs/2605.26352) — 분야: cs.CL
+- Yu Han 외. *3SPO: State-Score-Supervised Policy Optimization for LLM Agents*. [arXiv:2606.09961](https://arxiv.org/abs/2606.09961) — 분야: cs.LG, cs.AI
+- Yunan Wang 외. *Group-Graph Policy Optimization for Long-Horizon Agentic Reinforcement Learning*. [arXiv:2606.22995](https://arxiv.org/abs/2606.22995) — 분야: cs.LG, cs.AI, cs.CL
+- Yuanda Xu 외. *TRIAGE: Role-Typed Credit Assignment for Agentic Reinforcement Learning*. [arXiv:2606.32017](https://arxiv.org/abs/2606.32017) — 분야: cs.LG, cs.AI
+- Leitian Tao 외. *TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents*. [arXiv:2607.13988](https://arxiv.org/abs/2607.13988) — 분야: cs.LG
+
 ## [2026-07-16] 메모리가 환경을 바꾸면 그룹 비교가 무너진다 — Memory-R2, 같은 출발선에서만 견주는 신용 배분
 
 - **중심**: Sikuan Yan 외. *Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM Agents*. [arXiv:2605.21768](https://arxiv.org/abs/2605.21768) — 분야: cs.LG, cs.MA

@@ -1,6 +1,23 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-17-graphgpo-graph-based-credit-assignment:
+  title: "궤적을 한 장의 그래프로 겹쳐 놓다 — GraphGPO, 목표까지의 거리로 스텝마다 공을 가르다"
+  central:
+    id: "2605.26684"
+    title: "Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning"
+    authors: "Xin Cheng 외"
+    keywords: "cs.LG, cs.AI"
+    url: "https://arxiv.org/abs/2605.26684"
+  referenced:
+    - { id: "2505.10978", title: "Group-in-Group Policy Optimization for LLM Agent Training", authors: "Lang Feng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2505.10978" }
+    - { id: "2603.08754", title: "Hindsight Credit Assignment for Long-Horizon LLM Agents", authors: "Hui-Ze Tan 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2603.08754" }
+    - { id: "2605.26352", title: "RICE-PO: Turning Retrieval Interactions into Credit Signals for Reasoning Agents", authors: "Mingchen Li 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.26352" }
+    - { id: "2606.09961", title: "3SPO: State-Score-Supervised Policy Optimization for LLM Agents", authors: "Yu Han 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.09961" }
+    - { id: "2606.22995", title: "Group-Graph Policy Optimization for Long-Horizon Agentic Reinforcement Learning", authors: "Yunan Wang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.22995" }
+    - { id: "2606.32017", title: "TRIAGE: Role-Typed Credit Assignment for Agentic Reinforcement Learning", authors: "Yuanda Xu 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.32017" }
+    - { id: "2607.13988", title: "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents", authors: "Leitian Tao 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2607.13988" }
+
 2026-07-16-memory-r2-fair-credit-assignment:
   title: "메모리가 환경을 바꾸면 그룹 비교가 무너진다 — Memory-R2, 같은 출발선에서만 견주는 신용 배분"
   central:

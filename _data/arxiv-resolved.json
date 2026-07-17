@@ -6429,5 +6429,107 @@
   "categories": [
    "cs.CL"
   ]
+ },
+ "2606.32017": {
+  "title": "TRIAGE: Role-Typed Credit Assignment for Agentic Reinforcement Learning",
+  "authors": [
+   "Yuanda Xu",
+   "Zhengze Zhou",
+   "Hejian Sang",
+   "Xiaomin Li",
+   "Jiaxin Zhang",
+   "Xinchen Du",
+   "Sen Na",
+   "Zhipeng Wang",
+   "Alborz Geramifard"
+  ],
+  "published": "2026-06-30",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2607.13988": {
+  "title": "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents",
+  "authors": [
+   "Leitian Tao",
+   "Baolin Peng",
+   "Wenlin Yao",
+   "Tao Ge",
+   "Hao Cheng",
+   "Mike Hang Wang",
+   "Jianfeng Gao",
+   "Sharon Li"
+  ],
+  "published": "2026-07-15",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2606.22995": {
+  "title": "Group-Graph Policy Optimization for Long-Horizon Agentic Reinforcement Learning",
+  "authors": [
+   "Yunan Wang",
+   "Minghui Song",
+   "Zihan Zhang",
+   "Shaohan Huang",
+   "Haizhen Huang",
+   "Furu Wei",
+   "Weiwei Deng",
+   "Feng Sun",
+   "Qi Zhang"
+  ],
+  "published": "2026-06-22",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2606.09961": {
+  "title": "3SPO: State-Score-Supervised Policy Optimization for LLM Agents",
+  "authors": [
+   "Yu Han",
+   "Kailing Li",
+   "Yang Jiao",
+   "Yulin Dai",
+   "Yuqian Fu",
+   "Linhai Zhuo",
+   "Tianwen Qian"
+  ],
+  "published": "2026-06-08",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2505.10978": {
+  "title": "Group-in-Group Policy Optimization for LLM Agent Training",
+  "authors": [
+   "Lang Feng",
+   "Zhenghai Xue",
+   "Tingcong Liu",
+   "Bo An"
+  ],
+  "published": "2025-05-16",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2605.26352": {
+  "title": "RICE-PO: Turning Retrieval Interactions into Credit Signals for Reasoning Agents",
+  "authors": [
+   "Mingchen Li",
+   "Hansi Zeng",
+   "Zhuo Qian",
+   "Jiatan Huang",
+   "Hamed Zamani",
+   "Hong Yu"
+  ],
+  "published": "2026-05-25",
+  "categories": [
+   "cs.CL"
+  ]
  }
 }
