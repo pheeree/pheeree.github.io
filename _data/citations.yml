@@ -1,6 +1,20 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-18-curriculum-composition-reshapes-memory-agent-skills:
+  title: "훈련 데이터의 구성이 능력을 재분배한다 — 커리큘럼은 성능의 손잡이가 아니라 특화의 조절 장치"
+  central:
+    id: "2605.23067"
+    title: "What Training Data Teaches RL Memory Agents: An Empirical Study of Curriculum Effects in Memory-Augmented QA"
+    authors: "Xinjie He 외"
+    keywords: "cs.CL"
+    url: "https://arxiv.org/abs/2605.23067"
+  referenced:
+    - { id: "2505.14146", title: "s3: You Don't Need That Much Data to Train a Search Agent via RL", authors: "Pengcheng Jiang 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2505.14146" }
+    - { id: "2508.19828", title: "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning", authors: "Sikuan Yan 외", keywords: "cs.CL, cs.MA", url: "https://arxiv.org/abs/2508.19828" }
+    - { id: "2605.27881", title: "Retrieval, Reward, and Training Protocols: What Matters in Training Search Agents?", authors: "Yibo Zhao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.27881" }
+    - { id: "2606.03329", title: "InfoMem: Training Long-Context Memory Agents with Answer-Conditioned Information Gain", authors: "Tiancheng Han 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.03329" }
+
 2026-07-17-graphgpo-graph-based-credit-assignment:
   title: "궤적을 한 장의 그래프로 겹쳐 놓다 — GraphGPO, 목표까지의 거리로 스텝마다 공을 가르다"
   central:

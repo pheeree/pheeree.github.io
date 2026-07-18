@@ -6,6 +6,14 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-18] 훈련 데이터의 구성이 능력을 재분배한다 — 커리큘럼은 성능의 손잡이가 아니라 특화의 조절 장치
+
+- **중심**: Xinjie He 외. *What Training Data Teaches RL Memory Agents: An Empirical Study of Curriculum Effects in Memory-Augmented QA*. [arXiv:2605.23067](https://arxiv.org/abs/2605.23067) — 분야: cs.CL
+- Pengcheng Jiang 외. *s3: You Don't Need That Much Data to Train a Search Agent via RL*. [arXiv:2505.14146](https://arxiv.org/abs/2505.14146) — 분야: cs.AI, cs.CL
+- Sikuan Yan 외. *Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning*. [arXiv:2508.19828](https://arxiv.org/abs/2508.19828) — 분야: cs.CL, cs.MA
+- Yibo Zhao 외. *Retrieval, Reward, and Training Protocols: What Matters in Training Search Agents?*. [arXiv:2605.27881](https://arxiv.org/abs/2605.27881) — 분야: cs.CL
+- Tiancheng Han 외. *InfoMem: Training Long-Context Memory Agents with Answer-Conditioned Information Gain*. [arXiv:2606.03329](https://arxiv.org/abs/2606.03329) — 분야: cs.AI
+
 ## [2026-07-17] 궤적을 한 장의 그래프로 겹쳐 놓다 — GraphGPO, 목표까지의 거리로 스텝마다 공을 가르다
 
 - **중심**: Xin Cheng 외. *Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning*. [arXiv:2605.26684](https://arxiv.org/abs/2605.26684) — 분야: cs.LG, cs.AI

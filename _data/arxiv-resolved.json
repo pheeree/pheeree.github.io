@@ -6531,5 +6531,36 @@
   "categories": [
    "cs.CL"
   ]
+ },
+ "2505.14146": {
+  "title": "s3: You Don't Need That Much Data to Train a Search Agent via RL",
+  "authors": [
+   "Pengcheng Jiang",
+   "Xueqiang Xu",
+   "Jiacheng Lin",
+   "Jinfeng Xiao",
+   "Zifeng Wang",
+   "Jimeng Sun",
+   "Jiawei Han"
+  ],
+  "published": "2025-05-20",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2606.03329": {
+  "title": "InfoMem: Training Long-Context Memory Agents with Answer-Conditioned Information Gain",
+  "authors": [
+   "Tiancheng Han",
+   "Yong Li",
+   "Wuzhou Yu",
+   "Qiaosheng Zhang",
+   "Wenqi Shao"
+  ],
+  "published": "2026-06-02",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }
