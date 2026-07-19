@@ -6562,5 +6562,57 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2510.14967": {
+  "title": "Information Gain-based Policy Optimization: A Simple and Effective Approach for Multi-Turn Search Agents",
+  "authors": [
+   "Guoqing Wang",
+   "Sunhao Dai",
+   "Guangze Ye",
+   "Zeyu Gan",
+   "Wei Yao",
+   "Yong Deng",
+   "Xiaofeng Wu",
+   "Zhenzhe Ying"
+  ],
+  "published": "2025-10-16",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2607.02509": {
+  "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
+  "authors": [
+   "Yanjun Zhao",
+   "Ruizhong Qiu",
+   "Tianxin Wei",
+   "Yuanchen Bei",
+   "Zhining Liu",
+   "Lingjie Chen",
+   "Ismini Lourentzou",
+   "Hanghang Tong",
+   "Jingrui He"
+  ],
+  "published": "2026-07-02",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2606.18831": {
+  "title": "Beyond Reward Engineering: A Data Recipe for Long-Context Reinforcement Learning",
+  "authors": [
+   "Xiaoyue Xu",
+   "Sikui Zhang",
+   "Xiaorong Wang",
+   "Xu Han",
+   "Chaojun Xiao"
+  ],
+  "published": "2026-06-17",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
  }
 }

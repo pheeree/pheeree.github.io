@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-07-19 — [정답 조건부 정보 이득으로 메모리를 고른다 — InfoMem, 성공한 궤적 사이의 품질 차이를 보상에 새기다](https://pheeree.github.io/2026/07/19/infomem-answer-conditioned-information-gain/)
 - 2026-07-18 — [훈련 데이터의 구성이 능력을 재분배한다 — 커리큘럼은 성능의 손잡이가 아니라 특화의 조절 장치](https://pheeree.github.io/2026/07/18/curriculum-composition-reshapes-memory-agent-skills/)
 - 2026-07-17 — [궤적을 한 장의 그래프로 겹쳐 놓다 — GraphGPO, 목표까지의 거리로 스텝마다 공을 가르다](https://pheeree.github.io/2026/07/17/graphgpo-graph-based-credit-assignment/)
 - 2026-07-16 — [메모리가 환경을 바꾸면 그룹 비교가 무너진다 — Memory-R2, 같은 출발선에서만 견주는 신용 배분](https://pheeree.github.io/2026/07/16/memory-r2-fair-credit-assignment/)

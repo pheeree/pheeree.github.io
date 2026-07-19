@@ -1,6 +1,21 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-19-infomem-answer-conditioned-information-gain:
+  title: "정답 조건부 정보 이득으로 메모리를 고른다 — InfoMem, 성공한 궤적 사이의 품질 차이를 보상에 새기다"
+  central:
+    id: "2606.03329"
+    title: "InfoMem: Training Long-Context Memory Agents with Answer-Conditioned Information Gain"
+    authors: "Tiancheng Han 외"
+    keywords: "cs.AI"
+    url: "https://arxiv.org/abs/2606.03329"
+  referenced:
+    - { id: "2505.14146", title: "s3: You Don't Need That Much Data to Train a Search Agent via RL", authors: "Pengcheng Jiang 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2505.14146" }
+    - { id: "2510.14967", title: "Information Gain-based Policy Optimization: A Simple and Effective Approach for Multi-Turn Search Agents", authors: "Guoqing Wang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2510.14967" }
+    - { id: "2603.11768", title: "Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework", authors: "Chingkwun Lam 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.11768" }
+    - { id: "2606.18831", title: "Beyond Reward Engineering: A Data Recipe for Long-Context Reinforcement Learning", authors: "Xiaoyue Xu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2606.18831" }
+    - { id: "2607.02509", title: "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning", authors: "Yanjun Zhao 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2607.02509" }
+
 2026-07-18-curriculum-composition-reshapes-memory-agent-skills:
   title: "훈련 데이터의 구성이 능력을 재분배한다 — 커리큘럼은 성능의 손잡이가 아니라 특화의 조절 장치"
   central:

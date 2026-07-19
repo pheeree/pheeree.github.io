@@ -6,6 +6,15 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-19] 정답 조건부 정보 이득으로 메모리를 고른다 — InfoMem, 성공한 궤적 사이의 품질 차이를 보상에 새기다
+
+- **중심**: Tiancheng Han 외. *InfoMem: Training Long-Context Memory Agents with Answer-Conditioned Information Gain*. [arXiv:2606.03329](https://arxiv.org/abs/2606.03329) — 분야: cs.AI
+- Pengcheng Jiang 외. *s3: You Don't Need That Much Data to Train a Search Agent via RL*. [arXiv:2505.14146](https://arxiv.org/abs/2505.14146) — 분야: cs.AI, cs.CL
+- Guoqing Wang 외. *Information Gain-based Policy Optimization: A Simple and Effective Approach for Multi-Turn Search Agents*. [arXiv:2510.14967](https://arxiv.org/abs/2510.14967) — 분야: cs.CL, cs.AI, cs.LG
+- Chingkwun Lam 외. *Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework*. [arXiv:2603.11768](https://arxiv.org/abs/2603.11768) — 분야: cs.AI
+- Xiaoyue Xu 외. *Beyond Reward Engineering: A Data Recipe for Long-Context Reinforcement Learning*. [arXiv:2606.18831](https://arxiv.org/abs/2606.18831) — 분야: cs.CL, cs.AI
+- Yanjun Zhao 외. *ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning*. [arXiv:2607.02509](https://arxiv.org/abs/2607.02509) — 분야: cs.AI
+
 ## [2026-07-18] 훈련 데이터의 구성이 능력을 재분배한다 — 커리큘럼은 성능의 손잡이가 아니라 특화의 조절 장치
 
 - **중심**: Xinjie He 외. *What Training Data Teaches RL Memory Agents: An Empirical Study of Curriculum Effects in Memory-Augmented QA*. [arXiv:2605.23067](https://arxiv.org/abs/2605.23067) — 분야: cs.CL
