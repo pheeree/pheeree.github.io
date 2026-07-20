@@ -6,6 +6,16 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-20] 메모리의 진화와 통치를 갈라 세우다 — SSGM, 검증 게이트 없는 커밋을 겨눈 거버넌스 미들웨어
+
+- **중심**: Chingkwun Lam 외. *Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework*. [arXiv:2603.11768](https://arxiv.org/abs/2603.11768) — 분야: cs.AI
+- Davide Corsi 외. *Verification-Guided Shielding for Deep Reinforcement Learning*. [arXiv:2406.06507](https://arxiv.org/abs/2406.06507) — 분야: cs.LG
+- Qianshan Wei 외. *A-MemGuard: A Proactive Defense Framework for LLM-Based Agent Memory*. [arXiv:2510.02373](https://arxiv.org/abs/2510.02373) — 분야: cs.CR, cs.AI
+- Weiwei Xie 외. *MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents*. [arXiv:2604.15774](https://arxiv.org/abs/2604.15774) — 분야: cs.CL
+- Jun Wen Leong. *Defense effectiveness across architectural layers: a mechanistic evaluation of persistent memory attacks on stateful LLM agents*. [arXiv:2605.08442](https://arxiv.org/abs/2605.08442) — 분야: cs.CR, cs.AI, cs.LG
+- Ziming Wang. *TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory*. [arXiv:2606.06240](https://arxiv.org/abs/2606.06240) — 분야: cs.DB, cs.AI
+- Zihan Chen 외. *The Past Is Prologue: A Plug-in Controller for Selective Updates in Sequentially Evolving LLM Memory*. [arXiv:2606.31121](https://arxiv.org/abs/2606.31121) — 분야: cs.AI
+
 ## [2026-07-19] 정답 조건부 정보 이득으로 메모리를 고른다 — InfoMem, 성공한 궤적 사이의 품질 차이를 보상에 새기다
 
 - **중심**: Tiancheng Han 외. *InfoMem: Training Long-Context Memory Agents with Answer-Conditioned Information Gain*. [arXiv:2606.03329](https://arxiv.org/abs/2606.03329) — 분야: cs.AI

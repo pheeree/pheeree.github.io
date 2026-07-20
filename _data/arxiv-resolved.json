@@ -6614,5 +6614,85 @@
    "cs.CL",
    "cs.AI"
   ]
+ },
+ "2406.06507": {
+  "title": "Verification-Guided Shielding for Deep Reinforcement Learning",
+  "authors": [
+   "Davide Corsi",
+   "Guy Amir",
+   "Andoni Rodriguez",
+   "Cesar Sanchez",
+   "Guy Katz",
+   "Roy Fox"
+  ],
+  "published": "2024-06-10",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2606.31121": {
+  "title": "The Past Is Prologue: A Plug-in Controller for Selective Updates in Sequentially Evolving LLM Memory",
+  "authors": [
+   "Zihan Chen",
+   "Songwei Dong",
+   "Chengshuai Shi",
+   "Peng Wang",
+   "Song Wang",
+   "Cong Shen",
+   "Jundong Li"
+  ],
+  "published": "2026-06-30",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2605.08442": {
+  "title": "Defense effectiveness across architectural layers: a mechanistic evaluation of persistent memory attacks on stateful LLM agents",
+  "authors": [
+   "Jun Wen Leong"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.CR",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2604.15774": {
+  "title": "MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents",
+  "authors": [
+   "Weiwei Xie",
+   "Shaoxiong Guo",
+   "Fan Zhang",
+   "Tian Xia",
+   "Xue Yang",
+   "Lizhuang Ma",
+   "Junchi Yan",
+   "Qibing Ren"
+  ],
+  "published": "2026-04-17",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2510.02373": {
+  "title": "A-MemGuard: A Proactive Defense Framework for LLM-Based Agent Memory",
+  "authors": [
+   "Qianshan Wei",
+   "Tengchao Yang",
+   "Yaochen Wang",
+   "Xinfeng Li",
+   "Lijun Li",
+   "Zhenfei Yin",
+   "Yi Zhan",
+   "Thorsten Holz",
+   "Zhiqiang Lin",
+   "XiaoFeng Wang"
+  ],
+  "published": "2025-09-29",
+  "categories": [
+   "cs.CR",
+   "cs.AI"
+  ]
  }
 }
