@@ -6,6 +6,11 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-21] 매 턴 정답에 얼마나 다가섰나로 보상을 짠다 — IGPO, 정보 이득을 궤적 전체로 조밀화하되 '단순함'이라는 자평엔 각을 세운다
+
+- **중심**: Guoqing Wang 외. *Information Gain-based Policy Optimization: A Simple and Effective Approach for Multi-Turn Search Agents*. [arXiv:2510.14967](https://arxiv.org/abs/2510.14967) — 분야: cs.CL, cs.AI, cs.LG
+- Hao Dou. *CIGPO: Contextual Information-Gain Policy Optimization for Multi-Turn Evidence-Reading LLM Agents*. [arXiv:2607.16244](https://arxiv.org/abs/2607.16244) — 분야: cs.LG, cs.AI, cs.CL
+
 ## [2026-07-20] 메모리의 진화와 통치를 갈라 세우다 — SSGM, 검증 게이트 없는 커밋을 겨눈 거버넌스 미들웨어
 
 - **중심**: Chingkwun Lam 외. *Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework*. [arXiv:2603.11768](https://arxiv.org/abs/2603.11768) — 분야: cs.AI

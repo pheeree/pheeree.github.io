@@ -6694,5 +6694,17 @@
    "cs.CR",
    "cs.AI"
   ]
+ },
+ "2607.16244": {
+  "title": "CIGPO: Contextual Information-Gain Policy Optimization for Multi-Turn Evidence-Reading LLM Agents",
+  "authors": [
+   "Hao Dou"
+  ],
+  "published": "2026-06-26",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  }
 }
