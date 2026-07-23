@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-07-22 — [정답에 얼마나 가까운 상태인가를 매 턴 값으로 매긴다 — TRACE, 얼어붙은 참조 모델의 로그확률을 log-ratio 시간차로 접어 크리틱 없이 신용을 나눈다](https://pheeree.github.io/2026/07/22/trace-log-ratio-td-credit-assignment/)
 - 2026-07-21 — [매 턴 정답에 얼마나 다가섰나로 보상을 짠다 — IGPO, 정보 이득을 궤적 전체로 조밀화하되 '단순함'이라는 자평엔 각을 세운다](https://pheeree.github.io/2026/07/21/igpo-information-gain-turn-level-reward/)
 - 2026-07-20 — [메모리의 진화와 통치를 갈라 세우다 — SSGM, 검증 게이트 없는 커밋을 겨눈 거버넌스 미들웨어](https://pheeree.github.io/2026/07/20/ssgm-decoupling-memory-evolution-from-governance/)
 - 2026-07-19 — [정답 조건부 정보 이득으로 메모리를 고른다 — InfoMem, 성공한 궤적 사이의 품질 차이를 보상에 새기다](https://pheeree.github.io/2026/07/19/infomem-answer-conditioned-information-gain/)

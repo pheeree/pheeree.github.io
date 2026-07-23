@@ -6706,5 +6706,103 @@
    "cs.AI",
    "cs.CL"
   ]
+ },
+ "2601.11061": {
+  "title": "Spurious Rewards Paradox: Mechanistically Understanding How RLVR Activates Memorization Shortcuts in LLMs",
+  "authors": [
+   "Lecheng Yan",
+   "Ruizhe Li",
+   "Guanhua Chen",
+   "Qing Li",
+   "Jiahui Geng",
+   "Wenxi Li",
+   "Longyue Wang",
+   "Chenyang Lyu"
+  ],
+  "published": "2026-01-16",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2605.21125": {
+  "title": "Advantage Collapse in Group Relative Policy Optimization: Diagnosis and Mitigation",
+  "authors": [
+   "Xixiang He",
+   "Qiyao Sun",
+   "Ao Cheng",
+   "Xingming Li",
+   "Xuanyu Ji",
+   "Hailun Lu",
+   "Runke Huang",
+   "Qingyong Hu"
+  ],
+  "published": "2026-05-20",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2505.22942": {
+  "title": "WorkForceAgent-R1: Incentivizing Reasoning Capability in LLM-based Web Agents via Reinforcement Learning",
+  "authors": [
+   "Yuchen Zhuang",
+   "Di Jin",
+   "Jiaao Chen",
+   "Wenqi Shi",
+   "Hanrui Wang",
+   "Chao Zhang"
+  ],
+  "published": "2025-05-28",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2412.01981": {
+  "title": "Free Process Rewards without Process Labels",
+  "authors": [
+   "Lifan Yuan",
+   "Wendi Li",
+   "Huayu Chen",
+   "Ganqu Cui",
+   "Ning Ding",
+   "Kaiyan Zhang",
+   "Bowen Zhou",
+   "Zhiyuan Liu",
+   "Hao Peng"
+  ],
+  "published": "2024-12-02",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2607.04332": {
+  "title": "On the effectiveness of reward functions in reinforcement learning for confidence calibration of large language models",
+  "authors": [
+   "Chee Heng Tan",
+   "Zhuoyi Lin",
+   "Mehul Motani",
+   "Wee Sun Lee"
+  ],
+  "published": "2026-07-05",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2505.19590": {
+  "title": "Learning to Reason without External Rewards",
+  "authors": [
+   "Xuandong Zhao",
+   "Zhewei Kang",
+   "Aosong Feng",
+   "Sergey Levine",
+   "Dawn Song"
+  ],
+  "published": "2025-05-26",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
  }
 }

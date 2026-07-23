@@ -6,6 +6,15 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-22] 정답에 얼마나 가까운 상태인가를 매 턴 값으로 매긴다 — TRACE, 얼어붙은 참조 모델의 로그확률을 log-ratio 시간차로 접어 크리틱 없이 신용을 나눈다
+
+- **중심**: Leitian Tao 외. *TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents*. [arXiv:2607.13988](https://arxiv.org/abs/2607.13988) — 분야: cs.LG
+- Lifan Yuan 외. *Free Process Rewards without Process Labels*. [arXiv:2412.01981](https://arxiv.org/abs/2412.01981) — 분야: cs.LG, cs.CL
+- Xuandong Zhao 외. *Learning to Reason without External Rewards*. [arXiv:2505.19590](https://arxiv.org/abs/2505.19590) — 분야: cs.LG, cs.CL
+- Yuchen Zhuang 외. *WorkForceAgent-R1: Incentivizing Reasoning Capability in LLM-based Web Agents via Reinforcement Learning*. [arXiv:2505.22942](https://arxiv.org/abs/2505.22942) — 분야: cs.CL, cs.AI
+- Yuanda Xu 외. *TRIAGE: Role-Typed Credit Assignment for Agentic Reinforcement Learning*. [arXiv:2606.32017](https://arxiv.org/abs/2606.32017) — 분야: cs.LG, cs.AI
+- Chee Heng Tan 외. *On the effectiveness of reward functions in reinforcement learning for confidence calibration of large language models*. [arXiv:2607.04332](https://arxiv.org/abs/2607.04332) — 분야: cs.LG
+
 ## [2026-07-21] 매 턴 정답에 얼마나 다가섰나로 보상을 짠다 — IGPO, 정보 이득을 궤적 전체로 조밀화하되 '단순함'이라는 자평엔 각을 세운다
 
 - **중심**: Guoqing Wang 외. *Information Gain-based Policy Optimization: A Simple and Effective Approach for Multi-Turn Search Agents*. [arXiv:2510.14967](https://arxiv.org/abs/2510.14967) — 분야: cs.CL, cs.AI, cs.LG
