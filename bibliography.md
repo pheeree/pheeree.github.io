@@ -6,6 +6,13 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-23] 같은 수식, 정반대의 절약 — CIGPO는 정보 이득의 '내용'이 아니라 '분산'을 산다
+
+- **중심**: Hao Dou. *CIGPO: Contextual Information-Gain Policy Optimization for Multi-Turn Evidence-Reading LLM Agents*. [arXiv:2607.16244](https://arxiv.org/abs/2607.16244) — 분야: cs.LG, cs.AI, cs.CL
+- Guoqing Wang 외. *Information Gain-based Policy Optimization: A Simple and Effective Approach for Multi-Turn Search Agents*. [arXiv:2510.14967](https://arxiv.org/abs/2510.14967) — 분야: cs.CL, cs.AI, cs.LG
+- Lecheng Yan 외. *Spurious Rewards Paradox: Mechanistically Understanding How RLVR Activates Memorization Shortcuts in LLMs*. [arXiv:2601.11061](https://arxiv.org/abs/2601.11061) — 분야: cs.LG, cs.CL
+- Xixiang He 외. *Advantage Collapse in Group Relative Policy Optimization: Diagnosis and Mitigation*. [arXiv:2605.21125](https://arxiv.org/abs/2605.21125) — 분야: cs.LG
+
 ## [2026-07-22] 정답에 얼마나 가까운 상태인가를 매 턴 값으로 매긴다 — TRACE, 얼어붙은 참조 모델의 로그확률을 log-ratio 시간차로 접어 크리틱 없이 신용을 나눈다
 
 - **중심**: Leitian Tao 외. *TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents*. [arXiv:2607.13988](https://arxiv.org/abs/2607.13988) — 분야: cs.LG
