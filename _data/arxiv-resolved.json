@@ -6804,5 +6804,97 @@
    "cs.LG",
    "cs.CL"
   ]
+ },
+ "2606.22164": {
+  "title": "Drowning in Routine: Signal Dilution in Multi-Turn Agent Training",
+  "authors": [
+   "Yann Pernot",
+   "Vi Retault"
+  ],
+  "published": "2026-06-20",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2605.13217": {
+  "title": "GAGPO: Generalized Advantage Grouped Policy Optimization",
+  "authors": [
+   "Siyuan Zhu",
+   "Chao Yu",
+   "Rongxin Yang",
+   "Zongkai Liu",
+   "Jinjun Hu",
+   "Qiwen Chen",
+   "Yibo Zhang"
+  ],
+  "published": "2026-05-13",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2510.10931": {
+  "title": "Proof-of-Use: Mitigating Tool-Call Hacking in Deep Research Agents",
+  "authors": [
+   "SHengjie Ma",
+   "Chenlong Deng",
+   "Jiaxin Mao",
+   "Jiadeng Huang",
+   "Teng Wang",
+   "Junjie Wu",
+   "Changwang Zhang",
+   "Jun wang"
+  ],
+  "published": "2025-10-13",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2512.04220": {
+  "title": "On Group Relative Policy Optimization Collapse in Agent Search: The Lazy Likelihood-Displacement",
+  "authors": [
+   "Wenlong Deng",
+   "Yushu Li",
+   "Boying Gong",
+   "Yi Ren",
+   "Christos Thrampoulidis",
+   "Xiaoxiao Li"
+  ],
+  "published": "2025-12-03",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2604.18235": {
+  "title": "Negative Advantages Is a Double-Edged Sword: Calibrating advantages in GRPO for Search Agents",
+  "authors": [
+   "Jiayi Wu",
+   "Ruobing Xie",
+   "Zeqian Huang",
+   "Lei Jiang",
+   "Can Xu",
+   "Kangyang Luo",
+   "Bochen Lin",
+   "Ming Gao",
+   "Xiang Li"
+  ],
+  "published": "2026-04-20",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2606.29238": {
+  "title": "On the Policy Gradient Foundations of Group Relative Policy Optimization: Credit Assignment, Gradient Sparsity, and Rank Collapse",
+  "authors": [
+   "Amritansh Mishra",
+   "Supriyo Chakraborty",
+   "Berkcan Kapusuzoglu"
+  ],
+  "published": "2026-06-28",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }
