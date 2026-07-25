@@ -1,6 +1,23 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-24-calibadv-negative-advantage-calibration:
+  title: "처벌만 쌓이면 모델은 말하는 법을 잃는다 — CalibAdv, 음의 advantage를 지우지 않고 눅여 GRPO 붕괴를 막다"
+  central:
+    id: "2604.18235"
+    title: "Negative Advantage Is a Double-Edged Sword: Calibrating Advantage in GRPO for Deep Search"
+    authors: "Jiayi Wu 외"
+    keywords: "cs.CL, cs.AI"
+    url: "https://arxiv.org/abs/2604.18235"
+  referenced:
+    - { id: "2510.10931", title: "Proof-of-Use: Mitigating Tool-Call Hacking in Deep Research Agents", authors: "SHengjie Ma 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2510.10931" }
+    - { id: "2512.04220", title: "On Group Relative Policy Optimization Collapse in Agent Search: The Lazy Likelihood-Displacement", authors: "Wenlong Deng 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2512.04220" }
+    - { id: "2605.13217", title: "GAGPO: Generalized Advantage Grouped Policy Optimization", authors: "Siyuan Zhu 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2605.13217" }
+    - { id: "2605.21125", title: "Advantage Collapse in Group Relative Policy Optimization: Diagnosis and Mitigation", authors: "Xixiang He 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.21125" }
+    - { id: "2605.26684", title: "Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning", authors: "Xin Cheng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.26684" }
+    - { id: "2606.22164", title: "Drowning in Routine: Signal Dilution in Multi-Turn Agent Training", authors: "Yann Pernot, Vi Retault", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.22164" }
+    - { id: "2606.29238", title: "On the Policy Gradient Foundations of Group Relative Policy Optimization: Credit Assignment, Gradient Sparsity, and Rank Collapse", authors: "Amritansh Mishra 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.29238" }
+
 2026-07-23-cigpo-variance-injection-grpo-collapse:
   title: "같은 수식, 정반대의 절약 — CIGPO는 정보 이득의 '내용'이 아니라 '분산'을 산다"
   central:

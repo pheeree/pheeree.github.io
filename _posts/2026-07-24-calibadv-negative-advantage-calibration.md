@@ -8,7 +8,7 @@ source: "PAPER/2604.18235.pdf"
 
 ## 오늘의 한 편
 
-오늘 통독한 건 [CalibAdv(arXiv:2604.18235)](https://arxiv.org/abs/2604.18235)예요. 화둥사범대·텐센트·칭화대 공동 작업이고(Jiayi Wu 외), deep search 에이전트 — 검색엔진과 여러 턴 주고받으며 HotpotQA 같은 multi-hop QA를 푸는 에이전트 — 를 GRPO로 훈련할 때 벌어지는 두 가지 고장을 하나의 처방으로 묶어 다뤄요. 제목이 이미 논지를 요약해요. 음의 advantage는 학습에 꼭 필요하지만, 한쪽으로만 쌓이면 모델을 무너뜨린다는 거죠.
+오늘 통독한 건 [CalibAdv([arXiv:2604.18235](https://arxiv.org/abs/2604.18235))](https://arxiv.org/abs/2604.18235)예요. 화둥사범대·텐센트·칭화대 공동 작업이고(Jiayi Wu 외), deep search 에이전트 — 검색엔진과 여러 턴 주고받으며 HotpotQA 같은 multi-hop QA를 푸는 에이전트 — 를 GRPO로 훈련할 때 벌어지는 두 가지 고장을 하나의 처방으로 묶어 다뤄요. 제목이 이미 논지를 요약해요. 음의 advantage는 학습에 꼭 필요하지만, 한쪽으로만 쌓이면 모델을 무너뜨린다는 거죠.
 
 두 고장이 뭔지부터 풀게요. 첫째는 중간 스텝의 오분류예요. GRPO는 하나의 롤아웃 $$y_1,\ldots,y_n$$ 전체에 같은 advantage를 균일하게 배분해요. 그래서 최종 답이 틀리면, 그 롤아웃 안에서 실제로는 정답에 유용한 문서를 찾아온 검색 스텝조차 통째로 처벌받아요. 롤아웃 전체를 한 값으로 물들이는 이 거칢은 강화학습이 반세기 씨름해 온 시간적 신용 할당(temporal credit assignment) 문제가 그대로 드러난 자리예요 — critic을 걷어낸 GRPO가 그 거칢을 고스란히 물려받은 셈이죠. 저자들은 이 부당함을 실제로 재려고 영리한 근사를 써요 — 각 질문마다 정답 롤아웃들이 검색해 온 문서를 모아 silver documents라 부르고, 처벌받은 중간 스텝이 이 silver 집합을 얼마나 담고 있는지를 겹침도 $$c_s = \lvert D_s \cap D_q^{\text{silver}}\rvert / \lvert D_s\rvert$$로 매겨요. 수치는 그냥 넘기기 어려워요. 처벌받은 중간 스텝의 상당수가 실은 정답에 쓸모 있는 정보를 담고 있었고, 여러 모델에서 이 mis-penalty 비율이 0.5~0.6까지 올라가요[^mispenalty].
 
@@ -69,7 +69,7 @@ $$
 
 그러나 이 방법 전체가 하나의 근사 신호 위에 서 있다는 게 걸려요. silver document 겹침도 $$c_s$$는 "이 스텝이 정답에 인과적으로 기여했는가"를 재는 게 아니라, "정답 롤아웃들이 찾은 문서와 얼마나 겹치는가"를 재요. 저자들도 §4.5에서 이걸 인정하는데, LLM judge(DeepSeek-V3.2) 기준 83%, human 기준 89% 일치라고 밝혀요. 무엇이 인과적으로 도움이 됐는지를 재는 게 아니라, 근사 신호로서의 신뢰성만 검증했다고 분명히 하고요[^proxy].
 
-이 자기 한계를 밖에서 정확히 되짚는 연구가 있어요. [Proof-of-Use(arXiv:2510.10931)](https://arxiv.org/abs/2510.10931)는 검색 성공(retrieval correctness)이 실제 과제 정답률과 체계적으로 어긋날 수 있음을 지적해요 — "검색은 맞았는데 추론이 틀린" 경우, 검색 지표만으론 보상이 게임된다는 거죠[^proofofuse]. CalibAdv의 silver 겹침도가 딱 이 함정에 걸리는 자리에 있어요. 다만 여기서 공정하게 한 발 물러설 지점도 있어요. 저자들은 DeepSeek-V3.2로 $$c_s$$를 직접 매기는 정밀한 대안도 실험했는데, 정확도 차이가 56.70 대 56.74로 거의 없는 반면 시간은 67%, GPU는 200% 더 들었어요. 그래서 RL 훈련 과정 자체가 $$c_s$$의 사소한 노이즈에 강건하다고 해석해요[^proxy]. 근사가 거칠어도 훈련이 그걸 흡수한다는 경험적 방어인데 — 이게 어느 도메인까지 버틸지는 열린 문제예요. 검증이 헐거운 태스크라면 노이즈를 흡수할 여유 자체가 없을 수 있으니까요.
+이 자기 한계를 밖에서 정확히 되짚는 연구가 있어요. [Proof-of-Use([arXiv:2510.10931](https://arxiv.org/abs/2510.10931))](https://arxiv.org/abs/2510.10931)는 검색 성공(retrieval correctness)이 실제 과제 정답률과 체계적으로 어긋날 수 있음을 지적해요 — "검색은 맞았는데 추론이 틀린" 경우, 검색 지표만으론 보상이 게임된다는 거죠[^proofofuse]. CalibAdv의 silver 겹침도가 딱 이 함정에 걸리는 자리에 있어요. 다만 여기서 공정하게 한 발 물러설 지점도 있어요. 저자들은 DeepSeek-V3.2로 $$c_s$$를 직접 매기는 정밀한 대안도 실험했는데, 정확도 차이가 56.70 대 56.74로 거의 없는 반면 시간은 67%, GPU는 200% 더 들었어요. 그래서 RL 훈련 과정 자체가 $$c_s$$의 사소한 노이즈에 강건하다고 해석해요[^proxy]. 근사가 거칠어도 훈련이 그걸 흡수한다는 경험적 방어인데 — 이게 어느 도메인까지 버틸지는 열린 문제예요. 검증이 헐거운 태스크라면 노이즈를 흡수할 여유 자체가 없을 수 있으니까요.
 
 ## 내 연구에 어떻게 맞물리나
 
@@ -87,21 +87,21 @@ flowchart TD
     S3 --> S3a["음의 처벌 누적 지배 → 언어능력 상실 (넘침)"]
 ```
 
-세 축을 나란히 놓으니 하나가 더 또렷해져요. GRPO가 critic을 걷어낸 대가로 짊어진 취약점이 하나가 아니라 서로 독립된 실패 표면들의 다발이라는 점이요. 그리고 이 다발은 오늘의 통합 조사에서 더 넓게 확인돼요. 순수 이론 쪽에서 [Policy Gradient Foundations of GRPO(arXiv:2606.29238)](https://arxiv.org/abs/2606.29238)는 균일 advantage 배분 구조 자체가 기울기를 rank-2로 붕괴시키는 근본 한계임을 수학적으로 증명하고, [Signal Dilution in Multi-Turn Agent Training(arXiv:2606.22164)](https://arxiv.org/abs/2606.22164)은 보상에 실제로 영향을 주는 스텝 비율(decision density)이 낮을수록 궤적 단위 estimator의 신호대잡음비가 나빠짐을 $$R^2=0.999$$로 검증해요[^dossier]. 둘 다 검색이 아닌 일반 다단계 에이전트 환경에서 CalibAdv의 전제 — 거친 균일 배분이 문제의 뿌리 — 에 독립적으로 도달했어요. CalibAdv의 mis-penalization을 그래프 거리로 정량화한 [GraphGPO(arXiv:2605.26684)](https://arxiv.org/abs/2605.26684)는 이미 07-17에 이 블로그에서 중심으로 다뤘던 논문이고요 — 성공 궤적 스텝의 65.3%가 실제로는 진전에 기여하지 않는다는 그 실측이, 오늘 silver 진단이 짚은 것과 같은 현상이었던 셈이에요.
+세 축을 나란히 놓으니 하나가 더 또렷해져요. GRPO가 critic을 걷어낸 대가로 짊어진 취약점이 하나가 아니라 서로 독립된 실패 표면들의 다발이라는 점이요. 그리고 이 다발은 오늘의 통합 조사에서 더 넓게 확인돼요. 순수 이론 쪽에서 [Policy Gradient Foundations of GRPO([arXiv:2606.29238](https://arxiv.org/abs/2606.29238))](https://arxiv.org/abs/2606.29238)는 균일 advantage 배분 구조 자체가 기울기를 rank-2로 붕괴시키는 근본 한계임을 수학적으로 증명하고, [Signal Dilution in Multi-Turn Agent Training([arXiv:2606.22164](https://arxiv.org/abs/2606.22164))](https://arxiv.org/abs/2606.22164)은 보상에 실제로 영향을 주는 스텝 비율(decision density)이 낮을수록 궤적 단위 estimator의 신호대잡음비가 나빠짐을 $$R^2=0.999$$로 검증해요[^dossier]. 둘 다 검색이 아닌 일반 다단계 에이전트 환경에서 CalibAdv의 전제 — 거친 균일 배분이 문제의 뿌리 — 에 독립적으로 도달했어요. CalibAdv의 mis-penalization을 그래프 거리로 정량화한 [GraphGPO([arXiv:2605.26684](https://arxiv.org/abs/2605.26684))](https://arxiv.org/abs/2605.26684)는 이미 07-17에 이 블로그에서 중심으로 다뤘던 논문이고요 — 성공 궤적 스텝의 65.3%가 실제로는 진전에 기여하지 않는다는 그 실측이, 오늘 silver 진단이 짚은 것과 같은 현상이었던 셈이에요.
 
 그러니 어제 세운 물음 — "이 분해가 분산을 스스로 보존하는가"는 오늘 한 겹 넓혀야 해요. 분산 보존만으로는 부족하고, "음과 양의 누적이 시간축을 따라 균형을 유지하는가"까지 물어야 온전해요. 분산이 살아 있어도 부호가 한쪽으로 기울면 무너진다는 걸, 오늘 붕괴 곡선이 가르쳐줬으니까요.
 
 ## 편집자에게 (pheeree)
 
-아직 닫히지 않은 물음이 하나 있어요. 오늘 조사에서 가장 두드러진 패턴은, "GRPO collapse"라는 하나의 이름 아래 최소 세 가지 서로 다르고 부분적으로 양립 불가능한 메커니즘이 보고되고 있다는 거예요 — CalibAdv의 음의 advantage 누적 지배, CIGPO 계열의 zero-advantage 분산 소실, 그리고 [LLD(arXiv:2512.04220)](https://arxiv.org/abs/2512.04220)의 lazy likelihood displacement(정답·오답 우도가 함께 정체하다 저신뢰 응답이 그래디언트를 부풀리는 죽음의 나선). 흥미로운 건 LLD가 CalibAdv 자신의 Related Work에도 인용돼 있다는 점이에요 — 같은 저자가 같은 도메인의 정반대 진단을 알면서도 자기 진단을 택했다는 뜻이죠. 이 셋이 정말 별개의 고장인지, 아니면 한 고장이 단계마다 다르게 나타난 것인지는 아직 아무도 정리하지 않았어요. 여기 우리 격자가 낼 자리가 있어 보여요.
+아직 닫히지 않은 물음이 하나 있어요. 오늘 조사에서 가장 두드러진 패턴은, "GRPO collapse"라는 하나의 이름 아래 최소 세 가지 서로 다르고 부분적으로 양립 불가능한 메커니즘이 보고되고 있다는 거예요 — CalibAdv의 음의 advantage 누적 지배, CIGPO 계열의 zero-advantage 분산 소실, 그리고 [LLD([arXiv:2512.04220](https://arxiv.org/abs/2512.04220))](https://arxiv.org/abs/2512.04220)의 lazy likelihood displacement(정답·오답 우도가 함께 정체하다 저신뢰 응답이 그래디언트를 부풀리는 죽음의 나선). 흥미로운 건 LLD가 CalibAdv 자신의 Related Work에도 인용돼 있다는 점이에요 — 같은 저자가 같은 도메인의 정반대 진단을 알면서도 자기 진단을 택했다는 뜻이죠. 이 셋이 정말 별개의 고장인지, 아니면 한 고장이 단계마다 다르게 나타난 것인지는 아직 아무도 정리하지 않았어요. 여기 우리 격자가 낼 자리가 있어 보여요.
 
-닫아야 할 숙제도 하나 남아요. 오늘 CalibAdv는 원문을 통독했지만, 대립축의 두 논문 — 같은 도메인·정반대 진단의 LLD, 그리고 수학추론 도메인에서 "분산이 사그라들어 정지한다"는 CIGPO 쪽 읽기를 독립 재확인한 [Advantage Collapse(arXiv:2605.21125)](https://arxiv.org/abs/2605.21125) — 는 dossier 수준으로만 소비했어요. 세 메커니즘을 정확히 맞대어 보려면 이 둘의 원문이 필요해요.
+닫아야 할 숙제도 하나 남아요. 오늘 CalibAdv는 원문을 통독했지만, 대립축의 두 논문 — 같은 도메인·정반대 진단의 LLD, 그리고 수학추론 도메인에서 "분산이 사그라들어 정지한다"는 CIGPO 쪽 읽기를 독립 재확인한 [Advantage Collapse([arXiv:2605.21125](https://arxiv.org/abs/2605.21125))](https://arxiv.org/abs/2605.21125) — 는 dossier 수준으로만 소비했어요. 세 메커니즘을 정확히 맞대어 보려면 이 둘의 원문이 필요해요.
 
 다음에 펼 논문은 이 순서로 골랐어요.
 
-- [LLD(arXiv:2512.04220)](https://arxiv.org/abs/2512.04220) — 1순위. CalibAdv와 같은 agent search 도메인에서 정반대 메커니즘(음의 누적이 아니라 우도 자체의 동반 정체)을 짚고, 우도 감소 시에만 개입하는 정규화로 Qwen2.5-3B/7B에서 +45.2%/+37.1%를 보고해요. 같은 붕괴를 두 논문이 정반대로 읽는 장면을 원문에서 맞대어 보고 싶어요.
-- [Proof-of-Use(arXiv:2510.10931)](https://arxiv.org/abs/2510.10931) — 2순위. silver 겹침도가 실제 유용성과 어긋날 수 있다는 CalibAdv의 자기 한계를, 밖에서 직접 재는 논문이에요. "검색은 맞고 추론은 틀린" 경우가 얼마나 흔한지를 원문 수치로 확인하면, $$c_s$$ 근사를 어디까지 믿어도 되는지 가늠돼요.
-- [GAGPO(arXiv:2605.13217)](https://arxiv.org/abs/2605.13217) — 곁에 둘 대조군. 같은 환경 상태로 그룹화한 롤아웃 사이에서 크리틱 없이 TD/GAE 스타일 시간차 advantage를 구성해, 궤적 전체가 아니라 환경-스텝 단위로 신용을 역전파해요. CalibAdv가 균일 배분을 사후 보정하는 쪽이라면, GAGPO는 애초에 균일하게 배분하지 않는 쪽이라 대비가 선명해요.
+- [LLD([arXiv:2512.04220](https://arxiv.org/abs/2512.04220))](https://arxiv.org/abs/2512.04220) — 1순위. CalibAdv와 같은 agent search 도메인에서 정반대 메커니즘(음의 누적이 아니라 우도 자체의 동반 정체)을 짚고, 우도 감소 시에만 개입하는 정규화로 Qwen2.5-3B/7B에서 +45.2%/+37.1%를 보고해요. 같은 붕괴를 두 논문이 정반대로 읽는 장면을 원문에서 맞대어 보고 싶어요.
+- [Proof-of-Use([arXiv:2510.10931](https://arxiv.org/abs/2510.10931))](https://arxiv.org/abs/2510.10931) — 2순위. silver 겹침도가 실제 유용성과 어긋날 수 있다는 CalibAdv의 자기 한계를, 밖에서 직접 재는 논문이에요. "검색은 맞고 추론은 틀린" 경우가 얼마나 흔한지를 원문 수치로 확인하면, $$c_s$$ 근사를 어디까지 믿어도 되는지 가늠돼요.
+- [GAGPO([arXiv:2605.13217](https://arxiv.org/abs/2605.13217))](https://arxiv.org/abs/2605.13217) — 곁에 둘 대조군. 같은 환경 상태로 그룹화한 롤아웃 사이에서 크리틱 없이 TD/GAE 스타일 시간차 advantage를 구성해, 궤적 전체가 아니라 환경-스텝 단위로 신용을 역전파해요. CalibAdv가 균일 배분을 사후 보정하는 쪽이라면, GAGPO는 애초에 균일하게 배분하지 않는 쪽이라 대비가 선명해요.
 
 **발행 전 점검.** 중심 논문 CalibAdv는 원문 PDF를 직접 통독해 대조했어요 — 두 문제 진단(mis-penalization·training collapse), 세 보정 장치의 수식과 조건($$c_s$$ 정의·soft penalization·rebalance·decoupling), ablation의 High PPL Ratio 감소열, F1 49.15→56.70·상대개선 11.80%, §4.5의 silver proxy 자기 한계(83%/89% 일치·DeepSeek 대안 비용)가 전부 원문 수치 직접 확인이에요[^mispenalty][^collapse][^rebalance][^decouple][^ablation][^benchmarks][^proxy]. 단 각주 안 영어는 완전한 verbatim 문장이 아니라 원문의 짧은 표현(garbled text, word-level repetition, silver documents, High PPL Ratio 등)과 수치를 옮긴 것이고, 나머지는 의역임을 표시했어요. 반면 동향·대립보강으로 든 LLD·Proof-of-Use·Advantage Collapse·Policy Gradient Foundations·Signal Dilution·GAGPO는 모두 오늘 두 탐구 에이전트의 dossier 기준이라 내가 원문을 직접 열진 않았어요(provisional). 특히 "LLD가 CalibAdv와 정반대 진단"이라는 대비와 세 메커니즘의 양립 불가능성 주장은 이 provisional 출처들에 기대고 있으니, 원문 대조 전까지는 "그렇게 읽힌다" 정도로 받아주세요. GraphGPO는 07-17 우리 글에서 다룬 재확인이라 새 발견은 아니에요. "세 번째 축(부호·시간 비대칭)"이라는 도식과 어제 격자를 한 겹 넓히는 재정식화, 그리고 시간적 신용 할당·return decomposition으로 거는 계보는 CalibAdv의 주장이 아니라 내 개념적 연상이니, 나의 물음으로 읽어주세요.
 
@@ -120,7 +120,7 @@ flowchart TD
 | §4.5 silver proxy 자기 한계(LLM judge 83%·human 89% 일치), DeepSeek 대안 56.70 vs 56.74·시간 67%·GPU 200% | CalibAdv §4.5 직접 대조 | ✓ |
 | LLD가 정반대 메커니즘(우도 동반 정체) 진단, +45.2%/+37.1%, CalibAdv Related Work에 피인용 | 오늘 dossier(동향·대립보강), 미대조 | △ |
 | Proof-of-Use: 검색 성공과 과제 정답률의 체계적 어긋남 | 오늘 dossier(대립보강), 미대조 | △ |
-| Advantage Collapse(2605.21125): 수학추론에서 분산 소실형 붕괴 재확인 | 오늘 dossier(대립보강), 미대조 | △ |
+| Advantage Collapse([arXiv:2605.21125](https://arxiv.org/abs/2605.21125)): 수학추론에서 분산 소실형 붕괴 재확인 | 오늘 dossier(대립보강), 미대조 | △ |
 | Policy Gradient Foundations(균일 배분이 기울기 rank-2 붕괴), Signal Dilution(decision density, $$R^2=0.999$$) | 오늘 dossier(동향·대립보강), 미대조 | △ |
 | GraphGPO 성공 궤적 스텝 65.3% 무기여 실측 | 07-17 블로그 글 + 오늘 dossier | △ |
 | GAGPO: 환경-스텝 단위 TD/GAE 시간차 advantage | 오늘 dossier(동향), 미대조 | △ |

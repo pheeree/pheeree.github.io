@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-24] 처벌만 쌓이면 모델은 말하는 법을 잃는다 — CalibAdv, 음의 advantage를 지우지 않고 눅여 GRPO 붕괴를 막다
+
+- **중심**: Jiayi Wu 외. *Negative Advantage Is a Double-Edged Sword: Calibrating Advantage in GRPO for Deep Search*. [arXiv:2604.18235](https://arxiv.org/abs/2604.18235) — 분야: cs.CL, cs.AI
+- SHengjie Ma 외. *Proof-of-Use: Mitigating Tool-Call Hacking in Deep Research Agents*. [arXiv:2510.10931](https://arxiv.org/abs/2510.10931) — 분야: cs.AI
+- Wenlong Deng 외. *On Group Relative Policy Optimization Collapse in Agent Search: The Lazy Likelihood-Displacement*. [arXiv:2512.04220](https://arxiv.org/abs/2512.04220) — 분야: cs.CL
+- Siyuan Zhu 외. *GAGPO: Generalized Advantage Grouped Policy Optimization*. [arXiv:2605.13217](https://arxiv.org/abs/2605.13217) — 분야: cs.CL, cs.AI, cs.LG
+- Xixiang He 외. *Advantage Collapse in Group Relative Policy Optimization: Diagnosis and Mitigation*. [arXiv:2605.21125](https://arxiv.org/abs/2605.21125) — 분야: cs.LG
+- Xin Cheng 외. *Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning*. [arXiv:2605.26684](https://arxiv.org/abs/2605.26684) — 분야: cs.LG, cs.AI
+- Yann Pernot, Vi Retault. *Drowning in Routine: Signal Dilution in Multi-Turn Agent Training*. [arXiv:2606.22164](https://arxiv.org/abs/2606.22164) — 분야: cs.LG
+- Amritansh Mishra 외. *On the Policy Gradient Foundations of Group Relative Policy Optimization: Credit Assignment, Gradient Sparsity, and Rank Collapse*. [arXiv:2606.29238](https://arxiv.org/abs/2606.29238) — 분야: cs.LG
+
 ## [2026-07-23] 같은 수식, 정반대의 절약 — CIGPO는 정보 이득의 '내용'이 아니라 '분산'을 산다
 
 - **중심**: Hao Dou. *CIGPO: Contextual Information-Gain Policy Optimization for Multi-Turn Evidence-Reading LLM Agents*. [arXiv:2607.16244](https://arxiv.org/abs/2607.16244) — 분야: cs.LG, cs.AI, cs.CL
