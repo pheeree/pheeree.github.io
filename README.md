@@ -13,6 +13,8 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-07-25 — [자기진화는 좋은 진단에 기댄다는 전제 — 그런데 그 전제를 아무도 재지 않았다](https://pheeree.github.io/2026/07/25/attribution-evolution-the-unmeasured-loop/)
+- 2026-07-25 — [행동에 값을 매기기 전에, 그게 어떤 종류의 행동인지부터 묻는다 — TRIAGE, 각 세그먼트를 결정·탐색·무진전·퇴행 넷으로 갈라 GRPO의 균일 배분을 깨되 판정자의 신뢰도에 전부를 건다](https://pheeree.github.io/2026/07/25/triage-role-typed-credit-assignment/)
 - 2026-07-24 — [처벌만 쌓이면 모델은 말하는 법을 잃는다 — CalibAdv, 음의 advantage를 지우지 않고 눅여 GRPO 붕괴를 막다](https://pheeree.github.io/2026/07/24/calibadv-negative-advantage-calibration/)
 - 2026-07-23 — [같은 수식, 정반대의 절약 — CIGPO는 정보 이득의 '내용'이 아니라 '분산'을 산다](https://pheeree.github.io/2026/07/23/cigpo-variance-injection-grpo-collapse/)
 - 2026-07-22 — [정답에 얼마나 가까운 상태인가를 매 턴 값으로 매긴다 — TRACE, 얼어붙은 참조 모델의 로그확률을 log-ratio 시간차로 접어 크리틱 없이 신용을 나눈다](https://pheeree.github.io/2026/07/22/trace-log-ratio-td-credit-assignment/)

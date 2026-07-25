@@ -1,6 +1,36 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-25-triage-role-typed-credit-assignment:
+  title: "행동에 값을 매기기 전에, 그게 어떤 종류의 행동인지부터 묻는다 — TRIAGE, 각 세그먼트를 결정·탐색·무진전·퇴행 넷으로 갈라 GRPO의 균일 배분을 깨되 판정자의 신뢰도에 전부를 건다"
+  central:
+    id: "2606.32017"
+    title: "TRIAGE: Role-Typed Credit Assignment for Agentic Reinforcement Learning"
+    authors: "Yuanda Xu 외"
+    keywords: "cs.LG, cs.AI"
+    url: "https://arxiv.org/abs/2606.32017"
+  referenced:
+    - { id: "2410.21819", title: "Self-Preference Bias in LLM-as-a-Judge", authors: "Koki Wataoka 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2410.21819" }
+    - { id: "2603.08754", title: "Hindsight Credit Assignment for Long-Horizon LLM Agents", authors: "Hui-Ze Tan 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2603.08754" }
+    - { id: "2604.09459", title: "From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models", authors: "Chenchen Zhang", keywords: "cs.CL", url: "https://arxiv.org/abs/2604.09459" }
+    - { id: "2605.26684", title: "Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning", authors: "Xin Cheng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.26684" }
+    - { id: "2606.04923", title: "Reproducing, Analyzing, and Detecting Reward Hacking in Rubric-Based Reinforcement Learning", authors: "Xuekang Wang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.04923" }
+    - { id: "2606.09961", title: "3SPO: State-Score-Supervised Policy Optimization for LLM Agents", authors: "Yu Han 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.09961" }
+    - { id: "2606.21262", title: "ARCO: Adaptive Rubrics with Co-Evolution for Multi-Step LLM-Based Agents", authors: "Zihang Tian 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.21262" }
+    - { id: "2606.23038", title: "EvoRubrics: Dynamic Rubrics as Rewards via Adversarial Co-Evolution for LLM Reinforcement Learning", authors: "Hongxin Ding 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.23038" }
+    - { id: "2606.25556", title: "BiPACE: Bisimulation-Guided Policy Optimization with Action Counterfactual Estimation for LLM Agents", authors: "Hanyang Wang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2606.25556" }
+    - { id: "2606.27739", title: "The Weakest Link Tells It All: Outcome-Supervised Process Reward Modeling via Learnable Credit Assignment", authors: "Tianyu Jia 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.27739" }
+    - { id: "2607.05904", title: "More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges", authors: "Chenyu Zhou", keywords: "cs.LG", url: "https://arxiv.org/abs/2607.05904" }
+
+2026-07-25-attribution-evolution-the-unmeasured-loop:
+  title: "자기진화는 좋은 진단에 기댄다는 전제 — 그런데 그 전제를 아무도 재지 않았다"
+  central:
+    id: "2605.14892"
+    title: "Beyond Individual Intelligence: Surveying Collaboration, Failure Attribution, and Self-Evolution in LLM-based Multi-Agent Systems"
+    authors: "Shihao Qi 외"
+    keywords: "cs.AI"
+    url: "https://arxiv.org/abs/2605.14892"
+
 2026-07-24-calibadv-negative-advantage-calibration:
   title: "처벌만 쌓이면 모델은 말하는 법을 잃는다 — CalibAdv, 음의 advantage를 지우지 않고 눅여 GRPO 붕괴를 막다"
   central:

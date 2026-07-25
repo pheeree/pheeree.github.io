@@ -6,6 +6,25 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-25] 행동에 값을 매기기 전에, 그게 어떤 종류의 행동인지부터 묻는다 — TRIAGE, 각 세그먼트를 결정·탐색·무진전·퇴행 넷으로 갈라 GRPO의 균일 배분을 깨되 판정자의 신뢰도에 전부를 건다
+
+- **중심**: Yuanda Xu 외. *TRIAGE: Role-Typed Credit Assignment for Agentic Reinforcement Learning*. [arXiv:2606.32017](https://arxiv.org/abs/2606.32017) — 분야: cs.LG, cs.AI
+- Koki Wataoka 외. *Self-Preference Bias in LLM-as-a-Judge*. [arXiv:2410.21819](https://arxiv.org/abs/2410.21819) — 분야: cs.CL
+- Hui-Ze Tan 외. *Hindsight Credit Assignment for Long-Horizon LLM Agents*. [arXiv:2603.08754](https://arxiv.org/abs/2603.08754) — 분야: cs.LG, cs.AI
+- Chenchen Zhang. *From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models*. [arXiv:2604.09459](https://arxiv.org/abs/2604.09459) — 분야: cs.CL
+- Xin Cheng 외. *Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning*. [arXiv:2605.26684](https://arxiv.org/abs/2605.26684) — 분야: cs.LG, cs.AI
+- Xuekang Wang 외. *Reproducing, Analyzing, and Detecting Reward Hacking in Rubric-Based Reinforcement Learning*. [arXiv:2606.04923](https://arxiv.org/abs/2606.04923) — 분야: cs.LG, cs.AI, cs.CL
+- Yu Han 외. *3SPO: State-Score-Supervised Policy Optimization for LLM Agents*. [arXiv:2606.09961](https://arxiv.org/abs/2606.09961) — 분야: cs.LG, cs.AI
+- Zihang Tian 외. *ARCO: Adaptive Rubrics with Co-Evolution for Multi-Step LLM-Based Agents*. [arXiv:2606.21262](https://arxiv.org/abs/2606.21262) — 분야: cs.AI, cs.CL
+- Hongxin Ding 외. *EvoRubrics: Dynamic Rubrics as Rewards via Adversarial Co-Evolution for LLM Reinforcement Learning*. [arXiv:2606.23038](https://arxiv.org/abs/2606.23038) — 분야: cs.LG, cs.AI
+- Hanyang Wang 외. *BiPACE: Bisimulation-Guided Policy Optimization with Action Counterfactual Estimation for LLM Agents*. [arXiv:2606.25556](https://arxiv.org/abs/2606.25556) — 분야: cs.CL, cs.AI, cs.LG
+- Tianyu Jia 외. *The Weakest Link Tells It All: Outcome-Supervised Process Reward Modeling via Learnable Credit Assignment*. [arXiv:2606.27739](https://arxiv.org/abs/2606.27739) — 분야: cs.LG
+- Chenyu Zhou. *More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges*. [arXiv:2607.05904](https://arxiv.org/abs/2607.05904) — 분야: cs.LG
+
+## [2026-07-25] 자기진화는 좋은 진단에 기댄다는 전제 — 그런데 그 전제를 아무도 재지 않았다
+
+- **중심**: Shihao Qi 외. *Beyond Individual Intelligence: Surveying Collaboration, Failure Attribution, and Self-Evolution in LLM-based Multi-Agent Systems*. [arXiv:2605.14892](https://arxiv.org/abs/2605.14892) — 분야: cs.AI
+
 ## [2026-07-24] 처벌만 쌓이면 모델은 말하는 법을 잃는다 — CalibAdv, 음의 advantage를 지우지 않고 눅여 GRPO 붕괴를 막다
 
 - **중심**: Jiayi Wu 외. *Negative Advantage Is a Double-Edged Sword: Calibrating Advantage in GRPO for Deep Search*. [arXiv:2604.18235](https://arxiv.org/abs/2604.18235) — 분야: cs.CL, cs.AI

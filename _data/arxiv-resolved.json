@@ -6896,5 +6896,123 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2606.27739": {
+  "title": "The Weakest Link Tells It All: Outcome-Supervised Process Reward Modeling via Learnable Credit Assignment",
+  "authors": [
+   "Tianyu Jia",
+   "Yue Fang",
+   "Hongxin Ding",
+   "Rihong Qiu",
+   "Zhibang Yang",
+   "Zhijing Wu",
+   "Xu Chu",
+   "Junfeng Zhao",
+   "Yasha Wang"
+  ],
+  "published": "2026-06-26",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2606.25556": {
+  "title": "BiPACE: Bisimulation-Guided Policy Optimization with Action Counterfactual Estimation for LLM Agents",
+  "authors": [
+   "Hanyang Wang",
+   "Weijieying Ren",
+   "Yuxiang Zhang",
+   "Ding Cao",
+   "Zhizhao Zeng",
+   "Ke Zeng",
+   "Tianxiang Zhao"
+  ],
+  "published": "2026-06-24",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2606.23038": {
+  "title": "EvoRubrics: Dynamic Rubrics as Rewards via Adversarial Co-Evolution for LLM Reinforcement Learning",
+  "authors": [
+   "Hongxin Ding",
+   "Baixiang Huang",
+   "Yue Fang",
+   "Weibin Liao",
+   "Zheng Li",
+   "Jinyang Zhang",
+   "Zhijing Wu",
+   "Junfeng Zhao",
+   "Yasha Wang"
+  ],
+  "published": "2026-06-22",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2607.05904": {
+  "title": "More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges",
+  "authors": [
+   "Chenyu Zhou"
+  ],
+  "published": "2026-07-07",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2604.09459": {
+  "title": "From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models",
+  "authors": [
+   "Chenchen Zhang"
+  ],
+  "published": "2026-04-10",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2606.21262": {
+  "title": "ARCO: Adaptive Rubrics with Co-Evolution for Multi-Step LLM-Based Agents",
+  "authors": [
+   "Zihang Tian",
+   "Jingsen Zhang",
+   "Rui Li",
+   "Xiaohe Bo",
+   "Yuanzi Li",
+   "Xu Chen"
+  ],
+  "published": "2026-06-19",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2605.14892": {
+  "title": "Beyond Individual Intelligence: Surveying Collaboration, Failure Attribution, and Self-Evolution in LLM-based Multi-Agent Systems",
+  "authors": [
+   "Shihao Qi",
+   "Jie Ma",
+   "Rui Xing",
+   "Wei Guo",
+   "Xiao Huang",
+   "Zhitao Gao",
+   "Jianhao Deng",
+   "Jun Liu",
+   "Lingling Zhang",
+   "Bifan Wei",
+   "Boqian Yang",
+   "Pinghui Wang",
+   "Jianwen Sun",
+   "Jing Tao",
+   "Yaqiang Wu",
+   "Hui Liu",
+   "Yu Yao",
+   "Tongliang Liu"
+  ],
+  "published": "2026-05-14",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }
