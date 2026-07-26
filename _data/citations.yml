@@ -1,6 +1,27 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-26-hcapo-hindsight-causal-filter:
+  title: "결과를 알고 다시 보면 확률이 오른다, 그런데 그게 인과인가 — HCAPO, hindsight 비율을 '인과 필터'라 부르며 판정자를 정책 자신의 로그확률로 대신하다"
+  central:
+    id: "2603.08754"
+    title: "Hindsight Credit Assignment for Long-Horizon LLM Agents"
+    authors: "Hui-Ze Tan 외"
+    keywords: "cs.LG, cs.AI"
+    url: "https://arxiv.org/abs/2603.08754"
+  referenced:
+    - { id: "2002.11089", title: "Rewriting History with Inverse RL: Hindsight Inference for Policy Improvement", authors: "Benjamin Eysenbach 외", keywords: "cs.LG, cs.AI, cs.RO, stat.ML", url: "https://arxiv.org/abs/2002.11089" }
+    - { id: "2011.09464", title: "Counterfactual Credit Assignment in Model-Free Reinforcement Learning", authors: "Thomas Mesnard 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2011.09464" }
+    - { id: "2410.21819", title: "Self-Preference Bias in LLM-as-a-Judge", authors: "Koki Wataoka 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2410.21819" }
+    - { id: "2604.09459", title: "From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models", authors: "Chenchen Zhang", keywords: "cs.CL", url: "https://arxiv.org/abs/2604.09459" }
+    - { id: "2605.19447", title: "What and When to Distill: Selective Hindsight Distillation for Multi-Turn Agents", authors: "Xiaozhe Li 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.19447" }
+    - { id: "2605.20061", title: "Rewarding Beliefs, Not Actions: Consistency-Guided Credit Assignment for Long-Horizon Agents", authors: "Wenjie Tang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.20061" }
+    - { id: "2606.09961", title: "3SPO: State-Score-Supervised Policy Optimization for LLM Agents", authors: "Yu Han 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.09961" }
+    - { id: "2606.16285", title: "HiMPO: Hindsight-Informed Memory Policy Optimization for Less-Entangled Credit in Long-Horizon Agents", authors: "Jiangze Yan 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2606.16285" }
+    - { id: "2607.05904", title: "More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges", authors: "Chenyu Zhou", keywords: "cs.LG", url: "https://arxiv.org/abs/2607.05904" }
+    - { id: "2607.16257", title: "From Outcomes to Actions: Leveraging Hindsight for Long-Horizon Language Agent Training", authors: "Zishang Jiang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2607.16257" }
+    - { id: "2607.21273", title: "The Dark Room in the Reward Channel: Dense Prediction Rewards Collapse GRPO-Trained LLM Agents -- and What Actually Works", authors: "Yu Wang", keywords: "cs.LG", url: "https://arxiv.org/abs/2607.21273" }
+
 2026-07-25-triage-role-typed-credit-assignment:
   title: "행동에 값을 매기기 전에, 그게 어떤 종류의 행동인지부터 묻는다 — TRIAGE, 각 세그먼트를 결정·탐색·무진전·퇴행 넷으로 갈라 GRPO의 균일 배분을 깨되 판정자의 신뢰도에 전부를 건다"
   central:

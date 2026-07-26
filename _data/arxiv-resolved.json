@@ -7014,5 +7014,125 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2607.21273": {
+  "title": "The Dark Room in the Reward Channel: Dense Prediction Rewards Collapse GRPO-Trained LLM Agents -- and What Actually Works",
+  "authors": [
+   "Yu Wang"
+  ],
+  "published": "2026-07-23",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2605.19447": {
+  "title": "What and When to Distill: Selective Hindsight Distillation for Multi-Turn Agents",
+  "authors": [
+   "Xiaozhe Li",
+   "Tianyi Lyu",
+   "Yang Li",
+   "Yichuan Ma",
+   "Peiji Li",
+   "Linyang Li",
+   "Qipeng Guo",
+   "Dahua Lin",
+   "Kai Chen"
+  ],
+  "published": "2026-05-19",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2011.09464": {
+  "title": "Counterfactual Credit Assignment in Model-Free Reinforcement Learning",
+  "authors": [
+   "Thomas Mesnard",
+   "Théophane Weber",
+   "Fabio Viola",
+   "Shantanu Thakoor",
+   "Alaa Saade",
+   "Anna Harutyunyan",
+   "Will Dabney",
+   "Tom Stepleton",
+   "Nicolas Heess",
+   "Arthur Guez",
+   "Éric Moulines",
+   "Marcus Hutter",
+   "Lars Buesing",
+   "Rémi Munos"
+  ],
+  "published": "2020-11-18",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2606.16285": {
+  "title": "HiMPO: Hindsight-Informed Memory Policy Optimization for Less-Entangled Credit in Long-Horizon Agents",
+  "authors": [
+   "Jiangze Yan",
+   "Yi Shen",
+   "Wenjing Zhang",
+   "Jieyun Huang",
+   "Zhaoxiang Liu",
+   "Ning Wang",
+   "Kai Wang",
+   "Shiguo Lian"
+  ],
+  "published": "2026-06-15",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2002.11089": {
+  "title": "Rewriting History with Inverse RL: Hindsight Inference for Policy Improvement",
+  "authors": [
+   "Benjamin Eysenbach",
+   "Xinyang Geng",
+   "Sergey Levine",
+   "Ruslan Salakhutdinov"
+  ],
+  "published": "2020-02-25",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.RO",
+   "stat.ML"
+  ]
+ },
+ "2605.20061": {
+  "title": "Rewarding Beliefs, Not Actions: Consistency-Guided Credit Assignment for Long-Horizon Agents",
+  "authors": [
+   "Wenjie Tang",
+   "Minne Li",
+   "Sijie Huang",
+   "Liquan Xiao",
+   "Yuan Zhou"
+  ],
+  "published": "2026-05-19",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2607.16257": {
+  "title": "From Outcomes to Actions: Leveraging Hindsight for Long-Horizon Language Agent Training",
+  "authors": [
+   "Zishang Jiang",
+   "Tingyun Li",
+   "Jinyi Han",
+   "Xinyi Wang",
+   "Sihang Jiang",
+   "Yizhou Ying",
+   "Xiaojun Meng",
+   "Jiansheng Wei",
+   "Jiaqing Liang",
+   "Yanghua Xiao"
+  ],
+  "published": "2026-06-28",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  }
 }

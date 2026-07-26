@@ -6,6 +6,21 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-26] 결과를 알고 다시 보면 확률이 오른다, 그런데 그게 인과인가 — HCAPO, hindsight 비율을 '인과 필터'라 부르며 판정자를 정책 자신의 로그확률로 대신하다
+
+- **중심**: Hui-Ze Tan 외. *Hindsight Credit Assignment for Long-Horizon LLM Agents*. [arXiv:2603.08754](https://arxiv.org/abs/2603.08754) — 분야: cs.LG, cs.AI
+- Benjamin Eysenbach 외. *Rewriting History with Inverse RL: Hindsight Inference for Policy Improvement*. [arXiv:2002.11089](https://arxiv.org/abs/2002.11089) — 분야: cs.LG, cs.AI, cs.RO, stat.ML
+- Thomas Mesnard 외. *Counterfactual Credit Assignment in Model-Free Reinforcement Learning*. [arXiv:2011.09464](https://arxiv.org/abs/2011.09464) — 분야: cs.LG
+- Koki Wataoka 외. *Self-Preference Bias in LLM-as-a-Judge*. [arXiv:2410.21819](https://arxiv.org/abs/2410.21819) — 분야: cs.CL
+- Chenchen Zhang. *From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models*. [arXiv:2604.09459](https://arxiv.org/abs/2604.09459) — 분야: cs.CL
+- Xiaozhe Li 외. *What and When to Distill: Selective Hindsight Distillation for Multi-Turn Agents*. [arXiv:2605.19447](https://arxiv.org/abs/2605.19447) — 분야: cs.AI
+- Wenjie Tang 외. *Rewarding Beliefs, Not Actions: Consistency-Guided Credit Assignment for Long-Horizon Agents*. [arXiv:2605.20061](https://arxiv.org/abs/2605.20061) — 분야: cs.CL
+- Yu Han 외. *3SPO: State-Score-Supervised Policy Optimization for LLM Agents*. [arXiv:2606.09961](https://arxiv.org/abs/2606.09961) — 분야: cs.LG, cs.AI
+- Jiangze Yan 외. *HiMPO: Hindsight-Informed Memory Policy Optimization for Less-Entangled Credit in Long-Horizon Agents*. [arXiv:2606.16285](https://arxiv.org/abs/2606.16285) — 분야: cs.CL, cs.LG
+- Chenyu Zhou. *More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges*. [arXiv:2607.05904](https://arxiv.org/abs/2607.05904) — 분야: cs.LG
+- Zishang Jiang 외. *From Outcomes to Actions: Leveraging Hindsight for Long-Horizon Language Agent Training*. [arXiv:2607.16257](https://arxiv.org/abs/2607.16257) — 분야: cs.LG, cs.AI, cs.CL
+- Yu Wang. *The Dark Room in the Reward Channel: Dense Prediction Rewards Collapse GRPO-Trained LLM Agents -- and What Actually Works*. [arXiv:2607.21273](https://arxiv.org/abs/2607.21273) — 분야: cs.LG
+
 ## [2026-07-25] 행동에 값을 매기기 전에, 그게 어떤 종류의 행동인지부터 묻는다 — TRIAGE, 각 세그먼트를 결정·탐색·무진전·퇴행 넷으로 갈라 GRPO의 균일 배분을 깨되 판정자의 신뢰도에 전부를 건다
 
 - **중심**: Yuanda Xu 외. *TRIAGE: Role-Typed Credit Assignment for Agentic Reinforcement Learning*. [arXiv:2606.32017](https://arxiv.org/abs/2606.32017) — 분야: cs.LG, cs.AI
