@@ -7134,5 +7134,35 @@
    "cs.AI",
    "cs.CL"
   ]
+ },
+ "2606.05606": {
+  "title": "Cross-Epoch Adaptive Rollout Optimization for RL Post-Training",
+  "authors": [
+   "Yiming Zong",
+   "Yige Wang",
+   "Jiashuo Jiang"
+  ],
+  "published": "2026-06-04",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "math.OC"
+  ]
+ },
+ "2602.19225": {
+  "title": "Proximity-Based Multi-Turn Optimization: Practical Credit Assignment for LLM Agent Training",
+  "authors": [
+   "Yangyi Fang",
+   "Jiaye Lin",
+   "Xiaoliang Fu",
+   "Cong Qin",
+   "Haolin Shi",
+   "Chang Liu",
+   "Peilin Zhao"
+  ],
+  "published": "2026-02-22",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }

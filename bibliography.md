@@ -6,6 +6,15 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-27] 판정을 걷어낸 세 번째 길 — 3SPO, 상태의 과거 성공률만으로 신용을 매기고 로그 후회를 증명하지만, 그 증명은 '같은 상태가 다시 밟힌다'는 전제 위에 서 있다
+
+- **중심**: Yu Han 외. *3SPO: State-Score-Supervised Policy Optimization for LLM Agents*. [arXiv:2606.09961](https://arxiv.org/abs/2606.09961) — 분야: cs.LG, cs.AI
+- Lang Feng 외. *Group-in-Group Policy Optimization for LLM Agent Training*. [arXiv:2505.10978](https://arxiv.org/abs/2505.10978) — 분야: cs.LG, cs.AI
+- Yangyi Fang 외. *Proximity-Based Multi-Turn Optimization: Practical Credit Assignment for LLM Agent Training*. [arXiv:2602.19225](https://arxiv.org/abs/2602.19225) — 분야: cs.AI
+- Siyuan Zhu 외. *GAGPO: Generalized Advantage Grouped Policy Optimization*. [arXiv:2605.13217](https://arxiv.org/abs/2605.13217) — 분야: cs.CL, cs.AI, cs.LG
+- Yiming Zong 외. *Cross-Epoch Adaptive Rollout Optimization for RL Post-Training*. [arXiv:2606.05606](https://arxiv.org/abs/2606.05606) — 분야: cs.LG, cs.AI, math.OC
+- Hanyang Wang 외. *BiPACE: Bisimulation-Guided Policy Optimization with Action Counterfactual Estimation for LLM Agents*. [arXiv:2606.25556](https://arxiv.org/abs/2606.25556) — 분야: cs.CL, cs.AI, cs.LG
+
 ## [2026-07-26] 결과를 알고 다시 보면 확률이 오른다, 그런데 그게 인과인가 — HCAPO, hindsight 비율을 '인과 필터'라 부르며 판정자를 정책 자신의 로그확률로 대신하다
 
 - **중심**: Hui-Ze Tan 외. *Hindsight Credit Assignment for Long-Horizon LLM Agents*. [arXiv:2603.08754](https://arxiv.org/abs/2603.08754) — 분야: cs.LG, cs.AI
