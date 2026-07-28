@@ -6,6 +6,19 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-28] 무엇을 '같다'고 볼 것인가 — BiPACE, 관측 문자열 대신 정책 자신의 은닉 기하로 스텝을 묶고 행동별 반사실로 되중심을 잡다
+
+- **중심**: Hanyang Wang 외. *BiPACE: Bisimulation-Guided Policy Optimization with Action Counterfactual Estimation for LLM Agents*. [arXiv:2606.25556](https://arxiv.org/abs/2606.25556) — 분야: cs.CL, cs.AI, cs.LG
+- Leiji Zhang 외. *Revisiting Bisimulation Metric for Robust Representations in Reinforcement Learning*. [arXiv:2507.18519](https://arxiv.org/abs/2507.18519) — 분야: cs.LG
+- Yangyi Fang 외. *Proximity-Based Multi-Turn Optimization: Practical Credit Assignment for LLM Agent Training*. [arXiv:2602.19225](https://arxiv.org/abs/2602.19225) — 분야: cs.AI
+- Shuo He 외. *Hierarchy-of-Groups Policy Optimization for Long-Horizon Agentic Tasks*. [arXiv:2602.22817](https://arxiv.org/abs/2602.22817) — 분야: cs.LG, cs.AI
+- Yanjun Chen 외. *Exact Is Easier: Credit Assignment for Cooperative LLM Agents*. [arXiv:2603.06859](https://arxiv.org/abs/2603.06859) — 분야: cs.LG, cs.AI
+- Xinzhu Chen 외. *Hidden States Know Where Reasoning Diverges: Credit Assignment via Span-Level Wasserstein Distance*. [arXiv:2604.23318](https://arxiv.org/abs/2604.23318) — 분야: cs.CL, cs.LG
+- Siyuan Zhu 외. *GAGPO: Generalized Advantage Grouped Policy Optimization*. [arXiv:2605.13217](https://arxiv.org/abs/2605.13217) — 분야: cs.CL, cs.AI, cs.LG
+- Xin Cheng 외. *Beyond Trajectory-Level Attribution: Graph-Based Credit Assignment for Agentic Reinforcement Learning*. [arXiv:2605.26684](https://arxiv.org/abs/2605.26684) — 분야: cs.LG, cs.AI
+- Yunan Wang 외. *Group-Graph Policy Optimization for Long-Horizon Agentic Reinforcement Learning*. [arXiv:2606.22995](https://arxiv.org/abs/2606.22995) — 분야: cs.LG, cs.AI, cs.CL
+- Qiuyi Qi 외. *STAPO: Selective Trajectory-Aware Policy Optimization for LLM Agent Training*. [arXiv:2607.04963](https://arxiv.org/abs/2607.04963) — 분야: cs.AI
+
 ## [2026-07-27] 판정을 걷어낸 세 번째 길 — 3SPO, 상태의 과거 성공률만으로 신용을 매기고 로그 후회를 증명하지만, 그 증명은 '같은 상태가 다시 밟힌다'는 전제 위에 서 있다
 
 - **중심**: Yu Han 외. *3SPO: State-Score-Supervised Policy Optimization for LLM Agents*. [arXiv:2606.09961](https://arxiv.org/abs/2606.09961) — 분야: cs.LG, cs.AI

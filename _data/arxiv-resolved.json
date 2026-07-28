@@ -7164,5 +7164,92 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2604.23318": {
+  "title": "Hidden States Know Where Reasoning Diverges: Credit Assignment via Span-Level Wasserstein Distance",
+  "authors": [
+   "Xinzhu Chen",
+   "Wei He",
+   "Huichuan Fan",
+   "Wenzhe Niu",
+   "Zhongxiang Sun",
+   "Xuanru Wang",
+   "Jiuchong Gao",
+   "Jinghua Hao",
+   "Renqing He",
+   "Weijie Yu"
+  ],
+  "published": "2026-04-25",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2507.18519": {
+  "title": "Revisiting Bisimulation Metric for Robust Representations in Reinforcement Learning",
+  "authors": [
+   "Leiji Zhang",
+   "Zeyu Wang",
+   "Xin Li",
+   "Yao-Hui Li"
+  ],
+  "published": "2025-07-24",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2607.04963": {
+  "title": "STAPO: Selective Trajectory-Aware Policy Optimization for LLM Agent Training",
+  "authors": [
+   "Qiuyi Qi",
+   "Tian Liang",
+   "Mutian Bao",
+   "Jinjian Zhang",
+   "Dongnan Liu",
+   "Wei Zhou",
+   "Linjian Mo",
+   "Ming Kong",
+   "Jie Liu",
+   "Feng Zhang",
+   "Qiang Zhu"
+  ],
+  "published": "2026-07-06",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2603.06859": {
+  "title": "Exact Is Easier: Credit Assignment for Cooperative LLM Agents",
+  "authors": [
+   "Yanjun Chen",
+   "Yirong Sun",
+   "Hanlin Wang",
+   "Jinghan Wang",
+   "Xinming Zhang",
+   "Xiaoyu Shen",
+   "Wenjie Li",
+   "Wei Zhang"
+  ],
+  "published": "2026-03-06",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2602.22817": {
+  "title": "Hierarchy-of-Groups Policy Optimization for Long-Horizon Agentic Tasks",
+  "authors": [
+   "Shuo He",
+   "Lang Feng",
+   "Qi Wei",
+   "Xin Cheng",
+   "Lei Feng",
+   "Bo An"
+  ],
+  "published": "2026-02-26",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  }
 }

@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-07-28 — [무엇을 '같다'고 볼 것인가 — BiPACE, 관측 문자열 대신 정책 자신의 은닉 기하로 스텝을 묶고 행동별 반사실로 되중심을 잡다](https://pheeree.github.io/2026/07/28/bipace-hidden-state-clustering-credit-assignment/)
 - 2026-07-27 — [판정을 걷어낸 세 번째 길 — 3SPO, 상태의 과거 성공률만으로 신용을 매기고 로그 후회를 증명하지만, 그 증명은 '같은 상태가 다시 밟힌다'는 전제 위에 서 있다](https://pheeree.github.io/2026/07/27/3spo-state-score-judge-free-credit/)
 - 2026-07-26 — [결과를 알고 다시 보면 확률이 오른다, 그런데 그게 인과인가 — HCAPO, hindsight 비율을 '인과 필터'라 부르며 판정자를 정책 자신의 로그확률로 대신하다](https://pheeree.github.io/2026/07/26/hcapo-hindsight-causal-filter/)
 - 2026-07-25 — [자기진화는 좋은 진단에 기댄다는 전제 — 그런데 그 전제를 아무도 재지 않았다](https://pheeree.github.io/2026/07/25/attribution-evolution-the-unmeasured-loop/)
