@@ -7251,5 +7251,64 @@
    "cs.LG",
    "cs.AI"
   ]
+ },
+ "2212.11636": {
+  "title": "Towards Causal Credit Assignment",
+  "authors": [
+   "Mátyás Schubert"
+  ],
+  "published": "2022-12-22",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2604.11056": {
+  "title": "Where Hindsight Credit Can Reside: A Signed-Capacity View of Token Updates in RLVR",
+  "authors": [
+   "Yuhang He",
+   "Haodong Wu",
+   "Siyi Liu",
+   "Hongyu Ge",
+   "Hange Zhou",
+   "Keyi Wu",
+   "Zhuo Zheng",
+   "Qihong Lin",
+   "Zixin Zhong",
+   "Yongqi Zhang"
+  ],
+  "published": "2026-04-13",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "1905.05824": {
+  "title": "Counterfactual Off-Policy Evaluation with Gumbel-Max Structural Causal Models",
+  "authors": [
+   "Michael Oberst",
+   "David Sontag"
+  ],
+  "published": "2019-05-14",
+  "categories": [
+   "cs.LG",
+   "stat.ML"
+  ]
+ },
+ "2603.21563": {
+  "title": "Counterfactual Credit Policy Optimization for Multi-Agent Collaboration",
+  "authors": [
+   "Zhongyi Li",
+   "Wan Tian",
+   "Jinju Chen",
+   "Huiming Zhang",
+   "Yang Liu",
+   "Yikun Ban",
+   "Fuzhen Zhuang"
+  ],
+  "published": "2026-03-23",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }

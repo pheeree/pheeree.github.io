@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-29] 운을 빼려면 무엇을 몰라야 하는가 — CCA, hindsight 정보가 행동과 조건부 독립일 때만 편향이 없다는 2020년의 증명, 그리고 그 조건을 재지 않는 2026년
+
+- **중심**: Thomas Mesnard 외. *Counterfactual Credit Assignment in Model-Free Reinforcement Learning*. [arXiv:2011.09464](https://arxiv.org/abs/2011.09464) — 분야: cs.LG
+- Michael Oberst, David Sontag. *Counterfactual Off-Policy Evaluation with Gumbel-Max Structural Causal Models*. [arXiv:1905.05824](https://arxiv.org/abs/1905.05824) — 분야: cs.LG, stat.ML
+- Mátyás Schubert. *Towards Causal Credit Assignment*. [arXiv:2212.11636](https://arxiv.org/abs/2212.11636) — 분야: cs.LG, cs.AI
+- Yanjun Chen 외. *Exact Is Easier: Credit Assignment for Cooperative LLM Agents*. [arXiv:2603.06859](https://arxiv.org/abs/2603.06859) — 분야: cs.LG, cs.AI
+- Zhongyi Li 외. *Counterfactual Credit Policy Optimization for Multi-Agent Collaboration*. [arXiv:2603.21563](https://arxiv.org/abs/2603.21563) — 분야: cs.AI
+- Yuhang He 외. *Where Hindsight Credit Can Reside: A Signed-Capacity View of Token Updates in RLVR*. [arXiv:2604.11056](https://arxiv.org/abs/2604.11056) — 분야: cs.LG, cs.AI
+- Siyuan Zhu 외. *GAGPO: Generalized Advantage Grouped Policy Optimization*. [arXiv:2605.13217](https://arxiv.org/abs/2605.13217) — 분야: cs.CL, cs.AI, cs.LG
+- Leitian Tao 외. *TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents*. [arXiv:2607.13988](https://arxiv.org/abs/2607.13988) — 분야: cs.LG
+
 ## [2026-07-28] 무엇을 '같다'고 볼 것인가 — BiPACE, 관측 문자열 대신 정책 자신의 은닉 기하로 스텝을 묶고 행동별 반사실로 되중심을 잡다
 
 - **중심**: Hanyang Wang 외. *BiPACE: Bisimulation-Guided Policy Optimization with Action Counterfactual Estimation for LLM Agents*. [arXiv:2606.25556](https://arxiv.org/abs/2606.25556) — 분야: cs.CL, cs.AI, cs.LG
