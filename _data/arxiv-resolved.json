@@ -7310,5 +7310,132 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2602.08877": {
+  "title": "Stress-Testing Alignment Audits With Prompt-Level Strategic Deception",
+  "authors": [
+   "Oliver Daniels",
+   "Perusha Moodley",
+   "Benjamin M. Marlin",
+   "David Lindner"
+  ],
+  "published": "2026-02-09",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2511.06626": {
+  "title": "Spilling the Beans: Teaching LLMs to Self-Report Their Hidden Objectives",
+  "authors": [
+   "Chloe Li",
+   "Mary Phuong",
+   "Daniel Tan"
+  ],
+  "published": "2025-11-10",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2601.17060": {
+  "title": "Initial results of the Digital Consciousness Model",
+  "authors": [
+   "Derek Shiller",
+   "Laura Duffy",
+   "Arvo Muñoz Morán",
+   "Adrià Moret",
+   "Chris Percy",
+   "Hayley Clatterbuck"
+  ],
+  "published": "2026-01-22",
+  "categories": [
+   "cs.CY",
+   "cs.AI"
+  ]
+ },
+ "2602.22755": {
+  "title": "AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors",
+  "authors": [
+   "Abhay Sheshadri",
+   "Aidan Ewart",
+   "Kai Fronsdal",
+   "Isha Gupta",
+   "Samuel R. Bowman",
+   "Sara Price",
+   "Samuel Marks",
+   "Rowan Wang"
+  ],
+  "published": "2026-02-26",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2512.12411": {
+  "title": "Detecting the Disturbance: A Nuanced View of Introspective Abilities in LLMs",
+  "authors": [
+   "Ely Hahami",
+   "Ishaan Sinha",
+   "Lavik Jain",
+   "Josh Kaplan",
+   "Jon Hahami"
+  ],
+  "published": "2025-12-13",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2604.08206": {
+  "title": "\"Theater of Mind\" for LLMs: A Cognitive Architecture Based on Global Workspace Theory",
+  "authors": [
+   "Wenlong Shang"
+  ],
+  "published": "2026-04-09",
+  "categories": [
+   "cs.MA"
+  ]
+ },
+ "2607.15495": {
+  "title": "Verbalizable Representations Form a Global Workspace in Language Models",
+  "authors": [
+   "Wes Gurnee",
+   "Nicholas Sofroniew",
+   "Adam Pearce",
+   "Mateusz Piotrowski",
+   "Isaac Kauvar",
+   "Runjin Chen",
+   "Anna Soligo",
+   "Paul Bogdan",
+   "Euan Ong",
+   "Rowan Wang",
+   "Ben Thompson",
+   "David Abrahams",
+   "Subhash Kantamneni",
+   "Emmanuel Ameisen",
+   "Joshua Batson",
+   "Jack Lindsey"
+  ],
+  "published": "2026-07-16",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2504.09762": {
+  "title": "Position: Stop Anthropomorphizing Intermediate Tokens as Reasoning/Thinking Traces!",
+  "authors": [
+   "Subbarao Kambhampati",
+   "Karthik Valmeekam",
+   "Siddhant Bhambri",
+   "Vardhan Palod",
+   "Lucas Saldyt",
+   "Kaya Stechly",
+   "Soumya Rani Samineni",
+   "Durgesh Kalwar",
+   "Upasana Biswas"
+  ],
+  "published": "2025-04-14",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }

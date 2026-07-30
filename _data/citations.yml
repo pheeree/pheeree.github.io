@@ -1,6 +1,24 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-30-j-space-verbalizable-global-workspace:
+  title: "말할 수 있는 것만 특권을 얻는다 — J-렌즈로 들여다본 언어모델의 전역 작업공간, 그리고 말할 수 있음과 정직하게 말함 사이의 거리"
+  central:
+    id: "2607.15495"
+    title: "Verbalizable Representations Form a Global Workspace in Language Models"
+    authors: "Wes Gurnee 외"
+    keywords: "cs.CL, cs.AI, cs.LG"
+    url: "https://arxiv.org/abs/2607.15495"
+  referenced:
+    - { id: "2504.09762", title: "Position: Stop Anthropomorphizing Intermediate Tokens as Reasoning/Thinking Traces!", authors: "Subbarao Kambhampati 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2504.09762" }
+    - { id: "2511.06626", title: "Spilling the Beans: Teaching LLMs to Self-Report Their Hidden Objectives", authors: "Chloe Li 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2511.06626" }
+    - { id: "2512.12411", title: "Detecting the Disturbance: A Nuanced View of Introspective Abilities in LLMs", authors: "Ely Hahami 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2512.12411" }
+    - { id: "2601.17060", title: "Initial results of the Digital Consciousness Model", authors: "Derek Shiller 외", keywords: "cs.CY, cs.AI", url: "https://arxiv.org/abs/2601.17060" }
+    - { id: "2602.08877", title: "Stress-Testing Alignment Audits With Prompt-Level Strategic Deception", authors: "Oliver Daniels 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2602.08877" }
+    - { id: "2602.22755", title: "AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors", authors: "Abhay Sheshadri 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2602.22755" }
+    - { id: "2604.08206", title: "\"Theater of Mind\" for LLMs: A Cognitive Architecture Based on Global Workspace Theory", authors: "Wenlong Shang", keywords: "cs.MA", url: "https://arxiv.org/abs/2604.08206" }
+    - { id: "2604.11056", title: "Where Hindsight Credit Can Reside: A Signed-Capacity View of Token Updates in RLVR", authors: "Yuhang He 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.11056" }
+
 2026-07-29-cca-counterfactual-credit-assignment-independence:
   title: "운을 빼려면 무엇을 몰라야 하는가 — CCA, hindsight 정보가 행동과 조건부 독립일 때만 편향이 없다는 2020년의 증명, 그리고 그 조건을 재지 않는 2026년"
   central:

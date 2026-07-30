@@ -6,6 +6,18 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-30] 말할 수 있는 것만 특권을 얻는다 — J-렌즈로 들여다본 언어모델의 전역 작업공간, 그리고 말할 수 있음과 정직하게 말함 사이의 거리
+
+- **중심**: Wes Gurnee 외. *Verbalizable Representations Form a Global Workspace in Language Models*. [arXiv:2607.15495](https://arxiv.org/abs/2607.15495) — 분야: cs.CL, cs.AI, cs.LG
+- Subbarao Kambhampati 외. *Position: Stop Anthropomorphizing Intermediate Tokens as Reasoning/Thinking Traces!*. [arXiv:2504.09762](https://arxiv.org/abs/2504.09762) — 분야: cs.AI
+- Chloe Li 외. *Spilling the Beans: Teaching LLMs to Self-Report Their Hidden Objectives*. [arXiv:2511.06626](https://arxiv.org/abs/2511.06626) — 분야: cs.AI
+- Ely Hahami 외. *Detecting the Disturbance: A Nuanced View of Introspective Abilities in LLMs*. [arXiv:2512.12411](https://arxiv.org/abs/2512.12411) — 분야: cs.AI
+- Derek Shiller 외. *Initial results of the Digital Consciousness Model*. [arXiv:2601.17060](https://arxiv.org/abs/2601.17060) — 분야: cs.CY, cs.AI
+- Oliver Daniels 외. *Stress-Testing Alignment Audits With Prompt-Level Strategic Deception*. [arXiv:2602.08877](https://arxiv.org/abs/2602.08877) — 분야: cs.LG
+- Abhay Sheshadri 외. *AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors*. [arXiv:2602.22755](https://arxiv.org/abs/2602.22755) — 분야: cs.CL
+- Wenlong Shang. *"Theater of Mind" for LLMs: A Cognitive Architecture Based on Global Workspace Theory*. [arXiv:2604.08206](https://arxiv.org/abs/2604.08206) — 분야: cs.MA
+- Yuhang He 외. *Where Hindsight Credit Can Reside: A Signed-Capacity View of Token Updates in RLVR*. [arXiv:2604.11056](https://arxiv.org/abs/2604.11056) — 분야: cs.LG, cs.AI
+
 ## [2026-07-29] 운을 빼려면 무엇을 몰라야 하는가 — CCA, hindsight 정보가 행동과 조건부 독립일 때만 편향이 없다는 2020년의 증명, 그리고 그 조건을 재지 않는 2026년
 
 - **중심**: Thomas Mesnard 외. *Counterfactual Credit Assignment in Model-Free Reinforcement Learning*. [arXiv:2011.09464](https://arxiv.org/abs/2011.09464) — 분야: cs.LG
