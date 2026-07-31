@@ -1,6 +1,20 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-07-31-invisible-reasoning-filler-tokens:
+  title: "흔적을 남기지 않는 계산 — 의미 없는 필러 토큰이 프론티어 모델의 답을 바꾸고, 아무도 못 보는 목표까지 이룬다"
+  central:
+    id: "2607.22925"
+    title: "Not All LLM Reasoning is Visible in the Chain-of-Thought"
+    authors: "Vatsal Baherwani 외"
+    keywords: "cs.CL, cs.AI, cs.LG"
+    url: "https://arxiv.org/abs/2607.22925"
+  referenced:
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2504.09762", title: "Position: Stop Anthropomorphizing Intermediate Tokens as Reasoning/Thinking Traces!", authors: "Subbarao Kambhampati 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2504.09762" }
+    - { id: "2601.21112", title: "How does information access affect LLM monitors' ability to detect sabotage?", authors: "Rauno Arike 외", keywords: "cs.AI, cs.SE", url: "https://arxiv.org/abs/2601.21112" }
+    - { id: "2607.03502", title: "Reading Between the Dots: Decoding Hidden Computation across Filler Tokens", authors: "Kaley Brauer 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2607.03502" }
+
 2026-07-30-j-space-verbalizable-global-workspace:
   title: "말할 수 있는 것만 특권을 얻는다 — J-렌즈로 들여다본 언어모델의 전역 작업공간, 그리고 말할 수 있음과 정직하게 말함 사이의 거리"
   central:

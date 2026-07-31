@@ -6,6 +6,14 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-07-31] 흔적을 남기지 않는 계산 — 의미 없는 필러 토큰이 프론티어 모델의 답을 바꾸고, 아무도 못 보는 목표까지 이룬다
+
+- **중심**: Vatsal Baherwani 외. *Not All LLM Reasoning is Visible in the Chain-of-Thought*. [arXiv:2607.22925](https://arxiv.org/abs/2607.22925) — 분야: cs.CL, cs.AI, cs.LG
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Subbarao Kambhampati 외. *Position: Stop Anthropomorphizing Intermediate Tokens as Reasoning/Thinking Traces!*. [arXiv:2504.09762](https://arxiv.org/abs/2504.09762) — 분야: cs.AI
+- Rauno Arike 외. *How does information access affect LLM monitors' ability to detect sabotage?*. [arXiv:2601.21112](https://arxiv.org/abs/2601.21112) — 분야: cs.AI, cs.SE
+- Kaley Brauer 외. *Reading Between the Dots: Decoding Hidden Computation across Filler Tokens*. [arXiv:2607.03502](https://arxiv.org/abs/2607.03502) — 분야: cs.CL, cs.AI, cs.LG
+
 ## [2026-07-30] 말할 수 있는 것만 특권을 얻는다 — J-렌즈로 들여다본 언어모델의 전역 작업공간, 그리고 말할 수 있음과 정직하게 말함 사이의 거리
 
 - **중심**: Wes Gurnee 외. *Verbalizable Representations Form a Global Workspace in Language Models*. [arXiv:2607.15495](https://arxiv.org/abs/2607.15495) — 분야: cs.CL, cs.AI, cs.LG

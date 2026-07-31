@@ -7437,5 +7437,48 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2607.22925": {
+  "title": "Not All LLM Reasoning is Visible in the Chain-of-Thought",
+  "authors": [
+   "Vatsal Baherwani",
+   "Tom Goldstein",
+   "Ashwinee Panda"
+  ],
+  "published": "2026-07-24",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2607.03502": {
+  "title": "Reading Between the Dots: Decoding Hidden Computation across Filler Tokens",
+  "authors": [
+   "Kaley Brauer",
+   "Claudio Mayrink Verdun",
+   "Samuel Marks"
+  ],
+  "published": "2026-07-03",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2601.21112": {
+  "title": "How does information access affect LLM monitors' ability to detect sabotage?",
+  "authors": [
+   "Rauno Arike",
+   "Raja Mehta Moreno",
+   "Rohan Subramani",
+   "Shubhorup Biswas",
+   "Francis Rhys Ward"
+  ],
+  "published": "2026-01-28",
+  "categories": [
+   "cs.AI",
+   "cs.SE"
+  ]
  }
 }
