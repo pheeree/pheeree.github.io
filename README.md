@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-08-01 — [덜 보여줄 때 더 잡는다 — 트레이스를 통째로 읽은 감시자가 그럴듯한 해명에 설득당하고, 발췌만 읽은 감시자가 어긋남을 본다](https://pheeree.github.io/2026/08/01/monitor-information-access-less-is-more/)
 - 2026-07-31 — [흔적을 남기지 않는 계산 — 의미 없는 필러 토큰이 프론티어 모델의 답을 바꾸고, 아무도 못 보는 목표까지 이룬다](https://pheeree.github.io/2026/07/31/invisible-reasoning-filler-tokens/)
 - 2026-07-30 — [말할 수 있는 것만 특권을 얻는다 — J-렌즈로 들여다본 언어모델의 전역 작업공간, 그리고 말할 수 있음과 정직하게 말함 사이의 거리](https://pheeree.github.io/2026/07/30/j-space-verbalizable-global-workspace/)
 - 2026-07-29 — [운을 빼려면 무엇을 몰라야 하는가 — CCA, hindsight 정보가 행동과 조건부 독립일 때만 편향이 없다는 2020년의 증명, 그리고 그 조건을 재지 않는 2026년](https://pheeree.github.io/2026/07/29/cca-counterfactual-credit-assignment-independence/)

@@ -7480,5 +7480,145 @@
    "cs.AI",
    "cs.SE"
   ]
+ },
+ "2605.16626": {
+  "title": "SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors",
+  "authors": [
+   "Elle Najt",
+   "Colin Toft",
+   "Tyler Tracy",
+   "Fabien Roger",
+   "Joe Benton"
+  ],
+  "published": "2026-05-15",
+  "categories": [
+   "cs.CR",
+   "cs.AI"
+  ]
+ },
+ "2602.05066": {
+  "title": "Bypassing AI Control Protocols via Agent-as-a-Proxy Attacks",
+  "authors": [
+   "Jafar Isbarov",
+   "Murat Kantarcioglu"
+  ],
+  "published": "2026-02-04",
+  "categories": [
+   "cs.CR",
+   "cs.AI"
+  ]
+ },
+ "2505.23575": {
+  "title": "CoT Red-Handed: Stress Testing Chain-of-Thought Monitoring",
+  "authors": [
+   "Benjamin Arnav",
+   "Pablo Bernabeu-Pérez",
+   "Nathan Helm-Burger",
+   "Tim Kostolansky",
+   "Hannes Whittingham",
+   "Mary Phuong"
+  ],
+  "published": "2025-05-29",
+  "categories": [
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2602.10153": {
+  "title": "Basic Legibility Protocols Improve Trusted Monitoring",
+  "authors": [
+   "Ashwin Sreevatsa",
+   "Sebastian Prasanna",
+   "Cody Rushing"
+  ],
+  "published": "2026-02-09",
+  "categories": [
+   "cs.CR",
+   "cs.LG",
+   "cs.SE"
+  ]
+ },
+ "2606.17478": {
+  "title": "Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing",
+  "authors": [
+   "Kexin Chen",
+   "Yi Liu",
+   "Haonan Zhang",
+   "Yanhui Li",
+   "Xinyu Deng",
+   "Dongxia Wang"
+  ],
+  "published": "2026-06-16",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2508.00943": {
+  "title": "LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring",
+  "authors": [
+   "Chloe Li",
+   "Mary Phuong",
+   "Noah Y. Siegel"
+  ],
+  "published": "2025-07-31",
+  "categories": [
+   "cs.CR",
+   "cs.AI"
+  ]
+ },
+ "2510.19851": {
+  "title": "Can Reasoning Models Obfuscate Reasoning? Stress-Testing Chain-of-Thought Monitorability",
+  "authors": [
+   "Artur Zolkowski",
+   "Wen Xing",
+   "David Lindner",
+   "Florian Tramèr",
+   "Erik Jenner"
+  ],
+  "published": "2025-10-21",
+  "categories": [
+   "cs.CR",
+   "cs.AI"
+  ]
+ },
+ "2607.06596": {
+  "title": "Calibration-Family Overfit: Why Trusted Sabotage Monitors Don't Transfer Across Lineages",
+  "authors": [
+   "Lucas Pinto"
+  ],
+  "published": "2026-07-06",
+  "categories": [
+   "cs.CR",
+   "cs.LG"
+  ]
+ },
+ "2505.18761": {
+  "title": "How Is LLM Reasoning Distracted by Irrelevant Context? An Analysis Using a Controlled Benchmark",
+  "authors": [
+   "Minglai Yang",
+   "Ethan Huang",
+   "Liang Zhang",
+   "Mihai Surdeanu",
+   "William Wang",
+   "Liangming Pan"
+  ],
+  "published": "2025-05-24",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2606.11998": {
+  "title": "Bootstrapped Monitoring: Leveraging Transparent Reasoning to Oversee Stronger AI Agents",
+  "authors": [
+   "Frank Xiao",
+   "Mary Phuong"
+  ],
+  "published": "2026-06-10",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }

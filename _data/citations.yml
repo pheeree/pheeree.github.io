@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-01-monitor-information-access-less-is-more:
+  title: "덜 보여줄 때 더 잡는다 — 트레이스를 통째로 읽은 감시자가 그럴듯한 해명에 설득당하고, 발췌만 읽은 감시자가 어긋남을 본다"
+  central:
+    id: "2601.21112"
+    title: "How does information access affect LLM monitors' ability to detect sabotage?"
+    authors: "Rauno Arike 외"
+    keywords: "cs.AI, cs.SE"
+    url: "https://arxiv.org/abs/2601.21112"
+  referenced:
+    - { id: "2505.18761", title: "How Is LLM Reasoning Distracted by Irrelevant Context? An Analysis Using a Controlled Benchmark", authors: "Minglai Yang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2505.18761" }
+    - { id: "2505.23575", title: "CoT Red-Handed: Stress Testing Chain-of-Thought Monitoring", authors: "Benjamin Arnav 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2505.23575" }
+    - { id: "2508.00943", title: "LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring", authors: "Chloe Li 외", keywords: "cs.CR, cs.AI", url: "https://arxiv.org/abs/2508.00943" }
+    - { id: "2510.05381", title: "Context Length Alone Hurts LLM Performance Despite Perfect Retrieval", authors: "Yufeng Du 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2510.05381" }
+    - { id: "2510.19851", title: "Can Reasoning Models Obfuscate Reasoning? Stress-Testing Chain-of-Thought Monitorability", authors: "Artur Zolkowski 외", keywords: "cs.CR, cs.AI", url: "https://arxiv.org/abs/2510.19851" }
+    - { id: "2511.06626", title: "Spilling the Beans: Teaching LLMs to Self-Report Their Hidden Objectives", authors: "Chloe Li 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2511.06626" }
+    - { id: "2602.05066", title: "Bypassing AI Control Protocols via Agent-as-a-Proxy Attacks", authors: "Jafar Isbarov, Murat Kantarcioglu", keywords: "cs.CR, cs.AI", url: "https://arxiv.org/abs/2602.05066" }
+    - { id: "2602.10153", title: "Basic Legibility Protocols Improve Trusted Monitoring", authors: "Ashwin Sreevatsa 외", keywords: "cs.CR, cs.LG, cs.SE", url: "https://arxiv.org/abs/2602.10153" }
+    - { id: "2605.16626", title: "SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors", authors: "Elle Najt 외", keywords: "cs.CR, cs.AI", url: "https://arxiv.org/abs/2605.16626" }
+    - { id: "2606.11998", title: "Bootstrapped Monitoring: Leveraging Transparent Reasoning to Oversee Stronger AI Agents", authors: "Frank Xiao, Mary Phuong", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.11998" }
+    - { id: "2606.17478", title: "Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing", authors: "Kexin Chen 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2606.17478" }
+    - { id: "2607.06596", title: "Calibration-Family Overfit: Why Trusted Sabotage Monitors Don't Transfer Across Lineages", authors: "Lucas Pinto", keywords: "cs.CR, cs.LG", url: "https://arxiv.org/abs/2607.06596" }
+
 2026-07-31-invisible-reasoning-filler-tokens:
   title: "흔적을 남기지 않는 계산 — 의미 없는 필러 토큰이 프론티어 모델의 답을 바꾸고, 아무도 못 보는 목표까지 이룬다"
   central:

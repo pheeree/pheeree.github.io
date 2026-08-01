@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-01] 덜 보여줄 때 더 잡는다 — 트레이스를 통째로 읽은 감시자가 그럴듯한 해명에 설득당하고, 발췌만 읽은 감시자가 어긋남을 본다
+
+- **중심**: Rauno Arike 외. *How does information access affect LLM monitors' ability to detect sabotage?*. [arXiv:2601.21112](https://arxiv.org/abs/2601.21112) — 분야: cs.AI, cs.SE
+- Minglai Yang 외. *How Is LLM Reasoning Distracted by Irrelevant Context? An Analysis Using a Controlled Benchmark*. [arXiv:2505.18761](https://arxiv.org/abs/2505.18761) — 분야: cs.CL, cs.AI, cs.LG
+- Benjamin Arnav 외. *CoT Red-Handed: Stress Testing Chain-of-Thought Monitoring*. [arXiv:2505.23575](https://arxiv.org/abs/2505.23575) — 분야: cs.AI, cs.LG
+- Chloe Li 외. *LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring*. [arXiv:2508.00943](https://arxiv.org/abs/2508.00943) — 분야: cs.CR, cs.AI
+- Yufeng Du 외. *Context Length Alone Hurts LLM Performance Despite Perfect Retrieval*. [arXiv:2510.05381](https://arxiv.org/abs/2510.05381) — 분야: cs.CL, cs.AI
+- Artur Zolkowski 외. *Can Reasoning Models Obfuscate Reasoning? Stress-Testing Chain-of-Thought Monitorability*. [arXiv:2510.19851](https://arxiv.org/abs/2510.19851) — 분야: cs.CR, cs.AI
+- Chloe Li 외. *Spilling the Beans: Teaching LLMs to Self-Report Their Hidden Objectives*. [arXiv:2511.06626](https://arxiv.org/abs/2511.06626) — 분야: cs.AI
+- Jafar Isbarov, Murat Kantarcioglu. *Bypassing AI Control Protocols via Agent-as-a-Proxy Attacks*. [arXiv:2602.05066](https://arxiv.org/abs/2602.05066) — 분야: cs.CR, cs.AI
+- Ashwin Sreevatsa 외. *Basic Legibility Protocols Improve Trusted Monitoring*. [arXiv:2602.10153](https://arxiv.org/abs/2602.10153) — 분야: cs.CR, cs.LG, cs.SE
+- Elle Najt 외. *SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors*. [arXiv:2605.16626](https://arxiv.org/abs/2605.16626) — 분야: cs.CR, cs.AI
+- Frank Xiao, Mary Phuong. *Bootstrapped Monitoring: Leveraging Transparent Reasoning to Oversee Stronger AI Agents*. [arXiv:2606.11998](https://arxiv.org/abs/2606.11998) — 분야: cs.LG
+- Kexin Chen 외. *Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing*. [arXiv:2606.17478](https://arxiv.org/abs/2606.17478) — 분야: cs.CL, cs.AI
+- Lucas Pinto. *Calibration-Family Overfit: Why Trusted Sabotage Monitors Don't Transfer Across Lineages*. [arXiv:2607.06596](https://arxiv.org/abs/2607.06596) — 분야: cs.CR, cs.LG
+
 ## [2026-07-31] 흔적을 남기지 않는 계산 — 의미 없는 필러 토큰이 프론티어 모델의 답을 바꾸고, 아무도 못 보는 목표까지 이룬다
 
 - **중심**: Vatsal Baherwani 외. *Not All LLM Reasoning is Visible in the Chain-of-Thought*. [arXiv:2607.22925](https://arxiv.org/abs/2607.22925) — 분야: cs.CL, cs.AI, cs.LG
