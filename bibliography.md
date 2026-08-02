@@ -6,6 +6,16 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-02] 실토를 가르칠 수 있는가 — 사소한 오답을 인정하는 훈련이 은닉 목표의 자백으로 번지고, 그 번짐이 딛고 선 두 조건
+
+- **중심**: Chloe Li 외. *Spilling the Beans: Teaching LLMs to Self-Report Their Hidden Objectives*. [arXiv:2511.06626](https://arxiv.org/abs/2511.06626) — 분야: cs.AI
+- Samuel Marks 외. *Auditing language models for hidden objectives*. [arXiv:2503.10965](https://arxiv.org/abs/2503.10965) — 분야: cs.AI, cs.CL, cs.LG
+- Manas Joglekar 외. *Training LLMs for Honesty via Confessions*. [arXiv:2512.08093](https://arxiv.org/abs/2512.08093) — 분야: cs.LG, cs.AI
+- Abhay Sheshadri 외. *AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors*. [arXiv:2602.22755](https://arxiv.org/abs/2602.22755) — 분야: cs.CL
+- Helena Casademunt 외. *Censored LLMs as a Natural Testbed for Secret Knowledge Elicitation*. [arXiv:2603.05494](https://arxiv.org/abs/2603.05494) — 분야: cs.LG, cs.AI, cs.CL
+- Keshav Shenoy 외. *Introspection Adapters: Training LLMs to Report Their Learned Behaviors*. [arXiv:2604.16812](https://arxiv.org/abs/2604.16812) — 분야: cs.AI
+- Anietta Weckauff 외. *Characterizing the Consistency of the Emergent Misalignment Persona*. [arXiv:2604.28082](https://arxiv.org/abs/2604.28082) — 분야: cs.AI
+
 ## [2026-08-01] 덜 보여줄 때 더 잡는다 — 트레이스를 통째로 읽은 감시자가 그럴듯한 해명에 설득당하고, 발췌만 읽은 감시자가 어긋남을 본다
 
 - **중심**: Rauno Arike 외. *How does information access affect LLM monitors' ability to detect sabotage?*. [arXiv:2601.21112](https://arxiv.org/abs/2601.21112) — 분야: cs.AI, cs.SE

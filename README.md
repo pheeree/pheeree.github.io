@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-08-02 — [실토를 가르칠 수 있는가 — 사소한 오답을 인정하는 훈련이 은닉 목표의 자백으로 번지고, 그 번짐이 딛고 선 두 조건](https://pheeree.github.io/2026/08/02/srft-self-report-hidden-objectives/)
 - 2026-08-01 — [덜 보여줄 때 더 잡는다 — 트레이스를 통째로 읽은 감시자가 그럴듯한 해명에 설득당하고, 발췌만 읽은 감시자가 어긋남을 본다](https://pheeree.github.io/2026/08/01/monitor-information-access-less-is-more/)
 - 2026-07-31 — [흔적을 남기지 않는 계산 — 의미 없는 필러 토큰이 프론티어 모델의 답을 바꾸고, 아무도 못 보는 목표까지 이룬다](https://pheeree.github.io/2026/07/31/invisible-reasoning-filler-tokens/)
 - 2026-07-30 — [말할 수 있는 것만 특권을 얻는다 — J-렌즈로 들여다본 언어모델의 전역 작업공간, 그리고 말할 수 있음과 정직하게 말함 사이의 거리](https://pheeree.github.io/2026/07/30/j-space-verbalizable-global-workspace/)

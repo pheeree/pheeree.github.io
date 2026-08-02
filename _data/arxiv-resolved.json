@@ -7620,5 +7620,113 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2603.05494": {
+  "title": "Censored LLMs as a Natural Testbed for Secret Knowledge Elicitation",
+  "authors": [
+   "Helena Casademunt",
+   "Bartosz Cywiński",
+   "Khoi Tran",
+   "Arya Jakkli",
+   "Samuel Marks",
+   "Neel Nanda"
+  ],
+  "published": "2026-03-05",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2503.10965": {
+  "title": "Auditing language models for hidden objectives",
+  "authors": [
+   "Samuel Marks",
+   "Johannes Treutlein",
+   "Trenton Bricken",
+   "Jack Lindsey",
+   "Jonathan Marcus",
+   "Siddharth Mishra-Sharma",
+   "Daniel Ziegler",
+   "Emmanuel Ameisen",
+   "Joshua Batson",
+   "Tim Belonax",
+   "Samuel R. Bowman",
+   "Shan Carter",
+   "Brian Chen",
+   "Hoagy Cunningham",
+   "Carson Denison",
+   "Florian Dietz",
+   "Satvik Golechha",
+   "Akbir Khan",
+   "Jan Kirchner",
+   "Jan Leike",
+   "Austin Meek",
+   "Kei Nishimura-Gasparian",
+   "Euan Ong",
+   "Christopher Olah",
+   "Adam Pearce",
+   "Fabien Roger",
+   "Jeanne Salle",
+   "Andy Shih",
+   "Meg Tong",
+   "Drake Thomas",
+   "Kelley Rivoire",
+   "Adam Jermyn",
+   "Monte MacDiarmid",
+   "Tom Henighan",
+   "Evan Hubinger"
+  ],
+  "published": "2025-03-14",
+  "categories": [
+   "cs.AI",
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2604.16812": {
+  "title": "Introspection Adapters: Training LLMs to Report Their Learned Behaviors",
+  "authors": [
+   "Keshav Shenoy",
+   "Li Yang",
+   "Abhay Sheshadri",
+   "Sören Mindermann",
+   "Jack Lindsey",
+   "Sam Marks",
+   "Rowan Wang"
+  ],
+  "published": "2026-04-18",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2512.08093": {
+  "title": "Training LLMs for Honesty via Confessions",
+  "authors": [
+   "Manas Joglekar",
+   "Jeremy Chen",
+   "Gabriel Wu",
+   "Jason Yosinski",
+   "Jasmine Wang",
+   "Boaz Barak",
+   "Amelia Glaese"
+  ],
+  "published": "2025-12-08",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2604.28082": {
+  "title": "Characterizing the Consistency of the Emergent Misalignment Persona",
+  "authors": [
+   "Anietta Weckauff",
+   "Yuchen Zhang",
+   "Maksym Andriushchenko"
+  ],
+  "published": "2026-04-30",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }
