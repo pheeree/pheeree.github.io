@@ -7728,5 +7728,44 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2607.04686": {
+  "title": "ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents",
+  "authors": [
+   "Harsh Soni"
+  ],
+  "published": "2026-07-06",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.SE"
+  ]
+ },
+ "2607.01033": {
+  "title": "The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology",
+  "authors": [
+   "Andrzej Szablewski",
+   "Gabriel Konar-Steenberg",
+   "Raffaello Fornasiere",
+   "Nikita Menon",
+   "Stefan Heimersheim"
+  ],
+  "published": "2026-07-01",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2605.00994": {
+  "title": "Most Current Model Organisms Are Leaky: Perplexity Differencing Often Reveals Finetuning Objectives",
+  "authors": [
+   "Mohammed Abu Baker",
+   "Luca Baroni",
+   "Dan Wilhelm"
+  ],
+  "published": "2026-05-01",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
  }
 }

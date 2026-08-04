@@ -6,6 +6,16 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-03] 자백을 지운 자리에서 재는 것 — AuditBench, 은닉 행동을 심은 모델 56개와 도구가 에이전트의 손에 쥐어지자 무뎌지는 구간
+
+- **중심**: Abhay Sheshadri 외. *AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors*. [arXiv:2602.22755](https://arxiv.org/abs/2602.22755) — 분야: cs.CL
+- Samuel Marks 외. *Auditing language models for hidden objectives*. [arXiv:2503.10965](https://arxiv.org/abs/2503.10965) — 분야: cs.AI, cs.CL, cs.LG
+- Keshav Shenoy 외. *Introspection Adapters: Training LLMs to Report Their Learned Behaviors*. [arXiv:2604.16812](https://arxiv.org/abs/2604.16812) — 분야: cs.AI
+- Mohammed Abu Baker 외. *Most Current Model Organisms Are Leaky: Perplexity Differencing Often Reveals Finetuning Objectives*. [arXiv:2605.00994](https://arxiv.org/abs/2605.00994) — 분야: cs.CL, cs.AI
+- Kexin Chen 외. *Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing*. [arXiv:2606.17478](https://arxiv.org/abs/2606.17478) — 분야: cs.CL, cs.AI
+- Andrzej Szablewski 외. *The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology*. [arXiv:2607.01033](https://arxiv.org/abs/2607.01033) — 분야: cs.LG
+- Harsh Soni. *ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents*. [arXiv:2607.04686](https://arxiv.org/abs/2607.04686) — 분야: cs.CL, cs.AI, cs.SE
+
 ## [2026-08-02] 실토를 가르칠 수 있는가 — 사소한 오답을 인정하는 훈련이 은닉 목표의 자백으로 번지고, 그 번짐이 딛고 선 두 조건
 
 - **중심**: Chloe Li 외. *Spilling the Beans: Teaching LLMs to Self-Report Their Hidden Objectives*. [arXiv:2511.06626](https://arxiv.org/abs/2511.06626) — 분야: cs.AI
