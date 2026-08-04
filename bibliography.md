@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-04] 안쪽을 옮겨 적는 통역사 — STATEWITNESS는 얼려 둔 모델의 활성화를 자연어로 번역하고, 그 번역을 검증할 자리는 비워 둔다
+
+- **중심**: Kexin Chen 외. *Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing*. [arXiv:2606.17478](https://arxiv.org/abs/2606.17478) — 분야: cs.CL, cs.AI
+- Iván Arcuschin 외. *Chain-of-Thought Reasoning In The Wild Is Not Always Faithful*. [arXiv:2503.08679](https://arxiv.org/abs/2503.08679) — 분야: cs.AI, cs.CL, cs.LG
+- Oliver Daniels 외. *Stress-Testing Alignment Audits With Prompt-Level Strategic Deception*. [arXiv:2602.08877](https://arxiv.org/abs/2602.08877) — 분야: cs.LG
+- Keenan Pepper 외. *Learning Self-Interpretation from Interpretability Artifacts: Training Lightweight Adapters on Vector-Label Pairs*. [arXiv:2602.10352](https://arxiv.org/abs/2602.10352) — 분야: cs.CL, cs.AI, cs.LG
+- Abhay Sheshadri 외. *AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors*. [arXiv:2602.22755](https://arxiv.org/abs/2602.22755) — 분야: cs.CL
+- Parsa Mirtaheri, Mikhail Belkin. *Catching rationalization in the act: detecting motivated reasoning before and after CoT via activation probing*. [arXiv:2603.17199](https://arxiv.org/abs/2603.17199) — 분야: cs.LG, cs.AI, cs.CL
+- Sachin Kumar. *Pressure-Testing Deception Probes in LLMs: Scaling, Robustness, and the Geometry of Deceptive Representations*. [arXiv:2605.27958](https://arxiv.org/abs/2605.27958) — 분야: cs.CL, cs.AI, cs.LG
+- Ji-jun Park 외. *MechELK: A Mechanistic Interpretability Framework for Eliciting Latent Knowledge in Large Language Models*. [arXiv:2605.28825](https://arxiv.org/abs/2605.28825) — 분야: cs.CL
+- Aditya Sinha 외. *Training Deliberative Monitors for Black-Box Scheming Detection*. [arXiv:2605.29601](https://arxiv.org/abs/2605.29601) — 분야: cs.CL, cs.AI, cs.LG
+- Alan Cooney 외. *"Did you lie?" Evaluating Lie Detectors across Model Scale and Belief-Verified Model Organisms*. [arXiv:2606.12618](https://arxiv.org/abs/2606.12618) — 분야: cs.AI
+- Elize Herrewijnen 외. *From Plausible to Actionable: A Position on LLM Self-Explanations*. [arXiv:2607.15957](https://arxiv.org/abs/2607.15957) — 분야: cs.CL
+
 ## [2026-08-03] 자백을 지운 자리에서 재는 것 — AuditBench, 은닉 행동을 심은 모델 56개와 도구가 에이전트의 손에 쥐어지자 무뎌지는 구간
 
 - **중심**: Abhay Sheshadri 외. *AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors*. [arXiv:2602.22755](https://arxiv.org/abs/2602.22755) — 분야: cs.CL

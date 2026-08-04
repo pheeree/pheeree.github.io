@@ -1,6 +1,26 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-04-statewitness-activation-decoder-deception-audit:
+  title: "안쪽을 옮겨 적는 통역사 — STATEWITNESS는 얼려 둔 모델의 활성화를 자연어로 번역하고, 그 번역을 검증할 자리는 비워 둔다"
+  central:
+    id: "2606.17478"
+    title: "Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing"
+    authors: "Kexin Chen 외"
+    keywords: "cs.CL, cs.AI"
+    url: "https://arxiv.org/abs/2606.17478"
+  referenced:
+    - { id: "2503.08679", title: "Chain-of-Thought Reasoning In The Wild Is Not Always Faithful", authors: "Iván Arcuschin 외", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2503.08679" }
+    - { id: "2602.08877", title: "Stress-Testing Alignment Audits With Prompt-Level Strategic Deception", authors: "Oliver Daniels 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2602.08877" }
+    - { id: "2602.10352", title: "Learning Self-Interpretation from Interpretability Artifacts: Training Lightweight Adapters on Vector-Label Pairs", authors: "Keenan Pepper 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2602.10352" }
+    - { id: "2602.22755", title: "AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors", authors: "Abhay Sheshadri 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2602.22755" }
+    - { id: "2603.17199", title: "Catching rationalization in the act: detecting motivated reasoning before and after CoT via activation probing", authors: "Parsa Mirtaheri, Mikhail Belkin", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2603.17199" }
+    - { id: "2605.27958", title: "Pressure-Testing Deception Probes in LLMs: Scaling, Robustness, and the Geometry of Deceptive Representations", authors: "Sachin Kumar", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2605.27958" }
+    - { id: "2605.28825", title: "MechELK: A Mechanistic Interpretability Framework for Eliciting Latent Knowledge in Large Language Models", authors: "Ji-jun Park 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.28825" }
+    - { id: "2605.29601", title: "Training Deliberative Monitors for Black-Box Scheming Detection", authors: "Aditya Sinha 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2605.29601" }
+    - { id: "2606.12618", title: "\"Did you lie?\" Evaluating Lie Detectors across Model Scale and Belief-Verified Model Organisms", authors: "Alan Cooney 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.12618" }
+    - { id: "2607.15957", title: "From Plausible to Actionable: A Position on LLM Self-Explanations", authors: "Elize Herrewijnen 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2607.15957" }
+
 2026-08-03-auditbench-model-organisms-tool-agent-gap:
   title: "자백을 지운 자리에서 재는 것 — AuditBench, 은닉 행동을 심은 모델 56개와 도구가 에이전트의 손에 쥐어지자 무뎌지는 구간"
   central:

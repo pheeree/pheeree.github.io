@@ -7767,5 +7767,111 @@
    "cs.CL",
    "cs.AI"
   ]
+ },
+ "2605.29601": {
+  "title": "Training Deliberative Monitors for Black-Box Scheming Detection",
+  "authors": [
+   "Aditya Sinha",
+   "Akshat Naik",
+   "Victor Gillioz",
+   "Simon Storf",
+   "Kilian Merkelbach",
+   "Rich Barton-Cooper",
+   "Axel Højmark",
+   "Marius Hobbhahn"
+  ],
+  "published": "2026-05-28",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2606.12618": {
+  "title": "\"Did you lie?\" Evaluating Lie Detectors across Model Scale and Belief-Verified Model Organisms",
+  "authors": [
+   "Alan Cooney",
+   "David Africa",
+   "Geoffrey Irving"
+  ],
+  "published": "2026-06-10",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2605.27958": {
+  "title": "Pressure-Testing Deception Probes in LLMs: Scaling, Robustness, and the Geometry of Deceptive Representations",
+  "authors": [
+   "Sachin Kumar"
+  ],
+  "published": "2026-05-27",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2607.15957": {
+  "title": "From Plausible to Actionable: A Position on LLM Self-Explanations",
+  "authors": [
+   "Elize Herrewijnen",
+   "Benedetta Muscato",
+   "Gizem Gezici",
+   "Fosca Giannotti"
+  ],
+  "published": "2026-07-17",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2603.17199": {
+  "title": "Catching rationalization in the act: detecting motivated reasoning before and after CoT via activation probing",
+  "authors": [
+   "Parsa Mirtaheri",
+   "Mikhail Belkin"
+  ],
+  "published": "2026-03-17",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2503.08679": {
+  "title": "Chain-of-Thought Reasoning In The Wild Is Not Always Faithful",
+  "authors": [
+   "Iván Arcuschin",
+   "Jett Janiak",
+   "Robert Krzyzanowski",
+   "Senthooran Rajamanoharan",
+   "Neel Nanda",
+   "Arthur Conmy"
+  ],
+  "published": "2025-03-11",
+  "categories": [
+   "cs.AI",
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2602.10352": {
+  "title": "Learning Self-Interpretation from Interpretability Artifacts: Training Lightweight Adapters on Vector-Label Pairs",
+  "authors": [
+   "Keenan Pepper",
+   "Alex McKenzie",
+   "Florin Pop",
+   "Stijn Servaes",
+   "Martin Leitgab",
+   "Mike Vaiana",
+   "Judd Rosenblatt",
+   "Michael S. A. Graziano",
+   "Diogo de Lucena"
+  ],
+  "published": "2026-02-10",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
  }
 }
