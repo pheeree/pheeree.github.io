@@ -7873,5 +7873,320 @@
    "cs.AI",
    "cs.LG"
   ]
+ },
+ "2603.05488": {
+  "title": "Reasoning Theater: Disentangling Model Beliefs from Chain-of-Thought",
+  "authors": [
+   "Siddharth Boppana",
+   "Annabel Ma",
+   "Max Loeffler",
+   "Raphael Sarfati",
+   "Eric Bigelow",
+   "Atticus Geiger",
+   "Owen Lewis",
+   "Jack Merullo"
+  ],
+  "published": "2026-03-05",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2607.05013": {
+  "title": "Knowledge Knows, Verbalization Tells: Disentangling Latent Directions for Mathematical Solvability in LLMs",
+  "authors": [
+   "Nikolaos Xiros",
+   "Maria-Eleni Zoumpoulidi",
+   "Georgios Paraskevopoulos"
+  ],
+  "published": "2026-07-06",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2603.25861": {
+  "title": "Why Safety Probes Catch Liars But Miss Fanatics",
+  "authors": [
+   "Kristiyan Haralambiev"
+  ],
+  "published": "2026-03-26",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CR"
+  ]
+ },
+ "2601.05752": {
+  "title": "AutoMonitor-Bench: Evaluating the Reliability of LLM-Based Misbehavior Monitor",
+  "authors": [
+   "Shu Yang",
+   "Jingyu Hu",
+   "Tong Li",
+   "Hanqi Yan",
+   "Wenxuan Wang",
+   "Di Wang"
+  ],
+  "published": "2026-01-09",
+  "categories": [
+   "cs.CL",
+   "cs.SE"
+  ]
+ },
+ "2603.01437": {
+  "title": "Post-Hoc Reasoning in Chain of Thought: Decoding and Steering Pre-Committed Answers",
+  "authors": [
+   "Kyle Cox",
+   "Darius Kianersi",
+   "Adrià Garriga-Alonso"
+  ],
+  "published": "2026-03-02",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2603.26410": {
+  "title": "Why Models Know But Don't Say: Chain-of-Thought Faithfulness Divergence Between Thinking Tokens and Answers in Open-Weight Reasoning Models",
+  "authors": [
+   "Richard J. Young"
+  ],
+  "published": "2026-03-27",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2608.00583": {
+  "title": "A False Average: Chain-of-Thought Monitors Collapse Where They Are the Only Defense",
+  "authors": [
+   "Shikhar Shiromani",
+   "Leo Richter"
+  ],
+  "published": "2026-08-01",
+  "categories": [
+   "cs.CR",
+   "cs.AI",
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2607.16451": {
+  "title": "Committed Before Reasoning: Behavioral Reproduction and Preliminary Activation-Level Evidence of Answer Pre-Commitment in an Open-Weight LLM",
+  "authors": [
+   "Heejin Jo"
+  ],
+  "published": "2026-07-17",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2311.15131": {
+  "title": "Localizing Lying in Llama: Understanding Instructed Dishonesty on True-False Questions Through Prompting, Probing, and Patching",
+  "authors": [
+   "James Campbell",
+   "Richard Ren",
+   "Phillip Guo"
+  ],
+  "published": "2023-11-25",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2607.14111": {
+  "title": "Introspection Fine-Tuning (IFT): Training Small LLMs to Introspect",
+  "authors": [
+   "Ely Hahami",
+   "Ishaan Sinha",
+   "Lavik Jain"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2605.15257": {
+  "title": "Training on Documents About Monitoring Leads to CoT Obfuscation",
+  "authors": [
+   "Reilly Haskins",
+   "Bilal Chughtai",
+   "Joshua Engels"
+  ],
+  "published": "2026-05-14",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2510.17057": {
+  "title": "The Ends Justify the Thoughts: RL-Induced Motivated Reasoning in LLM CoTs",
+  "authors": [
+   "Nikolaus Howe",
+   "Micah Carroll"
+  ],
+  "published": "2025-10-20",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2603.16928": {
+  "title": "Noticing the Watcher: LLM Agents Can Infer CoT Monitoring from Blocking Feedback",
+  "authors": [
+   "Thomas Jiralerspong",
+   "Flemming Kondrup",
+   "Yoshua Bengio"
+  ],
+  "published": "2026-03-14",
+  "categories": [
+   "cs.CR",
+   "cs.LG"
+  ]
+ },
+ "2506.09277": {
+  "title": "NeuroFaith: Evaluating LLM Self-Explanation Faithfulness via Internal Representation Alignment",
+  "authors": [
+   "Milan Bhan",
+   "Jean-Noel Vittaut",
+   "Nicolas Chesneau",
+   "Sarath Chandar",
+   "Marie-Jeanne Lesot"
+  ],
+  "published": "2025-06-10",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2605.23867": {
+  "title": "Human Decision-Making with Persuasive and Narrative LLM Explanations",
+  "authors": [
+   "Laura R. Marusich",
+   "Mary Grace Kozuch Dhooghe",
+   "Jonathan Z. Bakdash",
+   "Murat Kantarcioglu"
+  ],
+  "published": "2026-05-22",
+  "categories": [
+   "cs.HC",
+   "cs.AI"
+  ]
+ },
+ "2601.03089": {
+  "title": "Faithfulness Evaluation for Decoder-only LLM Attributions with Controlled Retained Information",
+  "authors": [
+   "Xin Huang",
+   "Antoni B. Chan"
+  ],
+  "published": "2026-01-06",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2605.25603": {
+  "title": "Detecting Unfaithful Chain-of-Thought via Circuit-Guided Internal-External Discrepancy",
+  "authors": [
+   "Xu Shen",
+   "Zhen Tan",
+   "Song Wang",
+   "Pingjun Hong",
+   "Rui Miao",
+   "Xin Wang",
+   "Tianlong Chen"
+  ],
+  "published": "2026-05-25",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2605.16877": {
+  "title": "Zero-Shot Faithful Textual Explanations via Directional-Derivative Influence on Predictions",
+  "authors": [
+   "Toshinori Yamauchi",
+   "Hiroshi Kera",
+   "Kazuhiko Kawamoto"
+  ],
+  "published": "2026-05-16",
+  "categories": [
+   "cs.CV"
+  ]
+ },
+ "2602.02639": {
+  "title": "A Positive Case for Faithfulness: LLM Self-Explanations Help Predict Model Behavior",
+  "authors": [
+   "Harry Mayne",
+   "Justin Singh Kang",
+   "Dewi Gould",
+   "Kannan Ramchandran",
+   "Adam Mahdi",
+   "Noah Y. Siegel"
+  ],
+  "published": "2026-02-02",
+  "categories": [
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2605.24286": {
+  "title": "Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning",
+  "authors": [
+   "Jinghan Jia",
+   "Joe Benton",
+   "Eric Easley"
+  ],
+  "published": "2026-05-22",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2607.14123": {
+  "title": "Position: Explainability Research Must Prioritize Foundations over Ad-hoc Methods",
+  "authors": [
+   "Michal Moshkovitz",
+   "Suraj Srinivas",
+   "Lesia Semenova",
+   "Nave Frost",
+   "Cyrus Rashtchian",
+   "Valentyn Boreiko",
+   "Shichang Zhang",
+   "Himabindu Lakkaraju",
+   "Cynthia Rudin",
+   "Jennifer Wortman Vaughan"
+  ],
+  "published": "2026-06-18",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2605.01164": {
+  "title": "LLMs Should Not Yet Be Credited with Decision Explanation",
+  "authors": [
+   "Wenshuo Wang"
+  ],
+  "published": "2026-05-01",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2607.21090": {
+  "title": "Training Large Language Models for Self-Explanation Faithfulness",
+  "authors": [
+   "Yeoktatt Cheah",
+   "María Pérez-Ortiz",
+   "Noah Y. Siegel",
+   "Oana-Maria Camburu"
+  ],
+  "published": "2026-07-23",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  }
 }

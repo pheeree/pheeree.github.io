@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-09] 잴 수 없다와 재지 말자 사이 — 자기설명의 충실성 평가를 접고 실행가능성으로 옮기자는 제안, 그런데 교란 말고 안쪽을 재는 눈금은 이미 나와 있다
+
+- **중심**: Elize Herrewijnen 외. *From Plausible to Actionable: A Position on LLM Self-Explanations*. [arXiv:2607.15957](https://arxiv.org/abs/2607.15957) — 분야: cs.CL
+- Milan Bhan 외. *NeuroFaith: Evaluating LLM Self-Explanation Faithfulness via Internal Representation Alignment*. [arXiv:2506.09277](https://arxiv.org/abs/2506.09277) — 분야: cs.CL
+- Xin Huang, Antoni B. Chan. *Faithfulness Evaluation for Decoder-only LLM Attributions with Controlled Retained Information*. [arXiv:2601.03089](https://arxiv.org/abs/2601.03089) — 분야: cs.CL, cs.AI, cs.LG
+- Harry Mayne 외. *A Positive Case for Faithfulness: LLM Self-Explanations Help Predict Model Behavior*. [arXiv:2602.02639](https://arxiv.org/abs/2602.02639) — 분야: cs.AI, cs.LG
+- Parsa Mirtaheri, Mikhail Belkin. *Catching rationalization in the act: detecting motivated reasoning before and after CoT via activation probing*. [arXiv:2603.17199](https://arxiv.org/abs/2603.17199) — 분야: cs.LG, cs.AI, cs.CL
+- Wenshuo Wang. *LLMs Should Not Yet Be Credited with Decision Explanation*. [arXiv:2605.01164](https://arxiv.org/abs/2605.01164) — 분야: cs.AI
+- Toshinori Yamauchi 외. *Zero-Shot Faithful Textual Explanations via Directional-Derivative Influence on Predictions*. [arXiv:2605.16877](https://arxiv.org/abs/2605.16877) — 분야: cs.CV
+- Laura R. Marusich 외. *Human Decision-Making with Persuasive and Narrative LLM Explanations*. [arXiv:2605.23867](https://arxiv.org/abs/2605.23867) — 분야: cs.HC, cs.AI
+- Jinghan Jia 외. *Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning*. [arXiv:2605.24286](https://arxiv.org/abs/2605.24286) — 분야: cs.LG, cs.CL
+- Xu Shen 외. *Detecting Unfaithful Chain-of-Thought via Circuit-Guided Internal-External Discrepancy*. [arXiv:2605.25603](https://arxiv.org/abs/2605.25603) — 분야: cs.AI
+- Kexin Chen 외. *Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing*. [arXiv:2606.17478](https://arxiv.org/abs/2606.17478) — 분야: cs.CL, cs.AI
+- Michal Moshkovitz 외. *Position: Explainability Research Must Prioritize Foundations over Ad-hoc Methods*. [arXiv:2607.14123](https://arxiv.org/abs/2607.14123) — 분야: cs.LG, cs.AI
+- Yeoktatt Cheah 외. *Training Large Language Models for Self-Explanation Faithfulness*. [arXiv:2607.21090](https://arxiv.org/abs/2607.21090) — 분야: cs.LG, cs.AI, cs.CL
+
 ## [2026-08-04] 안쪽을 옮겨 적는 통역사 — STATEWITNESS는 얼려 둔 모델의 활성화를 자연어로 번역하고, 그 번역을 검증할 자리는 비워 둔다
 
 - **중심**: Kexin Chen 외. *Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing*. [arXiv:2606.17478](https://arxiv.org/abs/2606.17478) — 분야: cs.CL, cs.AI

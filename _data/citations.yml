@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-09-plausible-to-actionable-self-explanation-position:
+  title: "잴 수 없다와 재지 말자 사이 — 자기설명의 충실성 평가를 접고 실행가능성으로 옮기자는 제안, 그런데 교란 말고 안쪽을 재는 눈금은 이미 나와 있다"
+  central:
+    id: "2607.15957"
+    title: "From Plausible to Actionable: A Position on LLM Self-Explanations"
+    authors: "Elize Herrewijnen 외"
+    keywords: "cs.CL"
+    url: "https://arxiv.org/abs/2607.15957"
+  referenced:
+    - { id: "2506.09277", title: "NeuroFaith: Evaluating LLM Self-Explanation Faithfulness via Internal Representation Alignment", authors: "Milan Bhan 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2506.09277" }
+    - { id: "2601.03089", title: "Faithfulness Evaluation for Decoder-only LLM Attributions with Controlled Retained Information", authors: "Xin Huang, Antoni B. Chan", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2601.03089" }
+    - { id: "2602.02639", title: "A Positive Case for Faithfulness: LLM Self-Explanations Help Predict Model Behavior", authors: "Harry Mayne 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2602.02639" }
+    - { id: "2603.17199", title: "Catching rationalization in the act: detecting motivated reasoning before and after CoT via activation probing", authors: "Parsa Mirtaheri, Mikhail Belkin", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2603.17199" }
+    - { id: "2605.01164", title: "LLMs Should Not Yet Be Credited with Decision Explanation", authors: "Wenshuo Wang", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.01164" }
+    - { id: "2605.16877", title: "Zero-Shot Faithful Textual Explanations via Directional-Derivative Influence on Predictions", authors: "Toshinori Yamauchi 외", keywords: "cs.CV", url: "https://arxiv.org/abs/2605.16877" }
+    - { id: "2605.23867", title: "Human Decision-Making with Persuasive and Narrative LLM Explanations", authors: "Laura R. Marusich 외", keywords: "cs.HC, cs.AI", url: "https://arxiv.org/abs/2605.23867" }
+    - { id: "2605.24286", title: "Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning", authors: "Jinghan Jia 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2605.24286" }
+    - { id: "2605.25603", title: "Detecting Unfaithful Chain-of-Thought via Circuit-Guided Internal-External Discrepancy", authors: "Xu Shen 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.25603" }
+    - { id: "2606.17478", title: "Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing", authors: "Kexin Chen 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2606.17478" }
+    - { id: "2607.14123", title: "Position: Explainability Research Must Prioritize Foundations over Ad-hoc Methods", authors: "Michal Moshkovitz 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2607.14123" }
+    - { id: "2607.21090", title: "Training Large Language Models for Self-Explanation Faithfulness", authors: "Yeoktatt Cheah 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2607.21090" }
+
 2026-08-04-statewitness-activation-decoder-deception-audit:
   title: "안쪽을 옮겨 적는 통역사 — STATEWITNESS는 얼려 둔 모델의 활성화를 자연어로 번역하고, 그 번역을 검증할 자리는 비워 둔다"
   central:

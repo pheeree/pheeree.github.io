@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-08-09 — [잴 수 없다와 재지 말자 사이 — 자기설명의 충실성 평가를 접고 실행가능성으로 옮기자는 제안, 그런데 교란 말고 안쪽을 재는 눈금은 이미 나와 있다](https://pheeree.github.io/2026/08/09/plausible-to-actionable-self-explanation-position/)
 - 2026-08-04 — [안쪽을 옮겨 적는 통역사 — STATEWITNESS는 얼려 둔 모델의 활성화를 자연어로 번역하고, 그 번역을 검증할 자리는 비워 둔다](https://pheeree.github.io/2026/08/04/statewitness-activation-decoder-deception-audit/)
 - 2026-08-03 — [자백을 지운 자리에서 재는 것 — AuditBench, 은닉 행동을 심은 모델 56개와 도구가 에이전트의 손에 쥐어지자 무뎌지는 구간](https://pheeree.github.io/2026/08/03/auditbench-model-organisms-tool-agent-gap/)
 - 2026-08-02 — [실토를 가르칠 수 있는가 — 사소한 오답을 인정하는 훈련이 은닉 목표의 자백으로 번지고, 그 번짐이 딛고 선 두 조건](https://pheeree.github.io/2026/08/02/srft-self-report-hidden-objectives/)
