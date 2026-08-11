@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-10] 정말 반대로 믿고 있나 — 믿음이 검증된 오거니즘 열세 개 위에서 거짓말 탐지기 셋이 무너지고, 살아남은 하나는 검증 절차가 미리 고른 쪽이었다
+
+- **중심**: Alan Cooney 외. *"Did you lie?" Evaluating Lie Detectors across Model Scale and Belief-Verified Model Organisms*. [arXiv:2606.12618](https://arxiv.org/abs/2606.12618) — 분야: cs.AI
+- Kieron Kretschmar 외. *Liars' Bench: Evaluating Lie Detectors for Language Models*. [arXiv:2511.16035](https://arxiv.org/abs/2511.16035) — 분야: cs.CL, cs.AI
+- Tom-Felix Berger. *Probing the Limits of the Lie Detector Approach to LLM Deception*. [arXiv:2603.10003](https://arxiv.org/abs/2603.10003) — 분야: cs.CL, cs.LG
+- Mohammed Abu Baker 외. *Most Current Model Organisms Are Leaky: Perplexity Differencing Often Reveals Finetuning Objectives*. [arXiv:2605.00994](https://arxiv.org/abs/2605.00994) — 분야: cs.CL, cs.AI
+- Reilly Haskins 외. *Training on Documents About Monitoring Leads to CoT Obfuscation*. [arXiv:2605.15257](https://arxiv.org/abs/2605.15257) — 분야: cs.LG
+- Sachin Kumar. *Pressure-Testing Deception Probes in LLMs: Scaling, Robustness, and the Geometry of Deceptive Representations*. [arXiv:2605.27958](https://arxiv.org/abs/2605.27958) — 분야: cs.CL, cs.AI, cs.LG
+- Andrzej Szablewski 외. *The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology*. [arXiv:2607.01033](https://arxiv.org/abs/2607.01033) — 분야: cs.LG
+- Shikhar Shiromani, Leo Richter. *A False Average: Chain-of-Thought Monitors Collapse Where They Are the Only Defense*. [arXiv:2608.00583](https://arxiv.org/abs/2608.00583) — 분야: cs.CR, cs.AI, cs.CL, cs.LG
+
 ## [2026-08-09] 잴 수 없다와 재지 말자 사이 — 자기설명의 충실성 평가를 접고 실행가능성으로 옮기자는 제안, 그런데 교란 말고 안쪽을 재는 눈금은 이미 나와 있다
 
 - **중심**: Elize Herrewijnen 외. *From Plausible to Actionable: A Position on LLM Self-Explanations*. [arXiv:2607.15957](https://arxiv.org/abs/2607.15957) — 분야: cs.CL

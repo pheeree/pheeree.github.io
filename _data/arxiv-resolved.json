@@ -8188,5 +8188,30 @@
    "cs.AI",
    "cs.CL"
   ]
+ },
+ "2511.16035": {
+  "title": "Liars' Bench: Evaluating Lie Detectors for Language Models",
+  "authors": [
+   "Kieron Kretschmar",
+   "Walter Laurito",
+   "Sharan Maiya",
+   "Samuel Marks"
+  ],
+  "published": "2025-11-20",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2603.10003": {
+  "title": "Probing the Limits of the Lie Detector Approach to LLM Deception",
+  "authors": [
+   "Tom-Felix Berger"
+  ],
+  "published": "2026-02-16",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
  }
 }
