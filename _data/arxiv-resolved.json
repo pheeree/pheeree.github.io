@@ -8213,5 +8213,84 @@
    "cs.CL",
    "cs.LG"
   ]
+ },
+ "2510.13900": {
+  "title": "Narrow Finetuning Leaves Clearly Readable Traces in Activation Differences",
+  "authors": [
+   "Julian Minder",
+   "Clément Dumas",
+   "Stewart Slocum",
+   "Helena Casademunt",
+   "Cameron Holmes",
+   "Robert West",
+   "Neel Nanda"
+  ],
+  "published": "2025-10-14",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2607.09053": {
+  "title": "An Emergent Mirage: Is Emergent Misalignment and Realignment Indeed a Robust Phenomenon?",
+  "authors": [
+   "Abhinav Rao",
+   "Liancheng Gong",
+   "Bin Hu",
+   "Atharva Naik"
+  ],
+  "published": "2026-07-10",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2506.19823": {
+  "title": "Persona Features Control Emergent Misalignment",
+  "authors": [
+   "Miles Wang",
+   "Tom Dupré la Tour",
+   "Olivia Watkins",
+   "Alex Makelov",
+   "Ryan A. Chi",
+   "Samuel Miserendino",
+   "Jeffrey Wang",
+   "Achyuta Rajaram",
+   "Johannes Heidecke",
+   "Tejal Patwardhan",
+   "Dan Mossing"
+  ],
+  "published": "2025-06-24",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2605.07324": {
+  "title": "Activation Differences Reveal Backdoors: A Comparison of SAE Architectures",
+  "authors": [
+   "Sachin Kumar"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.CR",
+   "cs.LG"
+  ]
+ },
+ "2503.04429": {
+  "title": "Activation Space Interventions Can Be Transferred Between Large Language Models",
+  "authors": [
+   "Narmeen Oozeer",
+   "Dhruv Nathawani",
+   "Nirmalendu Prakash",
+   "Michael Lan",
+   "Abir Harrasse",
+   "Amirali Abdullah"
+  ],
+  "published": "2025-03-06",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }

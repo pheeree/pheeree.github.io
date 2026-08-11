@@ -6,6 +6,18 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-11] 심은 방식이 읽히는 방식을 정한다 — 오거니즘 54개와 훈련 변이 일곱 갈래, 행동 강도를 맞춰 놓아도 해석가능성이 최대 스무 배로 갈린다
+
+- **중심**: Andrzej Szablewski 외. *The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology*. [arXiv:2607.01033](https://arxiv.org/abs/2607.01033) — 분야: cs.LG
+- Narmeen Oozeer 외. *Activation Space Interventions Can Be Transferred Between Large Language Models*. [arXiv:2503.04429](https://arxiv.org/abs/2503.04429) — 분야: cs.AI
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Miles Wang 외. *Persona Features Control Emergent Misalignment*. [arXiv:2506.19823](https://arxiv.org/abs/2506.19823) — 분야: cs.LG, cs.AI
+- Julian Minder 외. *Narrow Finetuning Leaves Clearly Readable Traces in Activation Differences*. [arXiv:2510.13900](https://arxiv.org/abs/2510.13900) — 분야: cs.CL, cs.AI
+- Abhay Sheshadri 외. *AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors*. [arXiv:2602.22755](https://arxiv.org/abs/2602.22755) — 분야: cs.CL
+- Mohammed Abu Baker 외. *Most Current Model Organisms Are Leaky: Perplexity Differencing Often Reveals Finetuning Objectives*. [arXiv:2605.00994](https://arxiv.org/abs/2605.00994) — 분야: cs.CL, cs.AI
+- Sachin Kumar. *Activation Differences Reveal Backdoors: A Comparison of SAE Architectures*. [arXiv:2605.07324](https://arxiv.org/abs/2605.07324) — 분야: cs.CL, cs.AI, cs.CR, cs.LG
+- Abhinav Rao 외. *An Emergent Mirage: Is Emergent Misalignment and Realignment Indeed a Robust Phenomenon?*. [arXiv:2607.09053](https://arxiv.org/abs/2607.09053) — 분야: cs.CL
+
 ## [2026-08-10] 정말 반대로 믿고 있나 — 믿음이 검증된 오거니즘 열세 개 위에서 거짓말 탐지기 셋이 무너지고, 살아남은 하나는 검증 절차가 미리 고른 쪽이었다
 
 - **중심**: Alan Cooney 외. *"Did you lie?" Evaluating Lie Detectors across Model Scale and Belief-Verified Model Organisms*. [arXiv:2606.12618](https://arxiv.org/abs/2606.12618) — 분야: cs.AI
