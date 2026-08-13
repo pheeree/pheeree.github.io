@@ -1,6 +1,25 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-13-self-explanation-faithfulness-counterfactual-reward:
+  title: "재는 자가 가르치는 자가 될 때 — 개입이 결정을 바꿨는지와 그것을 말했는지를 맞추는 보상, 그리고 라벨이 낡아 가는 동안"
+  central:
+    id: "2607.21090"
+    title: "Training Large Language Models for Self-Explanation Faithfulness"
+    authors: "Yeoktatt Cheah 외"
+    keywords: "cs.LG, cs.AI, cs.CL"
+    url: "https://arxiv.org/abs/2607.21090"
+  referenced:
+    - { id: "2407.14503", title: "Catastrophic Goodhart: regularizing RLHF with KL divergence does not mitigate heavy-tailed reward misspecification", authors: "Thomas Kwa 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2407.14503" }
+    - { id: "2503.11926", title: "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation", authors: "Bowen Baker 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.11926" }
+    - { id: "2506.09277", title: "NeuroFaith: Evaluating LLM Self-Explanation Faithfulness via Internal Representation Alignment", authors: "Milan Bhan 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2506.09277" }
+    - { id: "2506.22777", title: "Teaching Models to Verbalize Reward Hacking in Chain-of-Thought Reasoning", authors: "Miles Turpin 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2506.22777" }
+    - { id: "2601.11517", title: "Do explanations generalize across large reasoning models?", authors: "Koyena Pal 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2601.11517" }
+    - { id: "2602.02639", title: "A Positive Case for Faithfulness: LLM Self-Explanations Help Predict Model Behavior", authors: "Harry Mayne 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2602.02639" }
+    - { id: "2603.04069", title: "Monitoring Emergent Reward Hacking During Generation via Internal Activations", authors: "Patrick Wilhelm 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2603.04069" }
+    - { id: "2604.22074", title: "Outcome Rewards Do Not Guarantee Verifiable or Causally Important Reasoning", authors: "Qinan Yu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2604.22074" }
+    - { id: "2605.24286", title: "Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning", authors: "Jinghan Jia 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2605.24286" }
+
 2026-08-12-leaky-model-organisms-perplexity-differencing:
   title: "말하게 만들지 않고, 새는 것을 줍는다 — 무작위 세 토큰과 퍼플렉시티 차이가 오거니즘 76개의 파인튜닝 목적을 끌어올린 자리, 그리고 멈춰 선 두 칸"
   central:
@@ -13,13 +32,13 @@
     - { id: "2508.00943", title: "LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring", authors: "Chloe Li 외", keywords: "cs.CR, cs.AI", url: "https://arxiv.org/abs/2508.00943" }
     - { id: "2510.13900", title: "Narrow Finetuning Leaves Clearly Readable Traces in Activation Differences", authors: "Julian Minder 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2510.13900" }
     - { id: "2511.16035", title: "Liars' Bench: Evaluating Lie Detectors for Language Models", authors: "Kieron Kretschmar 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2511.16035" }
-    - { id: "2512.07810", url: "https://arxiv.org/abs/2512.07810" }
-    - { id: "2602.10371", url: "https://arxiv.org/abs/2602.10371" }
+    - { id: "2512.07810", title: "Auditing Games for Sandbagging", authors: "Jordan Taylor 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2512.07810" }
+    - { id: "2602.10371", title: "Simple LLM Baselines are Competitive for Model Diffing", authors: "Elias Kempf 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2602.10371" }
     - { id: "2602.22755", title: "AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors", authors: "Abhay Sheshadri 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2602.22755" }
     - { id: "2604.16812", title: "Introspection Adapters: Training LLMs to Report Their Learned Behaviors", authors: "Keshav Shenoy 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.16812" }
-    - { id: "2604.26206", url: "https://arxiv.org/abs/2604.26206" }
-    - { id: "2606.29646", url: "https://arxiv.org/abs/2606.29646" }
-    - { id: "2607.03640", url: "https://arxiv.org/abs/2607.03640" }
+    - { id: "2604.26206", title: "Option-Order Randomisation Reveals a Distributional Position Attractor in Prompted Sandbagging", authors: "Jon-Paul Cacioli", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2604.26206" }
+    - { id: "2606.29646", title: "Fuzzing Large Language Models to Elicit Hidden Behaviours", authors: "Mohammed Abu Baker, Lakshmi Babu-Saheer", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.29646" }
+    - { id: "2607.03640", title: "Revealing Hidden Model Behaviors with Task-Specific Self-Reports", authors: "Taras Kutsyk, Bartosz Zieliński", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2607.03640" }
 
 2026-08-11-model-organism-lottery-training-methodology:
   title: "심은 방식이 읽히는 방식을 정한다 — 오거니즘 54개와 훈련 변이 일곱 갈래, 행동 강도를 맞춰 놓아도 해석가능성이 최대 스무 배로 갈린다"

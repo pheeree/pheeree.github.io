@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-08-13 — [재는 자가 가르치는 자가 될 때 — 개입이 결정을 바꿨는지와 그것을 말했는지를 맞추는 보상, 그리고 라벨이 낡아 가는 동안](https://pheeree.github.io/2026/08/13/self-explanation-faithfulness-counterfactual-reward/)
 - 2026-08-12 — [말하게 만들지 않고, 새는 것을 줍는다 — 무작위 세 토큰과 퍼플렉시티 차이가 오거니즘 76개의 파인튜닝 목적을 끌어올린 자리, 그리고 멈춰 선 두 칸](https://pheeree.github.io/2026/08/12/leaky-model-organisms-perplexity-differencing/)
 - 2026-08-11 — [심은 방식이 읽히는 방식을 정한다 — 오거니즘 54개와 훈련 변이 일곱 갈래, 행동 강도를 맞춰 놓아도 해석가능성이 최대 스무 배로 갈린다](https://pheeree.github.io/2026/08/11/model-organism-lottery-training-methodology/)
 - 2026-08-10 — [정말 반대로 믿고 있나 — 믿음이 검증된 오거니즘 열세 개 위에서 거짓말 탐지기 셋이 무너지고, 살아남은 하나는 검증 절차가 미리 고른 쪽이었다](https://pheeree.github.io/2026/08/10/belief-verified-organisms-lie-detector-collapse/)

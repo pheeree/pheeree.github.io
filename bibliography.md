@@ -6,19 +6,32 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-13] 재는 자가 가르치는 자가 될 때 — 개입이 결정을 바꿨는지와 그것을 말했는지를 맞추는 보상, 그리고 라벨이 낡아 가는 동안
+
+- **중심**: Yeoktatt Cheah 외. *Training Large Language Models for Self-Explanation Faithfulness*. [arXiv:2607.21090](https://arxiv.org/abs/2607.21090) — 분야: cs.LG, cs.AI, cs.CL
+- Thomas Kwa 외. *Catastrophic Goodhart: regularizing RLHF with KL divergence does not mitigate heavy-tailed reward misspecification*. [arXiv:2407.14503](https://arxiv.org/abs/2407.14503) — 분야: cs.LG
+- Bowen Baker 외. *Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation*. [arXiv:2503.11926](https://arxiv.org/abs/2503.11926) — 분야: cs.AI
+- Milan Bhan 외. *NeuroFaith: Evaluating LLM Self-Explanation Faithfulness via Internal Representation Alignment*. [arXiv:2506.09277](https://arxiv.org/abs/2506.09277) — 분야: cs.CL
+- Miles Turpin 외. *Teaching Models to Verbalize Reward Hacking in Chain-of-Thought Reasoning*. [arXiv:2506.22777](https://arxiv.org/abs/2506.22777) — 분야: cs.CL, cs.AI
+- Koyena Pal 외. *Do explanations generalize across large reasoning models?*. [arXiv:2601.11517](https://arxiv.org/abs/2601.11517) — 분야: cs.CL, cs.AI
+- Harry Mayne 외. *A Positive Case for Faithfulness: LLM Self-Explanations Help Predict Model Behavior*. [arXiv:2602.02639](https://arxiv.org/abs/2602.02639) — 분야: cs.AI, cs.LG
+- Patrick Wilhelm 외. *Monitoring Emergent Reward Hacking During Generation via Internal Activations*. [arXiv:2603.04069](https://arxiv.org/abs/2603.04069) — 분야: cs.CL, cs.AI
+- Qinan Yu 외. *Outcome Rewards Do Not Guarantee Verifiable or Causally Important Reasoning*. [arXiv:2604.22074](https://arxiv.org/abs/2604.22074) — 분야: cs.CL
+- Jinghan Jia 외. *Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning*. [arXiv:2605.24286](https://arxiv.org/abs/2605.24286) — 분야: cs.LG, cs.CL
+
 ## [2026-08-12] 말하게 만들지 않고, 새는 것을 줍는다 — 무작위 세 토큰과 퍼플렉시티 차이가 오거니즘 76개의 파인튜닝 목적을 끌어올린 자리, 그리고 멈춰 선 두 칸
 
 - **중심**: Mohammed Abu Baker 외. *Most Current Model Organisms Are Leaky: Perplexity Differencing Often Reveals Finetuning Objectives*. [arXiv:2605.00994](https://arxiv.org/abs/2605.00994) — 분야: cs.CL, cs.AI
 - Chloe Li 외. *LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring*. [arXiv:2508.00943](https://arxiv.org/abs/2508.00943) — 분야: cs.CR, cs.AI
 - Julian Minder 외. *Narrow Finetuning Leaves Clearly Readable Traces in Activation Differences*. [arXiv:2510.13900](https://arxiv.org/abs/2510.13900) — 분야: cs.CL, cs.AI
 - Kieron Kretschmar 외. *Liars' Bench: Evaluating Lie Detectors for Language Models*. [arXiv:2511.16035](https://arxiv.org/abs/2511.16035) — 분야: cs.CL, cs.AI
-- [arXiv:2512.07810](https://arxiv.org/abs/2512.07810)
-- [arXiv:2602.10371](https://arxiv.org/abs/2602.10371)
+- Jordan Taylor 외. *Auditing Games for Sandbagging*. [arXiv:2512.07810](https://arxiv.org/abs/2512.07810) — 분야: cs.AI
+- Elias Kempf 외. *Simple LLM Baselines are Competitive for Model Diffing*. [arXiv:2602.10371](https://arxiv.org/abs/2602.10371) — 분야: cs.LG
 - Abhay Sheshadri 외. *AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors*. [arXiv:2602.22755](https://arxiv.org/abs/2602.22755) — 분야: cs.CL
 - Keshav Shenoy 외. *Introspection Adapters: Training LLMs to Report Their Learned Behaviors*. [arXiv:2604.16812](https://arxiv.org/abs/2604.16812) — 분야: cs.AI
-- [arXiv:2604.26206](https://arxiv.org/abs/2604.26206)
-- [arXiv:2606.29646](https://arxiv.org/abs/2606.29646)
-- [arXiv:2607.03640](https://arxiv.org/abs/2607.03640)
+- Jon-Paul Cacioli. *Option-Order Randomisation Reveals a Distributional Position Attractor in Prompted Sandbagging*. [arXiv:2604.26206](https://arxiv.org/abs/2604.26206) — 분야: cs.CL, cs.AI
+- Mohammed Abu Baker, Lakshmi Babu-Saheer. *Fuzzing Large Language Models to Elicit Hidden Behaviours*. [arXiv:2606.29646](https://arxiv.org/abs/2606.29646) — 분야: cs.LG, cs.AI
+- Taras Kutsyk, Bartosz Zieliński. *Revealing Hidden Model Behaviors with Task-Specific Self-Reports*. [arXiv:2607.03640](https://arxiv.org/abs/2607.03640) — 분야: cs.CL, cs.AI, cs.LG
 
 ## [2026-08-11] 심은 방식이 읽히는 방식을 정한다 — 오거니즘 54개와 훈련 변이 일곱 갈래, 행동 강도를 맞춰 놓아도 해석가능성이 최대 스무 배로 갈린다
 
