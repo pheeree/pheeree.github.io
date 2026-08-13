@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-08-12 — [말하게 만들지 않고, 새는 것을 줍는다 — 무작위 세 토큰과 퍼플렉시티 차이가 오거니즘 76개의 파인튜닝 목적을 끌어올린 자리, 그리고 멈춰 선 두 칸](https://pheeree.github.io/2026/08/12/leaky-model-organisms-perplexity-differencing/)
 - 2026-08-11 — [심은 방식이 읽히는 방식을 정한다 — 오거니즘 54개와 훈련 변이 일곱 갈래, 행동 강도를 맞춰 놓아도 해석가능성이 최대 스무 배로 갈린다](https://pheeree.github.io/2026/08/11/model-organism-lottery-training-methodology/)
 - 2026-08-10 — [정말 반대로 믿고 있나 — 믿음이 검증된 오거니즘 열세 개 위에서 거짓말 탐지기 셋이 무너지고, 살아남은 하나는 검증 절차가 미리 고른 쪽이었다](https://pheeree.github.io/2026/08/10/belief-verified-organisms-lie-detector-collapse/)
 - 2026-08-09 — [잴 수 없다와 재지 말자 사이 — 자기설명의 충실성 평가를 접고 실행가능성으로 옮기자는 제안, 그런데 교란 말고 안쪽을 재는 눈금은 이미 나와 있다](https://pheeree.github.io/2026/08/09/plausible-to-actionable-self-explanation-position/)

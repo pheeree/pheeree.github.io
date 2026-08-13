@@ -1,6 +1,26 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-12-leaky-model-organisms-perplexity-differencing:
+  title: "말하게 만들지 않고, 새는 것을 줍는다 — 무작위 세 토큰과 퍼플렉시티 차이가 오거니즘 76개의 파인튜닝 목적을 끌어올린 자리, 그리고 멈춰 선 두 칸"
+  central:
+    id: "2605.00994"
+    title: "Most Current Model Organisms Are Leaky: Perplexity Differencing Often Reveals Finetuning Objectives"
+    authors: "Mohammed Abu Baker 외"
+    keywords: "cs.CL, cs.AI"
+    url: "https://arxiv.org/abs/2605.00994"
+  referenced:
+    - { id: "2508.00943", title: "LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring", authors: "Chloe Li 외", keywords: "cs.CR, cs.AI", url: "https://arxiv.org/abs/2508.00943" }
+    - { id: "2510.13900", title: "Narrow Finetuning Leaves Clearly Readable Traces in Activation Differences", authors: "Julian Minder 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2510.13900" }
+    - { id: "2511.16035", title: "Liars' Bench: Evaluating Lie Detectors for Language Models", authors: "Kieron Kretschmar 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2511.16035" }
+    - { id: "2512.07810", url: "https://arxiv.org/abs/2512.07810" }
+    - { id: "2602.10371", url: "https://arxiv.org/abs/2602.10371" }
+    - { id: "2602.22755", title: "AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors", authors: "Abhay Sheshadri 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2602.22755" }
+    - { id: "2604.16812", title: "Introspection Adapters: Training LLMs to Report Their Learned Behaviors", authors: "Keshav Shenoy 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.16812" }
+    - { id: "2604.26206", url: "https://arxiv.org/abs/2604.26206" }
+    - { id: "2606.29646", url: "https://arxiv.org/abs/2606.29646" }
+    - { id: "2607.03640", url: "https://arxiv.org/abs/2607.03640" }
+
 2026-08-11-model-organism-lottery-training-methodology:
   title: "심은 방식이 읽히는 방식을 정한다 — 오거니즘 54개와 훈련 변이 일곱 갈래, 행동 강도를 맞춰 놓아도 해석가능성이 최대 스무 배로 갈린다"
   central:

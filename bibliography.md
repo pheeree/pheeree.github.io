@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-12] 말하게 만들지 않고, 새는 것을 줍는다 — 무작위 세 토큰과 퍼플렉시티 차이가 오거니즘 76개의 파인튜닝 목적을 끌어올린 자리, 그리고 멈춰 선 두 칸
+
+- **중심**: Mohammed Abu Baker 외. *Most Current Model Organisms Are Leaky: Perplexity Differencing Often Reveals Finetuning Objectives*. [arXiv:2605.00994](https://arxiv.org/abs/2605.00994) — 분야: cs.CL, cs.AI
+- Chloe Li 외. *LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring*. [arXiv:2508.00943](https://arxiv.org/abs/2508.00943) — 분야: cs.CR, cs.AI
+- Julian Minder 외. *Narrow Finetuning Leaves Clearly Readable Traces in Activation Differences*. [arXiv:2510.13900](https://arxiv.org/abs/2510.13900) — 분야: cs.CL, cs.AI
+- Kieron Kretschmar 외. *Liars' Bench: Evaluating Lie Detectors for Language Models*. [arXiv:2511.16035](https://arxiv.org/abs/2511.16035) — 분야: cs.CL, cs.AI
+- [arXiv:2512.07810](https://arxiv.org/abs/2512.07810)
+- [arXiv:2602.10371](https://arxiv.org/abs/2602.10371)
+- Abhay Sheshadri 외. *AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors*. [arXiv:2602.22755](https://arxiv.org/abs/2602.22755) — 분야: cs.CL
+- Keshav Shenoy 외. *Introspection Adapters: Training LLMs to Report Their Learned Behaviors*. [arXiv:2604.16812](https://arxiv.org/abs/2604.16812) — 분야: cs.AI
+- [arXiv:2604.26206](https://arxiv.org/abs/2604.26206)
+- [arXiv:2606.29646](https://arxiv.org/abs/2606.29646)
+- [arXiv:2607.03640](https://arxiv.org/abs/2607.03640)
+
 ## [2026-08-11] 심은 방식이 읽히는 방식을 정한다 — 오거니즘 54개와 훈련 변이 일곱 갈래, 행동 강도를 맞춰 놓아도 해석가능성이 최대 스무 배로 갈린다
 
 - **중심**: Andrzej Szablewski 외. *The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology*. [arXiv:2607.01033](https://arxiv.org/abs/2607.01033) — 분야: cs.LG
