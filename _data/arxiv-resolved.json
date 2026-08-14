@@ -8450,5 +8450,110 @@
    "cs.CL",
    "cs.AI"
   ]
+ },
+ "2605.18549": {
+  "title": "Monitoring the Internal Monologue: Probe Trajectories Reveal Reasoning Dynamics",
+  "authors": [
+   "Maciej Chrabąszcz",
+   "Aleksander Szymczyk",
+   "Marcin Sendera",
+   "Tomasz Trzciński",
+   "Sebastian Cygert"
+  ],
+  "published": "2026-05-18",
+  "categories": [
+   "cs.CL",
+   "cs.CR"
+  ]
+ },
+ "2503.13445": {
+  "title": "Verbosity Tradeoffs and the Impact of Scale on the Faithfulness of LLM Self-Explanations",
+  "authors": [
+   "Noah Y. Siegel",
+   "Nicolas Heess",
+   "Maria Perez-Ortiz",
+   "Oana-Maria Camburu"
+  ],
+  "published": "2025-03-17",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2505.05410": {
+  "title": "Reasoning Models Don't Always Say What They Think",
+  "authors": [
+   "Yanda Chen",
+   "Joe Benton",
+   "Ansh Radhakrishnan",
+   "Jonathan Uesato",
+   "Carson Denison",
+   "John Schulman",
+   "Arushi Somani",
+   "Peter Hase",
+   "Misha Wagner",
+   "Fabien Roger",
+   "Vlad Mikulik",
+   "Samuel R. Bowman",
+   "Jan Leike",
+   "Jared Kaplan",
+   "Ethan Perez"
+  ],
+  "published": "2025-05-08",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2603.20172": {
+  "title": "Measuring Faithfulness Depends on How You Measure: Classifier Sensitivity in LLM Chain-of-Thought Evaluation",
+  "authors": [
+   "Richard J. Young"
+  ],
+  "published": "2026-03-20",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2602.20710": {
+  "title": "Counterfactual Simulation Training for Chain-of-Thought Faithfulness",
+  "authors": [
+   "Peter Hase",
+   "Christopher Potts"
+  ],
+  "published": "2026-02-24",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2607.06648": {
+  "title": "Final Checkpoints Are Not Enough: Analyzing Latent Reasoning Faithfulness Along Training Trajectories",
+  "authors": [
+   "Hengyu Jin",
+   "Shu Yang",
+   "Di Wang"
+  ],
+  "published": "2026-07-07",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2512.23032": {
+  "title": "Is Chain-of-Thought Really Not Explainability? Chain-of-Thought Can Be Faithful without Hint Verbalization",
+  "authors": [
+   "Kerem Zaman",
+   "Shashank Srivastava"
+  ],
+  "published": "2025-12-28",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
  }
 }
