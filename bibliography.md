@@ -6,6 +6,21 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-14] 설명이 부른 개념이 안쪽에도 있는가 — 두 단계 추론의 중간 대상이 절반쯤 비어 있고, 충실성은 표상 공간에 선형으로 누워 있다
+
+- **중심**: Milan Bhan 외. *NeuroFaith: Evaluating LLM Self-Explanation Faithfulness via Internal Representation Alignment*. [arXiv:2506.09277](https://arxiv.org/abs/2506.09277) — 분야: cs.CL
+- Iván Arcuschin 외. *Chain-of-Thought Reasoning In The Wild Is Not Always Faithful*. [arXiv:2503.08679](https://arxiv.org/abs/2503.08679) — 분야: cs.AI, cs.CL, cs.LG
+- Noah Y. Siegel 외. *Verbosity Tradeoffs and the Impact of Scale on the Faithfulness of LLM Self-Explanations*. [arXiv:2503.13445](https://arxiv.org/abs/2503.13445) — 분야: cs.CL, cs.AI
+- Yanda Chen 외. *Reasoning Models Don't Always Say What They Think*. [arXiv:2505.05410](https://arxiv.org/abs/2505.05410) — 분야: cs.CL, cs.AI, cs.LG
+- Kerem Zaman, Shashank Srivastava. *Is Chain-of-Thought Really Not Explainability? Chain-of-Thought Can Be Faithful without Hint Verbalization*. [arXiv:2512.23032](https://arxiv.org/abs/2512.23032) — 분야: cs.CL, cs.AI, cs.LG
+- Harry Mayne 외. *A Positive Case for Faithfulness: LLM Self-Explanations Help Predict Model Behavior*. [arXiv:2602.02639](https://arxiv.org/abs/2602.02639) — 분야: cs.AI, cs.LG
+- Peter Hase, Christopher Potts. *Counterfactual Simulation Training for Chain-of-Thought Faithfulness*. [arXiv:2602.20710](https://arxiv.org/abs/2602.20710) — 분야: cs.AI, cs.CL
+- Richard J. Young. *Measuring Faithfulness Depends on How You Measure: Classifier Sensitivity in LLM Chain-of-Thought Evaluation*. [arXiv:2603.20172](https://arxiv.org/abs/2603.20172) — 분야: cs.CL, cs.AI, cs.LG
+- Wenshuo Wang. *LLM Reasoning Is Latent, Not the Chain of Thought*. [arXiv:2604.15726](https://arxiv.org/abs/2604.15726) — 분야: cs.AI
+- Maciej Chrabąszcz 외. *Monitoring the Internal Monologue: Probe Trajectories Reveal Reasoning Dynamics*. [arXiv:2605.18549](https://arxiv.org/abs/2605.18549) — 분야: cs.CL, cs.CR
+- Hengyu Jin 외. *Final Checkpoints Are Not Enough: Analyzing Latent Reasoning Faithfulness Along Training Trajectories*. [arXiv:2607.06648](https://arxiv.org/abs/2607.06648) — 분야: cs.LG, cs.CL
+- Yeoktatt Cheah 외. *Training Large Language Models for Self-Explanation Faithfulness*. [arXiv:2607.21090](https://arxiv.org/abs/2607.21090) — 분야: cs.LG, cs.AI, cs.CL
+
 ## [2026-08-13] 재는 자가 가르치는 자가 될 때 — 개입이 결정을 바꿨는지와 그것을 말했는지를 맞추는 보상, 그리고 라벨이 낡아 가는 동안
 
 - **중심**: Yeoktatt Cheah 외. *Training Large Language Models for Self-Explanation Faithfulness*. [arXiv:2607.21090](https://arxiv.org/abs/2607.21090) — 분야: cs.LG, cs.AI, cs.CL
