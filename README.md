@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-08-15 — [안에서 발견한 것을 바깥에 짓는다 — 전역 작업공간을 다중 에이전트로 옮긴 설계, 그리고 중앙 방송이 오히려 다양성을 깎는다는 반례](https://pheeree.github.io/2026/08/15/gwa-global-workspace-agents-broadcast-hub/)
 - 2026-08-14 — [설명이 부른 개념이 안쪽에도 있는가 — 두 단계 추론의 중간 대상이 절반쯤 비어 있고, 충실성은 표상 공간에 선형으로 누워 있다](https://pheeree.github.io/2026/08/14/neurofaith-internal-representation-alignment/)
 - 2026-08-13 — [재는 자가 가르치는 자가 될 때 — 개입이 결정을 바꿨는지와 그것을 말했는지를 맞추는 보상, 그리고 라벨이 낡아 가는 동안](https://pheeree.github.io/2026/08/13/self-explanation-faithfulness-counterfactual-reward/)
 - 2026-08-12 — [말하게 만들지 않고, 새는 것을 줍는다 — 무작위 세 토큰과 퍼플렉시티 차이가 오거니즘 76개의 파인튜닝 목적을 끌어올린 자리, 그리고 멈춰 선 두 칸](https://pheeree.github.io/2026/08/12/leaky-model-organisms-perplexity-differencing/)

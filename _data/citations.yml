@@ -1,6 +1,32 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-15-gwa-global-workspace-agents-broadcast-hub:
+  title: "안에서 발견한 것을 바깥에 짓는다 — 전역 작업공간을 다중 에이전트로 옮긴 설계, 그리고 중앙 방송이 오히려 다양성을 깎는다는 반례"
+  central:
+    id: "2604.08206"
+    title: "\"Theater of Mind\" for LLMs: A Cognitive Architecture Based on Global Workspace Theory"
+    authors: "Wenlong Shang"
+    keywords: "cs.MA"
+    url: "https://arxiv.org/abs/2604.08206"
+  referenced:
+    - { id: "1709.08568", title: "The Consciousness Prior", authors: "Yoshua Bengio", keywords: "cs.LG, cs.AI, stat.ML", url: "https://arxiv.org/abs/1709.08568" }
+    - { id: "2012.10390", title: "Deep Learning and the Global Workspace Theory", authors: "Rufin VanRullen, Ryota Kanai", keywords: "cs.AI, cs.NE, q-bio.NC", url: "https://arxiv.org/abs/2012.10390" }
+    - { id: "2103.01197", title: "Coordination Among Neural Modules Through a Shared Global Workspace", authors: "Anirudh Goyal 외", keywords: "cs.LG, cs.AI, stat.ML", url: "https://arxiv.org/abs/2103.01197" }
+    - { id: "2403.14541", title: "EDT: Improving Large Language Models' Generation by Entropy-based Dynamic Temperature Sampling", authors: "Shimao Zhang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2403.14541" }
+    - { id: "2509.05396", title: "Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate", authors: "Andrea Wynn 외", keywords: "cs.CL, cs.AI, cs.MA", url: "https://arxiv.org/abs/2509.05396" }
+    - { id: "2509.23055", title: "Peacemaker or Troublemaker: How Sycophancy Shapes Multi-Agent Debate", authors: "Binwei Yao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2509.23055" }
+    - { id: "2510.22954", title: "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)", authors: "Liwei Jiang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2510.22954" }
+    - { id: "2512.08296", title: "Towards a Science of Scaling Agent Systems", authors: "Yubin Kim 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2512.08296" }
+    - { id: "2602.03794", title: "Understanding Agent Scaling in LLM-Based Multi-Agent Systems via Diversity", authors: "Yingxuan Yang 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2602.03794" }
+    - { id: "2603.15371", title: "Brain-Inspired Graph Multi-Agent Systems for LLM Reasoning", authors: "Guangfu Hao 외", keywords: "cs.AI, cs.NI", url: "https://arxiv.org/abs/2603.15371" }
+    - { id: "2604.02668", title: "Too Polite to Disagree: Understanding Sycophancy Propagation in Multi-Agent Systems", authors: "Vira Kasprova 외", keywords: "cs.CL, cs.AI, cs.MA", url: "https://arxiv.org/abs/2604.02668" }
+    - { id: "2604.18005", title: "Diversity Collapse in Multi-Agent LLM Systems: Structural Coupling and Collective Failure in Open-Ended Idea Generation", authors: "Nuo Chen 외", keywords: "cs.MA, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.18005" }
+    - { id: "2605.04097", title: "CTM-AI: A Blueprint for General AI Inspired by a Model of Consciousness", authors: "Haofei Yu 외", keywords: "q-bio.NC, cs.AI", url: "https://arxiv.org/abs/2605.04097" }
+    - { id: "2606.01351", title: "Recognize Your Orchestrator: An Entropy Dynamics Perspective for LLM Multi-Agent Systems", authors: "Junze Zhu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.01351" }
+    - { id: "2606.08068", title: "DICE: Entropy-Regularized Equilibrium Selection for Stable Multi-Agent LLM Coordination", authors: "Yi Xie 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.08068" }
+    - { id: "2607.15495", title: "Verbalizable Representations Form a Global Workspace in Language Models", authors: "Wes Gurnee 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2607.15495" }
+
 2026-08-14-neurofaith-internal-representation-alignment:
   title: "설명이 부른 개념이 안쪽에도 있는가 — 두 단계 추론의 중간 대상이 절반쯤 비어 있고, 충실성은 표상 공간에 선형으로 누워 있다"
   central:

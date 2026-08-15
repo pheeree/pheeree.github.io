@@ -8557,63 +8557,174 @@
   ]
  },
  "2606.08068": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "DICE: Entropy-Regularized Equilibrium Selection for Stable Multi-Agent LLM Coordination",
+  "authors": [
+   "Yi Xie",
+   "Zhanke Zhou",
+   "Chentao Cao",
+   "Bo Liu",
+   "Bo Han"
+  ],
+  "published": "2026-06-06",
+  "categories": [
+   "cs.LG"
+  ]
  },
  "2509.23055": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Peacemaker or Troublemaker: How Sycophancy Shapes Multi-Agent Debate",
+  "authors": [
+   "Binwei Yao",
+   "Chao Shang",
+   "Wanyu Du",
+   "Jianfeng He",
+   "Ruixue Lian",
+   "Yi Zhang",
+   "Hang Su",
+   "Sandesh Swamy",
+   "Yanjun Qi"
+  ],
+  "published": "2025-09-27",
+  "categories": [
+   "cs.CL"
+  ]
  },
  "2403.14541": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "EDT: Improving Large Language Models' Generation by Entropy-based Dynamic Temperature Sampling",
+  "authors": [
+   "Shimao Zhang",
+   "Yu Bao",
+   "Shujian Huang"
+  ],
+  "published": "2024-03-21",
+  "categories": [
+   "cs.CL"
+  ]
  },
  "2605.04097": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "CTM-AI: A Blueprint for General AI Inspired by a Model of Consciousness",
+  "authors": [
+   "Haofei Yu",
+   "Yining Zhao",
+   "Lenore Blum",
+   "Manuel Blum",
+   "Paul Pu Liang"
+  ],
+  "published": "2026-04-30",
+  "categories": [
+   "q-bio.NC",
+   "cs.AI"
+  ]
  },
  "2606.01351": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Recognize Your Orchestrator: An Entropy Dynamics Perspective for LLM Multi-Agent Systems",
+  "authors": [
+   "Junze Zhu",
+   "Weihao Chen",
+   "Xuanwang Zhang",
+   "Zhen Wu",
+   "Xinyu Dai"
+  ],
+  "published": "2026-05-31",
+  "categories": [
+   "cs.AI"
+  ]
  },
  "2603.15371": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Brain-Inspired Graph Multi-Agent Systems for LLM Reasoning",
+  "authors": [
+   "Guangfu Hao",
+   "Yuming Dai",
+   "Xianzhe Qin",
+   "Shan Yu"
+  ],
+  "published": "2026-03-16",
+  "categories": [
+   "cs.AI",
+   "cs.NI"
+  ]
  },
  "2604.02668": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Too Polite to Disagree: Understanding Sycophancy Propagation in Multi-Agent Systems",
+  "authors": [
+   "Vira Kasprova",
+   "Amruta Parulekar",
+   "Abdulrahman AlRabah",
+   "Krishna Agaram",
+   "Ritwik Garg",
+   "Sagar Jha",
+   "Nimet Beyza Bozdag",
+   "Dilek Hakkani-Tur"
+  ],
+  "published": "2026-04-03",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.MA"
+  ]
  },
  "1709.08568": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "The Consciousness Prior",
+  "authors": [
+   "Yoshua Bengio"
+  ],
+  "published": "2017-09-25",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "stat.ML"
+  ]
  },
  "2103.01197": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Coordination Among Neural Modules Through a Shared Global Workspace",
+  "authors": [
+   "Anirudh Goyal",
+   "Aniket Didolkar",
+   "Alex Lamb",
+   "Kartikeya Badola",
+   "Nan Rosemary Ke",
+   "Nasim Rahaman",
+   "Jonathan Binas",
+   "Charles Blundell",
+   "Michael Mozer",
+   "Yoshua Bengio"
+  ],
+  "published": "2021-03-01",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "stat.ML"
+  ]
  },
  "2012.10390": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Deep Learning and the Global Workspace Theory",
+  "authors": [
+   "Rufin VanRullen",
+   "Ryota Kanai"
+  ],
+  "published": "2020-12-04",
+  "categories": [
+   "cs.AI",
+   "cs.NE",
+   "q-bio.NC"
+  ]
+ },
+ "2604.18005": {
+  "title": "Diversity Collapse in Multi-Agent LLM Systems: Structural Coupling and Collective Failure in Open-Ended Idea Generation",
+  "authors": [
+   "Nuo Chen",
+   "Yicheng Tong",
+   "Yuzhe Yang",
+   "Yufei He",
+   "Xueyi Zhang",
+   "Qingyun Zou",
+   "Qian Wang",
+   "Bingsheng He"
+  ],
+  "published": "2026-04-20",
+  "categories": [
+   "cs.MA",
+   "cs.AI",
+   "cs.CL"
+  ]
  }
 }

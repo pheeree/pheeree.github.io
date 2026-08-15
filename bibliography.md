@@ -6,6 +6,26 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-15] 안에서 발견한 것을 바깥에 짓는다 — 전역 작업공간을 다중 에이전트로 옮긴 설계, 그리고 중앙 방송이 오히려 다양성을 깎는다는 반례
+
+- **중심**: Wenlong Shang. *"Theater of Mind" for LLMs: A Cognitive Architecture Based on Global Workspace Theory*. [arXiv:2604.08206](https://arxiv.org/abs/2604.08206) — 분야: cs.MA
+- Yoshua Bengio. *The Consciousness Prior*. [arXiv:1709.08568](https://arxiv.org/abs/1709.08568) — 분야: cs.LG, cs.AI, stat.ML
+- Rufin VanRullen, Ryota Kanai. *Deep Learning and the Global Workspace Theory*. [arXiv:2012.10390](https://arxiv.org/abs/2012.10390) — 분야: cs.AI, cs.NE, q-bio.NC
+- Anirudh Goyal 외. *Coordination Among Neural Modules Through a Shared Global Workspace*. [arXiv:2103.01197](https://arxiv.org/abs/2103.01197) — 분야: cs.LG, cs.AI, stat.ML
+- Shimao Zhang 외. *EDT: Improving Large Language Models' Generation by Entropy-based Dynamic Temperature Sampling*. [arXiv:2403.14541](https://arxiv.org/abs/2403.14541) — 분야: cs.CL
+- Andrea Wynn 외. *Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate*. [arXiv:2509.05396](https://arxiv.org/abs/2509.05396) — 분야: cs.CL, cs.AI, cs.MA
+- Binwei Yao 외. *Peacemaker or Troublemaker: How Sycophancy Shapes Multi-Agent Debate*. [arXiv:2509.23055](https://arxiv.org/abs/2509.23055) — 분야: cs.CL
+- Liwei Jiang 외. *Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)*. [arXiv:2510.22954](https://arxiv.org/abs/2510.22954) — 분야: cs.CL
+- Yubin Kim 외. *Towards a Science of Scaling Agent Systems*. [arXiv:2512.08296](https://arxiv.org/abs/2512.08296) — 분야: cs.AI
+- Yingxuan Yang 외. *Understanding Agent Scaling in LLM-Based Multi-Agent Systems via Diversity*. [arXiv:2602.03794](https://arxiv.org/abs/2602.03794) — 분야: cs.AI, cs.LG
+- Guangfu Hao 외. *Brain-Inspired Graph Multi-Agent Systems for LLM Reasoning*. [arXiv:2603.15371](https://arxiv.org/abs/2603.15371) — 분야: cs.AI, cs.NI
+- Vira Kasprova 외. *Too Polite to Disagree: Understanding Sycophancy Propagation in Multi-Agent Systems*. [arXiv:2604.02668](https://arxiv.org/abs/2604.02668) — 분야: cs.CL, cs.AI, cs.MA
+- Nuo Chen 외. *Diversity Collapse in Multi-Agent LLM Systems: Structural Coupling and Collective Failure in Open-Ended Idea Generation*. [arXiv:2604.18005](https://arxiv.org/abs/2604.18005) — 분야: cs.MA, cs.AI, cs.CL
+- Haofei Yu 외. *CTM-AI: A Blueprint for General AI Inspired by a Model of Consciousness*. [arXiv:2605.04097](https://arxiv.org/abs/2605.04097) — 분야: q-bio.NC, cs.AI
+- Junze Zhu 외. *Recognize Your Orchestrator: An Entropy Dynamics Perspective for LLM Multi-Agent Systems*. [arXiv:2606.01351](https://arxiv.org/abs/2606.01351) — 분야: cs.AI
+- Yi Xie 외. *DICE: Entropy-Regularized Equilibrium Selection for Stable Multi-Agent LLM Coordination*. [arXiv:2606.08068](https://arxiv.org/abs/2606.08068) — 분야: cs.LG
+- Wes Gurnee 외. *Verbalizable Representations Form a Global Workspace in Language Models*. [arXiv:2607.15495](https://arxiv.org/abs/2607.15495) — 분야: cs.CL, cs.AI, cs.LG
+
 ## [2026-08-14] 설명이 부른 개념이 안쪽에도 있는가 — 두 단계 추론의 중간 대상이 절반쯤 비어 있고, 충실성은 표상 공간에 선형으로 누워 있다
 
 - **중심**: Milan Bhan 외. *NeuroFaith: Evaluating LLM Self-Explanation Faithfulness via Internal Representation Alignment*. [arXiv:2506.09277](https://arxiv.org/abs/2506.09277) — 분야: cs.CL
