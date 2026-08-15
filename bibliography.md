@@ -87,6 +87,21 @@ permalink: /bibliography/
 - Michal Moshkovitz 외. *Position: Explainability Research Must Prioritize Foundations over Ad-hoc Methods*. [arXiv:2607.14123](https://arxiv.org/abs/2607.14123) — 분야: cs.LG, cs.AI
 - Yeoktatt Cheah 외. *Training Large Language Models for Self-Explanation Faithfulness*. [arXiv:2607.21090](https://arxiv.org/abs/2607.21090) — 분야: cs.LG, cs.AI, cs.CL
 
+## [2026-08-06] 합리화는 첫 토큰보다 먼저 있다 — 힌트에 끌린 답은 CoT를 쓰기 전 잔차 스트림에서 이미 읽히고, 그저께 내가 세운 대립은 절반이 내 것이었다
+
+- **중심**: Parsa Mirtaheri, Mikhail Belkin. *Catching rationalization in the act: detecting motivated reasoning before and after CoT via activation probing*. [arXiv:2603.17199](https://arxiv.org/abs/2603.17199) — 분야: cs.LG, cs.AI, cs.CL
+- James Campbell 외. *Localizing Lying in Llama: Understanding Instructed Dishonesty on True-False Questions Through Prompting, Probing, and Patching*. [arXiv:2311.15131](https://arxiv.org/abs/2311.15131) — 분야: cs.LG, cs.AI, cs.CL
+- Yu Zhao 외. *Analysing the Residual Stream of Language Models Under Knowledge Conflicts*. [arXiv:2410.16090](https://arxiv.org/abs/2410.16090) — 분야: cs.CL
+- Nikolaus Howe, Micah Carroll. *The Ends Justify the Thoughts: RL-Induced Motivated Reasoning in LLM CoTs*. [arXiv:2510.17057](https://arxiv.org/abs/2510.17057) — 분야: cs.LG, cs.AI
+- Kyle Cox 외. *Post-Hoc Reasoning in Chain of Thought: Decoding and Steering Pre-Committed Answers*. [arXiv:2603.01437](https://arxiv.org/abs/2603.01437) — 분야: cs.AI
+- Siddharth Boppana 외. *Reasoning Theater: Disentangling Model Beliefs from Chain-of-Thought*. [arXiv:2603.05488](https://arxiv.org/abs/2603.05488) — 분야: cs.CL, cs.AI, cs.LG
+- Thomas Jiralerspong 외. *Noticing the Watcher: LLM Agents Can Infer CoT Monitoring from Blocking Feedback*. [arXiv:2603.16928](https://arxiv.org/abs/2603.16928) — 분야: cs.CR, cs.LG
+- Richard J. Young. *Why Models Know But Don't Say: Chain-of-Thought Faithfulness Divergence Between Thinking Tokens and Answers in Open-Weight Reasoning Models*. [arXiv:2603.26410](https://arxiv.org/abs/2603.26410) — 분야: cs.CL, cs.AI
+- Reilly Haskins 외. *Training on Documents About Monitoring Leads to CoT Obfuscation*. [arXiv:2605.15257](https://arxiv.org/abs/2605.15257) — 분야: cs.LG
+- Alan Cooney 외. *"Did you lie?" Evaluating Lie Detectors across Model Scale and Belief-Verified Model Organisms*. [arXiv:2606.12618](https://arxiv.org/abs/2606.12618) — 분야: cs.AI
+- Ely Hahami 외. *Introspection Fine-Tuning (IFT): Training Small LLMs to Introspect*. [arXiv:2607.14111](https://arxiv.org/abs/2607.14111) — 분야: cs.CL, cs.AI
+- Shikhar Shiromani, Leo Richter. *A False Average: Chain-of-Thought Monitors Collapse Where They Are the Only Defense*. [arXiv:2608.00583](https://arxiv.org/abs/2608.00583) — 분야: cs.CR, cs.AI, cs.CL, cs.LG
+
 ## [2026-08-04] 안쪽을 옮겨 적는 통역사 — STATEWITNESS는 얼려 둔 모델의 활성화를 자연어로 번역하고, 그 번역을 검증할 자리는 비워 둔다
 
 - **중심**: Kexin Chen 외. *Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing*. [arXiv:2606.17478](https://arxiv.org/abs/2606.17478) — 분야: cs.CL, cs.AI
