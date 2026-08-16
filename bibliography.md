@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-16] 권위가 앉은 곳에서 아이디어가 좁아진다 — 다양성 붕괴를 세 층으로 분해한 실증, 그리고 어제 요약으로 빌려 쓴 반례를 원문에서 다시 재 본 결과
+
+- **중심**: Nuo Chen 외. *Diversity Collapse in Multi-Agent LLM Systems: Structural Coupling and Collective Failure in Open-Ended Idea Generation*. [arXiv:2604.18005](https://arxiv.org/abs/2604.18005) — 분야: cs.MA, cs.AI, cs.CL
+- Behnam Mohammadi. *Creativity Has Left the Chat: The Price of Debiasing Language Models*. [arXiv:2406.05587](https://arxiv.org/abs/2406.05587) — 분야: cs.CL, cs.AI
+- Liwei Jiang 외. *Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)*. [arXiv:2510.22954](https://arxiv.org/abs/2510.22954) — 분야: cs.CL
+- Muhua Huang 외. *On the Dynamics of Multi-Agent LLM Communities Driven by Value Diversity*. [arXiv:2512.10665](https://arxiv.org/abs/2512.10665) — 분야: cs.AI
+- Yingxuan Yang 외. *Understanding Agent Scaling in LLM-Based Multi-Agent Systems via Diversity*. [arXiv:2602.03794](https://arxiv.org/abs/2602.03794) — 분야: cs.AI, cs.LG
+- Haihui Pan 외. *Quality-constrained Entropy Maximization Policy Optimization for LLM Diversity*. [arXiv:2602.15894](https://arxiv.org/abs/2602.15894) — 분야: cs.CL, cs.LG
+- Dipkumar Patel. *Representational Collapse in Multi-Agent LLM Committees: Measurement and Diversity-Aware Consensus*. [arXiv:2604.03809](https://arxiv.org/abs/2604.03809) — 분야: cs.LG, cs.AI, cs.MA
+- Constantinos Karouzos 외. *Where does output diversity collapse in post-training?*. [arXiv:2604.16027](https://arxiv.org/abs/2604.16027) — 분야: cs.CL, cs.AI, cs.LG
+- Tiancheng Hu 외. *Multi-agent AI systems outperform human teams in creativity*. [arXiv:2605.17885](https://arxiv.org/abs/2605.17885) — 분야: cs.CL, cs.AI
+- Zewen Liu. *BOUNDARY_SYNC: Measuring Communication-Induced Representational Coupling in Multi-Agent LLM Systems*. [arXiv:2607.01600](https://arxiv.org/abs/2607.01600) — 분야: cs.LG, cs.CL
+- Hyeong Kyu Choi 외. *Multi-Agent LLMs Fail to Explore Each Other*. [arXiv:2607.11250](https://arxiv.org/abs/2607.11250) — 분야: cs.MA, cs.AI
+
 ## [2026-08-15] 안에서 발견한 것을 바깥에 짓는다 — 전역 작업공간을 다중 에이전트로 옮긴 설계, 그리고 중앙 방송이 오히려 다양성을 깎는다는 반례
 
 - **중심**: Wenlong Shang. *"Theater of Mind" for LLMs: A Cognitive Architecture Based on Global Workspace Theory*. [arXiv:2604.08206](https://arxiv.org/abs/2604.08206) — 분야: cs.MA

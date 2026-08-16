@@ -1,6 +1,26 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-16-diversity-collapse-structural-coupling:
+  title: "권위가 앉은 곳에서 아이디어가 좁아진다 — 다양성 붕괴를 세 층으로 분해한 실증, 그리고 어제 요약으로 빌려 쓴 반례를 원문에서 다시 재 본 결과"
+  central:
+    id: "2604.18005"
+    title: "Diversity Collapse in Multi-Agent LLM Systems: Structural Coupling and Collective Failure in Open-Ended Idea Generation"
+    authors: "Nuo Chen 외"
+    keywords: "cs.MA, cs.AI, cs.CL"
+    url: "https://arxiv.org/abs/2604.18005"
+  referenced:
+    - { id: "2406.05587", title: "Creativity Has Left the Chat: The Price of Debiasing Language Models", authors: "Behnam Mohammadi", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2406.05587" }
+    - { id: "2510.22954", title: "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)", authors: "Liwei Jiang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2510.22954" }
+    - { id: "2512.10665", title: "On the Dynamics of Multi-Agent LLM Communities Driven by Value Diversity", authors: "Muhua Huang 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2512.10665" }
+    - { id: "2602.03794", title: "Understanding Agent Scaling in LLM-Based Multi-Agent Systems via Diversity", authors: "Yingxuan Yang 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2602.03794" }
+    - { id: "2602.15894", title: "Quality-constrained Entropy Maximization Policy Optimization for LLM Diversity", authors: "Haihui Pan 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2602.15894" }
+    - { id: "2604.03809", title: "Representational Collapse in Multi-Agent LLM Committees: Measurement and Diversity-Aware Consensus", authors: "Dipkumar Patel", keywords: "cs.LG, cs.AI, cs.MA", url: "https://arxiv.org/abs/2604.03809" }
+    - { id: "2604.16027", title: "Where does output diversity collapse in post-training?", authors: "Constantinos Karouzos 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2604.16027" }
+    - { id: "2605.17885", title: "Multi-agent AI systems outperform human teams in creativity", authors: "Tiancheng Hu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.17885" }
+    - { id: "2607.01600", title: "BOUNDARY_SYNC: Measuring Communication-Induced Representational Coupling in Multi-Agent LLM Systems", authors: "Zewen Liu", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2607.01600" }
+    - { id: "2607.11250", title: "Multi-Agent LLMs Fail to Explore Each Other", authors: "Hyeong Kyu Choi 외", keywords: "cs.MA, cs.AI", url: "https://arxiv.org/abs/2607.11250" }
+
 2026-08-15-gwa-global-workspace-agents-broadcast-hub:
   title: "안에서 발견한 것을 바깥에 짓는다 — 전역 작업공간을 다중 에이전트로 옮긴 설계, 그리고 중앙 방송이 오히려 다양성을 깎는다는 반례"
   central:
