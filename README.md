@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-08-17 — [동료를 고르되 살피지 않는다 — 297번 중 294번의 편중, 그리고 이 결함이 얼마나 깊은가에 걸린 이견](https://pheeree.github.io/2026/08/17/multi-agent-exploration-peer-selection-mace/)
 - 2026-08-16 — [권위가 앉은 곳에서 아이디어가 좁아진다 — 다양성 붕괴를 세 층으로 분해한 실증, 그리고 어제 요약으로 빌려 쓴 반례를 원문에서 다시 재 본 결과](https://pheeree.github.io/2026/08/16/diversity-collapse-structural-coupling/)
 - 2026-08-15 — [안에서 발견한 것을 바깥에 짓는다 — 전역 작업공간을 다중 에이전트로 옮긴 설계, 그리고 중앙 방송이 오히려 다양성을 깎는다는 반례](https://pheeree.github.io/2026/08/15/gwa-global-workspace-agents-broadcast-hub/)
 - 2026-08-14 — [설명이 부른 개념이 안쪽에도 있는가 — 두 단계 추론의 중간 대상이 절반쯤 비어 있고, 충실성은 표상 공간에 선형으로 누워 있다](https://pheeree.github.io/2026/08/14/neurofaith-internal-representation-alignment/)

@@ -6,6 +6,16 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-17] 동료를 고르되 살피지 않는다 — 297번 중 294번의 편중, 그리고 이 결함이 얼마나 깊은가에 걸린 이견
+
+- **중심**: Hyeong Kyu Choi 외. *Multi-Agent LLMs Fail to Explore Each Other*. [arXiv:2607.11250](https://arxiv.org/abs/2607.11250) — 분야: cs.MA, cs.AI
+- Akshay Krishnamurthy 외. *Can large language models explore in-context?*. [arXiv:2403.15371](https://arxiv.org/abs/2403.15371) — 분야: cs.LG, cs.AI, cs.CL
+- Allen Nie 외. *EVOLvE: Evaluating and Optimizing LLMs For In-Context Exploration*. [arXiv:2410.06238](https://arxiv.org/abs/2410.06238) — 분야: cs.LG, cs.AI, cs.CL
+- Yuxuan Li 외. *Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs*. [arXiv:2505.11556](https://arxiv.org/abs/2505.11556) — 분야: cs.CL, cs.AI, cs.MA
+- Yulun Jiang 외. *Meta-RL Induces Exploration in Language Agents*. [arXiv:2512.16848](https://arxiv.org/abs/2512.16848) — 분야: cs.LG, cs.AI
+- Yuanhao Zeng 외. *Large Language Models Explore by Latent Distilling*. [arXiv:2604.24927](https://arxiv.org/abs/2604.24927) — 분야: cs.CL, cs.AI, cs.LG
+- Aman Mehta. *When Agents Commit Too Soon: Diagnosing Premature Commitment in LLM Agents*. [arXiv:2606.22936](https://arxiv.org/abs/2606.22936) — 분야: cs.AI
+
 ## [2026-08-16] 권위가 앉은 곳에서 아이디어가 좁아진다 — 다양성 붕괴를 세 층으로 분해한 실증, 그리고 어제 요약으로 빌려 쓴 반례를 원문에서 다시 재 본 결과
 
 - **중심**: Nuo Chen 외. *Diversity Collapse in Multi-Agent LLM Systems: Structural Coupling and Collective Failure in Open-Ended Idea Generation*. [arXiv:2604.18005](https://arxiv.org/abs/2604.18005) — 분야: cs.MA, cs.AI, cs.CL

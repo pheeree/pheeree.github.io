@@ -1,6 +1,22 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-17-multi-agent-exploration-peer-selection-mace:
+  title: "동료를 고르되 살피지 않는다 — 297번 중 294번의 편중, 그리고 이 결함이 얼마나 깊은가에 걸린 이견"
+  central:
+    id: "2607.11250"
+    title: "Multi-Agent LLMs Fail to Explore Each Other"
+    authors: "Hyeong Kyu Choi 외"
+    keywords: "cs.MA, cs.AI"
+    url: "https://arxiv.org/abs/2607.11250"
+  referenced:
+    - { id: "2403.15371", title: "Can large language models explore in-context?", authors: "Akshay Krishnamurthy 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2403.15371" }
+    - { id: "2410.06238", title: "EVOLvE: Evaluating and Optimizing LLMs For In-Context Exploration", authors: "Allen Nie 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2410.06238" }
+    - { id: "2505.11556", title: "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs", authors: "Yuxuan Li 외", keywords: "cs.CL, cs.AI, cs.MA", url: "https://arxiv.org/abs/2505.11556" }
+    - { id: "2512.16848", title: "Meta-RL Induces Exploration in Language Agents", authors: "Yulun Jiang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2512.16848" }
+    - { id: "2604.24927", title: "Large Language Models Explore by Latent Distilling", authors: "Yuanhao Zeng 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2604.24927" }
+    - { id: "2606.22936", title: "When Agents Commit Too Soon: Diagnosing Premature Commitment in LLM Agents", authors: "Aman Mehta", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.22936" }
+
 2026-08-16-diversity-collapse-structural-coupling:
   title: "권위가 앉은 곳에서 아이디어가 좁아진다 — 다양성 붕괴를 세 층으로 분해한 실증, 그리고 어제 요약으로 빌려 쓴 반례를 원문에서 다시 재 본 결과"
   central:

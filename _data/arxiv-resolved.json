@@ -8837,5 +8837,81 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2512.16848": {
+  "title": "Meta-RL Induces Exploration in Language Agents",
+  "authors": [
+   "Yulun Jiang",
+   "Liangze Jiang",
+   "Damien Teney",
+   "Michael Moor",
+   "Maria Brbic"
+  ],
+  "published": "2025-12-18",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2604.24927": {
+  "title": "Large Language Models Explore by Latent Distilling",
+  "authors": [
+   "Yuanhao Zeng",
+   "Ao Lu",
+   "Lufei Li",
+   "Zheng Zhang",
+   "Yexin Li",
+   "Kan Ren"
+  ],
+  "published": "2026-04-27",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2606.22936": {
+  "title": "When Agents Commit Too Soon: Diagnosing Premature Commitment in LLM Agents",
+  "authors": [
+   "Aman Mehta"
+  ],
+  "published": "2026-06-22",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2403.15371": {
+  "title": "Can large language models explore in-context?",
+  "authors": [
+   "Akshay Krishnamurthy",
+   "Keegan Harris",
+   "Dylan J. Foster",
+   "Cyril Zhang",
+   "Aleksandrs Slivkins"
+  ],
+  "published": "2024-03-22",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2410.06238": {
+  "title": "EVOLvE: Evaluating and Optimizing LLMs For In-Context Exploration",
+  "authors": [
+   "Allen Nie",
+   "Yi Su",
+   "Bo Chang",
+   "Jonathan N. Lee",
+   "Ed H. Chi",
+   "Quoc V. Le",
+   "Minmin Chen"
+  ],
+  "published": "2024-10-08",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  }
 }
