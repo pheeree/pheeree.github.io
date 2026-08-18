@@ -6,6 +6,21 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-18] 안팎이라 부르지만 둘 다 안쪽이에요 — 회로 그래프와 은닉상태 그래프 사이의 최적수송 거리, 그리고 나흘 전 요약이 비워 둔 한 칸
+
+- **중심**: Xu Shen 외. *Detecting Unfaithful Chain-of-Thought via Circuit-Guided Internal-External Discrepancy*. [arXiv:2605.25603](https://arxiv.org/abs/2605.25603) — 분야: cs.AI
+- Oliver Bentham 외. *Chain-of-Thought Unfaithfulness as Disguised Accuracy*. [arXiv:2402.14897](https://arxiv.org/abs/2402.14897) — 분야: cs.CL, cs.AI, cs.LG
+- Joseph Miller 외. *Transformer Circuit Faithfulness Metrics are not Robust*. [arXiv:2407.08734](https://arxiv.org/abs/2407.08734) — 분야: cs.LG, cs.AI, cs.CL
+- Lovis Heindrich 외. *Do Sparse Autoencoders Generalize? A Case Study of Answerability*. [arXiv:2502.19964](https://arxiv.org/abs/2502.19964) — 분야: cs.LG
+- Sean Trott. *Toward a Theory of Generalizability in LLM Mechanistic Interpretability Research*. [arXiv:2509.22831](https://arxiv.org/abs/2509.22831) — 분야: cs.AI, cs.CL
+- Giuseppe Birardi, Gonçalo Paulo. *Automated Attribution Graph Interpretation via Probe Prompting*. [arXiv:2511.07002](https://arxiv.org/abs/2511.07002) — 분야: cs.CL
+- Kerem Zaman, Shashank Srivastava. *Is Chain-of-Thought Really Not Explainability? Chain-of-Thought Can Be Faithful without Hint Verbalization*. [arXiv:2512.23032](https://arxiv.org/abs/2512.23032) — 분야: cs.CL, cs.AI, cs.LG
+- Peter Hase, Christopher Potts. *Counterfactual Simulation Training for Chain-of-Thought Faithfulness*. [arXiv:2602.20710](https://arxiv.org/abs/2602.20710) — 분야: cs.AI, cs.CL
+- Jinghan Jia 외. *Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning*. [arXiv:2605.24286](https://arxiv.org/abs/2605.24286) — 분야: cs.LG, cs.CL
+- Yoav Gur-Arieh 외. *Faithfulness Metrics Don't Measure Faithfulness: A Meta-Evaluation with Ground Truth*. [arXiv:2605.25052](https://arxiv.org/abs/2605.25052) — 분야: cs.CL
+- Daniel Scalena 외. *Beyond the Commitment Boundary: Probing Epiphenomenal Chain-of-Thought in Large Reasoning Models*. [arXiv:2606.13603](https://arxiv.org/abs/2606.13603) — 분야: cs.LG, cs.AI, cs.CL
+- Ameen Patel 외. *LLMs Can Annotate Attribution Graphs*. [arXiv:2608.02632](https://arxiv.org/abs/2608.02632) — 분야: cs.LG
+
 ## [2026-08-17] 동료를 고르되 살피지 않는다 — 297번 중 294번의 편중, 그리고 이 결함이 얼마나 깊은가에 걸린 이견
 
 - **중심**: Hyeong Kyu Choi 외. *Multi-Agent LLMs Fail to Explore Each Other*. [arXiv:2607.11250](https://arxiv.org/abs/2607.11250) — 분야: cs.MA, cs.AI

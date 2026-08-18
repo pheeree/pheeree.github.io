@@ -8913,5 +8913,95 @@
    "cs.AI",
    "cs.CL"
   ]
+ },
+ "2509.22831": {
+  "title": "Toward a Theory of Generalizability in LLM Mechanistic Interpretability Research",
+  "authors": [
+   "Sean Trott"
+  ],
+  "published": "2025-09-26",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2605.25052": {
+  "title": "Faithfulness Metrics Don't Measure Faithfulness: A Meta-Evaluation with Ground Truth",
+  "authors": [
+   "Yoav Gur-Arieh",
+   "Ana Marasović",
+   "Mor Geva"
+  ],
+  "published": "2026-05-24",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2608.02632": {
+  "title": "LLMs Can Annotate Attribution Graphs",
+  "authors": [
+   "Ameen Patel",
+   "Max Zhang",
+   "Nathan Hu"
+  ],
+  "published": "2026-07-28",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2402.14897": {
+  "title": "Chain-of-Thought Unfaithfulness as Disguised Accuracy",
+  "authors": [
+   "Oliver Bentham",
+   "Nathan Stringham",
+   "Ana Marasović"
+  ],
+  "published": "2024-02-22",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2606.13603": {
+  "title": "Beyond the Commitment Boundary: Probing Epiphenomenal Chain-of-Thought in Large Reasoning Models",
+  "authors": [
+   "Daniel Scalena",
+   "Sara Candussio",
+   "Luca Bortolussi",
+   "Elisabetta Fersini",
+   "Malvina Nissim",
+   "Gabriele Sarti"
+  ],
+  "published": "2026-06-11",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2502.19964": {
+  "title": "Do Sparse Autoencoders Generalize? A Case Study of Answerability",
+  "authors": [
+   "Lovis Heindrich",
+   "Philip Torr",
+   "Fazl Barez",
+   "Veronika Thost"
+  ],
+  "published": "2025-02-27",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2511.07002": {
+  "title": "Automated Attribution Graph Interpretation via Probe Prompting",
+  "authors": [
+   "Giuseppe Birardi",
+   "Gonçalo Paulo"
+  ],
+  "published": "2025-11-10",
+  "categories": [
+   "cs.CL"
+  ]
  }
 }

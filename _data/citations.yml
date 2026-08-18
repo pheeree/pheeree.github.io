@@ -1,6 +1,27 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-18-cie-scorer-circuit-internal-external-discrepancy:
+  title: "안팎이라 부르지만 둘 다 안쪽이에요 — 회로 그래프와 은닉상태 그래프 사이의 최적수송 거리, 그리고 나흘 전 요약이 비워 둔 한 칸"
+  central:
+    id: "2605.25603"
+    title: "Detecting Unfaithful Chain-of-Thought via Circuit-Guided Internal-External Discrepancy"
+    authors: "Xu Shen 외"
+    keywords: "cs.AI"
+    url: "https://arxiv.org/abs/2605.25603"
+  referenced:
+    - { id: "2402.14897", title: "Chain-of-Thought Unfaithfulness as Disguised Accuracy", authors: "Oliver Bentham 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2402.14897" }
+    - { id: "2407.08734", title: "Transformer Circuit Faithfulness Metrics are not Robust", authors: "Joseph Miller 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2407.08734" }
+    - { id: "2502.19964", title: "Do Sparse Autoencoders Generalize? A Case Study of Answerability", authors: "Lovis Heindrich 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2502.19964" }
+    - { id: "2509.22831", title: "Toward a Theory of Generalizability in LLM Mechanistic Interpretability Research", authors: "Sean Trott", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2509.22831" }
+    - { id: "2511.07002", title: "Automated Attribution Graph Interpretation via Probe Prompting", authors: "Giuseppe Birardi, Gonçalo Paulo", keywords: "cs.CL", url: "https://arxiv.org/abs/2511.07002" }
+    - { id: "2512.23032", title: "Is Chain-of-Thought Really Not Explainability? Chain-of-Thought Can Be Faithful without Hint Verbalization", authors: "Kerem Zaman, Shashank Srivastava", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2512.23032" }
+    - { id: "2602.20710", title: "Counterfactual Simulation Training for Chain-of-Thought Faithfulness", authors: "Peter Hase, Christopher Potts", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2602.20710" }
+    - { id: "2605.24286", title: "Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning", authors: "Jinghan Jia 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2605.24286" }
+    - { id: "2605.25052", title: "Faithfulness Metrics Don't Measure Faithfulness: A Meta-Evaluation with Ground Truth", authors: "Yoav Gur-Arieh 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.25052" }
+    - { id: "2606.13603", title: "Beyond the Commitment Boundary: Probing Epiphenomenal Chain-of-Thought in Large Reasoning Models", authors: "Daniel Scalena 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.13603" }
+    - { id: "2608.02632", title: "LLMs Can Annotate Attribution Graphs", authors: "Ameen Patel 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2608.02632" }
+
 2026-08-17-multi-agent-exploration-peer-selection-mace:
   title: "동료를 고르되 살피지 않는다 — 297번 중 294번의 편중, 그리고 이 결함이 얼마나 깊은가에 걸린 이견"
   central:
