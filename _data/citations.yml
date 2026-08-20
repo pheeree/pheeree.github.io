@@ -1,6 +1,26 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-19-circuit-faithfulness-ablation-sensitivity:
+  title: "지우는 방식이 과제를 정합니다 — 회로 충실성 점수를 흔든 여섯 갈래 선택, 그리고 정답 회로가 애블레이션 뒤에 따라오는 순서"
+  central:
+    id: "2407.08734"
+    title: "Transformer Circuit Faithfulness Metrics are not Robust"
+    authors: "Joseph Miller 외"
+    keywords: "cs.LG, cs.AI, cs.CL"
+    url: "https://arxiv.org/abs/2407.08734"
+  referenced:
+    - { id: "2207.04153", title: "Probing Classifiers are Unreliable for Concept Removal and Detection", authors: "Abhinav Kumar 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2207.04153" }
+    - { id: "2409.09951", title: "Optimal ablation for interpretability", authors: "Maximilian Li, Lucas Janson", keywords: "cs.LG", url: "https://arxiv.org/abs/2409.09951" }
+    - { id: "2502.04878", title: "Sparse Autoencoders Do Not Find Canonical Units of Analysis", authors: "Patrick Leask 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2502.04878" }
+    - { id: "2503.13445", title: "Verbosity Tradeoffs and the Impact of Scale on the Faithfulness of LLM Self-Explanations", authors: "Noah Y. Siegel 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2503.13445" }
+    - { id: "2602.22968", title: "Certified Circuits: Stability Guarantees for Mechanistic Circuits", authors: "Alaa Anani 외", keywords: "cs.AI, cs.CV, cs.CY", url: "https://arxiv.org/abs/2602.22968" }
+    - { id: "2603.20172", title: "Measuring Faithfulness Depends on How You Measure: Classifier Sensitivity in LLM Chain-of-Thought Evaluation", authors: "Richard J. Young", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2603.20172" }
+    - { id: "2605.08348", title: "How Much Do Circuits Tell Us? Measuring the Consistency and Specificity of Language Model Circuits", authors: "Michael Li, Nishant Subramani", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.08348" }
+    - { id: "2605.08934", title: "From Mechanistic to Compositional Interpretability", authors: "Ward Gauderis 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.08934" }
+    - { id: "2605.25052", title: "Faithfulness Metrics Don't Measure Faithfulness: A Meta-Evaluation with Ground Truth", authors: "Yoav Gur-Arieh 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.25052" }
+    - { id: "2606.16920", title: "Demystifying Variance in Circuit Discovery of LLMs", authors: "Frank Zhengqing Wu 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.16920" }
+
 2026-08-18-cie-scorer-circuit-internal-external-discrepancy:
   title: "안팎이라 부르지만 둘 다 안쪽이에요 — 회로 그래프와 은닉상태 그래프 사이의 최적수송 거리, 그리고 나흘 전 요약이 비워 둔 한 칸"
   central:

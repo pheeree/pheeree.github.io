@@ -9003,5 +9003,101 @@
   "categories": [
    "cs.CL"
   ]
+ },
+ "2605.08348": {
+  "title": "How Much Do Circuits Tell Us? Measuring the Consistency and Specificity of Language Model Circuits",
+  "authors": [
+   "Michael Li",
+   "Nishant Subramani"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2502.04878": {
+  "title": "Sparse Autoencoders Do Not Find Canonical Units of Analysis",
+  "authors": [
+   "Patrick Leask",
+   "Bart Bussmann",
+   "Michael Pearce",
+   "Joseph Bloom",
+   "Curt Tigges",
+   "Noura Al Moubayed",
+   "Lee Sharkey",
+   "Neel Nanda"
+  ],
+  "published": "2025-02-07",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2606.16920": {
+  "title": "Demystifying Variance in Circuit Discovery of LLMs",
+  "authors": [
+   "Frank Zhengqing Wu",
+   "Francesco Tonin",
+   "Volkan Cevher"
+  ],
+  "published": "2026-06-15",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2409.09951": {
+  "title": "Optimal ablation for interpretability",
+  "authors": [
+   "Maximilian Li",
+   "Lucas Janson"
+  ],
+  "published": "2024-09-16",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2605.08934": {
+  "title": "From Mechanistic to Compositional Interpretability",
+  "authors": [
+   "Ward Gauderis",
+   "Thomas Dooms",
+   "Steven T. Homer",
+   "Kola Ayonrinde",
+   "Geraint A. Wiggins"
+  ],
+  "published": "2026-05-09",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2602.22968": {
+  "title": "Certified Circuits: Stability Guarantees for Mechanistic Circuits",
+  "authors": [
+   "Alaa Anani",
+   "Tobias Lorenz",
+   "Bernt Schiele",
+   "Mario Fritz",
+   "Jonas Fischer"
+  ],
+  "published": "2026-02-26",
+  "categories": [
+   "cs.AI",
+   "cs.CV",
+   "cs.CY"
+  ]
+ },
+ "2207.04153": {
+  "title": "Probing Classifiers are Unreliable for Concept Removal and Detection",
+  "authors": [
+   "Abhinav Kumar",
+   "Chenhao Tan",
+   "Amit Sharma"
+  ],
+  "published": "2022-07-08",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
  }
 }

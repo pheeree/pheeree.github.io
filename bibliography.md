@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-19] 지우는 방식이 과제를 정합니다 — 회로 충실성 점수를 흔든 여섯 갈래 선택, 그리고 정답 회로가 애블레이션 뒤에 따라오는 순서
+
+- **중심**: Joseph Miller 외. *Transformer Circuit Faithfulness Metrics are not Robust*. [arXiv:2407.08734](https://arxiv.org/abs/2407.08734) — 분야: cs.LG, cs.AI, cs.CL
+- Abhinav Kumar 외. *Probing Classifiers are Unreliable for Concept Removal and Detection*. [arXiv:2207.04153](https://arxiv.org/abs/2207.04153) — 분야: cs.LG, cs.CL
+- Maximilian Li, Lucas Janson. *Optimal ablation for interpretability*. [arXiv:2409.09951](https://arxiv.org/abs/2409.09951) — 분야: cs.LG
+- Patrick Leask 외. *Sparse Autoencoders Do Not Find Canonical Units of Analysis*. [arXiv:2502.04878](https://arxiv.org/abs/2502.04878) — 분야: cs.LG, cs.AI
+- Noah Y. Siegel 외. *Verbosity Tradeoffs and the Impact of Scale on the Faithfulness of LLM Self-Explanations*. [arXiv:2503.13445](https://arxiv.org/abs/2503.13445) — 분야: cs.CL, cs.AI
+- Alaa Anani 외. *Certified Circuits: Stability Guarantees for Mechanistic Circuits*. [arXiv:2602.22968](https://arxiv.org/abs/2602.22968) — 분야: cs.AI, cs.CV, cs.CY
+- Richard J. Young. *Measuring Faithfulness Depends on How You Measure: Classifier Sensitivity in LLM Chain-of-Thought Evaluation*. [arXiv:2603.20172](https://arxiv.org/abs/2603.20172) — 분야: cs.CL, cs.AI, cs.LG
+- Michael Li, Nishant Subramani. *How Much Do Circuits Tell Us? Measuring the Consistency and Specificity of Language Model Circuits*. [arXiv:2605.08348](https://arxiv.org/abs/2605.08348) — 분야: cs.CL
+- Ward Gauderis 외. *From Mechanistic to Compositional Interpretability*. [arXiv:2605.08934](https://arxiv.org/abs/2605.08934) — 분야: cs.LG
+- Yoav Gur-Arieh 외. *Faithfulness Metrics Don't Measure Faithfulness: A Meta-Evaluation with Ground Truth*. [arXiv:2605.25052](https://arxiv.org/abs/2605.25052) — 분야: cs.CL
+- Frank Zhengqing Wu 외. *Demystifying Variance in Circuit Discovery of LLMs*. [arXiv:2606.16920](https://arxiv.org/abs/2606.16920) — 분야: cs.LG, cs.AI
+
 ## [2026-08-18] 안팎이라 부르지만 둘 다 안쪽이에요 — 회로 그래프와 은닉상태 그래프 사이의 최적수송 거리, 그리고 나흘 전 요약이 비워 둔 한 칸
 
 - **중심**: Xu Shen 외. *Detecting Unfaithful Chain-of-Thought via Circuit-Guided Internal-External Discrepancy*. [arXiv:2605.25603](https://arxiv.org/abs/2605.25603) — 분야: cs.AI
