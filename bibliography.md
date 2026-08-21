@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-20] 형식은 임의성을 없애는 대신 이름을 붙입니다 — 설명의 질을 구문 비용과 의미 비용으로 가른 범주론 틀, 그리고 그 저울의 눈금을 고르는 손
+
+- **중심**: Ward Gauderis 외. *From Mechanistic to Compositional Interpretability*. [arXiv:2605.08934](https://arxiv.org/abs/2605.08934) — 분야: cs.LG
+- Sean Tull 외. *Towards Compositional Interpretability for XAI*. [arXiv:2406.17583](https://arxiv.org/abs/2406.17583) — 분야: cs.AI, cs.LG, cs.LO, math.CT
+- Joseph Miller 외. *Transformer Circuit Faithfulness Metrics are not Robust*. [arXiv:2407.08734](https://arxiv.org/abs/2407.08734) — 분야: cs.LG, cs.AI, cs.CL
+- Kola Ayonrinde 외. *Interpretability as Compression: Reconsidering SAE Explanations of Neural Activations with MDL-SAEs*. [arXiv:2410.11179](https://arxiv.org/abs/2410.11179) — 분야: cs.LG, cs.AI, cs.IT
+- Dan Braun 외. *Interpretability in Parameter Space: Minimizing Mechanistic Description Length with Attribution-based Parameter Decomposition*. [arXiv:2501.14926](https://arxiv.org/abs/2501.14926) — 분야: cs.LG, stat.ML
+- Gonçalo Paulo, Nora Belrose. *Sparse Autoencoders Trained on the Same Data Learn Different Features*. [arXiv:2501.16615](https://arxiv.org/abs/2501.16615) — 분야: cs.LG
+- Lucius Bushnaq 외. *Stochastic Parameter Decomposition*. [arXiv:2506.20790](https://arxiv.org/abs/2506.20790) — 분야: cs.LG, cs.AI
+- Maxime Méloux 외. *Mechanistic Interpretability as Statistical Estimation: A Variance Analysis*. [arXiv:2510.00845](https://arxiv.org/abs/2510.00845) — 분야: cs.LG, cs.AI, cs.CL
+- Leo Gao 외. *Weight-sparse transformers have interpretable circuits*. [arXiv:2511.13653](https://arxiv.org/abs/2511.13653) — 분야: cs.LG, cs.AI
+- Itamar Hadad 외. *Formal Mechanistic Interpretability: Automated Circuit Discovery with Provable Guarantees*. [arXiv:2602.16823](https://arxiv.org/abs/2602.16823) — 분야: cs.LG, cs.LO
+- Alaa Anani 외. *Certified Circuits: Stability Guarantees for Mechanistic Circuits*. [arXiv:2602.22968](https://arxiv.org/abs/2602.22968) — 분야: cs.AI, cs.CV, cs.CY
+- Gleb Gerasimov 외. *Unstable Features, Reproducible Subspaces: Understanding Seed Dependence in Sparse Autoencoders*. [arXiv:2606.12138](https://arxiv.org/abs/2606.12138) — 분야: cs.LG, cs.AI, cs.CL
+- Pietro Tropeano 외. *Don't Go Breaking My LLM: The Impact of Pruning Attention Layers on Explanation Faithfulness and Confidence Calibration*. [arXiv:2606.24970](https://arxiv.org/abs/2606.24970) — 분야: cs.LG
+
 ## [2026-08-19] 지우는 방식이 과제를 정합니다 — 회로 충실성 점수를 흔든 여섯 갈래 선택, 그리고 정답 회로가 애블레이션 뒤에 따라오는 순서
 
 - **중심**: Joseph Miller 외. *Transformer Circuit Faithfulness Metrics are not Robust*. [arXiv:2407.08734](https://arxiv.org/abs/2407.08734) — 분야: cs.LG, cs.AI, cs.CL

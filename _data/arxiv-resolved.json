@@ -9099,5 +9099,148 @@
    "cs.LG",
    "cs.CL"
   ]
+ },
+ "2510.00845": {
+  "title": "Mechanistic Interpretability as Statistical Estimation: A Variance Analysis",
+  "authors": [
+   "Maxime Méloux",
+   "François Portet",
+   "Maxime Peyrard"
+  ],
+  "published": "2025-10-01",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2501.14926": {
+  "title": "Interpretability in Parameter Space: Minimizing Mechanistic Description Length with Attribution-based Parameter Decomposition",
+  "authors": [
+   "Dan Braun",
+   "Lucius Bushnaq",
+   "Stefan Heimersheim",
+   "Jake Mendel",
+   "Lee Sharkey"
+  ],
+  "published": "2025-01-24",
+  "categories": [
+   "cs.LG",
+   "stat.ML"
+  ]
+ },
+ "2506.20790": {
+  "title": "Stochastic Parameter Decomposition",
+  "authors": [
+   "Lucius Bushnaq",
+   "Dan Braun",
+   "Lee Sharkey"
+  ],
+  "published": "2025-06-25",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2511.13653": {
+  "title": "Weight-sparse transformers have interpretable circuits",
+  "authors": [
+   "Leo Gao",
+   "Achyuta Rajaram",
+   "Jacob Coxon",
+   "Soham V. Govande",
+   "Bowen Baker",
+   "Dan Mossing"
+  ],
+  "published": "2025-11-17",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2602.16823": {
+  "title": "Formal Mechanistic Interpretability: Automated Circuit Discovery with Provable Guarantees",
+  "authors": [
+   "Itamar Hadad",
+   "Guy Katz",
+   "Shahaf Bassan"
+  ],
+  "published": "2026-02-18",
+  "categories": [
+   "cs.LG",
+   "cs.LO"
+  ]
+ },
+ "2410.11179": {
+  "title": "Interpretability as Compression: Reconsidering SAE Explanations of Neural Activations with MDL-SAEs",
+  "authors": [
+   "Kola Ayonrinde",
+   "Michael T. Pearce",
+   "Lee Sharkey"
+  ],
+  "published": "2024-10-15",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.IT"
+  ]
+ },
+ "2406.17583": {
+  "title": "Towards Compositional Interpretability for XAI",
+  "authors": [
+   "Sean Tull",
+   "Robin Lorenz",
+   "Stephen Clark",
+   "Ilyas Khan",
+   "Bob Coecke"
+  ],
+  "published": "2024-06-25",
+  "categories": [
+   "cs.AI",
+   "cs.LG",
+   "cs.LO",
+   "math.CT"
+  ]
+ },
+ "2606.24970": {
+  "title": "Don't Go Breaking My LLM: The Impact of Pruning Attention Layers on Explanation Faithfulness and Confidence Calibration",
+  "authors": [
+   "Pietro Tropeano",
+   "Maria Maistro",
+   "Tuukka Ruotsalo",
+   "Christina Lioma"
+  ],
+  "published": "2026-06-23",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2606.12138": {
+  "title": "Unstable Features, Reproducible Subspaces: Understanding Seed Dependence in Sparse Autoencoders",
+  "authors": [
+   "Gleb Gerasimov",
+   "Timofei Rusalev",
+   "Nikita Balagansky",
+   "Daniil Laptev",
+   "Vadim Kurochkin",
+   "Daniil Gavrilov"
+  ],
+  "published": "2026-06-10",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2501.16615": {
+  "title": "Sparse Autoencoders Trained on the Same Data Learn Different Features",
+  "authors": [
+   "Gonçalo Paulo",
+   "Nora Belrose"
+  ],
+  "published": "2025-01-28",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }
