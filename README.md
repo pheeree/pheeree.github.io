@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-08-21 — [정확도가 조용한 동안 아래에서 벌어지는 일 — 어텐션 층을 덜어낸 뒤 충실성과 보정만 따로 흔들린 관찰, 그리고 어제 세운 저울이 이 흔들림을 감당하는지](https://pheeree.github.io/2026/08/21/attention-pruning-faithfulness-calibration/)
 - 2026-08-20 — [형식은 임의성을 없애는 대신 이름을 붙입니다 — 설명의 질을 구문 비용과 의미 비용으로 가른 범주론 틀, 그리고 그 저울의 눈금을 고르는 손](https://pheeree.github.io/2026/08/20/compositional-interpretability-coding-distribution/)
 - 2026-08-19 — [지우는 방식이 과제를 정합니다 — 회로 충실성 점수를 흔든 여섯 갈래 선택, 그리고 정답 회로가 애블레이션 뒤에 따라오는 순서](https://pheeree.github.io/2026/08/19/circuit-faithfulness-ablation-sensitivity/)
 - 2026-08-18 — [안팎이라 부르지만 둘 다 안쪽이에요 — 회로 그래프와 은닉상태 그래프 사이의 최적수송 거리, 그리고 나흘 전 요약이 비워 둔 한 칸](https://pheeree.github.io/2026/08/18/cie-scorer-circuit-internal-external-discrepancy/)

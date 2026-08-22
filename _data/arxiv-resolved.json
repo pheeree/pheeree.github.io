@@ -9242,5 +9242,146 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2508.13533": {
+  "title": "Compressed Models are NOT Trust-equivalent to Their Large Counterparts",
+  "authors": [
+   "Rohit Raj Rai",
+   "Chirag Kothari",
+   "Siddhesh Shelke",
+   "Amit Awekar"
+  ],
+  "published": "2025-08-19",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2510.06125": {
+  "title": "Downsized and Compromised?: Assessing the Faithfulness of Model Compression",
+  "authors": [
+   "Moumita Kamal",
+   "Douglas A. Talbert"
+  ],
+  "published": "2025-10-07",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2509.20148": {
+  "title": "Smaller is Better: Enhancing Transparency in Vehicle AI Systems via Pruning",
+  "authors": [
+   "Sanish Suwal",
+   "Shaurya Garg",
+   "Dipkamal Bhusal",
+   "Michael Clifford",
+   "Nidhi Rastogi"
+  ],
+  "published": "2025-09-24",
+  "categories": [
+   "cs.CV"
+  ]
+ },
+ "2602.01997": {
+  "title": "On the Limits of Layer Pruning for Generative Reasoning in Large Language Models",
+  "authors": [
+   "Safal Shrestha",
+   "Anubhav Shrestha",
+   "Aadim Nepal",
+   "Minwu Kim",
+   "Keith Ross"
+  ],
+  "published": "2026-02-02",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2507.15977": {
+  "title": "On the transferability of Sparse Autoencoders for interpreting compressed models",
+  "authors": [
+   "Suchit Gupte",
+   "Vishnu Kabir Chhabra",
+   "Mohammad Mahdi Khalili"
+  ],
+  "published": "2025-07-21",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2606.24281": {
+  "title": "CALIBER: Calibrating Confidence Before and After Reasoning in Language Models",
+  "authors": [
+   "Conor Finlay",
+   "Joshua Kurien",
+   "Saurabh Dash",
+   "Marzieh Fadaee",
+   "Beyza Ermis"
+  ],
+  "published": "2026-06-23",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2405.20876": {
+  "title": "Investigating Calibration and Corruption Robustness of Post-hoc Pruned Perception CNNs: An Image Classification Benchmark Study",
+  "authors": [
+   "Pallavi Mitra",
+   "Gesina Schwalbe",
+   "Nadja Klein"
+  ],
+  "published": "2024-05-31",
+  "categories": [
+   "cs.CV",
+   "cs.AI"
+  ]
+ },
+ "2607.01444": {
+  "title": "On the Utility and Factual Reliability of Pruned Mixture-of-Experts Models in the Biomedical Domain",
+  "authors": [
+   "Atsuki Yamaguchi",
+   "Szymon Palucha",
+   "Léo Bijar",
+   "Aline Villavicencio",
+   "Nikolaos Aletras"
+  ],
+  "published": "2026-07-01",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2512.20636": {
+  "title": "Data-Free Pruning of Self-Attention Layers in LLMs",
+  "authors": [
+   "Dhananjay Saikumar",
+   "Blesson Varghese"
+  ],
+  "published": "2025-12-03",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2601.00282": {
+  "title": "Can Large Language Models Still Explain Themselves? Investigating the Impact of Quantization on Self-Explanations",
+  "authors": [
+   "Qianli Wang",
+   "Nils Feldhus",
+   "Pepa Atanasova",
+   "Fedor Splitt",
+   "Simon Ostermann",
+   "Sebastian Möller",
+   "Vera Schmitt"
+  ],
+  "published": "2026-01-01",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
  }
 }

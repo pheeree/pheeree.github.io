@@ -1,6 +1,26 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-21-attention-pruning-faithfulness-calibration:
+  title: "정확도가 조용한 동안 아래에서 벌어지는 일 — 어텐션 층을 덜어낸 뒤 충실성과 보정만 따로 흔들린 관찰, 그리고 어제 세운 저울이 이 흔들림을 감당하는지"
+  central:
+    id: "2606.24970"
+    title: "Don't Go Breaking My LLM: The Impact of Pruning Attention Layers on Explanation Faithfulness and Confidence Calibration"
+    authors: "Pietro Tropeano 외"
+    keywords: "cs.LG"
+    url: "https://arxiv.org/abs/2606.24970"
+  referenced:
+    - { id: "2405.20876", title: "Investigating Calibration and Corruption Robustness of Post-hoc Pruned Perception CNNs: An Image Classification Benchmark Study", authors: "Pallavi Mitra 외", keywords: "cs.CV, cs.AI", url: "https://arxiv.org/abs/2405.20876" }
+    - { id: "2507.15977", title: "On the transferability of Sparse Autoencoders for interpreting compressed models", authors: "Suchit Gupte 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2507.15977" }
+    - { id: "2508.13533", title: "Compressed Models are NOT Trust-equivalent to Their Large Counterparts", authors: "Rohit Raj Rai 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2508.13533" }
+    - { id: "2509.20148", title: "Smaller is Better: Enhancing Transparency in Vehicle AI Systems via Pruning", authors: "Sanish Suwal 외", keywords: "cs.CV", url: "https://arxiv.org/abs/2509.20148" }
+    - { id: "2510.06125", title: "Downsized and Compromised?: Assessing the Faithfulness of Model Compression", authors: "Moumita Kamal, Douglas A. Talbert", keywords: "cs.LG", url: "https://arxiv.org/abs/2510.06125" }
+    - { id: "2512.20636", title: "Data-Free Pruning of Self-Attention Layers in LLMs", authors: "Dhananjay Saikumar, Blesson Varghese", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2512.20636" }
+    - { id: "2601.00282", title: "Can Large Language Models Still Explain Themselves? Investigating the Impact of Quantization on Self-Explanations", authors: "Qianli Wang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2601.00282" }
+    - { id: "2602.01997", title: "On the Limits of Layer Pruning for Generative Reasoning in Large Language Models", authors: "Safal Shrestha 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2602.01997" }
+    - { id: "2606.24281", title: "CALIBER: Calibrating Confidence Before and After Reasoning in Language Models", authors: "Conor Finlay 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2606.24281" }
+    - { id: "2607.01444", title: "On the Utility and Factual Reliability of Pruned Mixture-of-Experts Models in the Biomedical Domain", authors: "Atsuki Yamaguchi 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2607.01444" }
+
 2026-08-20-compositional-interpretability-coding-distribution:
   title: "형식은 임의성을 없애는 대신 이름을 붙입니다 — 설명의 질을 구문 비용과 의미 비용으로 가른 범주론 틀, 그리고 그 저울의 눈금을 고르는 손"
   central:

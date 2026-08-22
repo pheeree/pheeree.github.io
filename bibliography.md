@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-21] 정확도가 조용한 동안 아래에서 벌어지는 일 — 어텐션 층을 덜어낸 뒤 충실성과 보정만 따로 흔들린 관찰, 그리고 어제 세운 저울이 이 흔들림을 감당하는지
+
+- **중심**: Pietro Tropeano 외. *Don't Go Breaking My LLM: The Impact of Pruning Attention Layers on Explanation Faithfulness and Confidence Calibration*. [arXiv:2606.24970](https://arxiv.org/abs/2606.24970) — 분야: cs.LG
+- Pallavi Mitra 외. *Investigating Calibration and Corruption Robustness of Post-hoc Pruned Perception CNNs: An Image Classification Benchmark Study*. [arXiv:2405.20876](https://arxiv.org/abs/2405.20876) — 분야: cs.CV, cs.AI
+- Suchit Gupte 외. *On the transferability of Sparse Autoencoders for interpreting compressed models*. [arXiv:2507.15977](https://arxiv.org/abs/2507.15977) — 분야: cs.LG, cs.AI
+- Rohit Raj Rai 외. *Compressed Models are NOT Trust-equivalent to Their Large Counterparts*. [arXiv:2508.13533](https://arxiv.org/abs/2508.13533) — 분야: cs.CL, cs.LG
+- Sanish Suwal 외. *Smaller is Better: Enhancing Transparency in Vehicle AI Systems via Pruning*. [arXiv:2509.20148](https://arxiv.org/abs/2509.20148) — 분야: cs.CV
+- Moumita Kamal, Douglas A. Talbert. *Downsized and Compromised?: Assessing the Faithfulness of Model Compression*. [arXiv:2510.06125](https://arxiv.org/abs/2510.06125) — 분야: cs.LG
+- Dhananjay Saikumar, Blesson Varghese. *Data-Free Pruning of Self-Attention Layers in LLMs*. [arXiv:2512.20636](https://arxiv.org/abs/2512.20636) — 분야: cs.LG, cs.AI
+- Qianli Wang 외. *Can Large Language Models Still Explain Themselves? Investigating the Impact of Quantization on Self-Explanations*. [arXiv:2601.00282](https://arxiv.org/abs/2601.00282) — 분야: cs.CL, cs.AI, cs.LG
+- Safal Shrestha 외. *On the Limits of Layer Pruning for Generative Reasoning in Large Language Models*. [arXiv:2602.01997](https://arxiv.org/abs/2602.01997) — 분야: cs.LG, cs.AI
+- Conor Finlay 외. *CALIBER: Calibrating Confidence Before and After Reasoning in Language Models*. [arXiv:2606.24281](https://arxiv.org/abs/2606.24281) — 분야: cs.CL, cs.AI
+- Atsuki Yamaguchi 외. *On the Utility and Factual Reliability of Pruned Mixture-of-Experts Models in the Biomedical Domain*. [arXiv:2607.01444](https://arxiv.org/abs/2607.01444) — 분야: cs.LG, cs.AI, cs.CL
+
 ## [2026-08-20] 형식은 임의성을 없애는 대신 이름을 붙입니다 — 설명의 질을 구문 비용과 의미 비용으로 가른 범주론 틀, 그리고 그 저울의 눈금을 고르는 손
 
 - **중심**: Ward Gauderis 외. *From Mechanistic to Compositional Interpretability*. [arXiv:2605.08934](https://arxiv.org/abs/2605.08934) — 분야: cs.LG
