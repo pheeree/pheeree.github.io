@@ -1,6 +1,24 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-22-hint-verbalization-incompleteness-causal-mediation:
+  title: "말하지 않은 것과 쓰지 않은 것 — 힌트 언어화로 충실성을 재던 관행에 대한 반론, 그리고 무작위로 집힌 픽이 나흘 전 장부의 △ 하나를 갚은 자리"
+  central:
+    id: "2512.23032"
+    title: "Is Chain-of-Thought Really Not Explainability? Chain-of-Thought Can Be Faithful without Hint Verbalization"
+    authors: "Kerem Zaman, Shashank Srivastava"
+    keywords: "cs.CL, cs.AI, cs.LG"
+    url: "https://arxiv.org/abs/2512.23032"
+  referenced:
+    - { id: "2503.08679", title: "Chain-of-Thought Reasoning In The Wild Is Not Always Faithful", authors: "Iván Arcuschin 외", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2503.08679" }
+    - { id: "2503.13445", title: "Verbosity Tradeoffs and the Impact of Scale on the Faithfulness of LLM Self-Explanations", authors: "Noah Y. Siegel 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2503.13445" }
+    - { id: "2602.11201", title: "Mechanistic Evidence for Faithfulness Decay in Chain-of-Thought Reasoning", authors: "Donald Ye 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2602.11201" }
+    - { id: "2603.20172", title: "Measuring Faithfulness Depends on How You Measure: Classifier Sensitivity in LLM Chain-of-Thought Evaluation", authors: "Richard J. Young", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2603.20172" }
+    - { id: "2605.24286", title: "Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning", authors: "Jinghan Jia 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2605.24286" }
+    - { id: "2605.25603", title: "Detecting Unfaithful Chain-of-Thought via Circuit-Guided Internal-External Discrepancy", authors: "Xu Shen 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.25603" }
+    - { id: "2606.13603", title: "Beyond the Commitment Boundary: Probing Epiphenomenal Chain-of-Thought in Large Reasoning Models", authors: "Daniel Scalena 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.13603" }
+    - { id: "2607.29062", title: "On the Generalization of Steering Vectors for Chain-of-Thought Faithfulness", authors: "Matthew Nguyen 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2607.29062" }
+
 2026-08-21-attention-pruning-faithfulness-calibration:
   title: "정확도가 조용한 동안 아래에서 벌어지는 일 — 어텐션 층을 덜어낸 뒤 충실성과 보정만 따로 흔들린 관찰, 그리고 어제 세운 저울이 이 흔들림을 감당하는지"
   central:

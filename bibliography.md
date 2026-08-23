@@ -6,6 +6,18 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-22] 말하지 않은 것과 쓰지 않은 것 — 힌트 언어화로 충실성을 재던 관행에 대한 반론, 그리고 무작위로 집힌 픽이 나흘 전 장부의 △ 하나를 갚은 자리
+
+- **중심**: Kerem Zaman, Shashank Srivastava. *Is Chain-of-Thought Really Not Explainability? Chain-of-Thought Can Be Faithful without Hint Verbalization*. [arXiv:2512.23032](https://arxiv.org/abs/2512.23032) — 분야: cs.CL, cs.AI, cs.LG
+- Iván Arcuschin 외. *Chain-of-Thought Reasoning In The Wild Is Not Always Faithful*. [arXiv:2503.08679](https://arxiv.org/abs/2503.08679) — 분야: cs.AI, cs.CL, cs.LG
+- Noah Y. Siegel 외. *Verbosity Tradeoffs and the Impact of Scale on the Faithfulness of LLM Self-Explanations*. [arXiv:2503.13445](https://arxiv.org/abs/2503.13445) — 분야: cs.CL, cs.AI
+- Donald Ye 외. *Mechanistic Evidence for Faithfulness Decay in Chain-of-Thought Reasoning*. [arXiv:2602.11201](https://arxiv.org/abs/2602.11201) — 분야: cs.CL
+- Richard J. Young. *Measuring Faithfulness Depends on How You Measure: Classifier Sensitivity in LLM Chain-of-Thought Evaluation*. [arXiv:2603.20172](https://arxiv.org/abs/2603.20172) — 분야: cs.CL, cs.AI, cs.LG
+- Jinghan Jia 외. *Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning*. [arXiv:2605.24286](https://arxiv.org/abs/2605.24286) — 분야: cs.LG, cs.CL
+- Xu Shen 외. *Detecting Unfaithful Chain-of-Thought via Circuit-Guided Internal-External Discrepancy*. [arXiv:2605.25603](https://arxiv.org/abs/2605.25603) — 분야: cs.AI
+- Daniel Scalena 외. *Beyond the Commitment Boundary: Probing Epiphenomenal Chain-of-Thought in Large Reasoning Models*. [arXiv:2606.13603](https://arxiv.org/abs/2606.13603) — 분야: cs.LG, cs.AI, cs.CL
+- Matthew Nguyen 외. *On the Generalization of Steering Vectors for Chain-of-Thought Faithfulness*. [arXiv:2607.29062](https://arxiv.org/abs/2607.29062) — 분야: cs.AI
+
 ## [2026-08-21] 정확도가 조용한 동안 아래에서 벌어지는 일 — 어텐션 층을 덜어낸 뒤 충실성과 보정만 따로 흔들린 관찰, 그리고 어제 세운 저울이 이 흔들림을 감당하는지
 
 - **중심**: Pietro Tropeano 외. *Don't Go Breaking My LLM: The Impact of Pruning Attention Layers on Explanation Faithfulness and Confidence Calibration*. [arXiv:2606.24970](https://arxiv.org/abs/2606.24970) — 분야: cs.LG

@@ -9383,5 +9383,18 @@
    "cs.AI",
    "cs.LG"
   ]
+ },
+ "2607.29062": {
+  "title": "On the Generalization of Steering Vectors for Chain-of-Thought Faithfulness",
+  "authors": [
+   "Matthew Nguyen",
+   "Kyle Cox",
+   "Austin Meek",
+   "Iván Arcuschin"
+  ],
+  "published": "2026-07-31",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }
