@@ -9396,5 +9396,157 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2507.11473": {
+  "title": "Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety",
+  "authors": [
+   "Tomek Korbak",
+   "Mikita Balesni",
+   "Elizabeth Barnes",
+   "Yoshua Bengio",
+   "Joe Benton",
+   "Joseph Bloom",
+   "Mark Chen",
+   "Alan Cooney",
+   "Allan Dafoe",
+   "Anca Dragan",
+   "Scott Emmons",
+   "Owain Evans",
+   "David Farhi",
+   "Ryan Greenblatt",
+   "Dan Hendrycks",
+   "Marius Hobbhahn",
+   "Evan Hubinger",
+   "Geoffrey Irving",
+   "Erik Jenner",
+   "Daniel Kokotajlo",
+   "Victoria Krakovna",
+   "Shane Legg",
+   "David Lindner",
+   "David Luan",
+   "Aleksander Mądry",
+   "Julian Michael",
+   "Neel Nanda",
+   "Dave Orr",
+   "Jakub Pachocki",
+   "Ethan Perez",
+   "Mary Phuong",
+   "Fabien Roger",
+   "Joshua Saxe",
+   "Buck Shlegeris",
+   "Martín Soto",
+   "Eric Steinberger",
+   "Jasmine Wang",
+   "Wojciech Zaremba",
+   "Bowen Baker",
+   "Rohin Shah",
+   "Vlad Mikulik"
+  ],
+  "published": "2025-07-15",
+  "categories": [
+   "cs.AI",
+   "cs.LG",
+   "stat.ML"
+  ]
+ },
+ "2608.04928": {
+  "title": "Does Out-of-Sight Equal Out-of-Mind in CoT Monitorability?",
+  "authors": [
+   "Pedro Ferreira",
+   "Wilker Aziz",
+   "Ivan Titov"
+  ],
+  "published": "2026-08-05",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2608.03745": {
+  "title": "Risky Business: Measuring The Faithfulness-Safety Tension",
+  "authors": [
+   "Dominik Meier",
+   "Luca Joshua Francis",
+   "Marco Bernhard Kaiser",
+   "Terry Ruas",
+   "Jan Philip Wahle",
+   "Bela Gipp"
+  ],
+  "published": "2026-08-04",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2602.03978": {
+  "title": "Monitorability as a Free Gift: How RLVR Spontaneously Aligns Reasoning",
+  "authors": [
+   "Zidi Xiong",
+   "Shan Chen",
+   "Himabindu Lakkaraju"
+  ],
+  "published": "2026-02-03",
+  "categories": [
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2601.23086": {
+  "title": "Chain-of-thought obfuscation learned from output supervision can generalise to unseen tasks",
+  "authors": [
+   "Nathaniel Mitrani Hadida",
+   "Sassan Bhanji",
+   "Cameron Tice",
+   "Puria Radmard"
+  ],
+  "published": "2026-01-30",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2604.10693": {
+  "title": "FACT-E: Causality-Inspired Evaluation for Trustworthy Chain-of-Thought Reasoning",
+  "authors": [
+   "Yuxi Sun",
+   "Aoqi Zuo",
+   "Haotian Xie",
+   "Wei Gao",
+   "Mingming Gong",
+   "Jing Ma"
+  ],
+  "published": "2026-04-12",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2607.18820": {
+  "title": "CASE: Causal Alignment and Structural Enforcement for Improving Chain-of-Thought Faithfulness",
+  "authors": [
+   "Ziming Wang",
+   "Yinghua Yao",
+   "Changwu Huang",
+   "Ke Tang",
+   "Xin Yao"
+  ],
+  "published": "2026-07-21",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2602.18297": {
+  "title": "Analyzing and Improving Chain-of-Thought Monitorability Through Information Theory",
+  "authors": [
+   "Usman Anwar",
+   "Tim Bakker",
+   "Dana Kianfar",
+   "Cristina Pinneri",
+   "Christos Louizos"
+  ],
+  "published": "2026-02-20",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL",
+   "cs.IT"
+  ]
  }
 }

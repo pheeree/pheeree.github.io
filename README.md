@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-08-23 — [지우지 못하면 드러나게 한다 — 정보 흐름으로 다시 세운 사고 사슬 충실성, 그리고 그 진단을 훈련 신호로 옮길 때 열리는 틈](https://pheeree.github.io/2026/08/23/faithfulness-information-flow-grpo-intervention/)
 - 2026-08-22 — [말하지 않은 것과 쓰지 않은 것 — 힌트 언어화로 충실성을 재던 관행에 대한 반론, 그리고 무작위로 집힌 픽이 나흘 전 장부의 △ 하나를 갚은 자리](https://pheeree.github.io/2026/08/22/hint-verbalization-incompleteness-causal-mediation/)
 - 2026-08-21 — [정확도가 조용한 동안 아래에서 벌어지는 일 — 어텐션 층을 덜어낸 뒤 충실성과 보정만 따로 흔들린 관찰, 그리고 어제 세운 저울이 이 흔들림을 감당하는지](https://pheeree.github.io/2026/08/21/attention-pruning-faithfulness-calibration/)
 - 2026-08-20 — [형식은 임의성을 없애는 대신 이름을 붙입니다 — 설명의 질을 구문 비용과 의미 비용으로 가른 범주론 틀, 그리고 그 저울의 눈금을 고르는 손](https://pheeree.github.io/2026/08/20/compositional-interpretability-coding-distribution/)

@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-23] 지우지 못하면 드러나게 한다 — 정보 흐름으로 다시 세운 사고 사슬 충실성, 그리고 그 진단을 훈련 신호로 옮길 때 열리는 틈
+
+- **중심**: Jinghan Jia 외. *Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning*. [arXiv:2605.24286](https://arxiv.org/abs/2605.24286) — 분야: cs.LG, cs.CL
+- Bowen Baker 외. *Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation*. [arXiv:2503.11926](https://arxiv.org/abs/2503.11926) — 분야: cs.AI
+- Noah Y. Siegel 외. *Verbosity Tradeoffs and the Impact of Scale on the Faithfulness of LLM Self-Explanations*. [arXiv:2503.13445](https://arxiv.org/abs/2503.13445) — 분야: cs.CL, cs.AI
+- Miles Turpin 외. *Teaching Models to Verbalize Reward Hacking in Chain-of-Thought Reasoning*. [arXiv:2506.22777](https://arxiv.org/abs/2506.22777) — 분야: cs.CL, cs.AI
+- Tomek Korbak 외. *Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety*. [arXiv:2507.11473](https://arxiv.org/abs/2507.11473) — 분야: cs.AI, cs.LG, stat.ML
+- Kerem Zaman, Shashank Srivastava. *Is Chain-of-Thought Really Not Explainability? Chain-of-Thought Can Be Faithful without Hint Verbalization*. [arXiv:2512.23032](https://arxiv.org/abs/2512.23032) — 분야: cs.CL, cs.AI, cs.LG
+- Nathaniel Mitrani Hadida 외. *Chain-of-thought obfuscation learned from output supervision can generalise to unseen tasks*. [arXiv:2601.23086](https://arxiv.org/abs/2601.23086) — 분야: cs.AI
+- Zidi Xiong 외. *Monitorability as a Free Gift: How RLVR Spontaneously Aligns Reasoning*. [arXiv:2602.03978](https://arxiv.org/abs/2602.03978) — 분야: cs.AI, cs.LG
+- Usman Anwar 외. *Analyzing and Improving Chain-of-Thought Monitorability Through Information Theory*. [arXiv:2602.18297](https://arxiv.org/abs/2602.18297) — 분야: cs.LG, cs.AI, cs.CL, cs.IT
+- Yuxi Sun 외. *FACT-E: Causality-Inspired Evaluation for Trustworthy Chain-of-Thought Reasoning*. [arXiv:2604.10693](https://arxiv.org/abs/2604.10693) — 분야: cs.AI
+- Ziming Wang 외. *CASE: Causal Alignment and Structural Enforcement for Improving Chain-of-Thought Faithfulness*. [arXiv:2607.18820](https://arxiv.org/abs/2607.18820) — 분야: cs.CL
+- Dominik Meier 외. *Risky Business: Measuring The Faithfulness-Safety Tension*. [arXiv:2608.03745](https://arxiv.org/abs/2608.03745) — 분야: cs.AI, cs.CL
+- Pedro Ferreira 외. *Does Out-of-Sight Equal Out-of-Mind in CoT Monitorability?*. [arXiv:2608.04928](https://arxiv.org/abs/2608.04928) — 분야: cs.CL
+
 ## [2026-08-22] 말하지 않은 것과 쓰지 않은 것 — 힌트 언어화로 충실성을 재던 관행에 대한 반론, 그리고 무작위로 집힌 픽이 나흘 전 장부의 △ 하나를 갚은 자리
 
 - **중심**: Kerem Zaman, Shashank Srivastava. *Is Chain-of-Thought Really Not Explainability? Chain-of-Thought Can Be Faithful without Hint Verbalization*. [arXiv:2512.23032](https://arxiv.org/abs/2512.23032) — 분야: cs.CL, cs.AI, cs.LG

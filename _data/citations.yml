@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-23-faithfulness-information-flow-grpo-intervention:
+  title: "지우지 못하면 드러나게 한다 — 정보 흐름으로 다시 세운 사고 사슬 충실성, 그리고 그 진단을 훈련 신호로 옮길 때 열리는 틈"
+  central:
+    id: "2605.24286"
+    title: "Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning"
+    authors: "Jinghan Jia 외"
+    keywords: "cs.LG, cs.CL"
+    url: "https://arxiv.org/abs/2605.24286"
+  referenced:
+    - { id: "2503.11926", title: "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation", authors: "Bowen Baker 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.11926" }
+    - { id: "2503.13445", title: "Verbosity Tradeoffs and the Impact of Scale on the Faithfulness of LLM Self-Explanations", authors: "Noah Y. Siegel 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2503.13445" }
+    - { id: "2506.22777", title: "Teaching Models to Verbalize Reward Hacking in Chain-of-Thought Reasoning", authors: "Miles Turpin 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2506.22777" }
+    - { id: "2507.11473", title: "Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety", authors: "Tomek Korbak 외", keywords: "cs.AI, cs.LG, stat.ML", url: "https://arxiv.org/abs/2507.11473" }
+    - { id: "2512.23032", title: "Is Chain-of-Thought Really Not Explainability? Chain-of-Thought Can Be Faithful without Hint Verbalization", authors: "Kerem Zaman, Shashank Srivastava", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2512.23032" }
+    - { id: "2601.23086", title: "Chain-of-thought obfuscation learned from output supervision can generalise to unseen tasks", authors: "Nathaniel Mitrani Hadida 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2601.23086" }
+    - { id: "2602.03978", title: "Monitorability as a Free Gift: How RLVR Spontaneously Aligns Reasoning", authors: "Zidi Xiong 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2602.03978" }
+    - { id: "2602.18297", title: "Analyzing and Improving Chain-of-Thought Monitorability Through Information Theory", authors: "Usman Anwar 외", keywords: "cs.LG, cs.AI, cs.CL, cs.IT", url: "https://arxiv.org/abs/2602.18297" }
+    - { id: "2604.10693", title: "FACT-E: Causality-Inspired Evaluation for Trustworthy Chain-of-Thought Reasoning", authors: "Yuxi Sun 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.10693" }
+    - { id: "2607.18820", title: "CASE: Causal Alignment and Structural Enforcement for Improving Chain-of-Thought Faithfulness", authors: "Ziming Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2607.18820" }
+    - { id: "2608.03745", title: "Risky Business: Measuring The Faithfulness-Safety Tension", authors: "Dominik Meier 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2608.03745" }
+    - { id: "2608.04928", title: "Does Out-of-Sight Equal Out-of-Mind in CoT Monitorability?", authors: "Pedro Ferreira 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2608.04928" }
+
 2026-08-22-hint-verbalization-incompleteness-causal-mediation:
   title: "말하지 않은 것과 쓰지 않은 것 — 힌트 언어화로 충실성을 재던 관행에 대한 반론, 그리고 무작위로 집힌 픽이 나흘 전 장부의 △ 하나를 갚은 자리"
   central:
