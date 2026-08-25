@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-24] 일치를 점이 아니라 영역에서 묻기 — 회로 발견에 형식 증명을 씌운 틀, 그리고 그 증명이 닿지 않는 한 겹
+
+- **중심**: Itamar Hadad 외. *Formal Mechanistic Interpretability: Automated Circuit Discovery with Provable Guarantees*. [arXiv:2602.16823](https://arxiv.org/abs/2602.16823) — 분야: cs.LG, cs.LO
+- Kevin Wang 외. *Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small*. [arXiv:2211.00593](https://arxiv.org/abs/2211.00593) — 분야: cs.LG, cs.AI, cs.CL
+- Aleksandar Makelov 외. *Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching*. [arXiv:2311.17030](https://arxiv.org/abs/2311.17030) — 분야: cs.LG, cs.AI, cs.CL
+- Joseph Miller 외. *Transformer Circuit Faithfulness Metrics are not Robust*. [arXiv:2407.08734](https://arxiv.org/abs/2407.08734) — 분야: cs.LG, cs.AI, cs.CL
+- Maxime Méloux 외. *Everything, Everywhere, All at Once: Is Mechanistic Interpretability Identifiable?*. [arXiv:2502.20914](https://arxiv.org/abs/2502.20914) — 분야: cs.LG, cs.AI, cs.CL
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Leo Gao 외. *Weight-sparse transformers have interpretable circuits*. [arXiv:2511.13653](https://arxiv.org/abs/2511.13653) — 분야: cs.LG, cs.AI
+- Alaa Anani 외. *Certified Circuits: Stability Guarantees for Mechanistic Circuits*. [arXiv:2602.22968](https://arxiv.org/abs/2602.22968) — 분야: cs.AI, cs.CV, cs.CY
+- Navid Rezazadeh, Arash Gholami Davoodi. *Vertex-Softmax: Tight Transformer Verification via Exact Softmax Optimization*. [arXiv:2605.10974](https://arxiv.org/abs/2605.10974) — 분야: cs.LG, cs.AI
+- Neel Somani. *Towards Verifiable Transformers: Solver-Checkable Circuit Explanations*. [arXiv:2605.24033](https://arxiv.org/abs/2605.24033) — 분야: cs.LG, cs.LO
+- Alireza Bayat Makou 외. *Many Circuits, One Mechanism: Input Variation and Evaluation Granularity in Circuit Discovery*. [arXiv:2606.06267](https://arxiv.org/abs/2606.06267) — 분야: cs.CL
+- Zhiren Gong 외. *Conditional Co-Ablation: Recovering Self-Repair Backups in Transformer Circuits*. [arXiv:2607.01940](https://arxiv.org/abs/2607.01940) — 분야: cs.LG, cs.AI
+- Amir Asiaee. *Certified Interventional Fidelity: Anytime-Valid, Adaptive Evaluation of Causal Claims in Mechanistic Interpretability*. [arXiv:2607.08349](https://arxiv.org/abs/2607.08349) — 분야: cs.LG
+
 ## [2026-08-23] 지우지 못하면 드러나게 한다 — 정보 흐름으로 다시 세운 사고 사슬 충실성, 그리고 그 진단을 훈련 신호로 옮길 때 열리는 틈
 
 - **중심**: Jinghan Jia 외. *Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning*. [arXiv:2605.24286](https://arxiv.org/abs/2605.24286) — 분야: cs.LG, cs.CL

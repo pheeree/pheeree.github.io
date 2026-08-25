@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-24-formal-circuit-discovery-provable-guarantees:
+  title: "일치를 점이 아니라 영역에서 묻기 — 회로 발견에 형식 증명을 씌운 틀, 그리고 그 증명이 닿지 않는 한 겹"
+  central:
+    id: "2602.16823"
+    title: "Formal Mechanistic Interpretability: Automated Circuit Discovery with Provable Guarantees"
+    authors: "Itamar Hadad 외"
+    keywords: "cs.LG, cs.LO"
+    url: "https://arxiv.org/abs/2602.16823"
+  referenced:
+    - { id: "2211.00593", title: "Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small", authors: "Kevin Wang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2211.00593" }
+    - { id: "2311.17030", title: "Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching", authors: "Aleksandar Makelov 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2311.17030" }
+    - { id: "2407.08734", title: "Transformer Circuit Faithfulness Metrics are not Robust", authors: "Joseph Miller 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2407.08734" }
+    - { id: "2502.20914", title: "Everything, Everywhere, All at Once: Is Mechanistic Interpretability Identifiable?", authors: "Maxime Méloux 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2502.20914" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2511.13653", title: "Weight-sparse transformers have interpretable circuits", authors: "Leo Gao 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2511.13653" }
+    - { id: "2602.22968", title: "Certified Circuits: Stability Guarantees for Mechanistic Circuits", authors: "Alaa Anani 외", keywords: "cs.AI, cs.CV, cs.CY", url: "https://arxiv.org/abs/2602.22968" }
+    - { id: "2605.10974", title: "Vertex-Softmax: Tight Transformer Verification via Exact Softmax Optimization", authors: "Navid Rezazadeh, Arash Gholami Davoodi", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.10974" }
+    - { id: "2605.24033", title: "Towards Verifiable Transformers: Solver-Checkable Circuit Explanations", authors: "Neel Somani", keywords: "cs.LG, cs.LO", url: "https://arxiv.org/abs/2605.24033" }
+    - { id: "2606.06267", title: "Many Circuits, One Mechanism: Input Variation and Evaluation Granularity in Circuit Discovery", authors: "Alireza Bayat Makou 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.06267" }
+    - { id: "2607.01940", title: "Conditional Co-Ablation: Recovering Self-Repair Backups in Transformer Circuits", authors: "Zhiren Gong 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2607.01940" }
+    - { id: "2607.08349", title: "Certified Interventional Fidelity: Anytime-Valid, Adaptive Evaluation of Causal Claims in Mechanistic Interpretability", authors: "Amir Asiaee", keywords: "cs.LG", url: "https://arxiv.org/abs/2607.08349" }
+
 2026-08-23-faithfulness-information-flow-grpo-intervention:
   title: "지우지 못하면 드러나게 한다 — 정보 흐름으로 다시 세운 사고 사슬 충실성, 그리고 그 진단을 훈련 신호로 옮길 때 열리는 틈"
   central:

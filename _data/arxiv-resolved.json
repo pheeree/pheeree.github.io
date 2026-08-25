@@ -9548,5 +9548,110 @@
    "cs.CL",
    "cs.IT"
   ]
+ },
+ "2211.00593": {
+  "title": "Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small",
+  "authors": [
+   "Kevin Wang",
+   "Alexandre Variengien",
+   "Arthur Conmy",
+   "Buck Shlegeris",
+   "Jacob Steinhardt"
+  ],
+  "published": "2022-11-01",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2607.01940": {
+  "title": "Conditional Co-Ablation: Recovering Self-Repair Backups in Transformer Circuits",
+  "authors": [
+   "Zhiren Gong",
+   "Zihao Zeng",
+   "Chau Yuen",
+   "Wei Yang Bryan Lim"
+  ],
+  "published": "2026-07-02",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2502.20914": {
+  "title": "Everything, Everywhere, All at Once: Is Mechanistic Interpretability Identifiable?",
+  "authors": [
+   "Maxime Méloux",
+   "Silviu Maniu",
+   "François Portet",
+   "Maxime Peyrard"
+  ],
+  "published": "2025-02-28",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2607.08349": {
+  "title": "Certified Interventional Fidelity: Anytime-Valid, Adaptive Evaluation of Causal Claims in Mechanistic Interpretability",
+  "authors": [
+   "Amir Asiaee"
+  ],
+  "published": "2026-07-09",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2605.24033": {
+  "title": "Towards Verifiable Transformers: Solver-Checkable Circuit Explanations",
+  "authors": [
+   "Neel Somani"
+  ],
+  "published": "2026-05-21",
+  "categories": [
+   "cs.LG",
+   "cs.LO"
+  ]
+ },
+ "2605.10974": {
+  "title": "Vertex-Softmax: Tight Transformer Verification via Exact Softmax Optimization",
+  "authors": [
+   "Navid Rezazadeh",
+   "Arash Gholami Davoodi"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2606.06267": {
+  "title": "Many Circuits, One Mechanism: Input Variation and Evaluation Granularity in Circuit Discovery",
+  "authors": [
+   "Alireza Bayat Makou",
+   "Jingcheng Niu",
+   "Subhabrata Dutta",
+   "Iryna Gurevych"
+  ],
+  "published": "2026-06-04",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2311.17030": {
+  "title": "Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching",
+  "authors": [
+   "Aleksandar Makelov",
+   "Georg Lange",
+   "Neel Nanda"
+  ],
+  "published": "2023-11-28",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  }
 }
