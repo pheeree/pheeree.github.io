@@ -1,6 +1,22 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-26-compositional-interpretability-category-theory-origin:
+  title: "계보를 확인하러 갔다가 내 추정 하나를 고쳤습니다 — 모든 AI 모델을 문자열 다이어그램으로 적으려 한 범주론 틀, 그리고 그 틀이 표준 신경망 앞에서 멈추는 자리"
+  central:
+    id: "2406.17583"
+    title: "Towards Compositional Interpretability for XAI"
+    authors: "Sean Tull 외"
+    keywords: "cs.AI, cs.LG, cs.LO, math.CT"
+    url: "https://arxiv.org/abs/2406.17583"
+  referenced:
+    - { id: "2304.14094", title: "Categorical Foundations of Explainable AI: A Unifying Theory", authors: "Pietro Barbiero 외", keywords: "cs.AI, cs.LG, stat.ML", url: "https://arxiv.org/abs/2304.14094" }
+    - { id: "2409.08777", title: "Scalable and interpretable quantum natural language processing: an implementation on trapped ions", authors: "Tiffany Duneau 외", keywords: "quant-ph", url: "https://arxiv.org/abs/2409.08777" }
+    - { id: "2507.02940", title: "Towards a Comparative Framework for Compositional AI Models", authors: "Tiffany Duneau", keywords: "cs.CL, cs.AI, quant-ph", url: "https://arxiv.org/abs/2507.02940" }
+    - { id: "2602.16612", title: "Causal and Compositional Abstraction", authors: "Robin Lorenz, Sean Tull", keywords: "cs.LO, cs.AI, math.CT, quant-ph", url: "https://arxiv.org/abs/2602.16612" }
+    - { id: "2602.16823", title: "Formal Mechanistic Interpretability: Automated Circuit Discovery with Provable Guarantees", authors: "Itamar Hadad 외", keywords: "cs.LG, cs.LO", url: "https://arxiv.org/abs/2602.16823" }
+    - { id: "2605.08934", title: "From Mechanistic to Compositional Interpretability", authors: "Ward Gauderis 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.08934" }
+
 2026-08-25-sae-backdoor-detection-diff-crosscoder-sanity:
   title: "빼고 남은 것만 본다 — 백도어를 두 SAE 배선으로 갈라낸 실험, 그리고 그 완벽한 분리가 눈금에서 왔을 가능성"
   central:

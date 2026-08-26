@@ -9740,5 +9740,65 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2602.16612": {
+  "title": "Causal and Compositional Abstraction",
+  "authors": [
+   "Robin Lorenz",
+   "Sean Tull"
+  ],
+  "published": "2026-02-18",
+  "categories": [
+   "cs.LO",
+   "cs.AI",
+   "math.CT",
+   "quant-ph"
+  ]
+ },
+ "2304.14094": {
+  "title": "Categorical Foundations of Explainable AI: A Unifying Theory",
+  "authors": [
+   "Pietro Barbiero",
+   "Stefano Fioravanti",
+   "Francesco Giannini",
+   "Alberto Tonda",
+   "Pietro Lio",
+   "Elena Di Lavore"
+  ],
+  "published": "2023-04-27",
+  "categories": [
+   "cs.AI",
+   "cs.LG",
+   "stat.ML"
+  ]
+ },
+ "2409.08777": {
+  "title": "Scalable and interpretable quantum natural language processing: an implementation on trapped ions",
+  "authors": [
+   "Tiffany Duneau",
+   "Saskia Bruhn",
+   "Gabriel Matos",
+   "Tuomas Laakkonen",
+   "Katerina Saiti",
+   "Anna Pearson",
+   "Konstantinos Meichanetzidis",
+   "Bob Coecke"
+  ],
+  "published": "2024-09-13",
+  "categories": [
+   "quant-ph"
+  ]
+ },
+ "2507.02940": {
+  "title": "Towards a Comparative Framework for Compositional AI Models",
+  "authors": [
+   "Tiffany Duneau"
+  ],
+  "published": "2025-06-27",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "quant-ph"
+  ]
  }
 }

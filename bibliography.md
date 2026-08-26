@@ -6,6 +6,16 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-26] 계보를 확인하러 갔다가 내 추정 하나를 고쳤습니다 — 모든 AI 모델을 문자열 다이어그램으로 적으려 한 범주론 틀, 그리고 그 틀이 표준 신경망 앞에서 멈추는 자리
+
+- **중심**: Sean Tull 외. *Towards Compositional Interpretability for XAI*. [arXiv:2406.17583](https://arxiv.org/abs/2406.17583) — 분야: cs.AI, cs.LG, cs.LO, math.CT
+- Pietro Barbiero 외. *Categorical Foundations of Explainable AI: A Unifying Theory*. [arXiv:2304.14094](https://arxiv.org/abs/2304.14094) — 분야: cs.AI, cs.LG, stat.ML
+- Tiffany Duneau 외. *Scalable and interpretable quantum natural language processing: an implementation on trapped ions*. [arXiv:2409.08777](https://arxiv.org/abs/2409.08777) — 분야: quant-ph
+- Tiffany Duneau. *Towards a Comparative Framework for Compositional AI Models*. [arXiv:2507.02940](https://arxiv.org/abs/2507.02940) — 분야: cs.CL, cs.AI, quant-ph
+- Robin Lorenz, Sean Tull. *Causal and Compositional Abstraction*. [arXiv:2602.16612](https://arxiv.org/abs/2602.16612) — 분야: cs.LO, cs.AI, math.CT, quant-ph
+- Itamar Hadad 외. *Formal Mechanistic Interpretability: Automated Circuit Discovery with Provable Guarantees*. [arXiv:2602.16823](https://arxiv.org/abs/2602.16823) — 분야: cs.LG, cs.LO
+- Ward Gauderis 외. *From Mechanistic to Compositional Interpretability*. [arXiv:2605.08934](https://arxiv.org/abs/2605.08934) — 분야: cs.LG
+
 ## [2026-08-25] 빼고 남은 것만 본다 — 백도어를 두 SAE 배선으로 갈라낸 실험, 그리고 그 완벽한 분리가 눈금에서 왔을 가능성
 
 - **중심**: Sachin Kumar. *Activation Differences Reveal Backdoors: A Comparison of SAE Architectures*. [arXiv:2605.07324](https://arxiv.org/abs/2605.07324) — 분야: cs.CL, cs.AI, cs.CR, cs.LG
