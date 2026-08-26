@@ -9653,5 +9653,92 @@
    "cs.AI",
    "cs.CL"
   ]
+ },
+ "2511.00554": {
+  "title": "Red-teaming Activation Probes using Prompted LLMs",
+  "authors": [
+   "Phil Blandfort",
+   "Robert Graham"
+  ],
+  "published": "2025-11-01",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2504.02922": {
+  "title": "Overcoming Sparsity Artifacts in Crosscoders to Interpret Chat-Tuning",
+  "authors": [
+   "Julian Minder",
+   "Clément Dumas",
+   "Caden Juang",
+   "Bilal Chugtai",
+   "Neel Nanda"
+  ],
+  "published": "2025-04-03",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2502.16681": {
+  "title": "Are Sparse Autoencoders Useful? A Case Study in Sparse Probing",
+  "authors": [
+   "Subhash Kantamneni",
+   "Joshua Engels",
+   "Senthooran Rajamanoharan",
+   "Max Tegmark",
+   "Neel Nanda"
+  ],
+  "published": "2025-02-23",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2606.07963": {
+  "title": "Shared Latent Structures Enable Unified Backdoor Detection and Mitigation in LLMs",
+  "authors": [
+   "Omar Mahmoud",
+   "Aly M. Kassem",
+   "Thommen George Karimpanal",
+   "Buddhika Laknath Semage",
+   "Negar Rostamzadeh",
+   "Golnoosh Farnadi",
+   "Santu Rana"
+  ],
+  "published": "2026-06-06",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2608.06795": {
+  "title": "LoRAScan: Detecting Backdoor Prompts in Low-Rank Adapters for Large Language Models via Down-Projection Activation Spikes",
+  "authors": [
+   "Doniyorkhon Obidov",
+   "Honggang Yu",
+   "Xiaolong Guo",
+   "Kaichen Yang"
+  ],
+  "published": "2026-08-07",
+  "categories": [
+   "cs.CR",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2603.05805": {
+  "title": "Sparse Crosscoders for diffing MoEs and Dense models",
+  "authors": [
+   "Marmik Chaudhari",
+   "Nishkal Hundia",
+   "Idhant Gulati"
+  ],
+  "published": "2026-03-06",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }

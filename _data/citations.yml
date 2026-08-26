@@ -1,6 +1,26 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-25-sae-backdoor-detection-diff-crosscoder-sanity:
+  title: "빼고 남은 것만 본다 — 백도어를 두 SAE 배선으로 갈라낸 실험, 그리고 그 완벽한 분리가 눈금에서 왔을 가능성"
+  central:
+    id: "2605.07324"
+    title: "Activation Differences Reveal Backdoors: A Comparison of SAE Architectures"
+    authors: "Sachin Kumar"
+    keywords: "cs.CL, cs.AI, cs.CR, cs.LG"
+    url: "https://arxiv.org/abs/2605.07324"
+  referenced:
+    - { id: "2502.16681", title: "Are Sparse Autoencoders Useful? A Case Study in Sparse Probing", authors: "Subhash Kantamneni 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2502.16681" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2504.02922", title: "Overcoming Sparsity Artifacts in Crosscoders to Interpret Chat-Tuning", authors: "Julian Minder 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2504.02922" }
+    - { id: "2511.00554", title: "Red-teaming Activation Probes using Prompted LLMs", authors: "Phil Blandfort, Robert Graham", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2511.00554" }
+    - { id: "2602.14111", title: "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?", authors: "Anton Korznikov 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2602.14111" }
+    - { id: "2603.05805", title: "Sparse Crosscoders for diffing MoEs and Dense models", authors: "Marmik Chaudhari 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2603.05805" }
+    - { id: "2605.18229", title: "Are Sparse Autoencoder Benchmarks Reliable?", authors: "David Chanin", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.18229" }
+    - { id: "2605.24286", title: "Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning", authors: "Jinghan Jia 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2605.24286" }
+    - { id: "2606.07963", title: "Shared Latent Structures Enable Unified Backdoor Detection and Mitigation in LLMs", authors: "Omar Mahmoud 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.07963" }
+    - { id: "2608.06795", title: "LoRAScan: Detecting Backdoor Prompts in Low-Rank Adapters for Large Language Models via Down-Projection Activation Spikes", authors: "Doniyorkhon Obidov 외", keywords: "cs.CR, cs.AI, cs.CL", url: "https://arxiv.org/abs/2608.06795" }
+
 2026-08-24-formal-circuit-discovery-provable-guarantees:
   title: "일치를 점이 아니라 영역에서 묻기 — 회로 발견에 형식 증명을 씌운 틀, 그리고 그 증명이 닿지 않는 한 겹"
   central:

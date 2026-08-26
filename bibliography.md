@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-25] 빼고 남은 것만 본다 — 백도어를 두 SAE 배선으로 갈라낸 실험, 그리고 그 완벽한 분리가 눈금에서 왔을 가능성
+
+- **중심**: Sachin Kumar. *Activation Differences Reveal Backdoors: A Comparison of SAE Architectures*. [arXiv:2605.07324](https://arxiv.org/abs/2605.07324) — 분야: cs.CL, cs.AI, cs.CR, cs.LG
+- Subhash Kantamneni 외. *Are Sparse Autoencoders Useful? A Case Study in Sparse Probing*. [arXiv:2502.16681](https://arxiv.org/abs/2502.16681) — 분야: cs.LG, cs.AI
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Julian Minder 외. *Overcoming Sparsity Artifacts in Crosscoders to Interpret Chat-Tuning*. [arXiv:2504.02922](https://arxiv.org/abs/2504.02922) — 분야: cs.LG, cs.AI, cs.CL
+- Phil Blandfort, Robert Graham. *Red-teaming Activation Probes using Prompted LLMs*. [arXiv:2511.00554](https://arxiv.org/abs/2511.00554) — 분야: cs.LG, cs.AI
+- Anton Korznikov 외. *Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?*. [arXiv:2602.14111](https://arxiv.org/abs/2602.14111) — 분야: cs.LG
+- Marmik Chaudhari 외. *Sparse Crosscoders for diffing MoEs and Dense models*. [arXiv:2603.05805](https://arxiv.org/abs/2603.05805) — 분야: cs.LG
+- David Chanin. *Are Sparse Autoencoder Benchmarks Reliable?*. [arXiv:2605.18229](https://arxiv.org/abs/2605.18229) — 분야: cs.LG, cs.AI
+- Jinghan Jia 외. *Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning*. [arXiv:2605.24286](https://arxiv.org/abs/2605.24286) — 분야: cs.LG, cs.CL
+- Omar Mahmoud 외. *Shared Latent Structures Enable Unified Backdoor Detection and Mitigation in LLMs*. [arXiv:2606.07963](https://arxiv.org/abs/2606.07963) — 분야: cs.AI, cs.CL
+- Doniyorkhon Obidov 외. *LoRAScan: Detecting Backdoor Prompts in Low-Rank Adapters for Large Language Models via Down-Projection Activation Spikes*. [arXiv:2608.06795](https://arxiv.org/abs/2608.06795) — 분야: cs.CR, cs.AI, cs.CL
+
 ## [2026-08-24] 일치를 점이 아니라 영역에서 묻기 — 회로 발견에 형식 증명을 씌운 틀, 그리고 그 증명이 닿지 않는 한 겹
 
 - **중심**: Itamar Hadad 외. *Formal Mechanistic Interpretability: Automated Circuit Discovery with Provable Guarantees*. [arXiv:2602.16823](https://arxiv.org/abs/2602.16823) — 분야: cs.LG, cs.LO
