@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-27] 셋을 세웠는데 둘 몫 — 위원회의 표상 붕괴를 잰 눈금, 그리고 그 눈금을 처방으로 옮길 때 무너지는 자리
+
+- **중심**: Dipkumar Patel. *Representational Collapse in Multi-Agent LLM Committees: Measurement and Diversity-Aware Consensus*. [arXiv:2604.03809](https://arxiv.org/abs/2604.03809) — 분야: cs.LG, cs.AI, cs.MA
+- Emily Wenger, Yoed Kenett. *We're Different, We're the Same: Creative Homogeneity Across LLMs*. [arXiv:2501.19361](https://arxiv.org/abs/2501.19361) — 분야: cs.CY, cs.AI, cs.CL, cs.LG
+- Celia Cintas 외. *Localizing Persona Representations in LLMs*. [arXiv:2505.24539](https://arxiv.org/abs/2505.24539) — 분야: cs.CL, cs.AI
+- Liwei Jiang 외. *Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)*. [arXiv:2510.22954](https://arxiv.org/abs/2510.22954) — 분야: cs.CL
+- Yingxuan Yang 외. *Understanding Agent Scaling in LLM-Based Multi-Agent Systems via Diversity*. [arXiv:2602.03794](https://arxiv.org/abs/2602.03794) — 분야: cs.AI, cs.LG
+- Nuo Chen 외. *Diversity Collapse in Multi-Agent LLM Systems: Structural Coupling and Collective Failure in Open-Ended Idea Generation*. [arXiv:2604.18005](https://arxiv.org/abs/2604.18005) — 분야: cs.MA, cs.AI, cs.CL
+- Blaž Bertalanič, Carolina Fortuna. *The Cost of Consensus: Isolated Self-Correction Prevails Over Unguided Homogeneous Multi-Agent Debate*. [arXiv:2605.00914](https://arxiv.org/abs/2605.00914) — 분야: cs.MA, cs.AI
+- Aman Mehta. *When Agents Commit Too Soon: Diagnosing Premature Commitment in LLM Agents*. [arXiv:2606.22936](https://arxiv.org/abs/2606.22936) — 분야: cs.AI
+- Zewen Liu. *BOUNDARY_SYNC: Measuring Communication-Induced Representational Coupling in Multi-Agent LLM Systems*. [arXiv:2607.01600](https://arxiv.org/abs/2607.01600) — 분야: cs.LG, cs.CL
+- Donghwan Kim. *Are Diversity Metrics Measuring Diversity? A Capability-Controlled Audit of Majority-Vote Gain in LLM Ensembles*. [arXiv:2607.20768](https://arxiv.org/abs/2607.20768) — 분야: cs.CL, cs.AI, cs.LG
+- Tairan Fu 외. *Beyond the Hivemind: Escaping LLM Homogeneity via Meta-Persona Anchoring and Sequential Temperature Scaling*. [arXiv:2608.02618](https://arxiv.org/abs/2608.02618) — 분야: cs.AI, cs.CL
+
 ## [2026-08-26] 계보를 확인하러 갔다가 내 추정 하나를 고쳤습니다 — 모든 AI 모델을 문자열 다이어그램으로 적으려 한 범주론 틀, 그리고 그 틀이 표준 신경망 앞에서 멈추는 자리
 
 - **중심**: Sean Tull 외. *Towards Compositional Interpretability for XAI*. [arXiv:2406.17583](https://arxiv.org/abs/2406.17583) — 분야: cs.AI, cs.LG, cs.LO, math.CT

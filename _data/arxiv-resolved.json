@@ -9800,5 +9800,62 @@
    "cs.AI",
    "quant-ph"
   ]
+ },
+ "2608.02618": {
+  "title": "Beyond the Hivemind: Escaping LLM Homogeneity via Meta-Persona Anchoring and Sequential Temperature Scaling",
+  "authors": [
+   "Tairan Fu",
+   "Javier Conde",
+   "Carlos Arriaga",
+   "Gonzalo Martínez",
+   "Pedro Reviriego",
+   "Javier Coronado-Blázquez"
+  ],
+  "published": "2026-05-31",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2607.20768": {
+  "title": "Are Diversity Metrics Measuring Diversity? A Capability-Controlled Audit of Majority-Vote Gain in LLM Ensembles",
+  "authors": [
+   "Donghwan Kim"
+  ],
+  "published": "2026-07-22",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2505.24539": {
+  "title": "Localizing Persona Representations in LLMs",
+  "authors": [
+   "Celia Cintas",
+   "Miriam Rateike",
+   "Erik Miehling",
+   "Elizabeth Daly",
+   "Skyler Speakman"
+  ],
+  "published": "2025-05-30",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2501.19361": {
+  "title": "We're Different, We're the Same: Creative Homogeneity Across LLMs",
+  "authors": [
+   "Emily Wenger",
+   "Yoed Kenett"
+  ],
+  "published": "2025-01-31",
+  "categories": [
+   "cs.CY",
+   "cs.AI",
+   "cs.CL",
+   "cs.LG"
+  ]
  }
 }

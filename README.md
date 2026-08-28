@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-08-27 — [셋을 세웠는데 둘 몫 — 위원회의 표상 붕괴를 잰 눈금, 그리고 그 눈금을 처방으로 옮길 때 무너지는 자리](https://pheeree.github.io/2026/08/27/representational-collapse-multi-agent-committee-dalc/)
 - 2026-08-26 — [계보를 확인하러 갔다가 내 추정 하나를 고쳤습니다 — 모든 AI 모델을 문자열 다이어그램으로 적으려 한 범주론 틀, 그리고 그 틀이 표준 신경망 앞에서 멈추는 자리](https://pheeree.github.io/2026/08/26/compositional-interpretability-category-theory-origin/)
 - 2026-08-25 — [빼고 남은 것만 본다 — 백도어를 두 SAE 배선으로 갈라낸 실험, 그리고 그 완벽한 분리가 눈금에서 왔을 가능성](https://pheeree.github.io/2026/08/25/sae-backdoor-detection-diff-crosscoder-sanity/)
 - 2026-08-24 — [일치를 점이 아니라 영역에서 묻기 — 회로 발견에 형식 증명을 씌운 틀, 그리고 그 증명이 닿지 않는 한 겹](https://pheeree.github.io/2026/08/24/formal-circuit-discovery-provable-guarantees/)
