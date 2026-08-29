@@ -6,6 +6,28 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-29] 칸은 맞는데 퍼즐이 틀린다 — 재귀 추론기를 엣지로 압축했을 때 무너지는 것, 그리고 레이블 없이 그 붕괴를 미리 재는 눈금
+
+- **중심**: Pearse Jim 외. *What Survives When You Compress a Recursive Reasoner for the Edge?*. [arXiv:2606.26488](https://arxiv.org/abs/2606.26488) — 분야: cs.LG
+- MohammadReza Davari 외. *Reliability of CKA as a Similarity Measure in Deep Learning*. [arXiv:2210.16156](https://arxiv.org/abs/2210.16156) — 분야: cs.LG, cs.AI, cs.CV
+- Zhen Li 외. *Quantization Meets Reasoning: Exploring and Mitigating Degradation of Low-Bit LLMs in Mathematical Reasoning*. [arXiv:2505.11574](https://arxiv.org/abs/2505.11574) — 분야: cs.LG, cs.AI
+- Amit LeVi 외. *You Had One Job: Per-Task Quantization Using LLMs' Hidden Representations*. [arXiv:2511.06516](https://arxiv.org/abs/2511.06516) — 분야: cs.CL
+- Keyu Lv 외. *What Makes Low-Bit Quantization-Aware Training Work for Reasoning LLMs? A Systematic Study*. [arXiv:2601.14888](https://arxiv.org/abs/2601.14888) — 분야: cs.LG, cs.AI, cs.CL
+- Yizhe Xie 외. *From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration*. [arXiv:2603.04474](https://arxiv.org/abs/2603.04474) — 분야: cs.MA, cs.AI
+- Sooyoung Ryu 외. *Q-Drift: Quantization-Aware Drift Correction for Diffusion Model Sampling*. [arXiv:2603.18095](https://arxiv.org/abs/2603.18095) — 분야: cs.CV, cs.LG
+- Boyu Shi 외. *Understanding Performance Collapse in Layer-Pruned Large Language Models via Decision Representation Transitions*. [arXiv:2605.07271](https://arxiv.org/abs/2605.07271) — 분야: cs.CL, cs.AI
+- Anany Kotawala. *Locally Coherent, Globally Incoherent: Bounding Compositional Incoherence in Multi-Component LLM Agents*. [arXiv:2605.30335](https://arxiv.org/abs/2605.30335) — 분야: cs.AI, cs.CL
+- Sanae Lotfi 외. *Quantized Reasoning Models Think They Need to Think Longer, but They Do Not*. [arXiv:2606.00206](https://arxiv.org/abs/2606.00206) — 분야: cs.LG
+- Zhennan Shen 외. *On the Geometry of On-Policy Distillation*. [arXiv:2606.07082](https://arxiv.org/abs/2606.07082) — 분야: cs.LG, cs.AI
+- Haozhe Hu 외. *Beyond FLOPs: Benchmarking Real Inference Acceleration of LLM Pruning under a GEMM-Centric Taxonomy*. [arXiv:2606.09080](https://arxiv.org/abs/2606.09080) — 분야: cs.LG, cs.CL
+- Sahil Kadadekar. *Quality Is Not a Safety Proxy Under Quantization*. [arXiv:2606.10154](https://arxiv.org/abs/2606.10154) — 분야: cs.LG, cs.CR
+- Janghwan Lee 외. *ReQAT: Achieving Full-Precision Reasoning Accuracy with 4-bit Floating-Point Quantization-Aware Training*. [arXiv:2606.15682](https://arxiv.org/abs/2606.15682) — 분야: cs.LG
+- Inesh Chakrabarti 외. *UltraQuant: 4-bit KV Caching for Context-Heavy Agents*. [arXiv:2606.20474](https://arxiv.org/abs/2606.20474) — 분야: cs.LG, cs.AI, cs.PF
+- Jinghan Wang 외. *Cascaded Multi-Granularity Pruning for On-Device LLM Inference in Industrial IoT*. [arXiv:2606.26861](https://arxiv.org/abs/2606.26861) — 분야: cs.CL
+- Akhiad Bercovich 외. *Nemotron-Labs-3-Puzzle-75B-A9B: Compressing Hybrid MoE LLMs*. [arXiv:2607.04371](https://arxiv.org/abs/2607.04371) — 분야: cs.AI
+- Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+- Zekun Wu 외. *Which Decisions Low-Bit Quantization Breaks, and How to Predict Them*. [arXiv:2608.06564](https://arxiv.org/abs/2608.06564) — 분야: cs.LG, cs.CL
+
 ## [2026-08-28] 밑이 다른 로그 둘이 같은 수였습니다 — 유효 채널로 고쳐 쓴 에이전트 스케일링, 그리고 정답을 모르면 절반만 보이는 눈금
 
 - **중심**: Yingxuan Yang 외. *Understanding Agent Scaling in LLM-Based Multi-Agent Systems via Diversity*. [arXiv:2602.03794](https://arxiv.org/abs/2602.03794) — 분야: cs.AI, cs.LG

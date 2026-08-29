@@ -1,6 +1,34 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-29-recursive-reasoner-compression-edge:
+  title: "칸은 맞는데 퍼즐이 틀린다 — 재귀 추론기를 엣지로 압축했을 때 무너지는 것, 그리고 레이블 없이 그 붕괴를 미리 재는 눈금"
+  central:
+    id: "2606.26488"
+    title: "What Survives When You Compress a Recursive Reasoner for the Edge?"
+    authors: "Pearse Jim 외"
+    keywords: "cs.LG"
+    url: "https://arxiv.org/abs/2606.26488"
+  referenced:
+    - { id: "2210.16156", title: "Reliability of CKA as a Similarity Measure in Deep Learning", authors: "MohammadReza Davari 외", keywords: "cs.LG, cs.AI, cs.CV", url: "https://arxiv.org/abs/2210.16156" }
+    - { id: "2505.11574", title: "Quantization Meets Reasoning: Exploring and Mitigating Degradation of Low-Bit LLMs in Mathematical Reasoning", authors: "Zhen Li 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2505.11574" }
+    - { id: "2511.06516", title: "You Had One Job: Per-Task Quantization Using LLMs' Hidden Representations", authors: "Amit LeVi 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2511.06516" }
+    - { id: "2601.14888", title: "What Makes Low-Bit Quantization-Aware Training Work for Reasoning LLMs? A Systematic Study", authors: "Keyu Lv 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2601.14888" }
+    - { id: "2603.04474", title: "From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration", authors: "Yizhe Xie 외", keywords: "cs.MA, cs.AI", url: "https://arxiv.org/abs/2603.04474" }
+    - { id: "2603.18095", title: "Q-Drift: Quantization-Aware Drift Correction for Diffusion Model Sampling", authors: "Sooyoung Ryu 외", keywords: "cs.CV, cs.LG", url: "https://arxiv.org/abs/2603.18095" }
+    - { id: "2605.07271", title: "Understanding Performance Collapse in Layer-Pruned Large Language Models via Decision Representation Transitions", authors: "Boyu Shi 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.07271" }
+    - { id: "2605.30335", title: "Locally Coherent, Globally Incoherent: Bounding Compositional Incoherence in Multi-Component LLM Agents", authors: "Anany Kotawala", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2605.30335" }
+    - { id: "2606.00206", title: "Quantized Reasoning Models Think They Need to Think Longer, but They Do Not", authors: "Sanae Lotfi 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.00206" }
+    - { id: "2606.07082", title: "On the Geometry of On-Policy Distillation", authors: "Zhennan Shen 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.07082" }
+    - { id: "2606.09080", title: "Beyond FLOPs: Benchmarking Real Inference Acceleration of LLM Pruning under a GEMM-Centric Taxonomy", authors: "Haozhe Hu 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2606.09080" }
+    - { id: "2606.10154", title: "Quality Is Not a Safety Proxy Under Quantization", authors: "Sahil Kadadekar", keywords: "cs.LG, cs.CR", url: "https://arxiv.org/abs/2606.10154" }
+    - { id: "2606.15682", title: "ReQAT: Achieving Full-Precision Reasoning Accuracy with 4-bit Floating-Point Quantization-Aware Training", authors: "Janghwan Lee 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.15682" }
+    - { id: "2606.20474", title: "UltraQuant: 4-bit KV Caching for Context-Heavy Agents", authors: "Inesh Chakrabarti 외", keywords: "cs.LG, cs.AI, cs.PF", url: "https://arxiv.org/abs/2606.20474" }
+    - { id: "2606.26861", title: "Cascaded Multi-Granularity Pruning for On-Device LLM Inference in Industrial IoT", authors: "Jinghan Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.26861" }
+    - { id: "2607.04371", title: "Nemotron-Labs-3-Puzzle-75B-A9B: Compressing Hybrid MoE LLMs", authors: "Akhiad Bercovich 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2607.04371" }
+    - { id: "2607.16237", title: "Quantizing Recursive Reasoning Models", authors: "Thorir Mar Ingolfsson 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2607.16237" }
+    - { id: "2608.06564", title: "Which Decisions Low-Bit Quantization Breaks, and How to Predict Them", authors: "Zekun Wu 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2608.06564" }
+
 2026-08-28-agent-scaling-diversity-effective-channels:
   title: "밑이 다른 로그 둘이 같은 수였습니다 — 유효 채널로 고쳐 쓴 에이전트 스케일링, 그리고 정답을 모르면 절반만 보이는 눈금"
   central:
