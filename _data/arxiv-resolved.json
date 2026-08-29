@@ -10306,5 +10306,109 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2607.28418": {
+  "title": "WIDE: Boosting Adaptive LLM Inference via Token-level Dynamic Width Pruning",
+  "authors": [
+   "Haozhe Hu",
+   "Hao Wu",
+   "Peiran Yin",
+   "Chao Han",
+   "Yunpu Ma",
+   "Xiaoyu Shen"
+  ],
+  "published": "2026-07-30",
+  "categories": [
+   "cs.AI",
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2508.16712": {
+  "title": "Systematic Characterization of LLM Quantization: A Performance, Energy, and Quality Perspective",
+  "authors": [
+   "Tianyao Shi",
+   "Yi Ding"
+  ],
+  "published": "2025-08-22",
+  "categories": [
+   "cs.PF",
+   "cs.AI",
+   "cs.AR",
+   "cs.DC",
+   "cs.LG"
+  ]
+ },
+ "2601.03324": {
+  "title": "Bare-Metal Tensor Virtualization: Overcoming the Memory Wall in Edge-AI Inference on ARM64",
+  "authors": [
+   "Bugra Kilictas",
+   "Faruk Alpay"
+  ],
+  "published": "2026-01-06",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.AR",
+   "cs.LG"
+  ]
+ },
+ "2603.23640": {
+  "title": "LLM Inference at the Edge: Mobile, NPU, and GPU Performance Efficiency Trade-offs Under Sustained Load",
+  "authors": [
+   "Pranay Tummalapalli",
+   "Sahil Arayakandy",
+   "Ritam Pal",
+   "Kautuk Kundan"
+  ],
+  "published": "2026-03-24",
+  "categories": [
+   "cs.DC",
+   "cs.LG"
+  ]
+ },
+ "2404.11788": {
+  "title": "Understanding the Performance Horizon of the Latest ML Workloads with NonGEMM Workloads",
+  "authors": [
+   "Rachid Karami",
+   "Sheng-Chun Kao",
+   "Hyoukjun Kwon"
+  ],
+  "published": "2024-04-17",
+  "categories": [
+   "cs.AR",
+   "cs.LG",
+   "cs.PF"
+  ]
+ },
+ "2110.10811": {
+  "title": "HALP: Hardware-Aware Latency Pruning",
+  "authors": [
+   "Maying Shen",
+   "Hongxu Yin",
+   "Pavlo Molchanov",
+   "Lei Mao",
+   "Jianna Liu",
+   "Jose M. Alvarez"
+  ],
+  "published": "2021-10-20",
+  "categories": [
+   "cs.CV",
+   "cs.LG"
+  ]
+ },
+ "2302.06117": {
+  "title": "The Framework Tax: Disparities Between Inference Efficiency in NLP Research and Deployment",
+  "authors": [
+   "Jared Fernandez",
+   "Jacob Kahn",
+   "Clara Na",
+   "Yonatan Bisk",
+   "Emma Strubell"
+  ],
+  "published": "2023-02-13",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }
