@@ -1,0 +1,78 @@
+# blog-daily-cycle 픽 경로 장부 (2026-08-29 신설)
+#
+# 왜: 조타가 죽어도 두 달씩 안 보이던 이유가 이 숫자의 부재였다.
+#     2026-06 말~08-27 사이 (b) 층이 파서 어긋남으로 죽어 있었고 사이클은 3일 연속
+#     (c) 무작위로 떨어지면서 그것을 정상으로 보고했다. 조타 비율이 시계열로 쌓여야 한다.
+#
+# 기입: 매 사이클 B-1 종료 시 한 행. 사람이 손으로 고치지 않는다.
+#
+# path — 어느 층에서 골랐나
+#   a        직전 3편의 "다음 읽을 후보" 도착분 (사슬)
+#   b        끌린 이유 대기열 (blog_pick_queue.py)
+#   c-focus  초점 Q의 "다음 후보" 목록
+#   d        최근 14일 무작위 (조타 없음 — 이 값이 잦으면 경고)
+#
+# focus_q — 그날의 초점 질문 (research-agenda의 focus: active). 없으면 null
+# nth     — 그 초점으로 쓴 몇 번째 글인가
+# purpose — 그날 무엇을 밝히려 했나 (B-0.5 산출, 한 줄)
+# switch_notice — 이 글에 초점 전환 예고를 실었나
+
+- date: 2026-08-25
+  slug: sae-backdoor-detection-diff-crosscoder-sanity
+  source: 2605.07324
+  path: d
+  focus_q: null
+  nth: null
+  purpose: null
+  switch_notice: false
+  note: 소급 기입. 08-27 사이클 보고의 "3일 연속 같은 경로(c)"에 근거.
+
+- date: 2026-08-26
+  slug: compositional-interpretability-category-theory-origin
+  source: 2406.17583
+  path: d
+  focus_q: null
+  nth: null
+  purpose: null
+  switch_notice: false
+  note: 소급 기입. 같은 근거.
+
+- date: 2026-08-27
+  slug: representational-collapse-multi-agent-committee-dalc
+  source: 2604.03809
+  path: d
+  focus_q: null
+  nth: null
+  purpose: null
+  switch_notice: false
+  note: >
+    소급 기입. 사이클 자기 보고 verbatim — "픽 경로 c: 직전 3편의 후보 11편 전부
+    미도착(a), 논문 인벤토리 1,023건 전부 '끌린 이유' 공백(b), 최근 14일 미사용
+    17편 중 무작위(c). 3일 연속 같은 경로." (b)의 "전부 공백"은 실제로는 파서
+    어긋남에 의한 오독이었다 — 그때 씨앗 2편이 미러에 있었다.
+
+- date: 2026-08-28
+  slug: agent-scaling-diversity-effective-channels
+  source: 2602.03794
+  path: a
+  focus_q: null
+  nth: null
+  purpose: null
+  switch_notice: false
+  note: >
+    소급 기입. 08-27 글의 다음 읽을 후보 2순위(1순위 2607.20768은 미러 미도착).
+    사흘 만에 사슬이 이어진 회차. 작성은 08-29 00:39, 발행은 08-29 직접 세션이
+    08-28 슬롯에 배치(본문이 08-27을 "어제 글"로 아홉 군데 참조하기 때문).
+
+- date: 2026-08-29
+  slug: recursive-reasoner-compression-edge
+  source: 2606.26488
+  path: b
+  focus_q: null
+  nth: null
+  purpose: null
+  switch_notice: false
+  note: >
+    소급 기입. (b) 파서 수리 직후 첫 (b) 픽 — 두 달 만에 조타가 돌아온 회차.
+    Q9는 이 글을 근거로 같은 날 승급됐으므로 작성 시점엔 초점이 없었다.
+    다음 회차부터 focus_q·nth·purpose가 채워진다.
