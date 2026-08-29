@@ -6,6 +6,24 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-28] 밑이 다른 로그 둘이 같은 수였습니다 — 유효 채널로 고쳐 쓴 에이전트 스케일링, 그리고 정답을 모르면 절반만 보이는 눈금
+
+- **중심**: Yingxuan Yang 외. *Understanding Agent Scaling in LLM-Based Multi-Agent Systems via Diversity*. [arXiv:2602.03794](https://arxiv.org/abs/2602.03794) — 분야: cs.AI, cs.LG
+- Taiga Abe 외. *Pathologies of Predictive Diversity in Deep Ensembles*. [arXiv:2302.00704](https://arxiv.org/abs/2302.00704) — 분야: cs.LG, stat.ML
+- Wenzhe Li 외. *Rethinking Mixture-of-Agents: Is Mixing Different Large Language Models Beneficial?*. [arXiv:2502.00674](https://arxiv.org/abs/2502.00674) — 분야: cs.CL, cs.LG
+- Andrea Wynn 외. *Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate*. [arXiv:2509.05396](https://arxiv.org/abs/2509.05396) — 분야: cs.CL, cs.AI, cs.MA
+- Liwei Jiang 외. *Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)*. [arXiv:2510.22954](https://arxiv.org/abs/2510.22954) — 분야: cs.CL
+- Liyu Zerihun. *Estimating the Effective Rank of Vision Transformers via Low-Rank Factorization*. [arXiv:2512.00792](https://arxiv.org/abs/2512.00792) — 분야: cs.LG
+- Yubin Kim 외. *Towards a Science of Scaling Agent Systems*. [arXiv:2512.08296](https://arxiv.org/abs/2512.08296) — 분야: cs.AI
+- Jiwan Chung, Seon Joo Kim. *Global Geometry Is Not Enough for Vision Representations*. [arXiv:2602.03282](https://arxiv.org/abs/2602.03282) — 분야: cs.CV, cs.AI
+- Yigit Turkmen 외. *Don't Always Pick the Highest-Performing Model: An Information Theoretic View of LLM Ensemble Selection*. [arXiv:2602.08003](https://arxiv.org/abs/2602.08003) — 분야: cs.LG, cs.AI, cs.DC, cs.IT, stat.ML
+- Yichi Zhang 외. *Mixture of Complementary Agents for Robust LLM Ensemble*. [arXiv:2605.24048](https://arxiv.org/abs/2605.24048) — 분야: cs.LG, cs.AI
+- Guneet Kohli. *Nine Judges, Two Effective Votes: Correlated Errors Undermine LLM Evaluation Panels*. [arXiv:2605.29800](https://arxiv.org/abs/2605.29800) — 분야: cs.CL
+- Jialing Li 외. *Scaling Behavior of Single LLM-Driven Multi-Agent Systems*. [arXiv:2606.00655](https://arxiv.org/abs/2606.00655) — 분야: cs.MA, cs.AI, cs.CY
+- Blaž Bertalanič, Carolina Fortuna. *The Ringelmann Effect in Multi-Agent LLM Systems: A Scaling Law for Effective Team Size*. [arXiv:2606.02646](https://arxiv.org/abs/2606.02646) — 분야: physics.soc-ph, cs.AI, cs.MA
+- Aman Mehta. *When Agents Commit Too Soon: Diagnosing Premature Commitment in LLM Agents*. [arXiv:2606.22936](https://arxiv.org/abs/2606.22936) — 분야: cs.AI
+- Donghwan Kim. *Are Diversity Metrics Measuring Diversity? A Capability-Controlled Audit of Majority-Vote Gain in LLM Ensembles*. [arXiv:2607.20768](https://arxiv.org/abs/2607.20768) — 분야: cs.CL, cs.AI, cs.LG
+
 ## [2026-08-27] 셋을 세웠는데 둘 몫 — 위원회의 표상 붕괴를 잰 눈금, 그리고 그 눈금을 처방으로 옮길 때 무너지는 자리
 
 - **중심**: Dipkumar Patel. *Representational Collapse in Multi-Agent LLM Committees: Measurement and Diversity-Aware Consensus*. [arXiv:2604.03809](https://arxiv.org/abs/2604.03809) — 분야: cs.LG, cs.AI, cs.MA

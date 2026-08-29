@@ -1,6 +1,30 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-08-28-agent-scaling-diversity-effective-channels:
+  title: "밑이 다른 로그 둘이 같은 수였습니다 — 유효 채널로 고쳐 쓴 에이전트 스케일링, 그리고 정답을 모르면 절반만 보이는 눈금"
+  central:
+    id: "2602.03794"
+    title: "Understanding Agent Scaling in LLM-Based Multi-Agent Systems via Diversity"
+    authors: "Yingxuan Yang 외"
+    keywords: "cs.AI, cs.LG"
+    url: "https://arxiv.org/abs/2602.03794"
+  referenced:
+    - { id: "2302.00704", title: "Pathologies of Predictive Diversity in Deep Ensembles", authors: "Taiga Abe 외", keywords: "cs.LG, stat.ML", url: "https://arxiv.org/abs/2302.00704" }
+    - { id: "2502.00674", title: "Rethinking Mixture-of-Agents: Is Mixing Different Large Language Models Beneficial?", authors: "Wenzhe Li 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2502.00674" }
+    - { id: "2509.05396", title: "Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate", authors: "Andrea Wynn 외", keywords: "cs.CL, cs.AI, cs.MA", url: "https://arxiv.org/abs/2509.05396" }
+    - { id: "2510.22954", title: "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)", authors: "Liwei Jiang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2510.22954" }
+    - { id: "2512.00792", title: "Estimating the Effective Rank of Vision Transformers via Low-Rank Factorization", authors: "Liyu Zerihun", keywords: "cs.LG", url: "https://arxiv.org/abs/2512.00792" }
+    - { id: "2512.08296", title: "Towards a Science of Scaling Agent Systems", authors: "Yubin Kim 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2512.08296" }
+    - { id: "2602.03282", title: "Global Geometry Is Not Enough for Vision Representations", authors: "Jiwan Chung, Seon Joo Kim", keywords: "cs.CV, cs.AI", url: "https://arxiv.org/abs/2602.03282" }
+    - { id: "2602.08003", title: "Don't Always Pick the Highest-Performing Model: An Information Theoretic View of LLM Ensemble Selection", authors: "Yigit Turkmen 외", keywords: "cs.LG, cs.AI, cs.DC, cs.IT, stat.ML", url: "https://arxiv.org/abs/2602.08003" }
+    - { id: "2605.24048", title: "Mixture of Complementary Agents for Robust LLM Ensemble", authors: "Yichi Zhang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.24048" }
+    - { id: "2605.29800", title: "Nine Judges, Two Effective Votes: Correlated Errors Undermine LLM Evaluation Panels", authors: "Guneet Kohli", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.29800" }
+    - { id: "2606.00655", title: "Scaling Behavior of Single LLM-Driven Multi-Agent Systems", authors: "Jialing Li 외", keywords: "cs.MA, cs.AI, cs.CY", url: "https://arxiv.org/abs/2606.00655" }
+    - { id: "2606.02646", title: "The Ringelmann Effect in Multi-Agent LLM Systems: A Scaling Law for Effective Team Size", authors: "Blaž Bertalanič, Carolina Fortuna", keywords: "physics.soc-ph, cs.AI, cs.MA", url: "https://arxiv.org/abs/2606.02646" }
+    - { id: "2606.22936", title: "When Agents Commit Too Soon: Diagnosing Premature Commitment in LLM Agents", authors: "Aman Mehta", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.22936" }
+    - { id: "2607.20768", title: "Are Diversity Metrics Measuring Diversity? A Capability-Controlled Audit of Majority-Vote Gain in LLM Ensembles", authors: "Donghwan Kim", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2607.20768" }
+
 2026-08-27-representational-collapse-multi-agent-committee-dalc:
   title: "셋을 세웠는데 둘 몫 — 위원회의 표상 붕괴를 잰 눈금, 그리고 그 눈금을 처방으로 옮길 때 무너지는 자리"
   central:
