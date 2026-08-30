@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-08-30 — [절반을 지웠는데 시계는 그만큼 안 갑니다 — 가지치기를 GEMM의 축으로 다시 나눈 눈금, 그리고 그 눈금이 커널 성숙도에 기대는 자리](https://pheeree.github.io/2026/08/30/beyond-flops-pruning-real-acceleration-gemm/)
 - 2026-08-29 — [칸은 맞는데 퍼즐이 틀린다 — 재귀 추론기를 엣지로 압축했을 때 무너지는 것, 그리고 레이블 없이 그 붕괴를 미리 재는 눈금](https://pheeree.github.io/2026/08/29/recursive-reasoner-compression-edge/)
 - 2026-08-28 — [밑이 다른 로그 둘이 같은 수였습니다 — 유효 채널로 고쳐 쓴 에이전트 스케일링, 그리고 정답을 모르면 절반만 보이는 눈금](https://pheeree.github.io/2026/08/28/agent-scaling-diversity-effective-channels/)
 - 2026-08-27 — [셋을 세웠는데 둘 몫 — 위원회의 표상 붕괴를 잰 눈금, 그리고 그 눈금을 처방으로 옮길 때 무너지는 자리](https://pheeree.github.io/2026/08/27/representational-collapse-multi-agent-committee-dalc/)

@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-30] 절반을 지웠는데 시계는 그만큼 안 갑니다 — 가지치기를 GEMM의 축으로 다시 나눈 눈금, 그리고 그 눈금이 커널 성숙도에 기대는 자리
+
+- **중심**: Haozhe Hu 외. *Beyond FLOPs: Benchmarking Real Inference Acceleration of LLM Pruning under a GEMM-Centric Taxonomy*. [arXiv:2606.09080](https://arxiv.org/abs/2606.09080) — 분야: cs.LG, cs.CL
+- Maying Shen 외. *HALP: Hardware-Aware Latency Pruning*. [arXiv:2110.10811](https://arxiv.org/abs/2110.10811) — 분야: cs.CV, cs.LG
+- MohammadReza Davari 외. *Reliability of CKA as a Similarity Measure in Deep Learning*. [arXiv:2210.16156](https://arxiv.org/abs/2210.16156) — 분야: cs.LG, cs.AI, cs.CV
+- Jared Fernandez 외. *The Framework Tax: Disparities Between Inference Efficiency in NLP Research and Deployment*. [arXiv:2302.06117](https://arxiv.org/abs/2302.06117) — 분야: cs.LG
+- Rachid Karami 외. *Understanding the Performance Horizon of the Latest ML Workloads with NonGEMM Workloads*. [arXiv:2404.11788](https://arxiv.org/abs/2404.11788) — 분야: cs.AR, cs.LG, cs.PF
+- Tianyao Shi, Yi Ding. *Systematic Characterization of LLM Quantization: A Performance, Energy, and Quality Perspective*. [arXiv:2508.16712](https://arxiv.org/abs/2508.16712) — 분야: cs.PF, cs.AI, cs.AR, cs.DC, cs.LG
+- Bugra Kilictas, Faruk Alpay. *Bare-Metal Tensor Virtualization: Overcoming the Memory Wall in Edge-AI Inference on ARM64*. [arXiv:2601.03324](https://arxiv.org/abs/2601.03324) — 분야: cs.CL, cs.AI, cs.AR, cs.LG
+- Pranay Tummalapalli 외. *LLM Inference at the Edge: Mobile, NPU, and GPU Performance Efficiency Trade-offs Under Sustained Load*. [arXiv:2603.23640](https://arxiv.org/abs/2603.23640) — 분야: cs.DC, cs.LG
+- Jinghan Wang 외. *Cascaded Multi-Granularity Pruning for On-Device LLM Inference in Industrial IoT*. [arXiv:2606.26861](https://arxiv.org/abs/2606.26861) — 분야: cs.CL
+- Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+- Haozhe Hu 외. *WIDE: Boosting Adaptive LLM Inference via Token-level Dynamic Width Pruning*. [arXiv:2607.28418](https://arxiv.org/abs/2607.28418) — 분야: cs.AI, cs.CL, cs.LG
+
 ## [2026-08-29] 칸은 맞는데 퍼즐이 틀린다 — 재귀 추론기를 엣지로 압축했을 때 무너지는 것, 그리고 레이블 없이 그 붕괴를 미리 재는 눈금
 
 - **중심**: Pearse Jim 외. *What Survives When You Compress a Recursive Reasoner for the Edge?*. [arXiv:2606.26488](https://arxiv.org/abs/2606.26488) — 분야: cs.LG
