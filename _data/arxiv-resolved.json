@@ -10410,5 +10410,179 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2110.08419": {
+  "title": "Robustness Challenges in Model Distillation and Pruning for Natural Language Understanding",
+  "authors": [
+   "Mengnan Du",
+   "Subhabrata Mukherjee",
+   "Yu Cheng",
+   "Milad Shokouhi",
+   "Xia Hu",
+   "Ahmed Hassan Awadallah"
+  ],
+  "published": "2021-10-16",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2503.18377": {
+  "title": "Maximum Redundancy Pruning: A Principle-Driven Layerwise Sparsity Allocation for LLMs",
+  "authors": [
+   "Chang Gao",
+   "Kang Zhao",
+   "Runqi Wang",
+   "Jianfei Chen",
+   "Liping Jing"
+  ],
+  "published": "2025-03-24",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2211.13972": {
+  "title": "Picking on the Same Person: Does Algorithmic Monoculture lead to Outcome Homogenization?",
+  "authors": [
+   "Rishi Bommasani",
+   "Kathleen A. Creel",
+   "Ananya Kumar",
+   "Dan Jurafsky",
+   "Percy Liang"
+  ],
+  "published": "2022-11-25",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL",
+   "cs.CV",
+   "cs.CY"
+  ]
+ },
+ "2506.18349": {
+  "title": "SlimMoE: Structured Compression of Large MoE Models via Expert Slimming and Distillation",
+  "authors": [
+   "Zichong Li",
+   "Chen Liang",
+   "Zixuan Zhang",
+   "Ilgee Hong",
+   "Young Jin Kim",
+   "Weizhu Chen",
+   "Tuo Zhao"
+  ],
+  "published": "2025-06-23",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2603.02217": {
+  "title": "Is Retraining-Free Enough? The Necessity of Router Calibration for Efficient MoE Compression",
+  "authors": [
+   "Sieun Hyeon",
+   "Jaeyoung Do"
+  ],
+  "published": "2026-02-10",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2505.19433": {
+  "title": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+  "authors": [
+   "Peijie Dong",
+   "Zhenheng Tang",
+   "Xiang Liu",
+   "Lujun Li",
+   "Xiaowen Chu",
+   "Bo Li"
+  ],
+  "published": "2025-05-26",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2401.15024": {
+  "title": "SliceGPT: Compress Large Language Models by Deleting Rows and Columns",
+  "authors": [
+   "Saleh Ashkboos",
+   "Maximilian L. Croci",
+   "Marcelo Gennari do Nascimento",
+   "Torsten Hoefler",
+   "James Hensman"
+  ],
+  "published": "2024-01-26",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2503.21714": {
+  "title": "As easy as PIE: understanding when pruning causes language models to disagree",
+  "authors": [
+   "Pietro Tropeano",
+   "Maria Maistro",
+   "Tuukka Ruotsalo",
+   "Christina Lioma"
+  ],
+  "published": "2025-03-27",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "1911.05248": {
+  "title": "What Do Compressed Deep Neural Networks Forget?",
+  "authors": [
+   "Sara Hooker",
+   "Aaron Courville",
+   "Gregory Clark",
+   "Yann Dauphin",
+   "Andrea Frome"
+  ],
+  "published": "2019-11-13",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CV",
+   "cs.HC",
+   "stat.ML"
+  ]
+ },
+ "2506.20353": {
+  "title": "DipSVD: Dual-importance Protected SVD for Efficient LLM Compression",
+  "authors": [
+   "Xuan Ding",
+   "Rui Sun",
+   "Yunjian Zhang",
+   "Xiu Yan",
+   "Yueqi Zhou",
+   "Kaihao Huang",
+   "Suzhong Fu",
+   "Chuanlong Xie",
+   "Yao Zhu"
+  ],
+  "published": "2025-06-25",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2607.03057": {
+  "title": "LACE-SVD: Loss-Aware SVD with Cumulative Error Correction for LLM Compression",
+  "authors": [
+   "Zhuowen Liu",
+   "Longkun Hao",
+   "Shiyu Feng",
+   "Xiaowen Chang",
+   "Ruiqun Li",
+   "Changqun Li"
+  ],
+  "published": "2026-07-03",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  }
 }

@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-08-31] 대부분 남았다는 문장 앞에 1000억 토큰이 서 있습니다 — 프런티어 MoE를 40퍼센트 덜어냈을 때 무엇이 옮겨지고 무엇이 회복 예산에 빚졌나
+
+- **중심**: Akhiad Bercovich 외. *Nemotron-Labs-3-Puzzle-75B-A9B: Compressing Hybrid MoE LLMs*. [arXiv:2607.04371](https://arxiv.org/abs/2607.04371) — 분야: cs.AI
+- Sara Hooker 외. *What Do Compressed Deep Neural Networks Forget?*. [arXiv:1911.05248](https://arxiv.org/abs/1911.05248) — 분야: cs.LG, cs.AI, cs.CV, cs.HC, stat.ML
+- Mengnan Du 외. *Robustness Challenges in Model Distillation and Pruning for Natural Language Understanding*. [arXiv:2110.08419](https://arxiv.org/abs/2110.08419) — 분야: cs.CL, cs.LG
+- Rishi Bommasani 외. *Picking on the Same Person: Does Algorithmic Monoculture lead to Outcome Homogenization?*. [arXiv:2211.13972](https://arxiv.org/abs/2211.13972) — 분야: cs.LG, cs.AI, cs.CL, cs.CV, cs.CY
+- Saleh Ashkboos 외. *SliceGPT: Compress Large Language Models by Deleting Rows and Columns*. [arXiv:2401.15024](https://arxiv.org/abs/2401.15024) — 분야: cs.LG, cs.CL
+- Chang Gao 외. *Maximum Redundancy Pruning: A Principle-Driven Layerwise Sparsity Allocation for LLMs*. [arXiv:2503.18377](https://arxiv.org/abs/2503.18377) — 분야: cs.LG, cs.AI
+- Pietro Tropeano 외. *As easy as PIE: understanding when pruning causes language models to disagree*. [arXiv:2503.21714](https://arxiv.org/abs/2503.21714) — 분야: cs.CL
+- Peijie Dong 외. *Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression*. [arXiv:2505.19433](https://arxiv.org/abs/2505.19433) — 분야: cs.LG
+- Zichong Li 외. *SlimMoE: Structured Compression of Large MoE Models via Expert Slimming and Distillation*. [arXiv:2506.18349](https://arxiv.org/abs/2506.18349) — 분야: cs.LG, cs.CL
+- Xuan Ding 외. *DipSVD: Dual-importance Protected SVD for Efficient LLM Compression*. [arXiv:2506.20353](https://arxiv.org/abs/2506.20353) — 분야: cs.LG, cs.AI
+- Sieun Hyeon, Jaeyoung Do. *Is Retraining-Free Enough? The Necessity of Router Calibration for Efficient MoE Compression*. [arXiv:2603.02217](https://arxiv.org/abs/2603.02217) — 분야: cs.LG, cs.AI
+- Zhuowen Liu 외. *LACE-SVD: Loss-Aware SVD with Cumulative Error Correction for LLM Compression*. [arXiv:2607.03057](https://arxiv.org/abs/2607.03057) — 분야: cs.LG, cs.AI
+- Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+
 ## [2026-08-30] 절반을 지웠는데 시계는 그만큼 안 갑니다 — 가지치기를 GEMM의 축으로 다시 나눈 눈금, 그리고 그 눈금이 커널 성숙도에 기대는 자리
 
 - **중심**: Haozhe Hu 외. *Beyond FLOPs: Benchmarking Real Inference Acceleration of LLM Pruning under a GEMM-Centric Taxonomy*. [arXiv:2606.09080](https://arxiv.org/abs/2606.09080) — 분야: cs.LG, cs.CL
