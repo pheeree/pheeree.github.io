@@ -96,3 +96,49 @@
     아래 두 번째 글 — 08-29 여는 편에 이어 초점이 처음 조타한 회차.
     곁가지: 2606.26861 (On-Device Cascaded Pruning·SIA, 초록 수준) —
     08-29 [^sia] 각주의 논문 지도 최근접 이웃.
+
+- date: 2026-08-31
+  slug: nemotron-puzzle-hybrid-moe-compression
+  source: 2607.04371
+  path: b
+  focus_q: Q9
+  nth: 3
+  purpose: >
+    Q9 핵심 질문 1의 아키텍처 판 — 압축이 '무엇을 남기나'를 MoE 구조(전문가·
+    라우팅·잠재 병목)에서 다시 묻는다. 08-29가 재귀 추론기에서 "칸은 살고
+    퍼즐은 죽는다"를, 08-30이 GEMM 축에서 "이론 절감이 벽시계로 안 옮겨진다"를
+    봤다면, 오늘은 NVIDIA가 프런티어 MoE를 40% 압축하고도 대부분 옮겨졌다고
+    보고하는 사례를 놓고 — 무엇이 안 옮겨졌는지(에이전트·SWE·명령이행)와,
+    그것이 거대한 회복 예산에 가려진 것인지를 본다.
+  switch_notice: false
+  note: >
+    (b) 픽 — blog_pick_queue.py (b) 대기열 1순위. 08-29·08-30 pick-log가
+    예고한 Q9 아크의 세 번째. 곁가지 후보(Minitron 2407.14479 등) 미러
+    미도착으로 skip, dossier가 웹으로 보강. 부록 D "채널 선택으로는 부족,
+    채널 혼합이 유익"이 Q9 핵심 질문 4(눈금이 낡는 방식)와 08-29
+    carry-trajectory·어제 CKA 후보에 닿음.
+
+- date: 2026-09-01
+  slug: kv-cache-4bit-serving-residency-collapse
+  source: 2606.20474
+  path: a
+  focus_q: Q9
+  nth: 4
+  purpose: >
+    Q9 질문 1을 KV 캐시로 옮긴다 — 압축 대상이 모델 가중치(08-29·30·31)가
+    아니라 실행 중 자라나는 상태일 때, 국소는 남고 전역은 무너지는가.
+    UltraQuant는 MATH500·GPQA는 유지하되 AIME25에서 −10~13%p 붕괴를
+    평균 뒤에 숨기지 않고 내놓고, 정확도 회복의 핵심이 코드북이 아니라
+    per-block absmax 스케일 입자라고 보고한다 — Q9 질문 2(붕괴 원인)의
+    ETH 활성 스케일 입자 가설과 KV 쪽에서 독립적으로 만나는 자리.
+  switch_notice: false
+  note: >
+    (a) 픽 — 08-29 글 편집자 메모 상자("반복되는 상태를 저비트로 유지할 때
+    무엇이 무너지나")에서 Nemotron(08-31) 다음 순번. blog_pick_queue.py
+    (b) 대기열 2순위와도 겹침. 최신 3편의 명시적 다음 후보(ACBench·SlimMoE·
+    SliceGPT·ETH 2607.16237)는 전부 미러 미도착 — 08-29 상자 #4가 도착한
+    유일 후보. 곁가지: 2606.26861 (On-Device Cascaded Pruning·SIA, 초록
+    수준) — Q9 질문 3(레이블 없이 손상 사전 예측)에 닿음. 두 탐구 dossier가
+    2504.04823("Quantization Hurts Reasoning?")을 공통 1순위 인용(겹침도
+    ~10%). ETH 병렬 연구가 동향 dossier에서 초록 verbatim으로 잡혀 Q9
+    질문 2의 요약 수준 대조 가능해짐.
