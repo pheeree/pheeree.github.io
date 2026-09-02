@@ -142,3 +142,30 @@
     2504.04823("Quantization Hurts Reasoning?")을 공통 1순위 인용(겹침도
     ~10%). ETH 병렬 연구가 동향 dossier에서 초록 verbatim으로 잡혀 Q9
     질문 2의 요약 수준 대조 가능해짐.
+
+- date: 2026-09-02
+  slug: structural-independence-prune-criterion
+  source: 2606.26861
+  path: a
+  focus_q: Q9
+  nth: 5
+  purpose: >
+    Q9 질문 3을 민다 — 압축 손상을 레이블·재훈련 없이 배포 전에 예측하는
+    기준이 성립하는가. SIA(구조적 독립 가정)는 모델을 재는 게 아니라
+    아키텍처 청사진을 읽어 per-component 가지치기 기준의 신뢰성을 사전
+    판정한다. 08-29의 carry-trajectory fidelity(FP32 참조 forward가 필요)와
+    다른 종류의 눈금 — 정적·구조 유래. Q9 질문 4(눈금은 어떻게 낡는가)에도
+    닿는다: 청사진 수준 기준은 붕괴의 '여부'만 말하고 '얼마나'는 못 말한다.
+  switch_notice: false
+  branch: null
+  note: >
+    (a) 픽 — 09-01 UltraQuant 글 '다음 읽을 후보' 4순위(곁가지로 초록만 봤던
+    것), blog_pick_queue.py (b) 대기열 1순위와 겹침. 09-01 1~3순위(ETH
+    2607.16237·KVQuant 2401.18079·2505.19433)는 전부 미러 미도착 — 2606.26861이
+    도착한 유일 후보. 곁가지: 2606.07082 (On the Geometry of On-Policy
+    Distillation, 초록 수준) — Q9 증류 갈래, subspace locking으로 '무엇이
+    옮겨지는가'의 기하 그림. 두 탐구 dossier가 group-aware 스코어링 문헌에서
+    SIA의 'disqualify' 프레임이 다투어진다는 데 수렴(겹침도 ~20%,
+    arXiv:2405.01943·2502.06663 공유). 거리 점검 통과 — 갈래 인정 불필요.
+    B-2 (ii) KM 노트 0편 신규 아님 — engine-succession·mast-remeasure·
+    llm-team-composition 통독.

@@ -10725,5 +10725,204 @@
    "cs.LG",
    "cs.PF"
   ]
+ },
+ "2512.23014": {
+  "title": "Improving Generalization in LLM Structured Pruning via Function-Aware Neuron Grouping",
+  "authors": [
+   "Tao Yu",
+   "Yongqi An",
+   "Kuan Zhu",
+   "Guibo Zhu",
+   "Ming Tang",
+   "Jinqiao Wang"
+  ],
+  "published": "2025-12-28",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2605.18331": {
+  "title": "Prune, Update and Trim: Robust Structured Pruning for Large Language Models",
+  "authors": [
+   "Diego Coello de Portugal Mecke",
+   "Tom Hanika",
+   "Lars Schmidt-Thieme"
+  ],
+  "published": "2026-05-18",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2508.13836": {
+  "title": "One Shot vs. Iterative: Rethinking Pruning Strategies for Model Compression",
+  "authors": [
+   "Mikołaj Janusz",
+   "Tomasz Wojnar",
+   "Yawei Li",
+   "Luca Benini",
+   "Kamil Adamczewski"
+  ],
+  "published": "2025-08-19",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2508.02381": {
+  "title": "Beyond Manually Designed Pruning Policies with Second-Level Performance Prediction: A Pruning Framework for LLMs",
+  "authors": [
+   "Zuxin Ma",
+   "Yunhe Cui",
+   "Yongbin Qin"
+  ],
+  "published": "2025-08-04",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2502.06663": {
+  "title": "EfficientLLM: Scalable Pruning-Aware Pretraining for Architecture-Agnostic Edge Language Models",
+  "authors": [
+   "Xingrun Xing",
+   "Zheng Liu",
+   "Shitao Xiao",
+   "Boyan Gao",
+   "Yiming Liang",
+   "Wanpeng Zhang",
+   "Haokun Lin",
+   "Guoqi Li",
+   "Jiajun Zhang"
+  ],
+  "published": "2025-02-10",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2604.27115": {
+  "title": "Exploring the Limits of Pruning: Task-Specific Neurons, Model Collapse, and Recovery in Task-Specific Large Language Models",
+  "authors": [
+   "M. K. Khalidi Siam",
+   "Md. Tausif-Ul-Islam",
+   "Md. Reshad Romim Khan",
+   "Mohammed Ali Hossain",
+   "Mushfiqul Amin",
+   "Labib Hasan Khan",
+   "Niloy Farhan",
+   "Farig Sadeque"
+  ],
+  "published": "2026-04-29",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2102.08329": {
+  "title": "An Information-Theoretic Justification for Model Pruning",
+  "authors": [
+   "Berivan Isik",
+   "Tsachy Weissman",
+   "Albert No"
+  ],
+  "published": "2021-02-16",
+  "categories": [
+   "cs.LG",
+   "cs.IT",
+   "eess.SP",
+   "stat.ML"
+  ]
+ },
+ "2606.05682": {
+  "title": "Beyond Output Matching: Preserving Internal Geometry in NVFP4 LLM Distillation",
+  "authors": [
+   "Fangbo Tu",
+   "Junhua Zhao",
+   "Chi Liu",
+   "Xin Chen",
+   "Haifeng Wu",
+   "Jian Wan",
+   "Srinivasan Manoharan"
+  ],
+  "published": "2026-06-04",
+  "categories": [
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2510.18030": {
+  "title": "From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models",
+  "authors": [
+   "Ziyan Wang",
+   "Enmao Diao",
+   "Qi Le",
+   "Pu Wang",
+   "Minwoo Lee",
+   "Shu-ping Yeh",
+   "Evgeny Stupachenko",
+   "Hao Feng",
+   "Li Yang"
+  ],
+  "published": "2025-10-20",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2603.24652": {
+  "title": "Demystifying When Pruning Works via Representation Hierarchies",
+  "authors": [
+   "Shwai He",
+   "Guoheng Sun",
+   "Haichao Zhang",
+   "Yun Fu",
+   "Ang Li"
+  ],
+  "published": "2026-03-25",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2405.01943": {
+  "title": "Dependency-Aware Semi-Structured Sparsity of GLU Variants in Large Language Models",
+  "authors": [
+   "Zhiyu Guo",
+   "Hidetaka Kamigaito",
+   "Taro Wanatnabe"
+  ],
+  "published": "2024-05-03",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2607.22583": {
+  "title": "Multi-Objective Structured Pruning of LLMs for Latency and Model Size Optimization",
+  "authors": [
+   "Muhammad Junaid Ali",
+   "Smail Niar",
+   "El-Ghazali Talbi"
+  ],
+  "published": "2026-06-08",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2503.09657": {
+  "title": "Týr-the-Pruner: Structural Pruning LLMs via Global Sparsity Distribution Optimization",
+  "authors": [
+   "Guanchen Li",
+   "Yixing Xu",
+   "Zeping Li",
+   "Ji Liu",
+   "Xuanwu Yin",
+   "Dong Li",
+   "Emad Barsoum"
+  ],
+  "published": "2025-03-12",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }
