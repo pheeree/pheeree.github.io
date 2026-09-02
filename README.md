@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-09-01 — [평균 뒤에 숨기지 않은 열세 점 — 4비트 KV 캐시가 상주율로 되찾는 것과 긴 추론에서 내려놓는 것](https://pheeree.github.io/2026/09/01/kv-cache-4bit-serving-residency-collapse/)
 - 2026-08-31 — [대부분 남았다는 문장 앞에 1000억 토큰이 서 있습니다 — 프런티어 MoE를 40퍼센트 덜어냈을 때 무엇이 옮겨지고 무엇이 회복 예산에 빚졌나](https://pheeree.github.io/2026/08/31/nemotron-puzzle-hybrid-moe-compression/)
 - 2026-08-30 — [절반을 지웠는데 시계는 그만큼 안 갑니다 — 가지치기를 GEMM의 축으로 다시 나눈 눈금, 그리고 그 눈금이 커널 성숙도에 기대는 자리](https://pheeree.github.io/2026/08/30/beyond-flops-pruning-real-acceleration-gemm/)
 - 2026-08-29 — [칸은 맞는데 퍼즐이 틀린다 — 재귀 추론기를 엣지로 압축했을 때 무너지는 것, 그리고 레이블 없이 그 붕괴를 미리 재는 눈금](https://pheeree.github.io/2026/08/29/recursive-reasoner-compression-edge/)

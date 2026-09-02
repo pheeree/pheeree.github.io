@@ -6,6 +6,23 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-01] 평균 뒤에 숨기지 않은 열세 점 — 4비트 KV 캐시가 상주율로 되찾는 것과 긴 추론에서 내려놓는 것
+
+- **중심**: Inesh Chakrabarti 외. *UltraQuant: 4-bit KV Caching for Context-Heavy Agents*. [arXiv:2606.20474](https://arxiv.org/abs/2606.20474) — 분야: cs.LG, cs.AI, cs.PF
+- Coleman Hooper 외. *KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization*. [arXiv:2401.18079](https://arxiv.org/abs/2401.18079) — 분야: cs.LG
+- Zirui Liu 외. *KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache*. [arXiv:2402.02750](https://arxiv.org/abs/2402.02750) — 분야: cs.CL, cs.LG, cs.PF
+- Haoxuan Wang 외. *QuEST: Low-bit Diffusion Model Quantization via Efficient Selective Finetuning*. [arXiv:2402.03666](https://arxiv.org/abs/2402.03666) — 분야: cs.CV
+- Zunhai Su 외. *RotateKV: Accurate and Robust 2-Bit KV Cache Quantization for LLMs via Outlier-Aware Adaptive Rotations*. [arXiv:2501.16383](https://arxiv.org/abs/2501.16383) — 분야: cs.LG, cs.AI, cs.CL
+- Ruikang Liu 외. *Quantization Hurts Reasoning? An Empirical Study on Quantized Reasoning Models*. [arXiv:2504.04823](https://arxiv.org/abs/2504.04823) — 분야: cs.CL, cs.AI
+- Tengxuan Liu 외. *PM-KVQ: Progressive Mixed-precision KV Cache Quantization for Long-CoT LLMs*. [arXiv:2505.18610](https://arxiv.org/abs/2505.18610) — 분야: cs.CL
+- Peijie Dong 외. *Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression*. [arXiv:2505.19433](https://arxiv.org/abs/2505.19433) — 분야: cs.LG
+- Utkarsh Saxena, Kaushik Roy. *KVLinC : KV Cache Quantization with Hadamard Rotation and Linear Correction*. [arXiv:2510.05373](https://arxiv.org/abs/2510.05373) — 분야: cs.LG
+- Mohamed Amine Bergach. *When Quantization Is Free: An int4 KV Cache That Outruns fp16 on Apple Silicon*. [arXiv:2605.05699](https://arxiv.org/abs/2605.05699) — 분야: cs.PF, cs.AI
+- Haiquan Lu 외. *Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs*. [arXiv:2605.20315](https://arxiv.org/abs/2605.20315) — 분야: cs.CL
+- Sahil Kadadekar. *Quality Is Not a Safety Proxy Under Quantization*. [arXiv:2606.10154](https://arxiv.org/abs/2606.10154) — 분야: cs.LG, cs.CR
+- Jinghan Wang 외. *Cascaded Multi-Granularity Pruning for On-Device LLM Inference in Industrial IoT*. [arXiv:2606.26861](https://arxiv.org/abs/2606.26861) — 분야: cs.CL
+- Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+
 ## [2026-08-31] 대부분 남았다는 문장 앞에 1000억 토큰이 서 있습니다 — 프런티어 MoE를 40퍼센트 덜어냈을 때 무엇이 옮겨지고 무엇이 회복 예산에 빚졌나
 
 - **중심**: Akhiad Bercovich 외. *Nemotron-Labs-3-Puzzle-75B-A9B: Compressing Hybrid MoE LLMs*. [arXiv:2607.04371](https://arxiv.org/abs/2607.04371) — 분야: cs.AI

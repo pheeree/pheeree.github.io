@@ -10584,5 +10584,146 @@
    "cs.LG",
    "cs.AI"
   ]
+ },
+ "2504.04823": {
+  "title": "Quantization Hurts Reasoning? An Empirical Study on Quantized Reasoning Models",
+  "authors": [
+   "Ruikang Liu",
+   "Yuxuan Sun",
+   "Manyi Zhang",
+   "Haoli Bai",
+   "Xianzhi Yu",
+   "Tiezheng Yu",
+   "Chun Yuan",
+   "Lu Hou"
+  ],
+  "published": "2025-04-07",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2401.18079": {
+  "title": "KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization",
+  "authors": [
+   "Coleman Hooper",
+   "Sehoon Kim",
+   "Hiva Mohammadzadeh",
+   "Michael W. Mahoney",
+   "Yakun Sophia Shao",
+   "Kurt Keutzer",
+   "Amir Gholami"
+  ],
+  "published": "2024-01-31",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2605.20315": {
+  "title": "Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs",
+  "authors": [
+   "Haiquan Lu",
+   "Zigeng Chen",
+   "Gongfan Fang",
+   "Xinyin Ma",
+   "Xinchao Wang"
+  ],
+  "published": "2026-05-19",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2505.18610": {
+  "title": "PM-KVQ: Progressive Mixed-precision KV Cache Quantization for Long-CoT LLMs",
+  "authors": [
+   "Tengxuan Liu",
+   "Shiyao Li",
+   "Jiayi Yang",
+   "Tianchen Zhao",
+   "Feng Zhou",
+   "Xiaohui Song",
+   "Guohao Dai",
+   "Shengen Yan",
+   "Huazhong Yang",
+   "Yu Wang"
+  ],
+  "published": "2025-05-24",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2501.16383": {
+  "title": "RotateKV: Accurate and Robust 2-Bit KV Cache Quantization for LLMs via Outlier-Aware Adaptive Rotations",
+  "authors": [
+   "Zunhai Su",
+   "Zhe Chen",
+   "Wang Shen",
+   "Hanyu Wei",
+   "Linge Li",
+   "Huangqi Yu",
+   "Kehong Yuan"
+  ],
+  "published": "2025-01-25",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2402.03666": {
+  "title": "QuEST: Low-bit Diffusion Model Quantization via Efficient Selective Finetuning",
+  "authors": [
+   "Haoxuan Wang",
+   "Yuzhang Shang",
+   "Zhihang Yuan",
+   "Junyi Wu",
+   "Junchi Yan",
+   "Yan Yan"
+  ],
+  "published": "2024-02-06",
+  "categories": [
+   "cs.CV"
+  ]
+ },
+ "2605.05699": {
+  "title": "When Quantization Is Free: An int4 KV Cache That Outruns fp16 on Apple Silicon",
+  "authors": [
+   "Mohamed Amine Bergach"
+  ],
+  "published": "2026-05-07",
+  "categories": [
+   "cs.PF",
+   "cs.AI"
+  ]
+ },
+ "2510.05373": {
+  "title": "KVLinC : KV Cache Quantization with Hadamard Rotation and Linear Correction",
+  "authors": [
+   "Utkarsh Saxena",
+   "Kaushik Roy"
+  ],
+  "published": "2025-10-06",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2402.02750": {
+  "title": "KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache",
+  "authors": [
+   "Zirui Liu",
+   "Jiayi Yuan",
+   "Hongye Jin",
+   "Shaochen Zhong",
+   "Zhaozhuo Xu",
+   "Vladimir Braverman",
+   "Beidi Chen",
+   "Xia Hu"
+  ],
+  "published": "2024-02-05",
+  "categories": [
+   "cs.CL",
+   "cs.LG",
+   "cs.PF"
+  ]
  }
 }

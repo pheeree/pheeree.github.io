@@ -1,6 +1,29 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-01-kv-cache-4bit-serving-residency-collapse:
+  title: "평균 뒤에 숨기지 않은 열세 점 — 4비트 KV 캐시가 상주율로 되찾는 것과 긴 추론에서 내려놓는 것"
+  central:
+    id: "2606.20474"
+    title: "UltraQuant: 4-bit KV Caching for Context-Heavy Agents"
+    authors: "Inesh Chakrabarti 외"
+    keywords: "cs.LG, cs.AI, cs.PF"
+    url: "https://arxiv.org/abs/2606.20474"
+  referenced:
+    - { id: "2401.18079", title: "KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization", authors: "Coleman Hooper 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2401.18079" }
+    - { id: "2402.02750", title: "KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache", authors: "Zirui Liu 외", keywords: "cs.CL, cs.LG, cs.PF", url: "https://arxiv.org/abs/2402.02750" }
+    - { id: "2402.03666", title: "QuEST: Low-bit Diffusion Model Quantization via Efficient Selective Finetuning", authors: "Haoxuan Wang 외", keywords: "cs.CV", url: "https://arxiv.org/abs/2402.03666" }
+    - { id: "2501.16383", title: "RotateKV: Accurate and Robust 2-Bit KV Cache Quantization for LLMs via Outlier-Aware Adaptive Rotations", authors: "Zunhai Su 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2501.16383" }
+    - { id: "2504.04823", title: "Quantization Hurts Reasoning? An Empirical Study on Quantized Reasoning Models", authors: "Ruikang Liu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2504.04823" }
+    - { id: "2505.18610", title: "PM-KVQ: Progressive Mixed-precision KV Cache Quantization for Long-CoT LLMs", authors: "Tengxuan Liu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2505.18610" }
+    - { id: "2505.19433", title: "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression", authors: "Peijie Dong 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2505.19433" }
+    - { id: "2510.05373", title: "KVLinC : KV Cache Quantization with Hadamard Rotation and Linear Correction", authors: "Utkarsh Saxena, Kaushik Roy", keywords: "cs.LG", url: "https://arxiv.org/abs/2510.05373" }
+    - { id: "2605.05699", title: "When Quantization Is Free: An int4 KV Cache That Outruns fp16 on Apple Silicon", authors: "Mohamed Amine Bergach", keywords: "cs.PF, cs.AI", url: "https://arxiv.org/abs/2605.05699" }
+    - { id: "2605.20315", title: "Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs", authors: "Haiquan Lu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.20315" }
+    - { id: "2606.10154", title: "Quality Is Not a Safety Proxy Under Quantization", authors: "Sahil Kadadekar", keywords: "cs.LG, cs.CR", url: "https://arxiv.org/abs/2606.10154" }
+    - { id: "2606.26861", title: "Cascaded Multi-Granularity Pruning for On-Device LLM Inference in Industrial IoT", authors: "Jinghan Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.26861" }
+    - { id: "2607.16237", title: "Quantizing Recursive Reasoning Models", authors: "Thorir Mar Ingolfsson 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2607.16237" }
+
 2026-08-31-nemotron-puzzle-hybrid-moe-compression:
   title: "대부분 남았다는 문장 앞에 1000억 토큰이 서 있습니다 — 프런티어 MoE를 40퍼센트 덜어냈을 때 무엇이 옮겨지고 무엇이 회복 예산에 빚졌나"
   central:
