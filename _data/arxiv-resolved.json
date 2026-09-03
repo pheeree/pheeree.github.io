@@ -10924,5 +10924,84 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2603.10562": {
+  "title": "Quantization Robustness of Monotone Operator Equilibrium Networks",
+  "authors": [
+   "James Li",
+   "Philip H. W. Leong",
+   "Thomas Chaffey"
+  ],
+  "published": "2026-03-11",
+  "categories": [
+   "math.OC",
+   "cs.LG",
+   "eess.SY"
+  ]
+ },
+ "2601.09555": {
+  "title": "Benchmarking Post-Training Quantization of Large Language Models under Microscaling Floating Point Formats",
+  "authors": [
+   "Manyi Zhang",
+   "Ji-Fu Li",
+   "Zhongao Sun",
+   "Haoli Bai",
+   "Hui-Ling Zhen",
+   "Zhenhua Dong",
+   "Xianzhi Yu"
+  ],
+  "published": "2026-01-14",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2410.13229": {
+  "title": "Quamba: A Post-Training Quantization Recipe for Selective State Space Models",
+  "authors": [
+   "Hung-Yueh Chiang",
+   "Chi-Chih Chang",
+   "Natalia Frumkin",
+   "Kai-Chiang Wu",
+   "Diana Marculescu"
+  ],
+  "published": "2024-10-17",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2605.16343": {
+  "title": "LoopQ: Quantization for Recursive Transformers",
+  "authors": [
+   "Rui Fang",
+   "Hsi-Wen Chen",
+   "Ming-Syan Chen"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2509.23202": {
+  "title": "Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization",
+  "authors": [
+   "Vage Egiazarian",
+   "Roberto L. Castro",
+   "Denis Kuznedelev",
+   "Andrei Panferov",
+   "Eldar Kurtic",
+   "Shubhra Pandit",
+   "Alexandre Marques",
+   "Mark Kurtz",
+   "Saleh Ashkboos",
+   "Torsten Hoefler",
+   "Dan Alistarh"
+  ],
+  "published": "2025-09-27",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }
