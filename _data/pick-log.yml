@@ -169,3 +169,27 @@
     arXiv:2405.01943·2502.06663 공유). 거리 점검 통과 — 갈래 인정 불필요.
     B-2 (ii) KM 노트 0편 신규 아님 — engine-succession·mast-remeasure·
     llm-team-composition 통독.
+
+- date: 2026-09-03
+  slug: recursive-reasoning-quantization-activation-granularity
+  source: 2607.16237
+  path: a
+  focus_q: Q9
+  nth: 6
+  purpose: >
+    Q9 질문 2를 민다 — 재귀 추론기 압축 붕괴의 원인. 08-29 줄기 논문은
+    토큰 믹서(어텐션 대 MLP 믹싱)에, 오늘 ETH 논문은 활성값 스케일링 입자
+    (per-tensor 대 per-block)에 원인을 둔다. 두 실험이 2x2의 서로 다른 축만
+    훑었음을 보이고 결정적 대조(믹싱 MLP + per-block MXInt4)를 특정한다.
+    겸해 두 팀이 독립적으로 같은 눈금(FP 참조 궤적과의 발산)에 도달한 것이
+    질문 3(레이블 없이 손상 재기)의 수렴점.
+  switch_notice: false
+  branch: null
+  note: >
+    (a) 픽 — 09-01·09-02 두 글 모두 '다음 읽을 후보' 1순위로 세워 둔 논문
+    (09-01 표현: "세 편째 후보로 남는 중", 미러 4편째 미도착). 오늘 미러 도착
+    (2607.16237.pdf, 09-02 00:57 동기화분). blog_pick_queue.py (b) 대기열은
+    2606.07082(OPD)를 1순위로 냈으나 (a) 사슬이 우선. 곁가지: 2606.07082
+    OPD를 초록 수준으로 채택 — Q9 증류 갈래, subspace locking. B-2 (ii) KM
+    노트 신규 0편 아님 — engine-succession·mast-remeasure·llm-team-composition
+    통독.
