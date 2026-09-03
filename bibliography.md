@@ -6,6 +6,28 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-02] 청사진만 읽어도 부러질 자리가 보인다 — 활성값도 출력도 재지 않는 압축 눈금, 그리고 그것이 '얼마나'는 말하지 못하는 이유
+
+- **중심**: Jinghan Wang 외. *Cascaded Multi-Granularity Pruning for On-Device LLM Inference in Industrial IoT*. [arXiv:2606.26861](https://arxiv.org/abs/2606.26861) — 분야: cs.CL
+- Berivan Isik 외. *An Information-Theoretic Justification for Model Pruning*. [arXiv:2102.08329](https://arxiv.org/abs/2102.08329) — 분야: cs.LG, cs.IT, eess.SP, stat.ML
+- Coleman Hooper 외. *KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization*. [arXiv:2401.18079](https://arxiv.org/abs/2401.18079) — 분야: cs.LG
+- Zhiyu Guo 외. *Dependency-Aware Semi-Structured Sparsity of GLU Variants in Large Language Models*. [arXiv:2405.01943](https://arxiv.org/abs/2405.01943) — 분야: cs.CL, cs.AI, cs.LG
+- Xingrun Xing 외. *EfficientLLM: Scalable Pruning-Aware Pretraining for Architecture-Agnostic Edge Language Models*. [arXiv:2502.06663](https://arxiv.org/abs/2502.06663) — 분야: cs.LG
+- Guanchen Li 외. *Týr-the-Pruner: Structural Pruning LLMs via Global Sparsity Distribution Optimization*. [arXiv:2503.09657](https://arxiv.org/abs/2503.09657) — 분야: cs.LG
+- Peijie Dong 외. *Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression*. [arXiv:2505.19433](https://arxiv.org/abs/2505.19433) — 분야: cs.LG
+- Zuxin Ma 외. *Beyond Manually Designed Pruning Policies with Second-Level Performance Prediction: A Pruning Framework for LLMs*. [arXiv:2508.02381](https://arxiv.org/abs/2508.02381) — 분야: cs.LG
+- Mikołaj Janusz 외. *One Shot vs. Iterative: Rethinking Pruning Strategies for Model Compression*. [arXiv:2508.13836](https://arxiv.org/abs/2508.13836) — 분야: cs.LG, cs.AI
+- Ziyan Wang 외. *From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models*. [arXiv:2510.18030](https://arxiv.org/abs/2510.18030) — 분야: cs.CL, cs.AI, cs.LG
+- Tao Yu 외. *Improving Generalization in LLM Structured Pruning via Function-Aware Neuron Grouping*. [arXiv:2512.23014](https://arxiv.org/abs/2512.23014) — 분야: cs.CL
+- Shwai He 외. *Demystifying When Pruning Works via Representation Hierarchies*. [arXiv:2603.24652](https://arxiv.org/abs/2603.24652) — 분야: cs.CL, cs.LG
+- M. K. Khalidi Siam 외. *Exploring the Limits of Pruning: Task-Specific Neurons, Model Collapse, and Recovery in Task-Specific Large Language Models*. [arXiv:2604.27115](https://arxiv.org/abs/2604.27115) — 분야: cs.CL
+- Boyu Shi 외. *Understanding Performance Collapse in Layer-Pruned Large Language Models via Decision Representation Transitions*. [arXiv:2605.07271](https://arxiv.org/abs/2605.07271) — 분야: cs.CL, cs.AI
+- Diego Coello de Portugal Mecke 외. *Prune, Update and Trim: Robust Structured Pruning for Large Language Models*. [arXiv:2605.18331](https://arxiv.org/abs/2605.18331) — 분야: cs.LG
+- Fangbo Tu 외. *Beyond Output Matching: Preserving Internal Geometry in NVFP4 LLM Distillation*. [arXiv:2606.05682](https://arxiv.org/abs/2606.05682) — 분야: cs.AI, cs.LG
+- Zhennan Shen 외. *On the Geometry of On-Policy Distillation*. [arXiv:2606.07082](https://arxiv.org/abs/2606.07082) — 분야: cs.LG, cs.AI
+- Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+- Muhammad Junaid Ali 외. *Multi-Objective Structured Pruning of LLMs for Latency and Model Size Optimization*. [arXiv:2607.22583](https://arxiv.org/abs/2607.22583) — 분야: cs.AI, cs.CL
+
 ## [2026-09-01] 평균 뒤에 숨기지 않은 열세 점 — 4비트 KV 캐시가 상주율로 되찾는 것과 긴 추론에서 내려놓는 것
 
 - **중심**: Inesh Chakrabarti 외. *UltraQuant: 4-bit KV Caching for Context-Heavy Agents*. [arXiv:2606.20474](https://arxiv.org/abs/2606.20474) — 분야: cs.LG, cs.AI, cs.PF
