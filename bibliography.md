@@ -6,6 +6,19 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-03] 매번 같은 쪽으로 밀리면 답이 자리를 옮깁니다 — 재귀 추론기 4비트 붕괴의 원인을 활성값 스케일 입자에 둔 ETH, 그리고 믹서 축과 아직 만나지 않은 빈 칸
+
+- **중심**: Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+- MohammadReza Davari 외. *Reliability of CKA as a Similarity Measure in Deep Learning*. [arXiv:2210.16156](https://arxiv.org/abs/2210.16156) — 분야: cs.LG, cs.AI, cs.CV
+- Hung-Yueh Chiang 외. *Quamba: A Post-Training Quantization Recipe for Selective State Space Models*. [arXiv:2410.13229](https://arxiv.org/abs/2410.13229) — 분야: cs.LG, cs.AI
+- Vage Egiazarian 외. *Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization*. [arXiv:2509.23202](https://arxiv.org/abs/2509.23202) — 분야: cs.LG
+- Manyi Zhang 외. *Benchmarking Post-Training Quantization of Large Language Models under Microscaling Floating Point Formats*. [arXiv:2601.09555](https://arxiv.org/abs/2601.09555) — 분야: cs.CL, cs.AI
+- James Li 외. *Quantization Robustness of Monotone Operator Equilibrium Networks*. [arXiv:2603.10562](https://arxiv.org/abs/2603.10562) — 분야: math.OC, cs.LG, eess.SY
+- Rui Fang 외. *LoopQ: Quantization for Recursive Transformers*. [arXiv:2605.16343](https://arxiv.org/abs/2605.16343) — 분야: cs.LG, cs.AI
+- Sanae Lotfi 외. *Quantized Reasoning Models Think They Need to Think Longer, but They Do Not*. [arXiv:2606.00206](https://arxiv.org/abs/2606.00206) — 분야: cs.LG
+- Zhennan Shen 외. *On the Geometry of On-Policy Distillation*. [arXiv:2606.07082](https://arxiv.org/abs/2606.07082) — 분야: cs.LG, cs.AI
+- Pearse Jim 외. *What Survives When You Compress a Recursive Reasoner for the Edge?*. [arXiv:2606.26488](https://arxiv.org/abs/2606.26488) — 분야: cs.LG
+
 ## [2026-09-02] 청사진만 읽어도 부러질 자리가 보인다 — 활성값도 출력도 재지 않는 압축 눈금, 그리고 그것이 '얼마나'는 말하지 못하는 이유
 
 - **중심**: Jinghan Wang 외. *Cascaded Multi-Granularity Pruning for On-Device LLM Inference in Industrial IoT*. [arXiv:2606.26861](https://arxiv.org/abs/2606.26861) — 분야: cs.CL

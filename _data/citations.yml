@@ -1,6 +1,25 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-03-recursive-reasoning-quantization-activation-granularity:
+  title: "매번 같은 쪽으로 밀리면 답이 자리를 옮깁니다 — 재귀 추론기 4비트 붕괴의 원인을 활성값 스케일 입자에 둔 ETH, 그리고 믹서 축과 아직 만나지 않은 빈 칸"
+  central:
+    id: "2607.16237"
+    title: "Quantizing Recursive Reasoning Models"
+    authors: "Thorir Mar Ingolfsson 외"
+    keywords: "cs.LG, cs.AI"
+    url: "https://arxiv.org/abs/2607.16237"
+  referenced:
+    - { id: "2210.16156", title: "Reliability of CKA as a Similarity Measure in Deep Learning", authors: "MohammadReza Davari 외", keywords: "cs.LG, cs.AI, cs.CV", url: "https://arxiv.org/abs/2210.16156" }
+    - { id: "2410.13229", title: "Quamba: A Post-Training Quantization Recipe for Selective State Space Models", authors: "Hung-Yueh Chiang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2410.13229" }
+    - { id: "2509.23202", title: "Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization", authors: "Vage Egiazarian 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2509.23202" }
+    - { id: "2601.09555", title: "Benchmarking Post-Training Quantization of Large Language Models under Microscaling Floating Point Formats", authors: "Manyi Zhang 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2601.09555" }
+    - { id: "2603.10562", title: "Quantization Robustness of Monotone Operator Equilibrium Networks", authors: "James Li 외", keywords: "math.OC, cs.LG, eess.SY", url: "https://arxiv.org/abs/2603.10562" }
+    - { id: "2605.16343", title: "LoopQ: Quantization for Recursive Transformers", authors: "Rui Fang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.16343" }
+    - { id: "2606.00206", title: "Quantized Reasoning Models Think They Need to Think Longer, but They Do Not", authors: "Sanae Lotfi 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.00206" }
+    - { id: "2606.07082", title: "On the Geometry of On-Policy Distillation", authors: "Zhennan Shen 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.07082" }
+    - { id: "2606.26488", title: "What Survives When You Compress a Recursive Reasoner for the Edge?", authors: "Pearse Jim 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.26488" }
+
 2026-09-02-structural-independence-prune-criterion:
   title: "청사진만 읽어도 부러질 자리가 보인다 — 활성값도 출력도 재지 않는 압축 눈금, 그리고 그것이 '얼마나'는 말하지 못하는 이유"
   central:
