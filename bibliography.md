@@ -6,6 +6,18 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-05] 겉보기 유사도는 만들어낼 수 있습니다 — 정확도를 거의 건드리지 않고 CKA 맵을 다시 그린 실험, 그리고 그럼에도 남는 쓸모
+
+- **중심**: MohammadReza Davari 외. *Reliability of CKA as a Similarity Measure in Deep Learning*. [arXiv:2210.16156](https://arxiv.org/abs/2210.16156) — 분야: cs.LG, cs.AI, cs.CV
+- Alex Murphy 외. *Correcting Biased Centered Kernel Alignment Measures in Biological and Artificial Neural Networks*. [arXiv:2405.01012](https://arxiv.org/abs/2405.01012) — 분야: q-bio.NC, cs.CV
+- Jie Zhang 외. *REEF: Representation Encoding Fingerprints for Large Language Models*. [arXiv:2410.14273](https://arxiv.org/abs/2410.14273) — 분야: cs.CL, cs.AI, cs.CR
+- Prashant C. Raju. *Geometric Stability: The Missing Axis of Representations*. [arXiv:2601.09173](https://arxiv.org/abs/2601.09173) — 분야: cs.LG, cs.CL, q-bio.QM, stat.ML
+- Sunny Liu 외. *Similarity of Neural Network Representations in Superposition*. [arXiv:2604.00208](https://arxiv.org/abs/2604.00208) — 분야: cs.LG
+- Boyu Shi 외. *Understanding Performance Collapse in Layer-Pruned Large Language Models via Decision Representation Transitions*. [arXiv:2605.07271](https://arxiv.org/abs/2605.07271) — 분야: cs.CL, cs.AI
+- Ali Hussaini Umar, Alessandro Laio. *Signal-to-Noise Ratio and Sample Size Govern Representational Alignment in Neural Networks*. [arXiv:2605.26973](https://arxiv.org/abs/2605.26973) — 분야: stat.ML, cond-mat.dis-nn, cs.LG, cs.NE, q-bio.NC
+- Miloš Nikolić 외. *Displacement Is Not Direction: Evaluating Fidelity Metrics for Quantized LLM Deployment*. [arXiv:2606.19558](https://arxiv.org/abs/2606.19558) — 분야: cs.LG, cs.CL
+- Dongyub Jude Lee 외. *Skin-Deep: A Geometric Diagnostic for Alignment Fragility in Large Language Model Representations*. [arXiv:2606.22676](https://arxiv.org/abs/2606.22676) — 분야: cs.AI
+
 ## [2026-09-03] 매번 같은 쪽으로 밀리면 답이 자리를 옮깁니다 — 재귀 추론기 4비트 붕괴의 원인을 활성값 스케일 입자에 둔 ETH, 그리고 믹서 축과 아직 만나지 않은 빈 칸
 
 - **중심**: Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI

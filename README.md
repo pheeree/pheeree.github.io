@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-09-05 — [겉보기 유사도는 만들어낼 수 있습니다 — 정확도를 거의 건드리지 않고 CKA 맵을 다시 그린 실험, 그리고 그럼에도 남는 쓸모](https://pheeree.github.io/2026/09/05/cka-reliability-representation-similarity-gauge/)
 - 2026-09-03 — [매번 같은 쪽으로 밀리면 답이 자리를 옮깁니다 — 재귀 추론기 4비트 붕괴의 원인을 활성값 스케일 입자에 둔 ETH, 그리고 믹서 축과 아직 만나지 않은 빈 칸](https://pheeree.github.io/2026/09/03/recursive-reasoning-quantization-activation-granularity/)
 - 2026-09-02 — [청사진만 읽어도 부러질 자리가 보인다 — 활성값도 출력도 재지 않는 압축 눈금, 그리고 그것이 '얼마나'는 말하지 못하는 이유](https://pheeree.github.io/2026/09/02/structural-independence-prune-criterion/)
 - 2026-09-01 — [평균 뒤에 숨기지 않은 열세 점 — 4비트 KV 캐시가 상주율로 되찾는 것과 긴 추론에서 내려놓는 것](https://pheeree.github.io/2026/09/01/kv-cache-4bit-serving-residency-collapse/)

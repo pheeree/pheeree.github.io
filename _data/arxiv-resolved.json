@@ -11003,5 +11003,111 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2606.19558": {
+  "title": "Displacement Is Not Direction: Evaluating Fidelity Metrics for Quantized LLM Deployment",
+  "authors": [
+   "Miloš Nikolić",
+   "Ali Hadi Zadeh",
+   "Enrique Torres Sanchez",
+   "Andreas Moshovos"
+  ],
+  "published": "2026-06-17",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2604.00208": {
+  "title": "Similarity of Neural Network Representations in Superposition",
+  "authors": [
+   "Sunny Liu",
+   "Habon Issa",
+   "André Longon",
+   "Liv Gorton",
+   "Meenakshi Khosla",
+   "Alex Williams",
+   "David Klindt"
+  ],
+  "published": "2026-03-31",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2601.09173": {
+  "title": "Geometric Stability: The Missing Axis of Representations",
+  "authors": [
+   "Prashant C. Raju"
+  ],
+  "published": "2026-01-14",
+  "categories": [
+   "cs.LG",
+   "cs.CL",
+   "q-bio.QM",
+   "stat.ML"
+  ]
+ },
+ "2405.01012": {
+  "title": "Correcting Biased Centered Kernel Alignment Measures in Biological and Artificial Neural Networks",
+  "authors": [
+   "Alex Murphy",
+   "Joel Zylberberg",
+   "Alona Fyshe"
+  ],
+  "published": "2024-05-02",
+  "categories": [
+   "q-bio.NC",
+   "cs.CV"
+  ]
+ },
+ "2410.14273": {
+  "title": "REEF: Representation Encoding Fingerprints for Large Language Models",
+  "authors": [
+   "Jie Zhang",
+   "Dongrui Liu",
+   "Chen Qian",
+   "Linfeng Zhang",
+   "Yong Liu",
+   "Yu Qiao",
+   "Jing Shao"
+  ],
+  "published": "2024-10-18",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.CR"
+  ]
+ },
+ "2605.26973": {
+  "title": "Signal-to-Noise Ratio and Sample Size Govern Representational Alignment in Neural Networks",
+  "authors": [
+   "Ali Hussaini Umar",
+   "Alessandro Laio"
+  ],
+  "published": "2026-05-26",
+  "categories": [
+   "stat.ML",
+   "cond-mat.dis-nn",
+   "cs.LG",
+   "cs.NE",
+   "q-bio.NC"
+  ]
+ },
+ "2606.22676": {
+  "title": "Skin-Deep: A Geometric Diagnostic for Alignment Fragility in Large Language Model Representations",
+  "authors": [
+   "Dongyub Jude Lee",
+   "Jungseob Lee",
+   "Seungyoon Lee",
+   "Seongtae Hong",
+   "Suhyune Son",
+   "Sugyeong Eo",
+   "Jaehyung Seo",
+   "Heuiseok Lim"
+  ],
+  "published": "2026-06-21",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }
