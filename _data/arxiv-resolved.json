@@ -11109,5 +11109,65 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2410.20672": {
+  "title": "Relaxed Recursive Transformers: Effective Parameter Sharing with Layer-wise LoRA",
+  "authors": [
+   "Sangmin Bae",
+   "Adam Fisch",
+   "Hrayr Harutyunyan",
+   "Ziwei Ji",
+   "Seungyeon Kim",
+   "Tal Schuster"
+  ],
+  "published": "2024-10-28",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2607.15456": {
+  "title": "Looped Latent Attention: Cross-Loop KV Compression for Looped Transformers",
+  "authors": [
+   "James O' Neill",
+   "Fergal Reid"
+  ],
+  "published": "2026-07-16",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2604.19884": {
+  "title": "From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization",
+  "authors": [
+   "Chenxi Zhou",
+   "Pengfei Cao",
+   "Jiang Li",
+   "Bohan Yu",
+   "Jinyu Ye",
+   "Jun Zhao",
+   "Kang Liu"
+  ],
+  "published": "2026-04-21",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2412.16700": {
+  "title": "TCAQ-DM: Timestep-Channel Adaptive Quantization for Diffusion Models",
+  "authors": [
+   "Haocheng Huang",
+   "Jiaxin Chen",
+   "Jinyang Guo",
+   "Ruiyi Zhan",
+   "Yunhong Wang"
+  ],
+  "published": "2024-12-21",
+  "categories": [
+   "cs.CV"
+  ]
  }
 }
