@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-06] 같은 층이 루프마다 다른 분포를 씁니다 — LoopQ, 그리고 재귀 양자화의 원인이 하나가 아닌 자리
+
+- **중심**: Rui Fang 외. *LoopQ: Quantization for Recursive Transformers*. [arXiv:2605.16343](https://arxiv.org/abs/2605.16343) — 분야: cs.LG, cs.AI
+- Jie Zhang 외. *REEF: Representation Encoding Fingerprints for Large Language Models*. [arXiv:2410.14273](https://arxiv.org/abs/2410.14273) — 분야: cs.CL, cs.AI, cs.CR
+- Sangmin Bae 외. *Relaxed Recursive Transformers: Effective Parameter Sharing with Layer-wise LoRA*. [arXiv:2410.20672](https://arxiv.org/abs/2410.20672) — 분야: cs.CL, cs.LG
+- Haocheng Huang 외. *TCAQ-DM: Timestep-Channel Adaptive Quantization for Diffusion Models*. [arXiv:2412.16700](https://arxiv.org/abs/2412.16700) — 분야: cs.CV
+- Hayden Prairie 외. *Parcae: Scaling Laws For Stable Looped Language Models*. [arXiv:2604.12946](https://arxiv.org/abs/2604.12946) — 분야: cs.LG
+- Chenxi Zhou 외. *From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization*. [arXiv:2604.19884](https://arxiv.org/abs/2604.19884) — 분야: cs.CL, cs.AI, cs.LG
+- James O' Neill, Fergal Reid. *Looped Latent Attention: Cross-Loop KV Compression for Looped Transformers*. [arXiv:2607.15456](https://arxiv.org/abs/2607.15456) — 분야: cs.LG, cs.CL
+- Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+
 ## [2026-09-05] 겉보기 유사도는 만들어낼 수 있습니다 — 정확도를 거의 건드리지 않고 CKA 맵을 다시 그린 실험, 그리고 그럼에도 남는 쓸모
 
 - **중심**: MohammadReza Davari 외. *Reliability of CKA as a Similarity Measure in Deep Learning*. [arXiv:2210.16156](https://arxiv.org/abs/2210.16156) — 분야: cs.LG, cs.AI, cs.CV
