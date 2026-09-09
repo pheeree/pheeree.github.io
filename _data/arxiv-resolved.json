@@ -11302,5 +11302,267 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2506.00772": {
+  "title": "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning",
+  "authors": [
+   "Zihang Liu",
+   "Tianyu Pang",
+   "Oleg Balabanov",
+   "Chaoqun Yang",
+   "Tianjin Huang",
+   "Lu Yin",
+   "Yaoqing Yang",
+   "Shiwei Liu"
+  ],
+  "published": "2025-06-01",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2606.09471": {
+  "title": "Escaping the KL Agreement Trap in On-Policy Distillation",
+  "authors": [
+   "Haoran Xin",
+   "Anhao Zhao",
+   "Ying Sun",
+   "Jin Li",
+   "Xiaoyu Shen",
+   "Hui Xiong"
+  ],
+  "published": "2026-06-08",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2504.01738": {
+  "title": "Style over Substance: Distilled Language Models Reason Via Stylistic Replication",
+  "authors": [
+   "Philip Lippmann",
+   "Jie Yang"
+  ],
+  "published": "2025-04-02",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2607.23711": {
+  "title": "The Intruder Threshold: A Spectral Law for LoRA Fine-Tuning",
+  "authors": [
+   "Peng Xie"
+  ],
+  "published": "2026-07-26",
+  "categories": [
+   "cs.LG",
+   "stat.ML"
+  ]
+ },
+ "2606.13657": {
+  "title": "Dense Supervision, Sparse Updates: On the Sparsity and Geometry of On-Policy Distillation",
+  "authors": [
+   "Guo Yu",
+   "Wenlin Liu",
+   "Yulan Hu",
+   "Hao-Xuan Ma",
+   "Jun-Peng Jiang",
+   "Han-Jia Ye"
+  ],
+  "published": "2026-06-11",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2509.04259": {
+  "title": "RL's Razor: Why Online Reinforcement Learning Forgets Less",
+  "authors": [
+   "Idan Shenfeld",
+   "Jyothish Pari",
+   "Pulkit Agrawal"
+  ],
+  "published": "2025-09-04",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2508.01191": {
+  "title": "Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens",
+  "authors": [
+   "Chengshuai Zhao",
+   "Zhen Tan",
+   "Pingchuan Ma",
+   "Dawei Li",
+   "Bohan Jiang",
+   "Yancheng Wang",
+   "Yingzhen Yang",
+   "Huan Liu"
+  ],
+  "published": "2025-08-02",
+  "categories": [
+   "cs.AI",
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2511.08567": {
+  "title": "The Path Not Taken: RLVR Provably Learns Off the Principals",
+  "authors": [
+   "Hanqing Zhu",
+   "Zhenyu Zhang",
+   "Hanxian Huang",
+   "DiJia Su",
+   "Zechun Liu",
+   "Jiawei Zhao",
+   "Igor Fedorov",
+   "Hamed Pirsiavash",
+   "Zhizhou Sha",
+   "Jinwon Lee",
+   "David Z. Pan",
+   "Zhangyang Wang",
+   "Yuandong Tian",
+   "Kai Sheng Tai"
+  ],
+  "published": "2025-11-11",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2501.17161": {
+  "title": "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training",
+  "authors": [
+   "Tianzhe Chu",
+   "Yuexiang Zhai",
+   "Jihan Yang",
+   "Shengbang Tong",
+   "Saining Xie",
+   "Dale Schuurmans",
+   "Quoc V. Le",
+   "Sergey Levine",
+   "Yi Ma"
+  ],
+  "published": "2025-01-28",
+  "categories": [
+   "cs.AI",
+   "cs.CV",
+   "cs.LG"
+  ]
+ },
+ "2507.10155": {
+  "title": "What Should Feature Distillation Transfer in LLMs? A Task-Tangent Geometry View",
+  "authors": [
+   "Khouloud Saadi",
+   "Di Wang"
+  ],
+  "published": "2025-07-14",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2410.21228": {
+  "title": "LoRA vs Full Fine-tuning: An Illusion of Equivalence",
+  "authors": [
+   "Reece Shuttleworth",
+   "Jacob Andreas",
+   "Antonio Torralba",
+   "Pratyusha Sharma"
+  ],
+  "published": "2024-10-28",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2603.25562": {
+  "title": "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes",
+  "authors": [
+   "Yuqian Fu",
+   "Haohuan Huang",
+   "Kaiwen Jiang",
+   "Jiacai Liu",
+   "Zhuo Jiang",
+   "Yuanheng Zhu",
+   "Dongbin Zhao"
+  ],
+  "published": "2026-03-26",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2609.04172": {
+  "title": "Rethinking On-Policy Distillation of Large Language Models II: One Training Example",
+  "authors": [
+   "Zixuan Fu",
+   "Bingxiang He",
+   "Yuxin Zuo",
+   "Haohuan Huang",
+   "Jinqian Zhang",
+   "Ruhang Xiao",
+   "Cheng Qian",
+   "Qinyu Luo",
+   "Huan-ang Gao",
+   "Yudong Wang",
+   "Zhiyuan Liu",
+   "Ning Ding",
+   "Chaojun Xiao"
+  ],
+  "published": "2026-09-03",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "1011.0686": {
+  "title": "",
+  "authors": [],
+  "published": "",
+  "categories": []
+ },
+ "1606.07947": {
+  "title": "",
+  "authors": [],
+  "published": "",
+  "categories": []
+ },
+ "1812.04754": {
+  "title": "",
+  "authors": [],
+  "published": "",
+  "categories": []
+ },
+ "1804.08838": {
+  "title": "",
+  "authors": [],
+  "published": "",
+  "categories": []
+ },
+ "1503.02531": {
+  "title": "",
+  "authors": [],
+  "published": "",
+  "categories": []
+ },
+ "2306.13649": {
+  "title": "",
+  "authors": [],
+  "published": "",
+  "categories": []
+ },
+ "2012.13255": {
+  "title": "",
+  "authors": [],
+  "published": "",
+  "categories": []
+ },
+ "1502.05477": {
+  "title": "",
+  "authors": [],
+  "published": "",
+  "categories": []
  }
 }
