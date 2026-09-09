@@ -6,6 +6,26 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-08] 청사진이 '얼마나'까지 말하는 한 자리 — 단조성 마진이라는 배포 전 인증서, 그리고 그것이 왜 단일층에서만 깨끗한가
+
+- **중심**: James Li 외. *Quantization Robustness of Monotone Operator Equilibrium Networks*. [arXiv:2603.10562](https://arxiv.org/abs/2603.10562) — 분야: math.OC, cs.LG, eess.SY
+- Milad Alizadeh 외. *Gradient $\ell_1$ Regularization for Quantization Robustness*. [arXiv:2002.07520](https://arxiv.org/abs/2002.07520) — 분야: cs.LG, stat.ML
+- Yuzhang Shang 외. *Lipschitz Continuity Retained Binary Neural Network*. [arXiv:2207.06540](https://arxiv.org/abs/2207.06540) — 분야: cs.LG, cs.CV
+- Yedi Zhang 외. *QEBVerif: Quantization Error Bound Verification of Neural Networks*. [arXiv:2212.02781](https://arxiv.org/abs/2212.02781) — 분야: cs.LG, cs.AI
+- Jie Zhang 외. *REEF: Representation Encoding Fingerprints for Large Language Models*. [arXiv:2410.14273](https://arxiv.org/abs/2410.14273) — 분야: cs.CL, cs.AI, cs.CR
+- Zain ul Abdeen 외. *A Scalable Approach for Safe and Robust Learning via Lipschitz-Constrained Networks*. [arXiv:2506.23977](https://arxiv.org/abs/2506.23977) — 분야: cs.LG
+- Xingyu Zheng 외. *First-Order Error Matters: Accurate Compensation for Quantized Large Language Models*. [arXiv:2507.11017](https://arxiv.org/abs/2507.11017) — 분야: cs.LG, cs.AI, cs.CL, cs.CV
+- Thomas Chaffey. *Circuit realization and hardware linearization of monotone operator equilibrium networks*. [arXiv:2509.13793](https://arxiv.org/abs/2509.13793) — 분야: eess.SY, cs.LG, cs.NE, math.OC
+- Chenxi Zhou 외. *From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization*. [arXiv:2604.19884](https://arxiv.org/abs/2604.19884) — 분야: cs.CL, cs.AI, cs.LG
+- Akira Tamamori. *Quantization robustness from dense representations of sparse functions in high-capacity kernel associative memory*. [arXiv:2604.20333](https://arxiv.org/abs/2604.20333) — 분야: cs.NE
+- Rui Fang 외. *LoopQ: Quantization for Recursive Transformers*. [arXiv:2605.16343](https://arxiv.org/abs/2605.16343) — 분야: cs.LG, cs.AI
+- Antonin Clerc 외. *i-DEQ: A stable inertial deep equilibrium model for image restoration*. [arXiv:2605.19705](https://arxiv.org/abs/2605.19705) — 분야: math.OC
+- Sanae Lotfi 외. *Quantized Reasoning Models Think They Need to Think Longer, but They Do Not*. [arXiv:2606.00206](https://arxiv.org/abs/2606.00206) — 분야: cs.LG
+- Zhennan Shen 외. *On the Geometry of On-Policy Distillation*. [arXiv:2606.07082](https://arxiv.org/abs/2606.07082) — 분야: cs.LG, cs.AI
+- Jinghan Wang 외. *Cascaded Multi-Granularity Pruning for On-Device LLM Inference in Industrial IoT*. [arXiv:2606.26861](https://arxiv.org/abs/2606.26861) — 분야: cs.CL
+- Joshua Hill. *Saturation Makes Quantization Error Additive: A Coverage Model with a Certificate*. [arXiv:2607.12266](https://arxiv.org/abs/2607.12266) — 분야: cs.LG
+- Artem Safronov. *A Layer Importance Metric for Quantization Accounting for the Speed-Quality Trade-off in Autoregressive Models*. [arXiv:2608.26926](https://arxiv.org/abs/2608.26926) — 분야: cs.LG
+
 ## [2026-09-06] 같은 층이 루프마다 다른 분포를 씁니다 — LoopQ, 그리고 재귀 양자화의 원인이 하나가 아닌 자리
 
 - **중심**: Rui Fang 외. *LoopQ: Quantization for Recursive Transformers*. [arXiv:2605.16343](https://arxiv.org/abs/2605.16343) — 분야: cs.LG, cs.AI

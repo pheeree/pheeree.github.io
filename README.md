@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-09-08 — [청사진이 '얼마나'까지 말하는 한 자리 — 단조성 마진이라는 배포 전 인증서, 그리고 그것이 왜 단일층에서만 깨끗한가](https://pheeree.github.io/2026/09/08/mondeq-quantization-margin-certificate/)
 - 2026-09-06 — [같은 층이 루프마다 다른 분포를 씁니다 — LoopQ, 그리고 재귀 양자화의 원인이 하나가 아닌 자리](https://pheeree.github.io/2026/09/06/loopq-role-shift-recursive-quantization/)
 - 2026-09-05 — [겉보기 유사도는 만들어낼 수 있습니다 — 정확도를 거의 건드리지 않고 CKA 맵을 다시 그린 실험, 그리고 그럼에도 남는 쓸모](https://pheeree.github.io/2026/09/05/cka-reliability-representation-similarity-gauge/)
 - 2026-09-03 — [매번 같은 쪽으로 밀리면 답이 자리를 옮깁니다 — 재귀 추론기 4비트 붕괴의 원인을 활성값 스케일 입자에 둔 ETH, 그리고 믹서 축과 아직 만나지 않은 빈 칸](https://pheeree.github.io/2026/09/03/recursive-reasoning-quantization-activation-granularity/)

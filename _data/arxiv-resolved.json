@@ -11169,5 +11169,138 @@
   "categories": [
    "cs.CV"
   ]
+ },
+ "2002.07520": {
+  "title": "Gradient $\\ell_1$ Regularization for Quantization Robustness",
+  "authors": [
+   "Milad Alizadeh",
+   "Arash Behboodi",
+   "Mart van Baalen",
+   "Christos Louizos",
+   "Tijmen Blankevoort",
+   "Max Welling"
+  ],
+  "published": "2020-02-18",
+  "categories": [
+   "cs.LG",
+   "stat.ML"
+  ]
+ },
+ "2207.06540": {
+  "title": "Lipschitz Continuity Retained Binary Neural Network",
+  "authors": [
+   "Yuzhang Shang",
+   "Dan Xu",
+   "Bin Duan",
+   "Ziliang Zong",
+   "Liqiang Nie",
+   "Yan Yan"
+  ],
+  "published": "2022-07-13",
+  "categories": [
+   "cs.LG",
+   "cs.CV"
+  ]
+ },
+ "2506.23977": {
+  "title": "A Scalable Approach for Safe and Robust Learning via Lipschitz-Constrained Networks",
+  "authors": [
+   "Zain ul Abdeen",
+   "Vassilis Kekatos",
+   "Ming Jin"
+  ],
+  "published": "2025-06-30",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2212.02781": {
+  "title": "QEBVerif: Quantization Error Bound Verification of Neural Networks",
+  "authors": [
+   "Yedi Zhang",
+   "Fu Song",
+   "Jun Sun"
+  ],
+  "published": "2022-12-06",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2507.11017": {
+  "title": "First-Order Error Matters: Accurate Compensation for Quantized Large Language Models",
+  "authors": [
+   "Xingyu Zheng",
+   "Haotong Qin",
+   "Yuye Li",
+   "Haoran Chu",
+   "Jiakai Wang",
+   "Jinyang Guo",
+   "Michele Magno",
+   "Xianglong Liu"
+  ],
+  "published": "2025-07-15",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL",
+   "cs.CV"
+  ]
+ },
+ "2604.20333": {
+  "title": "Quantization robustness from dense representations of sparse functions in high-capacity kernel associative memory",
+  "authors": [
+   "Akira Tamamori"
+  ],
+  "published": "2026-04-22",
+  "categories": [
+   "cs.NE"
+  ]
+ },
+ "2605.19705": {
+  "title": "i-DEQ: A stable inertial deep equilibrium model for image restoration",
+  "authors": [
+   "Antonin Clerc",
+   "Marien Renaud",
+   "Baudouin Denis De Seneville",
+   "Nicolas Papadakis"
+  ],
+  "published": "2026-05-19",
+  "categories": [
+   "math.OC"
+  ]
+ },
+ "2509.13793": {
+  "title": "Circuit realization and hardware linearization of monotone operator equilibrium networks",
+  "authors": [
+   "Thomas Chaffey"
+  ],
+  "published": "2025-09-17",
+  "categories": [
+   "eess.SY",
+   "cs.LG",
+   "cs.NE",
+   "math.OC"
+  ]
+ },
+ "2607.12266": {
+  "title": "Saturation Makes Quantization Error Additive: A Coverage Model with a Certificate",
+  "authors": [
+   "Joshua Hill"
+  ],
+  "published": "2026-07-14",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2608.26926": {
+  "title": "A Layer Importance Metric for Quantization Accounting for the Speed-Quality Trade-off in Autoregressive Models",
+  "authors": [
+   "Artem Safronov"
+  ],
+  "published": "2026-08-27",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }

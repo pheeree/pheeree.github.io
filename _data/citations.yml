@@ -1,6 +1,32 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-08-mondeq-quantization-margin-certificate:
+  title: "청사진이 '얼마나'까지 말하는 한 자리 — 단조성 마진이라는 배포 전 인증서, 그리고 그것이 왜 단일층에서만 깨끗한가"
+  central:
+    id: "2603.10562"
+    title: "Quantization Robustness of Monotone Operator Equilibrium Networks"
+    authors: "James Li 외"
+    keywords: "math.OC, cs.LG, eess.SY"
+    url: "https://arxiv.org/abs/2603.10562"
+  referenced:
+    - { id: "2002.07520", title: "Gradient $\\ell_1$ Regularization for Quantization Robustness", authors: "Milad Alizadeh 외", keywords: "cs.LG, stat.ML", url: "https://arxiv.org/abs/2002.07520" }
+    - { id: "2207.06540", title: "Lipschitz Continuity Retained Binary Neural Network", authors: "Yuzhang Shang 외", keywords: "cs.LG, cs.CV", url: "https://arxiv.org/abs/2207.06540" }
+    - { id: "2212.02781", title: "QEBVerif: Quantization Error Bound Verification of Neural Networks", authors: "Yedi Zhang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2212.02781" }
+    - { id: "2410.14273", title: "REEF: Representation Encoding Fingerprints for Large Language Models", authors: "Jie Zhang 외", keywords: "cs.CL, cs.AI, cs.CR", url: "https://arxiv.org/abs/2410.14273" }
+    - { id: "2506.23977", title: "A Scalable Approach for Safe and Robust Learning via Lipschitz-Constrained Networks", authors: "Zain ul Abdeen 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2506.23977" }
+    - { id: "2507.11017", title: "First-Order Error Matters: Accurate Compensation for Quantized Large Language Models", authors: "Xingyu Zheng 외", keywords: "cs.LG, cs.AI, cs.CL, cs.CV", url: "https://arxiv.org/abs/2507.11017" }
+    - { id: "2509.13793", title: "Circuit realization and hardware linearization of monotone operator equilibrium networks", authors: "Thomas Chaffey", keywords: "eess.SY, cs.LG, cs.NE, math.OC", url: "https://arxiv.org/abs/2509.13793" }
+    - { id: "2604.19884", title: "From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization", authors: "Chenxi Zhou 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2604.19884" }
+    - { id: "2604.20333", title: "Quantization robustness from dense representations of sparse functions in high-capacity kernel associative memory", authors: "Akira Tamamori", keywords: "cs.NE", url: "https://arxiv.org/abs/2604.20333" }
+    - { id: "2605.16343", title: "LoopQ: Quantization for Recursive Transformers", authors: "Rui Fang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.16343" }
+    - { id: "2605.19705", title: "i-DEQ: A stable inertial deep equilibrium model for image restoration", authors: "Antonin Clerc 외", keywords: "math.OC", url: "https://arxiv.org/abs/2605.19705" }
+    - { id: "2606.00206", title: "Quantized Reasoning Models Think They Need to Think Longer, but They Do Not", authors: "Sanae Lotfi 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.00206" }
+    - { id: "2606.07082", title: "On the Geometry of On-Policy Distillation", authors: "Zhennan Shen 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.07082" }
+    - { id: "2606.26861", title: "Cascaded Multi-Granularity Pruning for On-Device LLM Inference in Industrial IoT", authors: "Jinghan Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.26861" }
+    - { id: "2607.12266", title: "Saturation Makes Quantization Error Additive: A Coverage Model with a Certificate", authors: "Joshua Hill", keywords: "cs.LG", url: "https://arxiv.org/abs/2607.12266" }
+    - { id: "2608.26926", title: "A Layer Importance Metric for Quantization Accounting for the Speed-Quality Trade-off in Autoregressive Models", authors: "Artem Safronov", keywords: "cs.LG", url: "https://arxiv.org/abs/2608.26926" }
+
 2026-09-06-loopq-role-shift-recursive-quantization:
   title: "같은 층이 루프마다 다른 분포를 씁니다 — LoopQ, 그리고 재귀 양자화의 원인이 하나가 아닌 자리"
   central:
