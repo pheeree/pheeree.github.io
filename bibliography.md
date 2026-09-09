@@ -6,6 +6,32 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-09] 저차원 채널은 늦게 조립되지 않습니다 — 온폴리시 증류의 파라미터 공간 기하, 그리고 잠김이 곧 이식은 아닌 자리
+
+- **중심**: Zhennan Shen 외. *On the Geometry of On-Policy Distillation*. [arXiv:2606.07082](https://arxiv.org/abs/2606.07082) — 분야: cs.LG, cs.AI
+- Stephane Ross 외. *A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning*. [arXiv:1011.0686](https://arxiv.org/abs/1011.0686) — 분야: cs.LG, cs.AI, stat.ML
+- John Schulman 외. *Trust Region Policy Optimization*. [arXiv:1502.05477](https://arxiv.org/abs/1502.05477) — 분야: cs.LG
+- Geoffrey Hinton 외. *Distilling the Knowledge in a Neural Network*. [arXiv:1503.02531](https://arxiv.org/abs/1503.02531) — 분야: stat.ML, cs.LG, cs.NE
+- Yoon Kim, Alexander M. Rush. *Sequence-Level Knowledge Distillation*. [arXiv:1606.07947](https://arxiv.org/abs/1606.07947) — 분야: cs.CL, cs.LG, cs.NE
+- Chunyuan Li 외. *Measuring the Intrinsic Dimension of Objective Landscapes*. [arXiv:1804.08838](https://arxiv.org/abs/1804.08838) — 분야: cs.LG, cs.NE, stat.ML
+- Guy Gur-Ari 외. *Gradient Descent Happens in a Tiny Subspace*. [arXiv:1812.04754](https://arxiv.org/abs/1812.04754) — 분야: cs.LG, cs.AI, stat.ML
+- Armen Aghajanyan 외. *Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning*. [arXiv:2012.13255](https://arxiv.org/abs/2012.13255) — 분야: cs.LG, cs.CL
+- Rishabh Agarwal 외. *On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes*. [arXiv:2306.13649](https://arxiv.org/abs/2306.13649) — 분야: cs.LG, cs.AI, cs.CL
+- Reece Shuttleworth 외. *LoRA vs Full Fine-tuning: An Illusion of Equivalence*. [arXiv:2410.21228](https://arxiv.org/abs/2410.21228) — 분야: cs.LG, cs.CL
+- Tianzhe Chu 외. *SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training*. [arXiv:2501.17161](https://arxiv.org/abs/2501.17161) — 분야: cs.AI, cs.CV, cs.LG
+- Philip Lippmann, Jie Yang. *Style over Substance: Distilled Language Models Reason Via Stylistic Replication*. [arXiv:2504.01738](https://arxiv.org/abs/2504.01738) — 분야: cs.CL, cs.AI
+- Zihang Liu 외. *LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning*. [arXiv:2506.00772](https://arxiv.org/abs/2506.00772) — 분야: cs.LG, cs.AI, cs.CL
+- Khouloud Saadi, Di Wang. *What Should Feature Distillation Transfer in LLMs? A Task-Tangent Geometry View*. [arXiv:2507.10155](https://arxiv.org/abs/2507.10155) — 분야: cs.CL
+- Chengshuai Zhao 외. *Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens*. [arXiv:2508.01191](https://arxiv.org/abs/2508.01191) — 분야: cs.AI, cs.CL, cs.LG
+- Idan Shenfeld 외. *RL's Razor: Why Online Reinforcement Learning Forgets Less*. [arXiv:2509.04259](https://arxiv.org/abs/2509.04259) — 분야: cs.LG
+- Hanqing Zhu 외. *The Path Not Taken: RLVR Provably Learns Off the Principals*. [arXiv:2511.08567](https://arxiv.org/abs/2511.08567) — 분야: cs.LG, cs.AI
+- Yuqian Fu 외. *Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes*. [arXiv:2603.25562](https://arxiv.org/abs/2603.25562) — 분야: cs.LG, cs.AI, cs.CL
+- Chenxi Zhou 외. *From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization*. [arXiv:2604.19884](https://arxiv.org/abs/2604.19884) — 분야: cs.CL, cs.AI, cs.LG
+- Haoran Xin 외. *Escaping the KL Agreement Trap in On-Policy Distillation*. [arXiv:2606.09471](https://arxiv.org/abs/2606.09471) — 분야: cs.LG, cs.CL
+- Guo Yu 외. *Dense Supervision, Sparse Updates: On the Sparsity and Geometry of On-Policy Distillation*. [arXiv:2606.13657](https://arxiv.org/abs/2606.13657) — 분야: cs.LG
+- Peng Xie. *The Intruder Threshold: A Spectral Law for LoRA Fine-Tuning*. [arXiv:2607.23711](https://arxiv.org/abs/2607.23711) — 분야: cs.LG, stat.ML
+- Zixuan Fu 외. *Rethinking On-Policy Distillation of Large Language Models II: One Training Example*. [arXiv:2609.04172](https://arxiv.org/abs/2609.04172) — 분야: cs.AI, cs.CL
+
 ## [2026-09-08] 청사진이 '얼마나'까지 말하는 한 자리 — 단조성 마진이라는 배포 전 인증서, 그리고 그것이 왜 단일층에서만 깨끗한가
 
 - **중심**: James Li 외. *Quantization Robustness of Monotone Operator Equilibrium Networks*. [arXiv:2603.10562](https://arxiv.org/abs/2603.10562) — 분야: math.OC, cs.LG, eess.SY

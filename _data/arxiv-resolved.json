@@ -11518,51 +11518,118 @@
   ]
  },
  "1011.0686": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+  "authors": [
+   "Stephane Ross",
+   "Geoffrey J. Gordon",
+   "J. Andrew Bagnell"
+  ],
+  "published": "2010-11-02",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "stat.ML"
+  ]
  },
  "1606.07947": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Sequence-Level Knowledge Distillation",
+  "authors": [
+   "Yoon Kim",
+   "Alexander M. Rush"
+  ],
+  "published": "2016-06-25",
+  "categories": [
+   "cs.CL",
+   "cs.LG",
+   "cs.NE"
+  ]
  },
  "1812.04754": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Gradient Descent Happens in a Tiny Subspace",
+  "authors": [
+   "Guy Gur-Ari",
+   "Daniel A. Roberts",
+   "Ethan Dyer"
+  ],
+  "published": "2018-12-12",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "stat.ML"
+  ]
  },
  "1804.08838": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Measuring the Intrinsic Dimension of Objective Landscapes",
+  "authors": [
+   "Chunyuan Li",
+   "Heerad Farkhoor",
+   "Rosanne Liu",
+   "Jason Yosinski"
+  ],
+  "published": "2018-04-24",
+  "categories": [
+   "cs.LG",
+   "cs.NE",
+   "stat.ML"
+  ]
  },
  "1503.02531": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Distilling the Knowledge in a Neural Network",
+  "authors": [
+   "Geoffrey Hinton",
+   "Oriol Vinyals",
+   "Jeff Dean"
+  ],
+  "published": "2015-03-09",
+  "categories": [
+   "stat.ML",
+   "cs.LG",
+   "cs.NE"
+  ]
  },
  "2306.13649": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes",
+  "authors": [
+   "Rishabh Agarwal",
+   "Nino Vieillard",
+   "Yongchao Zhou",
+   "Piotr Stanczyk",
+   "Sabela Ramos",
+   "Matthieu Geist",
+   "Olivier Bachem"
+  ],
+  "published": "2023-06-23",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  },
  "2012.13255": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning",
+  "authors": [
+   "Armen Aghajanyan",
+   "Luke Zettlemoyer",
+   "Sonal Gupta"
+  ],
+  "published": "2020-12-22",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
  },
  "1502.05477": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Trust Region Policy Optimization",
+  "authors": [
+   "John Schulman",
+   "Sergey Levine",
+   "Philipp Moritz",
+   "Michael I. Jordan",
+   "Pieter Abbeel"
+  ],
+  "published": "2015-02-19",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }

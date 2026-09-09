@@ -1,6 +1,38 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-09-opd-geometry-subspace-locking:
+  title: "저차원 채널은 늦게 조립되지 않습니다 — 온폴리시 증류의 파라미터 공간 기하, 그리고 잠김이 곧 이식은 아닌 자리"
+  central:
+    id: "2606.07082"
+    title: "On the Geometry of On-Policy Distillation"
+    authors: "Zhennan Shen 외"
+    keywords: "cs.LG, cs.AI"
+    url: "https://arxiv.org/abs/2606.07082"
+  referenced:
+    - { id: "1011.0686", title: "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning", authors: "Stephane Ross 외", keywords: "cs.LG, cs.AI, stat.ML", url: "https://arxiv.org/abs/1011.0686" }
+    - { id: "1502.05477", title: "Trust Region Policy Optimization", authors: "John Schulman 외", keywords: "cs.LG", url: "https://arxiv.org/abs/1502.05477" }
+    - { id: "1503.02531", title: "Distilling the Knowledge in a Neural Network", authors: "Geoffrey Hinton 외", keywords: "stat.ML, cs.LG, cs.NE", url: "https://arxiv.org/abs/1503.02531" }
+    - { id: "1606.07947", title: "Sequence-Level Knowledge Distillation", authors: "Yoon Kim, Alexander M. Rush", keywords: "cs.CL, cs.LG, cs.NE", url: "https://arxiv.org/abs/1606.07947" }
+    - { id: "1804.08838", title: "Measuring the Intrinsic Dimension of Objective Landscapes", authors: "Chunyuan Li 외", keywords: "cs.LG, cs.NE, stat.ML", url: "https://arxiv.org/abs/1804.08838" }
+    - { id: "1812.04754", title: "Gradient Descent Happens in a Tiny Subspace", authors: "Guy Gur-Ari 외", keywords: "cs.LG, cs.AI, stat.ML", url: "https://arxiv.org/abs/1812.04754" }
+    - { id: "2012.13255", title: "Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning", authors: "Armen Aghajanyan 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2012.13255" }
+    - { id: "2306.13649", title: "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes", authors: "Rishabh Agarwal 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2306.13649" }
+    - { id: "2410.21228", title: "LoRA vs Full Fine-tuning: An Illusion of Equivalence", authors: "Reece Shuttleworth 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2410.21228" }
+    - { id: "2501.17161", title: "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training", authors: "Tianzhe Chu 외", keywords: "cs.AI, cs.CV, cs.LG", url: "https://arxiv.org/abs/2501.17161" }
+    - { id: "2504.01738", title: "Style over Substance: Distilled Language Models Reason Via Stylistic Replication", authors: "Philip Lippmann, Jie Yang", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2504.01738" }
+    - { id: "2506.00772", title: "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning", authors: "Zihang Liu 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2506.00772" }
+    - { id: "2507.10155", title: "What Should Feature Distillation Transfer in LLMs? A Task-Tangent Geometry View", authors: "Khouloud Saadi, Di Wang", keywords: "cs.CL", url: "https://arxiv.org/abs/2507.10155" }
+    - { id: "2508.01191", title: "Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens", authors: "Chengshuai Zhao 외", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2508.01191" }
+    - { id: "2509.04259", title: "RL's Razor: Why Online Reinforcement Learning Forgets Less", authors: "Idan Shenfeld 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2509.04259" }
+    - { id: "2511.08567", title: "The Path Not Taken: RLVR Provably Learns Off the Principals", authors: "Hanqing Zhu 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2511.08567" }
+    - { id: "2603.25562", title: "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes", authors: "Yuqian Fu 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2603.25562" }
+    - { id: "2604.19884", title: "From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization", authors: "Chenxi Zhou 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2604.19884" }
+    - { id: "2606.09471", title: "Escaping the KL Agreement Trap in On-Policy Distillation", authors: "Haoran Xin 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2606.09471" }
+    - { id: "2606.13657", title: "Dense Supervision, Sparse Updates: On the Sparsity and Geometry of On-Policy Distillation", authors: "Guo Yu 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.13657" }
+    - { id: "2607.23711", title: "The Intruder Threshold: A Spectral Law for LoRA Fine-Tuning", authors: "Peng Xie", keywords: "cs.LG, stat.ML", url: "https://arxiv.org/abs/2607.23711" }
+    - { id: "2609.04172", title: "Rethinking On-Policy Distillation of Large Language Models II: One Training Example", authors: "Zixuan Fu 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2609.04172" }
+
 2026-09-08-mondeq-quantization-margin-certificate:
   title: "청사진이 '얼마나'까지 말하는 한 자리 — 단조성 마진이라는 배포 전 인증서, 그리고 그것이 왜 단일층에서만 깨끗한가"
   central:
