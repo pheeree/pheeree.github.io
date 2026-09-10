@@ -11631,5 +11631,139 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2605.30833": {
+  "title": "Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation",
+  "authors": [
+   "Yanjiang Liu",
+   "Jie Lou",
+   "Xinyan Guan",
+   "Yuqiu Ji",
+   "Hongyu Lin",
+   "Ben He",
+   "Xianpei Han",
+   "Le Sun",
+   "Xing Yu",
+   "Yaojie Lu"
+  ],
+  "published": "2026-05-29",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2510.15110": {
+  "title": "DLER: Doing Length pEnalty Right - Incentivizing More Intelligence per Token via Reinforcement Learning",
+  "authors": [
+   "Shih-Yang Liu",
+   "Xin Dong",
+   "Ximing Lu",
+   "Shizhe Diao",
+   "Mingjie Liu",
+   "Min-Hung Chen",
+   "Hongxu Yin",
+   "Yu-Chiang Frank Wang",
+   "Kwang-Ting Cheng",
+   "Yejin Choi",
+   "Jan Kautz",
+   "Pavlo Molchanov"
+  ],
+  "published": "2025-10-16",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2605.27028": {
+  "title": "Less is More: Early Stopping Rollout for On-Policy Distillation",
+  "authors": [
+   "Zhou Ziheng",
+   "Jiaqi Li",
+   "Huacong Tang",
+   "Ying Nian Wu",
+   "Demetri Terzopoulos"
+  ],
+  "published": "2026-05-26",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2605.19433": {
+  "title": "Backtracking When It Strays: Mitigating Dual Exposure Biases in LLM Reasoning Distillation",
+  "authors": [
+   "Bing Wang",
+   "Shaotian Yan",
+   "Chen Shen",
+   "kaiyuan liu",
+   "Sinan Fan",
+   "Ximing Li",
+   "Rui Miao",
+   "Xiaosong Yuan",
+   "Zhanming Shen",
+   "Jieping Ye"
+  ],
+  "published": "2026-05-19",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2306.08543": {
+  "title": "MiniLLM: On-Policy Distillation of Large Language Models",
+  "authors": [
+   "Yuxian Gu",
+   "Li Dong",
+   "Furu Wei",
+   "Minlie Huang"
+  ],
+  "published": "2023-06-14",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2505.00551": {
+  "title": "100 Days After DeepSeek-R1: A Survey on Replication Studies and More Directions for Reasoning Language Models",
+  "authors": [
+   "Chong Zhang",
+   "Yue Deng",
+   "Xiang Lin",
+   "Bin Wang",
+   "Dianwen Ng",
+   "Hai Ye",
+   "Xingxuan Li",
+   "Yao Xiao",
+   "Zhanfeng Mo",
+   "Qi Zhang",
+   "Lidong Bing"
+  ],
+  "published": "2025-05-01",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2604.13016": {
+  "title": "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe",
+  "authors": [
+   "Yaxuan Li",
+   "Yuxin Zuo",
+   "Bingxiang He",
+   "Jinqian Zhang",
+   "Chaojun Xiao",
+   "Cheng Qian",
+   "Tianyu Yu",
+   "Huan-ang Gao",
+   "Wenkai Yang",
+   "Zhiyuan Liu",
+   "Ning Ding"
+  ],
+  "published": "2026-04-14",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  }
 }
