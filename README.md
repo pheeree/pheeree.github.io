@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-09-10 — [합의가 감독의 증거는 아닙니다 — 온폴리시 증류의 저KL 동조 함정, 그리고 이득의 출처가 아직 갈리지 않은 자리](https://pheeree.github.io/2026/09/10/kl-agreement-trap-opd-termination/)
 - 2026-09-09 — [저차원 채널은 늦게 조립되지 않습니다 — 온폴리시 증류의 파라미터 공간 기하, 그리고 잠김이 곧 이식은 아닌 자리](https://pheeree.github.io/2026/09/09/opd-geometry-subspace-locking/)
 - 2026-09-08 — [청사진이 '얼마나'까지 말하는 한 자리 — 단조성 마진이라는 배포 전 인증서, 그리고 그것이 왜 단일층에서만 깨끗한가](https://pheeree.github.io/2026/09/08/mondeq-quantization-margin-certificate/)
 - 2026-09-06 — [같은 층이 루프마다 다른 분포를 씁니다 — LoopQ, 그리고 재귀 양자화의 원인이 하나가 아닌 자리](https://pheeree.github.io/2026/09/06/loopq-role-shift-recursive-quantization/)

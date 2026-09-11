@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-10-kl-agreement-trap-opd-termination:
+  title: "합의가 감독의 증거는 아닙니다 — 온폴리시 증류의 저KL 동조 함정, 그리고 이득의 출처가 아직 갈리지 않은 자리"
+  central:
+    id: "2606.09471"
+    title: "Escaping the KL Agreement Trap in On-Policy Distillation"
+    authors: "Haoran Xin 외"
+    keywords: "cs.LG, cs.CL"
+    url: "https://arxiv.org/abs/2606.09471"
+  referenced:
+    - { id: "2306.08543", title: "MiniLLM: On-Policy Distillation of Large Language Models", authors: "Yuxian Gu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2306.08543" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2505.00551", title: "100 Days After DeepSeek-R1: A Survey on Replication Studies and More Directions for Reasoning Language Models", authors: "Chong Zhang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2505.00551" }
+    - { id: "2510.15110", title: "DLER: Doing Length pEnalty Right - Incentivizing More Intelligence per Token via Reinforcement Learning", authors: "Shih-Yang Liu 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2510.15110" }
+    - { id: "2603.25562", title: "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes", authors: "Yuqian Fu 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2603.25562" }
+    - { id: "2604.13016", title: "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe", authors: "Yaxuan Li 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.13016" }
+    - { id: "2604.19884", title: "From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization", authors: "Chenxi Zhou 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2604.19884" }
+    - { id: "2605.19433", title: "Backtracking When It Strays: Mitigating Dual Exposure Biases in LLM Reasoning Distillation", authors: "Bing Wang 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.19433" }
+    - { id: "2605.27028", title: "Less is More: Early Stopping Rollout for On-Policy Distillation", authors: "Zhou Ziheng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.27028" }
+    - { id: "2605.30833", title: "Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation", authors: "Yanjiang Liu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.30833" }
+    - { id: "2606.07082", title: "On the Geometry of On-Policy Distillation", authors: "Zhennan Shen 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.07082" }
+    - { id: "2609.04172", title: "Rethinking On-Policy Distillation of Large Language Models II: One Training Example", authors: "Zixuan Fu 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2609.04172" }
+
 2026-09-09-opd-geometry-subspace-locking:
   title: "저차원 채널은 늦게 조립되지 않습니다 — 온폴리시 증류의 파라미터 공간 기하, 그리고 잠김이 곧 이식은 아닌 자리"
   central:

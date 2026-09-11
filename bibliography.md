@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-10] 합의가 감독의 증거는 아닙니다 — 온폴리시 증류의 저KL 동조 함정, 그리고 이득의 출처가 아직 갈리지 않은 자리
+
+- **중심**: Haoran Xin 외. *Escaping the KL Agreement Trap in On-Policy Distillation*. [arXiv:2606.09471](https://arxiv.org/abs/2606.09471) — 분야: cs.LG, cs.CL
+- Yuxian Gu 외. *MiniLLM: On-Policy Distillation of Large Language Models*. [arXiv:2306.08543](https://arxiv.org/abs/2306.08543) — 분야: cs.CL, cs.AI
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Chong Zhang 외. *100 Days After DeepSeek-R1: A Survey on Replication Studies and More Directions for Reasoning Language Models*. [arXiv:2505.00551](https://arxiv.org/abs/2505.00551) — 분야: cs.CL
+- Shih-Yang Liu 외. *DLER: Doing Length pEnalty Right - Incentivizing More Intelligence per Token via Reinforcement Learning*. [arXiv:2510.15110](https://arxiv.org/abs/2510.15110) — 분야: cs.LG, cs.AI, cs.CL
+- Yuqian Fu 외. *Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes*. [arXiv:2603.25562](https://arxiv.org/abs/2603.25562) — 분야: cs.LG, cs.AI, cs.CL
+- Yaxuan Li 외. *Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe*. [arXiv:2604.13016](https://arxiv.org/abs/2604.13016) — 분야: cs.LG, cs.AI, cs.CL
+- Chenxi Zhou 외. *From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization*. [arXiv:2604.19884](https://arxiv.org/abs/2604.19884) — 분야: cs.CL, cs.AI, cs.LG
+- Bing Wang 외. *Backtracking When It Strays: Mitigating Dual Exposure Biases in LLM Reasoning Distillation*. [arXiv:2605.19433](https://arxiv.org/abs/2605.19433) — 분야: cs.CL, cs.AI
+- Zhou Ziheng 외. *Less is More: Early Stopping Rollout for On-Policy Distillation*. [arXiv:2605.27028](https://arxiv.org/abs/2605.27028) — 분야: cs.LG, cs.AI
+- Yanjiang Liu 외. *Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation*. [arXiv:2605.30833](https://arxiv.org/abs/2605.30833) — 분야: cs.CL, cs.AI
+- Zhennan Shen 외. *On the Geometry of On-Policy Distillation*. [arXiv:2606.07082](https://arxiv.org/abs/2606.07082) — 분야: cs.LG, cs.AI
+- Zixuan Fu 외. *Rethinking On-Policy Distillation of Large Language Models II: One Training Example*. [arXiv:2609.04172](https://arxiv.org/abs/2609.04172) — 분야: cs.AI, cs.CL
+
 ## [2026-09-09] 저차원 채널은 늦게 조립되지 않습니다 — 온폴리시 증류의 파라미터 공간 기하, 그리고 잠김이 곧 이식은 아닌 자리
 
 - **중심**: Zhennan Shen 외. *On the Geometry of On-Policy Distillation*. [arXiv:2606.07082](https://arxiv.org/abs/2606.07082) — 분야: cs.LG, cs.AI
