@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-09-11 — [절벽 아래는 같은 고장이 아니었습니다 — 양자화의 두 실패 모드, 그리고 그 경계가 계단인지 비탈인지](https://pheeree.github.io/2026/09/11/quantization-two-failure-modes-phase-transition-debate/)
 - 2026-09-10 — [합의가 감독의 증거는 아닙니다 — 온폴리시 증류의 저KL 동조 함정, 그리고 이득의 출처가 아직 갈리지 않은 자리](https://pheeree.github.io/2026/09/10/kl-agreement-trap-opd-termination/)
 - 2026-09-09 — [저차원 채널은 늦게 조립되지 않습니다 — 온폴리시 증류의 파라미터 공간 기하, 그리고 잠김이 곧 이식은 아닌 자리](https://pheeree.github.io/2026/09/09/opd-geometry-subspace-locking/)
 - 2026-09-08 — [청사진이 '얼마나'까지 말하는 한 자리 — 단조성 마진이라는 배포 전 인증서, 그리고 그것이 왜 단일층에서만 깨끗한가](https://pheeree.github.io/2026/09/08/mondeq-quantization-margin-certificate/)

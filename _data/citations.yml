@@ -1,6 +1,30 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-11-quantization-two-failure-modes-phase-transition-debate:
+  title: "절벽 아래는 같은 고장이 아니었습니다 — 양자화의 두 실패 모드, 그리고 그 경계가 계단인지 비탈인지"
+  central:
+    id: "2604.19884"
+    title: "From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization"
+    authors: "Chenxi Zhou 외"
+    keywords: "cs.CL, cs.AI, cs.LG"
+    url: "https://arxiv.org/abs/2604.19884"
+  referenced:
+    - { id: "2206.07682", url: "https://arxiv.org/abs/2206.07682" }
+    - { id: "2208.07339", url: "https://arxiv.org/abs/2208.07339" }
+    - { id: "2210.16156", title: "Reliability of CKA as a Similarity Measure in Deep Learning", authors: "MohammadReza Davari 외", keywords: "cs.LG, cs.AI, cs.CV", url: "https://arxiv.org/abs/2210.16156" }
+    - { id: "2304.15004", url: "https://arxiv.org/abs/2304.15004" }
+    - { id: "2411.07191", url: "https://arxiv.org/abs/2411.07191" }
+    - { id: "2412.01129", url: "https://arxiv.org/abs/2412.01129" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2506.22776", url: "https://arxiv.org/abs/2506.22776" }
+    - { id: "2603.08185", url: "https://arxiv.org/abs/2603.08185" }
+    - { id: "2606.02011", url: "https://arxiv.org/abs/2606.02011" }
+    - { id: "2606.04238", url: "https://arxiv.org/abs/2606.04238" }
+    - { id: "2606.09864", url: "https://arxiv.org/abs/2606.09864" }
+    - { id: "2606.12487", url: "https://arxiv.org/abs/2606.12487" }
+    - { id: "2609.01587", url: "https://arxiv.org/abs/2609.01587" }
+
 2026-09-10-kl-agreement-trap-opd-termination:
   title: "합의가 감독의 증거는 아닙니다 — 온폴리시 증류의 저KL 동조 함정, 그리고 이득의 출처가 아직 갈리지 않은 자리"
   central:

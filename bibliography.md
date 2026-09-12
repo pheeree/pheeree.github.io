@@ -6,6 +6,24 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-11] 절벽 아래는 같은 고장이 아니었습니다 — 양자화의 두 실패 모드, 그리고 그 경계가 계단인지 비탈인지
+
+- **중심**: Chenxi Zhou 외. *From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization*. [arXiv:2604.19884](https://arxiv.org/abs/2604.19884) — 분야: cs.CL, cs.AI, cs.LG
+- [arXiv:2206.07682](https://arxiv.org/abs/2206.07682)
+- [arXiv:2208.07339](https://arxiv.org/abs/2208.07339)
+- MohammadReza Davari 외. *Reliability of CKA as a Similarity Measure in Deep Learning*. [arXiv:2210.16156](https://arxiv.org/abs/2210.16156) — 분야: cs.LG, cs.AI, cs.CV
+- [arXiv:2304.15004](https://arxiv.org/abs/2304.15004)
+- [arXiv:2411.07191](https://arxiv.org/abs/2411.07191)
+- [arXiv:2412.01129](https://arxiv.org/abs/2412.01129)
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- [arXiv:2506.22776](https://arxiv.org/abs/2506.22776)
+- [arXiv:2603.08185](https://arxiv.org/abs/2603.08185)
+- [arXiv:2606.02011](https://arxiv.org/abs/2606.02011)
+- [arXiv:2606.04238](https://arxiv.org/abs/2606.04238)
+- [arXiv:2606.09864](https://arxiv.org/abs/2606.09864)
+- [arXiv:2606.12487](https://arxiv.org/abs/2606.12487)
+- [arXiv:2609.01587](https://arxiv.org/abs/2609.01587)
+
 ## [2026-09-10] 합의가 감독의 증거는 아닙니다 — 온폴리시 증류의 저KL 동조 함정, 그리고 이득의 출처가 아직 갈리지 않은 자리
 
 - **중심**: Haoran Xin 외. *Escaping the KL Agreement Trap in On-Policy Distillation*. [arXiv:2606.09471](https://arxiv.org/abs/2606.09471) — 분야: cs.LG, cs.CL
