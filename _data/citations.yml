@@ -1,6 +1,33 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-12-opd-data-overfed-algorithm-starved:
+  title: "굶고 있던 쪽은 데이터가 아니었습니다 — 온폴리시 증류의 상태 커버리지와 흡수율, 그리고 회복이 강건성은 아닌 자리"
+  central:
+    id: "2609.04172"
+    title: "Rethinking On-Policy Distillation of Large Language Models II: One Training Example"
+    authors: "Zixuan Fu 외"
+    keywords: "cs.AI, cs.CL"
+    url: "https://arxiv.org/abs/2609.04172"
+  referenced:
+    - { id: "1011.0686", title: "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning", authors: "Stephane Ross 외", keywords: "cs.LG, cs.AI, stat.ML", url: "https://arxiv.org/abs/1011.0686" }
+    - { id: "2206.14486", url: "https://arxiv.org/abs/2206.14486" }
+    - { id: "2305.11206", url: "https://arxiv.org/abs/2305.11206" }
+    - { id: "2312.01552", url: "https://arxiv.org/abs/2312.01552" }
+    - { id: "2402.10891", url: "https://arxiv.org/abs/2402.10891" }
+    - { id: "2410.04717", url: "https://arxiv.org/abs/2410.04717" }
+    - { id: "2501.19393", url: "https://arxiv.org/abs/2501.19393" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2504.13837", title: "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?", authors: "Yang Yue 외", keywords: "cs.AI, cs.CL, cs.CV", url: "https://arxiv.org/abs/2504.13837" }
+    - { id: "2504.20571", url: "https://arxiv.org/abs/2504.20571" }
+    - { id: "2505.20282", url: "https://arxiv.org/abs/2505.20282" }
+    - { id: "2510.27044", url: "https://arxiv.org/abs/2510.27044" }
+    - { id: "2605.27028", title: "Less is More: Early Stopping Rollout for On-Policy Distillation", authors: "Zhou Ziheng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.27028" }
+    - { id: "2605.28631", url: "https://arxiv.org/abs/2605.28631" }
+    - { id: "2605.30833", title: "Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation", authors: "Yanjiang Liu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.30833" }
+    - { id: "2606.22600", url: "https://arxiv.org/abs/2606.22600" }
+    - { id: "2606.22793", url: "https://arxiv.org/abs/2606.22793" }
+
 2026-09-11-quantization-two-failure-modes-phase-transition-debate:
   title: "절벽 아래는 같은 고장이 아니었습니다 — 양자화의 두 실패 모드, 그리고 그 경계가 계단인지 비탈인지"
   central:

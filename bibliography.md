@@ -6,6 +6,27 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-12] 굶고 있던 쪽은 데이터가 아니었습니다 — 온폴리시 증류의 상태 커버리지와 흡수율, 그리고 회복이 강건성은 아닌 자리
+
+- **중심**: Zixuan Fu 외. *Rethinking On-Policy Distillation of Large Language Models II: One Training Example*. [arXiv:2609.04172](https://arxiv.org/abs/2609.04172) — 분야: cs.AI, cs.CL
+- Stephane Ross 외. *A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning*. [arXiv:1011.0686](https://arxiv.org/abs/1011.0686) — 분야: cs.LG, cs.AI, stat.ML
+- [arXiv:2206.14486](https://arxiv.org/abs/2206.14486)
+- [arXiv:2305.11206](https://arxiv.org/abs/2305.11206)
+- [arXiv:2312.01552](https://arxiv.org/abs/2312.01552)
+- [arXiv:2402.10891](https://arxiv.org/abs/2402.10891)
+- [arXiv:2410.04717](https://arxiv.org/abs/2410.04717)
+- [arXiv:2501.19393](https://arxiv.org/abs/2501.19393)
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Yang Yue 외. *Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?*. [arXiv:2504.13837](https://arxiv.org/abs/2504.13837) — 분야: cs.AI, cs.CL, cs.CV
+- [arXiv:2504.20571](https://arxiv.org/abs/2504.20571)
+- [arXiv:2505.20282](https://arxiv.org/abs/2505.20282)
+- [arXiv:2510.27044](https://arxiv.org/abs/2510.27044)
+- Zhou Ziheng 외. *Less is More: Early Stopping Rollout for On-Policy Distillation*. [arXiv:2605.27028](https://arxiv.org/abs/2605.27028) — 분야: cs.LG, cs.AI
+- [arXiv:2605.28631](https://arxiv.org/abs/2605.28631)
+- Yanjiang Liu 외. *Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation*. [arXiv:2605.30833](https://arxiv.org/abs/2605.30833) — 분야: cs.CL, cs.AI
+- [arXiv:2606.22600](https://arxiv.org/abs/2606.22600)
+- [arXiv:2606.22793](https://arxiv.org/abs/2606.22793)
+
 ## [2026-09-11] 절벽 아래는 같은 고장이 아니었습니다 — 양자화의 두 실패 모드, 그리고 그 경계가 계단인지 비탈인지
 
 - **중심**: Chenxi Zhou 외. *From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization*. [arXiv:2604.19884](https://arxiv.org/abs/2604.19884) — 분야: cs.CL, cs.AI, cs.LG
