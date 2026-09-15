@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-14-esr-cascading-alignment-submode-commitment:
+  title: "처음 100토큰만 가르쳤는데 뒤까지 따라옵니다 — 조기 종료 롤아웃의 캐스케이딩 정렬과 서브모드 정착"
+  central:
+    id: "2605.27028"
+    title: "Less is More: Early Stopping Rollout for On-Policy Distillation"
+    authors: "Zhou Ziheng 외"
+    keywords: "cs.LG, cs.AI"
+    url: "https://arxiv.org/abs/2605.27028"
+  referenced:
+    - { id: "2305.11206", url: "https://arxiv.org/abs/2305.11206" }
+    - { id: "2502.03387", url: "https://arxiv.org/abs/2502.03387" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2602.15260", url: "https://arxiv.org/abs/2602.15260" }
+    - { id: "2603.07079", url: "https://arxiv.org/abs/2603.07079" }
+    - { id: "2604.00626", url: "https://arxiv.org/abs/2604.00626" }
+    - { id: "2604.13016", title: "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe", authors: "Yaxuan Li 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.13016" }
+    - { id: "2605.19461", url: "https://arxiv.org/abs/2605.19461" }
+    - { id: "2605.30833", title: "Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation", authors: "Yanjiang Liu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.30833" }
+    - { id: "2606.02684", url: "https://arxiv.org/abs/2606.02684" }
+    - { id: "2606.22600", url: "https://arxiv.org/abs/2606.22600" }
+    - { id: "2606.30406", url: "https://arxiv.org/abs/2606.30406" }
+
 2026-09-12-opd-data-overfed-algorithm-starved:
   title: "굶고 있던 쪽은 데이터가 아니었습니다 — 온폴리시 증류의 상태 커버리지와 흡수율, 그리고 회복이 강건성은 아닌 자리"
   central:

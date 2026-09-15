@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-14] 처음 100토큰만 가르쳤는데 뒤까지 따라옵니다 — 조기 종료 롤아웃의 캐스케이딩 정렬과 서브모드 정착
+
+- **중심**: Zhou Ziheng 외. *Less is More: Early Stopping Rollout for On-Policy Distillation*. [arXiv:2605.27028](https://arxiv.org/abs/2605.27028) — 분야: cs.LG, cs.AI
+- [arXiv:2305.11206](https://arxiv.org/abs/2305.11206)
+- [arXiv:2502.03387](https://arxiv.org/abs/2502.03387)
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- [arXiv:2602.15260](https://arxiv.org/abs/2602.15260)
+- [arXiv:2603.07079](https://arxiv.org/abs/2603.07079)
+- [arXiv:2604.00626](https://arxiv.org/abs/2604.00626)
+- Yaxuan Li 외. *Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe*. [arXiv:2604.13016](https://arxiv.org/abs/2604.13016) — 분야: cs.LG, cs.AI, cs.CL
+- [arXiv:2605.19461](https://arxiv.org/abs/2605.19461)
+- Yanjiang Liu 외. *Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation*. [arXiv:2605.30833](https://arxiv.org/abs/2605.30833) — 분야: cs.CL, cs.AI
+- [arXiv:2606.02684](https://arxiv.org/abs/2606.02684)
+- [arXiv:2606.22600](https://arxiv.org/abs/2606.22600)
+- [arXiv:2606.30406](https://arxiv.org/abs/2606.30406)
+
 ## [2026-09-12] 굶고 있던 쪽은 데이터가 아니었습니다 — 온폴리시 증류의 상태 커버리지와 흡수율, 그리고 회복이 강건성은 아닌 자리
 
 - **중심**: Zixuan Fu 외. *Rethinking On-Policy Distillation of Large Language Models II: One Training Example*. [arXiv:2609.04172](https://arxiv.org/abs/2609.04172) — 분야: cs.AI, cs.CL

@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-09-14 — [처음 100토큰만 가르쳤는데 뒤까지 따라옵니다 — 조기 종료 롤아웃의 캐스케이딩 정렬과 서브모드 정착](https://pheeree.github.io/2026/09/14/esr-cascading-alignment-submode-commitment/)
 - 2026-09-12 — [굶고 있던 쪽은 데이터가 아니었습니다 — 온폴리시 증류의 상태 커버리지와 흡수율, 그리고 회복이 강건성은 아닌 자리](https://pheeree.github.io/2026/09/12/opd-data-overfed-algorithm-starved/)
 - 2026-09-11 — [절벽 아래는 같은 고장이 아니었습니다 — 양자화의 두 실패 모드, 그리고 그 경계가 계단인지 비탈인지](https://pheeree.github.io/2026/09/11/quantization-two-failure-modes-phase-transition-debate/)
 - 2026-09-10 — [합의가 감독의 증거는 아닙니다 — 온폴리시 증류의 저KL 동조 함정, 그리고 이득의 출처가 아직 갈리지 않은 자리](https://pheeree.github.io/2026/09/10/kl-agreement-trap-opd-termination/)
