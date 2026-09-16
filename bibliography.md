@@ -6,60 +6,76 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-15] 교사가 흐려져도 한 칸 앞은 아직 갈립니다 — 감독 충실도 감쇠와 룩어헤드 그룹 보상
+
+- **중심**: Yanjiang Liu 외. *Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation*. [arXiv:2605.30833](https://arxiv.org/abs/2605.30833) — 분야: cs.CL, cs.AI
+- Leo Gao 외. *Scaling Laws for Reward Model Overoptimization*. [arXiv:2210.10760](https://arxiv.org/abs/2210.10760) — 분야: cs.LG, stat.ML
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Yuqian Fu 외. *Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes*. [arXiv:2603.25562](https://arxiv.org/abs/2603.25562) — 분야: cs.LG, cs.AI, cs.CL
+- Yaxuan Li 외. *Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe*. [arXiv:2604.13016](https://arxiv.org/abs/2604.13016) — 분야: cs.LG, cs.AI, cs.CL
+- Jiaxin Zhang 외. *The Illusion of Certainty: Decoupling Capability and Calibration in On-Policy Distillation*. [arXiv:2604.16830](https://arxiv.org/abs/2604.16830) — 분야: cs.LG, cs.AI
+- Ke Zhang 외. *On-Policy Distillation with Best-of-N Teacher Rollout Selection*. [arXiv:2605.09725](https://arxiv.org/abs/2605.09725) — 분야: cs.CV
+- Xinyu Liu 외. *Teacher-Guided Policy Optimization for On-Policy Reasoning Distillation under Large Policy Divergence*. [arXiv:2605.13230](https://arxiv.org/abs/2605.13230) — 분야: cs.LG, cs.AI
+- Kaiyuan Liu 외. *Prefix Teach, Suffix Fade: Local Teachability Collapse in Strong-to-Weak On-Policy Distillation*. [arXiv:2605.13643](https://arxiv.org/abs/2605.13643) — 분야: cs.CL
+- Zhou Ziheng 외. *Less is More: Early Stopping Rollout for On-Policy Distillation*. [arXiv:2605.27028](https://arxiv.org/abs/2605.27028) — 분야: cs.LG, cs.AI
+- Kun Liang 외. *ADWIN: Adaptive Windows for Horizon-Aware On-Policy Distillation*. [arXiv:2605.28396](https://arxiv.org/abs/2605.28396) — 분야: cs.LG, cs.AI
+- Haoran Xin 외. *Escaping the KL Agreement Trap in On-Policy Distillation*. [arXiv:2606.09471](https://arxiv.org/abs/2606.09471) — 분야: cs.LG, cs.CL
+- Chishui Chen 외. *Look Ahead Before You Distill: Future Trajectory Validation of Teacher Guidance for Agentic On-Policy Distillation*. [arXiv:2608.01953](https://arxiv.org/abs/2608.01953) — 분야: cs.CL, cs.LG
+
 ## [2026-09-14] 처음 100토큰만 가르쳤는데 뒤까지 따라옵니다 — 조기 종료 롤아웃의 캐스케이딩 정렬과 서브모드 정착
 
 - **중심**: Zhou Ziheng 외. *Less is More: Early Stopping Rollout for On-Policy Distillation*. [arXiv:2605.27028](https://arxiv.org/abs/2605.27028) — 분야: cs.LG, cs.AI
-- [arXiv:2305.11206](https://arxiv.org/abs/2305.11206)
-- [arXiv:2502.03387](https://arxiv.org/abs/2502.03387)
+- Chunting Zhou 외. *LIMA: Less Is More for Alignment*. [arXiv:2305.11206](https://arxiv.org/abs/2305.11206) — 분야: cs.CL, cs.AI, cs.LG
+- Yixin Ye 외. *LIMO: Less is More for Reasoning*. [arXiv:2502.03387](https://arxiv.org/abs/2502.03387) — 분야: cs.CL, cs.AI
 - Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
-- [arXiv:2602.15260](https://arxiv.org/abs/2602.15260)
-- [arXiv:2603.07079](https://arxiv.org/abs/2603.07079)
-- [arXiv:2604.00626](https://arxiv.org/abs/2604.00626)
+- Dongxu Zhang 외. *Fast and Effective On-policy Distillation from Reasoning Prefixes*. [arXiv:2602.15260](https://arxiv.org/abs/2602.15260) — 분야: cs.LG, cs.AI
+- Woogyeol Jin 외. *Entropy-Aware On-Policy Distillation of Language Models*. [arXiv:2603.07079](https://arxiv.org/abs/2603.07079) — 분야: cs.LG, cs.CL
+- Mingyang Song, Mao Zheng. *A Survey of On-Policy Distillation for Large Language Models*. [arXiv:2604.00626](https://arxiv.org/abs/2604.00626) — 분야: cs.LG, cs.CL
 - Yaxuan Li 외. *Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe*. [arXiv:2604.13016](https://arxiv.org/abs/2604.13016) — 분야: cs.LG, cs.AI, cs.CL
-- [arXiv:2605.19461](https://arxiv.org/abs/2605.19461)
+- Xiaozhe Li 외. *Beyond Mode Collapse: Distribution Matching for Diverse Reasoning*. [arXiv:2605.19461](https://arxiv.org/abs/2605.19461) — 분야: cs.AI
 - Yanjiang Liu 외. *Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation*. [arXiv:2605.30833](https://arxiv.org/abs/2605.30833) — 분야: cs.CL, cs.AI
-- [arXiv:2606.02684](https://arxiv.org/abs/2606.02684)
-- [arXiv:2606.22600](https://arxiv.org/abs/2606.22600)
-- [arXiv:2606.30406](https://arxiv.org/abs/2606.30406)
+- Yuying Li 외. *Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation*. [arXiv:2606.02684](https://arxiv.org/abs/2606.02684) — 분야: cs.LG, cs.AI, cs.CL
+- Yan Xie 외. *On the Position Bias of On-Policy Distillation*. [arXiv:2606.22600](https://arxiv.org/abs/2606.22600) — 분야: cs.LG, cs.AI
+- Wenhan Ma 외. *MOPD: Multi-Teacher On-Policy Distillation for Capability Integration in LLM Post-Training*. [arXiv:2606.30406](https://arxiv.org/abs/2606.30406) — 분야: cs.CL, cs.LG
 
 ## [2026-09-12] 굶고 있던 쪽은 데이터가 아니었습니다 — 온폴리시 증류의 상태 커버리지와 흡수율, 그리고 회복이 강건성은 아닌 자리
 
 - **중심**: Zixuan Fu 외. *Rethinking On-Policy Distillation of Large Language Models II: One Training Example*. [arXiv:2609.04172](https://arxiv.org/abs/2609.04172) — 분야: cs.AI, cs.CL
 - Stephane Ross 외. *A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning*. [arXiv:1011.0686](https://arxiv.org/abs/1011.0686) — 분야: cs.LG, cs.AI, stat.ML
-- [arXiv:2206.14486](https://arxiv.org/abs/2206.14486)
-- [arXiv:2305.11206](https://arxiv.org/abs/2305.11206)
-- [arXiv:2312.01552](https://arxiv.org/abs/2312.01552)
-- [arXiv:2402.10891](https://arxiv.org/abs/2402.10891)
-- [arXiv:2410.04717](https://arxiv.org/abs/2410.04717)
-- [arXiv:2501.19393](https://arxiv.org/abs/2501.19393)
+- Ben Sorscher 외. *Beyond neural scaling laws: beating power law scaling via data pruning*. [arXiv:2206.14486](https://arxiv.org/abs/2206.14486) — 분야: cs.LG, cs.AI, cs.CV, stat.ML
+- Chunting Zhou 외. *LIMA: Less Is More for Alignment*. [arXiv:2305.11206](https://arxiv.org/abs/2305.11206) — 분야: cs.CL, cs.AI, cs.LG
+- Bill Yuchen Lin 외. *The Unlocking Spell on Base LLMs: Rethinking Alignment via In-Context Learning*. [arXiv:2312.01552](https://arxiv.org/abs/2312.01552) — 분야: cs.CL, cs.AI
+- Dylan Zhang 외. *Instruction Diversity Drives Generalization To Unseen Tasks*. [arXiv:2402.10891](https://arxiv.org/abs/2402.10891) — 분야: cs.CL, cs.AI, cs.LG
+- Dylan Zhang 외. *$\textbf{Only-IF}$:Revealing the Decisive Effect of Instruction Diversity on Generalization*. [arXiv:2410.04717](https://arxiv.org/abs/2410.04717) — 분야: cs.CL, cs.AI, cs.LG, cs.SE
+- Niklas Muennighoff 외. *s1: Simple test-time scaling*. [arXiv:2501.19393](https://arxiv.org/abs/2501.19393) — 분야: cs.CL, cs.AI, cs.LG
 - Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
 - Yang Yue 외. *Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?*. [arXiv:2504.13837](https://arxiv.org/abs/2504.13837) — 분야: cs.AI, cs.CL, cs.CV
-- [arXiv:2504.20571](https://arxiv.org/abs/2504.20571)
-- [arXiv:2505.20282](https://arxiv.org/abs/2505.20282)
-- [arXiv:2510.27044](https://arxiv.org/abs/2510.27044)
+- Yiping Wang 외. *Reinforcement Learning for Reasoning in Large Language Models with One Training Example*. [arXiv:2504.20571](https://arxiv.org/abs/2504.20571) — 분야: cs.LG, cs.AI, cs.CL
+- Zitian Gao 외. *One-shot Entropy Minimization*. [arXiv:2505.20282](https://arxiv.org/abs/2505.20282) — 분야: cs.CL
+- Md Tanvirul Alam, Nidhi Rastogi. *Limits of Generalization in RLVR: Two Case Studies in Mathematical Reasoning*. [arXiv:2510.27044](https://arxiv.org/abs/2510.27044) — 분야: cs.LG
 - Zhou Ziheng 외. *Less is More: Early Stopping Rollout for On-Policy Distillation*. [arXiv:2605.27028](https://arxiv.org/abs/2605.27028) — 분야: cs.LG, cs.AI
-- [arXiv:2605.28631](https://arxiv.org/abs/2605.28631)
+- Jianghao Wu 외. *Single-Rollout Hidden-State Dynamics for Training-Free RLVR Data Selection*. [arXiv:2605.28631](https://arxiv.org/abs/2605.28631) — 분야: cs.LG
 - Yanjiang Liu 외. *Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation*. [arXiv:2605.30833](https://arxiv.org/abs/2605.30833) — 분야: cs.CL, cs.AI
-- [arXiv:2606.22600](https://arxiv.org/abs/2606.22600)
-- [arXiv:2606.22793](https://arxiv.org/abs/2606.22793)
+- Yan Xie 외. *On the Position Bias of On-Policy Distillation*. [arXiv:2606.22600](https://arxiv.org/abs/2606.22600) — 분야: cs.LG, cs.AI
+- Bowen Zhang. *A Formula-Driven Survey and Research Agenda for On-Policy Distillation*. [arXiv:2606.22793](https://arxiv.org/abs/2606.22793) — 분야: cs.AI
 
 ## [2026-09-11] 절벽 아래는 같은 고장이 아니었습니다 — 양자화의 두 실패 모드, 그리고 그 경계가 계단인지 비탈인지
 
 - **중심**: Chenxi Zhou 외. *From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization*. [arXiv:2604.19884](https://arxiv.org/abs/2604.19884) — 분야: cs.CL, cs.AI, cs.LG
-- [arXiv:2206.07682](https://arxiv.org/abs/2206.07682)
-- [arXiv:2208.07339](https://arxiv.org/abs/2208.07339)
+- Jason Wei 외. *Emergent Abilities of Large Language Models*. [arXiv:2206.07682](https://arxiv.org/abs/2206.07682) — 분야: cs.CL
+- Tim Dettmers 외. *LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale*. [arXiv:2208.07339](https://arxiv.org/abs/2208.07339) — 분야: cs.LG, cs.AI
 - MohammadReza Davari 외. *Reliability of CKA as a Similarity Measure in Deep Learning*. [arXiv:2210.16156](https://arxiv.org/abs/2210.16156) — 분야: cs.LG, cs.AI, cs.CV
-- [arXiv:2304.15004](https://arxiv.org/abs/2304.15004)
-- [arXiv:2411.07191](https://arxiv.org/abs/2411.07191)
-- [arXiv:2412.01129](https://arxiv.org/abs/2412.01129)
+- Rylan Schaeffer 외. *Are Emergent Abilities of Large Language Models a Mirage?*. [arXiv:2304.15004](https://arxiv.org/abs/2304.15004) — 분야: cs.AI, cs.LG
+- Mengxia Yu 외. *The Super Weight in Large Language Models*. [arXiv:2411.07191](https://arxiv.org/abs/2411.07191) — 분야: cs.CL, cs.AI
+- Geonho Lee 외. *RILQ: Rank-Insensitive LoRA-based Quantization Error Compensation for Boosting 2-bit Large Language Model Accuracy*. [arXiv:2412.01129](https://arxiv.org/abs/2412.01129) — 분야: cs.LG, cs.AI
 - Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
-- [arXiv:2506.22776](https://arxiv.org/abs/2506.22776)
-- [arXiv:2603.08185](https://arxiv.org/abs/2603.08185)
-- [arXiv:2606.02011](https://arxiv.org/abs/2606.02011)
-- [arXiv:2606.04238](https://arxiv.org/abs/2606.04238)
-- [arXiv:2606.09864](https://arxiv.org/abs/2606.09864)
-- [arXiv:2606.12487](https://arxiv.org/abs/2606.12487)
-- [arXiv:2609.01587](https://arxiv.org/abs/2609.01587)
+- Sen Fang 외. *Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation*. [arXiv:2506.22776](https://arxiv.org/abs/2506.22776) — 분야: cs.SE, cs.AI, cs.PL
+- Yeonsik Park 외. *SERQ: Saliency-Aware Low-Rank Error Reconstruction for LLM Quantization*. [arXiv:2603.08185](https://arxiv.org/abs/2603.08185) — 분야: cs.LG
+- Ekaterina Alimaskina 외. *Extreme Low-Bit Inference in Reasoning Models: Failure Modes and Targeted Recovery*. [arXiv:2606.02011](https://arxiv.org/abs/2606.02011) — 분야: cs.AI, cs.LG
+- Devleena Das 외. *Recover-LoRA for Aggressive Quantization: Reclaiming Accuracy in 2-Bit Language Models via Low-Rank Adaptation with Knowledge Distillation on Synthetic Data*. [arXiv:2606.04238](https://arxiv.org/abs/2606.04238) — 분야: cs.LG, cs.AI
+- Bruce Changlong Xu 외. *Alignment Collapse Under KV Cache Quantization: Diagnosis and Mitigation*. [arXiv:2606.09864](https://arxiv.org/abs/2606.09864) — 분야: cs.LG, cs.AI, cs.ET
+- Zimo Zhao 외. *DynamicPTQ: Mitigating Activation Quantization Collapse via Residual-Stream Dynamics*. [arXiv:2606.12487](https://arxiv.org/abs/2606.12487) — 분야: cs.LG
+- Jundong Hu, Shekar Ramachandran. *The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally*. [arXiv:2609.01587](https://arxiv.org/abs/2609.01587) — 분야: cs.LG, cs.CL
 
 ## [2026-09-10] 합의가 감독의 증거는 아닙니다 — 온폴리시 증류의 저KL 동조 함정, 그리고 이득의 출처가 아직 갈리지 않은 자리
 

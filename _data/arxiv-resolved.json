@@ -11767,189 +11767,626 @@
   ]
  },
  "2606.12487": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "DynamicPTQ: Mitigating Activation Quantization Collapse via Residual-Stream Dynamics",
+  "authors": [
+   "Zimo Zhao",
+   "Maolin Wang",
+   "Bowen Yu",
+   "Bowen Liu",
+   "Xiao Han",
+   "Xiangyu Zhao"
+  ],
+  "published": "2026-06-10",
+  "categories": [
+   "cs.LG"
+  ]
  },
  "2606.02011": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Extreme Low-Bit Inference in Reasoning Models: Failure Modes and Targeted Recovery",
+  "authors": [
+   "Ekaterina Alimaskina",
+   "Darya Rudas",
+   "Denis Shveykin",
+   "Gleb Molodtsov",
+   "Pavel Vasiliev",
+   "Aleksandr Beznosikov"
+  ],
+  "published": "2026-06-01",
+  "categories": [
+   "cs.AI",
+   "cs.LG"
+  ]
  },
  "2411.07191": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "The Super Weight in Large Language Models",
+  "authors": [
+   "Mengxia Yu",
+   "De Wang",
+   "Qi Shan",
+   "Colorado J Reed",
+   "Alvin Wan"
+  ],
+  "published": "2024-11-11",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
  },
  "2603.08185": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "SERQ: Saliency-Aware Low-Rank Error Reconstruction for LLM Quantization",
+  "authors": [
+   "Yeonsik Park",
+   "Hyeonseong Kim",
+   "Seungkyu Choi"
+  ],
+  "published": "2026-03-09",
+  "categories": [
+   "cs.LG"
+  ]
  },
  "2606.09864": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Alignment Collapse Under KV Cache Quantization: Diagnosis and Mitigation",
+  "authors": [
+   "Bruce Changlong Xu",
+   "Adarsh Kumarappan",
+   "Mu Zhou"
+  ],
+  "published": "2026-06-01",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.ET"
+  ]
  },
  "2412.01129": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "RILQ: Rank-Insensitive LoRA-based Quantization Error Compensation for Boosting 2-bit Large Language Model Accuracy",
+  "authors": [
+   "Geonho Lee",
+   "Janghwan Lee",
+   "Sukjin Hong",
+   "Minsoo Kim",
+   "Euijai Ahn",
+   "Du-Seong Chang",
+   "Jungwook Choi"
+  ],
+  "published": "2024-12-02",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  },
  "2606.04238": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Recover-LoRA for Aggressive Quantization: Reclaiming Accuracy in 2-Bit Language Models via Low-Rank Adaptation with Knowledge Distillation on Synthetic Data",
+  "authors": [
+   "Devleena Das",
+   "Rajeev Patwari",
+   "Elliott Delaye",
+   "Ashish Sirasao"
+  ],
+  "published": "2026-06-02",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  },
  "2609.01587": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally",
+  "authors": [
+   "Jundong Hu",
+   "Shekar Ramachandran"
+  ],
+  "published": "2026-09-01",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
  },
  "2506.22776": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+  "authors": [
+   "Sen Fang",
+   "Weiyuan Ding",
+   "Antonio Mastropaolo",
+   "Bowen Xu"
+  ],
+  "published": "2025-06-28",
+  "categories": [
+   "cs.SE",
+   "cs.AI",
+   "cs.PL"
+  ]
  },
  "2304.15004": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Are Emergent Abilities of Large Language Models a Mirage?",
+  "authors": [
+   "Rylan Schaeffer",
+   "Brando Miranda",
+   "Sanmi Koyejo"
+  ],
+  "published": "2023-04-28",
+  "categories": [
+   "cs.AI",
+   "cs.LG"
+  ]
  },
  "2208.07339": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+  "authors": [
+   "Tim Dettmers",
+   "Mike Lewis",
+   "Younes Belkada",
+   "Luke Zettlemoyer"
+  ],
+  "published": "2022-08-15",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  },
  "2206.07682": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Emergent Abilities of Large Language Models",
+  "authors": [
+   "Jason Wei",
+   "Yi Tay",
+   "Rishi Bommasani",
+   "Colin Raffel",
+   "Barret Zoph",
+   "Sebastian Borgeaud",
+   "Dani Yogatama",
+   "Maarten Bosma",
+   "Denny Zhou",
+   "Donald Metzler",
+   "Ed H. Chi",
+   "Tatsunori Hashimoto",
+   "Oriol Vinyals",
+   "Percy Liang",
+   "Jeff Dean",
+   "William Fedus"
+  ],
+  "published": "2022-06-15",
+  "categories": [
+   "cs.CL"
+  ]
  },
  "2501.19393": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "s1: Simple test-time scaling",
+  "authors": [
+   "Niklas Muennighoff",
+   "Zitong Yang",
+   "Weijia Shi",
+   "Xiang Lisa Li",
+   "Li Fei-Fei",
+   "Hannaneh Hajishirzi",
+   "Luke Zettlemoyer",
+   "Percy Liang",
+   "Emmanuel Candès",
+   "Tatsunori Hashimoto"
+  ],
+  "published": "2025-01-31",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
  },
  "2504.20571": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Reinforcement Learning for Reasoning in Large Language Models with One Training Example",
+  "authors": [
+   "Yiping Wang",
+   "Qing Yang",
+   "Zhiyuan Zeng",
+   "Liliang Ren",
+   "Liyuan Liu",
+   "Baolin Peng",
+   "Hao Cheng",
+   "Xuehai He",
+   "Kuan Wang",
+   "Jianfeng Gao",
+   "Weizhu Chen",
+   "Shuohang Wang",
+   "Simon Shaolei Du",
+   "Yelong Shen"
+  ],
+  "published": "2025-04-29",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  },
  "2606.22793": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "A Formula-Driven Survey and Research Agenda for On-Policy Distillation",
+  "authors": [
+   "Bowen Zhang"
+  ],
+  "published": "2026-06-22",
+  "categories": [
+   "cs.AI"
+  ]
  },
  "2305.11206": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "LIMA: Less Is More for Alignment",
+  "authors": [
+   "Chunting Zhou",
+   "Pengfei Liu",
+   "Puxin Xu",
+   "Srini Iyer",
+   "Jiao Sun",
+   "Yuning Mao",
+   "Xuezhe Ma",
+   "Avia Efrat",
+   "Ping Yu",
+   "Lili Yu",
+   "Susan Zhang",
+   "Gargi Ghosh",
+   "Mike Lewis",
+   "Luke Zettlemoyer",
+   "Omer Levy"
+  ],
+  "published": "2023-05-18",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
  },
  "2510.27044": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Limits of Generalization in RLVR: Two Case Studies in Mathematical Reasoning",
+  "authors": [
+   "Md Tanvirul Alam",
+   "Nidhi Rastogi"
+  ],
+  "published": "2025-10-30",
+  "categories": [
+   "cs.LG"
+  ]
  },
  "2505.20282": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "One-shot Entropy Minimization",
+  "authors": [
+   "Zitian Gao",
+   "Lynx Chen",
+   "Haoming Luo",
+   "Joey Zhou",
+   "Bryan Dai"
+  ],
+  "published": "2025-05-26",
+  "categories": [
+   "cs.CL"
+  ]
  },
  "2605.28631": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Single-Rollout Hidden-State Dynamics for Training-Free RLVR Data Selection",
+  "authors": [
+   "Jianghao Wu",
+   "Jianfei Cai",
+   "Weiqiang Wang",
+   "Jin Ye",
+   "Daniel F. Schmidt",
+   "Yasmeen George"
+  ],
+  "published": "2026-05-27",
+  "categories": [
+   "cs.LG"
+  ]
  },
  "2410.04717": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "$\\textbf{Only-IF}$:Revealing the Decisive Effect of Instruction Diversity on Generalization",
+  "authors": [
+   "Dylan Zhang",
+   "Justin Wang",
+   "Francois Charton"
+  ],
+  "published": "2024-10-07",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG",
+   "cs.SE"
+  ]
  },
  "2606.22600": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "On the Position Bias of On-Policy Distillation",
+  "authors": [
+   "Yan Xie",
+   "Sijie Zhu",
+   "Tiansheng Wen",
+   "Bo Chen",
+   "Yifei Wang"
+  ],
+  "published": "2026-06-21",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  },
  "2402.10891": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Instruction Diversity Drives Generalization To Unseen Tasks",
+  "authors": [
+   "Dylan Zhang",
+   "Justin Wang",
+   "Francois Charton"
+  ],
+  "published": "2024-02-16",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
  },
  "2312.01552": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "The Unlocking Spell on Base LLMs: Rethinking Alignment via In-Context Learning",
+  "authors": [
+   "Bill Yuchen Lin",
+   "Abhilasha Ravichander",
+   "Ximing Lu",
+   "Nouha Dziri",
+   "Melanie Sclar",
+   "Khyathi Chandu",
+   "Chandra Bhagavatula",
+   "Yejin Choi"
+  ],
+  "published": "2023-12-04",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
  },
  "2206.14486": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Beyond neural scaling laws: beating power law scaling via data pruning",
+  "authors": [
+   "Ben Sorscher",
+   "Robert Geirhos",
+   "Shashank Shekhar",
+   "Surya Ganguli",
+   "Ari S. Morcos"
+  ],
+  "published": "2022-06-29",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CV",
+   "stat.ML"
+  ]
  },
  "2602.15260": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Fast and Effective On-policy Distillation from Reasoning Prefixes",
+  "authors": [
+   "Dongxu Zhang",
+   "Zhichao Yang",
+   "Sepehr Janghorbani",
+   "Jun Han",
+   "Andrew Ressler",
+   "Qian Qian",
+   "Gregory D. Lyng",
+   "Sanjit Singh Batra",
+   "Robert E. Tillman"
+  ],
+  "published": "2026-02-16",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  },
  "2603.07079": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Entropy-Aware On-Policy Distillation of Language Models",
+  "authors": [
+   "Woogyeol Jin",
+   "Taywon Min",
+   "Yongjin Yang",
+   "Dennis Wei",
+   "Yi Zhou",
+   "Swanand Ravindra Kadhe",
+   "Nathalie Baracaldo",
+   "Kimin Lee"
+  ],
+  "published": "2026-03-07",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
  },
  "2606.30406": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "MOPD: Multi-Teacher On-Policy Distillation for Capability Integration in LLM Post-Training",
+  "authors": [
+   "Wenhan Ma",
+   "Jianyu Wei",
+   "Liang Zhao",
+   "Hailin Zhang",
+   "Bangjun Xiao",
+   "Lei Li",
+   "Qibin Yang",
+   "Bofei Gao",
+   "Yudong Wang",
+   "Rang Li",
+   "Jinhao Dong",
+   "Zhifang Sui",
+   "Fuli Luo"
+  ],
+  "published": "2026-06-29",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
  },
  "2502.03387": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "LIMO: Less is More for Reasoning",
+  "authors": [
+   "Yixin Ye",
+   "Zhen Huang",
+   "Yang Xiao",
+   "Ethan Chern",
+   "Shijie Xia",
+   "Pengfei Liu"
+  ],
+  "published": "2025-02-05",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
  },
  "2604.00626": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "A Survey of On-Policy Distillation for Large Language Models",
+  "authors": [
+   "Mingyang Song",
+   "Mao Zheng"
+  ],
+  "published": "2026-04-01",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
  },
  "2605.19461": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Beyond Mode Collapse: Distribution Matching for Diverse Reasoning",
+  "authors": [
+   "Xiaozhe Li",
+   "Yang Li",
+   "Xinyu Fang",
+   "Shengyuan Ding",
+   "Peiji Li",
+   "Yongkang Chen",
+   "Yichuan Ma",
+   "Tianyi Lyu",
+   "Linyang Li",
+   "Dahua Lin",
+   "Qipeng Guo",
+   "Qingwen Liu",
+   "Kai Chen"
+  ],
+  "published": "2026-05-19",
+  "categories": [
+   "cs.AI"
+  ]
  },
  "2606.02684": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation",
+  "authors": [
+   "Yuying Li",
+   "Leqi Zheng",
+   "Yongzi Yu",
+   "Wenrui Zhou",
+   "Xuchang Zhong",
+   "Xing Hu",
+   "Jing Jin",
+   "Hangjie Yuan",
+   "Tao Feng"
+  ],
+  "published": "2026-06-01",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2605.13643": {
+  "title": "Prefix Teach, Suffix Fade: Local Teachability Collapse in Strong-to-Weak On-Policy Distillation",
+  "authors": [
+   "Kaiyuan Liu",
+   "Ziyuan Zhuang",
+   "Yang Bai",
+   "Bing Wang",
+   "Rongxiang Weng",
+   "Jieping Ye"
+  ],
+  "published": "2026-05-13",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2604.16830": {
+  "title": "The Illusion of Certainty: Decoupling Capability and Calibration in On-Policy Distillation",
+  "authors": [
+   "Jiaxin Zhang",
+   "Xiangyu Peng",
+   "Qinglin Chen",
+   "Qinyuan Ye",
+   "Caiming Xiong",
+   "Chien-Sheng Wu"
+  ],
+  "published": "2026-04-18",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2605.28396": {
+  "title": "ADWIN: Adaptive Windows for Horizon-Aware On-Policy Distillation",
+  "authors": [
+   "Kun Liang",
+   "Chenming Tang",
+   "Clive Bai",
+   "Weijie Liu",
+   "Saiyong Yang",
+   "Yunfang Wu"
+  ],
+  "published": "2026-05-27",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2608.01953": {
+  "title": "Look Ahead Before You Distill: Future Trajectory Validation of Teacher Guidance for Agentic On-Policy Distillation",
+  "authors": [
+   "Chishui Chen",
+   "Yaoyou Fan",
+   "Te Sun",
+   "Yi Yang",
+   "Chenghao Sun",
+   "Delin Mao",
+   "Hongbo Qiao",
+   "Zuowei Zhang",
+   "Junxi Wang",
+   "Chenxing Sun",
+   "Yangen Hu",
+   "Lu Pan",
+   "Xuyang Liu",
+   "Linfeng Zhang"
+  ],
+  "published": "2026-08-03",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2605.09725": {
+  "title": "On-Policy Distillation with Best-of-N Teacher Rollout Selection",
+  "authors": [
+   "Ke Zhang",
+   "Yunjie Tian",
+   "Dongdi Zhao",
+   "Yijiang Li",
+   "Yuanye Liu",
+   "Vishal M Patel",
+   "Di Fu"
+  ],
+  "published": "2026-05-10",
+  "categories": [
+   "cs.CV"
+  ]
+ },
+ "2605.13230": {
+  "title": "Teacher-Guided Policy Optimization for On-Policy Reasoning Distillation under Large Policy Divergence",
+  "authors": [
+   "Xinyu Liu",
+   "Kechen Jiao",
+   "Chunyang Xiao",
+   "Runsong Zhao",
+   "Junhao Ruan",
+   "Bei Li",
+   "Jiahao Liu",
+   "Qifan Wang",
+   "Xin Chen",
+   "Jingang Wang",
+   "Chenglong Wang",
+   "Tong Xiao",
+   "JingBo Zhu"
+  ],
+  "published": "2026-05-13",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  }
 }

@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-15-lgr-supervision-fidelity-decay-lookahead-reward:
+  title: "교사가 흐려져도 한 칸 앞은 아직 갈립니다 — 감독 충실도 감쇠와 룩어헤드 그룹 보상"
+  central:
+    id: "2605.30833"
+    title: "Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation"
+    authors: "Yanjiang Liu 외"
+    keywords: "cs.CL, cs.AI"
+    url: "https://arxiv.org/abs/2605.30833"
+  referenced:
+    - { id: "2210.10760", title: "Scaling Laws for Reward Model Overoptimization", authors: "Leo Gao 외", keywords: "cs.LG, stat.ML", url: "https://arxiv.org/abs/2210.10760" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2603.25562", title: "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes", authors: "Yuqian Fu 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2603.25562" }
+    - { id: "2604.13016", title: "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe", authors: "Yaxuan Li 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.13016" }
+    - { id: "2604.16830", title: "The Illusion of Certainty: Decoupling Capability and Calibration in On-Policy Distillation", authors: "Jiaxin Zhang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.16830" }
+    - { id: "2605.09725", title: "On-Policy Distillation with Best-of-N Teacher Rollout Selection", authors: "Ke Zhang 외", keywords: "cs.CV", url: "https://arxiv.org/abs/2605.09725" }
+    - { id: "2605.13230", title: "Teacher-Guided Policy Optimization for On-Policy Reasoning Distillation under Large Policy Divergence", authors: "Xinyu Liu 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.13230" }
+    - { id: "2605.13643", title: "Prefix Teach, Suffix Fade: Local Teachability Collapse in Strong-to-Weak On-Policy Distillation", authors: "Kaiyuan Liu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.13643" }
+    - { id: "2605.27028", title: "Less is More: Early Stopping Rollout for On-Policy Distillation", authors: "Zhou Ziheng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.27028" }
+    - { id: "2605.28396", title: "ADWIN: Adaptive Windows for Horizon-Aware On-Policy Distillation", authors: "Kun Liang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.28396" }
+    - { id: "2606.09471", title: "Escaping the KL Agreement Trap in On-Policy Distillation", authors: "Haoran Xin 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2606.09471" }
+    - { id: "2608.01953", title: "Look Ahead Before You Distill: Future Trajectory Validation of Teacher Guidance for Agentic On-Policy Distillation", authors: "Chishui Chen 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2608.01953" }
+
 2026-09-14-esr-cascading-alignment-submode-commitment:
   title: "처음 100토큰만 가르쳤는데 뒤까지 따라옵니다 — 조기 종료 롤아웃의 캐스케이딩 정렬과 서브모드 정착"
   central:
@@ -10,18 +32,18 @@
     keywords: "cs.LG, cs.AI"
     url: "https://arxiv.org/abs/2605.27028"
   referenced:
-    - { id: "2305.11206", url: "https://arxiv.org/abs/2305.11206" }
-    - { id: "2502.03387", url: "https://arxiv.org/abs/2502.03387" }
+    - { id: "2305.11206", title: "LIMA: Less Is More for Alignment", authors: "Chunting Zhou 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2305.11206" }
+    - { id: "2502.03387", title: "LIMO: Less is More for Reasoning", authors: "Yixin Ye 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2502.03387" }
     - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
-    - { id: "2602.15260", url: "https://arxiv.org/abs/2602.15260" }
-    - { id: "2603.07079", url: "https://arxiv.org/abs/2603.07079" }
-    - { id: "2604.00626", url: "https://arxiv.org/abs/2604.00626" }
+    - { id: "2602.15260", title: "Fast and Effective On-policy Distillation from Reasoning Prefixes", authors: "Dongxu Zhang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2602.15260" }
+    - { id: "2603.07079", title: "Entropy-Aware On-Policy Distillation of Language Models", authors: "Woogyeol Jin 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2603.07079" }
+    - { id: "2604.00626", title: "A Survey of On-Policy Distillation for Large Language Models", authors: "Mingyang Song, Mao Zheng", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2604.00626" }
     - { id: "2604.13016", title: "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe", authors: "Yaxuan Li 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.13016" }
-    - { id: "2605.19461", url: "https://arxiv.org/abs/2605.19461" }
+    - { id: "2605.19461", title: "Beyond Mode Collapse: Distribution Matching for Diverse Reasoning", authors: "Xiaozhe Li 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.19461" }
     - { id: "2605.30833", title: "Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation", authors: "Yanjiang Liu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.30833" }
-    - { id: "2606.02684", url: "https://arxiv.org/abs/2606.02684" }
-    - { id: "2606.22600", url: "https://arxiv.org/abs/2606.22600" }
-    - { id: "2606.30406", url: "https://arxiv.org/abs/2606.30406" }
+    - { id: "2606.02684", title: "Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation", authors: "Yuying Li 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.02684" }
+    - { id: "2606.22600", title: "On the Position Bias of On-Policy Distillation", authors: "Yan Xie 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.22600" }
+    - { id: "2606.30406", title: "MOPD: Multi-Teacher On-Policy Distillation for Capability Integration in LLM Post-Training", authors: "Wenhan Ma 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2606.30406" }
 
 2026-09-12-opd-data-overfed-algorithm-starved:
   title: "굶고 있던 쪽은 데이터가 아니었습니다 — 온폴리시 증류의 상태 커버리지와 흡수율, 그리고 회복이 강건성은 아닌 자리"
@@ -33,22 +55,22 @@
     url: "https://arxiv.org/abs/2609.04172"
   referenced:
     - { id: "1011.0686", title: "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning", authors: "Stephane Ross 외", keywords: "cs.LG, cs.AI, stat.ML", url: "https://arxiv.org/abs/1011.0686" }
-    - { id: "2206.14486", url: "https://arxiv.org/abs/2206.14486" }
-    - { id: "2305.11206", url: "https://arxiv.org/abs/2305.11206" }
-    - { id: "2312.01552", url: "https://arxiv.org/abs/2312.01552" }
-    - { id: "2402.10891", url: "https://arxiv.org/abs/2402.10891" }
-    - { id: "2410.04717", url: "https://arxiv.org/abs/2410.04717" }
-    - { id: "2501.19393", url: "https://arxiv.org/abs/2501.19393" }
+    - { id: "2206.14486", title: "Beyond neural scaling laws: beating power law scaling via data pruning", authors: "Ben Sorscher 외", keywords: "cs.LG, cs.AI, cs.CV, stat.ML", url: "https://arxiv.org/abs/2206.14486" }
+    - { id: "2305.11206", title: "LIMA: Less Is More for Alignment", authors: "Chunting Zhou 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2305.11206" }
+    - { id: "2312.01552", title: "The Unlocking Spell on Base LLMs: Rethinking Alignment via In-Context Learning", authors: "Bill Yuchen Lin 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2312.01552" }
+    - { id: "2402.10891", title: "Instruction Diversity Drives Generalization To Unseen Tasks", authors: "Dylan Zhang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2402.10891" }
+    - { id: "2410.04717", title: "$\\textbf{Only-IF}$:Revealing the Decisive Effect of Instruction Diversity on Generalization", authors: "Dylan Zhang 외", keywords: "cs.CL, cs.AI, cs.LG, cs.SE", url: "https://arxiv.org/abs/2410.04717" }
+    - { id: "2501.19393", title: "s1: Simple test-time scaling", authors: "Niklas Muennighoff 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2501.19393" }
     - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
     - { id: "2504.13837", title: "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?", authors: "Yang Yue 외", keywords: "cs.AI, cs.CL, cs.CV", url: "https://arxiv.org/abs/2504.13837" }
-    - { id: "2504.20571", url: "https://arxiv.org/abs/2504.20571" }
-    - { id: "2505.20282", url: "https://arxiv.org/abs/2505.20282" }
-    - { id: "2510.27044", url: "https://arxiv.org/abs/2510.27044" }
+    - { id: "2504.20571", title: "Reinforcement Learning for Reasoning in Large Language Models with One Training Example", authors: "Yiping Wang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2504.20571" }
+    - { id: "2505.20282", title: "One-shot Entropy Minimization", authors: "Zitian Gao 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2505.20282" }
+    - { id: "2510.27044", title: "Limits of Generalization in RLVR: Two Case Studies in Mathematical Reasoning", authors: "Md Tanvirul Alam, Nidhi Rastogi", keywords: "cs.LG", url: "https://arxiv.org/abs/2510.27044" }
     - { id: "2605.27028", title: "Less is More: Early Stopping Rollout for On-Policy Distillation", authors: "Zhou Ziheng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.27028" }
-    - { id: "2605.28631", url: "https://arxiv.org/abs/2605.28631" }
+    - { id: "2605.28631", title: "Single-Rollout Hidden-State Dynamics for Training-Free RLVR Data Selection", authors: "Jianghao Wu 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.28631" }
     - { id: "2605.30833", title: "Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation", authors: "Yanjiang Liu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.30833" }
-    - { id: "2606.22600", url: "https://arxiv.org/abs/2606.22600" }
-    - { id: "2606.22793", url: "https://arxiv.org/abs/2606.22793" }
+    - { id: "2606.22600", title: "On the Position Bias of On-Policy Distillation", authors: "Yan Xie 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.22600" }
+    - { id: "2606.22793", title: "A Formula-Driven Survey and Research Agenda for On-Policy Distillation", authors: "Bowen Zhang", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.22793" }
 
 2026-09-11-quantization-two-failure-modes-phase-transition-debate:
   title: "절벽 아래는 같은 고장이 아니었습니다 — 양자화의 두 실패 모드, 그리고 그 경계가 계단인지 비탈인지"
@@ -59,20 +81,20 @@
     keywords: "cs.CL, cs.AI, cs.LG"
     url: "https://arxiv.org/abs/2604.19884"
   referenced:
-    - { id: "2206.07682", url: "https://arxiv.org/abs/2206.07682" }
-    - { id: "2208.07339", url: "https://arxiv.org/abs/2208.07339" }
+    - { id: "2206.07682", title: "Emergent Abilities of Large Language Models", authors: "Jason Wei 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2206.07682" }
+    - { id: "2208.07339", title: "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale", authors: "Tim Dettmers 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2208.07339" }
     - { id: "2210.16156", title: "Reliability of CKA as a Similarity Measure in Deep Learning", authors: "MohammadReza Davari 외", keywords: "cs.LG, cs.AI, cs.CV", url: "https://arxiv.org/abs/2210.16156" }
-    - { id: "2304.15004", url: "https://arxiv.org/abs/2304.15004" }
-    - { id: "2411.07191", url: "https://arxiv.org/abs/2411.07191" }
-    - { id: "2412.01129", url: "https://arxiv.org/abs/2412.01129" }
+    - { id: "2304.15004", title: "Are Emergent Abilities of Large Language Models a Mirage?", authors: "Rylan Schaeffer 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2304.15004" }
+    - { id: "2411.07191", title: "The Super Weight in Large Language Models", authors: "Mengxia Yu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2411.07191" }
+    - { id: "2412.01129", title: "RILQ: Rank-Insensitive LoRA-based Quantization Error Compensation for Boosting 2-bit Large Language Model Accuracy", authors: "Geonho Lee 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2412.01129" }
     - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
-    - { id: "2506.22776", url: "https://arxiv.org/abs/2506.22776" }
-    - { id: "2603.08185", url: "https://arxiv.org/abs/2603.08185" }
-    - { id: "2606.02011", url: "https://arxiv.org/abs/2606.02011" }
-    - { id: "2606.04238", url: "https://arxiv.org/abs/2606.04238" }
-    - { id: "2606.09864", url: "https://arxiv.org/abs/2606.09864" }
-    - { id: "2606.12487", url: "https://arxiv.org/abs/2606.12487" }
-    - { id: "2609.01587", url: "https://arxiv.org/abs/2609.01587" }
+    - { id: "2506.22776", title: "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation", authors: "Sen Fang 외", keywords: "cs.SE, cs.AI, cs.PL", url: "https://arxiv.org/abs/2506.22776" }
+    - { id: "2603.08185", title: "SERQ: Saliency-Aware Low-Rank Error Reconstruction for LLM Quantization", authors: "Yeonsik Park 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2603.08185" }
+    - { id: "2606.02011", title: "Extreme Low-Bit Inference in Reasoning Models: Failure Modes and Targeted Recovery", authors: "Ekaterina Alimaskina 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2606.02011" }
+    - { id: "2606.04238", title: "Recover-LoRA for Aggressive Quantization: Reclaiming Accuracy in 2-Bit Language Models via Low-Rank Adaptation with Knowledge Distillation on Synthetic Data", authors: "Devleena Das 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.04238" }
+    - { id: "2606.09864", title: "Alignment Collapse Under KV Cache Quantization: Diagnosis and Mitigation", authors: "Bruce Changlong Xu 외", keywords: "cs.LG, cs.AI, cs.ET", url: "https://arxiv.org/abs/2606.09864" }
+    - { id: "2606.12487", title: "DynamicPTQ: Mitigating Activation Quantization Collapse via Residual-Stream Dynamics", authors: "Zimo Zhao 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.12487" }
+    - { id: "2609.01587", title: "The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally", authors: "Jundong Hu, Shekar Ramachandran", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2609.01587" }
 
 2026-09-10-kl-agreement-trap-opd-termination:
   title: "합의가 감독의 증거는 아닙니다 — 온폴리시 증류의 저KL 동조 함정, 그리고 이득의 출처가 아직 갈리지 않은 자리"
