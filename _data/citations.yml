@@ -1,6 +1,32 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-17-opd-position-bias-trust-region-projection:
+  title: "앞쪽이 잘 배워지는 이유는 제약식 안에 이미 적혀 있었습니다 — 신뢰 영역 사영이 낳는 위치 편향과 대리 변수 문제"
+  central:
+    id: "2606.22600"
+    title: "On the Position Bias of On-Policy Distillation"
+    authors: "Yan Xie 외"
+    keywords: "cs.LG, cs.AI"
+    url: "https://arxiv.org/abs/2606.22600"
+  referenced:
+    - { id: "1502.05477", title: "Trust Region Policy Optimization", authors: "John Schulman 외", keywords: "cs.LG", url: "https://arxiv.org/abs/1502.05477" }
+    - { id: "1707.06347", title: "Proximal Policy Optimization Algorithms", authors: "John Schulman 외", keywords: "cs.LG", url: "https://arxiv.org/abs/1707.06347" }
+    - { id: "1806.06920", title: "Maximum a Posteriori Policy Optimisation", authors: "Abbas Abdolmaleki 외", keywords: "cs.LG, cs.AI, cs.IT, cs.RO, stat.ML", url: "https://arxiv.org/abs/1806.06920" }
+    - { id: "2305.18290", title: "Direct Preference Optimization: Your Language Model is Secretly a Reward Model", authors: "Rafael Rafailov 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2305.18290" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2602.12125", title: "Learning beyond Teacher: Generalized On-Policy Distillation with Reward Extrapolation", authors: "Wenkai Yang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2602.12125" }
+    - { id: "2603.25562", title: "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes", authors: "Yuqian Fu 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2603.25562" }
+    - { id: "2604.13016", title: "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe", authors: "Yaxuan Li 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.13016" }
+    - { id: "2604.14084", title: "TIP: Token Importance in On-Policy Distillation", authors: "Yuanda Xu 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.14084" }
+    - { id: "2605.13643", title: "Prefix Teach, Suffix Fade: Local Teachability Collapse in Strong-to-Weak On-Policy Distillation", authors: "Kaiyuan Liu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.13643" }
+    - { id: "2605.27028", title: "Less is More: Early Stopping Rollout for On-Policy Distillation", authors: "Zhou Ziheng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.27028" }
+    - { id: "2605.30833", title: "Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation", authors: "Yanjiang Liu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.30833" }
+    - { id: "2606.01249", title: "Trust Region On-Policy Distillation", authors: "Xingrun Xing 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2606.01249" }
+    - { id: "2606.02684", title: "Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation", authors: "Yuying Li 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.02684" }
+    - { id: "2606.23104", title: "ReNIO: Reweighting Negative Trajectory Importance for LLM On-Policy Distillation", authors: "Chen Lin 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.23104" }
+    - { id: "2609.04172", title: "Rethinking On-Policy Distillation of Large Language Models II: One Training Example", authors: "Zixuan Fu 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2609.04172" }
+
 2026-09-15-lgr-supervision-fidelity-decay-lookahead-reward:
   title: "교사가 흐려져도 한 칸 앞은 아직 갈립니다 — 감독 충실도 감쇠와 룩어헤드 그룹 보상"
   central:

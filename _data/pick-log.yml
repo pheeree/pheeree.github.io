@@ -395,3 +395,110 @@
     차"를 0.13~1점으로 썼는데, 원문 재대조 결과 그런 세부 수치는 없고
     "about one point"만 있었다 — 프롬프트 작성 시 손으로 수치를 끼워 넣은
     것으로 추정. claim-check 단계에서 발견해 원문 문장으로 교정.
+- date: 2026-09-15
+  slug: lgr-supervision-fidelity-decay-lookahead-reward
+  source: 2605.30833
+  path: a
+  focus_q: Q9
+  nth: 14
+  purpose: >
+    09-14 ESR 글이 던진 대비를 직접 잇는다 — 같은 SFD/decay 진단(교사가 학생의
+    오프폴리시 프리픽스를 만나면 교정 능력을 잃는다)에서 출발해 반대 처방을
+    택한 논문을 오늘 읽는다. ESR은 뒤쪽(오프폴리시가 된 컨텍스트)을 아예
+    잘라내는데, 오늘 논문(LGR)은 뒤쪽까지 계속 훈련하되 그 자리의 신호를
+    한 스텝 앞선(t+1) 교사 확신도로 다시 설계한다. "자르기" 대 "신호 보강"의
+    갈림이 정말 같은 현상의 두 처방인지, 아니면 서로 다른 실패 서명을 겨눈
+    것인지가 오늘의 물음.
+  switch_notice: false
+  branch: null
+  note: >
+    (a) 픽 — 09-14 ESR 글의 다음 읽을 후보 1순위(arXiv:2605.30833, "이제 미룰
+    자리가 아닙니다"로 명시됨 — 09-12 글부터 2순위로 두 번 이월된 뒤 오늘 처음
+    중심 논문으로 승급). PDF 미러 확인: /Users/pheeree/Mirrors/PAPER/2605.30833.pdf
+    존재하나 paper-inventory 샤드에는 카드 미등록(raw/paper-inventory-raw.txt에만
+    존재) — PDF 실재를 도착 판정 근거로 삼음. blog_pick_queue.py 실행 결과
+    (b) 0건·(c) 0건(중심 논문이 (a)로 이미 확정돼 실행은 확인용).
+    **운영 이상 발견**: 09-14 ESR 드래프트(2026-09-14-esr-cascading-alignment-
+    submode-commitment.md)를 만든 사이클이 pick-log 기입을 누락했다(nth 13 자리
+    공백, 이 글이 12 다음 14로 건너뜀) — 08-29 신설된 "픽 종료 시 장부 기입"
+    규칙이 그 사이클에서 지켜지지 않은 사례. 소급 기입은 하지 않음(그 사이클의
+    실제 판단 과정을 재구성할 근거 없음). B-2 (ii) KM 노트: engine-succession
+    (판단의 증류·κ=0.056 음의 데이터점), mast-remeasure(judge 캘리브레이션
+    실패, 프롬프트 수준 증류의 층위 차이) — 09-12 픽과 동일 노트 재통독(Q9의
+    핵심 앵커라 반복 인용이 자연스러움). 다양성 가드: 직전 3편(09-11 양자화,
+    09-12·09-14 OPD)이 연속 OPD 계열 — 새 태그(supervision-fidelity-decay,
+    lookahead-reward 등)로 부분 완화 시도, 완전한 카테고리 전환은 Q9 초점상
+    보류.
+
+- date: 2026-09-16
+  slug: opd-thinking-pattern-consistency-new-knowledge
+  source: 2604.13016
+  path: a
+  focus_q: Q9
+  nth: 15
+  purpose: >
+    09-15 LGR 글이 세운 "진단은 수렴하는데 처방은 갈린다"는 관찰 위에서,
+    오늘은 처방 이전의 더 근본적인 물음으로 한 칸 물러선다 — 애초에 OPD가
+    언제 성공하고 언제 실패하는지를 가르는 조건이 무엇인가. 09-15까지의
+    다섯 편은 전부 "SFD를 어떻게 고치나"였는데, 오늘 논문은 그 SFD류
+    실패들이 일어나기 전 단계, 즉 학생-교사 조합 자체가 처음부터 가망이
+    있는지를 진단한다.
+  switch_notice: false
+  branch: null
+  note: >
+    (a) 픽 — 09-15 LGR 글의 다음 읽을 후보 3순위(arXiv:2604.13016). 1·2순위
+    (arXiv:2604.16830, arXiv:2605.13643)는 미러 미도착(PAPER 폴더에 파일
+    없음), 3순위만 미러 확인(/Users/pheeree/Mirrors/PAPER/2604.13016.pdf +
+    _distilled/2604.13016.md 존재) — 우선순위 규칙상 "도착한 첫 후보"를
+    따름. blog_pick_queue.py는 실행하지 않음(중심 논문이 (a)로 이미 확정).
+    PDF 원문 30쪽 전체 통독(본문·부록 A~D 전부, 참고문헌만 스킵). B-2 (ii)
+    KM 노트: engine-succession(판단의 증류·κ=0.056 음의 데이터점, "약한
+    엔진이 이어받게" 하는 계승 구도가 오늘 논문의 "교사가 학생에게 사고
+    패턴+새 지식을 넘겨야 성공"과 같은 형태), mast-remeasure(judge
+    캘리브레이션 실패가 여기서도 "능력 격차가 크면 전달 자체가 막힌다"는
+    같은 그림의 다른 사례로 읽힘). 다양성 가드: 직전 2편(09-14 ESR,
+    09-15 LGR)과 오늘 모두 on-policy-distillation 계열 — 새 태그
+    (thinking-pattern-consistency, capacity-gap, overlap-ratio 등)로 부분
+    완화, Q9 초점상 완전 전환은 보류. 탐구 에이전트(iii-a·iii-b) dossier
+    겹침 0(URL 중복 없음) — 다양성 양호. 단 iii-a가 올린 arXiv:2606.09471
+    (KL 동조 함정)은 09-10에 이미 읽은 편으로, 탐구 자료가 읽은 이력을
+    모른다는 마찰이 이번이 네 번째(09-15 글에서 이미 세 번째로 확인된
+    패턴의 재발) — 다음 읽을 후보에서 제외.
+
+- date: 2026-09-17
+  slug: opd-position-bias-trust-region-projection
+  source: 2606.22600
+  path: a
+  focus_q: Q9
+  nth: 16
+  purpose: >
+    09-16 미발행 드래프트(Rethinking OPD)가 열어 둔 이방성 가설("we have not
+    directly verified this anisotropy hypothesis")에 경쟁 설명을 댄다 —
+    position bias가 모델 규모의 지형 문제가 아니라 유한한 갱신 예산 아래
+    trust-region 사영이 필연적으로 갖는 형태라는 이론적 유도. 본문에서 두
+    설명을 가를 온도·규모 2×2 실험 설계를 세움. Q9 질문 2(붕괴 원인) 계열에
+    새 이론적 토대를 놓는 자리.
+  switch_notice: false
+  branch: null
+  note: >
+    (a) 픽 — 09-16 미발행 드래프트(twin 상태, Phase A 미처리)의 다음 읽을
+    후보 4순위(1·2순위 arXiv:2607.05394·OpenReview TteFp6TLUA 미도착, 3순위
+    arXiv:2609.04172는 09-12에 이미 읽음 — 탐구 자료 읽은 이력 미인지 패턴
+    재발, 다섯 번째). 4순위만 미러 도착 확인. **09-16 쌍둥이 드래프트 처리
+    보류 발견**: 2026-09-16-opd-thinking-pattern-consistency-new-knowledge.md
+    와 -new-knowledge-conditions.md 두 파일이 같은 날짜·같은 제목·거의 동일
+    본문(diff 16줄, 전부 mermaid 노드 라벨 줄바꿈 표기 차이)으로 공존 —
+    08-29 신설 규칙에 따라 정지·보고, 임의 선택 없이 그대로 둠(사람 판단
+    대기). Phase B는 이 문제와 독립적으로 정상 진행. 곁가지 1편 채택:
+    2604.14084 TIP(Token Importance in OPD) — 미러 도착·직접 정독, 본문
+    '그러나' 절의 핵심 재료(엔트로피×발산 2축이 위치보다 근본적일 수 있다는
+    반증). 두 탐구 dossier(iii-a 동향·iii-b 대립보강) URL 겹침 0% — 다양성
+    양호. 흥미롭게도 iii-b가 독립적으로 찾아온 4편 중 2편(LGR arXiv:2605.30833,
+    Rethinking OPD arXiv:2604.13016)이 이 블로그가 09-15·09-16에 이미 다룬
+    논문 — 외부 탐구와 내부 사슬이 같은 군집에서 만남. B-2 (ii) KM 노트:
+    engine-succession(교대 첫 주 교정 예산 방향 의견), mast-remeasure(κ=0.77
+    →0.056 붕괴, 자기 일치율 0.460). self-critique에서 신뢰 영역 계보
+    (TRPO·PPO·REPS·MPO·DPO·Precup) 보강 — 전부 배경 지식이며 원문 확인
+    안 됐음을 각주에 명시. 다양성 가드: 직전 3편+09-16 모두 OPD 계열,
+    새 태그(position-bias·trust-region-projection·importance-weighted
+    -distillation·likelihood-ratio-decay)로 부분 완화.

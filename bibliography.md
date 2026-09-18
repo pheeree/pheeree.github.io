@@ -6,6 +6,26 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-17] 앞쪽이 잘 배워지는 이유는 제약식 안에 이미 적혀 있었습니다 — 신뢰 영역 사영이 낳는 위치 편향과 대리 변수 문제
+
+- **중심**: Yan Xie 외. *On the Position Bias of On-Policy Distillation*. [arXiv:2606.22600](https://arxiv.org/abs/2606.22600) — 분야: cs.LG, cs.AI
+- John Schulman 외. *Trust Region Policy Optimization*. [arXiv:1502.05477](https://arxiv.org/abs/1502.05477) — 분야: cs.LG
+- John Schulman 외. *Proximal Policy Optimization Algorithms*. [arXiv:1707.06347](https://arxiv.org/abs/1707.06347) — 분야: cs.LG
+- Abbas Abdolmaleki 외. *Maximum a Posteriori Policy Optimisation*. [arXiv:1806.06920](https://arxiv.org/abs/1806.06920) — 분야: cs.LG, cs.AI, cs.IT, cs.RO, stat.ML
+- Rafael Rafailov 외. *Direct Preference Optimization: Your Language Model is Secretly a Reward Model*. [arXiv:2305.18290](https://arxiv.org/abs/2305.18290) — 분야: cs.LG, cs.AI, cs.CL
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Wenkai Yang 외. *Learning beyond Teacher: Generalized On-Policy Distillation with Reward Extrapolation*. [arXiv:2602.12125](https://arxiv.org/abs/2602.12125) — 분야: cs.LG, cs.AI, cs.CL
+- Yuqian Fu 외. *Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes*. [arXiv:2603.25562](https://arxiv.org/abs/2603.25562) — 분야: cs.LG, cs.AI, cs.CL
+- Yaxuan Li 외. *Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe*. [arXiv:2604.13016](https://arxiv.org/abs/2604.13016) — 분야: cs.LG, cs.AI, cs.CL
+- Yuanda Xu 외. *TIP: Token Importance in On-Policy Distillation*. [arXiv:2604.14084](https://arxiv.org/abs/2604.14084) — 분야: cs.LG, cs.AI
+- Kaiyuan Liu 외. *Prefix Teach, Suffix Fade: Local Teachability Collapse in Strong-to-Weak On-Policy Distillation*. [arXiv:2605.13643](https://arxiv.org/abs/2605.13643) — 분야: cs.CL
+- Zhou Ziheng 외. *Less is More: Early Stopping Rollout for On-Policy Distillation*. [arXiv:2605.27028](https://arxiv.org/abs/2605.27028) — 분야: cs.LG, cs.AI
+- Yanjiang Liu 외. *Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation*. [arXiv:2605.30833](https://arxiv.org/abs/2605.30833) — 분야: cs.CL, cs.AI
+- Xingrun Xing 외. *Trust Region On-Policy Distillation*. [arXiv:2606.01249](https://arxiv.org/abs/2606.01249) — 분야: cs.LG, cs.CL
+- Yuying Li 외. *Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation*. [arXiv:2606.02684](https://arxiv.org/abs/2606.02684) — 분야: cs.LG, cs.AI, cs.CL
+- Chen Lin 외. *ReNIO: Reweighting Negative Trajectory Importance for LLM On-Policy Distillation*. [arXiv:2606.23104](https://arxiv.org/abs/2606.23104) — 분야: cs.LG, cs.AI
+- Zixuan Fu 외. *Rethinking On-Policy Distillation of Large Language Models II: One Training Example*. [arXiv:2609.04172](https://arxiv.org/abs/2609.04172) — 분야: cs.AI, cs.CL
+
 ## [2026-09-15] 교사가 흐려져도 한 칸 앞은 아직 갈립니다 — 감독 충실도 감쇠와 룩어헤드 그룹 보상
 
 - **중심**: Yanjiang Liu 외. *Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation*. [arXiv:2605.30833](https://arxiv.org/abs/2605.30833) — 분야: cs.CL, cs.AI

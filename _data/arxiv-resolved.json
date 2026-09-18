@@ -12388,5 +12388,102 @@
    "cs.LG",
    "cs.AI"
   ]
+ },
+ "2606.23104": {
+  "title": "ReNIO: Reweighting Negative Trajectory Importance for LLM On-Policy Distillation",
+  "authors": [
+   "Chen Lin",
+   "Kedi Chen",
+   "Wei Zhang"
+  ],
+  "published": "2026-06-22",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2606.01249": {
+  "title": "Trust Region On-Policy Distillation",
+  "authors": [
+   "Xingrun Xing",
+   "Haoqing Wang",
+   "Boyan Gao",
+   "Ziheng Li",
+   "Yehui Tang"
+  ],
+  "published": "2026-05-31",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2604.14084": {
+  "title": "TIP: Token Importance in On-Policy Distillation",
+  "authors": [
+   "Yuanda Xu",
+   "Hejian Sang",
+   "Zhengze Zhou",
+   "Ran He",
+   "Zhipeng Wang",
+   "Alborz Geramifard"
+  ],
+  "published": "2026-04-15",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2602.12125": {
+  "title": "Learning beyond Teacher: Generalized On-Policy Distillation with Reward Extrapolation",
+  "authors": [
+   "Wenkai Yang",
+   "Weijie Liu",
+   "Ruobing Xie",
+   "Kai Yang",
+   "Saiyong Yang",
+   "Yankai Lin"
+  ],
+  "published": "2026-02-12",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2305.18290": {
+  "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+  "authors": [
+   "Rafael Rafailov",
+   "Archit Sharma",
+   "Eric Mitchell",
+   "Stefano Ermon",
+   "Christopher D. Manning",
+   "Chelsea Finn"
+  ],
+  "published": "2023-05-29",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "1806.06920": {
+  "title": "Maximum a Posteriori Policy Optimisation",
+  "authors": [
+   "Abbas Abdolmaleki",
+   "Jost Tobias Springenberg",
+   "Yuval Tassa",
+   "Remi Munos",
+   "Nicolas Heess",
+   "Martin Riedmiller"
+  ],
+  "published": "2018-06-14",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.IT",
+   "cs.RO",
+   "stat.ML"
+  ]
  }
 }
