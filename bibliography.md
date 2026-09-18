@@ -6,6 +6,24 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-18] 교사에게 한 토큰만 물었던 것이 문제였습니다 — 온폴리시 증류의 세 실패 모드와 top-K 지지집합
+
+- **중심**: Yuqian Fu 외. *Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes*. [arXiv:2603.25562](https://arxiv.org/abs/2603.25562) — 분야: cs.LG, cs.AI, cs.CL
+- Geoffrey Hinton 외. *Distilling the Knowledge in a Neural Network*. [arXiv:1503.02531](https://arxiv.org/abs/1503.02531) — 분야: stat.ML, cs.LG, cs.NE
+- John Schulman 외. *High-Dimensional Continuous Control Using Generalized Advantage Estimation*. [arXiv:1506.02438](https://arxiv.org/abs/1506.02438) — 분야: cs.LG, cs.RO, eess.SY
+- Fanqi Wan 외. *Knowledge Fusion of Large Language Models*. [arXiv:2401.10491](https://arxiv.org/abs/2401.10491) — 분야: cs.CL
+- Nicolas Boizard 외. *Towards Cross-Tokenizer Distillation: the Universal Logit Distillation Loss for LLMs*. [arXiv:2402.12030](https://arxiv.org/abs/2402.12030) — 분야: cs.CL
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Yaxuan Li 외. *Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe*. [arXiv:2604.13016](https://arxiv.org/abs/2604.13016) — 분야: cs.LG, cs.AI, cs.CL
+- Jie Sun 외. *SimCT: Recovering Lost Supervision for Cross-Tokenizer On-Policy Distillation*. [arXiv:2605.07711](https://arxiv.org/abs/2605.07711) — 분야: cs.CL
+- Yanjiang Liu 외. *Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation*. [arXiv:2605.30833](https://arxiv.org/abs/2605.30833) — 분야: cs.CL, cs.AI
+- Yuxuan Jiang, Francis Ferraro. *Bridging Reasoning Trajectories in On-Policy Distillation via Near-Future Guidance*. [arXiv:2606.00305](https://arxiv.org/abs/2606.00305) — 분야: cs.CL, cs.AI
+- Zhennan Shen 외. *On the Geometry of On-Policy Distillation*. [arXiv:2606.07082](https://arxiv.org/abs/2606.07082) — 분야: cs.LG, cs.AI
+- Byung-Kwan Lee 외. *Zone of Proximal Policy Optimization: Teacher in Prompts, Not Gradients*. [arXiv:2606.18216](https://arxiv.org/abs/2606.18216) — 분야: cs.CL
+- Yan Xie 외. *On the Position Bias of On-Policy Distillation*. [arXiv:2606.22600](https://arxiv.org/abs/2606.22600) — 분야: cs.LG, cs.AI
+- Bowen Zhang. *A Formula-Driven Survey and Research Agenda for On-Policy Distillation*. [arXiv:2606.22793](https://arxiv.org/abs/2606.22793) — 분야: cs.AI
+- Zichao Yu 외. *Mismatch Matters: On-Policy Distillation Beyond Token Agreement*. [arXiv:2608.09836](https://arxiv.org/abs/2608.09836) — 분야: cs.AI, cs.CL
+
 ## [2026-09-17] 앞쪽이 잘 배워지는 이유는 제약식 안에 이미 적혀 있었습니다 — 신뢰 영역 사영이 낳는 위치 편향과 대리 변수 문제
 
 - **중심**: Yan Xie 외. *On the Position Bias of On-Policy Distillation*. [arXiv:2606.22600](https://arxiv.org/abs/2606.22600) — 분야: cs.LG, cs.AI

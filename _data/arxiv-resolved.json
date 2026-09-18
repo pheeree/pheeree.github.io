@@ -12485,5 +12485,116 @@
    "cs.RO",
    "stat.ML"
   ]
+ },
+ "2608.09836": {
+  "title": "Mismatch Matters: On-Policy Distillation Beyond Token Agreement",
+  "authors": [
+   "Zichao Yu",
+   "Chengzhi Yu",
+   "Shengze Xu",
+   "Yujin Han",
+   "Bingqing Jiang",
+   "Xu Wang",
+   "Difan Zou"
+  ],
+  "published": "2026-08-10",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2605.07711": {
+  "title": "SimCT: Recovering Lost Supervision for Cross-Tokenizer On-Policy Distillation",
+  "authors": [
+   "Jie Sun",
+   "Mao Zheng",
+   "Mingyang Song",
+   "Qiyong Zhong",
+   "Yilin Cheng",
+   "Bichuan Feng",
+   "Pengfei Liu",
+   "Junfeng Fang",
+   "Xiang Wang"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2606.18216": {
+  "title": "Zone of Proximal Policy Optimization: Teacher in Prompts, Not Gradients",
+  "authors": [
+   "Byung-Kwan Lee",
+   "Ximing Lu",
+   "Shizhe Diao",
+   "Minki Kang",
+   "Saurav Muralidharan",
+   "Karan Sapra",
+   "Andrew Tao",
+   "Pavlo Molchanov",
+   "Yejin Choi",
+   "Yu-Chiang Frank Wang",
+   "Ryo Hachiuma"
+  ],
+  "published": "2026-06-16",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "1506.02438": {
+  "title": "High-Dimensional Continuous Control Using Generalized Advantage Estimation",
+  "authors": [
+   "John Schulman",
+   "Philipp Moritz",
+   "Sergey Levine",
+   "Michael Jordan",
+   "Pieter Abbeel"
+  ],
+  "published": "2015-06-08",
+  "categories": [
+   "cs.LG",
+   "cs.RO",
+   "eess.SY"
+  ]
+ },
+ "2606.00305": {
+  "title": "Bridging Reasoning Trajectories in On-Policy Distillation via Near-Future Guidance",
+  "authors": [
+   "Yuxuan Jiang",
+   "Francis Ferraro"
+  ],
+  "published": "2026-05-29",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2402.12030": {
+  "title": "Towards Cross-Tokenizer Distillation: the Universal Logit Distillation Loss for LLMs",
+  "authors": [
+   "Nicolas Boizard",
+   "Kevin El Haddad",
+   "Céline Hudelot",
+   "Pierre Colombo"
+  ],
+  "published": "2024-02-19",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2401.10491": {
+  "title": "Knowledge Fusion of Large Language Models",
+  "authors": [
+   "Fanqi Wan",
+   "Xinting Huang",
+   "Deng Cai",
+   "Xiaojun Quan",
+   "Wei Bi",
+   "Shuming Shi"
+  ],
+  "published": "2024-01-19",
+  "categories": [
+   "cs.CL"
+  ]
  }
 }

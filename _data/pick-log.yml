@@ -502,3 +502,45 @@
     안 됐음을 각주에 명시. 다양성 가드: 직전 3편+09-16 모두 OPD 계열,
     새 태그(position-bias·trust-region-projection·importance-weighted
     -distillation·likelihood-ratio-decay)로 부분 완화.
+
+- date: 2026-09-18
+  slug: opd-local-support-matching-failure-modes
+  source: 2603.25562
+  path: a
+  focus_q: Q9
+  nth: 17
+  purpose: >
+    09-17 글(신뢰 영역 사영/위치 편향)이 위치 불균등을 유한 예산 사영의
+    구조적 필연이라는 이론 층위로 설명한 것과, 오늘 논문이 같은 현상을
+    토큰 단위 추정량의 국소성이라는 구현 층위로 설명하는 것이 실제로
+    경쟁하는지 직교하는지를 가른다. top-K 지지집합 처방을 신뢰영역
+    언어로 재해석(K차원 단체로의 재배치)하고, 두 설명을 가를 실험
+    설계(같은 계열·같은 토크나이저 쌍에서 앞/뒤 감독 분리)를 본문에 세움.
+  switch_notice: false
+  branch: null
+  note: >
+    (a) 픽 — 09-17 글의 다음 읽을 후보 3순위(1·2순위 arXiv:2605.13643·
+    arXiv:2606.01249 미도착, 3순위 arXiv:2603.25562만 미러 확인). 26쪽
+    전체(본문+부록 A~H) 정독 — 부록이 핵심 재료였음(A의 "teacher matching
+    remains an imperfect proxy for task success" 한계 인정, G.3의 EMA-PG
+    불편향 변형이 오히려 성능 저하). 곁가지 없음. 두 탐구 dossier(iii-a
+    동향 5건·iii-b 대립보강 5건) URL 겹침 0% — 다양성 양호. 흥미로운 수렴:
+    iii-b가 독립적으로 찾아온 [충돌] 사례가 정확히 09-17 글의 중심 논문
+    (arXiv:2606.22600)이었고, [보강] 사례 중 하나가 09-15 글의 중심 논문
+    (arXiv:2605.30833, LGR)이었음 — 외부 탐구가 이 블로그의 내부 사슬과
+    독립적으로 같은 군집에 도달. 다만 iii-a가 올린 arXiv:2604.13016(09-16
+    미발행 드래프트에서 이미 읽음)과 arXiv:2606.07082(09-09 이미 읽음)가
+    "새 후보"로 다시 올라온 것은 탐구 자료가 읽은 이력을 모른다는 마찰의
+    재발(다섯 번째 이상) — 편집자에게에 명시하고 읽은 이력 주입을 pheeree
+    판단에 맡김. B-2 (ii) KM 노트: engine-succession(앵커 없는 판단 이식
+    불가론), mast-remeasure(κ=0.056, 국소 판정 대 전역 정합의 괴리) — Q9
+    핵심 앵커라 반복 인용. self-critique에서 Goodhart 법칙·크로스토크나이저
+    증류 계보(ULD·FuseLLM) 보강 — 전부 배경 지식이며 원문 미대조 명시.
+    claim-check 결과: 중심 논문 기댄 각주 11건 전부 원문(PDF) 대조 ✓,
+    2차 dossier 각주 6건은 이미 "원문 미대조"로 정직 표기 + check_claim_load
+    무게 점검 통과(논증 전제로 쓰인 자리 없음). 사소한 명확성 제안 1건
+    (34.8→41.7이 논문 표의 "수학 평균"이지 ALFWorld 포함 종합이 아님을
+    한 번 더 못박으면 좋겠다는 것)만 편집자에게에 남김. 다양성 가드: 직전
+    3편+09-16 모두 OPD 계열, 새 태그(local-support-matching·tokenizer
+    -mismatch·estimator-bias-variance)로 부분 완화. 09-16 쌍둥이 드래프트는
+    여전히 미해결 — 오늘 사이클도 건드리지 않고 사람 판단 대기 상태 유지.
