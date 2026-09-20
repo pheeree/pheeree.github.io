@@ -1,6 +1,31 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-19-wikiskill-persistent-knowledge-layer-skill-evolution:
+  title: "거절당한 제안까지 남겨 둔 쪽이 이겼습니다 — 에이전트 경험의 위키 층과 스킬 진화의 분업"
+  central:
+    id: "2608.27454"
+    title: "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution"
+    authors: "Liyan Tang 외"
+    keywords: "cs.AI, cs.CL"
+    url: "https://arxiv.org/abs/2608.27454"
+  referenced:
+    - { id: "2405.06682", title: "Self-Reflection in LLM Agents: Effects on Problem-Solving Performance", authors: "Matthew Renze, Erhan Guven", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2405.06682" }
+    - { id: "2508.06433", title: "Memp: Exploring Agent Procedural Memory", authors: "Runnan Fang 외", keywords: "cs.CL, cs.AI, cs.LG, cs.MA", url: "https://arxiv.org/abs/2508.06433" }
+    - { id: "2512.20845", title: "MAR:Multi-Agent Reflexion Improves Reasoning Abilities in LLMs", authors: "Onat Ozer 외", keywords: "cs.AI, cs.MA", url: "https://arxiv.org/abs/2512.20845" }
+    - { id: "2602.05665", title: "Graph-based Agent Memory: Taxonomy, Techniques, and Applications", authors: "Chang Yang 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2602.05665" }
+    - { id: "2603.25158", title: "Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills", authors: "Jingwei Ni 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2603.25158" }
+    - { id: "2604.01687", title: "CoEvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification", authors: "Hanrong Zhang 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.01687" }
+    - { id: "2604.16830", title: "The Illusion of Certainty: Decoupling Capability and Calibration in On-Policy Distillation", authors: "Jiaxin Zhang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.16830" }
+    - { id: "2604.27003", title: "When Continual Learning Moves to Memory: A Study of Experience Reuse in LLM Agents", authors: "Qisheng Hu 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.27003" }
+    - { id: "2605.07711", title: "SimCT: Recovering Lost Supervision for Cross-Tokenizer On-Policy Distillation", authors: "Jie Sun 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.07711" }
+    - { id: "2605.13716", title: "SkillOps: Managing LLM Agent Skill Libraries as Self-Maintaining Software Ecosystems", authors: "Hongji Pu 외", keywords: "cs.SE, cs.MA", url: "https://arxiv.org/abs/2605.13716" }
+    - { id: "2606.00305", title: "Bridging Reasoning Trajectories in On-Policy Distillation via Near-Future Guidance", authors: "Yuxuan Jiang, Francis Ferraro", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2606.00305" }
+    - { id: "2607.29468", title: "Self-Play Meets Skill Evolution: Self-Evolving Search Agents that Pose, Solve, and Remember", authors: "Zenghuang Fu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2607.29468" }
+    - { id: "2608.01953", title: "Look Ahead Before You Distill: Future Trajectory Validation of Teacher Guidance for Agentic On-Policy Distillation", authors: "Chishui Chen 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2608.01953" }
+    - { id: "2608.09836", title: "Mismatch Matters: On-Policy Distillation Beyond Token Agreement", authors: "Zichao Yu 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2608.09836" }
+    - { id: "2608.20274", title: "Break It Down, Pass It On: Cross-Task Skill Transfer in LLM Agents", authors: "Yiyang Feng 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2608.20274" }
+
 2026-09-18-opd-local-support-matching-failure-modes:
   title: "교사에게 한 토큰만 물었던 것이 문제였습니다 — 온폴리시 증류의 세 실패 모드와 top-K 지지집합"
   central:

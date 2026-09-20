@@ -6,6 +6,25 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-19] 거절당한 제안까지 남겨 둔 쪽이 이겼습니다 — 에이전트 경험의 위키 층과 스킬 진화의 분업
+
+- **중심**: Liyan Tang 외. *WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution*. [arXiv:2608.27454](https://arxiv.org/abs/2608.27454) — 분야: cs.AI, cs.CL
+- Matthew Renze, Erhan Guven. *Self-Reflection in LLM Agents: Effects on Problem-Solving Performance*. [arXiv:2405.06682](https://arxiv.org/abs/2405.06682) — 분야: cs.CL, cs.AI
+- Runnan Fang 외. *Memp: Exploring Agent Procedural Memory*. [arXiv:2508.06433](https://arxiv.org/abs/2508.06433) — 분야: cs.CL, cs.AI, cs.LG, cs.MA
+- Onat Ozer 외. *MAR:Multi-Agent Reflexion Improves Reasoning Abilities in LLMs*. [arXiv:2512.20845](https://arxiv.org/abs/2512.20845) — 분야: cs.AI, cs.MA
+- Chang Yang 외. *Graph-based Agent Memory: Taxonomy, Techniques, and Applications*. [arXiv:2602.05665](https://arxiv.org/abs/2602.05665) — 분야: cs.AI
+- Jingwei Ni 외. *Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills*. [arXiv:2603.25158](https://arxiv.org/abs/2603.25158) — 분야: cs.AI
+- Hanrong Zhang 외. *CoEvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification*. [arXiv:2604.01687](https://arxiv.org/abs/2604.01687) — 분야: cs.AI
+- Jiaxin Zhang 외. *The Illusion of Certainty: Decoupling Capability and Calibration in On-Policy Distillation*. [arXiv:2604.16830](https://arxiv.org/abs/2604.16830) — 분야: cs.LG, cs.AI
+- Qisheng Hu 외. *When Continual Learning Moves to Memory: A Study of Experience Reuse in LLM Agents*. [arXiv:2604.27003](https://arxiv.org/abs/2604.27003) — 분야: cs.LG, cs.AI
+- Jie Sun 외. *SimCT: Recovering Lost Supervision for Cross-Tokenizer On-Policy Distillation*. [arXiv:2605.07711](https://arxiv.org/abs/2605.07711) — 분야: cs.CL
+- Hongji Pu 외. *SkillOps: Managing LLM Agent Skill Libraries as Self-Maintaining Software Ecosystems*. [arXiv:2605.13716](https://arxiv.org/abs/2605.13716) — 분야: cs.SE, cs.MA
+- Yuxuan Jiang, Francis Ferraro. *Bridging Reasoning Trajectories in On-Policy Distillation via Near-Future Guidance*. [arXiv:2606.00305](https://arxiv.org/abs/2606.00305) — 분야: cs.CL, cs.AI
+- Zenghuang Fu 외. *Self-Play Meets Skill Evolution: Self-Evolving Search Agents that Pose, Solve, and Remember*. [arXiv:2607.29468](https://arxiv.org/abs/2607.29468) — 분야: cs.AI
+- Chishui Chen 외. *Look Ahead Before You Distill: Future Trajectory Validation of Teacher Guidance for Agentic On-Policy Distillation*. [arXiv:2608.01953](https://arxiv.org/abs/2608.01953) — 분야: cs.CL, cs.LG
+- Zichao Yu 외. *Mismatch Matters: On-Policy Distillation Beyond Token Agreement*. [arXiv:2608.09836](https://arxiv.org/abs/2608.09836) — 분야: cs.AI, cs.CL
+- Yiyang Feng 외. *Break It Down, Pass It On: Cross-Task Skill Transfer in LLM Agents*. [arXiv:2608.20274](https://arxiv.org/abs/2608.20274) — 분야: cs.AI, cs.CL
+
 ## [2026-09-18] 교사에게 한 토큰만 물었던 것이 문제였습니다 — 온폴리시 증류의 세 실패 모드와 top-K 지지집합
 
 - **중심**: Yuqian Fu 외. *Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes*. [arXiv:2603.25562](https://arxiv.org/abs/2603.25562) — 분야: cs.LG, cs.AI, cs.CL
