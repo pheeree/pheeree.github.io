@@ -12788,5 +12788,59 @@
    "cs.CL",
    "cs.AI"
   ]
+ },
+ "2607.07050": {
+  "title": "When Top-K Misses the Decision: Tool-Call Drift in Multi-Teacher On-Policy Distillation",
+  "authors": [
+   "Jiabin Shen",
+   "Guang Chen",
+   "Chengjun Mao"
+  ],
+  "published": "2026-07-08",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2406.14325": {
+  "title": "Reproducibility in Machine Learning-based Research: Overview, Barriers and Drivers",
+  "authors": [
+   "Harald Semmelrock",
+   "Tony Ross-Hellauer",
+   "Simone Kopeinik",
+   "Dieter Theiler",
+   "Armin Haberl",
+   "Stefan Thalmann",
+   "Dominik Kowald"
+  ],
+  "published": "2024-06-20",
+  "categories": [
+   "cs.SE",
+   "cs.IR",
+   "cs.LG"
+  ]
+ },
+ "2609.16937": {
+  "title": "Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation",
+  "authors": [
+   "Shiqi Liu",
+   "Zeyu He",
+   "Letian Tao",
+   "Guojian Zhan",
+   "Jiaxin Gao",
+   "Feihong Zhang",
+   "Jingliang Duan",
+   "Wei Xiong",
+   "Kehua Sheng",
+   "Bo Zhang",
+   "Yang Guan",
+   "Shengbo Eben Li"
+  ],
+  "published": "2026-09-15",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.PL"
+  ]
  }
 }

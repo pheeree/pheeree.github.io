@@ -6,6 +6,19 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-20] 이틀 전 내가 그은 선을 서베이가 먼저 그어 뒀습니다 — 온폴리시 증류의 변수 분해와 직교성이라는 가정
+
+- **중심**: Bowen Zhang. *A Formula-Driven Survey and Research Agenda for On-Policy Distillation*. [arXiv:2606.22793](https://arxiv.org/abs/2606.22793) — 분야: cs.AI
+- Harald Semmelrock 외. *Reproducibility in Machine Learning-based Research: Overview, Barriers and Drivers*. [arXiv:2406.14325](https://arxiv.org/abs/2406.14325) — 분야: cs.SE, cs.IR, cs.LG
+- Yuqian Fu 외. *Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes*. [arXiv:2603.25562](https://arxiv.org/abs/2603.25562) — 분야: cs.LG, cs.AI, cs.CL
+- Mingyang Song, Mao Zheng. *A Survey of On-Policy Distillation for Large Language Models*. [arXiv:2604.00626](https://arxiv.org/abs/2604.00626) — 분야: cs.LG, cs.CL
+- Yuhang He 외. *Where Hindsight Credit Can Reside: A Signed-Capacity View of Token Updates in RLVR*. [arXiv:2604.11056](https://arxiv.org/abs/2604.11056) — 분야: cs.LG, cs.AI
+- Yuying Li 외. *Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation*. [arXiv:2606.02684](https://arxiv.org/abs/2606.02684) — 분야: cs.LG, cs.AI, cs.CL
+- Yan Xie 외. *On the Position Bias of On-Policy Distillation*. [arXiv:2606.22600](https://arxiv.org/abs/2606.22600) — 분야: cs.LG, cs.AI
+- Jiabin Shen 외. *When Top-K Misses the Decision: Tool-Call Drift in Multi-Teacher On-Policy Distillation*. [arXiv:2607.07050](https://arxiv.org/abs/2607.07050) — 분야: cs.CL, cs.LG
+- Liyan Tang 외. *WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution*. [arXiv:2608.27454](https://arxiv.org/abs/2608.27454) — 분야: cs.AI, cs.CL
+- Shiqi Liu 외. *Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation*. [arXiv:2609.16937](https://arxiv.org/abs/2609.16937) — 분야: cs.LG, cs.AI, cs.PL
+
 ## [2026-09-19] 거절당한 제안까지 남겨 둔 쪽이 이겼습니다 — 에이전트 경험의 위키 층과 스킬 진화의 분업
 
 - **중심**: Liyan Tang 외. *WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution*. [arXiv:2608.27454](https://arxiv.org/abs/2608.27454) — 분야: cs.AI, cs.CL

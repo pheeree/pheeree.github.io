@@ -1,6 +1,25 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-20-opd-formula-driven-taxonomy-orthogonality:
+  title: "이틀 전 내가 그은 선을 서베이가 먼저 그어 뒀습니다 — 온폴리시 증류의 변수 분해와 직교성이라는 가정"
+  central:
+    id: "2606.22793"
+    title: "A Formula-Driven Survey and Research Agenda for On-Policy Distillation"
+    authors: "Bowen Zhang"
+    keywords: "cs.AI"
+    url: "https://arxiv.org/abs/2606.22793"
+  referenced:
+    - { id: "2406.14325", title: "Reproducibility in Machine Learning-based Research: Overview, Barriers and Drivers", authors: "Harald Semmelrock 외", keywords: "cs.SE, cs.IR, cs.LG", url: "https://arxiv.org/abs/2406.14325" }
+    - { id: "2603.25562", title: "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes", authors: "Yuqian Fu 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2603.25562" }
+    - { id: "2604.00626", title: "A Survey of On-Policy Distillation for Large Language Models", authors: "Mingyang Song, Mao Zheng", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2604.00626" }
+    - { id: "2604.11056", title: "Where Hindsight Credit Can Reside: A Signed-Capacity View of Token Updates in RLVR", authors: "Yuhang He 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.11056" }
+    - { id: "2606.02684", title: "Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation", authors: "Yuying Li 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.02684" }
+    - { id: "2606.22600", title: "On the Position Bias of On-Policy Distillation", authors: "Yan Xie 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.22600" }
+    - { id: "2607.07050", title: "When Top-K Misses the Decision: Tool-Call Drift in Multi-Teacher On-Policy Distillation", authors: "Jiabin Shen 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2607.07050" }
+    - { id: "2608.27454", title: "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution", authors: "Liyan Tang 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2608.27454" }
+    - { id: "2609.16937", title: "Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation", authors: "Shiqi Liu 외", keywords: "cs.LG, cs.AI, cs.PL", url: "https://arxiv.org/abs/2609.16937" }
+
 2026-09-19-wikiskill-persistent-knowledge-layer-skill-evolution:
   title: "거절당한 제안까지 남겨 둔 쪽이 이겼습니다 — 에이전트 경험의 위키 층과 스킬 진화의 분업"
   central:

@@ -589,3 +589,44 @@
     전면 교체(agent-skills·persistent-knowledge·skill-evolution·
     wiki-layer·cross-model-transfer)로 완전히 갈아탐. 09-16 쌍둥이
     드래프트는 여전히 미해결 — 오늘도 건드리지 않고 사람 판단 대기 유지.
+
+- date: 2026-09-20
+  slug: opd-formula-driven-taxonomy-orthogonality
+  source: 2606.22793
+  path: a
+  focus_q: null
+  nth: null
+  purpose: >
+    Q9 후보 소진 상태 지속(08-29~09-09 사이 전부 소진). (a) 최신 3편
+    중 09-19(WikiSkill)·09-17(직전 후보 없음)은 공백, 09-18의 곁가지
+    목록 2편 중 첫째(arXiv:2606.22793, OPD 서베이)가 픽 — "오늘 글에서
+    내가 위치 축과 어휘 축이라 부른 것과 같은 절단면"이라는 09-18
+    자신의 메모가 연결 고리. 09-19가 남긴 다섯 초점 후보는 오늘도
+    전부 미도착.
+  switch_notice: false
+  branch: null
+  note: >
+    (a) 픽 — 09-18 곁가지 1순위. 45쪽 전체(본문 10절+부록 A~F) 정독.
+    곁가지 없음(중심 논문 자체가 하루치 분량을 이미 초과). 두 탐구
+    dossier(iii-a 동향 5건·iii-b 대립보강 5건) URL 겹침 1건(텐센트
+    서베이 2604.00626)이나 방향 거리가 이례적으로 큼 — iii-a는 논문의
+    직교성 전제를 딛고 후속을 추적(γOPD 2609.16937 등), iii-b는 그
+    전제 자체에 반증(엔트로피 신용 상한 명제 2604.11056)을 걺. 갈래
+    인정 통합으로 처리 — "그러나" 절에서 두 방향을 봉합하지 않고
+    나란히 세움. B-2 (ii) KM 노트 2편(decision-path-c-architecture·
+    academic-research-skill-design)이 논문의 두 경로 분리·E0~E3 증거
+    등급과 구조적으로 맞물려 "내 연구에 어떻게 맞물리나" 전체가 이
+    둘에 기댐. self-critique에서 증류·모방학습 계보(DAgger 공변량
+    이동), critic 비용 트레이드오프, 경로 혼합 시 이분법이 무뎌진다는
+    유보를 보강. claim-check 1건 실측 정정 — 초록 인용에서 "whether"를
+    "how"로(원문 대조 오류, 본 세션이 직접 읽은 PDF 이미지와 재대조해
+    발견) + [^cr] 각주의 인용 위치 오귀속(§4.4로 표기됐던 문장이 실은
+    부록 D) 정정. check_markup(WARN 3건 — γOPD 표기의 그리스 문자
+    노출, 방법명 고유표기라 의도적으로 유지)·check_sentence_reuse
+    (재사용 0건)·check_claim_load(미대조 주장이 논증 전제로 쓰인 자리
+    없음)·verify-draft(arXiv id 10개 전부 실재) 전부 통과. 다양성
+    가드: 직전 편 09-19는 agent-skills 계열로 갈라져 있었으나 09-17·
+    09-18과는 tag 계열 재수렴(on-policy-distillation 유지) + 새 태그
+    4개(formula-driven-taxonomy·temporal-credit-assignment·
+    vocabulary-routing·evidence-grading) 도입. 09-16 쌍둥이 드래프트는
+    여전히 미해결 — 오늘도 건드리지 않고 사람 판단 대기 유지.
