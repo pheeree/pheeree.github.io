@@ -6,6 +6,19 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-21] 이미 정해진 자리에는 뒤늦은 교정이 들어갈 틈이 없습니다 — 사후 신용의 엔트로피 용량 상한과 부호 보존 재배분
+
+- **중심**: Yuhang He 외. *Where Hindsight Credit Can Reside: A Signed-Capacity View of Token Updates in RLVR*. [arXiv:2604.11056](https://arxiv.org/abs/2604.11056) — 분야: cs.LG, cs.AI
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Shenzhi Wang 외. *Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning*. [arXiv:2506.01939](https://arxiv.org/abs/2506.01939) — 분야: cs.CL, cs.AI, cs.LG
+- Xinzhu Chen 외. *Beyond High-Entropy Exploration: Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs*. [arXiv:2512.00908](https://arxiv.org/abs/2512.00908) — 분야: cs.LG, cs.AI
+- Gengyang Li 외. *Not All Tokens Learn Alike: Attention Entropy Reveals Heterogeneous Signals in RL Reasoning*. [arXiv:2605.07660](https://arxiv.org/abs/2605.07660) — 분야: cs.CL
+- Jiazheng Zhang 외. *Entropy Polarity in Reinforcement Fine-Tuning: Direction, Asymmetry, and Control*. [arXiv:2605.11775](https://arxiv.org/abs/2605.11775) — 분야: cs.LG, cs.CL
+- Kaiyi Zhang 외. *DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards*. [arXiv:2605.21467](https://arxiv.org/abs/2605.21467) — 분야: cs.LG, cs.CL
+- Senjie Jin 외. *Entropy Is Not Enough: Unlocking Effective Reinforcement Learning for Visual Reasoning via Vision-Anchored Token Selection*. [arXiv:2606.03937](https://arxiv.org/abs/2606.03937) — 분야: cs.AI
+- Bowen Zhang. *A Formula-Driven Survey and Research Agenda for On-Policy Distillation*. [arXiv:2606.22793](https://arxiv.org/abs/2606.22793) — 분야: cs.AI
+- Shiqi Liu 외. *Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation*. [arXiv:2609.16937](https://arxiv.org/abs/2609.16937) — 분야: cs.LG, cs.AI, cs.PL
+
 ## [2026-09-20] 이틀 전 내가 그은 선을 서베이가 먼저 그어 뒀습니다 — 온폴리시 증류의 변수 분해와 직교성이라는 가정
 
 - **중심**: Bowen Zhang. *A Formula-Driven Survey and Research Agenda for On-Policy Distillation*. [arXiv:2606.22793](https://arxiv.org/abs/2606.22793) — 분야: cs.AI

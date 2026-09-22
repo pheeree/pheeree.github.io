@@ -630,3 +630,52 @@
     4개(formula-driven-taxonomy·temporal-credit-assignment·
     vocabulary-routing·evidence-grading) 도입. 09-16 쌍둥이 드래프트는
     여전히 미해결 — 오늘도 건드리지 않고 사람 판단 대기 유지.
+
+- date: 2026-09-21
+  slug: rlvr-entropy-capacity-hindsight-credit
+  source: 2604.11056
+  path: a
+  focus_q: null
+  nth: null
+  purpose: >
+    09-20 글의 다음 읽을 후보 1순위(엔트로피 신용 상한 논문, [^entropy]
+    각주가 예고한 대립 후보)가 미러에 도착 확인돼 그대로 픽. 09-20이
+    세운 "온폴리시 증류의 시간·어휘 두 축이 직교하는가"라는 질문에
+    이 논문의 엔트로피 상한 명제가 실제로 어떤 무게로 거는지를 오늘
+    확인하러 감.
+  switch_notice: false
+  branch: null
+  note: >
+    (a) 픽 — 09-20 다음 후보 1순위. 24쪽 전체(본문 7절+부록 A~I) 정독.
+    원문 대조에서 09-20 각주의 2차 요약 오류 두 건 발견·정정(제목
+    "Rethinking Token-Level Credit Assignment in RLVR"→실제
+    "Where Hindsight Credit Can Reside", 엔트로피 상한 Proposition
+    1→실제 2) — 오늘 글 본문·각주에 정정 명시, 어제 글 각주 소급
+    수정 여부는 편집자에게에서 pheeree 판단 요청으로 남김. 곁가지
+    없음(논문 자체가 하루치 분량). 두 탐구 dossier(iii-a 동향 5건·
+    iii-b 대립보강 5건) URL 겹침 2건(40%, 2606.22793·2605.07660)이나
+    같은 URL을 정반대 각도로 읽음(iii-a는 지형 관찰, iii-b는 직접
+    반박 인용 추출) — 갈래 인정 통합으로 처리. iii-b가 엔트로피가
+    신용 용량의 타당한 대리지표라는 전제 자체를 반박하는 실증 셋
+    (LESS 저엔트로피 유효 신호·Not All Tokens의 예측엔트로피 기각·
+    VEPO 도메인 의존성)을 가져와 "그러나" 절이 예년보다 두텁게 섬.
+    B-2 (ii) KM 노트 2편(mast-remeasure·engine-succession)의 κ=0.056
+    붕괴를 "용량 없는 자리엔 신호를 넣어도 이식 안 됨"이라는 오늘
+    논문의 구조와 맞세우고, 측정 시점·용량의 소유자·방향이라는 세
+    균열까지 짚어 유비를 과장하지 않음. self-critique에서 신용
+    할당 계보(Minsky 1961·Sutton 1984)와 Shannon(1948) 채널 용량
+    원뜻 보강, α·φ 산수(가산항 상한 10%)로 구체 수치 추가. claim-check
+    — 본 세션이 직접 읽은 원문 PDF(초록·한계절 verbatim, 표 1~3,
+    그림 4, 그래디언트 식, A3PO 대비)와 전부 재대조해 일치 확인.
+    표 3 "저엔트로피 두 칸 제거 0.5%포인트 남짓" 표현이 PLR(0.5pp)엔
+    정확하나 NLR(실측 0.9pp)엔 다소 뭉뚱그려짐 — 방향성은 정확해
+    비차단, 편집자에게에 메모. check_markup(WARN 2건 — γOPD 그리스
+    문자, 09-20과 동일 패턴으로 의도적 유지)·check_sentence_reuse
+    (재사용 0건)·check_claim_load(미대조 주장이 논증 전제로 쓰인
+    자리 없음)·verify-draft(arXiv id 10개 전부 실재) 전부 통과.
+    다양성 가드: 직전 4편(09-17~09-20) 전부 on-policy-distillation
+    태그였으나 오늘은 RLVR로 완전히 갈아탐(rlvr·hindsight-credit
+    -assignment·entropy-capacity-bound·signed-advantage-shaping·
+    token-level-credit) — 다만 09-20과의 "그러나" 연결로 사슬은
+    유지. 09-16 쌍둥이 드래프트는 여전히 미해결 — 오늘도 건드리지
+    않고 사람 판단 대기 유지.

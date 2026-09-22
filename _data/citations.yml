@@ -1,6 +1,25 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-21-rlvr-entropy-capacity-hindsight-credit:
+  title: "이미 정해진 자리에는 뒤늦은 교정이 들어갈 틈이 없습니다 — 사후 신용의 엔트로피 용량 상한과 부호 보존 재배분"
+  central:
+    id: "2604.11056"
+    title: "Where Hindsight Credit Can Reside: A Signed-Capacity View of Token Updates in RLVR"
+    authors: "Yuhang He 외"
+    keywords: "cs.LG, cs.AI"
+    url: "https://arxiv.org/abs/2604.11056"
+  referenced:
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2506.01939", title: "Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning", authors: "Shenzhi Wang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2506.01939" }
+    - { id: "2512.00908", title: "Beyond High-Entropy Exploration: Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs", authors: "Xinzhu Chen 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2512.00908" }
+    - { id: "2605.07660", title: "Not All Tokens Learn Alike: Attention Entropy Reveals Heterogeneous Signals in RL Reasoning", authors: "Gengyang Li 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.07660" }
+    - { id: "2605.11775", title: "Entropy Polarity in Reinforcement Fine-Tuning: Direction, Asymmetry, and Control", authors: "Jiazheng Zhang 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2605.11775" }
+    - { id: "2605.21467", title: "DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards", authors: "Kaiyi Zhang 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2605.21467" }
+    - { id: "2606.03937", title: "Entropy Is Not Enough: Unlocking Effective Reinforcement Learning for Visual Reasoning via Vision-Anchored Token Selection", authors: "Senjie Jin 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.03937" }
+    - { id: "2606.22793", title: "A Formula-Driven Survey and Research Agenda for On-Policy Distillation", authors: "Bowen Zhang", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.22793" }
+    - { id: "2609.16937", title: "Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation", authors: "Shiqi Liu 외", keywords: "cs.LG, cs.AI, cs.PL", url: "https://arxiv.org/abs/2609.16937" }
+
 2026-09-20-opd-formula-driven-taxonomy-orthogonality:
   title: "이틀 전 내가 그은 선을 서베이가 먼저 그어 뒀습니다 — 온폴리시 증류의 변수 분해와 직교성이라는 가정"
   central:

@@ -12842,5 +12842,124 @@
    "cs.AI",
    "cs.PL"
   ]
+ },
+ "2605.11775": {
+  "title": "Entropy Polarity in Reinforcement Fine-Tuning: Direction, Asymmetry, and Control",
+  "authors": [
+   "Jiazheng Zhang",
+   "Ziche Fu",
+   "Junrui Shen",
+   "Yunbin Zhao",
+   "Yunke Zhang",
+   "Zhiheng Xi",
+   "Long Ma",
+   "Chenxin An",
+   "Zhihao Zhang",
+   "Shichun Liu",
+   "Dingwei Zhu",
+   "Shihan Dou",
+   "Shaofan Liu",
+   "Han Li",
+   "Wiggin Zhou",
+   "Aiden Adams",
+   "Tao Gui",
+   "Fei Huang",
+   "Qi Zhang",
+   "Xuanjing Huang"
+  ],
+  "published": "2026-05-12",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2605.21467": {
+  "title": "DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards",
+  "authors": [
+   "Kaiyi Zhang",
+   "Wei Wu",
+   "Yankai Lin"
+  ],
+  "published": "2026-05-20",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2605.07660": {
+  "title": "Not All Tokens Learn Alike: Attention Entropy Reveals Heterogeneous Signals in RL Reasoning",
+  "authors": [
+   "Gengyang Li",
+   "Zheng-Fan Wu",
+   "Siqi Bao",
+   "Yunfang Wu"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2606.03937": {
+  "title": "Entropy Is Not Enough: Unlocking Effective Reinforcement Learning for Visual Reasoning via Vision-Anchored Token Selection",
+  "authors": [
+   "Senjie Jin",
+   "Peixin Wang",
+   "Boyang Liu",
+   "Xiaoran Fan",
+   "Shuo Li",
+   "Zhiheng Xi",
+   "Jiazheng Zhang",
+   "Yuhao Zhou",
+   "Tao Gui",
+   "Qi Zhang",
+   "Xuanjing Huang"
+  ],
+  "published": "2026-06-02",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2506.01939": {
+  "title": "Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning",
+  "authors": [
+   "Shenzhi Wang",
+   "Le Yu",
+   "Chang Gao",
+   "Chujie Zheng",
+   "Shixuan Liu",
+   "Rui Lu",
+   "Kai Dang",
+   "Xionghui Chen",
+   "Jianxin Yang",
+   "Zhenru Zhang",
+   "Yuqiong Liu",
+   "An Yang",
+   "Andrew Zhao",
+   "Yang Yue",
+   "Shiji Song",
+   "Bowen Yu",
+   "Gao Huang",
+   "Junyang Lin"
+  ],
+  "published": "2025-06-02",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2512.00908": {
+  "title": "Beyond High-Entropy Exploration: Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs",
+  "authors": [
+   "Xinzhu Chen",
+   "Xuesheng Li",
+   "Zhongxiang Sun",
+   "Weijie Yu"
+  ],
+  "published": "2025-11-30",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  }
 }

@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-09-21 — [이미 정해진 자리에는 뒤늦은 교정이 들어갈 틈이 없습니다 — 사후 신용의 엔트로피 용량 상한과 부호 보존 재배분](https://pheeree.github.io/2026/09/21/rlvr-entropy-capacity-hindsight-credit/)
 - 2026-09-20 — [이틀 전 내가 그은 선을 서베이가 먼저 그어 뒀습니다 — 온폴리시 증류의 변수 분해와 직교성이라는 가정](https://pheeree.github.io/2026/09/20/opd-formula-driven-taxonomy-orthogonality/)
 - 2026-09-19 — [거절당한 제안까지 남겨 둔 쪽이 이겼습니다 — 에이전트 경험의 위키 층과 스킬 진화의 분업](https://pheeree.github.io/2026/09/19/wikiskill-persistent-knowledge-layer-skill-evolution/)
 - 2026-09-18 — [교사에게 한 토큰만 물었던 것이 문제였습니다 — 온폴리시 증류의 세 실패 모드와 top-K 지지집합](https://pheeree.github.io/2026/09/18/opd-local-support-matching-failure-modes/)
