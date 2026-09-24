@@ -6,6 +6,32 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-22] 첫 재사용의 95%는 목격에서 시작했습니다 — 경계 있는 군집 이점과 역할 없이 갈린 두 표현형
+
+- **중심**: Subhadeep Pal 외. *SwarmWorld: Stigmergic technological evolution in societies of language-model agents*. [arXiv:2608.26081](https://arxiv.org/abs/2608.26081) — 분야: cs.AI, cond-mat.mtrl-sci, cs.CL
+- Harald Semmelrock 외. *Reproducibility in Machine Learning-based Research: Overview, Barriers and Drivers*. [arXiv:2406.14325](https://arxiv.org/abs/2406.14325) — 분야: cs.SE, cs.IR, cs.LG
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Xinzhu Chen 외. *Beyond High-Entropy Exploration: Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs*. [arXiv:2512.00908](https://arxiv.org/abs/2512.00908) — 분야: cs.LG, cs.AI
+- Onat Ozer 외. *MAR:Multi-Agent Reflexion Improves Reasoning Abilities in LLMs*. [arXiv:2512.20845](https://arxiv.org/abs/2512.20845) — 분야: cs.AI, cs.MA
+- Brandon Yee, Pairie Koh. *Benchmarking Emergent Coordination in Large-Scale LLM Populations: An Evaluation Framework on the MoltBook Archive*. [arXiv:2603.03555](https://arxiv.org/abs/2603.03555) — 분야: cs.MA, cs.AI, cs.SI
+- Houssam EL Kandoussi. *"Who Am I, and Who Else Is Here?" Behavioral Differentiation Without Role Assignment in Multi-Agent LLM Systems*. [arXiv:2604.00026](https://arxiv.org/abs/2604.00026) — 분야: cs.CL, cs.AI
+- Mingyang Song, Mao Zheng. *A Survey of On-Policy Distillation for Large Language Models*. [arXiv:2604.00626](https://arxiv.org/abs/2604.00626) — 분야: cs.LG, cs.CL
+- Hanrong Zhang 외. *CoEvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification*. [arXiv:2604.01687](https://arxiv.org/abs/2604.01687) — 분야: cs.AI
+- Keyu Li 외. *Aligned Agents, Biased Swarm: Measuring Bias Amplification in Multi-Agent Systems*. [arXiv:2604.08963](https://arxiv.org/abs/2604.08963) — 분야: cs.MA, cs.AI
+- Nuo Chen 외. *Diversity Collapse in Multi-Agent LLM Systems: Structural Coupling and Collective Failure in Open-Ended Idea Generation*. [arXiv:2604.18005](https://arxiv.org/abs/2604.18005) — 분야: cs.MA, cs.AI, cs.CL
+- Qisheng Hu 외. *When Continual Learning Moves to Memory: A Study of Experience Reuse in LLM Agents*. [arXiv:2604.27003](https://arxiv.org/abs/2604.27003) — 분야: cs.LG, cs.AI
+- Gengyang Li 외. *Not All Tokens Learn Alike: Attention Entropy Reveals Heterogeneous Signals in RL Reasoning*. [arXiv:2605.07660](https://arxiv.org/abs/2605.07660) — 분야: cs.CL
+- Hongji Pu 외. *SkillOps: Managing LLM Agent Skill Libraries as Self-Maintaining Software Ecosystems*. [arXiv:2605.13716](https://arxiv.org/abs/2605.13716) — 분야: cs.SE, cs.MA
+- Xinglin Wang 외. *Share More, Search Less: Collaborative Parallel Thinking for Efficient Test-Time Scaling*. [arXiv:2605.27030](https://arxiv.org/abs/2605.27030) — 분야: cs.CL
+- Yuying Li 외. *Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation*. [arXiv:2606.02684](https://arxiv.org/abs/2606.02684) — 분야: cs.LG, cs.AI, cs.CL
+- Senjie Jin 외. *Entropy Is Not Enough: Unlocking Effective Reinforcement Learning for Visual Reasoning via Vision-Anchored Token Selection*. [arXiv:2606.03937](https://arxiv.org/abs/2606.03937) — 분야: cs.AI
+- Zhiyuan Ji 외. *Emergent Relational Order in LLM Agent Societies: From Collective Affect to Authority Stratification*. [arXiv:2606.23764](https://arxiv.org/abs/2606.23764) — 분야: cs.MA, cs.AI
+- Simon Jones, Sabine Hauert. *Emergent Culture in Minimal LLM Systems*. [arXiv:2606.30668](https://arxiv.org/abs/2606.30668) — 분야: cs.NE, cs.AI, cs.CL, cs.MA, nlin.AO, q-bio.PE
+- Jiabin Shen 외. *When Top-K Misses the Decision: Tool-Call Drift in Multi-Teacher On-Policy Distillation*. [arXiv:2607.07050](https://arxiv.org/abs/2607.07050) — 분야: cs.CL, cs.LG
+- Zenghuang Fu 외. *Self-Play Meets Skill Evolution: Self-Evolving Search Agents that Pose, Solve, and Remember*. [arXiv:2607.29468](https://arxiv.org/abs/2607.29468) — 분야: cs.AI
+- Yiyang Feng 외. *Break It Down, Pass It On: Cross-Task Skill Transfer in LLM Agents*. [arXiv:2608.20274](https://arxiv.org/abs/2608.20274) — 분야: cs.AI, cs.CL
+- Shiqi Liu 외. *Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation*. [arXiv:2609.16937](https://arxiv.org/abs/2609.16937) — 분야: cs.LG, cs.AI, cs.PL
+
 ## [2026-09-21] 이미 정해진 자리에는 뒤늦은 교정이 들어갈 틈이 없습니다 — 사후 신용의 엔트로피 용량 상한과 부호 보존 재배분
 
 - **중심**: Yuhang He 외. *Where Hindsight Credit Can Reside: A Signed-Capacity View of Token Updates in RLVR*. [arXiv:2604.11056](https://arxiv.org/abs/2604.11056) — 분야: cs.LG, cs.AI

@@ -12961,5 +12961,109 @@
    "cs.LG",
    "cs.AI"
   ]
+ },
+ "2604.00026": {
+  "title": "\"Who Am I, and Who Else Is Here?\" Behavioral Differentiation Without Role Assignment in Multi-Agent LLM Systems",
+  "authors": [
+   "Houssam EL Kandoussi"
+  ],
+  "published": "2026-03-11",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2608.26081": {
+  "title": "SwarmWorld: Stigmergic technological evolution in societies of language-model agents",
+  "authors": [
+   "Subhadeep Pal",
+   "Fiona Y. Wang",
+   "Markus J. Buehler"
+  ],
+  "published": "2026-08-26",
+  "categories": [
+   "cs.AI",
+   "cond-mat.mtrl-sci",
+   "cs.CL"
+  ]
+ },
+ "2605.27030": {
+  "title": "Share More, Search Less: Collaborative Parallel Thinking for Efficient Test-Time Scaling",
+  "authors": [
+   "Xinglin Wang",
+   "Hao Lin",
+   "Shaoxiong Feng",
+   "Peiwen Yuan",
+   "Yiwei Li",
+   "Jiayi Shi",
+   "Yueqi Zhang",
+   "Chuyi Tan",
+   "Ji Zhang",
+   "Boyuan Pan",
+   "Yao Hu",
+   "Kan Li"
+  ],
+  "published": "2026-05-26",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2606.23764": {
+  "title": "Emergent Relational Order in LLM Agent Societies: From Collective Affect to Authority Stratification",
+  "authors": [
+   "Zhiyuan Ji",
+   "Xinyu Chen",
+   "Ziqi Dai",
+   "Shiyun Tang",
+   "Chunyu Wei",
+   "Yueguo Chen"
+  ],
+  "published": "2026-06-22",
+  "categories": [
+   "cs.MA",
+   "cs.AI"
+  ]
+ },
+ "2604.08963": {
+  "title": "Aligned Agents, Biased Swarm: Measuring Bias Amplification in Multi-Agent Systems",
+  "authors": [
+   "Keyu Li",
+   "Jin Gao",
+   "Dequan Wang"
+  ],
+  "published": "2026-04-10",
+  "categories": [
+   "cs.MA",
+   "cs.AI"
+  ]
+ },
+ "2603.03555": {
+  "title": "Benchmarking Emergent Coordination in Large-Scale LLM Populations: An Evaluation Framework on the MoltBook Archive",
+  "authors": [
+   "Brandon Yee",
+   "Pairie Koh"
+  ],
+  "published": "2026-03-03",
+  "categories": [
+   "cs.MA",
+   "cs.AI",
+   "cs.SI"
+  ]
+ },
+ "2606.30668": {
+  "title": "Emergent Culture in Minimal LLM Systems",
+  "authors": [
+   "Simon Jones",
+   "Sabine Hauert"
+  ],
+  "published": "2026-06-21",
+  "categories": [
+   "cs.NE",
+   "cs.AI",
+   "cs.CL",
+   "cs.MA",
+   "nlin.AO",
+   "q-bio.PE"
+  ]
  }
 }

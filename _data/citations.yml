@@ -1,6 +1,38 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-22-swarmworld-stigmergic-bounded-swarm-advantage:
+  title: "첫 재사용의 95%는 목격에서 시작했습니다 — 경계 있는 군집 이점과 역할 없이 갈린 두 표현형"
+  central:
+    id: "2608.26081"
+    title: "SwarmWorld: Stigmergic technological evolution in societies of language-model agents"
+    authors: "Subhadeep Pal 외"
+    keywords: "cs.AI, cond-mat.mtrl-sci, cs.CL"
+    url: "https://arxiv.org/abs/2608.26081"
+  referenced:
+    - { id: "2406.14325", title: "Reproducibility in Machine Learning-based Research: Overview, Barriers and Drivers", authors: "Harald Semmelrock 외", keywords: "cs.SE, cs.IR, cs.LG", url: "https://arxiv.org/abs/2406.14325" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2512.00908", title: "Beyond High-Entropy Exploration: Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs", authors: "Xinzhu Chen 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2512.00908" }
+    - { id: "2512.20845", title: "MAR:Multi-Agent Reflexion Improves Reasoning Abilities in LLMs", authors: "Onat Ozer 외", keywords: "cs.AI, cs.MA", url: "https://arxiv.org/abs/2512.20845" }
+    - { id: "2603.03555", title: "Benchmarking Emergent Coordination in Large-Scale LLM Populations: An Evaluation Framework on the MoltBook Archive", authors: "Brandon Yee, Pairie Koh", keywords: "cs.MA, cs.AI, cs.SI", url: "https://arxiv.org/abs/2603.03555" }
+    - { id: "2604.00026", title: "\"Who Am I, and Who Else Is Here?\" Behavioral Differentiation Without Role Assignment in Multi-Agent LLM Systems", authors: "Houssam EL Kandoussi", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2604.00026" }
+    - { id: "2604.00626", title: "A Survey of On-Policy Distillation for Large Language Models", authors: "Mingyang Song, Mao Zheng", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2604.00626" }
+    - { id: "2604.01687", title: "CoEvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification", authors: "Hanrong Zhang 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.01687" }
+    - { id: "2604.08963", title: "Aligned Agents, Biased Swarm: Measuring Bias Amplification in Multi-Agent Systems", authors: "Keyu Li 외", keywords: "cs.MA, cs.AI", url: "https://arxiv.org/abs/2604.08963" }
+    - { id: "2604.18005", title: "Diversity Collapse in Multi-Agent LLM Systems: Structural Coupling and Collective Failure in Open-Ended Idea Generation", authors: "Nuo Chen 외", keywords: "cs.MA, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.18005" }
+    - { id: "2604.27003", title: "When Continual Learning Moves to Memory: A Study of Experience Reuse in LLM Agents", authors: "Qisheng Hu 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.27003" }
+    - { id: "2605.07660", title: "Not All Tokens Learn Alike: Attention Entropy Reveals Heterogeneous Signals in RL Reasoning", authors: "Gengyang Li 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.07660" }
+    - { id: "2605.13716", title: "SkillOps: Managing LLM Agent Skill Libraries as Self-Maintaining Software Ecosystems", authors: "Hongji Pu 외", keywords: "cs.SE, cs.MA", url: "https://arxiv.org/abs/2605.13716" }
+    - { id: "2605.27030", title: "Share More, Search Less: Collaborative Parallel Thinking for Efficient Test-Time Scaling", authors: "Xinglin Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.27030" }
+    - { id: "2606.02684", title: "Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation", authors: "Yuying Li 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.02684" }
+    - { id: "2606.03937", title: "Entropy Is Not Enough: Unlocking Effective Reinforcement Learning for Visual Reasoning via Vision-Anchored Token Selection", authors: "Senjie Jin 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.03937" }
+    - { id: "2606.23764", title: "Emergent Relational Order in LLM Agent Societies: From Collective Affect to Authority Stratification", authors: "Zhiyuan Ji 외", keywords: "cs.MA, cs.AI", url: "https://arxiv.org/abs/2606.23764" }
+    - { id: "2606.30668", title: "Emergent Culture in Minimal LLM Systems", authors: "Simon Jones, Sabine Hauert", keywords: "cs.NE, cs.AI, cs.CL, cs.MA, nlin.AO, q-bio.PE", url: "https://arxiv.org/abs/2606.30668" }
+    - { id: "2607.07050", title: "When Top-K Misses the Decision: Tool-Call Drift in Multi-Teacher On-Policy Distillation", authors: "Jiabin Shen 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2607.07050" }
+    - { id: "2607.29468", title: "Self-Play Meets Skill Evolution: Self-Evolving Search Agents that Pose, Solve, and Remember", authors: "Zenghuang Fu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2607.29468" }
+    - { id: "2608.20274", title: "Break It Down, Pass It On: Cross-Task Skill Transfer in LLM Agents", authors: "Yiyang Feng 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2608.20274" }
+    - { id: "2609.16937", title: "Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation", authors: "Shiqi Liu 외", keywords: "cs.LG, cs.AI, cs.PL", url: "https://arxiv.org/abs/2609.16937" }
+
 2026-09-21-rlvr-entropy-capacity-hindsight-credit:
   title: "이미 정해진 자리에는 뒤늦은 교정이 들어갈 틈이 없습니다 — 사후 신용의 엔트로피 용량 상한과 부호 보존 재배분"
   central:
