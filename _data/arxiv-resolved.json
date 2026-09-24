@@ -13065,5 +13065,75 @@
    "nlin.AO",
    "q-bio.PE"
   ]
+ },
+ "2605.18629": {
+  "title": "Aligned Training: A Parameter-Free Method to Improve Feature Quality and Stability of Sparse Autoencoders (SAE)",
+  "authors": [
+   "Michał Brzozowski",
+   "Neo Christopher Chung"
+  ],
+  "published": "2026-05-18",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2605.12874": {
+  "title": "Descriptive Collision in Sparse Autoencoder Auto-Interpretability: When One Explanation Describes Many Features",
+  "authors": [
+   "Jordan F. McCann"
+  ],
+  "published": "2026-05-13",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2609.10299": {
+  "title": "A Dominant Diffuse Phase in the Sparse Autoencoder Phase Diagram",
+  "authors": [
+   "Alexis D. Plascencia"
+  ],
+  "published": "2026-09-09",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2609.04808": {
+  "title": "Recurrence Is Not Enough: Causally Validating Multilingual SAE Translation Features in Gemma 2 and 3",
+  "authors": [
+   "Giang Son Nguyen",
+   "Nhi Ngoc-Yen Nguyen",
+   "Wray Buntine",
+   "Dung D. Le"
+  ],
+  "published": "2026-09-04",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2603.04198": {
+  "title": "Stable and Steerable Sparse Autoencoders with Weight Regularization",
+  "authors": [
+   "Piotr Jedryszek",
+   "Oliver M. Crook"
+  ],
+  "published": "2026-03-04",
+  "categories": [
+   "stat.ML",
+   "cs.LG"
+  ]
+ },
+ "2609.12591": {
+  "title": "Where Decoder Cosine Similarity Fails for SAE Feature Flow Discovery",
+  "authors": [
+   "Hendrik Droste",
+   "Christian Medeiros Adriano",
+   "Kathrin Korte",
+   "Holger Giese"
+  ],
+  "published": "2026-09-11",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }
