@@ -13135,5 +13135,170 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2608.16157": {
+  "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
+  "authors": [
+   "Shuo Yang",
+   "Xiaoze Fan",
+   "Melissa Pan",
+   "Haocheng Xi",
+   "Zhe Wang",
+   "Shanlin Sun",
+   "Kurt Keutzer",
+   "Song Han",
+   "Matei Zaharia",
+   "Chenfeng Xu",
+   "Ion Stoica"
+  ],
+  "published": "2026-08-17",
+  "categories": [
+   "cs.DC"
+  ]
+ },
+ "2604.18788": {
+  "title": "Efficient Mixture-of-Experts LLM Inference with Apple Silicon NPUs",
+  "authors": [
+   "Afsara Benazir",
+   "Felix Xiaozhu Lin"
+  ],
+  "published": "2026-04-20",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2609.26219": {
+  "title": "PatchKV: Efficient KV Cache Recovery for Dynamically Edited LLM Contexts",
+  "authors": [
+   "Guotao Yang",
+   "Rui Guo",
+   "Siwei He",
+   "Sheng Chen",
+   "Yitao Hu",
+   "Keqiu Li"
+  ],
+  "published": "2026-08-18",
+  "categories": [
+   "cs.DC",
+   "cs.LG"
+  ]
+ },
+ "2506.15155": {
+  "title": "eLLM: Elastic Memory Management Framework for Efficient LLM Serving",
+  "authors": [
+   "Jiale Xu",
+   "Rui Zhang",
+   "Yi Xiong",
+   "Cong Guo",
+   "Zihan Liu",
+   "Yangjie Zhou",
+   "Weiming Hu",
+   "Hao Wu",
+   "Changxu Shao",
+   "Ziqing Wang",
+   "Yongjie Yuan",
+   "Junping Zhao",
+   "Minyi Guo",
+   "Jingwen Leng"
+  ],
+  "published": "2025-06-18",
+  "categories": [
+   "cs.DC"
+  ]
+ },
+ "2605.17889": {
+  "title": "CoX-MoE: Coalesced Expert Execution for High-Throughput MoE Inference with AMX-Enabled CPU-GPU Co-Execution",
+  "authors": [
+   "Muyoung Son",
+   "Yi Chen",
+   "Seungjae Yoo",
+   "Soongyu Choi",
+   "Joo-Young Kim"
+  ],
+  "published": "2026-05-18",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2608.14624": {
+  "title": "Learning Agent Execution for KV-Cache Management in Agentic Serving",
+  "authors": [
+   "Rui Zhang",
+   "Chaeeun Kim",
+   "Shaoting Feng",
+   "Kuntai Du",
+   "Yuhan Liu",
+   "Yi Zhong",
+   "Cheng-Wei Ching",
+   "Junchen Jiang",
+   "Liting Hu"
+  ],
+  "published": "2026-07-16",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2606.21868": {
+  "title": "WiSP: A Working-Set View of Mixture-of-Experts Serving on Extremely Low-Resource Hardware",
+  "authors": [
+   "Jiamu Zhang",
+   "Liang Wu",
+   "Mayank Darbari",
+   "Liangjie Hong"
+  ],
+  "published": "2026-06-20",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2607.10183": {
+  "title": "Automated Tensor Scheduling for Hybrid CPU-GPU LLM Inference on Consumer Devices",
+  "authors": [
+   "Yangyijian Liu",
+   "Hongyi Ye",
+   "Mingyang Li",
+   "Wu-jun Li"
+  ],
+  "published": "2026-07-11",
+  "categories": [
+   "cs.DC",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2511.14102": {
+  "title": "MoE-SpeQ: Speculative Quantized Decoding with Proactive Expert Prefetching and Offloading for Mixture-of-Experts",
+  "authors": [
+   "Wenfeng Wang",
+   "Jiacheng Liu",
+   "Xiaofeng Hou",
+   "Xinfeng Xia",
+   "Peng Tang",
+   "Mingxuan Zhang",
+   "Chao Li",
+   "Minyi Guo"
+  ],
+  "published": "2025-11-18",
+  "categories": [
+   "cs.LG",
+   "cs.DC"
+  ]
+ },
+ "2607.24787": {
+  "title": "SpecPrefetch: Parameter-Efficient Expert Prefetching for Sparse MoE Foundation Models",
+  "authors": [
+   "Jinwei Kong",
+   "Runqi Meng",
+   "Fanyi Wang",
+   "Wentao Qiu",
+   "Haotian Hu",
+   "Yongjian Zhou",
+   "Zhenhua Ge"
+  ],
+  "published": "2026-06-24",
+  "categories": [
+   "cs.AI",
+   "cs.LG"
+  ]
  }
 }
