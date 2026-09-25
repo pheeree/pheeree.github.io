@@ -1,6 +1,26 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-24-sae-unstable-features-reproducible-subspaces:
+  title: "다시 나타나지 않는 특징들이 매번 같은 방을 채우고 있었습니다 — SAE 시드 의존성의 기저 모호성과 부분공간 재현성"
+  central:
+    id: "2606.12138"
+    title: "Unstable Features, Reproducible Subspaces: Understanding Seed Dependence in Sparse Autoencoders"
+    authors: "Gleb Gerasimov 외"
+    keywords: "cs.LG, cs.AI, cs.CL"
+    url: "https://arxiv.org/abs/2606.12138"
+  referenced:
+    - { id: "2210.16156", title: "Reliability of CKA as a Similarity Measure in Deep Learning", authors: "MohammadReza Davari 외", keywords: "cs.LG, cs.AI, cs.CV", url: "https://arxiv.org/abs/2210.16156" }
+    - { id: "2501.16615", title: "Sparse Autoencoders Trained on the Same Data Learn Different Features", authors: "Gonçalo Paulo, Nora Belrose", keywords: "cs.LG", url: "https://arxiv.org/abs/2501.16615" }
+    - { id: "2502.04878", title: "Sparse Autoencoders Do Not Find Canonical Units of Analysis", authors: "Patrick Leask 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2502.04878" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2603.04198", title: "Stable and Steerable Sparse Autoencoders with Weight Regularization", authors: "Piotr Jedryszek, Oliver M. Crook", keywords: "stat.ML, cs.LG", url: "https://arxiv.org/abs/2603.04198" }
+    - { id: "2605.12874", title: "Descriptive Collision in Sparse Autoencoder Auto-Interpretability: When One Explanation Describes Many Features", authors: "Jordan F. McCann", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.12874" }
+    - { id: "2605.18629", title: "Aligned Training: A Parameter-Free Method to Improve Feature Quality and Stability of Sparse Autoencoders (SAE)", authors: "Michał Brzozowski, Neo Christopher Chung", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.18629" }
+    - { id: "2609.04808", title: "Recurrence Is Not Enough: Causally Validating Multilingual SAE Translation Features in Gemma 2 and 3", authors: "Giang Son Nguyen 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2609.04808" }
+    - { id: "2609.10299", title: "A Dominant Diffuse Phase in the Sparse Autoencoder Phase Diagram", authors: "Alexis D. Plascencia", keywords: "cs.LG", url: "https://arxiv.org/abs/2609.10299" }
+    - { id: "2609.12591", title: "Where Decoder Cosine Similarity Fails for SAE Feature Flow Discovery", authors: "Hendrik Droste 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2609.12591" }
+
 2026-09-22-swarmworld-stigmergic-bounded-swarm-advantage:
   title: "첫 재사용의 95%는 목격에서 시작했습니다 — 경계 있는 군집 이점과 역할 없이 갈린 두 표현형"
   central:

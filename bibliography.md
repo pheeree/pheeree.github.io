@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-24] 다시 나타나지 않는 특징들이 매번 같은 방을 채우고 있었습니다 — SAE 시드 의존성의 기저 모호성과 부분공간 재현성
+
+- **중심**: Gleb Gerasimov 외. *Unstable Features, Reproducible Subspaces: Understanding Seed Dependence in Sparse Autoencoders*. [arXiv:2606.12138](https://arxiv.org/abs/2606.12138) — 분야: cs.LG, cs.AI, cs.CL
+- MohammadReza Davari 외. *Reliability of CKA as a Similarity Measure in Deep Learning*. [arXiv:2210.16156](https://arxiv.org/abs/2210.16156) — 분야: cs.LG, cs.AI, cs.CV
+- Gonçalo Paulo, Nora Belrose. *Sparse Autoencoders Trained on the Same Data Learn Different Features*. [arXiv:2501.16615](https://arxiv.org/abs/2501.16615) — 분야: cs.LG
+- Patrick Leask 외. *Sparse Autoencoders Do Not Find Canonical Units of Analysis*. [arXiv:2502.04878](https://arxiv.org/abs/2502.04878) — 분야: cs.LG, cs.AI
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Piotr Jedryszek, Oliver M. Crook. *Stable and Steerable Sparse Autoencoders with Weight Regularization*. [arXiv:2603.04198](https://arxiv.org/abs/2603.04198) — 분야: stat.ML, cs.LG
+- Jordan F. McCann. *Descriptive Collision in Sparse Autoencoder Auto-Interpretability: When One Explanation Describes Many Features*. [arXiv:2605.12874](https://arxiv.org/abs/2605.12874) — 분야: cs.LG
+- Michał Brzozowski, Neo Christopher Chung. *Aligned Training: A Parameter-Free Method to Improve Feature Quality and Stability of Sparse Autoencoders (SAE)*. [arXiv:2605.18629](https://arxiv.org/abs/2605.18629) — 분야: cs.LG
+- Giang Son Nguyen 외. *Recurrence Is Not Enough: Causally Validating Multilingual SAE Translation Features in Gemma 2 and 3*. [arXiv:2609.04808](https://arxiv.org/abs/2609.04808) — 분야: cs.CL, cs.AI
+- Alexis D. Plascencia. *A Dominant Diffuse Phase in the Sparse Autoencoder Phase Diagram*. [arXiv:2609.10299](https://arxiv.org/abs/2609.10299) — 분야: cs.LG
+- Hendrik Droste 외. *Where Decoder Cosine Similarity Fails for SAE Feature Flow Discovery*. [arXiv:2609.12591](https://arxiv.org/abs/2609.12591) — 분야: cs.LG
+
 ## [2026-09-22] 첫 재사용의 95%는 목격에서 시작했습니다 — 경계 있는 군집 이점과 역할 없이 갈린 두 표현형
 
 - **중심**: Subhadeep Pal 외. *SwarmWorld: Stigmergic technological evolution in societies of language-model agents*. [arXiv:2608.26081](https://arxiv.org/abs/2608.26081) — 분야: cs.AI, cond-mat.mtrl-sci, cs.CL
