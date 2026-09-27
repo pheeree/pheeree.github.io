@@ -13300,5 +13300,82 @@
    "cs.AI",
    "cs.LG"
   ]
+ },
+ "2602.11881": {
+  "title": "From Atoms to Trees: Building a Structured Feature Forest with Hierarchical Sparse Autoencoders",
+  "authors": [
+   "Yifan Luo",
+   "Yang Zhan",
+   "Jiedong Jiang",
+   "Tianyang Liu",
+   "Mingrui Wu",
+   "Zhennan Zhou",
+   "Bin Dong"
+  ],
+  "published": "2026-02-12",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2409.14507": {
+  "title": "A is for Absorption: Studying Feature Splitting and Absorption in Sparse Autoencoders",
+  "authors": [
+   "David Chanin",
+   "James Wilken-Smith",
+   "Tomáš Dulka",
+   "Hardik Bhatnagar",
+   "Satvik Golechha",
+   "Joseph Bloom"
+  ],
+  "published": "2024-09-22",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2605.07922": {
+  "title": "Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders",
+  "authors": [
+   "Tue M. Cao",
+   "Hoang X. Nhat",
+   "Raed Alharbi",
+   "Phi Le Nguyen",
+   "My T. Thai"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "1804.03599": {
+  "title": "Understanding disentangling in $β$-VAE",
+  "authors": [
+   "Christopher P. Burgess",
+   "Irina Higgins",
+   "Arka Pal",
+   "Loic Matthey",
+   "Nick Watters",
+   "Guillaume Desjardins",
+   "Alexander Lerchner"
+  ],
+  "published": "2018-04-10",
+  "categories": [
+   "stat.ML",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2606.14673": {
+  "title": "Compressed Computation is (probably) not Computation in Superposition",
+  "authors": [
+   "Jai Bhagat",
+   "Sara Molas-Medina",
+   "Giorgi Giglemiani",
+   "Stefan Heimersheim"
+  ],
+  "published": "2026-06-12",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }
