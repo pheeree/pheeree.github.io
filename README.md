@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-09-26 — [전문가를 옮길지 그 자리에서 셀지를 대역폭 비율 하나가 가릅니다 — 엣지 MoE 서빙의 적응 분할과 정적 그래프에 담긴 라우팅](https://pheeree.github.io/2026/09/26/freetoken-bandwidth-adaptive-edge-moe-serving/)
 - 2026-09-24 — [다시 나타나지 않는 특징들이 매번 같은 방을 채우고 있었습니다 — SAE 시드 의존성의 기저 모호성과 부분공간 재현성](https://pheeree.github.io/2026/09/24/sae-unstable-features-reproducible-subspaces/)
 - 2026-09-22 — [첫 재사용의 95%는 목격에서 시작했습니다 — 경계 있는 군집 이점과 역할 없이 갈린 두 표현형](https://pheeree.github.io/2026/09/22/swarmworld-stigmergic-bounded-swarm-advantage/)
 - 2026-09-21 — [이미 정해진 자리에는 뒤늦은 교정이 들어갈 틈이 없습니다 — 사후 신용의 엔트로피 용량 상한과 부호 보존 재배분](https://pheeree.github.io/2026/09/21/rlvr-entropy-capacity-hindsight-credit/)

@@ -6,6 +6,19 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-26] 전문가를 옮길지 그 자리에서 셀지를 대역폭 비율 하나가 가릅니다 — 엣지 MoE 서빙의 적응 분할과 정적 그래프에 담긴 라우팅
+
+- **중심**: Shuo Yang 외. *FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution*. [arXiv:2608.16157](https://arxiv.org/abs/2608.16157) — 분야: cs.DC
+- Jiale Xu 외. *eLLM: Elastic Memory Management Framework for Efficient LLM Serving*. [arXiv:2506.15155](https://arxiv.org/abs/2506.15155) — 분야: cs.DC
+- Wenfeng Wang 외. *MoE-SpeQ: Speculative Quantized Decoding with Proactive Expert Prefetching and Offloading for Mixture-of-Experts*. [arXiv:2511.14102](https://arxiv.org/abs/2511.14102) — 분야: cs.LG, cs.DC
+- Afsara Benazir, Felix Xiaozhu Lin. *Efficient Mixture-of-Experts LLM Inference with Apple Silicon NPUs*. [arXiv:2604.18788](https://arxiv.org/abs/2604.18788) — 분야: cs.LG
+- Muyoung Son 외. *CoX-MoE: Coalesced Expert Execution for High-Throughput MoE Inference with AMX-Enabled CPU-GPU Co-Execution*. [arXiv:2605.17889](https://arxiv.org/abs/2605.17889) — 분야: cs.LG
+- Jiamu Zhang 외. *WiSP: A Working-Set View of Mixture-of-Experts Serving on Extremely Low-Resource Hardware*. [arXiv:2606.21868](https://arxiv.org/abs/2606.21868) — 분야: cs.LG
+- Yangyijian Liu 외. *Automated Tensor Scheduling for Hybrid CPU-GPU LLM Inference on Consumer Devices*. [arXiv:2607.10183](https://arxiv.org/abs/2607.10183) — 분야: cs.DC, cs.AI, cs.LG
+- Jinwei Kong 외. *SpecPrefetch: Parameter-Efficient Expert Prefetching for Sparse MoE Foundation Models*. [arXiv:2607.24787](https://arxiv.org/abs/2607.24787) — 분야: cs.AI, cs.LG
+- Rui Zhang 외. *Learning Agent Execution for KV-Cache Management in Agentic Serving*. [arXiv:2608.14624](https://arxiv.org/abs/2608.14624) — 분야: cs.AI
+- Guotao Yang 외. *PatchKV: Efficient KV Cache Recovery for Dynamically Edited LLM Contexts*. [arXiv:2609.26219](https://arxiv.org/abs/2609.26219) — 분야: cs.DC, cs.LG
+
 ## [2026-09-24] 다시 나타나지 않는 특징들이 매번 같은 방을 채우고 있었습니다 — SAE 시드 의존성의 기저 모호성과 부분공간 재현성
 
 - **중심**: Gleb Gerasimov 외. *Unstable Features, Reproducible Subspaces: Understanding Seed Dependence in Sparse Autoencoders*. [arXiv:2606.12138](https://arxiv.org/abs/2606.12138) — 분야: cs.LG, cs.AI, cs.CL

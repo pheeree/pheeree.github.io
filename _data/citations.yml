@@ -1,6 +1,25 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-26-freetoken-bandwidth-adaptive-edge-moe-serving:
+  title: "전문가를 옮길지 그 자리에서 셀지를 대역폭 비율 하나가 가릅니다 — 엣지 MoE 서빙의 적응 분할과 정적 그래프에 담긴 라우팅"
+  central:
+    id: "2608.16157"
+    title: "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution"
+    authors: "Shuo Yang 외"
+    keywords: "cs.DC"
+    url: "https://arxiv.org/abs/2608.16157"
+  referenced:
+    - { id: "2506.15155", title: "eLLM: Elastic Memory Management Framework for Efficient LLM Serving", authors: "Jiale Xu 외", keywords: "cs.DC", url: "https://arxiv.org/abs/2506.15155" }
+    - { id: "2511.14102", title: "MoE-SpeQ: Speculative Quantized Decoding with Proactive Expert Prefetching and Offloading for Mixture-of-Experts", authors: "Wenfeng Wang 외", keywords: "cs.LG, cs.DC", url: "https://arxiv.org/abs/2511.14102" }
+    - { id: "2604.18788", title: "Efficient Mixture-of-Experts LLM Inference with Apple Silicon NPUs", authors: "Afsara Benazir, Felix Xiaozhu Lin", keywords: "cs.LG", url: "https://arxiv.org/abs/2604.18788" }
+    - { id: "2605.17889", title: "CoX-MoE: Coalesced Expert Execution for High-Throughput MoE Inference with AMX-Enabled CPU-GPU Co-Execution", authors: "Muyoung Son 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.17889" }
+    - { id: "2606.21868", title: "WiSP: A Working-Set View of Mixture-of-Experts Serving on Extremely Low-Resource Hardware", authors: "Jiamu Zhang 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.21868" }
+    - { id: "2607.10183", title: "Automated Tensor Scheduling for Hybrid CPU-GPU LLM Inference on Consumer Devices", authors: "Yangyijian Liu 외", keywords: "cs.DC, cs.AI, cs.LG", url: "https://arxiv.org/abs/2607.10183" }
+    - { id: "2607.24787", title: "SpecPrefetch: Parameter-Efficient Expert Prefetching for Sparse MoE Foundation Models", authors: "Jinwei Kong 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2607.24787" }
+    - { id: "2608.14624", title: "Learning Agent Execution for KV-Cache Management in Agentic Serving", authors: "Rui Zhang 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2608.14624" }
+    - { id: "2609.26219", title: "PatchKV: Efficient KV Cache Recovery for Dynamically Edited LLM Contexts", authors: "Guotao Yang 외", keywords: "cs.DC, cs.LG", url: "https://arxiv.org/abs/2609.26219" }
+
 2026-09-24-sae-unstable-features-reproducible-subspaces:
   title: "다시 나타나지 않는 특징들이 매번 같은 방을 채우고 있었습니다 — SAE 시드 의존성의 기저 모호성과 부분공간 재현성"
   central:
