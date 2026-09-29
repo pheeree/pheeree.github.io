@@ -13377,5 +13377,69 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2607.19386": {
+  "title": "Building Fast, Evaluating Slow: Pipeline Choices Dominate Autointerpretability Score Variance",
+  "authors": [
+   "Sinie van der Ben",
+   "Neele Roch",
+   "Anna Hedström",
+   "Mennatallah El-Assady"
+  ],
+  "published": "2026-07-01",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2607.12166": {
+  "title": "From Geometric Recovery to Causal Validation: A Reproducible Audit of Sparse Autoencoder Features, from Superposition Geometry to Causal Inertness",
+  "authors": [
+   "Mohamed Abdessalem Bal"
+  ],
+  "published": "2026-07-13",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2602.14687": {
+  "title": "SynthSAEBench: Evaluating Sparse Autoencoders on Scalable Realistic Synthetic Data",
+  "authors": [
+   "David Chanin",
+   "Adrià Garriga-Alonso"
+  ],
+  "published": "2026-02-16",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2501.17727": {
+  "title": "Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers",
+  "authors": [
+   "Thomas Heap",
+   "Tim Lawson",
+   "Lucy Farnik",
+   "Laurence Aitchison"
+  ],
+  "published": "2025-01-29",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "1911.13299": {
+  "title": "What's Hidden in a Randomly Weighted Neural Network?",
+  "authors": [
+   "Vivek Ramanujan",
+   "Mitchell Wortsman",
+   "Aniruddha Kembhavi",
+   "Ali Farhadi",
+   "Mohammad Rastegari"
+  ],
+  "published": "2019-11-29",
+  "categories": [
+   "cs.CV",
+   "cs.LG"
+  ]
  }
 }

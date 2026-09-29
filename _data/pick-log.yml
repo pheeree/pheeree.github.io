@@ -893,3 +893,38 @@
     계보 잇기로 판단, 새 태그(minimum-description-length·
     independent-additivity·feature-splitting·hierarchical-features)
     도입. 분량 76,426자(최근 5편 52~65k자대의 연장선).
+
+- date: 2026-09-29
+  slug: sae-sanity-checks-random-baseline
+  source: 2602.14111
+  path: a
+  focus_q: Q9
+  nth: null
+  purpose: >
+    09-28 글("짧게 적으라고 하자 획이 나왔습니다")의 "다음 읽을 것들"
+    넷째 후보가 미러에 도착·미사용 확인돼 (a) 경로로 픽. 09-28 글이
+    스스로 "이건 오늘 편이 받아야 하는 시험"이라 예고한 논문이라
+    연결이 직접적. SAE 평가 비판 3부작의 세 번째 편(09-24 시드
+    의존성 → 09-28 설명 길이 제안 → 오늘 표준 네 지표 공격)으로,
+    3일 연속 SAE 주제라는 편중을 본문에서 숨기지 않고 계보로 인정.
+    Q9 핵심질문4("이 눈금은 어떻게 낡는가")·09-05 CKA 비판과 같은
+    공격 형식(무작위화 개입 아래 지표가 유지됨)으로 접속해 focus_q에
+    Q9 기입. 두 탐구 에이전트(iii-a·iii-b) 겹침도 20% 미만(양호),
+    거리는 갈림(iii-a 같은 진영 심화·iii-b 로터리 티켓·Golden Gate
+    Claude 등 진영 밖 반례) — 봉합하지 않고 본문에 갈린 채 배치.
+    claim-check 대조 중 본문 오류 하나 발견·수정: sparse probing
+    top-1 0.659를 "Frozen Encoder"로 잘못 귀속(원문 Table 2 확인
+    결과 Soft-Frozen Decoder(iso)의 값) — 본문·각주 두 곳 정정.
+    Llama top-5 격차 인용도 BatchTopK·JumpReLU 두 아키텍처 수치를
+    범위로 뭉뚱그린 부정확 표기를 발견해 아키텍처별로 분리 정정.
+    check_markup·check_sentence_reuse·check_claim_load·verify-draft
+    (arXiv id 13개 전부 실재) 전부 통과. 분량 63,812자. 새 태그
+    (random-baseline·evaluation-methodology·causal-editing·
+    sanity-check) 4개 도입, sparse-autoencoder는 계보 인정 의미로
+    재사용. B-3-self-critique는 별도 Opus 재호출 대신 본 세션이
+    다섯 기준(계보·다층인용·본문트레이드오프·수치·호흡변주)을
+    직접 대조해 전부 충족 확인 — 초안이 이미 KM 노트 자기성찰까지
+    포함한 높은 완성도라 판단, 비용 대비 한계효용 낮다고 보고
+    생략(보고에 명시).
+  switch_notice: false
+  branch: null
