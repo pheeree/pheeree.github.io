@@ -6,6 +6,24 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-09-28] 짧게 적으라고 하자 획이 나왔습니다 — MDL-SAE의 설명 길이와 독립 가산성이라는 전제
+
+- **중심**: Kola Ayonrinde 외. *Interpretability as Compression: Reconsidering SAE Explanations of Neural Activations with MDL-SAEs*. [arXiv:2410.11179](https://arxiv.org/abs/2410.11179) — 분야: cs.LG, cs.AI, cs.IT
+- Christopher P. Burgess 외. *Understanding disentangling in $β$-VAE*. [arXiv:1804.03599](https://arxiv.org/abs/1804.03599) — 분야: stat.ML, cs.AI, cs.LG
+- MohammadReza Davari 외. *Reliability of CKA as a Similarity Measure in Deep Learning*. [arXiv:2210.16156](https://arxiv.org/abs/2210.16156) — 분야: cs.LG, cs.AI, cs.CV
+- David Chanin 외. *A is for Absorption: Studying Feature Splitting and Absorption in Sparse Autoencoders*. [arXiv:2409.14507](https://arxiv.org/abs/2409.14507) — 분야: cs.CL, cs.AI
+- Dan Braun 외. *Interpretability in Parameter Space: Minimizing Mechanistic Description Length with Attribution-based Parameter Decomposition*. [arXiv:2501.14926](https://arxiv.org/abs/2501.14926) — 분야: cs.LG, stat.ML
+- Patrick Leask 외. *Sparse Autoencoders Do Not Find Canonical Units of Analysis*. [arXiv:2502.04878](https://arxiv.org/abs/2502.04878) — 분야: cs.LG, cs.AI
+- Lucius Bushnaq 외. *Stochastic Parameter Decomposition*. [arXiv:2506.20790](https://arxiv.org/abs/2506.20790) — 분야: cs.LG, cs.AI
+- Yifan Luo 외. *From Atoms to Trees: Building a Structured Feature Forest with Hierarchical Sparse Autoencoders*. [arXiv:2602.11881](https://arxiv.org/abs/2602.11881) — 분야: cs.AI
+- Anton Korznikov 외. *Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?*. [arXiv:2602.14111](https://arxiv.org/abs/2602.14111) — 분야: cs.LG
+- Sachin Kumar. *Activation Differences Reveal Backdoors: A Comparison of SAE Architectures*. [arXiv:2605.07324](https://arxiv.org/abs/2605.07324) — 분야: cs.CL, cs.AI, cs.CR, cs.LG
+- Tue M. Cao 외. *Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders*. [arXiv:2605.07922](https://arxiv.org/abs/2605.07922) — 분야: cs.LG
+- Ward Gauderis 외. *From Mechanistic to Compositional Interpretability*. [arXiv:2605.08934](https://arxiv.org/abs/2605.08934) — 분야: cs.LG
+- Jordan F. McCann. *Descriptive Collision in Sparse Autoencoder Auto-Interpretability: When One Explanation Describes Many Features*. [arXiv:2605.12874](https://arxiv.org/abs/2605.12874) — 분야: cs.LG
+- Gleb Gerasimov 외. *Unstable Features, Reproducible Subspaces: Understanding Seed Dependence in Sparse Autoencoders*. [arXiv:2606.12138](https://arxiv.org/abs/2606.12138) — 분야: cs.LG, cs.AI, cs.CL
+- Jai Bhagat 외. *Compressed Computation is (probably) not Computation in Superposition*. [arXiv:2606.14673](https://arxiv.org/abs/2606.14673) — 분야: cs.LG
+
 ## [2026-09-26] 전문가를 옮길지 그 자리에서 셀지를 대역폭 비율 하나가 가릅니다 — 엣지 MoE 서빙의 적응 분할과 정적 그래프에 담긴 라우팅
 
 - **중심**: Shuo Yang 외. *FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution*. [arXiv:2608.16157](https://arxiv.org/abs/2608.16157) — 분야: cs.DC

@@ -1,6 +1,30 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-09-28-mdl-sae-description-length-independent-additivity:
+  title: "짧게 적으라고 하자 획이 나왔습니다 — MDL-SAE의 설명 길이와 독립 가산성이라는 전제"
+  central:
+    id: "2410.11179"
+    title: "Interpretability as Compression: Reconsidering SAE Explanations of Neural Activations with MDL-SAEs"
+    authors: "Kola Ayonrinde 외"
+    keywords: "cs.LG, cs.AI, cs.IT"
+    url: "https://arxiv.org/abs/2410.11179"
+  referenced:
+    - { id: "1804.03599", title: "Understanding disentangling in $β$-VAE", authors: "Christopher P. Burgess 외", keywords: "stat.ML, cs.AI, cs.LG", url: "https://arxiv.org/abs/1804.03599" }
+    - { id: "2210.16156", title: "Reliability of CKA as a Similarity Measure in Deep Learning", authors: "MohammadReza Davari 외", keywords: "cs.LG, cs.AI, cs.CV", url: "https://arxiv.org/abs/2210.16156" }
+    - { id: "2409.14507", title: "A is for Absorption: Studying Feature Splitting and Absorption in Sparse Autoencoders", authors: "David Chanin 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2409.14507" }
+    - { id: "2501.14926", title: "Interpretability in Parameter Space: Minimizing Mechanistic Description Length with Attribution-based Parameter Decomposition", authors: "Dan Braun 외", keywords: "cs.LG, stat.ML", url: "https://arxiv.org/abs/2501.14926" }
+    - { id: "2502.04878", title: "Sparse Autoencoders Do Not Find Canonical Units of Analysis", authors: "Patrick Leask 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2502.04878" }
+    - { id: "2506.20790", title: "Stochastic Parameter Decomposition", authors: "Lucius Bushnaq 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2506.20790" }
+    - { id: "2602.11881", title: "From Atoms to Trees: Building a Structured Feature Forest with Hierarchical Sparse Autoencoders", authors: "Yifan Luo 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2602.11881" }
+    - { id: "2602.14111", title: "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?", authors: "Anton Korznikov 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2602.14111" }
+    - { id: "2605.07324", title: "Activation Differences Reveal Backdoors: A Comparison of SAE Architectures", authors: "Sachin Kumar", keywords: "cs.CL, cs.AI, cs.CR, cs.LG", url: "https://arxiv.org/abs/2605.07324" }
+    - { id: "2605.07922", title: "Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders", authors: "Tue M. Cao 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.07922" }
+    - { id: "2605.08934", title: "From Mechanistic to Compositional Interpretability", authors: "Ward Gauderis 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.08934" }
+    - { id: "2605.12874", title: "Descriptive Collision in Sparse Autoencoder Auto-Interpretability: When One Explanation Describes Many Features", authors: "Jordan F. McCann", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.12874" }
+    - { id: "2606.12138", title: "Unstable Features, Reproducible Subspaces: Understanding Seed Dependence in Sparse Autoencoders", authors: "Gleb Gerasimov 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.12138" }
+    - { id: "2606.14673", title: "Compressed Computation is (probably) not Computation in Superposition", authors: "Jai Bhagat 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.14673" }
+
 2026-09-26-freetoken-bandwidth-adaptive-edge-moe-serving:
   title: "전문가를 옮길지 그 자리에서 셀지를 대역폭 비율 하나가 가릅니다 — 엣지 MoE 서빙의 적응 분할과 정적 그래프에 담긴 라우팅"
   central:
