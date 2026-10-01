@@ -13441,5 +13441,131 @@
    "cs.CV",
    "cs.LG"
   ]
+ },
+ "2604.28119": {
+  "title": "Do Sparse Autoencoders Capture Concept Manifolds?",
+  "authors": [
+   "Usha Bhalla",
+   "Thomas Fel",
+   "Can Rager",
+   "Sheridan Feucht",
+   "Tal Haklay",
+   "Daniel Wurgaft",
+   "Siddharth Boppana",
+   "Matthew Kowal",
+   "Vasudev Shyam",
+   "Jack Merullo",
+   "Atticus Geiger",
+   "Ekdeep Singh Lubana"
+  ],
+  "published": "2026-04-30",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2608.13337": {
+  "title": "Where You Measure Decides What You Measure: Position Selection in Ablation-Based SAE Evaluation",
+  "authors": [
+   "Valentin Noël"
+  ],
+  "published": "2026-08-13",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2411.18895": {
+  "title": "Evaluating Sparse Autoencoders on Targeted Concept Erasure Tasks",
+  "authors": [
+   "Adam Karvonen",
+   "Can Rager",
+   "Samuel Marks",
+   "Neel Nanda"
+  ],
+  "published": "2024-11-28",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2503.09532": {
+  "title": "SAEBench: A Comprehensive Benchmark for Sparse Autoencoders in Language Model Interpretability",
+  "authors": [
+   "Adam Karvonen",
+   "Can Rager",
+   "Johnny Lin",
+   "Curt Tigges",
+   "Joseph Bloom",
+   "David Chanin",
+   "Yeu-Tong Lau",
+   "Eoin Farrell",
+   "Callum McDougall",
+   "Kola Ayonrinde",
+   "Demian Till",
+   "Matthew Wearden",
+   "Arthur Conmy",
+   "Samuel Marks",
+   "Neel Nanda"
+  ],
+  "published": "2025-03-12",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2505.20254": {
+  "title": "Position: Mechanistic Interpretability Should Prioritize Feature Consistency in SAEs",
+  "authors": [
+   "Xiangchen Song",
+   "Aashiq Muhamed",
+   "Yujia Zheng",
+   "Lingjing Kong",
+   "Zeyu Tang",
+   "Mona T. Diab",
+   "Virginia Smith",
+   "Kun Zhang"
+  ],
+  "published": "2025-05-26",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL",
+   "stat.ML"
+  ]
+ },
+ "2407.13696": {
+  "title": "Do These LLM Benchmarks Agree? Fixing Benchmark Evaluation with BenchBench",
+  "authors": [
+   "Yotam Perlitz",
+   "Ariel Gera",
+   "Ofir Arviv",
+   "Asaf Yehudai",
+   "Elron Bandel",
+   "Eyal Shnarch",
+   "Michal Shmueli-Scheuer",
+   "Leshem Choshen"
+  ],
+  "published": "2024-07-18",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2508.13144": {
+  "title": "Signal and Noise: A Framework for Reducing Uncertainty in Language Model Evaluation",
+  "authors": [
+   "David Heineman",
+   "Valentin Hofmann",
+   "Ian Magnusson",
+   "Yuling Gu",
+   "Noah A. Smith",
+   "Hannaneh Hajishirzi",
+   "Kyle Lo",
+   "Jesse Dodge"
+  ],
+  "published": "2025-08-18",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
  }
 }
