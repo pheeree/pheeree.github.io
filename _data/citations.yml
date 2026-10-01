@@ -231,6 +231,24 @@
     - { id: "2606.23104", title: "ReNIO: Reweighting Negative Trajectory Importance for LLM On-Policy Distillation", authors: "Chen Lin 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.23104" }
     - { id: "2609.04172", title: "Rethinking On-Policy Distillation of Large Language Models II: One Training Example", authors: "Zixuan Fu 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2609.04172" }
 
+2026-09-16-opd-thinking-pattern-consistency-new-knowledge:
+  title: "더 잘하는 교사에게 배울 것이 없었습니다 — 온폴리시 증류의 성패를 가르는 두 조건"
+  central:
+    id: "2604.13016"
+    title: "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe"
+    authors: "Yaxuan Li 외"
+    keywords: "cs.LG, cs.AI, cs.CL"
+    url: "https://arxiv.org/abs/2604.13016"
+  referenced:
+    - { id: "2502.08606", title: "Distillation Scaling Laws", authors: "Dan Busbridge 외", keywords: "cs.LG, cs.AI, cs.CL, stat.ML", url: "https://arxiv.org/abs/2502.08606" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2511.17886", title: "When Better Teachers Don't Make Better Students: Revisiting Knowledge Distillation for CLIP Models in VQA", authors: "Pume Tuchinda 외", keywords: "cs.CV, cs.CL", url: "https://arxiv.org/abs/2511.17886" }
+    - { id: "2605.23857", title: "Strong Teacher Not Needed? On Distillation in LLM Pretraining", authors: "Taiming Lu, Zhuang Liu", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2605.23857" }
+    - { id: "2606.09471", title: "Escaping the KL Agreement Trap in On-Policy Distillation", authors: "Haoran Xin 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2606.09471" }
+    - { id: "2606.22600", title: "On the Position Bias of On-Policy Distillation", authors: "Yan Xie 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.22600" }
+    - { id: "2607.05394", title: "Weak-to-Strong Generalization via Direct On-Policy Distillation", authors: "Shiyuan Feng 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2607.05394" }
+    - { id: "2609.04172", title: "Rethinking On-Policy Distillation of Large Language Models II: One Training Example", authors: "Zixuan Fu 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2609.04172" }
+
 2026-09-15-lgr-supervision-fidelity-decay-lookahead-reward:
   title: "교사가 흐려져도 한 칸 앞은 아직 갈립니다 — 감독 충실도 감쇠와 룩어헤드 그룹 보상"
   central:

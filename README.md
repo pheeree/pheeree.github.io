@@ -23,6 +23,7 @@
 - 2026-09-19 — [거절당한 제안까지 남겨 둔 쪽이 이겼습니다 — 에이전트 경험의 위키 층과 스킬 진화의 분업](https://pheeree.github.io/2026/09/19/wikiskill-persistent-knowledge-layer-skill-evolution/)
 - 2026-09-18 — [교사에게 한 토큰만 물었던 것이 문제였습니다 — 온폴리시 증류의 세 실패 모드와 top-K 지지집합](https://pheeree.github.io/2026/09/18/opd-local-support-matching-failure-modes/)
 - 2026-09-17 — [앞쪽이 잘 배워지는 이유는 제약식 안에 이미 적혀 있었습니다 — 신뢰 영역 사영이 낳는 위치 편향과 대리 변수 문제](https://pheeree.github.io/2026/09/17/opd-position-bias-trust-region-projection/)
+- 2026-09-16 — [더 잘하는 교사에게 배울 것이 없었습니다 — 온폴리시 증류의 성패를 가르는 두 조건](https://pheeree.github.io/2026/09/16/opd-thinking-pattern-consistency-new-knowledge/)
 - 2026-09-15 — [교사가 흐려져도 한 칸 앞은 아직 갈립니다 — 감독 충실도 감쇠와 룩어헤드 그룹 보상](https://pheeree.github.io/2026/09/15/lgr-supervision-fidelity-decay-lookahead-reward/)
 - 2026-09-14 — [처음 100토큰만 가르쳤는데 뒤까지 따라옵니다 — 조기 종료 롤아웃의 캐스케이딩 정렬과 서브모드 정착](https://pheeree.github.io/2026/09/14/esr-cascading-alignment-submode-commitment/)
 - 2026-09-12 — [굶고 있던 쪽은 데이터가 아니었습니다 — 온폴리시 증류의 상태 커버리지와 흡수율, 그리고 회복이 강건성은 아닌 자리](https://pheeree.github.io/2026/09/12/opd-data-overfed-algorithm-starved/)

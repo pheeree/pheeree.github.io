@@ -13567,5 +13567,72 @@
    "cs.CL",
    "cs.LG"
   ]
+ },
+ "2605.23857": {
+  "title": "Strong Teacher Not Needed? On Distillation in LLM Pretraining",
+  "authors": [
+   "Taiming Lu",
+   "Zhuang Liu"
+  ],
+  "published": "2026-05-22",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2607.05394": {
+  "title": "Weak-to-Strong Generalization via Direct On-Policy Distillation",
+  "authors": [
+   "Shiyuan Feng",
+   "Huan-ang Gao",
+   "Haohan Chi",
+   "Hanlin Wu",
+   "Zhilong Zhang",
+   "Zheng Jiang",
+   "Bingxiang He",
+   "Wei-Ying Ma",
+   "Ya-Qin Zhang",
+   "Hao Zhou"
+  ],
+  "published": "2026-07-06",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2511.17886": {
+  "title": "When Better Teachers Don't Make Better Students: Revisiting Knowledge Distillation for CLIP Models in VQA",
+  "authors": [
+   "Pume Tuchinda",
+   "Parinthapat Pengpun",
+   "Romrawin Chumpu",
+   "Patomporn Payoungkhamdee",
+   "Sarana Nutanong",
+   "Peerat Limkonchotiwat"
+  ],
+  "published": "2025-11-22",
+  "categories": [
+   "cs.CV",
+   "cs.CL"
+  ]
+ },
+ "2502.08606": {
+  "title": "Distillation Scaling Laws",
+  "authors": [
+   "Dan Busbridge",
+   "Amitis Shidani",
+   "Floris Weers",
+   "Jason Ramapuram",
+   "Etai Littwin",
+   "Russ Webb"
+  ],
+  "published": "2025-02-12",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL",
+   "stat.ML"
+  ]
  }
 }

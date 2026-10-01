@@ -176,6 +176,18 @@ permalink: /bibliography/
 - Chen Lin 외. *ReNIO: Reweighting Negative Trajectory Importance for LLM On-Policy Distillation*. [arXiv:2606.23104](https://arxiv.org/abs/2606.23104) — 분야: cs.LG, cs.AI
 - Zixuan Fu 외. *Rethinking On-Policy Distillation of Large Language Models II: One Training Example*. [arXiv:2609.04172](https://arxiv.org/abs/2609.04172) — 분야: cs.AI, cs.CL
 
+## [2026-09-16] 더 잘하는 교사에게 배울 것이 없었습니다 — 온폴리시 증류의 성패를 가르는 두 조건
+
+- **중심**: Yaxuan Li 외. *Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe*. [arXiv:2604.13016](https://arxiv.org/abs/2604.13016) — 분야: cs.LG, cs.AI, cs.CL
+- Dan Busbridge 외. *Distillation Scaling Laws*. [arXiv:2502.08606](https://arxiv.org/abs/2502.08606) — 분야: cs.LG, cs.AI, cs.CL, stat.ML
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Pume Tuchinda 외. *When Better Teachers Don't Make Better Students: Revisiting Knowledge Distillation for CLIP Models in VQA*. [arXiv:2511.17886](https://arxiv.org/abs/2511.17886) — 분야: cs.CV, cs.CL
+- Taiming Lu, Zhuang Liu. *Strong Teacher Not Needed? On Distillation in LLM Pretraining*. [arXiv:2605.23857](https://arxiv.org/abs/2605.23857) — 분야: cs.LG, cs.CL
+- Haoran Xin 외. *Escaping the KL Agreement Trap in On-Policy Distillation*. [arXiv:2606.09471](https://arxiv.org/abs/2606.09471) — 분야: cs.LG, cs.CL
+- Yan Xie 외. *On the Position Bias of On-Policy Distillation*. [arXiv:2606.22600](https://arxiv.org/abs/2606.22600) — 분야: cs.LG, cs.AI
+- Shiyuan Feng 외. *Weak-to-Strong Generalization via Direct On-Policy Distillation*. [arXiv:2607.05394](https://arxiv.org/abs/2607.05394) — 분야: cs.LG, cs.AI, cs.CL
+- Zixuan Fu 외. *Rethinking On-Policy Distillation of Large Language Models II: One Training Example*. [arXiv:2609.04172](https://arxiv.org/abs/2609.04172) — 분야: cs.AI, cs.CL
+
 ## [2026-09-15] 교사가 흐려져도 한 칸 앞은 아직 갈립니다 — 감독 충실도 감쇠와 룩어헤드 그룹 보상
 
 - **중심**: Yanjiang Liu 외. *Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation*. [arXiv:2605.30833](https://arxiv.org/abs/2605.30833) — 분야: cs.CL, cs.AI
