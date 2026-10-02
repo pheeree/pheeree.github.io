@@ -6,6 +6,26 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-01] 디코더를 뒤섞은 SAE를 세 지표가 원본과 구별하지 못했습니다 — SAEBench 감사와 눈금이 읽는 부품
+
+- **중심**: David Chanin. *Are Sparse Autoencoder Benchmarks Reliable?*. [arXiv:2605.18229](https://arxiv.org/abs/2605.18229) — 분야: cs.LG, cs.AI
+- Yotam Perlitz 외. *Do These LLM Benchmarks Agree? Fixing Benchmark Evaluation with BenchBench*. [arXiv:2407.13696](https://arxiv.org/abs/2407.13696) — 분야: cs.CL
+- David Chanin 외. *A is for Absorption: Studying Feature Splitting and Absorption in Sparse Autoencoders*. [arXiv:2409.14507](https://arxiv.org/abs/2409.14507) — 분야: cs.CL, cs.AI
+- Adam Karvonen 외. *Evaluating Sparse Autoencoders on Targeted Concept Erasure Tasks*. [arXiv:2411.18895](https://arxiv.org/abs/2411.18895) — 분야: cs.LG, cs.CL
+- Gonçalo Paulo, Nora Belrose. *Sparse Autoencoders Trained on the Same Data Learn Different Features*. [arXiv:2501.16615](https://arxiv.org/abs/2501.16615) — 분야: cs.LG
+- Thomas Heap 외. *Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers*. [arXiv:2501.17727](https://arxiv.org/abs/2501.17727) — 분야: cs.LG
+- Patrick Leask 외. *Sparse Autoencoders Do Not Find Canonical Units of Analysis*. [arXiv:2502.04878](https://arxiv.org/abs/2502.04878) — 분야: cs.LG, cs.AI
+- Adam Karvonen 외. *SAEBench: A Comprehensive Benchmark for Sparse Autoencoders in Language Model Interpretability*. [arXiv:2503.09532](https://arxiv.org/abs/2503.09532) — 분야: cs.LG, cs.CL
+- Xiangchen Song 외. *Position: Mechanistic Interpretability Should Prioritize Feature Consistency in SAEs*. [arXiv:2505.20254](https://arxiv.org/abs/2505.20254) — 분야: cs.LG, cs.AI, cs.CL, stat.ML
+- David Heineman 외. *Signal and Noise: A Framework for Reducing Uncertainty in Language Model Evaluation*. [arXiv:2508.13144](https://arxiv.org/abs/2508.13144) — 분야: cs.CL, cs.LG
+- Anton Korznikov 외. *Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?*. [arXiv:2602.14111](https://arxiv.org/abs/2602.14111) — 분야: cs.LG
+- David Chanin, Adrià Garriga-Alonso. *SynthSAEBench: Evaluating Sparse Autoencoders on Scalable Realistic Synthetic Data*. [arXiv:2602.14687](https://arxiv.org/abs/2602.14687) — 분야: cs.LG, cs.AI
+- Usha Bhalla 외. *Do Sparse Autoencoders Capture Concept Manifolds?*. [arXiv:2604.28119](https://arxiv.org/abs/2604.28119) — 분야: cs.LG, cs.AI
+- Tue M. Cao 외. *Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders*. [arXiv:2605.07922](https://arxiv.org/abs/2605.07922) — 분야: cs.LG
+- Mohamed Abdessalem Bal. *From Geometric Recovery to Causal Validation: A Reproducible Audit of Sparse Autoencoder Features, from Superposition Geometry to Causal Inertness*. [arXiv:2607.12166](https://arxiv.org/abs/2607.12166) — 분야: cs.LG
+- Sinie van der Ben 외. *Building Fast, Evaluating Slow: Pipeline Choices Dominate Autointerpretability Score Variance*. [arXiv:2607.19386](https://arxiv.org/abs/2607.19386) — 분야: cs.LG, cs.CL
+- Valentin Noël. *Where You Measure Decides What You Measure: Position Selection in Ablation-Based SAE Evaluation*. [arXiv:2608.13337](https://arxiv.org/abs/2608.13337) — 분야: cs.LG
+
 ## [2026-09-29] 무작위로 굳혀 둔 사전이 거의 같은 점수를 받았습니다 — SAE 평가 네 지표와 냉동 베이스라인
 
 - **중심**: Anton Korznikov 외. *Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?*. [arXiv:2602.14111](https://arxiv.org/abs/2602.14111) — 분야: cs.LG

@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-10-01 — [디코더를 뒤섞은 SAE를 세 지표가 원본과 구별하지 못했습니다 — SAEBench 감사와 눈금이 읽는 부품](https://pheeree.github.io/2026/10/01/sae-benchmark-reliability-audit-decoder-permutation/)
 - 2026-09-29 — [무작위로 굳혀 둔 사전이 거의 같은 점수를 받았습니다 — SAE 평가 네 지표와 냉동 베이스라인](https://pheeree.github.io/2026/09/29/sae-sanity-checks-random-baseline/)
 - 2026-09-28 — [짧게 적으라고 하자 획이 나왔습니다 — MDL-SAE의 설명 길이와 독립 가산성이라는 전제](https://pheeree.github.io/2026/09/28/mdl-sae-description-length-independent-additivity/)
 - 2026-09-26 — [전문가를 옮길지 그 자리에서 셀지를 대역폭 비율 하나가 가릅니다 — 엣지 MoE 서빙의 적응 분할과 정적 그래프에 담긴 라우팅](https://pheeree.github.io/2026/09/26/freetoken-bandwidth-adaptive-edge-moe-serving/)

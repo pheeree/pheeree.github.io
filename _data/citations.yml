@@ -1,6 +1,32 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-01-sae-benchmark-reliability-audit-decoder-permutation:
+  title: "디코더를 뒤섞은 SAE를 세 지표가 원본과 구별하지 못했습니다 — SAEBench 감사와 눈금이 읽는 부품"
+  central:
+    id: "2605.18229"
+    title: "Are Sparse Autoencoder Benchmarks Reliable?"
+    authors: "David Chanin"
+    keywords: "cs.LG, cs.AI"
+    url: "https://arxiv.org/abs/2605.18229"
+  referenced:
+    - { id: "2407.13696", title: "Do These LLM Benchmarks Agree? Fixing Benchmark Evaluation with BenchBench", authors: "Yotam Perlitz 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2407.13696" }
+    - { id: "2409.14507", title: "A is for Absorption: Studying Feature Splitting and Absorption in Sparse Autoencoders", authors: "David Chanin 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2409.14507" }
+    - { id: "2411.18895", title: "Evaluating Sparse Autoencoders on Targeted Concept Erasure Tasks", authors: "Adam Karvonen 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2411.18895" }
+    - { id: "2501.16615", title: "Sparse Autoencoders Trained on the Same Data Learn Different Features", authors: "Gonçalo Paulo, Nora Belrose", keywords: "cs.LG", url: "https://arxiv.org/abs/2501.16615" }
+    - { id: "2501.17727", title: "Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers", authors: "Thomas Heap 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2501.17727" }
+    - { id: "2502.04878", title: "Sparse Autoencoders Do Not Find Canonical Units of Analysis", authors: "Patrick Leask 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2502.04878" }
+    - { id: "2503.09532", title: "SAEBench: A Comprehensive Benchmark for Sparse Autoencoders in Language Model Interpretability", authors: "Adam Karvonen 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2503.09532" }
+    - { id: "2505.20254", title: "Position: Mechanistic Interpretability Should Prioritize Feature Consistency in SAEs", authors: "Xiangchen Song 외", keywords: "cs.LG, cs.AI, cs.CL, stat.ML", url: "https://arxiv.org/abs/2505.20254" }
+    - { id: "2508.13144", title: "Signal and Noise: A Framework for Reducing Uncertainty in Language Model Evaluation", authors: "David Heineman 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2508.13144" }
+    - { id: "2602.14111", title: "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?", authors: "Anton Korznikov 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2602.14111" }
+    - { id: "2602.14687", title: "SynthSAEBench: Evaluating Sparse Autoencoders on Scalable Realistic Synthetic Data", authors: "David Chanin, Adrià Garriga-Alonso", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2602.14687" }
+    - { id: "2604.28119", title: "Do Sparse Autoencoders Capture Concept Manifolds?", authors: "Usha Bhalla 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.28119" }
+    - { id: "2605.07922", title: "Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders", authors: "Tue M. Cao 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.07922" }
+    - { id: "2607.12166", title: "From Geometric Recovery to Causal Validation: A Reproducible Audit of Sparse Autoencoder Features, from Superposition Geometry to Causal Inertness", authors: "Mohamed Abdessalem Bal", keywords: "cs.LG", url: "https://arxiv.org/abs/2607.12166" }
+    - { id: "2607.19386", title: "Building Fast, Evaluating Slow: Pipeline Choices Dominate Autointerpretability Score Variance", authors: "Sinie van der Ben 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2607.19386" }
+    - { id: "2608.13337", title: "Where You Measure Decides What You Measure: Position Selection in Ablation-Based SAE Evaluation", authors: "Valentin Noël", keywords: "cs.LG", url: "https://arxiv.org/abs/2608.13337" }
+
 2026-09-29-sae-sanity-checks-random-baseline:
   title: "무작위로 굳혀 둔 사전이 거의 같은 점수를 받았습니다 — SAE 평가 네 지표와 냉동 베이스라인"
   central:
