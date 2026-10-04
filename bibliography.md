@@ -6,6 +6,21 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-02] 교사의 top-32는 질량의 99.99%를 담고도 도구 호출을 말릴 좌표 하나를 빠뜨렸습니다 — 다중 교사 증류의 도구호출 표류, 그리고 질량이라는 눈금이 재지 못하는 것
+
+- **중심**: Jiabin Shen 외. *When Top-K Misses the Decision: Tool-Call Drift in Multi-Teacher On-Policy Distillation*. [arXiv:2607.07050](https://arxiv.org/abs/2607.07050) — 분야: cs.CL, cs.LG
+- Abhinav Dutta 외. *Accuracy is Not All You Need*. [arXiv:2407.09141](https://arxiv.org/abs/2407.09141) — 분야: cs.LG
+- David Chanin 외. *A is for Absorption: Studying Feature Splitting and Absorption in Sparse Autoencoders*. [arXiv:2409.14507](https://arxiv.org/abs/2409.14507) — 분야: cs.CL, cs.AI
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Anshumann 외. *Sparse Logit Sampling: Accelerating Knowledge Distillation in LLMs*. [arXiv:2503.16870](https://arxiv.org/abs/2503.16870) — 분야: cs.LG, cs.AI, cs.CL
+- Xiangchen Song 외. *Position: Mechanistic Interpretability Should Prioritize Feature Consistency in SAEs*. [arXiv:2505.20254](https://arxiv.org/abs/2505.20254) — 분야: cs.LG, cs.AI, cs.CL, stat.ML
+- David Chanin, Adrià Garriga-Alonso. *SynthSAEBench: Evaluating Sparse Autoencoders on Scalable Realistic Synthetic Data*. [arXiv:2602.14687](https://arxiv.org/abs/2602.14687) — 분야: cs.LG, cs.AI
+- Sayantan Dasgupta 외. *Don't Ignore the Tail: Decoupling top-K Probabilities for Efficient Language Model Distillation*. [arXiv:2602.20816](https://arxiv.org/abs/2602.20816) — 분야: cs.CL, cs.LG
+- Yuanyi Wang 외. *Not All Disagreement Is Learnable: Token Teachability in On-Policy Distillation*. [arXiv:2605.26844](https://arxiv.org/abs/2605.26844) — 분야: cs.LG
+- Bakbergen Ryskulov 외. *Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss*. [arXiv:2608.03796](https://arxiv.org/abs/2608.03796) — 분야: cs.CL, cs.AI, cs.LG
+- Huipeng Huang, Hongxin Wei. *Tail-Aware Top-$k$ On-Policy Distillation*. [arXiv:2608.14728](https://arxiv.org/abs/2608.14728) — 분야: cs.LG, cs.AI
+- Huanxin Sheng 외. *1% of Tokens Can Be Enough: On Gradient Estimation in On-Policy Distillation*. [arXiv:2609.24432](https://arxiv.org/abs/2609.24432) — 분야: cs.LG, cs.CL
+
 ## [2026-10-01] 디코더를 뒤섞은 SAE를 세 지표가 원본과 구별하지 못했습니다 — SAEBench 감사와 눈금이 읽는 부품
 
 - **중심**: David Chanin. *Are Sparse Autoencoder Benchmarks Reliable?*. [arXiv:2605.18229](https://arxiv.org/abs/2605.18229) — 분야: cs.LG, cs.AI

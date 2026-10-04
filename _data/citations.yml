@@ -1,6 +1,27 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-02-opd-topk-decision-critical-support-omission:
+  title: "교사의 top-32는 질량의 99.99%를 담고도 도구 호출을 말릴 좌표 하나를 빠뜨렸습니다 — 다중 교사 증류의 도구호출 표류, 그리고 질량이라는 눈금이 재지 못하는 것"
+  central:
+    id: "2607.07050"
+    title: "When Top-K Misses the Decision: Tool-Call Drift in Multi-Teacher On-Policy Distillation"
+    authors: "Jiabin Shen 외"
+    keywords: "cs.CL, cs.LG"
+    url: "https://arxiv.org/abs/2607.07050"
+  referenced:
+    - { id: "2407.09141", title: "Accuracy is Not All You Need", authors: "Abhinav Dutta 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2407.09141" }
+    - { id: "2409.14507", title: "A is for Absorption: Studying Feature Splitting and Absorption in Sparse Autoencoders", authors: "David Chanin 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2409.14507" }
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2503.16870", title: "Sparse Logit Sampling: Accelerating Knowledge Distillation in LLMs", authors: "Anshumann 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2503.16870" }
+    - { id: "2505.20254", title: "Position: Mechanistic Interpretability Should Prioritize Feature Consistency in SAEs", authors: "Xiangchen Song 외", keywords: "cs.LG, cs.AI, cs.CL, stat.ML", url: "https://arxiv.org/abs/2505.20254" }
+    - { id: "2602.14687", title: "SynthSAEBench: Evaluating Sparse Autoencoders on Scalable Realistic Synthetic Data", authors: "David Chanin, Adrià Garriga-Alonso", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2602.14687" }
+    - { id: "2602.20816", title: "Don't Ignore the Tail: Decoupling top-K Probabilities for Efficient Language Model Distillation", authors: "Sayantan Dasgupta 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2602.20816" }
+    - { id: "2605.26844", title: "Not All Disagreement Is Learnable: Token Teachability in On-Policy Distillation", authors: "Yuanyi Wang 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.26844" }
+    - { id: "2608.03796", title: "Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss", authors: "Bakbergen Ryskulov 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2608.03796" }
+    - { id: "2608.14728", title: "Tail-Aware Top-$k$ On-Policy Distillation", authors: "Huipeng Huang, Hongxin Wei", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2608.14728" }
+    - { id: "2609.24432", title: "1% of Tokens Can Be Enough: On Gradient Estimation in On-Policy Distillation", authors: "Huanxin Sheng 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2609.24432" }
+
 2026-10-01-sae-benchmark-reliability-audit-decoder-permutation:
   title: "디코더를 뒤섞은 SAE를 세 지표가 원본과 구별하지 못했습니다 — SAEBench 감사와 눈금이 읽는 부품"
   central:

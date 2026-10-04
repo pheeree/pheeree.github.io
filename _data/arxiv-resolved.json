@@ -13636,45 +13636,113 @@
   ]
  },
  "2609.24432": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "1% of Tokens Can Be Enough: On Gradient Estimation in On-Policy Distillation",
+  "authors": [
+   "Huanxin Sheng",
+   "Zhiling Ye",
+   "Haonan Wang",
+   "Jian Wang",
+   "Jinjie Gu",
+   "Jian Kang"
+  ],
+  "published": "2026-09-21",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
  },
  "2602.20816": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Don't Ignore the Tail: Decoupling top-K Probabilities for Efficient Language Model Distillation",
+  "authors": [
+   "Sayantan Dasgupta",
+   "Trevor Cohn",
+   "Timothy Baldwin"
+  ],
+  "published": "2026-02-24",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
  },
  "2407.09141": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Accuracy is Not All You Need",
+  "authors": [
+   "Abhinav Dutta",
+   "Sanjeev Krishnan",
+   "Nipun Kwatra",
+   "Ramachandran Ramjee"
+  ],
+  "published": "2024-07-12",
+  "categories": [
+   "cs.LG"
+  ]
  },
  "2605.26844": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Not All Disagreement Is Learnable: Token Teachability in On-Policy Distillation",
+  "authors": [
+   "Yuanyi Wang",
+   "Su Lu",
+   "Yanggan Gu",
+   "Pengkai Wang",
+   "Yifan Yang",
+   "Zhaoyi Yan",
+   "Congkai Xie",
+   "Jianmin Wu",
+   "Hongxia Yang"
+  ],
+  "published": "2026-05-26",
+  "categories": [
+   "cs.LG"
+  ]
  },
  "2503.16870": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Sparse Logit Sampling: Accelerating Knowledge Distillation in LLMs",
+  "authors": [
+   "Anshumann",
+   "Mohd Abbas Zaidi",
+   "Akhil Kedia",
+   "Jinwoo Ahn",
+   "Taehwak Kwon",
+   "Kangwook Lee",
+   "Haejun Lee",
+   "Joohyung Lee"
+  ],
+  "published": "2025-03-21",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  },
  "2608.14728": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Tail-Aware Top-$k$ On-Policy Distillation",
+  "authors": [
+   "Huipeng Huang",
+   "Hongxin Wei"
+  ],
+  "published": "2026-08-12",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  },
  "2608.03796": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss",
+  "authors": [
+   "Bakbergen Ryskulov",
+   "Iker García-Ferrero",
+   "David Montero",
+   "David Jansen",
+   "Ali Hashemi",
+   "Jezabel R. Garcia",
+   "Antonio Tiene",
+   "Román Orús"
+  ],
+  "published": "2026-08-04",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
  }
 }
