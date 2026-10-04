@@ -13744,5 +13744,104 @@
    "cs.AI",
    "cs.LG"
   ]
+ },
+ "2609.04108": {
+  "title": "Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR",
+  "authors": [
+   "Boyan Li",
+   "Bingsen Chen",
+   "Chenghao Yang",
+   "Ping Nie",
+   "Chen Zhao",
+   "Xi Ye"
+  ],
+  "published": "2026-09-03",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2607.04037": {
+  "title": "Reward-Gated On-Policy Distillation",
+  "authors": [
+   "Mohammad Sadegh Akhondzadeh",
+   "Vijay Lingam",
+   "Atula Tejaswi",
+   "Chanakya Ekbote",
+   "Sujay Sanghavi",
+   "Aleksandar Bojchevski"
+  ],
+  "published": "2026-07-04",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2606.01039": {
+  "title": "OPD+: Rethinking the Advantage Design for On-Policy Distillation",
+  "authors": [
+   "Hanyang Zhao",
+   "Haoxian Chen",
+   "Han Lin",
+   "Genta Indra Winata",
+   "David Yao",
+   "Wenpin Tang"
+  ],
+  "published": "2026-05-31",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2608.24696": {
+  "title": "On-policy Distillation with Verifiable Reward",
+  "authors": [
+   "Wenze Lin",
+   "Jiale Zhao",
+   "Xitai Jiang",
+   "Songde Rao",
+   "Yining Li",
+   "Shenzhi Wang",
+   "Bingxiang He",
+   "Gao Huang"
+  ],
+  "published": "2026-08-25",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2504.07086": {
+  "title": "A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Reproducibility",
+  "authors": [
+   "Andreas Hochlehnert",
+   "Hardik Bhatnagar",
+   "Vishaal Udandarao",
+   "Samuel Albanie",
+   "Ameya Prabhu",
+   "Matthias Bethge"
+  ],
+  "published": "2025-04-09",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2605.07865": {
+  "title": "KL for a KL: On-Policy Distillation with Control Variate Baseline",
+  "authors": [
+   "Minjae Oh",
+   "Sangjun Song",
+   "Gyubin Choi",
+   "Yunho Choi",
+   "Yohan Jo"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  }
 }
