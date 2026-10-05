@@ -1,6 +1,23 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-05-opd-gamma-temporal-credit-reward-sign:
+  title: "할인계수 0.99가 고친 국소성과, 검증 보상이 교사에게서 거둬 간 것 — 온폴리시 증류의 시간 축 신용 배정"
+  central:
+    id: "2609.16937"
+    title: "Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation"
+    authors: "Shiqi Liu 외"
+    keywords: "cs.LG, cs.AI, cs.PL"
+    url: "https://arxiv.org/abs/2609.16937"
+  referenced:
+    - { id: "2504.07086", title: "A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Reproducibility", authors: "Andreas Hochlehnert 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2504.07086" }
+    - { id: "2605.07865", title: "KL for a KL: On-Policy Distillation with Control Variate Baseline", authors: "Minjae Oh 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2605.07865" }
+    - { id: "2606.01039", title: "OPD+: Rethinking the Advantage Design for On-Policy Distillation", authors: "Hanyang Zhao 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.01039" }
+    - { id: "2606.02684", title: "Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation", authors: "Yuying Li 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.02684" }
+    - { id: "2607.04037", title: "Reward-Gated On-Policy Distillation", authors: "Mohammad Sadegh Akhondzadeh 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2607.04037" }
+    - { id: "2608.24696", title: "On-policy Distillation with Verifiable Reward", authors: "Wenze Lin 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2608.24696" }
+    - { id: "2609.04108", title: "Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR", authors: "Boyan Li 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2609.04108" }
+
 2026-10-02-opd-topk-decision-critical-support-omission:
   title: "교사의 top-32는 질량의 99.99%를 담고도 도구 호출을 말릴 좌표 하나를 빠뜨렸습니다 — 다중 교사 증류의 도구호출 표류, 그리고 질량이라는 눈금이 재지 못하는 것"
   central:

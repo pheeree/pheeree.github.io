@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-05] 할인계수 0.99가 고친 국소성과, 검증 보상이 교사에게서 거둬 간 것 — 온폴리시 증류의 시간 축 신용 배정
+
+- **중심**: Shiqi Liu 외. *Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation*. [arXiv:2609.16937](https://arxiv.org/abs/2609.16937) — 분야: cs.LG, cs.AI, cs.PL
+- Andreas Hochlehnert 외. *A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Reproducibility*. [arXiv:2504.07086](https://arxiv.org/abs/2504.07086) — 분야: cs.LG, cs.CL
+- Minjae Oh 외. *KL for a KL: On-Policy Distillation with Control Variate Baseline*. [arXiv:2605.07865](https://arxiv.org/abs/2605.07865) — 분야: cs.LG, cs.AI, cs.CL
+- Hanyang Zhao 외. *OPD+: Rethinking the Advantage Design for On-Policy Distillation*. [arXiv:2606.01039](https://arxiv.org/abs/2606.01039) — 분야: cs.LG, cs.AI
+- Yuying Li 외. *Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation*. [arXiv:2606.02684](https://arxiv.org/abs/2606.02684) — 분야: cs.LG, cs.AI, cs.CL
+- Mohammad Sadegh Akhondzadeh 외. *Reward-Gated On-Policy Distillation*. [arXiv:2607.04037](https://arxiv.org/abs/2607.04037) — 분야: cs.LG, cs.AI
+- Wenze Lin 외. *On-policy Distillation with Verifiable Reward*. [arXiv:2608.24696](https://arxiv.org/abs/2608.24696) — 분야: cs.LG, cs.AI
+- Boyan Li 외. *Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR*. [arXiv:2609.04108](https://arxiv.org/abs/2609.04108) — 분야: cs.CL, cs.AI, cs.LG
+
 ## [2026-10-02] 교사의 top-32는 질량의 99.99%를 담고도 도구 호출을 말릴 좌표 하나를 빠뜨렸습니다 — 다중 교사 증류의 도구호출 표류, 그리고 질량이라는 눈금이 재지 못하는 것
 
 - **중심**: Jiabin Shen 외. *When Top-K Misses the Decision: Tool-Call Drift in Multi-Teacher On-Policy Distillation*. [arXiv:2607.07050](https://arxiv.org/abs/2607.07050) — 분야: cs.CL, cs.LG

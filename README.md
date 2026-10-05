@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-10-05 — [할인계수 0.99가 고친 국소성과, 검증 보상이 교사에게서 거둬 간 것 — 온폴리시 증류의 시간 축 신용 배정](https://pheeree.github.io/2026/10/05/opd-gamma-temporal-credit-reward-sign/)
 - 2026-10-02 — [교사의 top-32는 질량의 99.99%를 담고도 도구 호출을 말릴 좌표 하나를 빠뜨렸습니다 — 다중 교사 증류의 도구호출 표류, 그리고 질량이라는 눈금이 재지 못하는 것](https://pheeree.github.io/2026/10/02/opd-topk-decision-critical-support-omission/)
 - 2026-10-01 — [디코더를 뒤섞은 SAE를 세 지표가 원본과 구별하지 못했습니다 — SAEBench 감사와 눈금이 읽는 부품](https://pheeree.github.io/2026/10/01/sae-benchmark-reliability-audit-decoder-permutation/)
 - 2026-09-29 — [무작위로 굳혀 둔 사전이 거의 같은 점수를 받았습니다 — SAE 평가 네 지표와 냉동 베이스라인](https://pheeree.github.io/2026/09/29/sae-sanity-checks-random-baseline/)
