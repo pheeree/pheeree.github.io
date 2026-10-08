@@ -1,6 +1,33 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-06-fire-opd-trajectory-filter-ablation-audit:
+  title: "교사 로그확률 하나로 버린 하위 20%, 그리고 본문과 순위가 뒤집힌 절제표 — 온폴리시 증류에서 신용 줄 롤아웃과 위치를 고르는 눈금"
+  central:
+    id: "2606.02684"
+    title: "Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation"
+    authors: "Yuying Li 외"
+    keywords: "cs.LG, cs.AI, cs.CL"
+    url: "https://arxiv.org/abs/2606.02684"
+  referenced:
+    - { id: "2503.13657", title: "Why Do Multi-Agent LLM Systems Fail?", authors: "Mert Cemri 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2503.13657" }
+    - { id: "2506.01939", title: "Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning", authors: "Shenzhi Wang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2506.01939" }
+    - { id: "2603.07079", title: "Entropy-Aware On-Policy Distillation of Language Models", authors: "Woogyeol Jin 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2603.07079" }
+    - { id: "2604.10688", title: "SCOPE: Signal-Calibrated On-Policy Distillation Enhancement with Dual-Path Adaptive Weighting", authors: "Binbin Zheng 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.10688" }
+    - { id: "2604.14084", title: "TIP: Token Importance in On-Policy Distillation", authors: "Yuanda Xu 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.14084" }
+    - { id: "2605.07865", title: "KL for a KL: On-Policy Distillation with Control Variate Baseline", authors: "Minjae Oh 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2605.07865" }
+    - { id: "2605.21606", title: "When Are Teacher Tokens Reliable? Position-Weighted On-Policy Self-Distillation for Reasoning", authors: "Xiaogeng Liu 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.21606" }
+    - { id: "2605.26844", title: "Not All Disagreement Is Learnable: Token Teachability in On-Policy Distillation", authors: "Yuanyi Wang 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.26844" }
+    - { id: "2605.27028", title: "Less is More: Early Stopping Rollout for On-Policy Distillation", authors: "Zhou Ziheng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.27028" }
+    - { id: "2606.01039", title: "OPD+: Rethinking the Advantage Design for On-Policy Distillation", authors: "Hanyang Zhao 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.01039" }
+    - { id: "2606.23104", title: "ReNIO: Reweighting Negative Trajectory Importance for LLM On-Policy Distillation", authors: "Chen Lin 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.23104" }
+    - { id: "2606.28562", title: "SEAD: Competence-Aware On-Policy Distillation via Entropy-Guided Supervision", authors: "Chia-Hsuan Lee 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.28562" }
+    - { id: "2608.24696", title: "On-policy Distillation with Verifiable Reward", authors: "Wenze Lin 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2608.24696" }
+    - { id: "2609.04108", title: "Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR", authors: "Boyan Li 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2609.04108" }
+    - { id: "2609.05198", title: "What Matters in On-Policy Distillation? A Perspective on Data Efficiency and Data Selection", authors: "Zhinan Hou 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2609.05198" }
+    - { id: "2609.16937", title: "Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation", authors: "Shiqi Liu 외", keywords: "cs.LG, cs.AI, cs.PL", url: "https://arxiv.org/abs/2609.16937" }
+    - { id: "2609.23697", title: "Distill What You Trust: Reliability-Aware Multi-Teacher On-Policy Distillation", authors: "Jie Sun 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2609.23697" }
+
 2026-10-05-opd-gamma-temporal-credit-reward-sign:
   title: "할인계수 0.99가 고친 국소성과, 검증 보상이 교사에게서 거둬 간 것 — 온폴리시 증류의 시간 축 신용 배정"
   central:

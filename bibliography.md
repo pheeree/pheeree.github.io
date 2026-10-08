@@ -6,6 +6,27 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-06] 교사 로그확률 하나로 버린 하위 20%, 그리고 본문과 순위가 뒤집힌 절제표 — 온폴리시 증류에서 신용 줄 롤아웃과 위치를 고르는 눈금
+
+- **중심**: Yuying Li 외. *Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation*. [arXiv:2606.02684](https://arxiv.org/abs/2606.02684) — 분야: cs.LG, cs.AI, cs.CL
+- Mert Cemri 외. *Why Do Multi-Agent LLM Systems Fail?*. [arXiv:2503.13657](https://arxiv.org/abs/2503.13657) — 분야: cs.AI
+- Shenzhi Wang 외. *Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning*. [arXiv:2506.01939](https://arxiv.org/abs/2506.01939) — 분야: cs.CL, cs.AI, cs.LG
+- Woogyeol Jin 외. *Entropy-Aware On-Policy Distillation of Language Models*. [arXiv:2603.07079](https://arxiv.org/abs/2603.07079) — 분야: cs.LG, cs.CL
+- Binbin Zheng 외. *SCOPE: Signal-Calibrated On-Policy Distillation Enhancement with Dual-Path Adaptive Weighting*. [arXiv:2604.10688](https://arxiv.org/abs/2604.10688) — 분야: cs.LG, cs.AI, cs.CL
+- Yuanda Xu 외. *TIP: Token Importance in On-Policy Distillation*. [arXiv:2604.14084](https://arxiv.org/abs/2604.14084) — 분야: cs.LG, cs.AI
+- Minjae Oh 외. *KL for a KL: On-Policy Distillation with Control Variate Baseline*. [arXiv:2605.07865](https://arxiv.org/abs/2605.07865) — 분야: cs.LG, cs.AI, cs.CL
+- Xiaogeng Liu 외. *When Are Teacher Tokens Reliable? Position-Weighted On-Policy Self-Distillation for Reasoning*. [arXiv:2605.21606](https://arxiv.org/abs/2605.21606) — 분야: cs.LG, cs.AI
+- Yuanyi Wang 외. *Not All Disagreement Is Learnable: Token Teachability in On-Policy Distillation*. [arXiv:2605.26844](https://arxiv.org/abs/2605.26844) — 분야: cs.LG
+- Zhou Ziheng 외. *Less is More: Early Stopping Rollout for On-Policy Distillation*. [arXiv:2605.27028](https://arxiv.org/abs/2605.27028) — 분야: cs.LG, cs.AI
+- Hanyang Zhao 외. *OPD+: Rethinking the Advantage Design for On-Policy Distillation*. [arXiv:2606.01039](https://arxiv.org/abs/2606.01039) — 분야: cs.LG, cs.AI
+- Chen Lin 외. *ReNIO: Reweighting Negative Trajectory Importance for LLM On-Policy Distillation*. [arXiv:2606.23104](https://arxiv.org/abs/2606.23104) — 분야: cs.LG, cs.AI
+- Chia-Hsuan Lee 외. *SEAD: Competence-Aware On-Policy Distillation via Entropy-Guided Supervision*. [arXiv:2606.28562](https://arxiv.org/abs/2606.28562) — 분야: cs.CL
+- Wenze Lin 외. *On-policy Distillation with Verifiable Reward*. [arXiv:2608.24696](https://arxiv.org/abs/2608.24696) — 분야: cs.LG, cs.AI
+- Boyan Li 외. *Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR*. [arXiv:2609.04108](https://arxiv.org/abs/2609.04108) — 분야: cs.CL, cs.AI, cs.LG
+- Zhinan Hou 외. *What Matters in On-Policy Distillation? A Perspective on Data Efficiency and Data Selection*. [arXiv:2609.05198](https://arxiv.org/abs/2609.05198) — 분야: cs.AI
+- Shiqi Liu 외. *Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation*. [arXiv:2609.16937](https://arxiv.org/abs/2609.16937) — 분야: cs.LG, cs.AI, cs.PL
+- Jie Sun 외. *Distill What You Trust: Reliability-Aware Multi-Teacher On-Policy Distillation*. [arXiv:2609.23697](https://arxiv.org/abs/2609.23697) — 분야: cs.CL, cs.LG
+
 ## [2026-10-05] 할인계수 0.99가 고친 국소성과, 검증 보상이 교사에게서 거둬 간 것 — 온폴리시 증류의 시간 축 신용 배정
 
 - **중심**: Shiqi Liu 외. *Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation*. [arXiv:2609.16937](https://arxiv.org/abs/2609.16937) — 분야: cs.LG, cs.AI, cs.PL

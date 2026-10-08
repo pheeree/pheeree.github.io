@@ -13843,5 +13843,90 @@
    "cs.AI",
    "cs.CL"
   ]
+ },
+ "2605.21606": {
+  "title": "When Are Teacher Tokens Reliable? Position-Weighted On-Policy Self-Distillation for Reasoning",
+  "authors": [
+   "Xiaogeng Liu",
+   "Xinyan Wang",
+   "Yingzi Ma",
+   "Yechao Zhang",
+   "Chaowei Xiao"
+  ],
+  "published": "2026-05-20",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2604.10688": {
+  "title": "SCOPE: Signal-Calibrated On-Policy Distillation Enhancement with Dual-Path Adaptive Weighting",
+  "authors": [
+   "Binbin Zheng",
+   "Xing Ma",
+   "Yiheng Liang",
+   "Jingqing Ruan",
+   "Xiaoliang Fu",
+   "Kepeng Lin",
+   "Benchang Zhu",
+   "Ke Zeng",
+   "Xunliang Cai"
+  ],
+  "published": "2026-04-12",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2606.28562": {
+  "title": "SEAD: Competence-Aware On-Policy Distillation via Entropy-Guided Supervision",
+  "authors": [
+   "Chia-Hsuan Lee",
+   "Zelei Cheng",
+   "Yu Wang",
+   "Renkun Ni",
+   "Sambit Sahu",
+   "Shi-Xiong Zhang",
+   "William Campbell"
+  ],
+  "published": "2026-06-26",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2609.23697": {
+  "title": "Distill What You Trust: Reliability-Aware Multi-Teacher On-Policy Distillation",
+  "authors": [
+   "Jie Sun",
+   "Mao Zheng",
+   "Mingyang Song",
+   "Zeyuan Liu",
+   "Gengsheng Li",
+   "Houcheng Jiang",
+   "Yilin Cheng",
+   "Bichuan Feng",
+   "Yuchen Cai",
+   "Junfeng Fang",
+   "Xiang Wang"
+  ],
+  "published": "2026-09-20",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2609.05198": {
+  "title": "What Matters in On-Policy Distillation? A Perspective on Data Efficiency and Data Selection",
+  "authors": [
+   "Zhinan Hou",
+   "Jiaqi Zhang",
+   "Xunliang Cai",
+   "Keyou You"
+  ],
+  "published": "2026-09-04",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }
