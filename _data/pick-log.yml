@@ -1051,3 +1051,20 @@
     새 초안을 작성 — 날짜는 10-06으로 두어 내일 발행 대기.
   switch_notice: false
   branch: null
+- date: 2026-10-08
+  slug: tip-overconfident-token-value-vs-gradient
+  source: PAPER/2604.14084.pdf
+  path: a
+  focus_q: Q9
+  nth: 22
+  purpose: >
+    (a) 10-06 글 '다음 읽을 후보' 첫째 TIP(arXiv:2604.14084)이 미러에 도착, 소스로 쓰인 적 없음.
+    (b) 대기열 0건이었으나 (a)가 사슬을 이었다. 오늘의 목적: Q9 선택 단계의 눈금 —
+    '과신 토큰의 밀도'가 발산의 값인가 훈련 손실의 경사인가, 그리고 표 3·5·8이 그 주장을 어디까지 받치는가.
+    10-06 글의 TIP 서술을 원문에 첫 대조. 발견: 표 5 엔트로피 단독 열(확률 표집)과 Soft-OR(결정적 Top-K)의
+    교락, 무작위 대조군 부재, 탐지(순방향 KL)와 손실(역방향 KL)의 방향 불일치, 역방향 KL 로짓 경사가
+    Q3에서 1-p 규모로 작음(내 계산, 외부 SuRe 초록이 같은 인수분해 보고), nats/정규화 단위 불일치.
+    탐구 에이전트 겹침 2/9, 외부 논문 전부 초록 기준. claim-check: 영어 따옴표 24개 전부 원문 일치(MISS 0),
+    arXiv id 10개 전부 실재, claim_load 발화 없음, 금지 어휘 0. B-3-self-critique는 생략(다섯 기준 충족을 본 세션이 점검).
+  switch_notice: false
+  branch: null
