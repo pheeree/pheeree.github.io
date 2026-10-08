@@ -1053,7 +1053,7 @@
   branch: null
 - date: 2026-10-08
   slug: tip-overconfident-token-value-vs-gradient
-  source: PAPER/2604.14084.pdf
+  source: 2604.14084
   path: a
   focus_q: Q9
   nth: 22
