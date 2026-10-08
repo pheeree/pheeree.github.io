@@ -6,6 +6,19 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-08] 발산은 큰데 경사는 작은 토큰 — TIP 원문으로 다시 잰 온폴리시 증류의 '과신 토큰'과, 그 밀도가 무엇의 밀도인지
+
+- **중심**: Yuanda Xu 외. *TIP: Token Importance in On-Policy Distillation*. [arXiv:2604.14084](https://arxiv.org/abs/2604.14084) — 분야: cs.LG, cs.AI
+- Shenzhi Wang 외. *Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning*. [arXiv:2506.01939](https://arxiv.org/abs/2506.01939) — 분야: cs.CL, cs.AI, cs.LG
+- Athanasios Glentis 외. *Revisiting the Adam-SGD Gap in LLM Pre-Training: The Role of Large Effective Learning Rates*. [arXiv:2605.17787](https://arxiv.org/abs/2605.17787) — 분야: cs.LG
+- Yuanyi Wang 외. *Not All Disagreement Is Learnable: Token Teachability in On-Policy Distillation*. [arXiv:2605.26844](https://arxiv.org/abs/2605.26844) — 분야: cs.LG
+- Zhennan Shen 외. *On the Geometry of On-Policy Distillation*. [arXiv:2606.07082](https://arxiv.org/abs/2606.07082) — 분야: cs.LG, cs.AI
+- Chia-Hsuan Lee 외. *SEAD: Competence-Aware On-Policy Distillation via Entropy-Guided Supervision*. [arXiv:2606.28562](https://arxiv.org/abs/2606.28562) — 분야: cs.CL
+- Outongyi Lv 외. *Which Tokens Matter? Adaptive Token Selection for RLVR with the Relative Surprisal Index*. [arXiv:2606.31575](https://arxiv.org/abs/2606.31575) — 분야: cs.AI
+- Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+- Bing Shao 외. *A Token-Level Analysis of Sampled-Token Reverse-KL On-Policy Distillation*. [arXiv:2608.25643](https://arxiv.org/abs/2608.25643) — 분야: cs.LG, cs.CL
+- Huanxin Sheng 외. *1% of Tokens Can Be Enough: On Gradient Estimation in On-Policy Distillation*. [arXiv:2609.24432](https://arxiv.org/abs/2609.24432) — 분야: cs.LG, cs.CL
+
 ## [2026-10-06] 교사 로그확률 하나로 버린 하위 20%, 그리고 본문과 순위가 뒤집힌 절제표 — 온폴리시 증류에서 신용 줄 롤아웃과 위치를 고르는 눈금
 
 - **중심**: Yuying Li 외. *Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation*. [arXiv:2606.02684](https://arxiv.org/abs/2606.02684) — 분야: cs.LG, cs.AI, cs.CL

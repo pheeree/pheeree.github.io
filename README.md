@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-10-08 — [발산은 큰데 경사는 작은 토큰 — TIP 원문으로 다시 잰 온폴리시 증류의 '과신 토큰'과, 그 밀도가 무엇의 밀도인지](https://pheeree.github.io/2026/10/08/tip-overconfident-token-value-vs-gradient/)
 - 2026-10-06 — [교사 로그확률 하나로 버린 하위 20%, 그리고 본문과 순위가 뒤집힌 절제표 — 온폴리시 증류에서 신용 줄 롤아웃과 위치를 고르는 눈금](https://pheeree.github.io/2026/10/06/fire-opd-trajectory-filter-ablation-audit/)
 - 2026-10-05 — [할인계수 0.99가 고친 국소성과, 검증 보상이 교사에게서 거둬 간 것 — 온폴리시 증류의 시간 축 신용 배정](https://pheeree.github.io/2026/10/05/opd-gamma-temporal-credit-reward-sign/)
 - 2026-10-02 — [교사의 top-32는 질량의 99.99%를 담고도 도구 호출을 말릴 좌표 하나를 빠뜨렸습니다 — 다중 교사 증류의 도구호출 표류, 그리고 질량이라는 눈금이 재지 못하는 것](https://pheeree.github.io/2026/10/02/opd-topk-decision-critical-support-omission/)

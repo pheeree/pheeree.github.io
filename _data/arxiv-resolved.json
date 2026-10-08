@@ -13928,5 +13928,99 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2606.31575": {
+  "title": "Which Tokens Matter? Adaptive Token Selection for RLVR with the Relative Surprisal Index",
+  "authors": [
+   "Outongyi Lv",
+   "Yanzhao Zheng",
+   "Yuanwei Zhang",
+   "Zhenghao Huang",
+   "Xingjun Wang",
+   "Baohua Dong",
+   "Hangcheng Zhu",
+   "Yingda Chen"
+  ],
+  "published": "2026-06-30",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2605.17787": {
+  "title": "Revisiting the Adam-SGD Gap in LLM Pre-Training: The Role of Large Effective Learning Rates",
+  "authors": [
+   "Athanasios Glentis",
+   "Dawei Li",
+   "Chung-Yiu Yau",
+   "Mingyi Hong"
+  ],
+  "published": "2026-05-18",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2608.25643": {
+  "title": "A Token-Level Analysis of Sampled-Token Reverse-KL On-Policy Distillation",
+  "authors": [
+   "Bing Shao",
+   "Jiazheng Zhang",
+   "Long Ma",
+   "Yujiong Shen",
+   "Senjie Jin",
+   "Xin Guo",
+   "Yuming Yang",
+   "Mingxu Chai",
+   "Zhiheng Xi",
+   "Boyang Liu",
+   "Junlin Shang",
+   "Tao Gui",
+   "Qi Zhang",
+   "Xuanjing Huang"
+  ],
+  "published": "2026-08-26",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2606.21994": {
+  "title": "Prefix-Guided On-Policy Distillation: Mining Golden Trajectories from Rollouts",
+  "authors": [
+   "Qingfei Zhao",
+   "Huan Song",
+   "Shuyu Tian",
+   "Jiawei Shao",
+   "Xuelong Li"
+  ],
+  "published": "2026-06-20",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2608.31046": {
+  "title": "Does On-Policy Distillation Really Distill? From Noisy Teacher to Self-Improvement",
+  "authors": [
+   "Yi Ding",
+   "Ruqi Zhang"
+  ],
+  "published": "2026-08-31",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2602.03309": {
+  "title": "Entropy-Gated Selective Policy Optimization:Token-Level Gradient Allocation for Hybrid Training of Large Language Models",
+  "authors": [
+   "Yuelin Hu",
+   "Zhengxue Cheng",
+   "Wei Liu",
+   "Li Song"
+  ],
+  "published": "2026-02-03",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  }
 }
