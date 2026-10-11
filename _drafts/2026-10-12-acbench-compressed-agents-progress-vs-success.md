@@ -137,7 +137,7 @@ Q9의 첫 질문, 국소 대 전역의 갈림이 압축의 보편 성질인가�
 [^t6]: Dong et al. (2025), 부록 표 6(LongGenBench GSM8K/MMLU), Qwen2.5-7B 행; 3B는 표 7(무압축 행 없음). 유지율은 내 계산.
 [^s5]: "most compression methods maintain model performance within a 5% degradation margin, with only magnitude-based pruning showing significant performance deterioration." — Dong et al. (2025), §5.
 [^t10]: Dong et al. (2025), 부록 표 10(WorfBench 평균 F1), Qwen2.5-14B 무압축("-")·AWQ(INT4)·GPTQ(INT4) 행. 하락 비율은 내 계산.
-[^c4]: "AWQ and GPTQ maintaining F1 scores around 0.69-0.71 compared to the base model's 0.72." — Dong et al. (2025), 부록 C.4.
+[^c4]: "AWQ and GPTQ maintaining F1 scores around 0.69-0.71 compared to the base model’s 0.72." — Dong et al. (2025), 부록 C.4.
 [^s72]: "only AWQ and Wanda maintained acceptable performance levels" — Dong et al. (2025), §7.2.
 [^f1]: "DeepSeek-R1-Distilled-Qwen2.5-7B achieves only a 20% average F1 score, substantially lower than the 44% achieved by the undistilled Qwen2.5-7B." — Dong et al. (2025), §5.
 [^teacher]: "the DeepSeek-R1 teacher model used for distillation lacked robust agentic capabilities in its training" — Dong et al. (2025), §7.2.
