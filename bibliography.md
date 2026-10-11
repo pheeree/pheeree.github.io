@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-09] 고를 줄은 아는데 쓸 줄은 모르는 가지치기 모델 — 임베딩·로짓·확률 세 공간의 눈금이 저마다 무엇을 견주는가
+
+- **중심**: Shwai He 외. *Demystifying When Pruning Works via Representation Hierarchies*. [arXiv:2603.24652](https://arxiv.org/abs/2603.24652) — 분야: cs.CL, cs.LG
+- Stephane Ross 외. *A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning*. [arXiv:1011.0686](https://arxiv.org/abs/1011.0686) — 분야: cs.LG, cs.AI, stat.ML
+- Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
+- Safal Shrestha 외. *On the Limits of Layer Pruning for Generative Reasoning in Large Language Models*. [arXiv:2602.01997](https://arxiv.org/abs/2602.01997) — 분야: cs.LG, cs.AI
+- Boyu Shi 외. *Understanding Performance Collapse in Layer-Pruned Large Language Models via Decision Representation Transitions*. [arXiv:2605.07271](https://arxiv.org/abs/2605.07271) — 분야: cs.CL, cs.AI
+- Rui Wen 외. *The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer*. [arXiv:2606.17609](https://arxiv.org/abs/2606.17609) — 분야: cs.CL
+- Qingyu Zhang 외. *ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation*. [arXiv:2607.13124](https://arxiv.org/abs/2607.13124) — 분야: cs.LG, cs.AI, cs.CL
+- Yuanteng Chen 외. *Train Where the Quantized Model Goes: On-Policy Distillation for Low-Bit Reasoning*. [arXiv:2609.26708](https://arxiv.org/abs/2609.26708) — 분야: cs.LG, cs.AI
+
 ## [2026-10-08] 발산은 큰데 경사는 작은 토큰 — TIP 원문으로 다시 잰 온폴리시 증류의 '과신 토큰'과, 그 밀도가 무엇의 밀도인지
 
 - **중심**: Yuanda Xu 외. *TIP: Token Importance in On-Policy Distillation*. [arXiv:2604.14084](https://arxiv.org/abs/2604.14084) — 분야: cs.LG, cs.AI

@@ -1,6 +1,23 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-09-pruning-representation-hierarchy-scorer-vs-generator:
+  title: "고를 줄은 아는데 쓸 줄은 모르는 가지치기 모델 — 임베딩·로짓·확률 세 공간의 눈금이 저마다 무엇을 견주는가"
+  central:
+    id: "2603.24652"
+    title: "Demystifying When Pruning Works via Representation Hierarchies"
+    authors: "Shwai He 외"
+    keywords: "cs.CL, cs.LG"
+    url: "https://arxiv.org/abs/2603.24652"
+  referenced:
+    - { id: "1011.0686", title: "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning", authors: "Stephane Ross 외", keywords: "cs.LG, cs.AI, stat.ML", url: "https://arxiv.org/abs/1011.0686" }
+    - { id: "2310.01382", title: "Compressing LLMs: The Truth is Rarely Pure and Never Simple", authors: "Ajay Jaiswal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2310.01382" }
+    - { id: "2602.01997", title: "On the Limits of Layer Pruning for Generative Reasoning in Large Language Models", authors: "Safal Shrestha 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2602.01997" }
+    - { id: "2605.07271", title: "Understanding Performance Collapse in Layer-Pruned Large Language Models via Decision Representation Transitions", authors: "Boyu Shi 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.07271" }
+    - { id: "2606.17609", title: "The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer", authors: "Rui Wen 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.17609" }
+    - { id: "2607.13124", title: "ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation", authors: "Qingyu Zhang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2607.13124" }
+    - { id: "2609.26708", title: "Train Where the Quantized Model Goes: On-Policy Distillation for Low-Bit Reasoning", authors: "Yuanteng Chen 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2609.26708" }
+
 2026-10-08-tip-overconfident-token-value-vs-gradient:
   title: "발산은 큰데 경사는 작은 토큰 — TIP 원문으로 다시 잰 온폴리시 증류의 '과신 토큰'과, 그 밀도가 무엇의 밀도인지"
   central:

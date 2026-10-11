@@ -14022,5 +14022,75 @@
    "cs.LG",
    "cs.AI"
   ]
+ },
+ "2607.13124": {
+  "title": "ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation",
+  "authors": [
+   "Qingyu Zhang",
+   "Qianhao Yuan",
+   "Hongyu Lin",
+   "Yaojie Lu",
+   "Xianpei Han",
+   "Le Sun",
+   "Ming Xu",
+   "Jiarui Li"
+  ],
+  "published": "2026-07-14",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2606.17609": {
+  "title": "The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer",
+  "authors": [
+   "Rui Wen",
+   "Lu Sun",
+   "Jiayang Liu",
+   "Zesheng Xu",
+   "Tianshuo Cong",
+   "Zheng Li"
+  ],
+  "published": "2026-06-16",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2609.26708": {
+  "title": "Train Where the Quantized Model Goes: On-Policy Distillation for Low-Bit Reasoning",
+  "authors": [
+   "Yuanteng Chen",
+   "Zhilei Liu",
+   "Peisong Wang",
+   "Yuantian Shao",
+   "Chuangyi Li",
+   "Weining Wang",
+   "Shuang Qiu",
+   "Gang Li",
+   "Jing Liu",
+   "Jian Cheng"
+  ],
+  "published": "2026-09-22",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2310.01382": {
+  "title": "Compressing LLMs: The Truth is Rarely Pure and Never Simple",
+  "authors": [
+   "Ajay Jaiswal",
+   "Zhe Gan",
+   "Xianzhi Du",
+   "Bowen Zhang",
+   "Zhangyang Wang",
+   "Yinfei Yang"
+  ],
+  "published": "2023-10-02",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
  }
 }
