@@ -14092,5 +14092,46 @@
    "cs.CL",
    "cs.LG"
   ]
+ },
+ "2610.07781": {
+  "title": "Quantization Effects on Tool-Failure Recovery Vary Across Prompts and Evaluation Designs",
+  "authors": [
+   "Yuhe Hu"
+  ],
+  "published": "2026-10-06",
+  "categories": [
+   "cs.AI",
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2607.27275": {
+  "title": "Flat Score, Amplified Failures: How the Error Budget Masks Damage in Quantized LLM Agents",
+  "authors": [
+   "Jiwon Jang",
+   "Kisu Yang",
+   "Heuiseok Lim",
+   "Hyunwoo Park"
+  ],
+  "published": "2026-07-29",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2505.17612": {
+  "title": "Distilling LLM Agent into Small Models with Retrieval and Code Tools",
+  "authors": [
+   "Minki Kang",
+   "Jongwon Jeong",
+   "Seanie Lee",
+   "Jaewoong Cho",
+   "Sung Ju Hwang"
+  ],
+  "published": "2025-05-23",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
  }
 }
