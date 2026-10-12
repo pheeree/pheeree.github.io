@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-10-12 — [진행은 되는데 끝맺지 못하는 압축 에이전트 — ACBench의 표로 다시 읽은 단답과 연쇄, 그리고 그 갈림이 방법마다 다르다는 것](https://pheeree.github.io/2026/10/12/acbench-compressed-agents-progress-vs-success/)
 - 2026-10-09 — [고를 줄은 아는데 쓸 줄은 모르는 가지치기 모델 — 임베딩·로짓·확률 세 공간의 눈금이 저마다 무엇을 견주는가](https://pheeree.github.io/2026/10/09/pruning-representation-hierarchy-scorer-vs-generator/)
 - 2026-10-08 — [발산은 큰데 경사는 작은 토큰 — TIP 원문으로 다시 잰 온폴리시 증류의 '과신 토큰'과, 그 밀도가 무엇의 밀도인지](https://pheeree.github.io/2026/10/08/tip-overconfident-token-value-vs-gradient/)
 - 2026-10-06 — [교사 로그확률 하나로 버린 하위 20%, 그리고 본문과 순위가 뒤집힌 절제표 — 온폴리시 증류에서 신용 줄 롤아웃과 위치를 고르는 눈금](https://pheeree.github.io/2026/10/06/fire-opd-trajectory-filter-ablation-audit/)

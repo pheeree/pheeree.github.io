@@ -6,6 +6,21 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-12] 진행은 되는데 끝맺지 못하는 압축 에이전트 — ACBench의 표로 다시 읽은 단답과 연쇄, 그리고 그 갈림이 방법마다 다르다는 것
+
+- **중심**: Peijie Dong 외. *Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression*. [arXiv:2505.19433](https://arxiv.org/abs/2505.19433) — 분야: cs.LG
+- Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
+- Minki Kang 외. *Distilling LLM Agent into Small Models with Retrieval and Code Tools*. [arXiv:2505.17612](https://arxiv.org/abs/2505.17612) — 분야: cs.CL, cs.AI
+- Safal Shrestha 외. *On the Limits of Layer Pruning for Generative Reasoning in Large Language Models*. [arXiv:2602.01997](https://arxiv.org/abs/2602.01997) — 분야: cs.LG, cs.AI
+- Mingyang Song, Mao Zheng. *A Survey of On-Policy Distillation for Large Language Models*. [arXiv:2604.00626](https://arxiv.org/abs/2604.00626) — 분야: cs.LG, cs.CL
+- Diego Coello de Portugal Mecke 외. *Prune, Update and Trim: Robust Structured Pruning for Large Language Models*. [arXiv:2605.18331](https://arxiv.org/abs/2605.18331) — 분야: cs.LG
+- Sanae Lotfi 외. *Quantized Reasoning Models Think They Need to Think Longer, but They Do Not*. [arXiv:2606.00206](https://arxiv.org/abs/2606.00206) — 분야: cs.LG
+- Rui Wen 외. *The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer*. [arXiv:2606.17609](https://arxiv.org/abs/2606.17609) — 분야: cs.CL
+- Qingyu Zhang 외. *ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation*. [arXiv:2607.13124](https://arxiv.org/abs/2607.13124) — 분야: cs.LG, cs.AI, cs.CL
+- Jiwon Jang 외. *Flat Score, Amplified Failures: How the Error Budget Masks Damage in Quantized LLM Agents*. [arXiv:2607.27275](https://arxiv.org/abs/2607.27275) — 분야: cs.LG, cs.AI
+- Chishui Chen 외. *Look Ahead Before You Distill: Future Trajectory Validation of Teacher Guidance for Agentic On-Policy Distillation*. [arXiv:2608.01953](https://arxiv.org/abs/2608.01953) — 분야: cs.CL, cs.LG
+- Yuhe Hu. *Quantization Effects on Tool-Failure Recovery Vary Across Prompts and Evaluation Designs*. [arXiv:2610.07781](https://arxiv.org/abs/2610.07781) — 분야: cs.AI, cs.CL, cs.LG
+
 ## [2026-10-09] 고를 줄은 아는데 쓸 줄은 모르는 가지치기 모델 — 임베딩·로짓·확률 세 공간의 눈금이 저마다 무엇을 견주는가
 
 - **중심**: Shwai He 외. *Demystifying When Pruning Works via Representation Hierarchies*. [arXiv:2603.24652](https://arxiv.org/abs/2603.24652) — 분야: cs.CL, cs.LG

@@ -1,6 +1,27 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-12-acbench-compressed-agents-progress-vs-success:
+  title: "진행은 되는데 끝맺지 못하는 압축 에이전트 — ACBench의 표로 다시 읽은 단답과 연쇄, 그리고 그 갈림이 방법마다 다르다는 것"
+  central:
+    id: "2505.19433"
+    title: "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+    authors: "Peijie Dong 외"
+    keywords: "cs.LG"
+    url: "https://arxiv.org/abs/2505.19433"
+  referenced:
+    - { id: "2310.01382", title: "Compressing LLMs: The Truth is Rarely Pure and Never Simple", authors: "Ajay Jaiswal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2310.01382" }
+    - { id: "2505.17612", title: "Distilling LLM Agent into Small Models with Retrieval and Code Tools", authors: "Minki Kang 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2505.17612" }
+    - { id: "2602.01997", title: "On the Limits of Layer Pruning for Generative Reasoning in Large Language Models", authors: "Safal Shrestha 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2602.01997" }
+    - { id: "2604.00626", title: "A Survey of On-Policy Distillation for Large Language Models", authors: "Mingyang Song, Mao Zheng", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2604.00626" }
+    - { id: "2605.18331", title: "Prune, Update and Trim: Robust Structured Pruning for Large Language Models", authors: "Diego Coello de Portugal Mecke 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.18331" }
+    - { id: "2606.00206", title: "Quantized Reasoning Models Think They Need to Think Longer, but They Do Not", authors: "Sanae Lotfi 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.00206" }
+    - { id: "2606.17609", title: "The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer", authors: "Rui Wen 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.17609" }
+    - { id: "2607.13124", title: "ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation", authors: "Qingyu Zhang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2607.13124" }
+    - { id: "2607.27275", title: "Flat Score, Amplified Failures: How the Error Budget Masks Damage in Quantized LLM Agents", authors: "Jiwon Jang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2607.27275" }
+    - { id: "2608.01953", title: "Look Ahead Before You Distill: Future Trajectory Validation of Teacher Guidance for Agentic On-Policy Distillation", authors: "Chishui Chen 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2608.01953" }
+    - { id: "2610.07781", title: "Quantization Effects on Tool-Failure Recovery Vary Across Prompts and Evaluation Designs", authors: "Yuhe Hu", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2610.07781" }
+
 2026-10-09-pruning-representation-hierarchy-scorer-vs-generator:
   title: "고를 줄은 아는데 쓸 줄은 모르는 가지치기 모델 — 임베딩·로짓·확률 세 공간의 눈금이 저마다 무엇을 견주는가"
   central:
