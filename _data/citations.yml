@@ -1,6 +1,25 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-13-quantized-reasoning-overthinking-commit-failure:
+  title: "멈추지 못하는 양자화 추론 모델 — '정답에 닿고도 놓친' 52%의 분모와, 그 몫을 걷어냈을 때 돌아오는 정확도"
+  central:
+    id: "2606.00206"
+    title: "Quantized Reasoning Models Think They Need to Think Longer, but They Do Not"
+    authors: "Sanae Lotfi 외"
+    keywords: "cs.LG"
+    url: "https://arxiv.org/abs/2606.00206"
+  referenced:
+    - { id: "2506.08343", title: "Wait, We Don't Need to \"Wait\"! Removing Thinking Tokens Improves Reasoning Efficiency", authors: "Chenlong Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2506.08343" }
+    - { id: "2508.05337", title: "Efficient Reasoning for Large Reasoning Language Models via Certainty-Guided Reflection Suppression", authors: "Jiameng Huang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2508.05337" }
+    - { id: "2602.02010", title: "NEAT: Neuron-Based Early Exit for Large Reasoning Models", authors: "Kang Liu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2602.02010" }
+    - { id: "2606.02011", title: "Extreme Low-Bit Inference in Reasoning Models: Failure Modes and Targeted Recovery", authors: "Ekaterina Alimaskina 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2606.02011" }
+    - { id: "2606.15682", title: "ReQAT: Achieving Full-Precision Reasoning Accuracy with 4-bit Floating-Point Quantization-Aware Training", authors: "Janghwan Lee 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.15682" }
+    - { id: "2606.17609", title: "The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer", authors: "Rui Wen 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.17609" }
+    - { id: "2607.09999", title: "Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts", authors: "Renuka Oladri 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2607.09999" }
+    - { id: "2607.16237", title: "Quantizing Recursive Reasoning Models", authors: "Thorir Mar Ingolfsson 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2607.16237" }
+    - { id: "2610.07781", title: "Quantization Effects on Tool-Failure Recovery Vary Across Prompts and Evaluation Designs", authors: "Yuhe Hu", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2610.07781" }
+
 2026-10-12-acbench-compressed-agents-progress-vs-success:
   title: "진행은 되는데 끝맺지 못하는 압축 에이전트 — ACBench의 표로 다시 읽은 단답과 연쇄, 그리고 그 갈림이 방법마다 다르다는 것"
   central:

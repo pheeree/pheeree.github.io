@@ -6,6 +6,19 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-13] 멈추지 못하는 양자화 추론 모델 — '정답에 닿고도 놓친' 52%의 분모와, 그 몫을 걷어냈을 때 돌아오는 정확도
+
+- **중심**: Sanae Lotfi 외. *Quantized Reasoning Models Think They Need to Think Longer, but They Do Not*. [arXiv:2606.00206](https://arxiv.org/abs/2606.00206) — 분야: cs.LG
+- Chenlong Wang 외. *Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves Reasoning Efficiency*. [arXiv:2506.08343](https://arxiv.org/abs/2506.08343) — 분야: cs.CL
+- Jiameng Huang 외. *Efficient Reasoning for Large Reasoning Language Models via Certainty-Guided Reflection Suppression*. [arXiv:2508.05337](https://arxiv.org/abs/2508.05337) — 분야: cs.CL, cs.AI, cs.LG
+- Kang Liu 외. *NEAT: Neuron-Based Early Exit for Large Reasoning Models*. [arXiv:2602.02010](https://arxiv.org/abs/2602.02010) — 분야: cs.CL
+- Ekaterina Alimaskina 외. *Extreme Low-Bit Inference in Reasoning Models: Failure Modes and Targeted Recovery*. [arXiv:2606.02011](https://arxiv.org/abs/2606.02011) — 분야: cs.AI, cs.LG
+- Janghwan Lee 외. *ReQAT: Achieving Full-Precision Reasoning Accuracy with 4-bit Floating-Point Quantization-Aware Training*. [arXiv:2606.15682](https://arxiv.org/abs/2606.15682) — 분야: cs.LG
+- Rui Wen 외. *The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer*. [arXiv:2606.17609](https://arxiv.org/abs/2606.17609) — 분야: cs.CL
+- Renuka Oladri 외. *Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts*. [arXiv:2607.09999](https://arxiv.org/abs/2607.09999) — 분야: cs.CL, cs.LG
+- Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+- Yuhe Hu. *Quantization Effects on Tool-Failure Recovery Vary Across Prompts and Evaluation Designs*. [arXiv:2610.07781](https://arxiv.org/abs/2610.07781) — 분야: cs.AI, cs.CL, cs.LG
+
 ## [2026-10-12] 진행은 되는데 끝맺지 못하는 압축 에이전트 — ACBench의 표로 다시 읽은 단답과 연쇄, 그리고 그 갈림이 방법마다 다르다는 것
 
 - **중심**: Peijie Dong 외. *Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression*. [arXiv:2505.19433](https://arxiv.org/abs/2505.19433) — 분야: cs.LG

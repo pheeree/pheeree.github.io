@@ -14133,5 +14133,67 @@
    "cs.CL",
    "cs.AI"
   ]
+ },
+ "2506.08343": {
+  "title": "Wait, We Don't Need to \"Wait\"! Removing Thinking Tokens Improves Reasoning Efficiency",
+  "authors": [
+   "Chenlong Wang",
+   "Yuanning Feng",
+   "Dongping Chen",
+   "Zhaoyang Chu",
+   "Ranjay Krishna",
+   "Tianyi Zhou"
+  ],
+  "published": "2025-06-10",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2607.09999": {
+  "title": "Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts",
+  "authors": [
+   "Renuka Oladri",
+   "Mohan Vamsi Varadaraju Priya",
+   "Jerry Wu"
+  ],
+  "published": "2026-07-10",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2602.02010": {
+  "title": "NEAT: Neuron-Based Early Exit for Large Reasoning Models",
+  "authors": [
+   "Kang Liu",
+   "Yongkang Liu",
+   "Xiaocui Yang",
+   "Peidong Wang",
+   "Wen Zhang",
+   "Shi Feng",
+   "Yifei Zhang",
+   "Daling Wang"
+  ],
+  "published": "2026-02-02",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2508.05337": {
+  "title": "Efficient Reasoning for Large Reasoning Language Models via Certainty-Guided Reflection Suppression",
+  "authors": [
+   "Jiameng Huang",
+   "Baijiong Lin",
+   "Guhao Feng",
+   "Jierun Chen",
+   "Di He",
+   "Lu Hou"
+  ],
+  "published": "2025-08-07",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
  }
 }
