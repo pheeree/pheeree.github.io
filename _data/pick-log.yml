@@ -1127,3 +1127,17 @@
     외부 논문은 전부 초록·검색 요약 기준. B-3-self-critique는 다섯 기준 충족으로 생략(본 세션 점검).
   switch_notice: false
   branch: null
+- date: 2026-10-14
+  slug: putri-structured-pruning-perplexity-vs-chance
+  source: 2605.18331
+  path: a
+  focus_q: Q9
+  nth: 26
+  purpose: >
+    (a) 10-13 글 후보 다섯 편은 전부 미러 미도착, 10-12 글 다섯째 후보 둘(2604.00626 OPD 서베이·2605.18331 Putri)이
+    미러 도착·미사용이라 그중 Q9 질문 2에 닿는 Putri를 픽 — 조타 픽이지만 후보 순위는 낮았던 것(연결 약하다고 적힌 칸).
+    (b) 대기열 0건. 오늘의 목적: Q9 질문 2(붕괴가 MLP 쪽인가 어텐션 쪽인가)를 구조적 가지치기에서 — Putri 절제
+    (FFN 갱신 제거가 가장 큰 손실, 어텐션은 헤드 단위 대 층 단위 차이가 고희소도에서만)로 시험하고, 질문 1·4(유한
+    퍼플렉시티가 '가능'의 판정 기준이 될 때 표 3의 객관식은 50%에서 이미 MMLU·ARC-C가 우연 수준)를 재기.
+  switch_notice: false
+  branch: null
