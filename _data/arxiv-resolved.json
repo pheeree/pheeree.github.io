@@ -14197,45 +14197,141 @@
   ]
  },
  "2410.07461": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Is C4 Dataset Optimal for Pruning? An Investigation of Calibration Data for LLM Pruning",
+  "authors": [
+   "Abhinav Bandari",
+   "Lu Yin",
+   "Cheng-Yu Hsieh",
+   "Ajay Kumar Jaiswal",
+   "Tianlong Chen",
+   "Li Shen",
+   "Ranjay Krishna",
+   "Shiwei Liu"
+  ],
+  "published": "2024-10-09",
+  "categories": [
+   "cs.CL"
+  ]
  },
  "2301.00774": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot",
+  "authors": [
+   "Elias Frantar",
+   "Dan Alistarh"
+  ],
+  "published": "2023-01-02",
+  "categories": [
+   "cs.LG"
+  ]
  },
  "2604.19398": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "GRASPrune: Global Gating for Budgeted Structured Pruning of Large Language Models",
+  "authors": [
+   "Ziyang Wang",
+   "Jiangfeng Xiao",
+   "Chuan Xiao",
+   "Ruoxiang Li",
+   "Rui Mao",
+   "Jianbin Qin"
+  ],
+  "published": "2026-04-21",
+  "categories": [
+   "cs.AI"
+  ]
  },
  "2406.15524": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Rethinking Pruning Large Language Models: Benefits and Pitfalls of Reconstruction Error Minimization",
+  "authors": [
+   "Sungbin Shin",
+   "Wonpyo Park",
+   "Jaeho Lee",
+   "Namhoon Lee"
+  ],
+  "published": "2024-06-21",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
  },
  "2406.15786": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "What Matters in Transformers? Not All Attention is Needed",
+  "authors": [
+   "Shwai He",
+   "Guoheng Sun",
+   "Zheyu Shen",
+   "Ang Li"
+  ],
+  "published": "2024-06-22",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  },
  "2512.13886": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "OPTIMA: Optimal One-shot Pruning for LLMs via Quadratic Programming Reconstruction",
+  "authors": [
+   "Mohammad Mozaffari",
+   "Samuel Kushnir",
+   "Maryam Mehri Dehnavi",
+   "Amir Yazdanbakhsh"
+  ],
+  "published": "2025-12-15",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.PF"
+  ]
  },
  "2510.14444": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "A Free Lunch in LLM Compression: Revisiting Retraining after Pruning",
+  "authors": [
+   "Moritz Wagner",
+   "Christophe Roux",
+   "Max Zimmer",
+   "Sebastian Pokutta"
+  ],
+  "published": "2025-10-16",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2604.25110": {
+  "title": "Knowledge Distillation Must Account for What It Loses",
+  "authors": [
+   "Wenshuo Wang"
+  ],
+  "published": "2026-04-28",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "1905.10617": {
+  "title": "Exposure Bias versus Self-Recovery: Are Distortions Really Incremental for Autoregressive Text Generation?",
+  "authors": [
+   "Tianxing He",
+   "Jingzhao Zhang",
+   "Zhiming Zhou",
+   "James Glass"
+  ],
+  "published": "2019-05-25",
+  "categories": [
+   "cs.LG",
+   "cs.CL",
+   "stat.ML"
+  ]
+ },
+ "2005.03642": {
+  "title": "On Exposure Bias, Hallucination and Domain Shift in Neural Machine Translation",
+  "authors": [
+   "Chaojun Wang",
+   "Rico Sennrich"
+  ],
+  "published": "2020-05-07",
+  "categories": [
+   "cs.CL"
+  ]
  }
 }

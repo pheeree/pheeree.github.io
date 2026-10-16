@@ -1,6 +1,26 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-16-opd-survey-off-metric-loss-local-global:
+  title: "증류가 남긴 것과 잃은 것 — OPD 서베이의 제곱 오차, 뒤쪽 토큰, 그리고 범위 밖으로 뺀 압축"
+  central:
+    id: "2604.00626"
+    title: "A Survey of On-Policy Distillation for Large Language Models"
+    authors: "Mingyang Song, Mao Zheng"
+    keywords: "cs.LG, cs.CL"
+    url: "https://arxiv.org/abs/2604.00626"
+  referenced:
+    - { id: "1905.10617", title: "Exposure Bias versus Self-Recovery: Are Distortions Really Incremental for Autoregressive Text Generation?", authors: "Tianxing He 외", keywords: "cs.LG, cs.CL, stat.ML", url: "https://arxiv.org/abs/1905.10617" }
+    - { id: "2005.03642", title: "On Exposure Bias, Hallucination and Domain Shift in Neural Machine Translation", authors: "Chaojun Wang, Rico Sennrich", keywords: "cs.CL", url: "https://arxiv.org/abs/2005.03642" }
+    - { id: "2310.01382", title: "Compressing LLMs: The Truth is Rarely Pure and Never Simple", authors: "Ajay Jaiswal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2310.01382" }
+    - { id: "2510.18030", title: "From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models", authors: "Ziyan Wang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2510.18030" }
+    - { id: "2604.25110", title: "Knowledge Distillation Must Account for What It Loses", authors: "Wenshuo Wang", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.25110" }
+    - { id: "2605.13643", title: "Prefix Teach, Suffix Fade: Local Teachability Collapse in Strong-to-Weak On-Policy Distillation", authors: "Kaiyuan Liu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.13643" }
+    - { id: "2606.02011", title: "Extreme Low-Bit Inference in Reasoning Models: Failure Modes and Targeted Recovery", authors: "Ekaterina Alimaskina 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2606.02011" }
+    - { id: "2606.17609", title: "The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer", authors: "Rui Wen 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.17609" }
+    - { id: "2607.13124", title: "ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation", authors: "Qingyu Zhang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2607.13124" }
+    - { id: "2609.26708", title: "Train Where the Quantized Model Goes: On-Policy Distillation for Low-Bit Reasoning", authors: "Yuanteng Chen 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2609.26708" }
+
 2026-10-14-putri-structured-pruning-perplexity-vs-chance:
   title: "퍼플렉시티는 유한한데 객관식은 우연인 가지치기 모델 — Putri의 '95%가 가능하다'가 실제로 재는 것"
   central:
@@ -10,16 +30,16 @@
     keywords: "cs.LG"
     url: "https://arxiv.org/abs/2605.18331"
   referenced:
-    - { id: "2301.00774", url: "https://arxiv.org/abs/2301.00774" }
+    - { id: "2301.00774", title: "SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot", authors: "Elias Frantar, Dan Alistarh", keywords: "cs.LG", url: "https://arxiv.org/abs/2301.00774" }
     - { id: "2310.01382", title: "Compressing LLMs: The Truth is Rarely Pure and Never Simple", authors: "Ajay Jaiswal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2310.01382" }
     - { id: "2401.15024", title: "SliceGPT: Compress Large Language Models by Deleting Rows and Columns", authors: "Saleh Ashkboos 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2401.15024" }
-    - { id: "2406.15524", url: "https://arxiv.org/abs/2406.15524" }
-    - { id: "2406.15786", url: "https://arxiv.org/abs/2406.15786" }
-    - { id: "2410.07461", url: "https://arxiv.org/abs/2410.07461" }
-    - { id: "2510.14444", url: "https://arxiv.org/abs/2510.14444" }
+    - { id: "2406.15524", title: "Rethinking Pruning Large Language Models: Benefits and Pitfalls of Reconstruction Error Minimization", authors: "Sungbin Shin 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2406.15524" }
+    - { id: "2406.15786", title: "What Matters in Transformers? Not All Attention is Needed", authors: "Shwai He 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2406.15786" }
+    - { id: "2410.07461", title: "Is C4 Dataset Optimal for Pruning? An Investigation of Calibration Data for LLM Pruning", authors: "Abhinav Bandari 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2410.07461" }
+    - { id: "2510.14444", title: "A Free Lunch in LLM Compression: Revisiting Retraining after Pruning", authors: "Moritz Wagner 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2510.14444" }
     - { id: "2510.18030", title: "From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models", authors: "Ziyan Wang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2510.18030" }
-    - { id: "2512.13886", url: "https://arxiv.org/abs/2512.13886" }
-    - { id: "2604.19398", url: "https://arxiv.org/abs/2604.19398" }
+    - { id: "2512.13886", title: "OPTIMA: Optimal One-shot Pruning for LLMs via Quadratic Programming Reconstruction", authors: "Mohammad Mozaffari 외", keywords: "cs.LG, cs.AI, cs.PF", url: "https://arxiv.org/abs/2512.13886" }
+    - { id: "2604.19398", title: "GRASPrune: Global Gating for Budgeted Structured Pruning of Large Language Models", authors: "Ziyang Wang 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2604.19398" }
     - { id: "2606.02011", title: "Extreme Low-Bit Inference in Reasoning Models: Failure Modes and Targeted Recovery", authors: "Ekaterina Alimaskina 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2606.02011" }
     - { id: "2606.15682", title: "ReQAT: Achieving Full-Precision Reasoning Accuracy with 4-bit Floating-Point Quantization-Aware Training", authors: "Janghwan Lee 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.15682" }
     - { id: "2606.17609", title: "The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer", authors: "Rui Wen 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.17609" }

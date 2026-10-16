@@ -6,19 +6,33 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-16] 증류가 남긴 것과 잃은 것 — OPD 서베이의 제곱 오차, 뒤쪽 토큰, 그리고 범위 밖으로 뺀 압축
+
+- **중심**: Mingyang Song, Mao Zheng. *A Survey of On-Policy Distillation for Large Language Models*. [arXiv:2604.00626](https://arxiv.org/abs/2604.00626) — 분야: cs.LG, cs.CL
+- Tianxing He 외. *Exposure Bias versus Self-Recovery: Are Distortions Really Incremental for Autoregressive Text Generation?*. [arXiv:1905.10617](https://arxiv.org/abs/1905.10617) — 분야: cs.LG, cs.CL, stat.ML
+- Chaojun Wang, Rico Sennrich. *On Exposure Bias, Hallucination and Domain Shift in Neural Machine Translation*. [arXiv:2005.03642](https://arxiv.org/abs/2005.03642) — 분야: cs.CL
+- Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
+- Ziyan Wang 외. *From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models*. [arXiv:2510.18030](https://arxiv.org/abs/2510.18030) — 분야: cs.CL, cs.AI, cs.LG
+- Wenshuo Wang. *Knowledge Distillation Must Account for What It Loses*. [arXiv:2604.25110](https://arxiv.org/abs/2604.25110) — 분야: cs.LG, cs.AI
+- Kaiyuan Liu 외. *Prefix Teach, Suffix Fade: Local Teachability Collapse in Strong-to-Weak On-Policy Distillation*. [arXiv:2605.13643](https://arxiv.org/abs/2605.13643) — 분야: cs.CL
+- Ekaterina Alimaskina 외. *Extreme Low-Bit Inference in Reasoning Models: Failure Modes and Targeted Recovery*. [arXiv:2606.02011](https://arxiv.org/abs/2606.02011) — 분야: cs.AI, cs.LG
+- Rui Wen 외. *The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer*. [arXiv:2606.17609](https://arxiv.org/abs/2606.17609) — 분야: cs.CL
+- Qingyu Zhang 외. *ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation*. [arXiv:2607.13124](https://arxiv.org/abs/2607.13124) — 분야: cs.LG, cs.AI, cs.CL
+- Yuanteng Chen 외. *Train Where the Quantized Model Goes: On-Policy Distillation for Low-Bit Reasoning*. [arXiv:2609.26708](https://arxiv.org/abs/2609.26708) — 분야: cs.LG, cs.AI
+
 ## [2026-10-14] 퍼플렉시티는 유한한데 객관식은 우연인 가지치기 모델 — Putri의 '95%가 가능하다'가 실제로 재는 것
 
 - **중심**: Diego Coello de Portugal Mecke 외. *Prune, Update and Trim: Robust Structured Pruning for Large Language Models*. [arXiv:2605.18331](https://arxiv.org/abs/2605.18331) — 분야: cs.LG
-- [arXiv:2301.00774](https://arxiv.org/abs/2301.00774)
+- Elias Frantar, Dan Alistarh. *SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot*. [arXiv:2301.00774](https://arxiv.org/abs/2301.00774) — 분야: cs.LG
 - Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
 - Saleh Ashkboos 외. *SliceGPT: Compress Large Language Models by Deleting Rows and Columns*. [arXiv:2401.15024](https://arxiv.org/abs/2401.15024) — 분야: cs.LG, cs.CL
-- [arXiv:2406.15524](https://arxiv.org/abs/2406.15524)
-- [arXiv:2406.15786](https://arxiv.org/abs/2406.15786)
-- [arXiv:2410.07461](https://arxiv.org/abs/2410.07461)
-- [arXiv:2510.14444](https://arxiv.org/abs/2510.14444)
+- Sungbin Shin 외. *Rethinking Pruning Large Language Models: Benefits and Pitfalls of Reconstruction Error Minimization*. [arXiv:2406.15524](https://arxiv.org/abs/2406.15524) — 분야: cs.CL, cs.LG
+- Shwai He 외. *What Matters in Transformers? Not All Attention is Needed*. [arXiv:2406.15786](https://arxiv.org/abs/2406.15786) — 분야: cs.LG, cs.AI, cs.CL
+- Abhinav Bandari 외. *Is C4 Dataset Optimal for Pruning? An Investigation of Calibration Data for LLM Pruning*. [arXiv:2410.07461](https://arxiv.org/abs/2410.07461) — 분야: cs.CL
+- Moritz Wagner 외. *A Free Lunch in LLM Compression: Revisiting Retraining after Pruning*. [arXiv:2510.14444](https://arxiv.org/abs/2510.14444) — 분야: cs.LG, cs.AI
 - Ziyan Wang 외. *From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models*. [arXiv:2510.18030](https://arxiv.org/abs/2510.18030) — 분야: cs.CL, cs.AI, cs.LG
-- [arXiv:2512.13886](https://arxiv.org/abs/2512.13886)
-- [arXiv:2604.19398](https://arxiv.org/abs/2604.19398)
+- Mohammad Mozaffari 외. *OPTIMA: Optimal One-shot Pruning for LLMs via Quadratic Programming Reconstruction*. [arXiv:2512.13886](https://arxiv.org/abs/2512.13886) — 분야: cs.LG, cs.AI, cs.PF
+- Ziyang Wang 외. *GRASPrune: Global Gating for Budgeted Structured Pruning of Large Language Models*. [arXiv:2604.19398](https://arxiv.org/abs/2604.19398) — 분야: cs.AI
 - Ekaterina Alimaskina 외. *Extreme Low-Bit Inference in Reasoning Models: Failure Modes and Targeted Recovery*. [arXiv:2606.02011](https://arxiv.org/abs/2606.02011) — 분야: cs.AI, cs.LG
 - Janghwan Lee 외. *ReQAT: Achieving Full-Precision Reasoning Accuracy with 4-bit Floating-Point Quantization-Aware Training*. [arXiv:2606.15682](https://arxiv.org/abs/2606.15682) — 분야: cs.LG
 - Rui Wen 외. *The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer*. [arXiv:2606.17609](https://arxiv.org/abs/2606.17609) — 분야: cs.CL
