@@ -1,6 +1,32 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-14-putri-structured-pruning-perplexity-vs-chance:
+  title: "퍼플렉시티는 유한한데 객관식은 우연인 가지치기 모델 — Putri의 '95%가 가능하다'가 실제로 재는 것"
+  central:
+    id: "2605.18331"
+    title: "Prune, Update and Trim: Robust Structured Pruning for Large Language Models"
+    authors: "Diego Coello de Portugal Mecke 외"
+    keywords: "cs.LG"
+    url: "https://arxiv.org/abs/2605.18331"
+  referenced:
+    - { id: "2301.00774", url: "https://arxiv.org/abs/2301.00774" }
+    - { id: "2310.01382", title: "Compressing LLMs: The Truth is Rarely Pure and Never Simple", authors: "Ajay Jaiswal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2310.01382" }
+    - { id: "2401.15024", title: "SliceGPT: Compress Large Language Models by Deleting Rows and Columns", authors: "Saleh Ashkboos 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2401.15024" }
+    - { id: "2406.15524", url: "https://arxiv.org/abs/2406.15524" }
+    - { id: "2406.15786", url: "https://arxiv.org/abs/2406.15786" }
+    - { id: "2410.07461", url: "https://arxiv.org/abs/2410.07461" }
+    - { id: "2510.14444", url: "https://arxiv.org/abs/2510.14444" }
+    - { id: "2510.18030", title: "From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models", authors: "Ziyan Wang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2510.18030" }
+    - { id: "2512.13886", url: "https://arxiv.org/abs/2512.13886" }
+    - { id: "2604.19398", url: "https://arxiv.org/abs/2604.19398" }
+    - { id: "2606.02011", title: "Extreme Low-Bit Inference in Reasoning Models: Failure Modes and Targeted Recovery", authors: "Ekaterina Alimaskina 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2606.02011" }
+    - { id: "2606.15682", title: "ReQAT: Achieving Full-Precision Reasoning Accuracy with 4-bit Floating-Point Quantization-Aware Training", authors: "Janghwan Lee 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.15682" }
+    - { id: "2606.17609", title: "The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer", authors: "Rui Wen 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.17609" }
+    - { id: "2607.09999", title: "Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts", authors: "Renuka Oladri 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2607.09999" }
+    - { id: "2607.22583", title: "Multi-Objective Structured Pruning of LLMs for Latency and Model Size Optimization", authors: "Muhammad Junaid Ali 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2607.22583" }
+    - { id: "2610.07781", title: "Quantization Effects on Tool-Failure Recovery Vary Across Prompts and Evaluation Designs", authors: "Yuhe Hu", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2610.07781" }
+
 2026-10-13-quantized-reasoning-overthinking-commit-failure:
   title: "멈추지 못하는 양자화 추론 모델 — '정답에 닿고도 놓친' 52%의 분모와, 그 몫을 걷어냈을 때 돌아오는 정확도"
   central:

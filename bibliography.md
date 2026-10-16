@@ -6,6 +6,26 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-14] 퍼플렉시티는 유한한데 객관식은 우연인 가지치기 모델 — Putri의 '95%가 가능하다'가 실제로 재는 것
+
+- **중심**: Diego Coello de Portugal Mecke 외. *Prune, Update and Trim: Robust Structured Pruning for Large Language Models*. [arXiv:2605.18331](https://arxiv.org/abs/2605.18331) — 분야: cs.LG
+- [arXiv:2301.00774](https://arxiv.org/abs/2301.00774)
+- Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
+- Saleh Ashkboos 외. *SliceGPT: Compress Large Language Models by Deleting Rows and Columns*. [arXiv:2401.15024](https://arxiv.org/abs/2401.15024) — 분야: cs.LG, cs.CL
+- [arXiv:2406.15524](https://arxiv.org/abs/2406.15524)
+- [arXiv:2406.15786](https://arxiv.org/abs/2406.15786)
+- [arXiv:2410.07461](https://arxiv.org/abs/2410.07461)
+- [arXiv:2510.14444](https://arxiv.org/abs/2510.14444)
+- Ziyan Wang 외. *From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models*. [arXiv:2510.18030](https://arxiv.org/abs/2510.18030) — 분야: cs.CL, cs.AI, cs.LG
+- [arXiv:2512.13886](https://arxiv.org/abs/2512.13886)
+- [arXiv:2604.19398](https://arxiv.org/abs/2604.19398)
+- Ekaterina Alimaskina 외. *Extreme Low-Bit Inference in Reasoning Models: Failure Modes and Targeted Recovery*. [arXiv:2606.02011](https://arxiv.org/abs/2606.02011) — 분야: cs.AI, cs.LG
+- Janghwan Lee 외. *ReQAT: Achieving Full-Precision Reasoning Accuracy with 4-bit Floating-Point Quantization-Aware Training*. [arXiv:2606.15682](https://arxiv.org/abs/2606.15682) — 분야: cs.LG
+- Rui Wen 외. *The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer*. [arXiv:2606.17609](https://arxiv.org/abs/2606.17609) — 분야: cs.CL
+- Renuka Oladri 외. *Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts*. [arXiv:2607.09999](https://arxiv.org/abs/2607.09999) — 분야: cs.CL, cs.LG
+- Muhammad Junaid Ali 외. *Multi-Objective Structured Pruning of LLMs for Latency and Model Size Optimization*. [arXiv:2607.22583](https://arxiv.org/abs/2607.22583) — 분야: cs.AI, cs.CL
+- Yuhe Hu. *Quantization Effects on Tool-Failure Recovery Vary Across Prompts and Evaluation Designs*. [arXiv:2610.07781](https://arxiv.org/abs/2610.07781) — 분야: cs.AI, cs.CL, cs.LG
+
 ## [2026-10-13] 멈추지 못하는 양자화 추론 모델 — '정답에 닿고도 놓친' 52%의 분모와, 그 몫을 걷어냈을 때 돌아오는 정확도
 
 - **중심**: Sanae Lotfi 외. *Quantized Reasoning Models Think They Need to Think Longer, but They Do Not*. [arXiv:2606.00206](https://arxiv.org/abs/2606.00206) — 분야: cs.LG

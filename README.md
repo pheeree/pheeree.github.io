@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-10-14 — [퍼플렉시티는 유한한데 객관식은 우연인 가지치기 모델 — Putri의 '95%가 가능하다'가 실제로 재는 것](https://pheeree.github.io/2026/10/14/putri-structured-pruning-perplexity-vs-chance/)
 - 2026-10-13 — [멈추지 못하는 양자화 추론 모델 — '정답에 닿고도 놓친' 52%의 분모와, 그 몫을 걷어냈을 때 돌아오는 정확도](https://pheeree.github.io/2026/10/13/quantized-reasoning-overthinking-commit-failure/)
 - 2026-10-12 — [진행은 되는데 끝맺지 못하는 압축 에이전트 — ACBench의 표로 다시 읽은 단답과 연쇄, 그리고 그 갈림이 방법마다 다르다는 것](https://pheeree.github.io/2026/10/12/acbench-compressed-agents-progress-vs-success/)
 - 2026-10-09 — [고를 줄은 아는데 쓸 줄은 모르는 가지치기 모델 — 임베딩·로짓·확률 세 공간의 눈금이 저마다 무엇을 견주는가](https://pheeree.github.io/2026/10/09/pruning-representation-hierarchy-scorer-vs-generator/)
