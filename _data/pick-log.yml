@@ -1172,3 +1172,17 @@
     단계 전환을 MMLU 정체로 정하는 운전 눈금의 어긋남을 Q9 질문 3·4로 재기.
   switch_notice: false
   branch: null
+- date: 2026-10-17
+  slug: dass-glu-dependency-aware-sparsity
+  source: 2405.01943
+  path: d
+  focus_q: Q9
+  nth: 29
+  purpose: >
+    (a) 10-16 두 편·10-14 글 '다음 읽을 후보' 전부 미러 미도착, (b) 대기열 0건, (c-focus) Q9 다음 후보 7편 전부 사용됨,
+    (d) 14일 창의 유일한 미사용(2610.19443 비전 사전학습)은 Q9 무관이라 어제처럼 창을 넓혀 9월 초 압축 묶음에서
+    DaSS(GLU 의존성 인지 반구조 희소화)를 골랐음 — 조타가 아니라 본 세션의 선택. 오늘의 목적: Q9 질문 2('붕괴가 MLP 쪽인가')를
+    한 겹 쪼개기 — MLP가 약한 것인지, MLP 안의 gate·up·down 결합을 점수가 무시해서 약해 보이는 것인지. 덤으로 부록의
+    층 민감도 역전(MMLU는 앞층, 퍼플렉시티는 뒤층)을 질문 4의 '눈금이 재는 차원' 사례로 재기.
+  switch_notice: false
+  branch: null
