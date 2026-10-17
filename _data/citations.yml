@@ -1,6 +1,26 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-16-slimmoe-staged-pruning-distillation:
+  title: "증류 손실로 뉴런을 고르는 가지치기 — SlimMoE의 중간 단계가 지킨 것과, MMLU 눈금이 보지 않은 것"
+  central:
+    id: "2506.18349"
+    title: "SlimMoE: Structured Compression of Large MoE Models via Expert Slimming and Distillation"
+    authors: "Zichong Li 외"
+    keywords: "cs.LG, cs.CL"
+    url: "https://arxiv.org/abs/2506.18349"
+  referenced:
+    - { id: "1902.03393", title: "Improved Knowledge Distillation via Teacher Assistant", authors: "Seyed-Iman Mirzadeh 외", keywords: "cs.LG, cs.AI, stat.ML", url: "https://arxiv.org/abs/1902.03393" }
+    - { id: "2310.01382", title: "Compressing LLMs: The Truth is Rarely Pure and Never Simple", authors: "Ajay Jaiswal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2310.01382" }
+    - { id: "2407.14679", title: "Compact Language Models via Pruning and Knowledge Distillation", authors: "Saurav Muralidharan 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2407.14679" }
+    - { id: "2502.12143", title: "Small Models Struggle to Learn from Strong Reasoners", authors: "Yuetai Li 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2502.12143" }
+    - { id: "2510.13999", title: "REAP the Experts: Why Pruning Prevails for One-Shot MoE compression", authors: "Mike Lasby 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2510.13999" }
+    - { id: "2603.02217", title: "Is Retraining-Free Enough? The Necessity of Router Calibration for Efficient MoE Compression", authors: "Sieun Hyeon, Jaeyoung Do", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2603.02217" }
+    - { id: "2605.08738", title: "SlimQwen: Exploring the Pruning and Distillation in Large MoE Model Pre-training", authors: "Shengkun Tang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2605.08738" }
+    - { id: "2607.13124", title: "ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation", authors: "Qingyu Zhang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2607.13124" }
+    - { id: "2608.21693", title: "Benchmarking Composable Compression Techniques in Mixture-of-Experts LLMs", authors: "Afsara Benazir 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2608.21693" }
+    - { id: "2609.26708", title: "Train Where the Quantized Model Goes: On-Policy Distillation for Low-Bit Reasoning", authors: "Yuanteng Chen 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2609.26708" }
+
 2026-10-16-opd-survey-off-metric-loss-local-global:
   title: "증류가 남긴 것과 잃은 것 — OPD 서베이의 제곱 오차, 뒤쪽 토큰, 그리고 범위 밖으로 뺀 압축"
   central:

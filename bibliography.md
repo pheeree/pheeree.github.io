@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-16] 증류 손실로 뉴런을 고르는 가지치기 — SlimMoE의 중간 단계가 지킨 것과, MMLU 눈금이 보지 않은 것
+
+- **중심**: Zichong Li 외. *SlimMoE: Structured Compression of Large MoE Models via Expert Slimming and Distillation*. [arXiv:2506.18349](https://arxiv.org/abs/2506.18349) — 분야: cs.LG, cs.CL
+- Seyed-Iman Mirzadeh 외. *Improved Knowledge Distillation via Teacher Assistant*. [arXiv:1902.03393](https://arxiv.org/abs/1902.03393) — 분야: cs.LG, cs.AI, stat.ML
+- Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
+- Saurav Muralidharan 외. *Compact Language Models via Pruning and Knowledge Distillation*. [arXiv:2407.14679](https://arxiv.org/abs/2407.14679) — 분야: cs.CL, cs.AI, cs.LG
+- Yuetai Li 외. *Small Models Struggle to Learn from Strong Reasoners*. [arXiv:2502.12143](https://arxiv.org/abs/2502.12143) — 분야: cs.AI
+- Mike Lasby 외. *REAP the Experts: Why Pruning Prevails for One-Shot MoE compression*. [arXiv:2510.13999](https://arxiv.org/abs/2510.13999) — 분야: cs.LG, cs.AI
+- Sieun Hyeon, Jaeyoung Do. *Is Retraining-Free Enough? The Necessity of Router Calibration for Efficient MoE Compression*. [arXiv:2603.02217](https://arxiv.org/abs/2603.02217) — 분야: cs.LG, cs.AI
+- Shengkun Tang 외. *SlimQwen: Exploring the Pruning and Distillation in Large MoE Model Pre-training*. [arXiv:2605.08738](https://arxiv.org/abs/2605.08738) — 분야: cs.LG, cs.AI, cs.CL
+- Qingyu Zhang 외. *ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation*. [arXiv:2607.13124](https://arxiv.org/abs/2607.13124) — 분야: cs.LG, cs.AI, cs.CL
+- Afsara Benazir 외. *Benchmarking Composable Compression Techniques in Mixture-of-Experts LLMs*. [arXiv:2608.21693](https://arxiv.org/abs/2608.21693) — 분야: cs.LG
+- Yuanteng Chen 외. *Train Where the Quantized Model Goes: On-Policy Distillation for Low-Bit Reasoning*. [arXiv:2609.26708](https://arxiv.org/abs/2609.26708) — 분야: cs.LG, cs.AI
+
 ## [2026-10-16] 증류가 남긴 것과 잃은 것 — OPD 서베이의 제곱 오차, 뒤쪽 토큰, 그리고 범위 밖으로 뺀 압축
 
 - **중심**: Mingyang Song, Mao Zheng. *A Survey of On-Policy Distillation for Large Language Models*. [arXiv:2604.00626](https://arxiv.org/abs/2604.00626) — 분야: cs.LG, cs.CL
