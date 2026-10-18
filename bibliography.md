@@ -6,6 +6,24 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-17] GLU의 세 투영을 한 묶음으로 채점하면 — DaSS가 고친 구조적 불일치와, 눈금에 따라 뒤집힌 층 민감도
+
+- **중심**: Zhiyu Guo 외. *Dependency-Aware Semi-Structured Sparsity of GLU Variants in Large Language Models*. [arXiv:2405.01943](https://arxiv.org/abs/2405.01943) — 분야: cs.CL, cs.AI, cs.LG
+- Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
+- Lu Yin 외. *Outlier Weighed Layerwise Sparsity (OWL): A Missing Secret Sauce for Pruning LLMs to High Sparsity*. [arXiv:2310.05175](https://arxiv.org/abs/2310.05175) — 분야: cs.LG
+- Mingjie Sun 외. *Massive Activations in Large Language Models*. [arXiv:2402.17762](https://arxiv.org/abs/2402.17762) — 분야: cs.CL, cs.LG
+- Andrey Gromov 외. *The Unreasonable Ineffectiveness of the Deeper Layers*. [arXiv:2403.17887](https://arxiv.org/abs/2403.17887) — 분야: cs.CL, cs.LG, stat.ML
+- Xiaodong Chen 외. *Streamlining Redundant Layers to Compress Large Language Models*. [arXiv:2403.19135](https://arxiv.org/abs/2403.19135) — 분야: cs.CL, cs.AI
+- Xiang Meng 외. *ALPS: Improved Optimization for Highly Sparse One-Shot Pruning for Large Language Models*. [arXiv:2406.07831](https://arxiv.org/abs/2406.07831) — 분야: cs.LG
+- Shwai He 외. *What Matters in Transformers? Not All Attention is Needed*. [arXiv:2406.15786](https://arxiv.org/abs/2406.15786) — 분야: cs.LG, cs.AI, cs.CL
+- Jaehoon Oh 외. *House of Cards: Massive Weights in LLMs*. [arXiv:2410.01866](https://arxiv.org/abs/2410.01866) — 분야: cs.LG, cs.AI, cs.CL
+- Leandro Giusti Mugnaini 외. *Efficient LLMs with AMP: Attention Heads and MLP Pruning*. [arXiv:2504.21174](https://arxiv.org/abs/2504.21174) — 분야: cs.LG
+- Minkyu Kim 외. *Rethinking Layer Redundancy: Calibration Matters More Than Search in LLM Depth Pruning*. [arXiv:2604.24938](https://arxiv.org/abs/2604.24938) — 분야: cs.LG, cs.AI, cs.CL
+- Liu Hanzuo 외. *SparseForge: Efficient Semi-Structured LLM Sparsification via Annealing of Hessian-Guided Soft-Mask*. [arXiv:2605.06402](https://arxiv.org/abs/2605.06402) — 분야: cs.LG
+- Qingyu Zhang 외. *ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation*. [arXiv:2607.13124](https://arxiv.org/abs/2607.13124) — 분야: cs.LG, cs.AI, cs.CL
+- Yuanteng Chen 외. *Train Where the Quantized Model Goes: On-Policy Distillation for Low-Bit Reasoning*. [arXiv:2609.26708](https://arxiv.org/abs/2609.26708) — 분야: cs.LG, cs.AI
+- Ivan Ilin, Peter Richtárik. *QK-Wanda: Coupling Queries and Keys for Unstructured Pruning*. [arXiv:2610.01554](https://arxiv.org/abs/2610.01554) — 분야: cs.LG, cs.CL
+
 ## [2026-10-16] 증류 손실로 뉴런을 고르는 가지치기 — SlimMoE의 중간 단계가 지킨 것과, MMLU 눈금이 보지 않은 것
 
 - **중심**: Zichong Li 외. *SlimMoE: Structured Compression of Large MoE Models via Expert Slimming and Distillation*. [arXiv:2506.18349](https://arxiv.org/abs/2506.18349) — 분야: cs.LG, cs.CL

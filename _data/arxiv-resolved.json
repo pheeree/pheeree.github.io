@@ -14441,63 +14441,160 @@
   ]
  },
  "2610.01554": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "QK-Wanda: Coupling Queries and Keys for Unstructured Pruning",
+  "authors": [
+   "Ivan Ilin",
+   "Peter Richtárik"
+  ],
+  "published": "2026-10-01",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
  },
  "2410.01866": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "House of Cards: Massive Weights in LLMs",
+  "authors": [
+   "Jaehoon Oh",
+   "Seungjun Shin",
+   "Dokwan Oh"
+  ],
+  "published": "2024-10-02",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  },
  "2604.24938": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Rethinking Layer Redundancy: Calibration Matters More Than Search in LLM Depth Pruning",
+  "authors": [
+   "Minkyu Kim",
+   "Vincent-Daniel Yun",
+   "Youngrae Kim",
+   "Suin Cho",
+   "Woosang Lim",
+   "Sunwoo Lee"
+  ],
+  "published": "2026-04-27",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  },
  "2605.06402": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "SparseForge: Efficient Semi-Structured LLM Sparsification via Annealing of Hessian-Guided Soft-Mask",
+  "authors": [
+   "Liu Hanzuo",
+   "Chaofan Lin",
+   "Weixuan Sun",
+   "Yulong Wang",
+   "Key",
+   "Rayying",
+   "Mingyu Gao"
+  ],
+  "published": "2026-05-07",
+  "categories": [
+   "cs.LG"
+  ]
  },
  "2406.07831": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "ALPS: Improved Optimization for Highly Sparse One-Shot Pruning for Large Language Models",
+  "authors": [
+   "Xiang Meng",
+   "Kayhan Behdin",
+   "Haoyue Wang",
+   "Rahul Mazumder"
+  ],
+  "published": "2024-06-12",
+  "categories": [
+   "cs.LG"
+  ]
  },
  "2402.17762": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Massive Activations in Large Language Models",
+  "authors": [
+   "Mingjie Sun",
+   "Xinlei Chen",
+   "J. Zico Kolter",
+   "Zhuang Liu"
+  ],
+  "published": "2024-02-27",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
  },
  "2403.19135": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Streamlining Redundant Layers to Compress Large Language Models",
+  "authors": [
+   "Xiaodong Chen",
+   "Yuxuan Hu",
+   "Jing Zhang",
+   "Yanling Wang",
+   "Cuiping Li",
+   "Hong Chen"
+  ],
+  "published": "2024-03-28",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
  },
  "2310.05175": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Outlier Weighed Layerwise Sparsity (OWL): A Missing Secret Sauce for Pruning LLMs to High Sparsity",
+  "authors": [
+   "Lu Yin",
+   "You Wu",
+   "Zhenyu Zhang",
+   "Cheng-Yu Hsieh",
+   "Yaqing Wang",
+   "Yiling Jia",
+   "Gen Li",
+   "Ajay Jaiswal",
+   "Mykola Pechenizkiy",
+   "Yi Liang",
+   "Michael Bendersky",
+   "Zhangyang Wang",
+   "Shiwei Liu"
+  ],
+  "published": "2023-10-08",
+  "categories": [
+   "cs.LG"
+  ]
  },
  "2403.17887": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "The Unreasonable Ineffectiveness of the Deeper Layers",
+  "authors": [
+   "Andrey Gromov",
+   "Kushal Tirumala",
+   "Hassan Shapourian",
+   "Paolo Glorioso",
+   "Daniel A. Roberts"
+  ],
+  "published": "2024-03-26",
+  "categories": [
+   "cs.CL",
+   "cs.LG",
+   "stat.ML"
+  ]
  },
  "2504.21174": {
-  "title": "",
-  "authors": [],
-  "published": "",
-  "categories": []
+  "title": "Efficient LLMs with AMP: Attention Heads and MLP Pruning",
+  "authors": [
+   "Leandro Giusti Mugnaini",
+   "Bruno Lopes Yamamoto",
+   "Lucas Lauton de Alcantara",
+   "Victor Zacarias",
+   "Edson Bollis",
+   "Lucas Pellicer",
+   "Anna Helena Reali Costa",
+   "Artur Jordao"
+  ],
+  "published": "2025-04-29",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }

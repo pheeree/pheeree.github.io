@@ -1,6 +1,30 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-17-dass-glu-dependency-aware-sparsity:
+  title: "GLU의 세 투영을 한 묶음으로 채점하면 — DaSS가 고친 구조적 불일치와, 눈금에 따라 뒤집힌 층 민감도"
+  central:
+    id: "2405.01943"
+    title: "Dependency-Aware Semi-Structured Sparsity of GLU Variants in Large Language Models"
+    authors: "Zhiyu Guo 외"
+    keywords: "cs.CL, cs.AI, cs.LG"
+    url: "https://arxiv.org/abs/2405.01943"
+  referenced:
+    - { id: "2310.01382", title: "Compressing LLMs: The Truth is Rarely Pure and Never Simple", authors: "Ajay Jaiswal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2310.01382" }
+    - { id: "2310.05175", title: "Outlier Weighed Layerwise Sparsity (OWL): A Missing Secret Sauce for Pruning LLMs to High Sparsity", authors: "Lu Yin 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2310.05175" }
+    - { id: "2402.17762", title: "Massive Activations in Large Language Models", authors: "Mingjie Sun 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2402.17762" }
+    - { id: "2403.17887", title: "The Unreasonable Ineffectiveness of the Deeper Layers", authors: "Andrey Gromov 외", keywords: "cs.CL, cs.LG, stat.ML", url: "https://arxiv.org/abs/2403.17887" }
+    - { id: "2403.19135", title: "Streamlining Redundant Layers to Compress Large Language Models", authors: "Xiaodong Chen 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2403.19135" }
+    - { id: "2406.07831", title: "ALPS: Improved Optimization for Highly Sparse One-Shot Pruning for Large Language Models", authors: "Xiang Meng 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2406.07831" }
+    - { id: "2406.15786", title: "What Matters in Transformers? Not All Attention is Needed", authors: "Shwai He 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2406.15786" }
+    - { id: "2410.01866", title: "House of Cards: Massive Weights in LLMs", authors: "Jaehoon Oh 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2410.01866" }
+    - { id: "2504.21174", title: "Efficient LLMs with AMP: Attention Heads and MLP Pruning", authors: "Leandro Giusti Mugnaini 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2504.21174" }
+    - { id: "2604.24938", title: "Rethinking Layer Redundancy: Calibration Matters More Than Search in LLM Depth Pruning", authors: "Minkyu Kim 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.24938" }
+    - { id: "2605.06402", title: "SparseForge: Efficient Semi-Structured LLM Sparsification via Annealing of Hessian-Guided Soft-Mask", authors: "Liu Hanzuo 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.06402" }
+    - { id: "2607.13124", title: "ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation", authors: "Qingyu Zhang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2607.13124" }
+    - { id: "2609.26708", title: "Train Where the Quantized Model Goes: On-Policy Distillation for Low-Bit Reasoning", authors: "Yuanteng Chen 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2609.26708" }
+    - { id: "2610.01554", title: "QK-Wanda: Coupling Queries and Keys for Unstructured Pruning", authors: "Ivan Ilin, Peter Richtárik", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2610.01554" }
+
 2026-10-16-slimmoe-staged-pruning-distillation:
   title: "증류 손실로 뉴런을 고르는 가지치기 — SlimMoE의 중간 단계가 지킨 것과, MMLU 눈금이 보지 않은 것"
   central:

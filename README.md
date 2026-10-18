@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-10-17 — [GLU의 세 투영을 한 묶음으로 채점하면 — DaSS가 고친 구조적 불일치와, 눈금에 따라 뒤집힌 층 민감도](https://pheeree.github.io/2026/10/17/dass-glu-dependency-aware-sparsity/)
 - 2026-10-16 — [증류 손실로 뉴런을 고르는 가지치기 — SlimMoE의 중간 단계가 지킨 것과, MMLU 눈금이 보지 않은 것](https://pheeree.github.io/2026/10/16/slimmoe-staged-pruning-distillation/)
 - 2026-10-16 — [증류가 남긴 것과 잃은 것 — OPD 서베이의 제곱 오차, 뒤쪽 토큰, 그리고 범위 밖으로 뺀 압축](https://pheeree.github.io/2026/10/16/opd-survey-off-metric-loss-local-global/)
 - 2026-10-14 — [퍼플렉시티는 유한한데 객관식은 우연인 가지치기 모델 — Putri의 '95%가 가능하다'가 실제로 재는 것](https://pheeree.github.io/2026/10/14/putri-structured-pruning-perplexity-vs-chance/)
