@@ -14596,5 +14596,141 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2605.17757": {
+  "title": "OSCAR: Offline Spectral Covariance-Aware Rotation for 2-bit KV Cache Quantization",
+  "authors": [
+   "Zhongzhu Zhou",
+   "Donglin Zhuang",
+   "Jisen Li",
+   "Ziyan Chen",
+   "Shuaiwen Leon Song",
+   "Ben Athiwaratkun",
+   "Xiaoxia Wu"
+  ],
+  "published": "2026-05-18",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.DC",
+   "cs.PF"
+  ]
+ },
+ "2608.25188": {
+  "title": "Transforms for LLM Quantization: The Great Inversion and Format Co-Design",
+  "authors": [
+   "Ehsan Jokar"
+  ],
+  "published": "2026-08-25",
+  "categories": [
+   "cs.LG",
+   "cs.IT"
+  ]
+ },
+ "2509.22944": {
+  "title": "SINQ: Sinkhorn-Normalized Quantization for Calibration-Free Low-Precision LLM Weights",
+  "authors": [
+   "Lorenz K. Müller",
+   "Philippe Bich",
+   "Jiawei Zhuang",
+   "Ahmet Çelik",
+   "Luca Benfenati",
+   "Lukas Cavigelli"
+  ],
+  "published": "2025-09-26",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2505.22988": {
+  "title": "Model-Preserving Adaptive Rounding",
+  "authors": [
+   "Albert Tseng",
+   "Zhaofeng Sun",
+   "Christopher De Sa"
+  ],
+  "published": "2025-05-29",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2411.17525": {
+  "title": "Pushing the Limits of Large Language Model Quantization via the Linearity Theorem",
+  "authors": [
+   "Vladimir Malinovskii",
+   "Andrei Panferov",
+   "Ivan Ilin",
+   "Han Guo",
+   "Peter Richtárik",
+   "Dan Alistarh"
+  ],
+  "published": "2024-11-26",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2512.19206": {
+  "title": "MixKVQ: Query-Aware Mixed-Precision KV Cache Quantization for Long-Context Reasoning",
+  "authors": [
+   "Tao Zhang",
+   "Ziqian Zeng",
+   "Hao Peng",
+   "Huiping Zhuang",
+   "Cen Chen"
+  ],
+  "published": "2025-12-22",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2504.21318": {
+  "title": "Phi-4-reasoning Technical Report",
+  "authors": [
+   "Marah Abdin",
+   "Sahaj Agarwal",
+   "Ahmed Awadallah",
+   "Vidhisha Balachandran",
+   "Harkirat Behl",
+   "Lingjiao Chen",
+   "Gustavo de Rosa",
+   "Suriya Gunasekar",
+   "Mojan Javaheripi",
+   "Neel Joshi",
+   "Piero Kauffmann",
+   "Yash Lara",
+   "Caio César Teodoro Mendes",
+   "Arindam Mitra",
+   "Besmira Nushi",
+   "Dimitris Papailiopoulos",
+   "Olli Saarikivi",
+   "Shital Shah",
+   "Vaishnavi Shrivastava",
+   "Vibhav Vineet",
+   "Yue Wu",
+   "Safoora Yousefi",
+   "Guoqing Zheng"
+  ],
+  "published": "2025-04-30",
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2606.03458": {
+  "title": "KVarN: Variance-Normalized KV-Cache Quantization Mitigates Error Accumulation in Reasoning Tasks",
+  "authors": [
+   "Lorenz K. Muller",
+   "Philippe Bich",
+   "Chiara Boretti",
+   "Hyun-Min Chang",
+   "Jiawei Zhuang",
+   "Lukas Cavigelli"
+  ],
+  "published": "2026-06-02",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }
