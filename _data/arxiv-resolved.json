@@ -14732,5 +14732,125 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2410.16215": {
+  "title": "Pre-training Distillation for Large Language Models: A Design Space Exploration",
+  "authors": [
+   "Hao Peng",
+   "Xin Lv",
+   "Yushi Bai",
+   "Zijun Yao",
+   "Jiajie Zhang",
+   "Lei Hou",
+   "Juanzi Li"
+  ],
+  "published": "2024-10-21",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2410.23501": {
+  "title": "All or None: Identifiable Linear Properties of Next-token Predictors in Language Modeling",
+  "authors": [
+   "Emanuele Marconato",
+   "Sébastien Lachapelle",
+   "Sebastian Weichwald",
+   "Luigi Gresele"
+  ],
+  "published": "2024-10-30",
+  "categories": [
+   "stat.ML",
+   "cs.AI",
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2506.03784": {
+  "title": "When Does Closeness in Distribution Imply Representational Similarity? An Identifiability Perspective",
+  "authors": [
+   "Beatrix M. G. Nielsen",
+   "Emanuele Marconato",
+   "Andrea Dittadi",
+   "Luigi Gresele"
+  ],
+  "published": "2025-06-04",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "stat.ML"
+  ]
+ },
+ "2405.14860": {
+  "title": "Not All Language Model Features Are One-Dimensionally Linear",
+  "authors": [
+   "Joshua Engels",
+   "Eric J. Michaud",
+   "Isaac Liao",
+   "Wes Gurnee",
+   "Max Tegmark"
+  ],
+  "published": "2024-05-23",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2602.15438": {
+  "title": "Logit Distance Bounds Representational Similarity",
+  "authors": [
+   "Beatrix M. G. Nielsen",
+   "Emanuele Marconato",
+   "Luigi Gresele",
+   "Andrea Dittadi",
+   "Simon Buchholz"
+  ],
+  "published": "2026-02-17",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "stat.ML"
+  ]
+ },
+ "2509.25837": {
+  "title": "Distillation of Large Language Models via Concrete Score Matching",
+  "authors": [
+   "Yeongmin Kim",
+   "Donghyeok Shin",
+   "Mina Kang",
+   "Byeonghu Na",
+   "Il-Chul Moon"
+  ],
+  "published": "2025-09-30",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2105.08919": {
+  "title": "Comparing Kullback-Leibler Divergence and Mean Squared Error Loss in Knowledge Distillation",
+  "authors": [
+   "Taehyeon Kim",
+   "Jaehoon Oh",
+   "NakYil Kim",
+   "Sangwook Cho",
+   "Se-Young Yun"
+  ],
+  "published": "2021-05-19",
+  "categories": [
+   "cs.LG",
+   "cs.CV"
+  ]
+ },
+ "2604.04037": {
+  "title": "Geometric Limits of Knowledge Distillation: A Minimum-Width Theorem via Superposition Theory",
+  "authors": [
+   "Nilesh Sarkar",
+   "Dawar Jyoti Deka"
+  ],
+  "published": "2026-04-05",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  }
 }

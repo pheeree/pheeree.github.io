@@ -1201,3 +1201,18 @@
     같은 자리(토큰 스케일)로 수렴하는지. 덤으로 '상위 5% 오차가 KL을 좌우한다'는 MSE↔KL 어긋남을 질문 3·4의 눈금 사례로.
   switch_notice: false
   branch: null
+- date: 2026-10-19
+  slug: logit-distance-representational-similarity-distillation
+  source: 2602.15438
+  path: d
+  focus_q: Q9
+  nth: 31
+  purpose: >
+    (a) 10-18·10-17·10-16 SlimMoE 글 '다음 읽을 후보' 전부 미러 미도착, (b) 대기열 0건, (c-focus) Q9 다음 후보 7편 전부 사용됨,
+    (d) 14일 창의 유일한 미사용(2610.19443 비전 사전학습)은 Q9 무관이라 나흘째 창을 넓혀, 5월 초 도착한 채 미사용이던
+    Logit Distance Bounds Representational Similarity를 골랐음 — 조타가 아니라 본 세션의 선택. 오늘의 목적: Q9 질문 4('표상 유사도
+    눈금이 기능과 어긋나는가')를 반대 방향에서 — 기능(출력 분포) 거리가 작으면 표상이 닮는다는 보장이 어느 거리(KL 대 로짓)에서
+    서는지, 그리고 KL 증류 학생이 라벨 정확도는 지키고 선형 개념은 우연 수준으로 잃는 SUB 결과가 '칸은 살고 퍼즐은 죽는다'의
+    증류판인지 재기. 어제 KVarN의 MSE↔KL 어긋남에 이어 KL↔로짓 어긋남으로, 눈금끼리의 위계를 한 칸 더.
+  switch_notice: false
+  branch: null
