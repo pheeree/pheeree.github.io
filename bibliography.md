@@ -6,6 +6,24 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-18] 프리필 평가가 보지 못하는 누적 — KVarN의 pseudo-decode가 드러낸 토큰 스케일 오차와, 두 그림 사이에서 비는 한 고리
+
+- **중심**: Lorenz K. Muller 외. *KVarN: Variance-Normalized KV-Cache Quantization Mitigates Error Accumulation in Reasoning Tasks*. [arXiv:2606.03458](https://arxiv.org/abs/2606.03458) — 분야: cs.LG
+- Tianxing He 외. *Exposure Bias versus Self-Recovery: Are Distortions Really Incremental for Autoregressive Text Generation?*. [arXiv:1905.10617](https://arxiv.org/abs/1905.10617) — 분야: cs.LG, cs.CL, stat.ML
+- Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
+- Lu Yin 외. *Outlier Weighed Layerwise Sparsity (OWL): A Missing Secret Sauce for Pruning LLMs to High Sparsity*. [arXiv:2310.05175](https://arxiv.org/abs/2310.05175) — 분야: cs.LG
+- Vladimir Malinovskii 외. *Pushing the Limits of Large Language Model Quantization via the Linearity Theorem*. [arXiv:2411.17525](https://arxiv.org/abs/2411.17525) — 분야: cs.LG
+- Marah Abdin 외. *Phi-4-reasoning Technical Report*. [arXiv:2504.21318](https://arxiv.org/abs/2504.21318) — 분야: cs.AI, cs.CL
+- Tengxuan Liu 외. *PM-KVQ: Progressive Mixed-precision KV Cache Quantization for Long-CoT LLMs*. [arXiv:2505.18610](https://arxiv.org/abs/2505.18610) — 분야: cs.CL
+- Albert Tseng 외. *Model-Preserving Adaptive Rounding*. [arXiv:2505.22988](https://arxiv.org/abs/2505.22988) — 분야: cs.LG, cs.AI
+- Lorenz K. Müller 외. *SINQ: Sinkhorn-Normalized Quantization for Calibration-Free Low-Precision LLM Weights*. [arXiv:2509.22944](https://arxiv.org/abs/2509.22944) — 분야: cs.LG
+- Utkarsh Saxena, Kaushik Roy. *KVLinC : KV Cache Quantization with Hadamard Rotation and Linear Correction*. [arXiv:2510.05373](https://arxiv.org/abs/2510.05373) — 분야: cs.LG
+- Tao Zhang 외. *MixKVQ: Query-Aware Mixed-Precision KV Cache Quantization for Long-Context Reasoning*. [arXiv:2512.19206](https://arxiv.org/abs/2512.19206) — 분야: cs.LG, cs.AI
+- Zhongzhu Zhou 외. *OSCAR: Offline Spectral Covariance-Aware Rotation for 2-bit KV Cache Quantization*. [arXiv:2605.17757](https://arxiv.org/abs/2605.17757) — 분야: cs.LG, cs.AI, cs.DC, cs.PF
+- Sanae Lotfi 외. *Quantized Reasoning Models Think They Need to Think Longer, but They Do Not*. [arXiv:2606.00206](https://arxiv.org/abs/2606.00206) — 분야: cs.LG
+- Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+- Ehsan Jokar. *Transforms for LLM Quantization: The Great Inversion and Format Co-Design*. [arXiv:2608.25188](https://arxiv.org/abs/2608.25188) — 분야: cs.LG, cs.IT
+
 ## [2026-10-17] GLU의 세 투영을 한 묶음으로 채점하면 — DaSS가 고친 구조적 불일치와, 눈금에 따라 뒤집힌 층 민감도
 
 - **중심**: Zhiyu Guo 외. *Dependency-Aware Semi-Structured Sparsity of GLU Variants in Large Language Models*. [arXiv:2405.01943](https://arxiv.org/abs/2405.01943) — 분야: cs.CL, cs.AI, cs.LG

@@ -1,6 +1,30 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-18-kvarn-kv-cache-error-accumulation-token-scale:
+  title: "프리필 평가가 보지 못하는 누적 — KVarN의 pseudo-decode가 드러낸 토큰 스케일 오차와, 두 그림 사이에서 비는 한 고리"
+  central:
+    id: "2606.03458"
+    title: "KVarN: Variance-Normalized KV-Cache Quantization Mitigates Error Accumulation in Reasoning Tasks"
+    authors: "Lorenz K. Muller 외"
+    keywords: "cs.LG"
+    url: "https://arxiv.org/abs/2606.03458"
+  referenced:
+    - { id: "1905.10617", title: "Exposure Bias versus Self-Recovery: Are Distortions Really Incremental for Autoregressive Text Generation?", authors: "Tianxing He 외", keywords: "cs.LG, cs.CL, stat.ML", url: "https://arxiv.org/abs/1905.10617" }
+    - { id: "2310.01382", title: "Compressing LLMs: The Truth is Rarely Pure and Never Simple", authors: "Ajay Jaiswal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2310.01382" }
+    - { id: "2310.05175", title: "Outlier Weighed Layerwise Sparsity (OWL): A Missing Secret Sauce for Pruning LLMs to High Sparsity", authors: "Lu Yin 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2310.05175" }
+    - { id: "2411.17525", title: "Pushing the Limits of Large Language Model Quantization via the Linearity Theorem", authors: "Vladimir Malinovskii 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2411.17525" }
+    - { id: "2504.21318", title: "Phi-4-reasoning Technical Report", authors: "Marah Abdin 외", keywords: "cs.AI, cs.CL", url: "https://arxiv.org/abs/2504.21318" }
+    - { id: "2505.18610", title: "PM-KVQ: Progressive Mixed-precision KV Cache Quantization for Long-CoT LLMs", authors: "Tengxuan Liu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2505.18610" }
+    - { id: "2505.22988", title: "Model-Preserving Adaptive Rounding", authors: "Albert Tseng 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2505.22988" }
+    - { id: "2509.22944", title: "SINQ: Sinkhorn-Normalized Quantization for Calibration-Free Low-Precision LLM Weights", authors: "Lorenz K. Müller 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2509.22944" }
+    - { id: "2510.05373", title: "KVLinC : KV Cache Quantization with Hadamard Rotation and Linear Correction", authors: "Utkarsh Saxena, Kaushik Roy", keywords: "cs.LG", url: "https://arxiv.org/abs/2510.05373" }
+    - { id: "2512.19206", title: "MixKVQ: Query-Aware Mixed-Precision KV Cache Quantization for Long-Context Reasoning", authors: "Tao Zhang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2512.19206" }
+    - { id: "2605.17757", title: "OSCAR: Offline Spectral Covariance-Aware Rotation for 2-bit KV Cache Quantization", authors: "Zhongzhu Zhou 외", keywords: "cs.LG, cs.AI, cs.DC, cs.PF", url: "https://arxiv.org/abs/2605.17757" }
+    - { id: "2606.00206", title: "Quantized Reasoning Models Think They Need to Think Longer, but They Do Not", authors: "Sanae Lotfi 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.00206" }
+    - { id: "2607.16237", title: "Quantizing Recursive Reasoning Models", authors: "Thorir Mar Ingolfsson 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2607.16237" }
+    - { id: "2608.25188", title: "Transforms for LLM Quantization: The Great Inversion and Format Co-Design", authors: "Ehsan Jokar", keywords: "cs.LG, cs.IT", url: "https://arxiv.org/abs/2608.25188" }
+
 2026-10-17-dass-glu-dependency-aware-sparsity:
   title: "GLU의 세 투영을 한 묶음으로 채점하면 — DaSS가 고친 구조적 불일치와, 눈금에 따라 뒤집힌 층 민감도"
   central:
