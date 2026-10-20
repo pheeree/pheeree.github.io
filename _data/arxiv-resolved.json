@@ -14852,5 +14852,171 @@
    "cs.LG",
    "cs.AI"
   ]
+ },
+ "2602.02848": {
+  "title": "Zero Sum SVD: Balancing Loss Sensitivity for Low Rank LLM Compression",
+  "authors": [
+   "Ali Abbasi",
+   "Chayne Thrash",
+   "Haoran Qin",
+   "Shansita Sharma",
+   "Sepehr Seifi",
+   "Soheil Kolouri"
+  ],
+  "published": "2026-02-02",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2602.11008": {
+  "title": "ROCKET: Rapid Optimization via Calibration-guided Knapsack Enhanced Truncation for Efficient Model Compression",
+  "authors": [
+   "Ammar Ali",
+   "Baher Mohammad",
+   "Denis Makhov",
+   "Dmitriy Shopkhoev",
+   "Magauiya Zhussip",
+   "Stamatios Lefkimmiatis"
+  ],
+  "published": "2026-02-11",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2409.11233": {
+  "title": "Evaluating the Impact of Compression Techniques on Task-Specific Performance of Large Language Models",
+  "authors": [
+   "Bishwash Khanal",
+   "Jeffery M. Capone"
+  ],
+  "published": "2024-09-17",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2606.27785": {
+  "title": "Output-Space Allocation Costs for Calibration-Guided LLM Compression: An Empirical Study",
+  "authors": [
+   "Qiong Tang",
+   "Xiangkun Hu",
+   "Xiangyang Liu",
+   "Yiran Chen",
+   "Yunfan Shao"
+  ],
+  "published": "2026-06-26",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2608.19670": {
+  "title": "The Asymmetric Harms of LLM Compression",
+  "authors": [
+   "Yuan Wu",
+   "Mairui Li",
+   "Lesia Semenova",
+   "Chudi Zhong"
+  ],
+  "published": "2026-08-20",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2605.19156": {
+  "title": "How Far Are We From True Auto-Research?",
+  "authors": [
+   "Zhengxin Zhang",
+   "Ning Wang",
+   "Sainyam Galhotra",
+   "Claire Cardie"
+  ],
+  "published": "2026-05-18",
+  "categories": [
+   "cs.AI",
+   "cs.CY",
+   "cs.LG",
+   "cs.MA"
+  ]
+ },
+ "2410.13299": {
+  "title": "LLM-Rank: A Graph Theoretical Approach to Pruning Large Language Models",
+  "authors": [
+   "David Hoffmann",
+   "Kailash Budhathoki",
+   "Matthaeus Kleindessner"
+  ],
+  "published": "2024-10-17",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2606.31651": {
+  "title": "FARS: A Fully Automated Research System Deployed at Scale",
+  "authors": [
+   "Qiong Tang",
+   "Tianxiang Sun",
+   "Xiangkun Hu",
+   "Xiangyang Liu",
+   "Yiran Chen",
+   "Yunfan Shao",
+   "Bobo Li",
+   "Changze Lv",
+   "Cheng Xu",
+   "Chengsong Huang",
+   "Chunyang Li",
+   "Dizhan Xue",
+   "Hao Bai",
+   "Haodong Duan",
+   "Hengquan Guo",
+   "Hongyang He",
+   "Hongyi Chen",
+   "Hui Shen",
+   "Jiahao Yuan",
+   "Jiankai Sun",
+   "Jikang Cheng",
+   "Jinfeng Xu",
+   "Jingqi Tong",
+   "Jingye Chen",
+   "Jinxiu Liu",
+   "Jixuan Leng",
+   "Junchi Yu",
+   "Kaixun Jiang",
+   "Kun Xiang",
+   "Kunpeng Yao",
+   "Lang Feng",
+   "Liangqi Yuan",
+   "Longsen Gao",
+   "Meng Li",
+   "Qi Jia",
+   "Qiushi Sun",
+   "Shengyuan Ding",
+   "Shizhan Gong",
+   "Siru Zhong",
+   "Terry Jingchen Zhang",
+   "Tianle Gu",
+   "Tianyi Liang",
+   "Weijie Liu",
+   "Weikai Yang",
+   "Weizhi Fei",
+   "Xin Wang",
+   "Xinpeng Liu",
+   "Xuanwen Ding",
+   "Yihong Tang",
+   "Yuanli Wang",
+   "Yukun Jiang",
+   "Yuming Yang",
+   "Zhengbao He",
+   "Zhikai Chen",
+   "Zhikun Xu",
+   "Zhuang Li",
+   "Zihao Huang"
+  ],
+  "published": "2026-06-30",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }
