@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-10-19 — [같은 답을 내는 학생, 다른 속을 가진 학생 — KL이 놓치고 로짓 거리가 붙잡는 표상의 닮음](https://pheeree.github.io/2026/10/19/logit-distance-representational-similarity-distillation/)
 - 2026-10-18 — [프리필 평가가 보지 못하는 누적 — KVarN의 pseudo-decode가 드러낸 토큰 스케일 오차와, 두 그림 사이에서 비는 한 고리](https://pheeree.github.io/2026/10/18/kvarn-kv-cache-error-accumulation-token-scale/)
 - 2026-10-17 — [GLU의 세 투영을 한 묶음으로 채점하면 — DaSS가 고친 구조적 불일치와, 눈금에 따라 뒤집힌 층 민감도](https://pheeree.github.io/2026/10/17/dass-glu-dependency-aware-sparsity/)
 - 2026-10-16 — [증류 손실로 뉴런을 고르는 가지치기 — SlimMoE의 중간 단계가 지킨 것과, MMLU 눈금이 보지 않은 것](https://pheeree.github.io/2026/10/16/slimmoe-staged-pruning-distillation/)

@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-19] 같은 답을 내는 학생, 다른 속을 가진 학생 — KL이 놓치고 로짓 거리가 붙잡는 표상의 닮음
+
+- **중심**: Beatrix M. G. Nielsen 외. *Logit Distance Bounds Representational Similarity*. [arXiv:2602.15438](https://arxiv.org/abs/2602.15438) — 분야: cs.LG, cs.AI, stat.ML
+- Taehyeon Kim 외. *Comparing Kullback-Leibler Divergence and Mean Squared Error Loss in Knowledge Distillation*. [arXiv:2105.08919](https://arxiv.org/abs/2105.08919) — 분야: cs.LG, cs.CV
+- MohammadReza Davari 외. *Reliability of CKA as a Similarity Measure in Deep Learning*. [arXiv:2210.16156](https://arxiv.org/abs/2210.16156) — 분야: cs.LG, cs.AI, cs.CV
+- Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
+- Lu Yin 외. *Outlier Weighed Layerwise Sparsity (OWL): A Missing Secret Sauce for Pruning LLMs to High Sparsity*. [arXiv:2310.05175](https://arxiv.org/abs/2310.05175) — 분야: cs.LG
+- Joshua Engels 외. *Not All Language Model Features Are One-Dimensionally Linear*. [arXiv:2405.14860](https://arxiv.org/abs/2405.14860) — 분야: cs.LG
+- Hao Peng 외. *Pre-training Distillation for Large Language Models: A Design Space Exploration*. [arXiv:2410.16215](https://arxiv.org/abs/2410.16215) — 분야: cs.CL, cs.AI
+- Emanuele Marconato 외. *All or None: Identifiable Linear Properties of Next-token Predictors in Language Modeling*. [arXiv:2410.23501](https://arxiv.org/abs/2410.23501) — 분야: stat.ML, cs.AI, cs.CL, cs.LG
+- Beatrix M. G. Nielsen 외. *When Does Closeness in Distribution Imply Representational Similarity? An Identifiability Perspective*. [arXiv:2506.03784](https://arxiv.org/abs/2506.03784) — 분야: cs.LG, cs.AI, stat.ML
+- Yeongmin Kim 외. *Distillation of Large Language Models via Concrete Score Matching*. [arXiv:2509.25837](https://arxiv.org/abs/2509.25837) — 분야: cs.LG, cs.AI
+- Nilesh Sarkar, Dawar Jyoti Deka. *Geometric Limits of Knowledge Distillation: A Minimum-Width Theorem via Superposition Theory*. [arXiv:2604.04037](https://arxiv.org/abs/2604.04037) — 분야: cs.LG, cs.AI
+- Zhongzhu Zhou 외. *OSCAR: Offline Spectral Covariance-Aware Rotation for 2-bit KV Cache Quantization*. [arXiv:2605.17757](https://arxiv.org/abs/2605.17757) — 분야: cs.LG, cs.AI, cs.DC, cs.PF
+- Qingyu Zhang 외. *ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation*. [arXiv:2607.13124](https://arxiv.org/abs/2607.13124) — 분야: cs.LG, cs.AI, cs.CL
+
 ## [2026-10-18] 프리필 평가가 보지 못하는 누적 — KVarN의 pseudo-decode가 드러낸 토큰 스케일 오차와, 두 그림 사이에서 비는 한 고리
 
 - **중심**: Lorenz K. Muller 외. *KVarN: Variance-Normalized KV-Cache Quantization Mitigates Error Accumulation in Reasoning Tasks*. [arXiv:2606.03458](https://arxiv.org/abs/2606.03458) — 분야: cs.LG

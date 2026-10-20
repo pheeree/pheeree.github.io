@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-19-logit-distance-representational-similarity-distillation:
+  title: "같은 답을 내는 학생, 다른 속을 가진 학생 — KL이 놓치고 로짓 거리가 붙잡는 표상의 닮음"
+  central:
+    id: "2602.15438"
+    title: "Logit Distance Bounds Representational Similarity"
+    authors: "Beatrix M. G. Nielsen 외"
+    keywords: "cs.LG, cs.AI, stat.ML"
+    url: "https://arxiv.org/abs/2602.15438"
+  referenced:
+    - { id: "2105.08919", title: "Comparing Kullback-Leibler Divergence and Mean Squared Error Loss in Knowledge Distillation", authors: "Taehyeon Kim 외", keywords: "cs.LG, cs.CV", url: "https://arxiv.org/abs/2105.08919" }
+    - { id: "2210.16156", title: "Reliability of CKA as a Similarity Measure in Deep Learning", authors: "MohammadReza Davari 외", keywords: "cs.LG, cs.AI, cs.CV", url: "https://arxiv.org/abs/2210.16156" }
+    - { id: "2310.01382", title: "Compressing LLMs: The Truth is Rarely Pure and Never Simple", authors: "Ajay Jaiswal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2310.01382" }
+    - { id: "2310.05175", title: "Outlier Weighed Layerwise Sparsity (OWL): A Missing Secret Sauce for Pruning LLMs to High Sparsity", authors: "Lu Yin 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2310.05175" }
+    - { id: "2405.14860", title: "Not All Language Model Features Are One-Dimensionally Linear", authors: "Joshua Engels 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2405.14860" }
+    - { id: "2410.16215", title: "Pre-training Distillation for Large Language Models: A Design Space Exploration", authors: "Hao Peng 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2410.16215" }
+    - { id: "2410.23501", title: "All or None: Identifiable Linear Properties of Next-token Predictors in Language Modeling", authors: "Emanuele Marconato 외", keywords: "stat.ML, cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2410.23501" }
+    - { id: "2506.03784", title: "When Does Closeness in Distribution Imply Representational Similarity? An Identifiability Perspective", authors: "Beatrix M. G. Nielsen 외", keywords: "cs.LG, cs.AI, stat.ML", url: "https://arxiv.org/abs/2506.03784" }
+    - { id: "2509.25837", title: "Distillation of Large Language Models via Concrete Score Matching", authors: "Yeongmin Kim 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2509.25837" }
+    - { id: "2604.04037", title: "Geometric Limits of Knowledge Distillation: A Minimum-Width Theorem via Superposition Theory", authors: "Nilesh Sarkar, Dawar Jyoti Deka", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.04037" }
+    - { id: "2605.17757", title: "OSCAR: Offline Spectral Covariance-Aware Rotation for 2-bit KV Cache Quantization", authors: "Zhongzhu Zhou 외", keywords: "cs.LG, cs.AI, cs.DC, cs.PF", url: "https://arxiv.org/abs/2605.17757" }
+    - { id: "2607.13124", title: "ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation", authors: "Qingyu Zhang 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2607.13124" }
+
 2026-10-18-kvarn-kv-cache-error-accumulation-token-scale:
   title: "프리필 평가가 보지 못하는 누적 — KVarN의 pseudo-decode가 드러낸 토큰 스케일 오차와, 두 그림 사이에서 비는 한 고리"
   central:
