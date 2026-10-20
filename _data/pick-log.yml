@@ -1216,3 +1216,18 @@
     증류판인지 재기. 어제 KVarN의 MSE↔KL 어긋남에 이어 KL↔로짓 어긋남으로, 눈금끼리의 위계를 한 칸 더.
   switch_notice: false
   branch: null
+- date: 2026-10-20
+  slug: allocation-cost-weight-vs-output-space
+  source: 2606.27785
+  path: d
+  focus_q: Q9
+  nth: 32
+  purpose: >
+    (a) 10-19·10-18·10-17 세 편 '다음 읽을 후보' 전부 미러 미도착, (b) 대기열 0건, (c-focus) Q9 다음 후보 7편 전부 사용됨,
+    (d) 14일 창의 유일한 미사용(2610.19443 비전 사전학습)은 Q9 무관이라 닷새째 창을 넓혀, 6월 말 도착한 채 미사용이던
+    FARS(자동 연구 시스템) 산출 논문 Output-Space Allocation Costs(ROCKET 할당 비용을 가중치 공간→층 출력 공간으로)를 골랐음 —
+    조타가 아니라 본 세션의 선택. 오늘의 목적: Q9 질문 3·4를 '결정을 모는 눈금'으로 — 할당 비용을 사다리 한 칸 올렸을 때
+    왜 그만큼만 움직이는지(Spearman 0.99 대 최적점 96.6% 변경), 그리고 같은 결정이 정확도와 PPL에서 반대로 채점되는지.
+    10-18 MSE↔KL, 10-19 KL↔로짓에 이어 눈금 사다리의 아래 두 칸.
+  switch_notice: false
+  branch: null
