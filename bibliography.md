@@ -6,6 +6,21 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-20] 어디를 얼마나 자를지 정하는 눈금 — 가중치 오차에서 층 출력 오차로 옮긴 할당이 정확도와 퍼플렉시티를 반대로 움직인 까닭
+
+- **중심**: Qiong Tang 외. *Output-Space Allocation Costs for Calibration-Guided LLM Compression: An Empirical Study*. [arXiv:2606.27785](https://arxiv.org/abs/2606.27785) — 분야: cs.CL, cs.AI
+- Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
+- Lu Yin 외. *Outlier Weighed Layerwise Sparsity (OWL): A Missing Secret Sauce for Pruning LLMs to High Sparsity*. [arXiv:2310.05175](https://arxiv.org/abs/2310.05175) — 분야: cs.LG
+- Abhinav Dutta 외. *Accuracy is Not All You Need*. [arXiv:2407.09141](https://arxiv.org/abs/2407.09141) — 분야: cs.LG
+- Bishwash Khanal, Jeffery M. Capone. *Evaluating the Impact of Compression Techniques on Task-Specific Performance of Large Language Models*. [arXiv:2409.11233](https://arxiv.org/abs/2409.11233) — 분야: cs.CL
+- David Hoffmann 외. *LLM-Rank: A Graph Theoretical Approach to Pruning Large Language Models*. [arXiv:2410.13299](https://arxiv.org/abs/2410.13299) — 분야: cs.LG, cs.AI
+- Ali Abbasi 외. *Zero Sum SVD: Balancing Loss Sensitivity for Low Rank LLM Compression*. [arXiv:2602.02848](https://arxiv.org/abs/2602.02848) — 분야: cs.LG
+- Ammar Ali 외. *ROCKET: Rapid Optimization via Calibration-guided Knapsack Enhanced Truncation for Efficient Model Compression*. [arXiv:2602.11008](https://arxiv.org/abs/2602.11008) — 분야: cs.LG, cs.AI, cs.CL
+- Zhengxin Zhang 외. *How Far Are We From True Auto-Research?*. [arXiv:2605.19156](https://arxiv.org/abs/2605.19156) — 분야: cs.AI, cs.CY, cs.LG, cs.MA
+- Qiong Tang 외. *FARS: A Fully Automated Research System Deployed at Scale*. [arXiv:2606.31651](https://arxiv.org/abs/2606.31651) — 분야: cs.AI
+- Zhuowen Liu 외. *LACE-SVD: Loss-Aware SVD with Cumulative Error Correction for LLM Compression*. [arXiv:2607.03057](https://arxiv.org/abs/2607.03057) — 분야: cs.LG, cs.AI
+- Yuan Wu 외. *The Asymmetric Harms of LLM Compression*. [arXiv:2608.19670](https://arxiv.org/abs/2608.19670) — 분야: cs.CL
+
 ## [2026-10-19] 같은 답을 내는 학생, 다른 속을 가진 학생 — KL이 놓치고 로짓 거리가 붙잡는 표상의 닮음
 
 - **중심**: Beatrix M. G. Nielsen 외. *Logit Distance Bounds Representational Similarity*. [arXiv:2602.15438](https://arxiv.org/abs/2602.15438) — 분야: cs.LG, cs.AI, stat.ML
