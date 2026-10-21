@@ -15018,5 +15018,117 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2509.01649": {
+  "title": "Distilled Pretraining: A modern lens of Data, In-Context Learning and Test-Time Scaling",
+  "authors": [
+   "Sachin Goyal",
+   "David Lopez-Paz",
+   "Kartik Ahuja"
+  ],
+  "published": "2025-09-01",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "1910.01348": {
+  "title": "On the Efficacy of Knowledge Distillation",
+  "authors": [
+   "Jang Hyun Cho",
+   "Bharath Hariharan"
+  ],
+  "published": "2019-10-03",
+  "categories": [
+   "cs.LG",
+   "cs.CV"
+  ]
+ },
+ "1906.02629": {
+  "title": "When Does Label Smoothing Help?",
+  "authors": [
+   "Rafael Müller",
+   "Simon Kornblith",
+   "Geoffrey Hinton"
+  ],
+  "published": "2019-06-06",
+  "categories": [
+   "cs.LG",
+   "stat.ML"
+  ]
+ },
+ "2312.09390": {
+  "title": "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision",
+  "authors": [
+   "Collin Burns",
+   "Pavel Izmailov",
+   "Jan Hendrik Kirchner",
+   "Bowen Baker",
+   "Leo Gao",
+   "Leopold Aschenbrenner",
+   "Yining Chen",
+   "Adrien Ecoffet",
+   "Manas Joglekar",
+   "Jan Leike",
+   "Ilya Sutskever",
+   "Jeff Wu"
+  ],
+  "published": "2023-12-14",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "1805.04770": {
+  "title": "Born Again Neural Networks",
+  "authors": [
+   "Tommaso Furlanello",
+   "Zachary C. Lipton",
+   "Michael Tschannen",
+   "Laurent Itti",
+   "Anima Anandkumar"
+  ],
+  "published": "2018-05-12",
+  "categories": [
+   "stat.ML",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2505.15442": {
+  "title": "On the Generalization vs Fidelity Paradox in Knowledge Distillation",
+  "authors": [
+   "Suhas Kamasetty Ramesh",
+   "Ayan Sengupta",
+   "Tanmoy Chakraborty"
+  ],
+  "published": "2025-05-21",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2002.05715": {
+  "title": "Self-Distillation Amplifies Regularization in Hilbert Space",
+  "authors": [
+   "Hossein Mobahi",
+   "Mehrdad Farajtabar",
+   "Peter L. Bartlett"
+  ],
+  "published": "2020-02-13",
+  "categories": [
+   "cs.LG",
+   "stat.ML"
+  ]
+ },
+ "2603.13260": {
+  "title": "Explain in Your Own Words: Improving Reasoning via Token-Selective Dual Knowledge Distillation",
+  "authors": [
+   "Minsang Kim",
+   "Seung Jun Baek"
+  ],
+  "published": "2026-02-25",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
  }
 }
