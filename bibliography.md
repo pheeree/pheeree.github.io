@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-21] 더 약한 교사에게서도 배우는 학생 — 사전학습 증류가 넓힌 것은 토큰 예측의 폭인가, 합성의 깊이인가
+
+- **중심**: Taiming Lu, Zhuang Liu. *Strong Teacher Not Needed? On Distillation in LLM Pretraining*. [arXiv:2605.23857](https://arxiv.org/abs/2605.23857) — 분야: cs.LG, cs.CL
+- Geoffrey Hinton 외. *Distilling the Knowledge in a Neural Network*. [arXiv:1503.02531](https://arxiv.org/abs/1503.02531) — 분야: stat.ML, cs.LG, cs.NE
+- Tommaso Furlanello 외. *Born Again Neural Networks*. [arXiv:1805.04770](https://arxiv.org/abs/1805.04770) — 분야: stat.ML, cs.AI, cs.LG
+- Seyed-Iman Mirzadeh 외. *Improved Knowledge Distillation via Teacher Assistant*. [arXiv:1902.03393](https://arxiv.org/abs/1902.03393) — 분야: cs.LG, cs.AI, stat.ML
+- Rafael Müller 외. *When Does Label Smoothing Help?*. [arXiv:1906.02629](https://arxiv.org/abs/1906.02629) — 분야: cs.LG, stat.ML
+- Jang Hyun Cho, Bharath Hariharan. *On the Efficacy of Knowledge Distillation*. [arXiv:1910.01348](https://arxiv.org/abs/1910.01348) — 분야: cs.LG, cs.CV
+- Hossein Mobahi 외. *Self-Distillation Amplifies Regularization in Hilbert Space*. [arXiv:2002.05715](https://arxiv.org/abs/2002.05715) — 분야: cs.LG, stat.ML
+- Collin Burns 외. *Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision*. [arXiv:2312.09390](https://arxiv.org/abs/2312.09390) — 분야: cs.CL
+- Hao Peng 외. *Pre-training Distillation for Large Language Models: A Design Space Exploration*. [arXiv:2410.16215](https://arxiv.org/abs/2410.16215) — 분야: cs.CL, cs.AI
+- Dan Busbridge 외. *Distillation Scaling Laws*. [arXiv:2502.08606](https://arxiv.org/abs/2502.08606) — 분야: cs.LG, cs.AI, cs.CL, stat.ML
+- Suhas Kamasetty Ramesh 외. *On the Generalization vs Fidelity Paradox in Knowledge Distillation*. [arXiv:2505.15442](https://arxiv.org/abs/2505.15442) — 분야: cs.CL
+- Sachin Goyal 외. *Distilled Pretraining: A modern lens of Data, In-Context Learning and Test-Time Scaling*. [arXiv:2509.01649](https://arxiv.org/abs/2509.01649) — 분야: cs.LG
+- Minsang Kim, Seung Jun Baek. *Explain in Your Own Words: Improving Reasoning via Token-Selective Dual Knowledge Distillation*. [arXiv:2603.13260](https://arxiv.org/abs/2603.13260) — 분야: cs.CL, cs.AI, cs.LG
+
 ## [2026-10-20] 어디를 얼마나 자를지 정하는 눈금 — 가중치 오차에서 층 출력 오차로 옮긴 할당이 정확도와 퍼플렉시티를 반대로 움직인 까닭
 
 - **중심**: Qiong Tang 외. *Output-Space Allocation Costs for Calibration-Guided LLM Compression: An Empirical Study*. [arXiv:2606.27785](https://arxiv.org/abs/2606.27785) — 분야: cs.CL, cs.AI

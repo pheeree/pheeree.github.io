@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-21-strong-teacher-not-needed-distillation-pretraining:
+  title: "더 약한 교사에게서도 배우는 학생 — 사전학습 증류가 넓힌 것은 토큰 예측의 폭인가, 합성의 깊이인가"
+  central:
+    id: "2605.23857"
+    title: "Strong Teacher Not Needed? On Distillation in LLM Pretraining"
+    authors: "Taiming Lu, Zhuang Liu"
+    keywords: "cs.LG, cs.CL"
+    url: "https://arxiv.org/abs/2605.23857"
+  referenced:
+    - { id: "1503.02531", title: "Distilling the Knowledge in a Neural Network", authors: "Geoffrey Hinton 외", keywords: "stat.ML, cs.LG, cs.NE", url: "https://arxiv.org/abs/1503.02531" }
+    - { id: "1805.04770", title: "Born Again Neural Networks", authors: "Tommaso Furlanello 외", keywords: "stat.ML, cs.AI, cs.LG", url: "https://arxiv.org/abs/1805.04770" }
+    - { id: "1902.03393", title: "Improved Knowledge Distillation via Teacher Assistant", authors: "Seyed-Iman Mirzadeh 외", keywords: "cs.LG, cs.AI, stat.ML", url: "https://arxiv.org/abs/1902.03393" }
+    - { id: "1906.02629", title: "When Does Label Smoothing Help?", authors: "Rafael Müller 외", keywords: "cs.LG, stat.ML", url: "https://arxiv.org/abs/1906.02629" }
+    - { id: "1910.01348", title: "On the Efficacy of Knowledge Distillation", authors: "Jang Hyun Cho, Bharath Hariharan", keywords: "cs.LG, cs.CV", url: "https://arxiv.org/abs/1910.01348" }
+    - { id: "2002.05715", title: "Self-Distillation Amplifies Regularization in Hilbert Space", authors: "Hossein Mobahi 외", keywords: "cs.LG, stat.ML", url: "https://arxiv.org/abs/2002.05715" }
+    - { id: "2312.09390", title: "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision", authors: "Collin Burns 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2312.09390" }
+    - { id: "2410.16215", title: "Pre-training Distillation for Large Language Models: A Design Space Exploration", authors: "Hao Peng 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2410.16215" }
+    - { id: "2502.08606", title: "Distillation Scaling Laws", authors: "Dan Busbridge 외", keywords: "cs.LG, cs.AI, cs.CL, stat.ML", url: "https://arxiv.org/abs/2502.08606" }
+    - { id: "2505.15442", title: "On the Generalization vs Fidelity Paradox in Knowledge Distillation", authors: "Suhas Kamasetty Ramesh 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2505.15442" }
+    - { id: "2509.01649", title: "Distilled Pretraining: A modern lens of Data, In-Context Learning and Test-Time Scaling", authors: "Sachin Goyal 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2509.01649" }
+    - { id: "2603.13260", title: "Explain in Your Own Words: Improving Reasoning via Token-Selective Dual Knowledge Distillation", authors: "Minsang Kim, Seung Jun Baek", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2603.13260" }
+
 2026-10-20-allocation-cost-weight-vs-output-space:
   title: "어디를 얼마나 자를지 정하는 눈금 — 가중치 오차에서 층 출력 오차로 옮긴 할당이 정확도와 퍼플렉시티를 반대로 움직인 까닭"
   central:
