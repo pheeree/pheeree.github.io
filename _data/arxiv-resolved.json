@@ -15130,5 +15130,123 @@
    "cs.AI",
    "cs.LG"
   ]
+ },
+ "2605.23645": {
+  "title": "Learning Through Noise: Why Subliminal Learning Works and When It Fails",
+  "authors": [
+   "Vincent C. Brockers",
+   "Roman D. Ventzke",
+   "Valentin Neuhaus",
+   "Belén Hidalgo-Ogalde",
+   "Viola Priesemann"
+  ],
+  "published": "2026-05-22",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2509.23886": {
+  "title": "Towards Understanding Subliminal Learning: When and How Hidden Biases Transfer",
+  "authors": [
+   "Simon Schrodi",
+   "Elias Kempf",
+   "Fazl Barez",
+   "Thomas Brox"
+  ],
+  "published": "2025-09-28",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2507.14805": {
+  "title": "Subliminal Learning: Language models transmit behavioral traits via hidden signals in data",
+  "authors": [
+   "Alex Cloud",
+   "Minh Le",
+   "James Chua",
+   "Jan Betley",
+   "Anna Sztyber-Betley",
+   "Jacob Hilton",
+   "Samuel Marks",
+   "Owain Evans"
+  ],
+  "published": "2025-07-20",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2609.01091": {
+  "title": "Subliminal Learning as Trait-Direction Drift: A Mechanism and Targeted Control under SFT Distillation",
+  "authors": [
+   "Zhixuan Liu",
+   "Zhichen Dong",
+   "Yuyu Fan",
+   "Xiangtian Li",
+   "Chao Yang"
+  ],
+  "published": "2026-09-01",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2609.22215": {
+  "title": "On Mitigation of Subliminal Learning in Large Language Models",
+  "authors": [
+   "Atsushi Yanagisawa",
+   "Brendan Gho",
+   "Rajendran Ramesh Babu Manoj Narender",
+   "Kevin Zhu",
+   "Madhur Panwar",
+   "Antonio Mari"
+  ],
+  "published": "2026-09-02",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "1905.02175": {
+  "title": "Adversarial Examples Are Not Bugs, They Are Features",
+  "authors": [
+   "Andrew Ilyas",
+   "Shibani Santurkar",
+   "Dimitris Tsipras",
+   "Logan Engstrom",
+   "Brandon Tran",
+   "Aleksander Madry"
+  ],
+  "published": "2019-05-06",
+  "categories": [
+   "stat.ML",
+   "cs.CR",
+   "cs.CV",
+   "cs.LG"
+  ]
+ },
+ "2608.05734": {
+  "title": "Subliminal Learning is Non-Semantic Distillation",
+  "authors": [
+   "Ethan Hadley",
+   "Eren Gultepe"
+  ],
+  "published": "2026-08-06",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2609.12586": {
+  "title": "Reproducing and Evaluating the Generalizability of Subliminal Learning in Open-Weight Models",
+  "authors": [
+   "Daan van der Weijden",
+   "Nathan Brack",
+   "Selene Baez Santamaria"
+  ],
+  "published": "2026-09-11",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }
