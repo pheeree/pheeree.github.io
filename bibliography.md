@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-22] 숫자열에 실려 간 올빼미 — 의미를 거르는 필터가 보지 못하는 채널, 그리고 같은 출발점이라는 조건
+
+- **중심**: Alex Cloud 외. *Subliminal Learning: Language models transmit behavioral traits via hidden signals in data*. [arXiv:2507.14805](https://arxiv.org/abs/2507.14805) — 분야: cs.LG, cs.AI
+- Andrew Ilyas 외. *Adversarial Examples Are Not Bugs, They Are Features*. [arXiv:1905.02175](https://arxiv.org/abs/1905.02175) — 분야: stat.ML, cs.CR, cs.CV, cs.LG
+- Simon Schrodi 외. *Towards Understanding Subliminal Learning: When and How Hidden Biases Transfer*. [arXiv:2509.23886](https://arxiv.org/abs/2509.23886) — 분야: cs.LG, cs.AI
+- Vincent C. Brockers 외. *Learning Through Noise: Why Subliminal Learning Works and When It Fails*. [arXiv:2605.23645](https://arxiv.org/abs/2605.23645) — 분야: cs.LG, cs.AI
+- Ethan Hadley, Eren Gultepe. *Subliminal Learning is Non-Semantic Distillation*. [arXiv:2608.05734](https://arxiv.org/abs/2608.05734) — 분야: cs.AI
+- Zhixuan Liu 외. *Subliminal Learning as Trait-Direction Drift: A Mechanism and Targeted Control under SFT Distillation*. [arXiv:2609.01091](https://arxiv.org/abs/2609.01091) — 분야: cs.LG
+- Daan van der Weijden 외. *Reproducing and Evaluating the Generalizability of Subliminal Learning in Open-Weight Models*. [arXiv:2609.12586](https://arxiv.org/abs/2609.12586) — 분야: cs.AI
+- Atsushi Yanagisawa 외. *On Mitigation of Subliminal Learning in Large Language Models*. [arXiv:2609.22215](https://arxiv.org/abs/2609.22215) — 분야: cs.CL, cs.LG
+
 ## [2026-10-21] 더 약한 교사에게서도 배우는 학생 — 사전학습 증류가 넓힌 것은 토큰 예측의 폭인가, 합성의 깊이인가
 
 - **중심**: Taiming Lu, Zhuang Liu. *Strong Teacher Not Needed? On Distillation in LLM Pretraining*. [arXiv:2605.23857](https://arxiv.org/abs/2605.23857) — 분야: cs.LG, cs.CL

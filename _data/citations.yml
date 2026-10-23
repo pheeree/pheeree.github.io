@@ -1,6 +1,23 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-22-subliminal-learning-what-distillation-carries:
+  title: "숫자열에 실려 간 올빼미 — 의미를 거르는 필터가 보지 못하는 채널, 그리고 같은 출발점이라는 조건"
+  central:
+    id: "2507.14805"
+    title: "Subliminal Learning: Language models transmit behavioral traits via hidden signals in data"
+    authors: "Alex Cloud 외"
+    keywords: "cs.LG, cs.AI"
+    url: "https://arxiv.org/abs/2507.14805"
+  referenced:
+    - { id: "1905.02175", title: "Adversarial Examples Are Not Bugs, They Are Features", authors: "Andrew Ilyas 외", keywords: "stat.ML, cs.CR, cs.CV, cs.LG", url: "https://arxiv.org/abs/1905.02175" }
+    - { id: "2509.23886", title: "Towards Understanding Subliminal Learning: When and How Hidden Biases Transfer", authors: "Simon Schrodi 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2509.23886" }
+    - { id: "2605.23645", title: "Learning Through Noise: Why Subliminal Learning Works and When It Fails", authors: "Vincent C. Brockers 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.23645" }
+    - { id: "2608.05734", title: "Subliminal Learning is Non-Semantic Distillation", authors: "Ethan Hadley, Eren Gultepe", keywords: "cs.AI", url: "https://arxiv.org/abs/2608.05734" }
+    - { id: "2609.01091", title: "Subliminal Learning as Trait-Direction Drift: A Mechanism and Targeted Control under SFT Distillation", authors: "Zhixuan Liu 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2609.01091" }
+    - { id: "2609.12586", title: "Reproducing and Evaluating the Generalizability of Subliminal Learning in Open-Weight Models", authors: "Daan van der Weijden 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2609.12586" }
+    - { id: "2609.22215", title: "On Mitigation of Subliminal Learning in Large Language Models", authors: "Atsushi Yanagisawa 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2609.22215" }
+
 2026-10-21-strong-teacher-not-needed-distillation-pretraining:
   title: "더 약한 교사에게서도 배우는 학생 — 사전학습 증류가 넓힌 것은 토큰 예측의 폭인가, 합성의 깊이인가"
   central:
