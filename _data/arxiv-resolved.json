@@ -15248,5 +15248,195 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2608.20055": {
+  "title": "EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models",
+  "authors": [
+   "Yiting Qu",
+   "Ziqing Yang",
+   "Chi Cui",
+   "Ye Leng",
+   "Junjie Chu",
+   "Yang Zhang"
+  ],
+  "published": "2026-08-20",
+  "categories": [
+   "cs.CR",
+   "cs.AI"
+  ]
+ },
+ "2505.13792": {
+  "title": "Interpretable Traces, Unexpected Outcomes: Investigating the Disconnect in Trace-Based Knowledge Distillation",
+  "authors": [
+   "Siddhant Bhambri",
+   "Upasana Biswas",
+   "Subbarao Kambhampati"
+  ],
+  "published": "2025-05-20",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2305.15717": {
+  "title": "The False Promise of Imitating Proprietary LLMs",
+  "authors": [
+   "Arnav Gudibande",
+   "Eric Wallace",
+   "Charlie Snell",
+   "Xinyang Geng",
+   "Hao Liu",
+   "Pieter Abbeel",
+   "Sergey Levine",
+   "Dawn Song"
+  ],
+  "published": "2023-05-25",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2605.22737": {
+  "title": "The Distillation Game: Adaptive Evaluations & Efficient Defenses",
+  "authors": [
+   "Youssef Allouah",
+   "Mahdi Haghifam",
+   "Sanmi Koyejo",
+   "Reza Shokri"
+  ],
+  "published": "2026-05-21",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2512.22255": {
+  "title": "Shape of Thought: When Distribution Matters More than Correctness in Reasoning Tasks",
+  "authors": [
+   "Abhranil Chandra",
+   "Ayush Agrawal",
+   "Arian Hosseini",
+   "Sebastian Fischmeister",
+   "Rishabh Agarwal",
+   "Navin Goyal",
+   "Aaron Courville"
+  ],
+  "published": "2025-12-24",
+  "categories": [
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2603.07267": {
+  "title": "How to Steal Reasoning Without Reasoning Traces",
+  "authors": [
+   "Tingwei Zhang",
+   "John X. Morris",
+   "Vitaly Shmatikov"
+  ],
+  "published": "2026-03-07",
+  "categories": [
+   "cs.CR"
+  ]
+ },
+ "2502.07374": {
+  "title": "LLMs Can Easily Learn to Reason from Demonstrations Structure, not content, is what matters!",
+  "authors": [
+   "Dacheng Li",
+   "Shiyi Cao",
+   "Tyler Griggs",
+   "Shu Liu",
+   "Xiangxi Mo",
+   "Eric Tang",
+   "Sumanth Hegde",
+   "Kourosh Hakhamaneshi",
+   "Shishir G. Patil",
+   "Matei Zaharia",
+   "Joseph E. Gonzalez",
+   "Ion Stoica"
+  ],
+  "published": "2025-02-11",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2503.01307": {
+  "title": "Cognitive Behaviors that Enable Self-Improving Reasoners, or, Four Habits of Highly Effective STaRs",
+  "authors": [
+   "Kanishk Gandhi",
+   "Ayush Chakravarthy",
+   "Anikait Singh",
+   "Nathan Lile",
+   "Noah D. Goodman"
+  ],
+  "published": "2025-03-03",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2505.21067": {
+  "title": "Why Distillation can Outperform Zero-RL: The Role of Flexible Reasoning",
+  "authors": [
+   "Xiao Hu",
+   "Xingyu Lu",
+   "Liyuan Mao",
+   "YiFan Zhang",
+   "Tianke Zhang",
+   "Bin Wen",
+   "Fan Yang",
+   "Tingting Gao",
+   "Guorui Zhou"
+  ],
+  "published": "2025-05-27",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2604.23238": {
+  "title": "Hiding in Plain Sight: Detectability-Aware Antidistillation of Reasoning Models",
+  "authors": [
+   "Max Hartman",
+   "Vidhata Jayaraman",
+   "Moulik Choraria",
+   "Lav R. Varshney"
+  ],
+  "published": "2026-04-25",
+  "categories": [
+   "cs.CR",
+   "cs.AI"
+  ]
+ },
+ "2608.09867": {
+  "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+  "authors": [
+   "Alexander Panfilov",
+   "David Schmotz",
+   "Ilia Shumailov",
+   "Luca Beurer-Kellner",
+   "Joachim Schaeffer",
+   "Ameya Prabhu",
+   "Jonas Geiping",
+   "Maksym Andriushchenko"
+  ],
+  "published": "2026-08-10",
+  "categories": [
+   "cs.CR",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "1812.02766": {
+  "title": "Knockoff Nets: Stealing Functionality of Black-Box Models",
+  "authors": [
+   "Tribhuvanesh Orekondy",
+   "Bernt Schiele",
+   "Mario Fritz"
+  ],
+  "published": "2018-12-06",
+  "categories": [
+   "cs.CV",
+   "cs.CR",
+   "cs.LG"
+  ]
  }
 }
