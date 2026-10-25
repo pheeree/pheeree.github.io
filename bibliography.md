@@ -6,6 +6,23 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-23] 답에서 되짓는 추론 — 숨긴 궤적은 옮겨지는가, 옮겨진 것은 누구의 추론인가
+
+- **중심**: Tingwei Zhang 외. *How to Steal Reasoning Without Reasoning Traces*. [arXiv:2603.07267](https://arxiv.org/abs/2603.07267) — 분야: cs.CR
+- Tribhuvanesh Orekondy 외. *Knockoff Nets: Stealing Functionality of Black-Box Models*. [arXiv:1812.02766](https://arxiv.org/abs/1812.02766) — 분야: cs.CV, cs.CR, cs.LG
+- Arnav Gudibande 외. *The False Promise of Imitating Proprietary LLMs*. [arXiv:2305.15717](https://arxiv.org/abs/2305.15717) — 분야: cs.CL
+- Dacheng Li 외. *LLMs Can Easily Learn to Reason from Demonstrations Structure, not content, is what matters!*. [arXiv:2502.07374](https://arxiv.org/abs/2502.07374) — 분야: cs.AI
+- Yuetai Li 외. *Small Models Struggle to Learn from Strong Reasoners*. [arXiv:2502.12143](https://arxiv.org/abs/2502.12143) — 분야: cs.AI
+- Kanishk Gandhi 외. *Cognitive Behaviors that Enable Self-Improving Reasoners, or, Four Habits of Highly Effective STaRs*. [arXiv:2503.01307](https://arxiv.org/abs/2503.01307) — 분야: cs.CL, cs.LG
+- Siddhant Bhambri 외. *Interpretable Traces, Unexpected Outcomes: Investigating the Disconnect in Trace-Based Knowledge Distillation*. [arXiv:2505.13792](https://arxiv.org/abs/2505.13792) — 분야: cs.CL, cs.AI
+- Suhas Kamasetty Ramesh 외. *On the Generalization vs Fidelity Paradox in Knowledge Distillation*. [arXiv:2505.15442](https://arxiv.org/abs/2505.15442) — 분야: cs.CL
+- Xiao Hu 외. *Why Distillation can Outperform Zero-RL: The Role of Flexible Reasoning*. [arXiv:2505.21067](https://arxiv.org/abs/2505.21067) — 분야: cs.AI
+- Abhranil Chandra 외. *Shape of Thought: When Distribution Matters More than Correctness in Reasoning Tasks*. [arXiv:2512.22255](https://arxiv.org/abs/2512.22255) — 분야: cs.AI, cs.LG
+- Max Hartman 외. *Hiding in Plain Sight: Detectability-Aware Antidistillation of Reasoning Models*. [arXiv:2604.23238](https://arxiv.org/abs/2604.23238) — 분야: cs.CR, cs.AI
+- Youssef Allouah 외. *The Distillation Game: Adaptive Evaluations & Efficient Defenses*. [arXiv:2605.22737](https://arxiv.org/abs/2605.22737) — 분야: cs.LG, cs.AI
+- Alexander Panfilov 외. *Stealing Reasoning Traces from Proprietary LLM APIs*. [arXiv:2608.09867](https://arxiv.org/abs/2608.09867) — 분야: cs.CR, cs.AI, cs.LG
+- Yiting Qu 외. *EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models*. [arXiv:2608.20055](https://arxiv.org/abs/2608.20055) — 분야: cs.CR, cs.AI
+
 ## [2026-10-22] 숫자열에 실려 간 올빼미 — 의미를 거르는 필터가 보지 못하는 채널, 그리고 같은 출발점이라는 조건
 
 - **중심**: Alex Cloud 외. *Subliminal Learning: Language models transmit behavioral traits via hidden signals in data*. [arXiv:2507.14805](https://arxiv.org/abs/2507.14805) — 분야: cs.LG, cs.AI

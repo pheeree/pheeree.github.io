@@ -1,6 +1,29 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-23-trace-inversion-reasoning-without-traces:
+  title: "답에서 되짓는 추론 — 숨긴 궤적은 옮겨지는가, 옮겨진 것은 누구의 추론인가"
+  central:
+    id: "2603.07267"
+    title: "How to Steal Reasoning Without Reasoning Traces"
+    authors: "Tingwei Zhang 외"
+    keywords: "cs.CR"
+    url: "https://arxiv.org/abs/2603.07267"
+  referenced:
+    - { id: "1812.02766", title: "Knockoff Nets: Stealing Functionality of Black-Box Models", authors: "Tribhuvanesh Orekondy 외", keywords: "cs.CV, cs.CR, cs.LG", url: "https://arxiv.org/abs/1812.02766" }
+    - { id: "2305.15717", title: "The False Promise of Imitating Proprietary LLMs", authors: "Arnav Gudibande 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2305.15717" }
+    - { id: "2502.07374", title: "LLMs Can Easily Learn to Reason from Demonstrations Structure, not content, is what matters!", authors: "Dacheng Li 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2502.07374" }
+    - { id: "2502.12143", title: "Small Models Struggle to Learn from Strong Reasoners", authors: "Yuetai Li 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2502.12143" }
+    - { id: "2503.01307", title: "Cognitive Behaviors that Enable Self-Improving Reasoners, or, Four Habits of Highly Effective STaRs", authors: "Kanishk Gandhi 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2503.01307" }
+    - { id: "2505.13792", title: "Interpretable Traces, Unexpected Outcomes: Investigating the Disconnect in Trace-Based Knowledge Distillation", authors: "Siddhant Bhambri 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2505.13792" }
+    - { id: "2505.15442", title: "On the Generalization vs Fidelity Paradox in Knowledge Distillation", authors: "Suhas Kamasetty Ramesh 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2505.15442" }
+    - { id: "2505.21067", title: "Why Distillation can Outperform Zero-RL: The Role of Flexible Reasoning", authors: "Xiao Hu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2505.21067" }
+    - { id: "2512.22255", title: "Shape of Thought: When Distribution Matters More than Correctness in Reasoning Tasks", authors: "Abhranil Chandra 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2512.22255" }
+    - { id: "2604.23238", title: "Hiding in Plain Sight: Detectability-Aware Antidistillation of Reasoning Models", authors: "Max Hartman 외", keywords: "cs.CR, cs.AI", url: "https://arxiv.org/abs/2604.23238" }
+    - { id: "2605.22737", title: "The Distillation Game: Adaptive Evaluations & Efficient Defenses", authors: "Youssef Allouah 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.22737" }
+    - { id: "2608.09867", title: "Stealing Reasoning Traces from Proprietary LLM APIs", authors: "Alexander Panfilov 외", keywords: "cs.CR, cs.AI, cs.LG", url: "https://arxiv.org/abs/2608.09867" }
+    - { id: "2608.20055", title: "EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models", authors: "Yiting Qu 외", keywords: "cs.CR, cs.AI", url: "https://arxiv.org/abs/2608.20055" }
+
 2026-10-22-subliminal-learning-what-distillation-carries:
   title: "숫자열에 실려 간 올빼미 — 의미를 거르는 필터가 보지 못하는 채널, 그리고 같은 출발점이라는 조건"
   central:
