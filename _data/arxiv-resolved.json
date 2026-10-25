@@ -15438,5 +15438,133 @@
    "cs.CR",
    "cs.LG"
   ]
+ },
+ "2609.30864": {
+  "title": "Persistent Negatives for Adversarial Black-Box On-Policy Distillation",
+  "authors": [
+   "Haixu Ma",
+   "Saad Lahrichi",
+   "Weiwei Li",
+   "Kevin Han",
+   "Weiqiang Wu",
+   "Peggy Yang",
+   "Dongzhuo Li",
+   "Ruiyi Li",
+   "Serena Li",
+   "Gedi Zhou",
+   "Mingze Gao",
+   "Abhishek Kumar",
+   "Xiangjun Fan",
+   "Lizhu Zhang"
+  ],
+  "published": "2026-09-25",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2605.07396": {
+  "title": "Rubric-based On-policy Distillation",
+  "authors": [
+   "Junfeng Fang",
+   "Zhepei Hong",
+   "Mao Zheng",
+   "Mingyang Song",
+   "Gengsheng Li",
+   "Houcheng Jiang",
+   "Dan Zhang",
+   "Haiyun Guo",
+   "Xiang Wang",
+   "Tat-Seng Chua"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2511.10643": {
+  "title": "Black-Box On-Policy Distillation of Large Language Models",
+  "authors": [
+   "Tianzhu Ye",
+   "Li Dong",
+   "Zewen Chi",
+   "Xun Wu",
+   "Shaohan Huang",
+   "Furu Wei"
+  ],
+  "published": "2025-11-13",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2609.39757": {
+  "title": "Revisiting On-policy Adversarial Black-Box Distillation: Calibrating Groupwise Reward Geometry for Effective Advantage Construction",
+  "authors": [
+   "Xiao Cui",
+   "Mo Zhu",
+   "Yulei Qin",
+   "Yuze Wu",
+   "Wengang Zhou",
+   "Houqiang Li"
+  ],
+  "published": "2026-09-30",
+  "categories": [
+   "cs.LG",
+   "cs.CV"
+  ]
+ },
+ "2404.04475": {
+  "title": "Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators",
+  "authors": [
+   "Yann Dubois",
+   "Balázs Galambosi",
+   "Percy Liang",
+   "Tatsunori B. Hashimoto"
+  ],
+  "published": "2024-04-06",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL",
+   "stat.ML"
+  ]
+ },
+ "2604.03873": {
+  "title": "SODA: Semi On-Policy Black-Box Distillation for Large Language Models",
+  "authors": [
+   "Xiwen Chen",
+   "Jingjing Wang",
+   "Wenhui Zhu",
+   "Peijie Qiu",
+   "Xuanzhao Dong",
+   "Yueyue Deng",
+   "Hejian Sang",
+   "Zhipeng Wang",
+   "Alborz Geramifard",
+   "Feng Luo"
+  ],
+  "published": "2026-04-04",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "1811.02549": {
+  "title": "Language GANs Falling Short",
+  "authors": [
+   "Massimo Caccia",
+   "Lucas Caccia",
+   "William Fedus",
+   "Hugo Larochelle",
+   "Joelle Pineau",
+   "Laurent Charlin"
+  ],
+  "published": "2018-11-06",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
  }
 }
