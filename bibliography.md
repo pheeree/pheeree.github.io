@@ -6,6 +6,24 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-25] 학생 곁에서 자라는 판정자 — 블랙박스 온폴리시 증류에서 n-gram은 멀어지고 점수는 오를 때
+
+- **중심**: Tianzhu Ye 외. *Black-Box On-Policy Distillation of Large Language Models*. [arXiv:2511.10643](https://arxiv.org/abs/2511.10643) — 분야: cs.CL, cs.AI
+- Massimo Caccia 외. *Language GANs Falling Short*. [arXiv:1811.02549](https://arxiv.org/abs/1811.02549) — 분야: cs.CL, cs.LG
+- Seyed-Iman Mirzadeh 외. *Improved Knowledge Distillation via Teacher Assistant*. [arXiv:1902.03393](https://arxiv.org/abs/1902.03393) — 분야: cs.LG, cs.AI, stat.ML
+- Leo Gao 외. *Scaling Laws for Reward Model Overoptimization*. [arXiv:2210.10760](https://arxiv.org/abs/2210.10760) — 분야: cs.LG, stat.ML
+- Yuxian Gu 외. *MiniLLM: On-Policy Distillation of Large Language Models*. [arXiv:2306.08543](https://arxiv.org/abs/2306.08543) — 분야: cs.CL, cs.AI
+- Yann Dubois 외. *Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators*. [arXiv:2404.04475](https://arxiv.org/abs/2404.04475) — 분야: cs.LG, cs.AI, cs.CL, stat.ML
+- Tianzhe Chu 외. *SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training*. [arXiv:2501.17161](https://arxiv.org/abs/2501.17161) — 분야: cs.AI, cs.CV, cs.LG
+- Dacheng Li 외. *LLMs Can Easily Learn to Reason from Demonstrations Structure, not content, is what matters!*. [arXiv:2502.07374](https://arxiv.org/abs/2502.07374) — 분야: cs.AI
+- Alex Cloud 외. *Subliminal Learning: Language models transmit behavioral traits via hidden signals in data*. [arXiv:2507.14805](https://arxiv.org/abs/2507.14805) — 분야: cs.LG, cs.AI
+- Tingwei Zhang 외. *How to Steal Reasoning Without Reasoning Traces*. [arXiv:2603.07267](https://arxiv.org/abs/2603.07267) — 분야: cs.CR
+- Xiwen Chen 외. *SODA: Semi On-Policy Black-Box Distillation for Large Language Models*. [arXiv:2604.03873](https://arxiv.org/abs/2604.03873) — 분야: cs.LG, cs.CL
+- Junfeng Fang 외. *Rubric-based On-policy Distillation*. [arXiv:2605.07396](https://arxiv.org/abs/2605.07396) — 분야: cs.LG, cs.AI
+- Taiming Lu, Zhuang Liu. *Strong Teacher Not Needed? On Distillation in LLM Pretraining*. [arXiv:2605.23857](https://arxiv.org/abs/2605.23857) — 분야: cs.LG, cs.CL
+- Haixu Ma 외. *Persistent Negatives for Adversarial Black-Box On-Policy Distillation*. [arXiv:2609.30864](https://arxiv.org/abs/2609.30864) — 분야: cs.CL, cs.AI
+- Xiao Cui 외. *Revisiting On-policy Adversarial Black-Box Distillation: Calibrating Groupwise Reward Geometry for Effective Advantage Construction*. [arXiv:2609.39757](https://arxiv.org/abs/2609.39757) — 분야: cs.LG, cs.CV
+
 ## [2026-10-23] 답에서 되짓는 추론 — 숨긴 궤적은 옮겨지는가, 옮겨진 것은 누구의 추론인가
 
 - **중심**: Tingwei Zhang 외. *How to Steal Reasoning Without Reasoning Traces*. [arXiv:2603.07267](https://arxiv.org/abs/2603.07267) — 분야: cs.CR

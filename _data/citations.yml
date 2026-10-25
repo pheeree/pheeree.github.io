@@ -1,6 +1,30 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-25-black-box-on-policy-distillation-gad:
+  title: "학생 곁에서 자라는 판정자 — 블랙박스 온폴리시 증류에서 n-gram은 멀어지고 점수는 오를 때"
+  central:
+    id: "2511.10643"
+    title: "Black-Box On-Policy Distillation of Large Language Models"
+    authors: "Tianzhu Ye 외"
+    keywords: "cs.CL, cs.AI"
+    url: "https://arxiv.org/abs/2511.10643"
+  referenced:
+    - { id: "1811.02549", title: "Language GANs Falling Short", authors: "Massimo Caccia 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/1811.02549" }
+    - { id: "1902.03393", title: "Improved Knowledge Distillation via Teacher Assistant", authors: "Seyed-Iman Mirzadeh 외", keywords: "cs.LG, cs.AI, stat.ML", url: "https://arxiv.org/abs/1902.03393" }
+    - { id: "2210.10760", title: "Scaling Laws for Reward Model Overoptimization", authors: "Leo Gao 외", keywords: "cs.LG, stat.ML", url: "https://arxiv.org/abs/2210.10760" }
+    - { id: "2306.08543", title: "MiniLLM: On-Policy Distillation of Large Language Models", authors: "Yuxian Gu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2306.08543" }
+    - { id: "2404.04475", title: "Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators", authors: "Yann Dubois 외", keywords: "cs.LG, cs.AI, cs.CL, stat.ML", url: "https://arxiv.org/abs/2404.04475" }
+    - { id: "2501.17161", title: "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training", authors: "Tianzhe Chu 외", keywords: "cs.AI, cs.CV, cs.LG", url: "https://arxiv.org/abs/2501.17161" }
+    - { id: "2502.07374", title: "LLMs Can Easily Learn to Reason from Demonstrations Structure, not content, is what matters!", authors: "Dacheng Li 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2502.07374" }
+    - { id: "2507.14805", title: "Subliminal Learning: Language models transmit behavioral traits via hidden signals in data", authors: "Alex Cloud 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2507.14805" }
+    - { id: "2603.07267", title: "How to Steal Reasoning Without Reasoning Traces", authors: "Tingwei Zhang 외", keywords: "cs.CR", url: "https://arxiv.org/abs/2603.07267" }
+    - { id: "2604.03873", title: "SODA: Semi On-Policy Black-Box Distillation for Large Language Models", authors: "Xiwen Chen 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2604.03873" }
+    - { id: "2605.07396", title: "Rubric-based On-policy Distillation", authors: "Junfeng Fang 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2605.07396" }
+    - { id: "2605.23857", title: "Strong Teacher Not Needed? On Distillation in LLM Pretraining", authors: "Taiming Lu, Zhuang Liu", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2605.23857" }
+    - { id: "2609.30864", title: "Persistent Negatives for Adversarial Black-Box On-Policy Distillation", authors: "Haixu Ma 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2609.30864" }
+    - { id: "2609.39757", title: "Revisiting On-policy Adversarial Black-Box Distillation: Calibrating Groupwise Reward Geometry for Effective Advantage Construction", authors: "Xiao Cui 외", keywords: "cs.LG, cs.CV", url: "https://arxiv.org/abs/2609.39757" }
+
 2026-10-23-trace-inversion-reasoning-without-traces:
   title: "답에서 되짓는 추론 — 숨긴 궤적은 옮겨지는가, 옮겨진 것은 누구의 추론인가"
   central:
