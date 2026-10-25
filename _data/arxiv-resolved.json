@@ -15566,5 +15566,164 @@
    "cs.CL",
    "cs.LG"
   ]
+ },
+ "2509.25239": {
+  "title": "A Formal Comparison Between Chain of Thought and Latent Thought",
+  "authors": [
+   "Kevin Xu",
+   "Issei Sato"
+  ],
+  "published": "2025-09-25",
+  "categories": [
+   "cs.AI",
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2507.02199": {
+  "title": "Latent Chain-of-Thought? Decoding the Depth-Recurrent Transformer",
+  "authors": [
+   "Wenquan Lu",
+   "Yuechuan Yang",
+   "Kyle Lee",
+   "Yanshu Li",
+   "Enqi Liu"
+  ],
+  "published": "2025-07-02",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2402.18668": {
+  "title": "Simple linear attention language models balance the recall-throughput tradeoff",
+  "authors": [
+   "Simran Arora",
+   "Sabri Eyuboglu",
+   "Michael Zhang",
+   "Aman Timalsina",
+   "Silas Alberti",
+   "Dylan Zinsley",
+   "James Zou",
+   "Atri Rudra",
+   "Christopher Ré"
+  ],
+  "published": "2024-02-28",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2312.04927": {
+  "title": "Zoology: Measuring and Improving Recall in Efficient Language Models",
+  "authors": [
+   "Simran Arora",
+   "Sabri Eyuboglu",
+   "Aman Timalsina",
+   "Isys Johnson",
+   "Michael Poli",
+   "James Zou",
+   "Atri Rudra",
+   "Christopher Ré"
+  ],
+  "published": "2023-12-08",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2606.31779": {
+  "title": "Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers",
+  "authors": [
+   "Ying Fan",
+   "Anej Svete",
+   "Kangwook Lee"
+  ],
+  "published": "2026-06-30",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2604.21999": {
+  "title": "Universal Transformers Need Memory: Depth-State Trade-offs in Adaptive Recursive Reasoning",
+  "authors": [
+   "Grigory Sapunov"
+  ],
+  "published": "2026-04-23",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2502.17779": {
+  "title": "Simulating Time With Square-Root Space",
+  "authors": [
+   "R. Ryan Williams"
+  ],
+  "published": "2025-02-25",
+  "categories": [
+   "cs.CC"
+  ]
+ },
+ "2503.14337": {
+  "title": "PENCIL: Long Thoughts with Short Memory",
+  "authors": [
+   "Chenxiao Yang",
+   "Nathan Srebro",
+   "David McAllester",
+   "Zhiyuan Li"
+  ],
+  "published": "2025-03-18",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2605.07721": {
+  "title": "Memory-Efficient Looped Transformer: Decoupling Compute from Memory in Looped Language Models",
+  "authors": [
+   "Victor Conchello Vendrell",
+   "Arnau Padres Masdemont",
+   "Niccolò Grillo",
+   "Jordi Ros-Giralt",
+   "Arash Behboodi",
+   "Fabio Valerio Massoli"
+  ],
+  "published": "2026-05-08",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2604.11791": {
+  "title": "A Mechanistic Analysis of Looped Reasoning Language Models",
+  "authors": [
+   "Hugh Blayney",
+   "Álvaro Arroyo",
+   "Johan Obando-Ceron",
+   "Pablo Samuel Castro",
+   "Aaron Courville",
+   "Michael M. Bronstein",
+   "Xiaowen Dong"
+  ],
+  "published": "2026-04-13",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2605.30757": {
+  "title": "Chain-of-Thought and Compressed Looped Transformers: A Memory-Budget Separation",
+  "authors": [
+   "Haozhou Zhang"
+  ],
+  "published": "2026-05-29",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }

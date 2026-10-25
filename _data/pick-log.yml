@@ -1292,3 +1292,19 @@
     갱신되는 판별자(움직이는 눈금)가 고정 보상 모델의 해킹을 막는다는 주장으로 Q9 질문 4('눈금은 어떻게 낡는가')를 정면으로 묻는다.
   switch_notice: false
   branch: null
+- date: 2026-10-26
+  slug: compressed-looped-transformer-memory-budget
+  source: 2605.30757
+  path: d
+  focus_q: Q9
+  nth: 37
+  purpose: >
+    (a) 10-25·10-23·10-22 세 편 '다음 읽을 후보' 25건 중 미러 도착·미사용 0건, (b) 대기열 0건, (c-focus) Q9 다음 후보 7편 전부 사용됨,
+    (d) 14일 창의 유일한 미사용(2610.19443 비전 사전학습)은 Q9 무관이라 열흘째 창을 넓혀, 6월 2일 도착한 채 미사용이던
+    Chain-of-Thought and Compressed Looped Transformers: A Memory-Budget Separation(Haozhou Zhang)을 골랐음 — 조타가 아니라 본 세션의 선택
+    (키워드 스캔으로 Q9 인접 미사용 후보를 추린 뒤, 증류 연속 7편 뒤 08-29 여는 편의 재귀 추론기로 돌아가는 쪽을 판단).
+    오늘의 목적: Q9 질문 1('국소·전역의 갈림은 압축의 보편 성질인가')을 모델 압축이 아니라 '상태 압축' 쪽에서 묻는다 — 반복이
+    주는 계산과 반복 사이에 남는 기억을 분리한 공간 복잡도 경계가, 08-29의 TRM 붕괴(전 위치 carry state, 즉 기억이 넉넉한 쪽)를
+    설명하는가 못 하는가. 질문 2(붕괴 원인: 토큰 믹서 대 스케일 입자)에 '지속 상태 예산'이라는 셋째 후보를 세울 수 있는지도 함께.
+  switch_notice: false
+  branch: null
