@@ -1,6 +1,29 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-26-compressed-looped-transformer-memory-budget:
+  title: "반복 사이에 남는 것 — 압축 루프의 기억 예산은 08-29의 무너진 스도쿠를 설명하는가"
+  central:
+    id: "2605.30757"
+    title: "Chain-of-Thought and Compressed Looped Transformers: A Memory-Budget Separation"
+    authors: "Haozhou Zhang"
+    keywords: "cs.LG"
+    url: "https://arxiv.org/abs/2605.30757"
+  referenced:
+    - { id: "2312.04927", title: "Zoology: Measuring and Improving Recall in Efficient Language Models", authors: "Simran Arora 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2312.04927" }
+    - { id: "2402.18668", title: "Simple linear attention language models balance the recall-throughput tradeoff", authors: "Simran Arora 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2402.18668" }
+    - { id: "2502.07374", title: "LLMs Can Easily Learn to Reason from Demonstrations Structure, not content, is what matters!", authors: "Dacheng Li 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2502.07374" }
+    - { id: "2502.17779", title: "Simulating Time With Square-Root Space", authors: "R. Ryan Williams", keywords: "cs.CC", url: "https://arxiv.org/abs/2502.17779" }
+    - { id: "2503.14337", title: "PENCIL: Long Thoughts with Short Memory", authors: "Chenxiao Yang 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2503.14337" }
+    - { id: "2507.02199", title: "Latent Chain-of-Thought? Decoding the Depth-Recurrent Transformer", authors: "Wenquan Lu 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2507.02199" }
+    - { id: "2509.25239", title: "A Formal Comparison Between Chain of Thought and Latent Thought", authors: "Kevin Xu, Issei Sato", keywords: "cs.AI, cs.CL, cs.LG", url: "https://arxiv.org/abs/2509.25239" }
+    - { id: "2604.11791", title: "A Mechanistic Analysis of Looped Reasoning Language Models", authors: "Hugh Blayney 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.11791" }
+    - { id: "2604.21999", title: "Universal Transformers Need Memory: Depth-State Trade-offs in Adaptive Recursive Reasoning", authors: "Grigory Sapunov", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.21999" }
+    - { id: "2605.07721", title: "Memory-Efficient Looped Transformer: Decoupling Compute from Memory in Looped Language Models", authors: "Victor Conchello Vendrell 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2605.07721" }
+    - { id: "2606.26488", title: "What Survives When You Compress a Recursive Reasoner for the Edge?", authors: "Pearse Jim 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.26488" }
+    - { id: "2606.31779", title: "Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers", authors: "Ying Fan 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2606.31779" }
+    - { id: "2607.16237", title: "Quantizing Recursive Reasoning Models", authors: "Thorir Mar Ingolfsson 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2607.16237" }
+
 2026-10-25-black-box-on-policy-distillation-gad:
   title: "학생 곁에서 자라는 판정자 — 블랙박스 온폴리시 증류에서 n-gram은 멀어지고 점수는 오를 때"
   central:

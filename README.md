@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-10-26 — [반복 사이에 남는 것 — 압축 루프의 기억 예산은 08-29의 무너진 스도쿠를 설명하는가](https://pheeree.github.io/2026/10/26/compressed-looped-transformer-memory-budget/)
 - 2026-10-25 — [학생 곁에서 자라는 판정자 — 블랙박스 온폴리시 증류에서 n-gram은 멀어지고 점수는 오를 때](https://pheeree.github.io/2026/10/25/black-box-on-policy-distillation-gad/)
 - 2026-10-23 — [답에서 되짓는 추론 — 숨긴 궤적은 옮겨지는가, 옮겨진 것은 누구의 추론인가](https://pheeree.github.io/2026/10/23/trace-inversion-reasoning-without-traces/)
 - 2026-10-22 — [숫자열에 실려 간 올빼미 — 의미를 거르는 필터가 보지 못하는 채널, 그리고 같은 출발점이라는 조건](https://pheeree.github.io/2026/10/22/subliminal-learning-what-distillation-carries/)

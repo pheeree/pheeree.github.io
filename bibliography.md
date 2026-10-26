@@ -6,6 +6,23 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-26] 반복 사이에 남는 것 — 압축 루프의 기억 예산은 08-29의 무너진 스도쿠를 설명하는가
+
+- **중심**: Haozhou Zhang. *Chain-of-Thought and Compressed Looped Transformers: A Memory-Budget Separation*. [arXiv:2605.30757](https://arxiv.org/abs/2605.30757) — 분야: cs.LG
+- Simran Arora 외. *Zoology: Measuring and Improving Recall in Efficient Language Models*. [arXiv:2312.04927](https://arxiv.org/abs/2312.04927) — 분야: cs.CL, cs.LG
+- Simran Arora 외. *Simple linear attention language models balance the recall-throughput tradeoff*. [arXiv:2402.18668](https://arxiv.org/abs/2402.18668) — 분야: cs.CL, cs.LG
+- Dacheng Li 외. *LLMs Can Easily Learn to Reason from Demonstrations Structure, not content, is what matters!*. [arXiv:2502.07374](https://arxiv.org/abs/2502.07374) — 분야: cs.AI
+- R. Ryan Williams. *Simulating Time With Square-Root Space*. [arXiv:2502.17779](https://arxiv.org/abs/2502.17779) — 분야: cs.CC
+- Chenxiao Yang 외. *PENCIL: Long Thoughts with Short Memory*. [arXiv:2503.14337](https://arxiv.org/abs/2503.14337) — 분야: cs.LG, cs.CL
+- Wenquan Lu 외. *Latent Chain-of-Thought? Decoding the Depth-Recurrent Transformer*. [arXiv:2507.02199](https://arxiv.org/abs/2507.02199) — 분야: cs.CL, cs.AI, cs.LG
+- Kevin Xu, Issei Sato. *A Formal Comparison Between Chain of Thought and Latent Thought*. [arXiv:2509.25239](https://arxiv.org/abs/2509.25239) — 분야: cs.AI, cs.CL, cs.LG
+- Hugh Blayney 외. *A Mechanistic Analysis of Looped Reasoning Language Models*. [arXiv:2604.11791](https://arxiv.org/abs/2604.11791) — 분야: cs.LG, cs.AI
+- Grigory Sapunov. *Universal Transformers Need Memory: Depth-State Trade-offs in Adaptive Recursive Reasoning*. [arXiv:2604.21999](https://arxiv.org/abs/2604.21999) — 분야: cs.LG, cs.AI, cs.CL
+- Victor Conchello Vendrell 외. *Memory-Efficient Looped Transformer: Decoupling Compute from Memory in Looped Language Models*. [arXiv:2605.07721](https://arxiv.org/abs/2605.07721) — 분야: cs.CL, cs.AI, cs.LG
+- Pearse Jim 외. *What Survives When You Compress a Recursive Reasoner for the Edge?*. [arXiv:2606.26488](https://arxiv.org/abs/2606.26488) — 분야: cs.LG
+- Ying Fan 외. *Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers*. [arXiv:2606.31779](https://arxiv.org/abs/2606.31779) — 분야: cs.LG, cs.CL
+- Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+
 ## [2026-10-25] 학생 곁에서 자라는 판정자 — 블랙박스 온폴리시 증류에서 n-gram은 멀어지고 점수는 오를 때
 
 - **중심**: Tianzhu Ye 외. *Black-Box On-Policy Distillation of Large Language Models*. [arXiv:2511.10643](https://arxiv.org/abs/2511.10643) — 분야: cs.CL, cs.AI
