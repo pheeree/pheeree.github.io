@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-27] 덜어 낸 비트로 산 길이 — 긴 사고 사슬의 KV 캐시는 언제, 얼마나 거칠어져도 되는가
+
+- **중심**: Tengxuan Liu 외. *PM-KVQ: Progressive Mixed-precision KV Cache Quantization for Long-CoT LLMs*. [arXiv:2505.18610](https://arxiv.org/abs/2505.18610) — 분야: cs.CL
+- MohammadReza Davari 외. *Reliability of CKA as a Similarity Measure in Deep Learning*. [arXiv:2210.16156](https://arxiv.org/abs/2210.16156) — 분야: cs.LG, cs.AI, cs.CV
+- Ruikang Liu 외. *IntactKV: Improving Large Language Model Quantization by Keeping Pivot Tokens Intact*. [arXiv:2403.01241](https://arxiv.org/abs/2403.01241) — 분야: cs.CL, cs.AI
+- Ruikang Liu 외. *Quantization Hurts Reasoning? An Empirical Study on Quantized Reasoning Models*. [arXiv:2504.04823](https://arxiv.org/abs/2504.04823) — 분야: cs.CL, cs.AI
+- Zunhai Su, Kehong Yuan. *KVSink: Understanding and Enhancing the Preservation of Attention Sinks in KV Cache Quantization for LLMs*. [arXiv:2508.04257](https://arxiv.org/abs/2508.04257) — 분야: cs.CL
+- Junhyuck Kim 외. *Not All Bits Are Equal: Scale-Dependent Memory Optimization Strategies for Reasoning Models*. [arXiv:2510.10964](https://arxiv.org/abs/2510.10964) — 분야: cs.LG
+- Grigory Sapunov. *Universal Transformers Need Memory: Depth-State Trade-offs in Adaptive Recursive Reasoning*. [arXiv:2604.21999](https://arxiv.org/abs/2604.21999) — 분야: cs.LG, cs.AI, cs.CL
+- Haozhou Zhang. *Chain-of-Thought and Compressed Looped Transformers: A Memory-Budget Separation*. [arXiv:2605.30757](https://arxiv.org/abs/2605.30757) — 분야: cs.LG
+- Sanae Lotfi 외. *Quantized Reasoning Models Think They Need to Think Longer, but They Do Not*. [arXiv:2606.00206](https://arxiv.org/abs/2606.00206) — 분야: cs.LG
+- Lorenz K. Muller 외. *KVarN: Variance-Normalized KV-Cache Quantization Mitigates Error Accumulation in Reasoning Tasks*. [arXiv:2606.03458](https://arxiv.org/abs/2606.03458) — 분야: cs.LG
+- Pearse Jim 외. *What Survives When You Compress a Recursive Reasoner for the Edge?*. [arXiv:2606.26488](https://arxiv.org/abs/2606.26488) — 분야: cs.LG
+- Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+- Vincent-Daniel Yun 외. *Output-Aware Rotation for INT2 KV-Cache Quantization*. [arXiv:2608.02691](https://arxiv.org/abs/2608.02691) — 분야: cs.LG, cs.AI
+
 ## [2026-10-26] 반복 사이에 남는 것 — 압축 루프의 기억 예산은 08-29의 무너진 스도쿠를 설명하는가
 
 - **중심**: Haozhou Zhang. *Chain-of-Thought and Compressed Looped Transformers: A Memory-Budget Separation*. [arXiv:2605.30757](https://arxiv.org/abs/2605.30757) — 분야: cs.LG

@@ -15725,5 +15725,66 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2510.10964": {
+  "title": "Not All Bits Are Equal: Scale-Dependent Memory Optimization Strategies for Reasoning Models",
+  "authors": [
+   "Junhyuck Kim",
+   "Ethan Ewer",
+   "Taehong Moon",
+   "Jongho Park",
+   "Dimitris Papailiopoulos"
+  ],
+  "published": "2025-10-13",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2508.04257": {
+  "title": "KVSink: Understanding and Enhancing the Preservation of Attention Sinks in KV Cache Quantization for LLMs",
+  "authors": [
+   "Zunhai Su",
+   "Kehong Yuan"
+  ],
+  "published": "2025-08-06",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2403.01241": {
+  "title": "IntactKV: Improving Large Language Model Quantization by Keeping Pivot Tokens Intact",
+  "authors": [
+   "Ruikang Liu",
+   "Haoli Bai",
+   "Haokun Lin",
+   "Yuening Li",
+   "Han Gao",
+   "Zhengzhuo Xu",
+   "Lu Hou",
+   "Jun Yao",
+   "Chun Yuan"
+  ],
+  "published": "2024-03-02",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2608.02691": {
+  "title": "Output-Aware Rotation for INT2 KV-Cache Quantization",
+  "authors": [
+   "Vincent-Daniel Yun",
+   "Woosang Lim",
+   "Minsoo Cheong",
+   "Sunwoo Lee",
+   "Murali Annavaram",
+   "Sai Praneeth Karimireddy",
+   "Sungjoo Yoo"
+  ],
+  "published": "2026-08-03",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  }
 }

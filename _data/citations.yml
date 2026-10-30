@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-27-progressive-kv-cache-quantization-long-cot:
+  title: "덜어 낸 비트로 산 길이 — 긴 사고 사슬의 KV 캐시는 언제, 얼마나 거칠어져도 되는가"
+  central:
+    id: "2505.18610"
+    title: "PM-KVQ: Progressive Mixed-precision KV Cache Quantization for Long-CoT LLMs"
+    authors: "Tengxuan Liu 외"
+    keywords: "cs.CL"
+    url: "https://arxiv.org/abs/2505.18610"
+  referenced:
+    - { id: "2210.16156", title: "Reliability of CKA as a Similarity Measure in Deep Learning", authors: "MohammadReza Davari 외", keywords: "cs.LG, cs.AI, cs.CV", url: "https://arxiv.org/abs/2210.16156" }
+    - { id: "2403.01241", title: "IntactKV: Improving Large Language Model Quantization by Keeping Pivot Tokens Intact", authors: "Ruikang Liu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2403.01241" }
+    - { id: "2504.04823", title: "Quantization Hurts Reasoning? An Empirical Study on Quantized Reasoning Models", authors: "Ruikang Liu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2504.04823" }
+    - { id: "2508.04257", title: "KVSink: Understanding and Enhancing the Preservation of Attention Sinks in KV Cache Quantization for LLMs", authors: "Zunhai Su, Kehong Yuan", keywords: "cs.CL", url: "https://arxiv.org/abs/2508.04257" }
+    - { id: "2510.10964", title: "Not All Bits Are Equal: Scale-Dependent Memory Optimization Strategies for Reasoning Models", authors: "Junhyuck Kim 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2510.10964" }
+    - { id: "2604.21999", title: "Universal Transformers Need Memory: Depth-State Trade-offs in Adaptive Recursive Reasoning", authors: "Grigory Sapunov", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.21999" }
+    - { id: "2605.30757", title: "Chain-of-Thought and Compressed Looped Transformers: A Memory-Budget Separation", authors: "Haozhou Zhang", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.30757" }
+    - { id: "2606.00206", title: "Quantized Reasoning Models Think They Need to Think Longer, but They Do Not", authors: "Sanae Lotfi 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.00206" }
+    - { id: "2606.03458", title: "KVarN: Variance-Normalized KV-Cache Quantization Mitigates Error Accumulation in Reasoning Tasks", authors: "Lorenz K. Muller 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.03458" }
+    - { id: "2606.26488", title: "What Survives When You Compress a Recursive Reasoner for the Edge?", authors: "Pearse Jim 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.26488" }
+    - { id: "2607.16237", title: "Quantizing Recursive Reasoning Models", authors: "Thorir Mar Ingolfsson 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2607.16237" }
+    - { id: "2608.02691", title: "Output-Aware Rotation for INT2 KV-Cache Quantization", authors: "Vincent-Daniel Yun 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2608.02691" }
+
 2026-10-26-compressed-looped-transformer-memory-budget:
   title: "반복 사이에 남는 것 — 압축 루프의 기억 예산은 08-29의 무너진 스도쿠를 설명하는가"
   central:
