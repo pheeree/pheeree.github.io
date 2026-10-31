@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-30-hippocampal-linear-attention-write-time-surprise:
+  title: "쓰는 순간의 놀람으로 고른 기억 — 선형 어텐션의 덮어쓰기는 무엇을 잃을지 미리 알려 주는가"
+  central:
+    id: "2607.02303"
+    title: "A Hippocampus for Linear Attention: An Exact Memory for What the Recurrent State Forgets"
+    authors: "Wanyun Cui"
+    keywords: "cs.AI"
+    url: "https://arxiv.org/abs/2607.02303"
+  referenced:
+    - { id: "2102.11174", title: "Linear Transformers Are Secretly Fast Weight Programmers", authors: "Imanol Schlag 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2102.11174" }
+    - { id: "2407.09450", title: "Human-inspired Episodic Memory for Infinite Context LLMs", authors: "Zafeirios Fountas 외", keywords: "cs.AI, cs.CL, cs.LG, q-bio.NC", url: "https://arxiv.org/abs/2407.09450" }
+    - { id: "2501.00663", title: "Titans: Learning to Memorize at Test Time", authors: "Ali Behrouz 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2501.00663" }
+    - { id: "2505.23416", title: "KVzip: Query-Agnostic KV Cache Compression with Context Reconstruction", authors: "Jang-Hyun Kim 외", keywords: "cs.DB, cs.LG", url: "https://arxiv.org/abs/2505.23416" }
+    - { id: "2505.23666", title: "LoLA: Low-Rank Linear Attention With Sparse Caching", authors: "Luke McDermott 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2505.23666" }
+    - { id: "2507.06457", title: "A Systematic Analysis of Hybrid Linear Attention", authors: "Dustin Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2507.06457" }
+    - { id: "2510.20787", title: "Alleviating Forgetfulness of Linear Attention by Hybrid Sparse Attention and Contextualized Learnable Token Eviction", authors: "Mutian He, Philip N. Garner", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2510.20787" }
+    - { id: "2604.21999", title: "Universal Transformers Need Memory: Depth-State Trade-offs in Adaptive Recursive Reasoning", authors: "Grigory Sapunov", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.21999" }
+    - { id: "2605.26099", title: "Language Models Need Sleep", authors: "Sangyun Lee 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2605.26099" }
+    - { id: "2606.00206", title: "Quantized Reasoning Models Think They Need to Think Longer, but They Do Not", authors: "Sanae Lotfi 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.00206" }
+    - { id: "2606.03458", title: "KVarN: Variance-Normalized KV-Cache Quantization Mitigates Error Accumulation in Reasoning Tasks", authors: "Lorenz K. Muller 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.03458" }
+    - { id: "2609.03430", title: "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning", authors: "Heng Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2609.03430" }
+
 2026-10-27-progressive-kv-cache-quantization-long-cot:
   title: "덜어 낸 비트로 산 길이 — 긴 사고 사슬의 KV 캐시는 언제, 얼마나 거칠어져도 되는가"
   central:

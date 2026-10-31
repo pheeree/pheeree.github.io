@@ -15786,5 +15786,142 @@
    "cs.LG",
    "cs.AI"
   ]
+ },
+ "2407.09450": {
+  "title": "Human-inspired Episodic Memory for Infinite Context LLMs",
+  "authors": [
+   "Zafeirios Fountas",
+   "Martin A Benfeghoul",
+   "Adnan Oomerjee",
+   "Fenia Christopoulou",
+   "Gerasimos Lampouras",
+   "Haitham Bou-Ammar",
+   "Jun Wang"
+  ],
+  "published": "2024-07-12",
+  "categories": [
+   "cs.AI",
+   "cs.CL",
+   "cs.LG",
+   "q-bio.NC"
+  ]
+ },
+ "2102.11174": {
+  "title": "Linear Transformers Are Secretly Fast Weight Programmers",
+  "authors": [
+   "Imanol Schlag",
+   "Kazuki Irie",
+   "Jürgen Schmidhuber"
+  ],
+  "published": "2021-02-22",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2607.02303": {
+  "title": "A Hippocampus for Linear Attention: An Exact Memory for What the Recurrent State Forgets",
+  "authors": [
+   "Wanyun Cui"
+  ],
+  "published": "2026-07-02",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2505.23666": {
+  "title": "LoLA: Low-Rank Linear Attention With Sparse Caching",
+  "authors": [
+   "Luke McDermott",
+   "Robert W. Heath",
+   "Rahul Parhi"
+  ],
+  "published": "2025-05-29",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2507.06457": {
+  "title": "A Systematic Analysis of Hybrid Linear Attention",
+  "authors": [
+   "Dustin Wang",
+   "Rui-Jie Zhu",
+   "Steven Abreu",
+   "Yong Shan",
+   "Taylor Kergan",
+   "Yuqi Pan",
+   "Yuhong Chou",
+   "Zheng Li",
+   "Jibin Wu",
+   "Ge Zhang",
+   "Wenhao Huang",
+   "Jason Eshraghian"
+  ],
+  "published": "2025-07-08",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2510.20787": {
+  "title": "Alleviating Forgetfulness of Linear Attention by Hybrid Sparse Attention and Contextualized Learnable Token Eviction",
+  "authors": [
+   "Mutian He",
+   "Philip N. Garner"
+  ],
+  "published": "2025-10-23",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2609.03430": {
+  "title": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+  "authors": [
+   "Heng Wang",
+   "Jielin Qiu",
+   "Wenting Zhao",
+   "Cheng Qian",
+   "Liangwei Yang",
+   "Weizhi Zhang",
+   "Jiawei Han",
+   "Heng Ji",
+   "Silvio Savarese",
+   "Shelby Heinecke",
+   "Huan Wang"
+  ],
+  "published": "2026-09-03",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2505.23416": {
+  "title": "KVzip: Query-Agnostic KV Cache Compression with Context Reconstruction",
+  "authors": [
+   "Jang-Hyun Kim",
+   "Jinuk Kim",
+   "Sangwoo Kwon",
+   "Jae W. Lee",
+   "Sangdoo Yun",
+   "Hyun Oh Song"
+  ],
+  "published": "2025-05-29",
+  "categories": [
+   "cs.DB",
+   "cs.LG"
+  ]
+ },
+ "2501.00663": {
+  "title": "Titans: Learning to Memorize at Test Time",
+  "authors": [
+   "Ali Behrouz",
+   "Peilin Zhong",
+   "Vahab Mirrokni"
+  ],
+  "published": "2024-12-31",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  }
 }

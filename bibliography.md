@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-30] 쓰는 순간의 놀람으로 고른 기억 — 선형 어텐션의 덮어쓰기는 무엇을 잃을지 미리 알려 주는가
+
+- **중심**: Wanyun Cui. *A Hippocampus for Linear Attention: An Exact Memory for What the Recurrent State Forgets*. [arXiv:2607.02303](https://arxiv.org/abs/2607.02303) — 분야: cs.AI
+- Imanol Schlag 외. *Linear Transformers Are Secretly Fast Weight Programmers*. [arXiv:2102.11174](https://arxiv.org/abs/2102.11174) — 분야: cs.LG
+- Zafeirios Fountas 외. *Human-inspired Episodic Memory for Infinite Context LLMs*. [arXiv:2407.09450](https://arxiv.org/abs/2407.09450) — 분야: cs.AI, cs.CL, cs.LG, q-bio.NC
+- Ali Behrouz 외. *Titans: Learning to Memorize at Test Time*. [arXiv:2501.00663](https://arxiv.org/abs/2501.00663) — 분야: cs.LG, cs.AI, cs.CL
+- Jang-Hyun Kim 외. *KVzip: Query-Agnostic KV Cache Compression with Context Reconstruction*. [arXiv:2505.23416](https://arxiv.org/abs/2505.23416) — 분야: cs.DB, cs.LG
+- Luke McDermott 외. *LoLA: Low-Rank Linear Attention With Sparse Caching*. [arXiv:2505.23666](https://arxiv.org/abs/2505.23666) — 분야: cs.CL, cs.LG
+- Dustin Wang 외. *A Systematic Analysis of Hybrid Linear Attention*. [arXiv:2507.06457](https://arxiv.org/abs/2507.06457) — 분야: cs.CL
+- Mutian He, Philip N. Garner. *Alleviating Forgetfulness of Linear Attention by Hybrid Sparse Attention and Contextualized Learnable Token Eviction*. [arXiv:2510.20787](https://arxiv.org/abs/2510.20787) — 분야: cs.CL, cs.LG
+- Grigory Sapunov. *Universal Transformers Need Memory: Depth-State Trade-offs in Adaptive Recursive Reasoning*. [arXiv:2604.21999](https://arxiv.org/abs/2604.21999) — 분야: cs.LG, cs.AI, cs.CL
+- Sangyun Lee 외. *Language Models Need Sleep*. [arXiv:2605.26099](https://arxiv.org/abs/2605.26099) — 분야: cs.CL, cs.AI
+- Sanae Lotfi 외. *Quantized Reasoning Models Think They Need to Think Longer, but They Do Not*. [arXiv:2606.00206](https://arxiv.org/abs/2606.00206) — 분야: cs.LG
+- Lorenz K. Muller 외. *KVarN: Variance-Normalized KV-Cache Quantization Mitigates Error Accumulation in Reasoning Tasks*. [arXiv:2606.03458](https://arxiv.org/abs/2606.03458) — 분야: cs.LG
+- Heng Wang 외. *Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning*. [arXiv:2609.03430](https://arxiv.org/abs/2609.03430) — 분야: cs.CL
+
 ## [2026-10-27] 덜어 낸 비트로 산 길이 — 긴 사고 사슬의 KV 캐시는 언제, 얼마나 거칠어져도 되는가
 
 - **중심**: Tengxuan Liu 외. *PM-KVQ: Progressive Mixed-precision KV Cache Quantization for Long-CoT LLMs*. [arXiv:2505.18610](https://arxiv.org/abs/2505.18610) — 분야: cs.CL
