@@ -6,6 +6,23 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-10-31] 천 배로 늘린 슬롯 — 희소하게 쓰는 선형 RNN에서 돌아온 회상과 끝내 남은 다중 키
+
+- **중심**: Loïc Cabannes 외. *Sparse Delta Memory: Scaling the State of Linear RNNs through Sparsity*. [arXiv:2607.07386](https://arxiv.org/abs/2607.07386) — 분야: cs.LG
+- Jack W Rae 외. *Scaling Memory-Augmented Neural Networks with Sparse Reads and Writes*. [arXiv:1610.09027](https://arxiv.org/abs/1610.09027) — 분야: cs.LG
+- Samy Jelassi 외. *Repeat After Me: Transformers are Better than State Space Models at Copying*. [arXiv:2402.01032](https://arxiv.org/abs/2402.01032) — 분야: cs.LG, cs.AI, cs.CL
+- Simran Arora 외. *Simple linear attention language models balance the recall-throughput tradeoff*. [arXiv:2402.18668](https://arxiv.org/abs/2402.18668) — 분야: cs.CL, cs.LG
+- Cheng-Ping Hsieh 외. *RULER: What's the Real Context Size of Your Long-Context Language Models?*. [arXiv:2404.06654](https://arxiv.org/abs/2404.06654) — 분야: cs.CL
+- Vincent-Pierre Berges 외. *Memory Layers at Scale*. [arXiv:2412.09764](https://arxiv.org/abs/2412.09764) — 분야: cs.CL, cs.AI
+- Luke McDermott 외. *LoLA: Low-Rank Linear Attention With Sparse Caching*. [arXiv:2505.23666](https://arxiv.org/abs/2505.23666) — 분야: cs.CL, cs.LG
+- Tianyu Zhao, Llion Jones. *Fast-weight Product Key Memory*. [arXiv:2601.00671](https://arxiv.org/abs/2601.00671) — 분야: cs.CL, cs.AI
+- Grigory Sapunov. *Universal Transformers Need Memory: Depth-State Trade-offs in Adaptive Recursive Reasoning*. [arXiv:2604.21999](https://arxiv.org/abs/2604.21999) — 분야: cs.LG, cs.AI, cs.CL
+- Ali Hatamizadeh 외. *Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention*. [arXiv:2605.22791](https://arxiv.org/abs/2605.22791) — 분야: cs.AI
+- Ayoub Ghriss, Sourav Chakraborty. *Kernelized Linear Attention: Breaking the Capacity Wall with Symmetric Cones*. [arXiv:2607.17419](https://arxiv.org/abs/2607.17419) — 분야: cs.LG, cs.AI, cs.IT, stat.ML
+- Alexia Jolicoeur-Martineau 외. *Sliding-window beats linear attention*. [arXiv:2608.28444](https://arxiv.org/abs/2608.28444) — 분야: cs.CL, cs.LG
+- Julian Boesch, Andrew Wee. *Anatomy of Associative Recall in Fixed-State Recurrences: A Matched-State Decomposition, an Interference Wall, and a Curriculum That Breaks It*. [arXiv:2609.16183](https://arxiv.org/abs/2609.16183) — 분야: cs.LG, cs.CL
+- Xiaoran Liu 외. *Mechanics of Long-Context Hybrid Models Part 1.1: From Hybrid Attention to Hybrid Position*. [arXiv:2610.10114](https://arxiv.org/abs/2610.10114) — 분야: cs.CL
+
 ## [2026-10-30] 쓰는 순간의 놀람으로 고른 기억 — 선형 어텐션의 덮어쓰기는 무엇을 잃을지 미리 알려 주는가
 
 - **중심**: Wanyun Cui. *A Hippocampus for Linear Attention: An Exact Memory for What the Recurrent State Forgets*. [arXiv:2607.02303](https://arxiv.org/abs/2607.02303) — 분야: cs.AI

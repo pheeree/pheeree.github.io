@@ -1,6 +1,29 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-10-31-sparse-delta-memory-state-scaling:
+  title: "천 배로 늘린 슬롯 — 희소하게 쓰는 선형 RNN에서 돌아온 회상과 끝내 남은 다중 키"
+  central:
+    id: "2607.07386"
+    title: "Sparse Delta Memory: Scaling the State of Linear RNNs through Sparsity"
+    authors: "Loïc Cabannes 외"
+    keywords: "cs.LG"
+    url: "https://arxiv.org/abs/2607.07386"
+  referenced:
+    - { id: "1610.09027", title: "Scaling Memory-Augmented Neural Networks with Sparse Reads and Writes", authors: "Jack W Rae 외", keywords: "cs.LG", url: "https://arxiv.org/abs/1610.09027" }
+    - { id: "2402.01032", title: "Repeat After Me: Transformers are Better than State Space Models at Copying", authors: "Samy Jelassi 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2402.01032" }
+    - { id: "2402.18668", title: "Simple linear attention language models balance the recall-throughput tradeoff", authors: "Simran Arora 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2402.18668" }
+    - { id: "2404.06654", title: "RULER: What's the Real Context Size of Your Long-Context Language Models?", authors: "Cheng-Ping Hsieh 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2404.06654" }
+    - { id: "2412.09764", title: "Memory Layers at Scale", authors: "Vincent-Pierre Berges 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2412.09764" }
+    - { id: "2505.23666", title: "LoLA: Low-Rank Linear Attention With Sparse Caching", authors: "Luke McDermott 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2505.23666" }
+    - { id: "2601.00671", title: "Fast-weight Product Key Memory", authors: "Tianyu Zhao, Llion Jones", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2601.00671" }
+    - { id: "2604.21999", title: "Universal Transformers Need Memory: Depth-State Trade-offs in Adaptive Recursive Reasoning", authors: "Grigory Sapunov", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2604.21999" }
+    - { id: "2605.22791", title: "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention", authors: "Ali Hatamizadeh 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2605.22791" }
+    - { id: "2607.17419", title: "Kernelized Linear Attention: Breaking the Capacity Wall with Symmetric Cones", authors: "Ayoub Ghriss, Sourav Chakraborty", keywords: "cs.LG, cs.AI, cs.IT, stat.ML", url: "https://arxiv.org/abs/2607.17419" }
+    - { id: "2608.28444", title: "Sliding-window beats linear attention", authors: "Alexia Jolicoeur-Martineau 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2608.28444" }
+    - { id: "2609.16183", title: "Anatomy of Associative Recall in Fixed-State Recurrences: A Matched-State Decomposition, an Interference Wall, and a Curriculum That Breaks It", authors: "Julian Boesch, Andrew Wee", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2609.16183" }
+    - { id: "2610.10114", title: "Mechanics of Long-Context Hybrid Models Part 1.1: From Hybrid Attention to Hybrid Position", authors: "Xiaoran Liu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2610.10114" }
+
 2026-10-30-hippocampal-linear-attention-write-time-surprise:
   title: "쓰는 순간의 놀람으로 고른 기억 — 선형 어텐션의 덮어쓰기는 무엇을 잃을지 미리 알려 주는가"
   central:

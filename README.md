@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-10-31 — [천 배로 늘린 슬롯 — 희소하게 쓰는 선형 RNN에서 돌아온 회상과 끝내 남은 다중 키](https://pheeree.github.io/2026/10/31/sparse-delta-memory-state-scaling/)
 - 2026-10-30 — [쓰는 순간의 놀람으로 고른 기억 — 선형 어텐션의 덮어쓰기는 무엇을 잃을지 미리 알려 주는가](https://pheeree.github.io/2026/10/30/hippocampal-linear-attention-write-time-surprise/)
 - 2026-10-27 — [덜어 낸 비트로 산 길이 — 긴 사고 사슬의 KV 캐시는 언제, 얼마나 거칠어져도 되는가](https://pheeree.github.io/2026/10/27/progressive-kv-cache-quantization-long-cot/)
 - 2026-10-26 — [반복 사이에 남는 것 — 압축 루프의 기억 예산은 08-29의 무너진 스도쿠를 설명하는가](https://pheeree.github.io/2026/10/26/compressed-looped-transformer-memory-budget/)

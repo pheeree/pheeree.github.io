@@ -15923,5 +15923,164 @@
    "cs.AI",
    "cs.CL"
   ]
+ },
+ "2608.28444": {
+  "title": "Sliding-window beats linear attention",
+  "authors": [
+   "Alexia Jolicoeur-Martineau",
+   "Rhea Sanjay Sukthanker",
+   "Pashmina Cameron",
+   "Emy Gervais"
+  ],
+  "published": "2026-08-28",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2605.22791": {
+  "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention",
+  "authors": [
+   "Ali Hatamizadeh",
+   "Yejin Choi",
+   "Jan Kautz"
+  ],
+  "published": "2026-05-21",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2607.17419": {
+  "title": "Kernelized Linear Attention: Breaking the Capacity Wall with Symmetric Cones",
+  "authors": [
+   "Ayoub Ghriss",
+   "Sourav Chakraborty"
+  ],
+  "published": "2026-07-19",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.IT",
+   "stat.ML"
+  ]
+ },
+ "2601.00671": {
+  "title": "Fast-weight Product Key Memory",
+  "authors": [
+   "Tianyu Zhao",
+   "Llion Jones"
+  ],
+  "published": "2026-01-02",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "1610.09027": {
+  "title": "Scaling Memory-Augmented Neural Networks with Sparse Reads and Writes",
+  "authors": [
+   "Jack W Rae",
+   "Jonathan J Hunt",
+   "Tim Harley",
+   "Ivo Danihelka",
+   "Andrew Senior",
+   "Greg Wayne",
+   "Alex Graves",
+   "Timothy P Lillicrap"
+  ],
+  "published": "2016-10-27",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2610.10114": {
+  "title": "Mechanics of Long-Context Hybrid Models Part 1.1: From Hybrid Attention to Hybrid Position",
+  "authors": [
+   "Xiaoran Liu",
+   "Ziwei He",
+   "Xipeng Qiu"
+  ],
+  "published": "2026-10-07",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2402.01032": {
+  "title": "Repeat After Me: Transformers are Better than State Space Models at Copying",
+  "authors": [
+   "Samy Jelassi",
+   "David Brandfonbrener",
+   "Sham M. Kakade",
+   "Eran Malach"
+  ],
+  "published": "2024-02-01",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2609.16183": {
+  "title": "Anatomy of Associative Recall in Fixed-State Recurrences: A Matched-State Decomposition, an Interference Wall, and a Curriculum That Breaks It",
+  "authors": [
+   "Julian Boesch",
+   "Andrew Wee"
+  ],
+  "published": "2026-09-14",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2412.09764": {
+  "title": "Memory Layers at Scale",
+  "authors": [
+   "Vincent-Pierre Berges",
+   "Barlas Oğuz",
+   "Daniel Haziza",
+   "Wen-tau Yih",
+   "Luke Zettlemoyer",
+   "Gargi Ghosh"
+  ],
+  "published": "2024-12-12",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2404.06654": {
+  "title": "RULER: What's the Real Context Size of Your Long-Context Language Models?",
+  "authors": [
+   "Cheng-Ping Hsieh",
+   "Simeng Sun",
+   "Samuel Kriman",
+   "Shantanu Acharya",
+   "Dima Rekesh",
+   "Fei Jia",
+   "Yang Zhang",
+   "Boris Ginsburg"
+  ],
+  "published": "2024-04-09",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2607.07386": {
+  "title": "Sparse Delta Memory: Scaling the State of Linear RNNs through Sparsity",
+  "authors": [
+   "Loïc Cabannes",
+   "Pierre-Emmanuel Mazaré",
+   "Gergely Szilvasy",
+   "Matthijs Douze",
+   "Maria Lomeli",
+   "Ilze Amanda Auzina",
+   "Justin Carpentier",
+   "Gabriel Synnaeve",
+   "Hervé Jégou"
+  ],
+  "published": "2026-07-08",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }
