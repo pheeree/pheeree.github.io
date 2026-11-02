@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-11-01 — [드물게 오는 과제를 지키는 너비 — 작은 모델은 용량이 모자란가, 사이사이에 지워지는가](https://pheeree.github.io/2026/11/01/larger-models-rare-task-interference-retention/)
 - 2026-10-31 — [천 배로 늘린 슬롯 — 희소하게 쓰는 선형 RNN에서 돌아온 회상과 끝내 남은 다중 키](https://pheeree.github.io/2026/10/31/sparse-delta-memory-state-scaling/)
 - 2026-10-30 — [쓰는 순간의 놀람으로 고른 기억 — 선형 어텐션의 덮어쓰기는 무엇을 잃을지 미리 알려 주는가](https://pheeree.github.io/2026/10/30/hippocampal-linear-attention-write-time-surprise/)
 - 2026-10-27 — [덜어 낸 비트로 산 길이 — 긴 사고 사슬의 KV 캐시는 언제, 얼마나 거칠어져도 되는가](https://pheeree.github.io/2026/10/27/progressive-kv-cache-quantization-long-cot/)

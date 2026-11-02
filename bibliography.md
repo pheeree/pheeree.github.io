@@ -6,6 +6,19 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-01] 드물게 오는 과제를 지키는 너비 — 작은 모델은 용량이 모자란가, 사이사이에 지워지는가
+
+- **중심**: Jing Huang 외. *Why Larger Models Learn More: Effects of Capacity, Interference, and Rare-Task Retention*. [arXiv:2605.29548](https://arxiv.org/abs/2605.29548) — 분야: cs.LG
+- Sara Hooker 외. *What Do Compressed Deep Neural Networks Forget?*. [arXiv:1911.05248](https://arxiv.org/abs/1911.05248) — 분야: cs.LG, cs.AI, cs.CV, cs.HC, stat.ML
+- Nelson Elhage 외. *Toy Models of Superposition*. [arXiv:2209.10652](https://arxiv.org/abs/2209.10652) — 분야: cs.LG
+- Nikhil Kandpal 외. *Large Language Models Struggle to Learn Long-Tail Knowledge*. [arXiv:2211.08411](https://arxiv.org/abs/2211.08411) — 분야: cs.CL, cs.LG
+- Duc N. M Hoang 외. *Do Compressed LLMs Forget Knowledge? An Experimental Study with Practical Implications*. [arXiv:2310.00867](https://arxiv.org/abs/2310.00867) — 분야: cs.CL, cs.AI
+- Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
+- Bojie Li. *Incompressible Knowledge Probes: Estimating Black-Box LLM Parameter Counts via Factual Capacity*. [arXiv:2604.24827](https://arxiv.org/abs/2604.24827) — 분야: cs.LG, cs.AI
+- Jan Wasilewski 외. *Sparsity, Superposition, and Forgetting: A Mechanistic Study of Representation Retention in Continual Learning*. [arXiv:2606.20431](https://arxiv.org/abs/2606.20431) — 분야: cs.LG
+- Yuan Wu 외. *The Asymmetric Harms of LLM Compression*. [arXiv:2608.19670](https://arxiv.org/abs/2608.19670) — 분야: cs.CL
+- Julian Boesch, Andrew Wee. *Anatomy of Associative Recall in Fixed-State Recurrences: A Matched-State Decomposition, an Interference Wall, and a Curriculum That Breaks It*. [arXiv:2609.16183](https://arxiv.org/abs/2609.16183) — 분야: cs.LG, cs.CL
+
 ## [2026-10-31] 천 배로 늘린 슬롯 — 희소하게 쓰는 선형 RNN에서 돌아온 회상과 끝내 남은 다중 키
 
 - **중심**: Loïc Cabannes 외. *Sparse Delta Memory: Scaling the State of Linear RNNs through Sparsity*. [arXiv:2607.07386](https://arxiv.org/abs/2607.07386) — 분야: cs.LG

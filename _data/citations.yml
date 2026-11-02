@@ -1,6 +1,25 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-01-larger-models-rare-task-interference-retention:
+  title: "드물게 오는 과제를 지키는 너비 — 작은 모델은 용량이 모자란가, 사이사이에 지워지는가"
+  central:
+    id: "2605.29548"
+    title: "Why Larger Models Learn More: Effects of Capacity, Interference, and Rare-Task Retention"
+    authors: "Jing Huang 외"
+    keywords: "cs.LG"
+    url: "https://arxiv.org/abs/2605.29548"
+  referenced:
+    - { id: "1911.05248", title: "What Do Compressed Deep Neural Networks Forget?", authors: "Sara Hooker 외", keywords: "cs.LG, cs.AI, cs.CV, cs.HC, stat.ML", url: "https://arxiv.org/abs/1911.05248" }
+    - { id: "2209.10652", title: "Toy Models of Superposition", authors: "Nelson Elhage 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2209.10652" }
+    - { id: "2211.08411", title: "Large Language Models Struggle to Learn Long-Tail Knowledge", authors: "Nikhil Kandpal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2211.08411" }
+    - { id: "2310.00867", title: "Do Compressed LLMs Forget Knowledge? An Experimental Study with Practical Implications", authors: "Duc N. M Hoang 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2310.00867" }
+    - { id: "2310.01382", title: "Compressing LLMs: The Truth is Rarely Pure and Never Simple", authors: "Ajay Jaiswal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2310.01382" }
+    - { id: "2604.24827", title: "Incompressible Knowledge Probes: Estimating Black-Box LLM Parameter Counts via Factual Capacity", authors: "Bojie Li", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.24827" }
+    - { id: "2606.20431", title: "Sparsity, Superposition, and Forgetting: A Mechanistic Study of Representation Retention in Continual Learning", authors: "Jan Wasilewski 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.20431" }
+    - { id: "2608.19670", title: "The Asymmetric Harms of LLM Compression", authors: "Yuan Wu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2608.19670" }
+    - { id: "2609.16183", title: "Anatomy of Associative Recall in Fixed-State Recurrences: A Matched-State Decomposition, an Interference Wall, and a Curriculum That Breaks It", authors: "Julian Boesch, Andrew Wee", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2609.16183" }
+
 2026-10-31-sparse-delta-memory-state-scaling:
   title: "천 배로 늘린 슬롯 — 희소하게 쓰는 선형 RNN에서 돌아온 회상과 끝내 남은 다중 키"
   central:

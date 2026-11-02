@@ -16082,5 +16082,102 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2606.20431": {
+  "title": "Sparsity, Superposition, and Forgetting: A Mechanistic Study of Representation Retention in Continual Learning",
+  "authors": [
+   "Jan Wasilewski",
+   "Jędrzej Kozal",
+   "Michał Woźniak",
+   "Bartosz Krawczyk"
+  ],
+  "published": "2026-06-18",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2209.10652": {
+  "title": "Toy Models of Superposition",
+  "authors": [
+   "Nelson Elhage",
+   "Tristan Hume",
+   "Catherine Olsson",
+   "Nicholas Schiefer",
+   "Tom Henighan",
+   "Shauna Kravec",
+   "Zac Hatfield-Dodds",
+   "Robert Lasenby",
+   "Dawn Drain",
+   "Carol Chen",
+   "Roger Grosse",
+   "Sam McCandlish",
+   "Jared Kaplan",
+   "Dario Amodei",
+   "Martin Wattenberg",
+   "Christopher Olah"
+  ],
+  "published": "2022-09-21",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2604.24827": {
+  "title": "Incompressible Knowledge Probes: Estimating Black-Box LLM Parameter Counts via Factual Capacity",
+  "authors": [
+   "Bojie Li"
+  ],
+  "published": "2026-04-27",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2310.00867": {
+  "title": "Do Compressed LLMs Forget Knowledge? An Experimental Study with Practical Implications",
+  "authors": [
+   "Duc N. M Hoang",
+   "Minsik Cho",
+   "Thomas Merth",
+   "Mohammad Rastegari",
+   "Zhangyang Wang"
+  ],
+  "published": "2023-10-02",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2605.29548": {
+  "title": "Why Larger Models Learn More: Effects of Capacity, Interference, and Rare-Task Retention",
+  "authors": [
+   "Jing Huang",
+   "Daniel Wurgaft",
+   "Rachit Bansal",
+   "Laura Ruis",
+   "Naomi Saphra",
+   "David Alvarez-Melis",
+   "Andrew Kyle Lampinen",
+   "Christopher Potts",
+   "Ekdeep Singh Lubana"
+  ],
+  "published": "2026-05-28",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2211.08411": {
+  "title": "Large Language Models Struggle to Learn Long-Tail Knowledge",
+  "authors": [
+   "Nikhil Kandpal",
+   "Haikang Deng",
+   "Adam Roberts",
+   "Eric Wallace",
+   "Colin Raffel"
+  ],
+  "published": "2022-11-15",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
  }
 }
