@@ -1381,7 +1381,7 @@
   branch: null
 - date: 2026-11-02
   slug: 2026-11-02-language-model-memorization-capacity-bits
-  source: PAPER/2505.24832.pdf
+  source: 2505.24832
   path: d
   focus_q: Q9
   nth: 42

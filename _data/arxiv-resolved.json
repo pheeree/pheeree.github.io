@@ -16179,5 +16179,154 @@
    "cs.CL",
    "cs.LG"
   ]
+ },
+ "2607.21351": {
+  "title": "How Much Can a LoRA Adapter Memorize? Measuring Adapter Capacity in Bits",
+  "authors": [
+   "Kaizhen Tan",
+   "Heqing Du",
+   "Yang Feng"
+  ],
+  "published": "2026-07-23",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2604.08519": {
+  "title": "Cram Less to Fit More: Training Data Pruning Improves Memorization of Facts",
+  "authors": [
+   "Jiayuan Ye",
+   "Vitaly Feldman",
+   "Kunal Talwar"
+  ],
+  "published": "2026-04-09",
+  "categories": [
+   "cs.CL",
+   "stat.ML"
+  ]
+ },
+ "2404.05405": {
+  "title": "Physics of Language Models: Part 3.3, Knowledge Capacity Scaling Laws",
+  "authors": [
+   "Zeyuan Allen-Zhu",
+   "Yuanzhi Li"
+  ],
+  "published": "2024-04-08",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2605.21803": {
+  "title": "Same Architecture, Different Capacity: Optimizer-Induced Spectral Scaling Laws",
+  "authors": [
+   "Nandan Kumar Jha",
+   "Brandon Reagen"
+  ],
+  "published": "2026-05-20",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2202.07646": {
+  "title": "Quantifying Memorization Across Neural Language Models",
+  "authors": [
+   "Nicholas Carlini",
+   "Daphne Ippolito",
+   "Matthew Jagielski",
+   "Katherine Lee",
+   "Florian Tramer",
+   "Chiyuan Zhang"
+  ],
+  "published": "2022-02-15",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2510.26745": {
+  "title": "Deep sequence models tend to memorize geometrically; it is unclear why",
+  "authors": [
+   "Shahriar Noroozizadeh",
+   "Vaishnavh Nagarajan",
+   "Elan Rosenfeld",
+   "Sanjiv Kumar"
+  ],
+  "published": "2025-10-30",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL",
+   "stat.ML"
+  ]
+ },
+ "2607.25451": {
+  "title": "Bits and Memories: Measuring Verbatim Extraction Across LLM Quantization",
+  "authors": [
+   "Akshay Sasi"
+  ],
+  "published": "2026-07-28",
+  "categories": [
+   "cs.LG",
+   "cs.CR"
+  ]
+ },
+ "2311.17035": {
+  "title": "Scalable Extraction of Training Data from (Production) Language Models",
+  "authors": [
+   "Milad Nasr",
+   "Nicholas Carlini",
+   "Jonathan Hayase",
+   "Matthew Jagielski",
+   "A. Feder Cooper",
+   "Daphne Ippolito",
+   "Christopher A. Choquette-Choo",
+   "Eric Wallace",
+   "Florian Tramèr",
+   "Katherine Lee"
+  ],
+  "published": "2023-11-28",
+  "categories": [
+   "cs.LG",
+   "cs.CL",
+   "cs.CR"
+  ]
+ },
+ "2505.24832": {
+  "title": "How much do language models memorize?",
+  "authors": [
+   "John X. Morris",
+   "Chawin Sitawarin",
+   "Chuan Guo",
+   "Narine Kokhlikyan",
+   "G. Edward Suh",
+   "Alexander M. Rush",
+   "Kamalika Chaudhuri",
+   "Saeed Mahloujifar"
+  ],
+  "published": "2025-05-30",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2402.07841": {
+  "title": "Do Membership Inference Attacks Work on Large Language Models?",
+  "authors": [
+   "Michael Duan",
+   "Anshuman Suri",
+   "Niloofar Mireshghallah",
+   "Sewon Min",
+   "Weijia Shi",
+   "Luke Zettlemoyer",
+   "Yulia Tsvetkov",
+   "Yejin Choi",
+   "David Evans",
+   "Hannaneh Hajishirzi"
+  ],
+  "published": "2024-02-12",
+  "categories": [
+   "cs.CL"
+  ]
  }
 }
