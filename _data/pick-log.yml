@@ -1392,3 +1392,17 @@
     파라미터당 비트로 잰 용량이 무엇을 먼저 내려놓는지 말해 주는가, 그 답이 Q9 질문 1(국소를 남기고 전역을 버리는가)과 같은 방향인가.
   switch_notice: false
   branch: null
+- date: 2026-11-04
+  slug: 2026-11-04-learning-is-forgetting-information-bottleneck
+  source: 2604.07569
+  path: d
+  focus_q: Q9
+  nth: 43
+  purpose: >
+    (a) 11-02·11-01·10-31 세 편 '다음 읽을 후보' 미러 도착·미사용 0건, (b) 대기열 0건, (c-focus) Q9 다음 후보 7편 전부 사용됨,
+    (d) 최근 14일 미사용 0건이라 창을 넓혀 4월 11일 도착·미사용이던 Conklin 외 'Learning is Forgetting'을 Q9 인접 키워드
+    (compress)로 골랐음 — 조타가 아니라 본 세션의 선택. 오늘의 목적: 11-02가 사후 압축의 눈금으로 남긴 물음(레이블 없이 무엇이
+    남는지 잴 수 있나)을 학습 자체가 압축이라는 쪽에서 본다 — 정보 병목의 최적성 비율이 레이블 없는 눈금이 되는지, 그리고
+    '대부분의 정보가 국소 맥락'이라는 관찰이 Q9 질문 1의 국소·전역 갈림과 같은 것인지 아니면 잴 수 있는 창의 크기가 만든 그림인지 가른다.
+  switch_notice: false
+  branch: null
