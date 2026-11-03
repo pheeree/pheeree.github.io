@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-02] 파라미터 하나에 3.6비트 — 용량이 차면 언어 모델은 무엇을 먼저 내려놓나
+
+- **중심**: John X. Morris 외. *How much do language models memorize?*. [arXiv:2505.24832](https://arxiv.org/abs/2505.24832) — 분야: cs.CL
+- Nicholas Carlini 외. *Quantifying Memorization Across Neural Language Models*. [arXiv:2202.07646](https://arxiv.org/abs/2202.07646) — 분야: cs.LG, cs.CL
+- Nikhil Kandpal 외. *Large Language Models Struggle to Learn Long-Tail Knowledge*. [arXiv:2211.08411](https://arxiv.org/abs/2211.08411) — 분야: cs.CL, cs.LG
+- Milad Nasr 외. *Scalable Extraction of Training Data from (Production) Language Models*. [arXiv:2311.17035](https://arxiv.org/abs/2311.17035) — 분야: cs.LG, cs.CL, cs.CR
+- Michael Duan 외. *Do Membership Inference Attacks Work on Large Language Models?*. [arXiv:2402.07841](https://arxiv.org/abs/2402.07841) — 분야: cs.CL
+- Zeyuan Allen-Zhu, Yuanzhi Li. *Physics of Language Models: Part 3.3, Knowledge Capacity Scaling Laws*. [arXiv:2404.05405](https://arxiv.org/abs/2404.05405) — 분야: cs.CL, cs.AI, cs.LG
+- Shahriar Noroozizadeh 외. *Deep sequence models tend to memorize geometrically; it is unclear why*. [arXiv:2510.26745](https://arxiv.org/abs/2510.26745) — 분야: cs.LG, cs.AI, cs.CL, stat.ML
+- Jiayuan Ye 외. *Cram Less to Fit More: Training Data Pruning Improves Memorization of Facts*. [arXiv:2604.08519](https://arxiv.org/abs/2604.08519) — 분야: cs.CL, stat.ML
+- Bojie Li. *Incompressible Knowledge Probes: Estimating Black-Box LLM Parameter Counts via Factual Capacity*. [arXiv:2604.24827](https://arxiv.org/abs/2604.24827) — 분야: cs.LG, cs.AI
+- Nandan Kumar Jha, Brandon Reagen. *Same Architecture, Different Capacity: Optimizer-Induced Spectral Scaling Laws*. [arXiv:2605.21803](https://arxiv.org/abs/2605.21803) — 분야: cs.LG
+- Jing Huang 외. *Why Larger Models Learn More: Effects of Capacity, Interference, and Rare-Task Retention*. [arXiv:2605.29548](https://arxiv.org/abs/2605.29548) — 분야: cs.LG
+- Kaizhen Tan 외. *How Much Can a LoRA Adapter Memorize? Measuring Adapter Capacity in Bits*. [arXiv:2607.21351](https://arxiv.org/abs/2607.21351) — 분야: cs.LG
+- Akshay Sasi. *Bits and Memories: Measuring Verbatim Extraction Across LLM Quantization*. [arXiv:2607.25451](https://arxiv.org/abs/2607.25451) — 분야: cs.LG, cs.CR
+
 ## [2026-11-01] 드물게 오는 과제를 지키는 너비 — 작은 모델은 용량이 모자란가, 사이사이에 지워지는가
 
 - **중심**: Jing Huang 외. *Why Larger Models Learn More: Effects of Capacity, Interference, and Rare-Task Retention*. [arXiv:2605.29548](https://arxiv.org/abs/2605.29548) — 분야: cs.LG

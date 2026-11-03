@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-02-language-model-memorization-capacity-bits:
+  title: "파라미터 하나에 3.6비트 — 용량이 차면 언어 모델은 무엇을 먼저 내려놓나"
+  central:
+    id: "2505.24832"
+    title: "How much do language models memorize?"
+    authors: "John X. Morris 외"
+    keywords: "cs.CL"
+    url: "https://arxiv.org/abs/2505.24832"
+  referenced:
+    - { id: "2202.07646", title: "Quantifying Memorization Across Neural Language Models", authors: "Nicholas Carlini 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2202.07646" }
+    - { id: "2211.08411", title: "Large Language Models Struggle to Learn Long-Tail Knowledge", authors: "Nikhil Kandpal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2211.08411" }
+    - { id: "2311.17035", title: "Scalable Extraction of Training Data from (Production) Language Models", authors: "Milad Nasr 외", keywords: "cs.LG, cs.CL, cs.CR", url: "https://arxiv.org/abs/2311.17035" }
+    - { id: "2402.07841", title: "Do Membership Inference Attacks Work on Large Language Models?", authors: "Michael Duan 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2402.07841" }
+    - { id: "2404.05405", title: "Physics of Language Models: Part 3.3, Knowledge Capacity Scaling Laws", authors: "Zeyuan Allen-Zhu, Yuanzhi Li", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2404.05405" }
+    - { id: "2510.26745", title: "Deep sequence models tend to memorize geometrically; it is unclear why", authors: "Shahriar Noroozizadeh 외", keywords: "cs.LG, cs.AI, cs.CL, stat.ML", url: "https://arxiv.org/abs/2510.26745" }
+    - { id: "2604.08519", title: "Cram Less to Fit More: Training Data Pruning Improves Memorization of Facts", authors: "Jiayuan Ye 외", keywords: "cs.CL, stat.ML", url: "https://arxiv.org/abs/2604.08519" }
+    - { id: "2604.24827", title: "Incompressible Knowledge Probes: Estimating Black-Box LLM Parameter Counts via Factual Capacity", authors: "Bojie Li", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2604.24827" }
+    - { id: "2605.21803", title: "Same Architecture, Different Capacity: Optimizer-Induced Spectral Scaling Laws", authors: "Nandan Kumar Jha, Brandon Reagen", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.21803" }
+    - { id: "2605.29548", title: "Why Larger Models Learn More: Effects of Capacity, Interference, and Rare-Task Retention", authors: "Jing Huang 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2605.29548" }
+    - { id: "2607.21351", title: "How Much Can a LoRA Adapter Memorize? Measuring Adapter Capacity in Bits", authors: "Kaizhen Tan 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2607.21351" }
+    - { id: "2607.25451", title: "Bits and Memories: Measuring Verbatim Extraction Across LLM Quantization", authors: "Akshay Sasi", keywords: "cs.LG, cs.CR", url: "https://arxiv.org/abs/2607.25451" }
+
 2026-11-01-larger-models-rare-task-interference-retention:
   title: "드물게 오는 과제를 지키는 너비 — 작은 모델은 용량이 모자란가, 사이사이에 지워지는가"
   central:
