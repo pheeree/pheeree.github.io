@@ -6,6 +6,18 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-04] 배운다는 건 잊는 일 — 언어 모델 사전학습을 손실 압축으로 재면 무엇이 남는가
+
+- **중심**: Henry C. Conklin 외. *Learning is Forgetting: LLM Training As Lossy Compression*. [arXiv:2604.07569](https://arxiv.org/abs/2604.07569) — 분야: cs.LG, cs.AI, cs.CL, cs.IT
+- Ziv Goldfeld 외. *Estimating Information Flow in Deep Neural Networks*. [arXiv:1810.05728](https://arxiv.org/abs/1810.05728) — 분야: cs.LG, stat.ML
+- MohammadReza Davari 외. *Reliability of CKA as a Similarity Measure in Deep Learning*. [arXiv:2210.16156](https://arxiv.org/abs/2210.16156) — 분야: cs.LG, cs.AI, cs.CV
+- Yuxian Gu 외. *Towards Optimal Learning of Language Models*. [arXiv:2402.17759](https://arxiv.org/abs/2402.17759) — 분야: cs.CL
+- Fangyuan Yu. *Memorization-Compression Cycles Improve Generalization*. [arXiv:2505.08727](https://arxiv.org/abs/2505.08727) — 분야: cs.LG, cs.AI, cs.CL, cs.IT
+- Hao Zhang 외. *MI-PRUN: Optimize Large Language Model Pruning via Mutual Information*. [arXiv:2601.07212](https://arxiv.org/abs/2601.07212) — 분야: cs.CL
+- Atharva Kulkarni 외. *Disentangling Geometry, Performance, and Training in Language Models*. [arXiv:2602.20433](https://arxiv.org/abs/2602.20433) — 분야: cs.CL
+- Fabio Valerio Massoli 외. *Reasoning as Compression: Unifying Budget Forcing via the Conditional Information Bottleneck*. [arXiv:2603.08462](https://arxiv.org/abs/2603.08462) — 분야: cs.LG
+- Tanmoy Chakraborty 외. *Latent Performance Profiling of Large Language Models*. [arXiv:2605.30018](https://arxiv.org/abs/2605.30018) — 분야: cs.CL, cs.LG
+
 ## [2026-11-02] 파라미터 하나에 3.6비트 — 용량이 차면 언어 모델은 무엇을 먼저 내려놓나
 
 - **중심**: John X. Morris 외. *How much do language models memorize?*. [arXiv:2505.24832](https://arxiv.org/abs/2505.24832) — 분야: cs.CL

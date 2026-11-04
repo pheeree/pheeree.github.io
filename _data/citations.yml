@@ -1,6 +1,24 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-04-learning-is-forgetting-information-bottleneck:
+  title: "배운다는 건 잊는 일 — 언어 모델 사전학습을 손실 압축으로 재면 무엇이 남는가"
+  central:
+    id: "2604.07569"
+    title: "Learning is Forgetting: LLM Training As Lossy Compression"
+    authors: "Henry C. Conklin 외"
+    keywords: "cs.LG, cs.AI, cs.CL, cs.IT"
+    url: "https://arxiv.org/abs/2604.07569"
+  referenced:
+    - { id: "1810.05728", title: "Estimating Information Flow in Deep Neural Networks", authors: "Ziv Goldfeld 외", keywords: "cs.LG, stat.ML", url: "https://arxiv.org/abs/1810.05728" }
+    - { id: "2210.16156", title: "Reliability of CKA as a Similarity Measure in Deep Learning", authors: "MohammadReza Davari 외", keywords: "cs.LG, cs.AI, cs.CV", url: "https://arxiv.org/abs/2210.16156" }
+    - { id: "2402.17759", title: "Towards Optimal Learning of Language Models", authors: "Yuxian Gu 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2402.17759" }
+    - { id: "2505.08727", title: "Memorization-Compression Cycles Improve Generalization", authors: "Fangyuan Yu", keywords: "cs.LG, cs.AI, cs.CL, cs.IT", url: "https://arxiv.org/abs/2505.08727" }
+    - { id: "2601.07212", title: "MI-PRUN: Optimize Large Language Model Pruning via Mutual Information", authors: "Hao Zhang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2601.07212" }
+    - { id: "2602.20433", title: "Disentangling Geometry, Performance, and Training in Language Models", authors: "Atharva Kulkarni 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2602.20433" }
+    - { id: "2603.08462", title: "Reasoning as Compression: Unifying Budget Forcing via the Conditional Information Bottleneck", authors: "Fabio Valerio Massoli 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2603.08462" }
+    - { id: "2605.30018", title: "Latent Performance Profiling of Large Language Models", authors: "Tanmoy Chakraborty 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2605.30018" }
+
 2026-11-02-language-model-memorization-capacity-bits:
   title: "파라미터 하나에 3.6비트 — 용량이 차면 언어 모델은 무엇을 먼저 내려놓나"
   central:

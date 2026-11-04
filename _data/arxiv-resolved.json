@@ -16328,5 +16328,130 @@
   "categories": [
    "cs.CL"
   ]
+ },
+ "2505.08727": {
+  "title": "Memorization-Compression Cycles Improve Generalization",
+  "authors": [
+   "Fangyuan Yu"
+  ],
+  "published": "2025-05-13",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL",
+   "cs.IT"
+  ]
+ },
+ "2602.20433": {
+  "title": "Disentangling Geometry, Performance, and Training in Language Models",
+  "authors": [
+   "Atharva Kulkarni",
+   "Jacob Mitchell Springer",
+   "Arjun Subramonian",
+   "Swabha Swayamdipta"
+  ],
+  "published": "2026-02-24",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2605.30018": {
+  "title": "Latent Performance Profiling of Large Language Models",
+  "authors": [
+   "Tanmoy Chakraborty",
+   "Ayan Sengupta",
+   "Suparna Bhattacharya",
+   "Partha Pratim Chakrabarti",
+   "Amlan Chakrabarti",
+   "Supratik Chakraborty",
+   "Partha Pratim Das",
+   "Lipika Dey",
+   "Richa Singh",
+   "Mayank Vatsa"
+  ],
+  "published": "2026-05-28",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2402.17759": {
+  "title": "Towards Optimal Learning of Language Models",
+  "authors": [
+   "Yuxian Gu",
+   "Li Dong",
+   "Yaru Hao",
+   "Qingxiu Dong",
+   "Minlie Huang",
+   "Furu Wei"
+  ],
+  "published": "2024-02-27",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2604.07569": {
+  "title": "Learning is Forgetting: LLM Training As Lossy Compression",
+  "authors": [
+   "Henry C. Conklin",
+   "Tom Hosking",
+   "Tan Yi-Chern",
+   "Julian Gold",
+   "Jonathan D. Cohen",
+   "Thomas L. Griffiths",
+   "Max Bartolo",
+   "Seraphina Goldfarb-Tarrant"
+  ],
+  "published": "2026-04-08",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL",
+   "cs.IT"
+  ]
+ },
+ "2603.08462": {
+  "title": "Reasoning as Compression: Unifying Budget Forcing via the Conditional Information Bottleneck",
+  "authors": [
+   "Fabio Valerio Massoli",
+   "Andrey Kuzmin",
+   "Arash Behboodi"
+  ],
+  "published": "2026-03-09",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2601.07212": {
+  "title": "MI-PRUN: Optimize Large Language Model Pruning via Mutual Information",
+  "authors": [
+   "Hao Zhang",
+   "Zhibin Zhang",
+   "Guangxin Wu",
+   "He Chen",
+   "Jiafeng Guo",
+   "Xueqi Cheng"
+  ],
+  "published": "2026-01-12",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "1810.05728": {
+  "title": "Estimating Information Flow in Deep Neural Networks",
+  "authors": [
+   "Ziv Goldfeld",
+   "Ewout van den Berg",
+   "Kristjan Greenewald",
+   "Igor Melnyk",
+   "Nam Nguyen",
+   "Brian Kingsbury",
+   "Yury Polyanskiy"
+  ],
+  "published": "2018-10-12",
+  "categories": [
+   "cs.LG",
+   "stat.ML"
+  ]
  }
 }
