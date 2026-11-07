@@ -6,6 +6,18 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-06] 모델이 망가져도 남는 점수 — REEF의 견고성 곡선을 손상 눈금으로 다시 읽으면
+
+- **중심**: Jie Zhang 외. *REEF: Representation Encoding Fingerprints for Large Language Models*. [arXiv:2410.14273](https://arxiv.org/abs/2410.14273) — 분야: cs.CL, cs.AI, cs.CR
+- Alex Murphy 외. *Correcting Biased Centered Kernel Alignment Measures in Biological and Artificial Neural Networks*. [arXiv:2405.01012](https://arxiv.org/abs/2405.01012) — 분야: q-bio.NC, cs.CV
+- Chanwoo Chun 외. *Estimating Neural Representation Alignment from Sparsely Sampled Inputs and Features*. [arXiv:2502.15104](https://arxiv.org/abs/2502.15104) — 분야: q-bio.NC, stat.ML
+- Yao Tong 외. *SeedPrints: Fingerprints Can Even Tell Which Seed Your Large Language Model Was Trained From*. [arXiv:2509.26404](https://arxiv.org/abs/2509.26404) — 분야: cs.CR, cs.AI, cs.CL
+- Boyi Zeng 외. *AWM: Accurate Weight-Matrix Fingerprint for Large Language Models*. [arXiv:2510.06738](https://arxiv.org/abs/2510.06738) — 분야: cs.CL
+- Atharva Kulkarni 외. *Disentangling Geometry, Performance, and Training in Language Models*. [arXiv:2602.20433](https://arxiv.org/abs/2602.20433) — 분야: cs.CL
+- Boyu Shi 외. *Understanding Performance Collapse in Layer-Pruned Large Language Models via Decision Representation Transitions*. [arXiv:2605.07271](https://arxiv.org/abs/2605.07271) — 분야: cs.CL, cs.AI
+- Jiahao Zhang 외. *Your "Pro" LLM Subscription May Actually Be "Free": Exposing Fingerprint Spoofing Risks in LLM Inference Services*. [arXiv:2606.16100](https://arxiv.org/abs/2606.16100) — 분야: cs.CR, cs.CL, cs.LG
+- Keyu Zhang 외. *Stemma: Induced Decision Regions Reveal LLM Provenance*. [arXiv:2607.25880](https://arxiv.org/abs/2607.25880) — 분야: cs.CR, cs.AI, cs.CL
+
 ## [2026-11-04] 배운다는 건 잊는 일 — 언어 모델 사전학습을 손실 압축으로 재면 무엇이 남는가
 
 - **중심**: Henry C. Conklin 외. *Learning is Forgetting: LLM Training As Lossy Compression*. [arXiv:2604.07569](https://arxiv.org/abs/2604.07569) — 분야: cs.LG, cs.AI, cs.CL, cs.IT

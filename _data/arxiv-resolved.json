@@ -16453,5 +16453,77 @@
    "cs.LG",
    "stat.ML"
   ]
+ },
+ "2502.15104": {
+  "title": "Estimating Neural Representation Alignment from Sparsely Sampled Inputs and Features",
+  "authors": [
+   "Chanwoo Chun",
+   "Abdulkadir Canatar",
+   "SueYeon Chung",
+   "Daniel D. Lee"
+  ],
+  "published": "2025-02-20",
+  "categories": [
+   "q-bio.NC",
+   "stat.ML"
+  ]
+ },
+ "2510.06738": {
+  "title": "AWM: Accurate Weight-Matrix Fingerprint for Large Language Models",
+  "authors": [
+   "Boyi Zeng",
+   "Lin Chen",
+   "Ziwei He",
+   "Xinbing Wang",
+   "Zhouhan Lin"
+  ],
+  "published": "2025-10-08",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2509.26404": {
+  "title": "SeedPrints: Fingerprints Can Even Tell Which Seed Your Large Language Model Was Trained From",
+  "authors": [
+   "Yao Tong",
+   "Haonan Wang",
+   "Siquan Li",
+   "Kenji Kawaguchi",
+   "Tianyang Hu"
+  ],
+  "published": "2025-09-30",
+  "categories": [
+   "cs.CR",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2606.16100": {
+  "title": "Your \"Pro\" LLM Subscription May Actually Be \"Free\": Exposing Fingerprint Spoofing Risks in LLM Inference Services",
+  "authors": [
+   "Jiahao Zhang",
+   "Xiuyu Li",
+   "Suhang Wang"
+  ],
+  "published": "2026-06-15",
+  "categories": [
+   "cs.CR",
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2607.25880": {
+  "title": "Stemma: Induced Decision Regions Reveal LLM Provenance",
+  "authors": [
+   "Keyu Zhang",
+   "Vadim Safronov",
+   "Andrew Martin"
+  ],
+  "published": "2026-07-28",
+  "categories": [
+   "cs.CR",
+   "cs.AI",
+   "cs.CL"
+  ]
  }
 }

@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-11-06 — [모델이 망가져도 남는 점수 — REEF의 견고성 곡선을 손상 눈금으로 다시 읽으면](https://pheeree.github.io/2026/11/06/reef-fingerprint-outlives-function/)
 - 2026-11-04 — [배운다는 건 잊는 일 — 언어 모델 사전학습을 손실 압축으로 재면 무엇이 남는가](https://pheeree.github.io/2026/11/04/learning-is-forgetting-information-bottleneck/)
 - 2026-11-02 — [파라미터 하나에 3.6비트 — 용량이 차면 언어 모델은 무엇을 먼저 내려놓나](https://pheeree.github.io/2026/11/02/language-model-memorization-capacity-bits/)
 - 2026-11-01 — [드물게 오는 과제를 지키는 너비 — 작은 모델은 용량이 모자란가, 사이사이에 지워지는가](https://pheeree.github.io/2026/11/01/larger-models-rare-task-interference-retention/)
