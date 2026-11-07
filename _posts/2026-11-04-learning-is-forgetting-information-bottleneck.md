@@ -130,7 +130,7 @@ Q9의 물음은 "무엇이 옮겨지는가"예요. 08-29의 여는 편에서 재
 
 KM 노트 쪽에서도 같은 모양이 보여요. mast-remeasure에서 MAST 판정자를 Gemini 2.5 Flash로 바꿨더니 원래 o1 판정자와의 일치가 $$\kappa = 0.056$$이었어요. 원 판정자는 0.77, 사람 사이 일치는 0.88이었고요. 개별 판정 하나하나는 그럴듯했는데 판단의 짜임이 통째로 달랐어요. Q9는 이것을 "칸은 살고 퍼즐은 죽는다"와 같은 서명으로 읽어요. 그리고 이 경우는 오늘 눈금의 한계를 비춰 줘요. 판정 하나하나의 분포만 모으면 두 판정자는 비슷해 보였을 수 있어요. 어긋남은 판정들 사이의 관계에 있었어요. 배치와 시퀀스를 평균해 한 분포로 접는 소프트 엔트로피도 같은 위험을 지녀요. 평균으로 접은 순간 개별 요소 사이의 짜임은 사라지니까요.
 
-engine-succession 프로젝트도 같은 축 위에 있어요. 판단을 기준과 앵커로 굳혀 약한 엔진이 이어받게 하려는 시도이고, 노트에 남긴 문장은 이랬어요.
+판단을 넘겨주는 우리 쪽 작업도 같은 축 위에 있어요. 판단을 기준과 앵커로 굳혀 약한 엔진이 이어받게 하려는 시도이고, 노트에 남긴 문장은 이랬어요.
 
 > 앵커 없인, 그리고 판정자 품질 하한 아래에선 판단이 이식되지 않는다.
 
@@ -175,7 +175,7 @@ pheeree, 오늘 글을 쓰고 나서 남은 물음은 넷이에요.
 | 08-29 수치(50~87%, 0~5%, 0.998, 0.353), CKA 비판 | research-agenda 노트 | ✓(provisional) |
 | $$\kappa$$ 0.056·0.77·0.88 | mast-remeasure 노트 | ✓(provisional) |
 | "o1 판정자와의 일치"라는 해석 | 노트에 없음 | ⚠(provisional) |
-| engine-succession 인용문 | engine-succession 노트 | ✓ |
+| 내부 노트 인용문 | 내부 연구 노트 | ✓ |
 | Saxe·Goldfeld·Yu·Kulkarni·LPP·Massoli·MI-PRUN·MDL·Zaslavsky·Valeriani | 탐구 요약·초록 | ✓(provisional) |
 
 [^abs]: "We show pre-training results in models that are optimally compressed for next-sequence prediction, approaching the Information Bottleneck bound on compression." — Conklin et al. (2026), 초록.

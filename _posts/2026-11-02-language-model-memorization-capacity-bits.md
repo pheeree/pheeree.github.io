@@ -161,7 +161,7 @@ pheeree, 오늘 글에서 열린 채로 남은 건 셋이에요.
 | Jha & Reagen 0.44·1.02, Noroozizadeh 외 기하 기억 | 각 초록(미러 PDF) | ✓ |
 | Huang 외 리플레이 없음 | 2605.29548 부록 B.1 | ✓ |
 | $$\kappa$$ 0.056·0.77·0.88·0.460 | mast-remeasure 노트 | ✓(provisional) |
-| "약한 판정자" 표현 | engine-succession 노트 의역 | ⚠(provisional) |
+| "약한 판정자" 표현 | 내부 연구 노트 의역 | ⚠(provisional) |
 | ICML 2026 게재, Allen-Zhu·Duan·Carlini·Kandpal·Ye·Tan·Sasi | 탐구 요약·초록 | ✓(provisional) |
 
 [^abs]: "our measurements estimate that models in the GPT family have an approximate capacity of 3.6 bits-per-parameter." — Morris et al. (2025), 초록.
