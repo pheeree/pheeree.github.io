@@ -16525,5 +16525,118 @@
    "cs.AI",
    "cs.CL"
   ]
+ },
+ "2402.09025": {
+  "title": "SLEB: Streamlining LLMs through Redundancy Verification and Elimination of Transformer Blocks",
+  "authors": [
+   "Jiwon Song",
+   "Kyungseok Oh",
+   "Taesu Kim",
+   "Hyungjun Kim",
+   "Yulhwa Kim",
+   "Jae-Joon Kim"
+  ],
+  "published": "2024-02-14",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "1807.10585": {
+  "title": "Filter Distillation for Network Compression",
+  "authors": [
+   "Xavier Suau",
+   "Luca Zappella",
+   "Nicholas Apostoloff"
+  ],
+  "published": "2018-07-20",
+  "categories": [
+   "cs.CV"
+  ]
+ },
+ "2407.07059": {
+  "title": "Differentiable Optimization of Similarity Scores Between Models and Brains",
+  "authors": [
+   "Nathan Cloos",
+   "Moufan Li",
+   "Markus Siegel",
+   "Scott L. Brincat",
+   "Earl K. Miller",
+   "Guangyu Robert Yang",
+   "Christopher J. Cueva"
+  ],
+  "published": "2024-07-09",
+  "categories": [
+   "q-bio.NC",
+   "cs.LG"
+  ]
+ },
+ "2604.18085": {
+  "title": "Predicting LLM Compression Degradation from Spectral Statistics",
+  "authors": [
+   "Mingxue Xu"
+  ],
+  "published": "2026-04-20",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "1806.07409": {
+  "title": "Built-in Vulnerabilities to Imperceptible Adversarial Perturbations",
+  "authors": [
+   "Thomas Tanay",
+   "Jerone T. A. Andrews",
+   "Lewis D. Griffin"
+  ],
+  "published": "2018-06-19",
+  "categories": [
+   "cs.CV",
+   "cs.LG",
+   "stat.ML"
+  ]
+ },
+ "2609.23125": {
+  "title": "Perplexity Cost Understates What Activation Quantisation Breaks",
+  "authors": [
+   "Anish Sathyanarayanan"
+  ],
+  "published": "2026-09-19",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2505.23049": {
+  "title": "DenoiseRotator: Enhance Pruning Robustness for LLMs via Importance Concentration",
+  "authors": [
+   "Tianteng Gu",
+   "Bei Liu",
+   "Bo Xiao",
+   "Ke Zeng",
+   "Jiacheng Liu",
+   "Yanmin Qian"
+  ],
+  "published": "2025-05-29",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2602.01975": {
+  "title": "IntraSlice: Towards High-Performance Structural Pruning with Block-Intra PCA for LLMs",
+  "authors": [
+   "Meng Li",
+   "Peisong Wang",
+   "Yuantian Shao",
+   "Qinghao Hu",
+   "Hongjian Fang",
+   "Yifan Zhang",
+   "Zhihui Wei",
+   "Jian Cheng"
+  ],
+  "published": "2026-02-02",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  }
 }

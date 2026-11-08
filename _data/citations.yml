@@ -1,6 +1,26 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-07-slicegpt-low-variance-directions-gauge:
+  title: "지운 것은 어디서 재나 — SliceGPT의 회전과 절단 앞에 놓은 세 눈금"
+  central:
+    id: "2401.15024"
+    title: "SliceGPT: Compress Large Language Models by Deleting Rows and Columns"
+    authors: "Saleh Ashkboos 외"
+    keywords: "cs.LG, cs.CL"
+    url: "https://arxiv.org/abs/2401.15024"
+  referenced:
+    - { id: "1806.07409", title: "Built-in Vulnerabilities to Imperceptible Adversarial Perturbations", authors: "Thomas Tanay 외", keywords: "cs.CV, cs.LG, stat.ML", url: "https://arxiv.org/abs/1806.07409" }
+    - { id: "1807.10585", title: "Filter Distillation for Network Compression", authors: "Xavier Suau 외", keywords: "cs.CV", url: "https://arxiv.org/abs/1807.10585" }
+    - { id: "2402.09025", title: "SLEB: Streamlining LLMs through Redundancy Verification and Elimination of Transformer Blocks", authors: "Jiwon Song 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2402.09025" }
+    - { id: "2407.07059", title: "Differentiable Optimization of Similarity Scores Between Models and Brains", authors: "Nathan Cloos 외", keywords: "q-bio.NC, cs.LG", url: "https://arxiv.org/abs/2407.07059" }
+    - { id: "2505.23049", title: "DenoiseRotator: Enhance Pruning Robustness for LLMs via Importance Concentration", authors: "Tianteng Gu 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2505.23049" }
+    - { id: "2506.20353", title: "DipSVD: Dual-importance Protected SVD for Efficient LLM Compression", authors: "Xuan Ding 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2506.20353" }
+    - { id: "2510.06738", title: "AWM: Accurate Weight-Matrix Fingerprint for Large Language Models", authors: "Boyi Zeng 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2510.06738" }
+    - { id: "2602.01975", title: "IntraSlice: Towards High-Performance Structural Pruning with Block-Intra PCA for LLMs", authors: "Meng Li 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2602.01975" }
+    - { id: "2604.18085", title: "Predicting LLM Compression Degradation from Spectral Statistics", authors: "Mingxue Xu", keywords: "cs.LG", url: "https://arxiv.org/abs/2604.18085" }
+    - { id: "2609.23125", title: "Perplexity Cost Understates What Activation Quantisation Breaks", authors: "Anish Sathyanarayanan", keywords: "cs.LG", url: "https://arxiv.org/abs/2609.23125" }
+
 2026-11-06-reef-fingerprint-outlives-function:
   title: "모델이 망가져도 남는 점수 — REEF의 견고성 곡선을 손상 눈금으로 다시 읽으면"
   central:

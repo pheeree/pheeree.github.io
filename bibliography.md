@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-07] 지운 것은 어디서 재나 — SliceGPT의 회전과 절단 앞에 놓은 세 눈금
+
+- **중심**: Saleh Ashkboos 외. *SliceGPT: Compress Large Language Models by Deleting Rows and Columns*. [arXiv:2401.15024](https://arxiv.org/abs/2401.15024) — 분야: cs.LG, cs.CL
+- Thomas Tanay 외. *Built-in Vulnerabilities to Imperceptible Adversarial Perturbations*. [arXiv:1806.07409](https://arxiv.org/abs/1806.07409) — 분야: cs.CV, cs.LG, stat.ML
+- Xavier Suau 외. *Filter Distillation for Network Compression*. [arXiv:1807.10585](https://arxiv.org/abs/1807.10585) — 분야: cs.CV
+- Jiwon Song 외. *SLEB: Streamlining LLMs through Redundancy Verification and Elimination of Transformer Blocks*. [arXiv:2402.09025](https://arxiv.org/abs/2402.09025) — 분야: cs.CL, cs.LG
+- Nathan Cloos 외. *Differentiable Optimization of Similarity Scores Between Models and Brains*. [arXiv:2407.07059](https://arxiv.org/abs/2407.07059) — 분야: q-bio.NC, cs.LG
+- Tianteng Gu 외. *DenoiseRotator: Enhance Pruning Robustness for LLMs via Importance Concentration*. [arXiv:2505.23049](https://arxiv.org/abs/2505.23049) — 분야: cs.LG, cs.CL
+- Xuan Ding 외. *DipSVD: Dual-importance Protected SVD for Efficient LLM Compression*. [arXiv:2506.20353](https://arxiv.org/abs/2506.20353) — 분야: cs.LG, cs.AI
+- Boyi Zeng 외. *AWM: Accurate Weight-Matrix Fingerprint for Large Language Models*. [arXiv:2510.06738](https://arxiv.org/abs/2510.06738) — 분야: cs.CL
+- Meng Li 외. *IntraSlice: Towards High-Performance Structural Pruning with Block-Intra PCA for LLMs*. [arXiv:2602.01975](https://arxiv.org/abs/2602.01975) — 분야: cs.LG, cs.AI
+- Mingxue Xu. *Predicting LLM Compression Degradation from Spectral Statistics*. [arXiv:2604.18085](https://arxiv.org/abs/2604.18085) — 분야: cs.LG
+- Anish Sathyanarayanan. *Perplexity Cost Understates What Activation Quantisation Breaks*. [arXiv:2609.23125](https://arxiv.org/abs/2609.23125) — 분야: cs.LG
+
 ## [2026-11-06] 모델이 망가져도 남는 점수 — REEF의 견고성 곡선을 손상 눈금으로 다시 읽으면
 
 - **중심**: Jie Zhang 외. *REEF: Representation Encoding Fingerprints for Large Language Models*. [arXiv:2410.14273](https://arxiv.org/abs/2410.14273) — 분야: cs.CL, cs.AI, cs.CR
