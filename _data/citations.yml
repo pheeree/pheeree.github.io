@@ -1,6 +1,23 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-08-dipsvd-calibration-perplexity-gauge:
+  title: "미세한 차이는 어느 눈금이 가르나 — DipSVD의 80행을 압축 강도별로 다시 세면"
+  central:
+    id: "2506.20353"
+    title: "DipSVD: Dual-importance Protected SVD for Efficient LLM Compression"
+    authors: "Xuan Ding 외"
+    keywords: "cs.LG, cs.AI"
+    url: "https://arxiv.org/abs/2506.20353"
+  referenced:
+    - { id: "2310.01382", title: "Compressing LLMs: The Truth is Rarely Pure and Never Simple", authors: "Ajay Jaiswal 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2310.01382" }
+    - { id: "2311.09755", title: "On the Impact of Calibration Data in Post-training Quantization and Pruning", authors: "Miles Williams, Nikolaos Aletras", keywords: "cs.CL", url: "https://arxiv.org/abs/2311.09755" }
+    - { id: "2403.07378", title: "SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression", authors: "Xin Wang 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2403.07378" }
+    - { id: "2407.09141", title: "Accuracy is Not All You Need", authors: "Abhinav Dutta 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2407.09141" }
+    - { id: "2410.23771", title: "What is Wrong with Perplexity for Long-context Language Modeling?", authors: "Lizhe Fang 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2410.23771" }
+    - { id: "2604.01609", title: "Swift-SVD: Theoretical Optimality Meets Practical Efficiency in Low-Rank LLM Compression", authors: "Ruoling Qi 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2604.01609" }
+    - { id: "2607.03057", title: "LACE-SVD: Loss-Aware SVD with Cumulative Error Correction for LLM Compression", authors: "Zhuowen Liu 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2607.03057" }
+
 2026-11-07-slicegpt-low-variance-directions-gauge:
   title: "지운 것은 어디서 재나 — SliceGPT의 회전과 절단 앞에 놓은 세 눈금"
   central:

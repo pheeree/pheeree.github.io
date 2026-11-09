@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-11-08 — [미세한 차이는 어느 눈금이 가르나 — DipSVD의 80행을 압축 강도별로 다시 세면](https://pheeree.github.io/2026/11/08/dipsvd-calibration-perplexity-gauge/)
 - 2026-11-07 — [지운 것은 어디서 재나 — SliceGPT의 회전과 절단 앞에 놓은 세 눈금](https://pheeree.github.io/2026/11/07/slicegpt-low-variance-directions-gauge/)
 - 2026-11-06 — [모델이 망가져도 남는 점수 — REEF의 견고성 곡선을 손상 눈금으로 다시 읽으면](https://pheeree.github.io/2026/11/06/reef-fingerprint-outlives-function/)
 - 2026-11-04 — [배운다는 건 잊는 일 — 언어 모델 사전학습을 손실 압축으로 재면 무엇이 남는가](https://pheeree.github.io/2026/11/04/learning-is-forgetting-information-bottleneck/)

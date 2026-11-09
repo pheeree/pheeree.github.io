@@ -16638,5 +16638,66 @@
    "cs.LG",
    "cs.AI"
   ]
+ },
+ "2604.01609": {
+  "title": "Swift-SVD: Theoretical Optimality Meets Practical Efficiency in Low-Rank LLM Compression",
+  "authors": [
+   "Ruoling Qi",
+   "Yirui Liu",
+   "Xuaner Wu",
+   "Xiangyu Wang",
+   "Ming Li",
+   "Chen Chen",
+   "Jian Chen",
+   "Yin Chen",
+   "Qizhen Weng"
+  ],
+  "published": "2026-04-02",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2410.23771": {
+  "title": "What is Wrong with Perplexity for Long-context Language Modeling?",
+  "authors": [
+   "Lizhe Fang",
+   "Yifei Wang",
+   "Zhaoyang Liu",
+   "Chenheng Zhang",
+   "Stefanie Jegelka",
+   "Jinyang Gao",
+   "Bolin Ding",
+   "Yisen Wang"
+  ],
+  "published": "2024-10-31",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2403.07378": {
+  "title": "SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression",
+  "authors": [
+   "Xin Wang",
+   "Yu Zheng",
+   "Zhongwei Wan",
+   "Mi Zhang"
+  ],
+  "published": "2024-03-12",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2311.09755": {
+  "title": "On the Impact of Calibration Data in Post-training Quantization and Pruning",
+  "authors": [
+   "Miles Williams",
+   "Nikolaos Aletras"
+  ],
+  "published": "2023-11-16",
+  "categories": [
+   "cs.CL"
+  ]
  }
 }

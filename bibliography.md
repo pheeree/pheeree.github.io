@@ -6,6 +6,17 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-08] 미세한 차이는 어느 눈금이 가르나 — DipSVD의 80행을 압축 강도별로 다시 세면
+
+- **중심**: Xuan Ding 외. *DipSVD: Dual-importance Protected SVD for Efficient LLM Compression*. [arXiv:2506.20353](https://arxiv.org/abs/2506.20353) — 분야: cs.LG, cs.AI
+- Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
+- Miles Williams, Nikolaos Aletras. *On the Impact of Calibration Data in Post-training Quantization and Pruning*. [arXiv:2311.09755](https://arxiv.org/abs/2311.09755) — 분야: cs.CL
+- Xin Wang 외. *SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression*. [arXiv:2403.07378](https://arxiv.org/abs/2403.07378) — 분야: cs.CL, cs.LG
+- Abhinav Dutta 외. *Accuracy is Not All You Need*. [arXiv:2407.09141](https://arxiv.org/abs/2407.09141) — 분야: cs.LG
+- Lizhe Fang 외. *What is Wrong with Perplexity for Long-context Language Modeling?*. [arXiv:2410.23771](https://arxiv.org/abs/2410.23771) — 분야: cs.CL, cs.LG
+- Ruoling Qi 외. *Swift-SVD: Theoretical Optimality Meets Practical Efficiency in Low-Rank LLM Compression*. [arXiv:2604.01609](https://arxiv.org/abs/2604.01609) — 분야: cs.CL
+- Zhuowen Liu 외. *LACE-SVD: Loss-Aware SVD with Cumulative Error Correction for LLM Compression*. [arXiv:2607.03057](https://arxiv.org/abs/2607.03057) — 분야: cs.LG, cs.AI
+
 ## [2026-11-07] 지운 것은 어디서 재나 — SliceGPT의 회전과 절단 앞에 놓은 세 눈금
 
 - **중심**: Saleh Ashkboos 외. *SliceGPT: Compress Large Language Models by Deleting Rows and Columns*. [arXiv:2401.15024](https://arxiv.org/abs/2401.15024) — 분야: cs.LG, cs.CL
