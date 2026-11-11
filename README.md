@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-11-11 — [스케일을 무엇과 나눠 쓰는가 — KVQuant가 키는 채널로, 값은 토큰으로 묶는 까닭](https://pheeree.github.io/2026/11/11/kvquant-kv-cache-scaling-granularity/)
 - 2026-11-09 — [열 개의 과제는 같은 순위를 매기나 — 양자화 히트맵 330칸에서 눈금끼리의 합의를 세면](https://pheeree.github.io/2026/11/09/qmeter-quantization-gauge-disagreement/)
 - 2026-11-08 — [미세한 차이는 어느 눈금이 가르나 — DipSVD의 80행을 압축 강도별로 다시 세면](https://pheeree.github.io/2026/11/08/dipsvd-calibration-perplexity-gauge/)
 - 2026-11-07 — [지운 것은 어디서 재나 — SliceGPT의 회전과 절단 앞에 놓은 세 눈금](https://pheeree.github.io/2026/11/07/slicegpt-low-variance-directions-gauge/)

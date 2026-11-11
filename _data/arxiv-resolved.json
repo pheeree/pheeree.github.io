@@ -16725,5 +16725,81 @@
    "stat.AP",
    "cs.CL"
   ]
+ },
+ "2512.01953": {
+  "title": "KV Pareto: Systems-Level Optimization of KV Cache and Model Compression for Long Context Inference",
+  "authors": [
+   "Sai Gokhale",
+   "Devleena Das",
+   "Rajeev Patwari",
+   "Ashish Sirasao",
+   "Elliott Delaye"
+  ],
+  "published": "2025-12-01",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2608.09412": {
+  "title": "KVDiagnosis: A Diagnostic Benchmark for KV-Cache Compression in Long-Context Language Models",
+  "authors": [
+   "Chen Qiu",
+   "Ziwu Liu",
+   "Chao Fei",
+   "Guozhong Li",
+   "Panos Kalnis"
+  ],
+  "published": "2026-08-10",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2602.23200": {
+  "title": "InnerQ: Hardware-Aware Tuning-Free Quantization of KV Cache for Large Language Models",
+  "authors": [
+   "Sayed Mohammadreza Tayaranian Hosseini",
+   "Amir Ardakani",
+   "Warren J. Gross"
+  ],
+  "published": "2026-02-26",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2211.10438": {
+  "title": "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models",
+  "authors": [
+   "Guangxuan Xiao",
+   "Ji Lin",
+   "Mickael Seznec",
+   "Hao Wu",
+   "Julien Demouth",
+   "Song Han"
+  ],
+  "published": "2022-11-18",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2601.19026": {
+  "title": "Is Finer Better? The Limits of Microscaling Formats in Large Language Models",
+  "authors": [
+   "Andrea Fasoli",
+   "Monodeep Kar",
+   "Chi-Chun Liu",
+   "Swagath Venkataramani",
+   "Viji Srinivasan",
+   "Leland Chang",
+   "Naigang Wang"
+  ],
+  "published": "2026-01-26",
+  "categories": [
+   "cs.LG",
+   "cs.AR",
+   "cs.CL"
+  ]
  }
 }

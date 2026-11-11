@@ -1,6 +1,25 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-11-kvquant-kv-cache-scaling-granularity:
+  title: "스케일을 무엇과 나눠 쓰는가 — KVQuant가 키는 채널로, 값은 토큰으로 묶는 까닭"
+  central:
+    id: "2401.18079"
+    title: "KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization"
+    authors: "Coleman Hooper 외"
+    keywords: "cs.LG"
+    url: "https://arxiv.org/abs/2401.18079"
+  referenced:
+    - { id: "2211.10438", title: "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models", authors: "Guangxuan Xiao 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2211.10438" }
+    - { id: "2402.02750", title: "KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache", authors: "Zirui Liu 외", keywords: "cs.CL, cs.LG, cs.PF", url: "https://arxiv.org/abs/2402.02750" }
+    - { id: "2504.04823", title: "Quantization Hurts Reasoning? An Empirical Study on Quantized Reasoning Models", authors: "Ruikang Liu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2504.04823" }
+    - { id: "2512.01953", title: "KV Pareto: Systems-Level Optimization of KV Cache and Model Compression for Long Context Inference", authors: "Sai Gokhale 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2512.01953" }
+    - { id: "2601.19026", title: "Is Finer Better? The Limits of Microscaling Formats in Large Language Models", authors: "Andrea Fasoli 외", keywords: "cs.LG, cs.AR, cs.CL", url: "https://arxiv.org/abs/2601.19026" }
+    - { id: "2602.23200", title: "InnerQ: Hardware-Aware Tuning-Free Quantization of KV Cache for Large Language Models", authors: "Sayed Mohammadreza Tayaranian Hosseini 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2602.23200" }
+    - { id: "2605.17757", title: "OSCAR: Offline Spectral Covariance-Aware Rotation for 2-bit KV Cache Quantization", authors: "Zhongzhu Zhou 외", keywords: "cs.LG, cs.AI, cs.DC, cs.PF", url: "https://arxiv.org/abs/2605.17757" }
+    - { id: "2607.16237", title: "Quantizing Recursive Reasoning Models", authors: "Thorir Mar Ingolfsson 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2607.16237" }
+    - { id: "2608.09412", title: "KVDiagnosis: A Diagnostic Benchmark for KV-Cache Compression in Long-Context Language Models", authors: "Chen Qiu 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2608.09412" }
+
 2026-11-09-qmeter-quantization-gauge-disagreement:
   title: "열 개의 과제는 같은 순위를 매기나 — 양자화 히트맵 330칸에서 눈금끼리의 합의를 세면"
   central:

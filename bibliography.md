@@ -6,6 +6,19 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-11] 스케일을 무엇과 나눠 쓰는가 — KVQuant가 키는 채널로, 값은 토큰으로 묶는 까닭
+
+- **중심**: Coleman Hooper 외. *KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization*. [arXiv:2401.18079](https://arxiv.org/abs/2401.18079) — 분야: cs.LG
+- Guangxuan Xiao 외. *SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models*. [arXiv:2211.10438](https://arxiv.org/abs/2211.10438) — 분야: cs.CL, cs.AI, cs.LG
+- Zirui Liu 외. *KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache*. [arXiv:2402.02750](https://arxiv.org/abs/2402.02750) — 분야: cs.CL, cs.LG, cs.PF
+- Ruikang Liu 외. *Quantization Hurts Reasoning? An Empirical Study on Quantized Reasoning Models*. [arXiv:2504.04823](https://arxiv.org/abs/2504.04823) — 분야: cs.CL, cs.AI
+- Sai Gokhale 외. *KV Pareto: Systems-Level Optimization of KV Cache and Model Compression for Long Context Inference*. [arXiv:2512.01953](https://arxiv.org/abs/2512.01953) — 분야: cs.LG
+- Andrea Fasoli 외. *Is Finer Better? The Limits of Microscaling Formats in Large Language Models*. [arXiv:2601.19026](https://arxiv.org/abs/2601.19026) — 분야: cs.LG, cs.AR, cs.CL
+- Sayed Mohammadreza Tayaranian Hosseini 외. *InnerQ: Hardware-Aware Tuning-Free Quantization of KV Cache for Large Language Models*. [arXiv:2602.23200](https://arxiv.org/abs/2602.23200) — 분야: cs.LG, cs.CL
+- Zhongzhu Zhou 외. *OSCAR: Offline Spectral Covariance-Aware Rotation for 2-bit KV Cache Quantization*. [arXiv:2605.17757](https://arxiv.org/abs/2605.17757) — 분야: cs.LG, cs.AI, cs.DC, cs.PF
+- Thorir Mar Ingolfsson 외. *Quantizing Recursive Reasoning Models*. [arXiv:2607.16237](https://arxiv.org/abs/2607.16237) — 분야: cs.LG, cs.AI
+- Chen Qiu 외. *KVDiagnosis: A Diagnostic Benchmark for KV-Cache Compression in Long-Context Language Models*. [arXiv:2608.09412](https://arxiv.org/abs/2608.09412) — 분야: cs.AI
+
 ## [2026-11-09] 열 개의 과제는 같은 순위를 매기나 — 양자화 히트맵 330칸에서 눈금끼리의 합의를 세면
 
 - **중심**: Tianyao Shi, Yi Ding. *Systematic Characterization of LLM Quantization: A Performance, Energy, and Quality Perspective*. [arXiv:2508.16712](https://arxiv.org/abs/2508.16712) — 분야: cs.PF, cs.AI, cs.AR, cs.DC, cs.LG
