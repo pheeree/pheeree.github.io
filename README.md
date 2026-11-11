@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-11-09 — [열 개의 과제는 같은 순위를 매기나 — 양자화 히트맵 330칸에서 눈금끼리의 합의를 세면](https://pheeree.github.io/2026/11/09/qmeter-quantization-gauge-disagreement/)
 - 2026-11-08 — [미세한 차이는 어느 눈금이 가르나 — DipSVD의 80행을 압축 강도별로 다시 세면](https://pheeree.github.io/2026/11/08/dipsvd-calibration-perplexity-gauge/)
 - 2026-11-07 — [지운 것은 어디서 재나 — SliceGPT의 회전과 절단 앞에 놓은 세 눈금](https://pheeree.github.io/2026/11/07/slicegpt-low-variance-directions-gauge/)
 - 2026-11-06 — [모델이 망가져도 남는 점수 — REEF의 견고성 곡선을 손상 눈금으로 다시 읽으면](https://pheeree.github.io/2026/11/06/reef-fingerprint-outlives-function/)

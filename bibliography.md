@@ -6,6 +6,16 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-09] 열 개의 과제는 같은 순위를 매기나 — 양자화 히트맵 330칸에서 눈금끼리의 합의를 세면
+
+- **중심**: Tianyao Shi, Yi Ding. *Systematic Characterization of LLM Quantization: A Performance, Energy, and Quality Perspective*. [arXiv:2508.16712](https://arxiv.org/abs/2508.16712) — 분야: cs.PF, cs.AI, cs.AR, cs.DC, cs.LG
+- Abhinav Dutta 외. *Accuracy is Not All You Need*. [arXiv:2407.09141](https://arxiv.org/abs/2407.09141) — 분야: cs.LG
+- Evan Miller. *Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations*. [arXiv:2411.00640](https://arxiv.org/abs/2411.00640) — 분야: stat.AP, cs.CL
+- Eldar Kurtic 외. *"Give Me BF16 or Give Me Death"? Accuracy-Performance Trade-Offs in LLM Quantization*. [arXiv:2411.02355](https://arxiv.org/abs/2411.02355) — 분야: cs.LG, cs.AI
+- Ruikang Liu 외. *Quantization Hurts Reasoning? An Empirical Study on Quantized Reasoning Models*. [arXiv:2504.04823](https://arxiv.org/abs/2504.04823) — 분야: cs.CL, cs.AI
+- Rui Wen 외. *The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer*. [arXiv:2606.17609](https://arxiv.org/abs/2606.17609) — 분야: cs.CL
+- Miloš Nikolić 외. *Displacement Is Not Direction: Evaluating Fidelity Metrics for Quantized LLM Deployment*. [arXiv:2606.19558](https://arxiv.org/abs/2606.19558) — 분야: cs.LG, cs.CL
+
 ## [2026-11-08] 미세한 차이는 어느 눈금이 가르나 — DipSVD의 80행을 압축 강도별로 다시 세면
 
 - **중심**: Xuan Ding 외. *DipSVD: Dual-importance Protected SVD for Efficient LLM Compression*. [arXiv:2506.20353](https://arxiv.org/abs/2506.20353) — 분야: cs.LG, cs.AI

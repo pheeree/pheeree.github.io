@@ -16699,5 +16699,31 @@
   "categories": [
    "cs.CL"
   ]
+ },
+ "2411.02355": {
+  "title": "\"Give Me BF16 or Give Me Death\"? Accuracy-Performance Trade-Offs in LLM Quantization",
+  "authors": [
+   "Eldar Kurtic",
+   "Alexandre Marques",
+   "Shubhra Pandit",
+   "Mark Kurtz",
+   "Dan Alistarh"
+  ],
+  "published": "2024-11-04",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2411.00640": {
+  "title": "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations",
+  "authors": [
+   "Evan Miller"
+  ],
+  "published": "2024-11-01",
+  "categories": [
+   "stat.AP",
+   "cs.CL"
+  ]
  }
 }

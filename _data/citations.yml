@@ -1,6 +1,22 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-09-qmeter-quantization-gauge-disagreement:
+  title: "열 개의 과제는 같은 순위를 매기나 — 양자화 히트맵 330칸에서 눈금끼리의 합의를 세면"
+  central:
+    id: "2508.16712"
+    title: "Systematic Characterization of LLM Quantization: A Performance, Energy, and Quality Perspective"
+    authors: "Tianyao Shi, Yi Ding"
+    keywords: "cs.PF, cs.AI, cs.AR, cs.DC, cs.LG"
+    url: "https://arxiv.org/abs/2508.16712"
+  referenced:
+    - { id: "2407.09141", title: "Accuracy is Not All You Need", authors: "Abhinav Dutta 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2407.09141" }
+    - { id: "2411.00640", title: "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations", authors: "Evan Miller", keywords: "stat.AP, cs.CL", url: "https://arxiv.org/abs/2411.00640" }
+    - { id: "2411.02355", title: "\"Give Me BF16 or Give Me Death\"? Accuracy-Performance Trade-Offs in LLM Quantization", authors: "Eldar Kurtic 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2411.02355" }
+    - { id: "2504.04823", title: "Quantization Hurts Reasoning? An Empirical Study on Quantized Reasoning Models", authors: "Ruikang Liu 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2504.04823" }
+    - { id: "2606.17609", title: "The Benchmark Illusion: Pruned LLMs Can Pass Multiple Choice but Fail to Answer", authors: "Rui Wen 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2606.17609" }
+    - { id: "2606.19558", title: "Displacement Is Not Direction: Evaluating Fidelity Metrics for Quantized LLM Deployment", authors: "Miloš Nikolić 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2606.19558" }
+
 2026-11-08-dipsvd-calibration-perplexity-gauge:
   title: "미세한 차이는 어느 눈금이 가르나 — DipSVD의 80행을 압축 강도별로 다시 세면"
   central:
