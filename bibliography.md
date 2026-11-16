@@ -6,6 +6,23 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-12] 비평은 학습 때만 있었다 — Critique-Guided Distillation의 '내면화'는 어느 조건에서 재졌나
+
+- **중심**: Berkcan Kapusuzoglu 외. *Critique-Guided Distillation for Robust Reasoning via Refinement*. [arXiv:2505.11628](https://arxiv.org/abs/2505.11628) — 분야: cs.CL, cs.LG
+- Geoffrey Hinton 외. *Distilling the Knowledge in a Neural Network*. [arXiv:1503.02531](https://arxiv.org/abs/1503.02531) — 분야: stat.ML, cs.LG, cs.NE
+- Samy Bengio 외. *Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks*. [arXiv:1506.03099](https://arxiv.org/abs/1506.03099) — 분야: cs.LG, cs.CL, cs.CV
+- David Lopez-Paz 외. *Unifying distillation and privileged information*. [arXiv:1511.03643](https://arxiv.org/abs/1511.03643) — 분야: stat.ML, cs.LG
+- Rishabh Agarwal 외. *On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes*. [arXiv:2306.13649](https://arxiv.org/abs/2306.13649) — 분야: cs.LG, cs.AI, cs.CL
+- Jie Huang 외. *Large Language Models Cannot Self-Correct Reasoning Yet*. [arXiv:2310.01798](https://arxiv.org/abs/2310.01798) — 분야: cs.CL, cs.AI
+- Aviral Kumar 외. *Training Language Models to Self-Correct via Reinforcement Learning*. [arXiv:2409.12917](https://arxiv.org/abs/2409.12917) — 분야: cs.LG
+- Yubo Wang 외. *Critique Fine-Tuning: Learning to Critique is More Effective than Learning to Imitate*. [arXiv:2501.17703](https://arxiv.org/abs/2501.17703) — 분야: cs.CL
+- Dacheng Li 외. *LLMs Can Easily Learn to Reason from Demonstrations Structure, not content, is what matters!*. [arXiv:2502.07374](https://arxiv.org/abs/2502.07374) — 분야: cs.AI
+- Yueqing Hu 외. *Hán Dān Xué Bù (Mimicry) or Qīng Chū Yú Lán (Mastery)? A Cognitive Perspective on Reasoning Distillation in Large Language Models*. [arXiv:2601.05019](https://arxiv.org/abs/2601.05019) — 분야: cs.CL, cs.AI, q-bio.NC
+- Idan Shenfeld 외. *Self-Distillation Enables Continual Learning*. [arXiv:2601.19897](https://arxiv.org/abs/2601.19897) — 분야: cs.LG
+- Can Jin 외. *Weak Critics Make Strong Learners: On-Policy Critique Distillation for Scalable Oversight*. [arXiv:2606.00424](https://arxiv.org/abs/2606.00424) — 분야: cs.AI
+- Samyak Shrestha, Alexander Tessier. *Rethinking Privileged Information in On-Policy Self-Distillation*. [arXiv:2608.18271](https://arxiv.org/abs/2608.18271) — 분야: cs.LG
+- XiuYu Zhang 외. *What Does Privileged Information Add to On-Policy Self-Distillation?*. [arXiv:2609.20612](https://arxiv.org/abs/2609.20612) — 분야: cs.CL
+
 ## [2026-11-11] 스케일을 무엇과 나눠 쓰는가 — KVQuant가 키는 채널로, 값은 토큰으로 묶는 까닭
 
 - **중심**: Coleman Hooper 외. *KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization*. [arXiv:2401.18079](https://arxiv.org/abs/2401.18079) — 분야: cs.LG

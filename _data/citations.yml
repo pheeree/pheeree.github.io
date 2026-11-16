@@ -1,6 +1,29 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-12-critique-guided-distillation-what-transfers:
+  title: "비평은 학습 때만 있었다 — Critique-Guided Distillation의 '내면화'는 어느 조건에서 재졌나"
+  central:
+    id: "2505.11628"
+    title: "Critique-Guided Distillation for Robust Reasoning via Refinement"
+    authors: "Berkcan Kapusuzoglu 외"
+    keywords: "cs.CL, cs.LG"
+    url: "https://arxiv.org/abs/2505.11628"
+  referenced:
+    - { id: "1503.02531", title: "Distilling the Knowledge in a Neural Network", authors: "Geoffrey Hinton 외", keywords: "stat.ML, cs.LG, cs.NE", url: "https://arxiv.org/abs/1503.02531" }
+    - { id: "1506.03099", title: "Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks", authors: "Samy Bengio 외", keywords: "cs.LG, cs.CL, cs.CV", url: "https://arxiv.org/abs/1506.03099" }
+    - { id: "1511.03643", title: "Unifying distillation and privileged information", authors: "David Lopez-Paz 외", keywords: "stat.ML, cs.LG", url: "https://arxiv.org/abs/1511.03643" }
+    - { id: "2306.13649", title: "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes", authors: "Rishabh Agarwal 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2306.13649" }
+    - { id: "2310.01798", title: "Large Language Models Cannot Self-Correct Reasoning Yet", authors: "Jie Huang 외", keywords: "cs.CL, cs.AI", url: "https://arxiv.org/abs/2310.01798" }
+    - { id: "2409.12917", title: "Training Language Models to Self-Correct via Reinforcement Learning", authors: "Aviral Kumar 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2409.12917" }
+    - { id: "2501.17703", title: "Critique Fine-Tuning: Learning to Critique is More Effective than Learning to Imitate", authors: "Yubo Wang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2501.17703" }
+    - { id: "2502.07374", title: "LLMs Can Easily Learn to Reason from Demonstrations Structure, not content, is what matters!", authors: "Dacheng Li 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2502.07374" }
+    - { id: "2601.05019", title: "Hán Dān Xué Bù (Mimicry) or Qīng Chū Yú Lán (Mastery)? A Cognitive Perspective on Reasoning Distillation in Large Language Models", authors: "Yueqing Hu 외", keywords: "cs.CL, cs.AI, q-bio.NC", url: "https://arxiv.org/abs/2601.05019" }
+    - { id: "2601.19897", title: "Self-Distillation Enables Continual Learning", authors: "Idan Shenfeld 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2601.19897" }
+    - { id: "2606.00424", title: "Weak Critics Make Strong Learners: On-Policy Critique Distillation for Scalable Oversight", authors: "Can Jin 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.00424" }
+    - { id: "2608.18271", title: "Rethinking Privileged Information in On-Policy Self-Distillation", authors: "Samyak Shrestha, Alexander Tessier", keywords: "cs.LG", url: "https://arxiv.org/abs/2608.18271" }
+    - { id: "2609.20612", title: "What Does Privileged Information Add to On-Policy Self-Distillation?", authors: "XiuYu Zhang 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2609.20612" }
+
 2026-11-11-kvquant-kv-cache-scaling-granularity:
   title: "스케일을 무엇과 나눠 쓰는가 — KVQuant가 키는 채널로, 값은 토큰으로 묶는 까닭"
   central:

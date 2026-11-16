@@ -16801,5 +16801,174 @@
    "cs.AR",
    "cs.CL"
   ]
+ },
+ "2501.17703": {
+  "title": "Critique Fine-Tuning: Learning to Critique is More Effective than Learning to Imitate",
+  "authors": [
+   "Yubo Wang",
+   "Xiang Yue",
+   "Wenhu Chen"
+  ],
+  "published": "2025-01-29",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2606.00424": {
+  "title": "Weak Critics Make Strong Learners: On-Policy Critique Distillation for Scalable Oversight",
+  "authors": [
+   "Can Jin",
+   "Jiakang Li",
+   "Rui Wu",
+   "Eddy Z. Zhang",
+   "Dimitris N. Metaxas"
+  ],
+  "published": "2026-05-29",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2608.18271": {
+  "title": "Rethinking Privileged Information in On-Policy Self-Distillation",
+  "authors": [
+   "Samyak Shrestha",
+   "Alexander Tessier"
+  ],
+  "published": "2026-08-18",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2310.01798": {
+  "title": "Large Language Models Cannot Self-Correct Reasoning Yet",
+  "authors": [
+   "Jie Huang",
+   "Xinyun Chen",
+   "Swaroop Mishra",
+   "Huaixiu Steven Zheng",
+   "Adams Wei Yu",
+   "Xinying Song",
+   "Denny Zhou"
+  ],
+  "published": "2023-10-03",
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ "2601.19897": {
+  "title": "Self-Distillation Enables Continual Learning",
+  "authors": [
+   "Idan Shenfeld",
+   "Mehul Damani",
+   "Jonas Hübotter",
+   "Pulkit Agrawal"
+  ],
+  "published": "2026-01-27",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2505.11628": {
+  "title": "Critique-Guided Distillation for Robust Reasoning via Refinement",
+  "authors": [
+   "Berkcan Kapusuzoglu",
+   "Supriyo Chakraborty",
+   "Zain Sarwar",
+   "Chia-Hsuan Lee",
+   "Sambit Sahu"
+  ],
+  "published": "2025-05-16",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2601.05019": {
+  "title": "Hán Dān Xué Bù (Mimicry) or Qīng Chū Yú Lán (Mastery)? A Cognitive Perspective on Reasoning Distillation in Large Language Models",
+  "authors": [
+   "Yueqing Hu",
+   "Xinyang Peng",
+   "Shuting Peng",
+   "Hanqi Wang",
+   "Tianhong Wang"
+  ],
+  "published": "2026-01-08",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "q-bio.NC"
+  ]
+ },
+ "2609.20612": {
+  "title": "What Does Privileged Information Add to On-Policy Self-Distillation?",
+  "authors": [
+   "XiuYu Zhang",
+   "Wei Chow",
+   "Junfeng Fang",
+   "Xingyu Zhu",
+   "Zhenkai Liang",
+   "Tat-Seng Chua"
+  ],
+  "published": "2026-09-17",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2409.12917": {
+  "title": "Training Language Models to Self-Correct via Reinforcement Learning",
+  "authors": [
+   "Aviral Kumar",
+   "Vincent Zhuang",
+   "Rishabh Agarwal",
+   "Yi Su",
+   "John D Co-Reyes",
+   "Avi Singh",
+   "Kate Baumli",
+   "Shariq Iqbal",
+   "Colton Bishop",
+   "Rebecca Roelofs",
+   "Lei M Zhang",
+   "Kay McKinney",
+   "Disha Shrivastava",
+   "Cosmin Paduraru",
+   "George Tucker",
+   "Doina Precup",
+   "Feryal Behbahani",
+   "Aleksandra Faust"
+  ],
+  "published": "2024-09-19",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "1511.03643": {
+  "title": "Unifying distillation and privileged information",
+  "authors": [
+   "David Lopez-Paz",
+   "Léon Bottou",
+   "Bernhard Schölkopf",
+   "Vladimir Vapnik"
+  ],
+  "published": "2015-11-11",
+  "categories": [
+   "stat.ML",
+   "cs.LG"
+  ]
+ },
+ "1506.03099": {
+  "title": "Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks",
+  "authors": [
+   "Samy Bengio",
+   "Oriol Vinyals",
+   "Navdeep Jaitly",
+   "Noam Shazeer"
+  ],
+  "published": "2015-06-09",
+  "categories": [
+   "cs.LG",
+   "cs.CL",
+   "cs.CV"
+  ]
  }
 }
