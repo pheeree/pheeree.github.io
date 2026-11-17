@@ -16970,5 +16970,232 @@
    "cs.CL",
    "cs.CV"
   ]
+ },
+ "2309.02772": {
+  "title": "Hot or Cold? Adaptive Temperature Sampling for Code Generation with Large Language Models",
+  "authors": [
+   "Yuqi Zhu",
+   "Jia Li",
+   "Ge Li",
+   "YunFei Zhao",
+   "Jia Li",
+   "Zhi Jin",
+   "Hong Mei"
+  ],
+  "published": "2023-09-06",
+  "categories": [
+   "cs.SE",
+   "cs.CL"
+  ]
+ },
+ "2510.18814": {
+  "title": "A Model Can Help Itself: Reward-Free Self-Training for LLM Reasoning",
+  "authors": [
+   "Mengqi Li",
+   "Lei Zhao",
+   "Anthony Man-Cho So",
+   "Ruoyu Sun",
+   "Xiao Li"
+  ],
+  "published": "2025-10-21",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2404.01413": {
+  "title": "Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data",
+  "authors": [
+   "Matthias Gerstgrasser",
+   "Rylan Schaeffer",
+   "Apratim Dey",
+   "Rafael Rafailov",
+   "Henry Sleight",
+   "John Hughes",
+   "Tomasz Korbak",
+   "Rajashree Agrawal",
+   "Dhruv Pai",
+   "Andrey Gromov",
+   "Daniel A. Roberts",
+   "Diyi Yang",
+   "David L. Donoho",
+   "Sanmi Koyejo"
+  ],
+  "published": "2024-04-01",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL",
+   "cs.ET",
+   "stat.ML"
+  ]
+ },
+ "2604.01193": {
+  "title": "Embarrassingly Simple Self-Distillation Improves Code Generation",
+  "authors": [
+   "Ruixiang Zhang",
+   "Richard He Bai",
+   "Huangjie Zheng",
+   "Navdeep Jaitly",
+   "Ronan Collobert",
+   "Yizhe Zhang"
+  ],
+  "published": "2026-04-01",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2603.08660": {
+  "title": "How Far Can Unsupervised RLVR Scale LLM Training?",
+  "authors": [
+   "Bingxiang He",
+   "Yuxin Zuo",
+   "Zeyuan Liu",
+   "Shangziqi Zhao",
+   "Zixuan Fu",
+   "Junlin Yang",
+   "Cheng Qian",
+   "Kaiyan Zhang",
+   "Yuchen Fan",
+   "Ganqu Cui",
+   "Xiusi Chen",
+   "Youbang Sun",
+   "Xingtai Lv",
+   "Xuekai Zhu",
+   "Li Sheng",
+   "Ran Li",
+   "Huan-ang Gao",
+   "Yuchen Zhang",
+   "Bowen Zhou",
+   "Zhiyuan Liu",
+   "Ning Ding"
+  ],
+  "published": "2026-03-09",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2606.26091": {
+  "title": "On-Policy Self-Distillation with Sampled Demonstrations Reduces Output Diversity",
+  "authors": [
+   "Andrei Liviu Nicolicioiu",
+   "Mohammad Pezeshki",
+   "Aaron Courville"
+  ],
+  "published": "2026-06-24",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2603.09065": {
+  "title": "Learning Adaptive LLM Decoding",
+  "authors": [
+   "Chloe H. Su",
+   "Zhe Ye",
+   "Samuel Tenka",
+   "Aidan Yang",
+   "Soonho Kong",
+   "Udaya Ghai"
+  ],
+  "published": "2026-03-10",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2307.01850": {
+  "title": "Self-Consuming Generative Models Go MAD",
+  "authors": [
+   "Sina Alemohammad",
+   "Josue Casco-Rodriguez",
+   "Lorenzo Luzi",
+   "Ahmed Imtiaz Humayun",
+   "Hossein Babaei",
+   "Daniel LeJeune",
+   "Ali Siahkoohi",
+   "Richard G. Baraniuk"
+  ],
+  "published": "2023-07-04",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CV"
+  ]
+ },
+ "2505.22660": {
+  "title": "Maximizing Confidence Alone Improves Reasoning",
+  "authors": [
+   "Mihir Prabhudesai",
+   "Lili Chen",
+   "Alex Ippoliti",
+   "Katerina Fragkiadaki",
+   "Hao Liu",
+   "Deepak Pathak"
+  ],
+  "published": "2025-05-28",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2506.10947": {
+  "title": "Spurious Rewards: Rethinking Training Signals in RLVR",
+  "authors": [
+   "Rulin Shao",
+   "Shuyue Stella Li",
+   "Rui Xin",
+   "Scott Geng",
+   "Yiping Wang",
+   "Sewoong Oh",
+   "Simon Shaolei Du",
+   "Nathan Lambert",
+   "Sewon Min",
+   "Ranjay Krishna",
+   "Yulia Tsvetkov",
+   "Hannaneh Hajishirzi",
+   "Pang Wei Koh",
+   "Luke Zettlemoyer"
+  ],
+  "published": "2025-06-12",
+  "categories": [
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2412.01951": {
+  "title": "Self-Improvement in Language Models: The Sharpening Mechanism",
+  "authors": [
+   "Audrey Huang",
+   "Adam Block",
+   "Dylan J. Foster",
+   "Dhruv Rohatgi",
+   "Cyril Zhang",
+   "Max Simchowitz",
+   "Jordan T. Ash",
+   "Akshay Krishnamurthy"
+  ],
+  "published": "2024-12-02",
+  "categories": [
+   "cs.AI",
+   "cs.CL",
+   "cs.LG",
+   "stat.ML"
+  ]
+ },
+ "2505.15134": {
+  "title": "The Unreasonable Effectiveness of Entropy Minimization in LLM Reasoning",
+  "authors": [
+   "Shivam Agarwal",
+   "Zimin Zhang",
+   "Lifan Yuan",
+   "Jiawei Han",
+   "Hao Peng"
+  ],
+  "published": "2025-05-21",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
  }
 }

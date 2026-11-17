@@ -6,6 +6,25 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-17] 교사도 정답도 없는 증류는 무엇을 옮겼나 — SSD가 lock은 조이고 fork는 펴는 방식
+
+- **중심**: Ruixiang Zhang 외. *Embarrassingly Simple Self-Distillation Improves Code Generation*. [arXiv:2604.01193](https://arxiv.org/abs/2604.01193) — 분야: cs.CL
+- Sina Alemohammad 외. *Self-Consuming Generative Models Go MAD*. [arXiv:2307.01850](https://arxiv.org/abs/2307.01850) — 분야: cs.LG, cs.AI, cs.CV
+- Yuqi Zhu 외. *Hot or Cold? Adaptive Temperature Sampling for Code Generation with Large Language Models*. [arXiv:2309.02772](https://arxiv.org/abs/2309.02772) — 분야: cs.SE, cs.CL
+- Matthias Gerstgrasser 외. *Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data*. [arXiv:2404.01413](https://arxiv.org/abs/2404.01413) — 분야: cs.LG, cs.AI, cs.CL, cs.ET, stat.ML
+- Audrey Huang 외. *Self-Improvement in Language Models: The Sharpening Mechanism*. [arXiv:2412.01951](https://arxiv.org/abs/2412.01951) — 분야: cs.AI, cs.CL, cs.LG, stat.ML
+- Yang Yue 외. *Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?*. [arXiv:2504.13837](https://arxiv.org/abs/2504.13837) — 분야: cs.AI, cs.CL, cs.CV
+- Shivam Agarwal 외. *The Unreasonable Effectiveness of Entropy Minimization in LLM Reasoning*. [arXiv:2505.15134](https://arxiv.org/abs/2505.15134) — 분야: cs.LG, cs.AI
+- Mihir Prabhudesai 외. *Maximizing Confidence Alone Improves Reasoning*. [arXiv:2505.22660](https://arxiv.org/abs/2505.22660) — 분야: cs.LG, cs.AI
+- Shenzhi Wang 외. *Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning*. [arXiv:2506.01939](https://arxiv.org/abs/2506.01939) — 분야: cs.CL, cs.AI, cs.LG
+- Rulin Shao 외. *Spurious Rewards: Rethinking Training Signals in RLVR*. [arXiv:2506.10947](https://arxiv.org/abs/2506.10947) — 분야: cs.AI, cs.LG
+- Mengqi Li 외. *A Model Can Help Itself: Reward-Free Self-Training for LLM Reasoning*. [arXiv:2510.18814](https://arxiv.org/abs/2510.18814) — 분야: cs.LG, cs.AI
+- Yueqing Hu 외. *Hán Dān Xué Bù (Mimicry) or Qīng Chū Yú Lán (Mastery)? A Cognitive Perspective on Reasoning Distillation in Large Language Models*. [arXiv:2601.05019](https://arxiv.org/abs/2601.05019) — 분야: cs.CL, cs.AI, q-bio.NC
+- Woogyeol Jin 외. *Entropy-Aware On-Policy Distillation of Language Models*. [arXiv:2603.07079](https://arxiv.org/abs/2603.07079) — 분야: cs.LG, cs.CL
+- Bingxiang He 외. *How Far Can Unsupervised RLVR Scale LLM Training?*. [arXiv:2603.08660](https://arxiv.org/abs/2603.08660) — 분야: cs.LG, cs.CL
+- Chloe H. Su 외. *Learning Adaptive LLM Decoding*. [arXiv:2603.09065](https://arxiv.org/abs/2603.09065) — 분야: cs.LG
+- Andrei Liviu Nicolicioiu 외. *On-Policy Self-Distillation with Sampled Demonstrations Reduces Output Diversity*. [arXiv:2606.26091](https://arxiv.org/abs/2606.26091) — 분야: cs.LG, cs.AI
+
 ## [2026-11-12] 비평은 학습 때만 있었다 — Critique-Guided Distillation의 '내면화'는 어느 조건에서 재졌나
 
 - **중심**: Berkcan Kapusuzoglu 외. *Critique-Guided Distillation for Robust Reasoning via Refinement*. [arXiv:2505.11628](https://arxiv.org/abs/2505.11628) — 분야: cs.CL, cs.LG

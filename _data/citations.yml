@@ -1,6 +1,31 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-17-simple-self-distillation-locks-forks:
+  title: "교사도 정답도 없는 증류는 무엇을 옮겼나 — SSD가 lock은 조이고 fork는 펴는 방식"
+  central:
+    id: "2604.01193"
+    title: "Embarrassingly Simple Self-Distillation Improves Code Generation"
+    authors: "Ruixiang Zhang 외"
+    keywords: "cs.CL"
+    url: "https://arxiv.org/abs/2604.01193"
+  referenced:
+    - { id: "2307.01850", title: "Self-Consuming Generative Models Go MAD", authors: "Sina Alemohammad 외", keywords: "cs.LG, cs.AI, cs.CV", url: "https://arxiv.org/abs/2307.01850" }
+    - { id: "2309.02772", title: "Hot or Cold? Adaptive Temperature Sampling for Code Generation with Large Language Models", authors: "Yuqi Zhu 외", keywords: "cs.SE, cs.CL", url: "https://arxiv.org/abs/2309.02772" }
+    - { id: "2404.01413", title: "Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data", authors: "Matthias Gerstgrasser 외", keywords: "cs.LG, cs.AI, cs.CL, cs.ET, stat.ML", url: "https://arxiv.org/abs/2404.01413" }
+    - { id: "2412.01951", title: "Self-Improvement in Language Models: The Sharpening Mechanism", authors: "Audrey Huang 외", keywords: "cs.AI, cs.CL, cs.LG, stat.ML", url: "https://arxiv.org/abs/2412.01951" }
+    - { id: "2504.13837", title: "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?", authors: "Yang Yue 외", keywords: "cs.AI, cs.CL, cs.CV", url: "https://arxiv.org/abs/2504.13837" }
+    - { id: "2505.15134", title: "The Unreasonable Effectiveness of Entropy Minimization in LLM Reasoning", authors: "Shivam Agarwal 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2505.15134" }
+    - { id: "2505.22660", title: "Maximizing Confidence Alone Improves Reasoning", authors: "Mihir Prabhudesai 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2505.22660" }
+    - { id: "2506.01939", title: "Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning", authors: "Shenzhi Wang 외", keywords: "cs.CL, cs.AI, cs.LG", url: "https://arxiv.org/abs/2506.01939" }
+    - { id: "2506.10947", title: "Spurious Rewards: Rethinking Training Signals in RLVR", authors: "Rulin Shao 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2506.10947" }
+    - { id: "2510.18814", title: "A Model Can Help Itself: Reward-Free Self-Training for LLM Reasoning", authors: "Mengqi Li 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2510.18814" }
+    - { id: "2601.05019", title: "Hán Dān Xué Bù (Mimicry) or Qīng Chū Yú Lán (Mastery)? A Cognitive Perspective on Reasoning Distillation in Large Language Models", authors: "Yueqing Hu 외", keywords: "cs.CL, cs.AI, q-bio.NC", url: "https://arxiv.org/abs/2601.05019" }
+    - { id: "2603.07079", title: "Entropy-Aware On-Policy Distillation of Language Models", authors: "Woogyeol Jin 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2603.07079" }
+    - { id: "2603.08660", title: "How Far Can Unsupervised RLVR Scale LLM Training?", authors: "Bingxiang He 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2603.08660" }
+    - { id: "2603.09065", title: "Learning Adaptive LLM Decoding", authors: "Chloe H. Su 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2603.09065" }
+    - { id: "2606.26091", title: "On-Policy Self-Distillation with Sampled Demonstrations Reduces Output Diversity", authors: "Andrei Liviu Nicolicioiu 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.26091" }
+
 2026-11-12-critique-guided-distillation-what-transfers:
   title: "비평은 학습 때만 있었다 — Critique-Guided Distillation의 '내면화'는 어느 조건에서 재졌나"
   central:
