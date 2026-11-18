@@ -6,6 +6,22 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-18] 학습은 갈림길만 움직였다 — 80/20의 엔트로피 지형을 압축 손상의 좌표로 쓸 수 있을까
+
+- **중심**: Shenzhi Wang 외. *Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning*. [arXiv:2506.01939](https://arxiv.org/abs/2506.01939) — 분야: cs.CL, cs.AI, cs.LG
+- Rulin Shao 외. *Spurious Rewards: Rethinking Training Signals in RLVR*. [arXiv:2506.10947](https://arxiv.org/abs/2506.10947) — 분야: cs.AI, cs.LG
+- Mingqi Wu 외. *Reasoning or Memorization? Unreliable Results of Reinforcement Learning Due to Data Contamination*. [arXiv:2507.10532](https://arxiv.org/abs/2507.10532) — 분야: cs.LG, cs.AI, cs.CL
+- Xinzhu Chen 외. *Beyond High-Entropy Exploration: Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs*. [arXiv:2512.00908](https://arxiv.org/abs/2512.00908) — 분야: cs.LG, cs.AI
+- Pedro Memoli Buffa, Luciano Del Corro. *Entropy Sentinel: Probing Entropy Traces for LLM Monitoring*. [arXiv:2601.09001](https://arxiv.org/abs/2601.09001) — 분야: cs.CL
+- Hao Wang 외. *Entropy-Preserving Supervised Fine-Tuning via Adaptive Self-Distillation for Large Reasoning Models*. [arXiv:2602.02244](https://arxiv.org/abs/2602.02244) — 분야: cs.LG, cs.CL
+- Bingxiang He 외. *How Far Can Unsupervised RLVR Scale LLM Training?*. [arXiv:2603.08660](https://arxiv.org/abs/2603.08660) — 분야: cs.LG, cs.CL
+- Ömer Faruk Akgül 외. *Rethinking RL for LLM Reasoning: It's Sparse Policy Selection, Not Capability Learning*. [arXiv:2605.06241](https://arxiv.org/abs/2605.06241) — 분야: cs.CL
+- Sanae Lotfi 외. *Quantized Reasoning Models Think They Need to Think Longer, but They Do Not*. [arXiv:2606.00206](https://arxiv.org/abs/2606.00206) — 분야: cs.LG
+- Yujia Tong 외. *Does Compression Preserve Uncertainty? A Unified Benchmark for Quantized and Sparse LLMs via Conformal Prediction*. [arXiv:2606.01850](https://arxiv.org/abs/2606.01850) — 분야: cs.AI
+- Sihwa Lee 외. *ReSET: Accurate Latency-Critical NVFP4 Reasoning via Step-Aware Temperature Scaling*. [arXiv:2606.13233](https://arxiv.org/abs/2606.13233) — 분야: cs.LG, cs.AI
+- Janghwan Lee 외. *ReQAT: Achieving Full-Precision Reasoning Accuracy with 4-bit Floating-Point Quantization-Aware Training*. [arXiv:2606.15682](https://arxiv.org/abs/2606.15682) — 분야: cs.LG
+- Simran Kaur 외. *Rethinking On-Policy Self-Distillation for Thinking Models*. [arXiv:2607.05184](https://arxiv.org/abs/2607.05184) — 분야: cs.AI, cs.LG
+
 ## [2026-11-17] 교사도 정답도 없는 증류는 무엇을 옮겼나 — SSD가 lock은 조이고 fork는 펴는 방식
 
 - **중심**: Ruixiang Zhang 외. *Embarrassingly Simple Self-Distillation Improves Code Generation*. [arXiv:2604.01193](https://arxiv.org/abs/2604.01193) — 분야: cs.CL

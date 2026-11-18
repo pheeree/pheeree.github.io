@@ -1,6 +1,28 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-18-high-entropy-minority-forks-what-rlvr-moves:
+  title: "학습은 갈림길만 움직였다 — 80/20의 엔트로피 지형을 압축 손상의 좌표로 쓸 수 있을까"
+  central:
+    id: "2506.01939"
+    title: "Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning"
+    authors: "Shenzhi Wang 외"
+    keywords: "cs.CL, cs.AI, cs.LG"
+    url: "https://arxiv.org/abs/2506.01939"
+  referenced:
+    - { id: "2506.10947", title: "Spurious Rewards: Rethinking Training Signals in RLVR", authors: "Rulin Shao 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2506.10947" }
+    - { id: "2507.10532", title: "Reasoning or Memorization? Unreliable Results of Reinforcement Learning Due to Data Contamination", authors: "Mingqi Wu 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2507.10532" }
+    - { id: "2512.00908", title: "Beyond High-Entropy Exploration: Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs", authors: "Xinzhu Chen 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2512.00908" }
+    - { id: "2601.09001", title: "Entropy Sentinel: Probing Entropy Traces for LLM Monitoring", authors: "Pedro Memoli Buffa, Luciano Del Corro", keywords: "cs.CL", url: "https://arxiv.org/abs/2601.09001" }
+    - { id: "2602.02244", title: "Entropy-Preserving Supervised Fine-Tuning via Adaptive Self-Distillation for Large Reasoning Models", authors: "Hao Wang 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2602.02244" }
+    - { id: "2603.08660", title: "How Far Can Unsupervised RLVR Scale LLM Training?", authors: "Bingxiang He 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2603.08660" }
+    - { id: "2605.06241", title: "Rethinking RL for LLM Reasoning: It's Sparse Policy Selection, Not Capability Learning", authors: "Ömer Faruk Akgül 외", keywords: "cs.CL", url: "https://arxiv.org/abs/2605.06241" }
+    - { id: "2606.00206", title: "Quantized Reasoning Models Think They Need to Think Longer, but They Do Not", authors: "Sanae Lotfi 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.00206" }
+    - { id: "2606.01850", title: "Does Compression Preserve Uncertainty? A Unified Benchmark for Quantized and Sparse LLMs via Conformal Prediction", authors: "Yujia Tong 외", keywords: "cs.AI", url: "https://arxiv.org/abs/2606.01850" }
+    - { id: "2606.13233", title: "ReSET: Accurate Latency-Critical NVFP4 Reasoning via Step-Aware Temperature Scaling", authors: "Sihwa Lee 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2606.13233" }
+    - { id: "2606.15682", title: "ReQAT: Achieving Full-Precision Reasoning Accuracy with 4-bit Floating-Point Quantization-Aware Training", authors: "Janghwan Lee 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2606.15682" }
+    - { id: "2607.05184", title: "Rethinking On-Policy Self-Distillation for Thinking Models", authors: "Simran Kaur 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2607.05184" }
+
 2026-11-17-simple-self-distillation-locks-forks:
   title: "교사도 정답도 없는 증류는 무엇을 옮겼나 — SSD가 lock은 조이고 fork는 펴는 방식"
   central:

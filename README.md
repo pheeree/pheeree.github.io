@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-11-18 — [학습은 갈림길만 움직였다 — 80/20의 엔트로피 지형을 압축 손상의 좌표로 쓸 수 있을까](https://pheeree.github.io/2026/11/18/high-entropy-minority-forks-what-rlvr-moves/)
 - 2026-11-17 — [교사도 정답도 없는 증류는 무엇을 옮겼나 — SSD가 lock은 조이고 fork는 펴는 방식](https://pheeree.github.io/2026/11/17/simple-self-distillation-locks-forks/)
 - 2026-11-12 — [비평은 학습 때만 있었다 — Critique-Guided Distillation의 '내면화'는 어느 조건에서 재졌나](https://pheeree.github.io/2026/11/12/critique-guided-distillation-what-transfers/)
 - 2026-11-11 — [스케일을 무엇과 나눠 쓰는가 — KVQuant가 키는 채널로, 값은 토큰으로 묶는 까닭](https://pheeree.github.io/2026/11/11/kvquant-kv-cache-scaling-granularity/)

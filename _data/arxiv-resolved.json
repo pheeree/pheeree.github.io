@@ -17197,5 +17197,107 @@
    "cs.LG",
    "cs.AI"
   ]
+ },
+ "2602.02244": {
+  "title": "Entropy-Preserving Supervised Fine-Tuning via Adaptive Self-Distillation for Large Reasoning Models",
+  "authors": [
+   "Hao Wang",
+   "Hao Gu",
+   "Hongming Piao",
+   "Kaixiong Gong",
+   "Yuxiao Ye",
+   "Xiangyu Yue",
+   "Sirui Han",
+   "Yike Guo",
+   "Dapeng Wu"
+  ],
+  "published": "2026-02-02",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2606.13233": {
+  "title": "ReSET: Accurate Latency-Critical NVFP4 Reasoning via Step-Aware Temperature Scaling",
+  "authors": [
+   "Sihwa Lee",
+   "Janghwan Lee",
+   "Donghoon Yoo",
+   "Jae Gon Kim",
+   "Hanyul Ryu",
+   "Soojung Ryu",
+   "Jungwook Choi"
+  ],
+  "published": "2026-06-11",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2601.09001": {
+  "title": "Entropy Sentinel: Probing Entropy Traces for LLM Monitoring",
+  "authors": [
+   "Pedro Memoli Buffa",
+   "Luciano Del Corro"
+  ],
+  "published": "2026-01-13",
+  "categories": [
+   "cs.CL"
+  ]
+ },
+ "2607.05184": {
+  "title": "Rethinking On-Policy Self-Distillation for Thinking Models",
+  "authors": [
+   "Simran Kaur",
+   "Narutatsu Ri",
+   "Yinghui He",
+   "Liam Fowl",
+   "Sanjeev Arora"
+  ],
+  "published": "2026-07-06",
+  "categories": [
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2606.01850": {
+  "title": "Does Compression Preserve Uncertainty? A Unified Benchmark for Quantized and Sparse LLMs via Conformal Prediction",
+  "authors": [
+   "Yujia Tong",
+   "Yuxi Wang",
+   "Yunyang Wan",
+   "Tian Zhang",
+   "Junhao Dong",
+   "Jingling Yuan"
+  ],
+  "published": "2026-06-01",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2507.10532": {
+  "title": "Reasoning or Memorization? Unreliable Results of Reinforcement Learning Due to Data Contamination",
+  "authors": [
+   "Mingqi Wu",
+   "Zhihao Zhang",
+   "Qiaole Dong",
+   "Zhiheng Xi",
+   "Jun Zhao",
+   "Senjie Jin",
+   "Xiaoran Fan",
+   "Yuhao Zhou",
+   "Huijie Lv",
+   "Ming Zhang",
+   "Yanwei Fu",
+   "Qin Liu",
+   "Songyang Zhang",
+   "Qi Zhang"
+  ],
+  "published": "2025-07-14",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  }
 }

@@ -1501,3 +1501,16 @@
     토큰별 정밀도가 긴 사슬에서 곱해지는 구조로 다시 읽으며, 정답 없이 재는 lock/fork 분포 프로파일이 압축 손상의 배포 전 눈금이 될 수 있는지 가른다.
   switch_notice: false
   branch: null
+- date: 2026-11-18
+  slug: high-entropy-minority-forks-what-rlvr-moves
+  source: 2506.01939
+  path: a
+  focus_q: Q9
+  nth: 51
+  purpose: >
+    11-17 SSD 글 '다음 읽을 후보' 1순위(80/20, 고엔트로피 소수 토큰)가 미러 도착·미사용이라 픽. 오늘의 목적: Q9 질문 3 —
+    11-17이 제안한 '정답 없이 재는 lock/fork 프로파일' 눈금이 서려면, 학습이 그 프로파일의 어디를 보존하고 어디를 움직이는지 먼저 알아야 한다.
+    80/20의 'RLVR은 기저 엔트로피 패턴을 대체로 보존하고 고엔트로피 토큰을 주로 조정한다'는 관찰을, 압축(lock을 무르게 하는 쪽)의 거울상으로 읽어
+    fork 위치가 눈금의 고정 좌표가 될 수 있는지, 그리고 '옮겨지는 것'이 소수 위치에 몰리는지를 가른다.
+  switch_notice: false
+  branch: null
