@@ -17299,5 +17299,102 @@
    "cs.AI",
    "cs.CL"
   ]
+ },
+ "1908.02983": {
+  "title": "Pseudo-Labeling and Confirmation Bias in Deep Semi-Supervised Learning",
+  "authors": [
+   "Eric Arazo",
+   "Diego Ortego",
+   "Paul Albert",
+   "Noel E. O'Connor",
+   "Kevin McGuinness"
+  ],
+  "published": "2019-08-08",
+  "categories": [
+   "cs.CV"
+  ]
+ },
+ "2603.17775": {
+  "title": "CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution",
+  "authors": [
+   "Teng Pan",
+   "Yuchen Yan",
+   "Zixuan Wang",
+   "Ruiqing Zhang",
+   "Guiyang Hou",
+   "Wenqi Zhang",
+   "Weiming Lu",
+   "Jun Xiao",
+   "Yongliang Shen"
+  ],
+  "published": "2026-03-18",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ "2608.03119": {
+  "title": "Don't Peek at the Answer: Outcome-Masked Group Relative Policy Optimization for Label-Free RLVR",
+  "authors": [
+   "Yongshi Ye",
+   "Liang Zhang",
+   "Yidong Chen",
+   "Xiaodong Shi",
+   "Biao Fu"
+  ],
+  "published": "2026-08-04",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2509.15194": {
+  "title": "Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation",
+  "authors": [
+   "Yujun Zhou",
+   "Zhenwen Liang",
+   "Haolin Liu",
+   "Wenhao Yu",
+   "Kishan Panaganti",
+   "Linfeng Song",
+   "Dian Yu",
+   "Xiangliang Zhang",
+   "Haitao Mi",
+   "Dong Yu"
+  ],
+  "published": "2025-09-18",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2609.07901": {
+  "title": "Quantization Amplifies Determinism, Not Bias: Scale-Dependent Behavioral Effects of Serving-Time Weight Compression",
+  "authors": [
+   "Dachi Kurtskhalia"
+  ],
+  "published": "2026-09-07",
+  "categories": [
+   "cs.AI"
+  ]
+ },
+ "2305.17493": {
+  "title": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
+  "authors": [
+   "Ilia Shumailov",
+   "Zakhar Shumaylov",
+   "Yiren Zhao",
+   "Yarin Gal",
+   "Nicolas Papernot",
+   "Ross Anderson"
+  ],
+  "published": "2023-05-27",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL",
+   "cs.CR",
+   "cs.CV"
+  ]
  }
 }

@@ -6,6 +6,23 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-19] 자기 다수를 정답으로 삼는 학습은 언제 무너지나 — Model Collapse Step이 레이블을 들여오는 곳
+
+- **중심**: Bingxiang He 외. *How Far Can Unsupervised RLVR Scale LLM Training?*. [arXiv:2603.08660](https://arxiv.org/abs/2603.08660) — 분야: cs.LG, cs.CL
+- Eric Arazo 외. *Pseudo-Labeling and Confirmation Bias in Deep Semi-Supervised Learning*. [arXiv:1908.02983](https://arxiv.org/abs/1908.02983) — 분야: cs.CV
+- Ilia Shumailov 외. *The Curse of Recursion: Training on Generated Data Makes Models Forget*. [arXiv:2305.17493](https://arxiv.org/abs/2305.17493) — 분야: cs.LG, cs.AI, cs.CL, cs.CR, cs.CV
+- Audrey Huang 외. *Self-Improvement in Language Models: The Sharpening Mechanism*. [arXiv:2412.01951](https://arxiv.org/abs/2412.01951) — 분야: cs.AI, cs.CL, cs.LG, stat.ML
+- Rulin Shao 외. *Spurious Rewards: Rethinking Training Signals in RLVR*. [arXiv:2506.10947](https://arxiv.org/abs/2506.10947) — 분야: cs.AI, cs.LG
+- Yujun Zhou 외. *Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation*. [arXiv:2509.15194](https://arxiv.org/abs/2509.15194) — 분야: cs.LG, cs.CL
+- Teng Pan 외. *CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution*. [arXiv:2603.17775](https://arxiv.org/abs/2603.17775) — 분야: cs.CL, cs.AI, cs.LG
+- Ömer Faruk Akgül 외. *Rethinking RL for LLM Reasoning: It's Sparse Policy Selection, Not Capability Learning*. [arXiv:2605.06241](https://arxiv.org/abs/2605.06241) — 분야: cs.CL
+- Sanae Lotfi 외. *Quantized Reasoning Models Think They Need to Think Longer, but They Do Not*. [arXiv:2606.00206](https://arxiv.org/abs/2606.00206) — 분야: cs.LG
+- Sihwa Lee 외. *ReSET: Accurate Latency-Critical NVFP4 Reasoning via Step-Aware Temperature Scaling*. [arXiv:2606.13233](https://arxiv.org/abs/2606.13233) — 분야: cs.LG, cs.AI
+- Janghwan Lee 외. *ReQAT: Achieving Full-Precision Reasoning Accuracy with 4-bit Floating-Point Quantization-Aware Training*. [arXiv:2606.15682](https://arxiv.org/abs/2606.15682) — 분야: cs.LG
+- Simran Kaur 외. *Rethinking On-Policy Self-Distillation for Thinking Models*. [arXiv:2607.05184](https://arxiv.org/abs/2607.05184) — 분야: cs.AI, cs.LG
+- Yongshi Ye 외. *Don't Peek at the Answer: Outcome-Masked Group Relative Policy Optimization for Label-Free RLVR*. [arXiv:2608.03119](https://arxiv.org/abs/2608.03119) — 분야: cs.AI
+- Dachi Kurtskhalia. *Quantization Amplifies Determinism, Not Bias: Scale-Dependent Behavioral Effects of Serving-Time Weight Compression*. [arXiv:2609.07901](https://arxiv.org/abs/2609.07901) — 분야: cs.AI
+
 ## [2026-11-18] 학습은 갈림길만 움직였다 — 80/20의 엔트로피 지형을 압축 손상의 좌표로 쓸 수 있을까
 
 - **중심**: Shenzhi Wang 외. *Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning*. [arXiv:2506.01939](https://arxiv.org/abs/2506.01939) — 분야: cs.CL, cs.AI, cs.LG

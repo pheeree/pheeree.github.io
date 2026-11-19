@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-11-19 — [자기 다수를 정답으로 삼는 학습은 언제 무너지나 — Model Collapse Step이 레이블을 들여오는 곳](https://pheeree.github.io/2026/11/19/unsupervised-rlvr-collapse-step-prior-gauge/)
 - 2026-11-18 — [학습은 갈림길만 움직였다 — 80/20의 엔트로피 지형을 압축 손상의 좌표로 쓸 수 있을까](https://pheeree.github.io/2026/11/18/high-entropy-minority-forks-what-rlvr-moves/)
 - 2026-11-17 — [교사도 정답도 없는 증류는 무엇을 옮겼나 — SSD가 lock은 조이고 fork는 펴는 방식](https://pheeree.github.io/2026/11/17/simple-self-distillation-locks-forks/)
 - 2026-11-12 — [비평은 학습 때만 있었다 — Critique-Guided Distillation의 '내면화'는 어느 조건에서 재졌나](https://pheeree.github.io/2026/11/12/critique-guided-distillation-what-transfers/)
