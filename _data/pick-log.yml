@@ -1528,3 +1528,29 @@
     11-18이 남긴 '장소는 기저가, 방향은 바깥 신호가' 구분을 내재 보상(바깥 신호 없음)으로 시험한다.
   switch_notice: false
   branch: null
+- date: 2026-11-20
+  slug: sampled-demo-self-distillation-pcmi-diversity
+  source: 2606.26091
+  path: a
+  focus_q: Q9
+  nth: 53
+  purpose: >
+    11-19·11-18 후보는 전부 미도착이라 3일 전 11-17 SSD 글의 후보 가운데 도착·미사용 첫 항목(Nicolicioiu·Pezeshki·Courville)을 픽.
+    오늘의 목적: Q9의 긴장 '증류와 다양성은 서로를 갉는다'를 한 뼘 민다 — 정답 보상이 같은 두 풀이의 비를 RL은 지키고
+    시연 조건 자기증류는 PCMI로 기울인다는 최적해 대비가, 11-19의 다수결 샤프닝(보상이 틀릴 때)과 다른 축(보상이 맞아도)의
+    다양성 손실인지 가른다. 곁들여 Q9 질문 3 — 토큰 엔트로피가 다양성 눈금으로 실패한다(§4.4)는 관찰을 '무엇과 무엇을 견주는가'로 읽고,
+    우리 판단 증류(앵커=표본 시연)가 같은 PCMI 기울기를 받는지 본다.
+  switch_notice: false
+  branch: null
+- date: 2026-11-21
+  slug: sampled-demo-self-distillation-pcmi-diversity
+  source: 2606.26091
+  path: a
+  focus_q: Q9
+  nth: 53
+  purpose: >
+    11-20 실행이 픽 장부 기입 뒤 드래프트 저장 전에 끊겨(드래프트 부재) 같은 픽을 재시도. 오늘 미러 기준으로도 11-19·11-18 후보는 전부 미도착,
+    11-17 후보 중 이 한 편만 도착·미사용. 목적은 11-20 행과 같다 — 정답 보상이 같은 두 풀이의 비를 RL은 지키고 시연 조건 자기증류는
+    PCMI로 기울인다는 대비로 '증류와 다양성은 서로를 갉는다'를 한 뼘 밀고, 토큰 엔트로피가 다양성 눈금으로 실패하는 자리(§4.4)를 Q9 질문 3에 대 본다.
+  switch_notice: false
+  branch: null

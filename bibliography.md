@@ -6,6 +6,18 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-21] 정답만 보여 줘도 다양성은 줄어드나 — 시연을 조건으로 건 자기증류가 같은 점수의 두 풀이를 기울이는 방식
+
+- **중심**: Andrei Liviu Nicolicioiu 외. *On-Policy Self-Distillation with Sampled Demonstrations Reduces Output Diversity*. [arXiv:2606.26091](https://arxiv.org/abs/2606.26091) — 분야: cs.LG, cs.AI
+- Robert Kirk 외. *Understanding the Effects of RLHF on LLM Generalisation and Diversity*. [arXiv:2310.06452](https://arxiv.org/abs/2310.06452) — 분야: cs.LG, cs.AI, cs.CL
+- Yang Yue 외. *Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?*. [arXiv:2504.13837](https://arxiv.org/abs/2504.13837) — 분야: cs.AI, cs.CL, cs.CV
+- Anthony GX-Chen 외. *KL-Regularized Reinforcement Learning is Designed to Mode Collapse*. [arXiv:2510.20817](https://arxiv.org/abs/2510.20817) — 분야: cs.LG
+- Jonas Hübotter 외. *Reinforcement Learning via Self-Distillation*. [arXiv:2601.20802](https://arxiv.org/abs/2601.20802) — 분야: cs.LG, cs.AI
+- Guobin Shen 외. *Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information*. [arXiv:2605.11609](https://arxiv.org/abs/2605.11609) — 분야: cs.LG, cs.AI, cs.CL
+- Rishabh Agrawal 외. *Reinforcement Learning from Rich Feedback with Distributional DAgger*. [arXiv:2606.05152](https://arxiv.org/abs/2606.05152) — 분야: cs.LG, cs.AI, cs.CL
+- Justin Robert, Raheel Qader. *One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation*. [arXiv:2608.25936](https://arxiv.org/abs/2608.25936) — 분야: cs.LG, cs.AI, cs.CL
+- Run Yang 외. *Influence-Directed Distillation: Solving the Diversity Bottleneck in Sampled-Token On-Policy Distillation*. [arXiv:2608.29846](https://arxiv.org/abs/2608.29846) — 분야: cs.CL, cs.LG
+
 ## [2026-11-19] 자기 다수를 정답으로 삼는 학습은 언제 무너지나 — Model Collapse Step이 레이블을 들여오는 곳
 
 - **중심**: Bingxiang He 외. *How Far Can Unsupervised RLVR Scale LLM Training?*. [arXiv:2603.08660](https://arxiv.org/abs/2603.08660) — 분야: cs.LG, cs.CL

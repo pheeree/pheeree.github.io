@@ -1,6 +1,24 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-21-sampled-demo-self-distillation-pcmi-diversity:
+  title: "정답만 보여 줘도 다양성은 줄어드나 — 시연을 조건으로 건 자기증류가 같은 점수의 두 풀이를 기울이는 방식"
+  central:
+    id: "2606.26091"
+    title: "On-Policy Self-Distillation with Sampled Demonstrations Reduces Output Diversity"
+    authors: "Andrei Liviu Nicolicioiu 외"
+    keywords: "cs.LG, cs.AI"
+    url: "https://arxiv.org/abs/2606.26091"
+  referenced:
+    - { id: "2310.06452", title: "Understanding the Effects of RLHF on LLM Generalisation and Diversity", authors: "Robert Kirk 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2310.06452" }
+    - { id: "2504.13837", title: "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?", authors: "Yang Yue 외", keywords: "cs.AI, cs.CL, cs.CV", url: "https://arxiv.org/abs/2504.13837" }
+    - { id: "2510.20817", title: "KL-Regularized Reinforcement Learning is Designed to Mode Collapse", authors: "Anthony GX-Chen 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2510.20817" }
+    - { id: "2601.20802", title: "Reinforcement Learning via Self-Distillation", authors: "Jonas Hübotter 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2601.20802" }
+    - { id: "2605.11609", title: "Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information", authors: "Guobin Shen 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2605.11609" }
+    - { id: "2606.05152", title: "Reinforcement Learning from Rich Feedback with Distributional DAgger", authors: "Rishabh Agrawal 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2606.05152" }
+    - { id: "2608.25936", title: "One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation", authors: "Justin Robert, Raheel Qader", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2608.25936" }
+    - { id: "2608.29846", title: "Influence-Directed Distillation: Solving the Diversity Bottleneck in Sampled-Token On-Policy Distillation", authors: "Run Yang 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2608.29846" }
+
 2026-11-19-unsupervised-rlvr-collapse-step-prior-gauge:
   title: "자기 다수를 정답으로 삼는 학습은 언제 무너지나 — Model Collapse Step이 레이블을 들여오는 곳"
   central:

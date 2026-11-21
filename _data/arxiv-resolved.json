@@ -17396,5 +17396,121 @@
    "cs.CR",
    "cs.CV"
   ]
+ },
+ "2606.05152": {
+  "title": "Reinforcement Learning from Rich Feedback with Distributional DAgger",
+  "authors": [
+   "Rishabh Agrawal",
+   "Jacob Fein-Ashley",
+   "Paria Rashidinejad"
+  ],
+  "published": "2026-06-03",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2608.29846": {
+  "title": "Influence-Directed Distillation: Solving the Diversity Bottleneck in Sampled-Token On-Policy Distillation",
+  "authors": [
+   "Run Yang",
+   "Runpeng Dai",
+   "Jie Sun",
+   "Jielei Zhang",
+   "Fan Zhou",
+   "Hongtu Zhu",
+   "Peiyi Li",
+   "Longwen Gao"
+  ],
+  "published": "2026-08-30",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2510.20817": {
+  "title": "KL-Regularized Reinforcement Learning is Designed to Mode Collapse",
+  "authors": [
+   "Anthony GX-Chen",
+   "Jatin Prakash",
+   "Jeff Guo",
+   "Rob Fergus",
+   "Rajesh Ranganath"
+  ],
+  "published": "2025-10-23",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2601.20802": {
+  "title": "Reinforcement Learning via Self-Distillation",
+  "authors": [
+   "Jonas Hübotter",
+   "Frederike Lübeck",
+   "Lejs Behric",
+   "Anton Baumann",
+   "Marco Bagatella",
+   "Daniel Marta",
+   "Ido Hakimi",
+   "Idan Shenfeld",
+   "Thomas Kleine Buening",
+   "Carlos Guestrin",
+   "Andreas Krause"
+  ],
+  "published": "2026-01-28",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2310.06452": {
+  "title": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+  "authors": [
+   "Robert Kirk",
+   "Ishita Mediratta",
+   "Christoforos Nalmpantis",
+   "Jelena Luketina",
+   "Eric Hambro",
+   "Edward Grefenstette",
+   "Roberta Raileanu"
+  ],
+  "published": "2023-10-10",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2608.25936": {
+  "title": "One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation",
+  "authors": [
+   "Justin Robert",
+   "Raheel Qader"
+  ],
+  "published": "2026-08-26",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2605.11609": {
+  "title": "Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information",
+  "authors": [
+   "Guobin Shen",
+   "Xiang Cheng",
+   "Chenxiao Zhao",
+   "Lei Huang",
+   "Jindong Li",
+   "Dongcheng Zhao",
+   "Xing Yu"
+  ],
+  "published": "2026-05-12",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
  }
 }
