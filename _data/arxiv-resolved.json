@@ -17609,5 +17609,48 @@
   "categories": [
    "cs.LG"
   ]
+ },
+ "2106.05945": {
+  "title": "Does Knowledge Distillation Really Work?",
+  "authors": [
+   "Samuel Stanton",
+   "Pavel Izmailov",
+   "Polina Kirichenko",
+   "Alexander A. Alemi",
+   "Andrew Gordon Wilson"
+  ],
+  "published": "2021-06-10",
+  "categories": [
+   "cs.LG",
+   "stat.ML"
+  ]
+ },
+ "2605.02404": {
+  "title": "Statistically-Lossless Quantization of Large Language Models",
+  "authors": [
+   "Michael Helcig",
+   "Eldar Kurtic",
+   "Dan Alistarh"
+  ],
+  "published": "2026-05-04",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2607.08734": {
+  "title": "The Illusion of Equivalency: Statistical Characterization of Quantization Effects in LLMs",
+  "authors": [
+   "Baha Rababah",
+   "Shahzeb Qamar",
+   "Lorenz Sparrenberg",
+   "Rafet Sifa",
+   "Murat Kantarcioglu",
+   "Cuneyt Gurcan Akcora",
+   "Carson K. Leung"
+  ],
+  "published": "2026-07-09",
+  "categories": [
+   "cs.AI"
+  ]
  }
 }

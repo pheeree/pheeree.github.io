@@ -20,6 +20,19 @@ permalink: /bibliography/
 - Jason Ken Adhinarta 외. *Does self-distillation improve reasoning?*. [arXiv:2610.18613](https://arxiv.org/abs/2610.18613) — 분야: cs.LG, cs.AI, cs.CL
 - Kaijian Zou 외. *Predicting Privileged Information Effectiveness for On-Policy Self-Distillation*. [arXiv:2610.22512](https://arxiv.org/abs/2610.22512) — 분야: cs.LG
 
+## [2026-11-22] KLD는 얼마나 멀어졌는지만 잰다 — 양자화 후보를 고를 때 충실도 지표가 침묵하는 구간과, 갈린 문항의 방향
+
+- **중심**: Miloš Nikolić 외. *Displacement Is Not Direction: Evaluating Fidelity Metrics for Quantized LLM Deployment*. [arXiv:2606.19558](https://arxiv.org/abs/2606.19558) — 분야: cs.LG, cs.CL
+- Samuel Stanton 외. *Does Knowledge Distillation Really Work?*. [arXiv:2106.05945](https://arxiv.org/abs/2106.05945) — 분야: cs.LG, stat.ML
+- Ajay Jaiswal 외. *Compressing LLMs: The Truth is Rarely Pure and Never Simple*. [arXiv:2310.01382](https://arxiv.org/abs/2310.01382) — 분야: cs.CL, cs.LG
+- Abhinav Dutta 외. *Accuracy is Not All You Need*. [arXiv:2407.09141](https://arxiv.org/abs/2407.09141) — 분야: cs.LG
+- Evan Miller. *Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations*. [arXiv:2411.00640](https://arxiv.org/abs/2411.00640) — 분야: stat.AP, cs.CL
+- Mingxue Xu. *Predicting LLM Compression Degradation from Spectral Statistics*. [arXiv:2604.18085](https://arxiv.org/abs/2604.18085) — 분야: cs.LG
+- Michael Helcig 외. *Statistically-Lossless Quantization of Large Language Models*. [arXiv:2605.02404](https://arxiv.org/abs/2605.02404) — 분야: cs.LG
+- Baha Rababah 외. *The Illusion of Equivalency: Statistical Characterization of Quantization Effects in LLMs*. [arXiv:2607.08734](https://arxiv.org/abs/2607.08734) — 분야: cs.AI
+- Anish Sathyanarayanan. *Perplexity Cost Understates What Activation Quantisation Breaks*. [arXiv:2609.23125](https://arxiv.org/abs/2609.23125) — 분야: cs.LG
+- Kaijian Zou 외. *Predicting Privileged Information Effectiveness for On-Policy Self-Distillation*. [arXiv:2610.22512](https://arxiv.org/abs/2610.22512) — 분야: cs.LG
+
 ## [2026-11-21] 정답만 보여 줘도 다양성은 줄어드나 — 시연을 조건으로 건 자기증류가 같은 점수의 두 풀이를 기울이는 방식
 
 - **중심**: Andrei Liviu Nicolicioiu 외. *On-Policy Self-Distillation with Sampled Demonstrations Reduces Output Diversity*. [arXiv:2606.26091](https://arxiv.org/abs/2606.26091) — 분야: cs.LG, cs.AI
