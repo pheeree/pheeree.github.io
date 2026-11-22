@@ -20,6 +20,16 @@ permalink: /bibliography/
 - Jason Ken Adhinarta 외. *Does self-distillation improve reasoning?*. [arXiv:2610.18613](https://arxiv.org/abs/2610.18613) — 분야: cs.LG, cs.AI, cs.CL
 - Kaijian Zou 외. *Predicting Privileged Information Effectiveness for On-Policy Self-Distillation*. [arXiv:2610.22512](https://arxiv.org/abs/2610.22512) — 분야: cs.LG
 
+## [2026-11-22] flips와 정확도 차는 한 표의 두 읽기다 — 원전이 거리를 고른 이유와, 쌍체 검정이 비워 둔 방향
+
+- **중심**: Abhinav Dutta 외. *Accuracy is Not All You Need*. [arXiv:2407.09141](https://arxiv.org/abs/2407.09141) — 분야: cs.LG
+- Sijie Yan 외. *Positive-Congruent Training: Towards Regression-Free Model Updates*. [arXiv:2011.09161](https://arxiv.org/abs/2011.09161) — 분야: cs.CV, cs.LG
+- Berk Atil 외. *Non-Determinism of "Deterministic" LLM Settings*. [arXiv:2408.04667](https://arxiv.org/abs/2408.04667) — 분야: cs.CL, cs.AI, cs.LG, cs.SE
+- Evan Miller. *Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations*. [arXiv:2411.00640](https://arxiv.org/abs/2411.00640) — 분야: stat.AP, cs.CL
+- Mingxue Xu. *Predicting LLM Compression Degradation from Spectral Statistics*. [arXiv:2604.18085](https://arxiv.org/abs/2604.18085) — 분야: cs.LG
+- Amogh Singh. *Certifying Compressed Language Models: An Audit and a Statistical Toolkit*. [arXiv:2608.15046](https://arxiv.org/abs/2608.15046) — 분야: cs.LG
+- Beatriz Almeida Felicio. *How Divergence Becomes Decision Flips in Compressed Language Models*. [arXiv:2610.00694](https://arxiv.org/abs/2610.00694) — 분야: cs.CL, cs.AI, cs.LG, stat.ML
+
 ## [2026-11-22] KLD는 얼마나 멀어졌는지만 잰다 — 양자화 후보를 고를 때 충실도 지표가 침묵하는 구간과, 갈린 문항의 방향
 
 - **중심**: Miloš Nikolić 외. *Displacement Is Not Direction: Evaluating Fidelity Metrics for Quantized LLM Deployment*. [arXiv:2606.19558](https://arxiv.org/abs/2606.19558) — 분야: cs.LG, cs.CL

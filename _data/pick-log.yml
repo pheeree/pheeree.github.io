@@ -1581,3 +1581,16 @@
     열흘 넘게 증류 쪽에 머문 줄기를 압축(양자화) 쪽 눈금 문제로 되돌린다. 곁가지 2609.23125(퍼플렉시티 비용이 활성 양자화 손상을 과소평가).
   switch_notice: false
   branch: null
+- date: 2026-11-22
+  slug: flips-discordant-cells-distance-and-direction
+  source: 2407.09141
+  path: a
+  focus_q: Q9
+  nth: 56
+  purpose: >
+    사용자 직접 요청(밀린 사이클 일괄 처리)으로 같은 날 세 번째 사이클. (a) 직전 글(11-22 KLD 충실도)의 '다음 읽을 후보' 다섯 편 중 미러 도착·미사용인
+    Dutta 외 'Accuracy is Not All You Need'를 픽 — 조타된 픽(사슬 연속). 오늘의 목적: 직전 글이 'KLD는 volume만 잰다'고 비판한 그 눈금의 원전이
+    처음부터 방향을 버리고 '거리'를 택한 이유를 원문에서 확인하고, 침묵 구역 비판이 원전의 물음(드롭인 대체)에도 해당하는지 Q9 질문 3·4 쪽에서 가른다.
+    곁가지 Miller 'Adding Error Bars to Evals'(2411.00640, 문항 수준 paired 차이).
+  switch_notice: false
+  branch: null

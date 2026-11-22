@@ -21,6 +21,22 @@
     - { id: "2610.18613", title: "Does self-distillation improve reasoning?", authors: "Jason Ken Adhinarta 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2610.18613" }
     - { id: "2610.22512", title: "Predicting Privileged Information Effectiveness for On-Policy Self-Distillation", authors: "Kaijian Zou 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2610.22512" }
 
+2026-11-22-flips-discordant-cells-distance-and-direction:
+  title: "flips와 정확도 차는 한 표의 두 읽기다 — 원전이 거리를 고른 이유와, 쌍체 검정이 비워 둔 방향"
+  central:
+    id: "2407.09141"
+    title: "Accuracy is Not All You Need"
+    authors: "Abhinav Dutta 외"
+    keywords: "cs.LG"
+    url: "https://arxiv.org/abs/2407.09141"
+  referenced:
+    - { id: "2011.09161", title: "Positive-Congruent Training: Towards Regression-Free Model Updates", authors: "Sijie Yan 외", keywords: "cs.CV, cs.LG", url: "https://arxiv.org/abs/2011.09161" }
+    - { id: "2408.04667", title: "Non-Determinism of \"Deterministic\" LLM Settings", authors: "Berk Atil 외", keywords: "cs.CL, cs.AI, cs.LG, cs.SE", url: "https://arxiv.org/abs/2408.04667" }
+    - { id: "2411.00640", title: "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations", authors: "Evan Miller", keywords: "stat.AP, cs.CL", url: "https://arxiv.org/abs/2411.00640" }
+    - { id: "2604.18085", title: "Predicting LLM Compression Degradation from Spectral Statistics", authors: "Mingxue Xu", keywords: "cs.LG", url: "https://arxiv.org/abs/2604.18085" }
+    - { id: "2608.15046", title: "Certifying Compressed Language Models: An Audit and a Statistical Toolkit", authors: "Amogh Singh", keywords: "cs.LG", url: "https://arxiv.org/abs/2608.15046" }
+    - { id: "2610.00694", title: "How Divergence Becomes Decision Flips in Compressed Language Models", authors: "Beatriz Almeida Felicio", keywords: "cs.CL, cs.AI, cs.LG, stat.ML", url: "https://arxiv.org/abs/2610.00694" }
+
 2026-11-22-displacement-not-direction-fidelity-metrics:
   title: "KLD는 얼마나 멀어졌는지만 잰다 — 양자화 후보를 고를 때 충실도 지표가 침묵하는 구간과, 갈린 문항의 방향"
   central:

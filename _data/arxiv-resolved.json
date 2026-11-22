@@ -17652,5 +17652,71 @@
   "categories": [
    "cs.AI"
   ]
+ },
+ "2011.09161": {
+  "title": "Positive-Congruent Training: Towards Regression-Free Model Updates",
+  "authors": [
+   "Sijie Yan",
+   "Yuanjun Xiong",
+   "Kaustav Kundu",
+   "Shuo Yang",
+   "Siqi Deng",
+   "Meng Wang",
+   "Wei Xia",
+   "Stefano Soatto"
+  ],
+  "published": "2020-11-18",
+  "categories": [
+   "cs.CV",
+   "cs.LG"
+  ]
+ },
+ "2608.15046": {
+  "title": "Certifying Compressed Language Models: An Audit and a Statistical Toolkit",
+  "authors": [
+   "Amogh Singh"
+  ],
+  "published": "2026-08-15",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2408.04667": {
+  "title": "Non-Determinism of \"Deterministic\" LLM Settings",
+  "authors": [
+   "Berk Atil",
+   "Sarp Aykent",
+   "Alexa Chittams",
+   "Lisheng Fu",
+   "Rebecca J. Passonneau",
+   "Evan Radcliffe",
+   "Guru Rajan Rajagopal",
+   "Adam Sloan",
+   "Tomasz Tudrej",
+   "Ferhan Ture",
+   "Zhe Wu",
+   "Lixinyu Xu",
+   "Breck Baldwin"
+  ],
+  "published": "2024-08-06",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG",
+   "cs.SE"
+  ]
+ },
+ "2610.00694": {
+  "title": "How Divergence Becomes Decision Flips in Compressed Language Models",
+  "authors": [
+   "Beatriz Almeida Felicio"
+  ],
+  "published": "2026-09-30",
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG",
+   "stat.ML"
+  ]
  }
 }
