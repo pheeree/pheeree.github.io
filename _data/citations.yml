@@ -1,6 +1,26 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-22-privileged-information-opsd-what-reference-adds:
+  title: "참조는 얼마를 보탰나 — 특권 정보 자기증류에서 참조 없는 대조군이 가져간 몫과, 롤아웃 형태가 뒤집은 부호"
+  central:
+    id: "2609.20612"
+    title: "What Does Privileged Information Add to On-Policy Self-Distillation?"
+    authors: "XiuYu Zhang 외"
+    keywords: "cs.CL"
+    url: "https://arxiv.org/abs/2609.20612"
+  referenced:
+    - { id: "2601.18734", title: "Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models", authors: "Siyan Zhao 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2601.18734" }
+    - { id: "2603.24472", title: "Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?", authors: "Jeonghye Kim 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2603.24472" }
+    - { id: "2607.05184", title: "Rethinking On-Policy Self-Distillation for Thinking Models", authors: "Simran Kaur 외", keywords: "cs.AI, cs.LG", url: "https://arxiv.org/abs/2607.05184" }
+    - { id: "2607.10805", title: "Diagnosing and Mitigating Thinking Collapse in On-Policy Self-Distillation", authors: "Keqin Peng 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2607.10805" }
+    - { id: "2608.06296", title: "On-Policy Self-Distillation without Any Supervision", authors: "Yijiang Li 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2608.06296" }
+    - { id: "2608.09228", title: "Privileged Solutions or Context-Induced Teacher Behavior? Dissecting On-Policy Self-Distillation", authors: "Yuki Ichihara 외", keywords: "cs.LG, cs.AI", url: "https://arxiv.org/abs/2608.09228" }
+    - { id: "2608.18271", title: "Rethinking Privileged Information in On-Policy Self-Distillation", authors: "Samyak Shrestha, Alexander Tessier", keywords: "cs.LG", url: "https://arxiv.org/abs/2608.18271" }
+    - { id: "2608.25936", title: "One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation", authors: "Justin Robert, Raheel Qader", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2608.25936" }
+    - { id: "2610.18613", title: "Does self-distillation improve reasoning?", authors: "Jason Ken Adhinarta 외", keywords: "cs.LG, cs.AI, cs.CL", url: "https://arxiv.org/abs/2610.18613" }
+    - { id: "2610.22512", title: "Predicting Privileged Information Effectiveness for On-Policy Self-Distillation", authors: "Kaijian Zou 외", keywords: "cs.LG", url: "https://arxiv.org/abs/2610.22512" }
+
 2026-11-21-sampled-demo-self-distillation-pcmi-diversity:
   title: "정답만 보여 줘도 다양성은 줄어드나 — 시연을 조건으로 건 자기증류가 같은 점수의 두 풀이를 기울이는 방식"
   central:

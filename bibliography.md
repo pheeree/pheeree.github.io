@@ -6,6 +6,20 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-22] 참조는 얼마를 보탰나 — 특권 정보 자기증류에서 참조 없는 대조군이 가져간 몫과, 롤아웃 형태가 뒤집은 부호
+
+- **중심**: XiuYu Zhang 외. *What Does Privileged Information Add to On-Policy Self-Distillation?*. [arXiv:2609.20612](https://arxiv.org/abs/2609.20612) — 분야: cs.CL
+- Siyan Zhao 외. *Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models*. [arXiv:2601.18734](https://arxiv.org/abs/2601.18734) — 분야: cs.LG, cs.CL
+- Jeonghye Kim 외. *Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?*. [arXiv:2603.24472](https://arxiv.org/abs/2603.24472) — 분야: cs.CL, cs.LG
+- Simran Kaur 외. *Rethinking On-Policy Self-Distillation for Thinking Models*. [arXiv:2607.05184](https://arxiv.org/abs/2607.05184) — 분야: cs.AI, cs.LG
+- Keqin Peng 외. *Diagnosing and Mitigating Thinking Collapse in On-Policy Self-Distillation*. [arXiv:2607.10805](https://arxiv.org/abs/2607.10805) — 분야: cs.CL, cs.LG
+- Yijiang Li 외. *On-Policy Self-Distillation without Any Supervision*. [arXiv:2608.06296](https://arxiv.org/abs/2608.06296) — 분야: cs.LG
+- Yuki Ichihara 외. *Privileged Solutions or Context-Induced Teacher Behavior? Dissecting On-Policy Self-Distillation*. [arXiv:2608.09228](https://arxiv.org/abs/2608.09228) — 분야: cs.LG, cs.AI
+- Samyak Shrestha, Alexander Tessier. *Rethinking Privileged Information in On-Policy Self-Distillation*. [arXiv:2608.18271](https://arxiv.org/abs/2608.18271) — 분야: cs.LG
+- Justin Robert, Raheel Qader. *One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation*. [arXiv:2608.25936](https://arxiv.org/abs/2608.25936) — 분야: cs.LG, cs.AI, cs.CL
+- Jason Ken Adhinarta 외. *Does self-distillation improve reasoning?*. [arXiv:2610.18613](https://arxiv.org/abs/2610.18613) — 분야: cs.LG, cs.AI, cs.CL
+- Kaijian Zou 외. *Predicting Privileged Information Effectiveness for On-Policy Self-Distillation*. [arXiv:2610.22512](https://arxiv.org/abs/2610.22512) — 분야: cs.LG
+
 ## [2026-11-21] 정답만 보여 줘도 다양성은 줄어드나 — 시연을 조건으로 건 자기증류가 같은 점수의 두 풀이를 기울이는 방식
 
 - **중심**: Andrei Liviu Nicolicioiu 외. *On-Policy Self-Distillation with Sampled Demonstrations Reduces Output Diversity*. [arXiv:2606.26091](https://arxiv.org/abs/2606.26091) — 분야: cs.LG, cs.AI

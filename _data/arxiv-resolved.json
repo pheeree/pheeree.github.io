@@ -17512,5 +17512,102 @@
    "cs.AI",
    "cs.CL"
   ]
+ },
+ "2608.06296": {
+  "title": "On-Policy Self-Distillation without Any Supervision",
+  "authors": [
+   "Yijiang Li",
+   "Bingyang Wang",
+   "Yijun Liang",
+   "Yunjie Tian",
+   "Di Fu",
+   "Nuno Vasconcelos"
+  ],
+  "published": "2026-08-06",
+  "categories": [
+   "cs.LG"
+  ]
+ },
+ "2610.18613": {
+  "title": "Does self-distillation improve reasoning?",
+  "authors": [
+   "Jason Ken Adhinarta",
+   "Raina Wu",
+   "Ashutosh Sharma",
+   "Avinash Balakrishnan",
+   "Rameswar Panda",
+   "Polina Golland",
+   "Yoon Kim",
+   "Zhang-Wei Hong"
+  ],
+  "published": "2026-10-13",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ "2601.18734": {
+  "title": "Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models",
+  "authors": [
+   "Siyan Zhao",
+   "Zhihui Xie",
+   "Mengchen Liu",
+   "Jing Huang",
+   "Guan Pang",
+   "Feiyu Chen",
+   "Aditya Grover"
+  ],
+  "published": "2026-01-26",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2608.09228": {
+  "title": "Privileged Solutions or Context-Induced Teacher Behavior? Dissecting On-Policy Self-Distillation",
+  "authors": [
+   "Yuki Ichihara",
+   "Naoto Iwase",
+   "Mohammad Atif Quamar",
+   "Junpei Komiyama"
+  ],
+  "published": "2026-08-10",
+  "categories": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ "2607.10805": {
+  "title": "Diagnosing and Mitigating Thinking Collapse in On-Policy Self-Distillation",
+  "authors": [
+   "Keqin Peng",
+   "Chen Li",
+   "Yuanxin Ouyang",
+   "Yancheng Yuan",
+   "Liang Ding"
+  ],
+  "published": "2026-07-12",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
+ },
+ "2610.22512": {
+  "title": "Predicting Privileged Information Effectiveness for On-Policy Self-Distillation",
+  "authors": [
+   "Kaijian Zou",
+   "Emiliano Penaloza",
+   "MohammadHossein Rezaei",
+   "Anisha Gunjal",
+   "Mohit Raghavendra",
+   "Lu Wang",
+   "Yunzhong He",
+   "Anas Mahmoud"
+  ],
+  "published": "2026-10-15",
+  "categories": [
+   "cs.LG"
+  ]
  }
 }
