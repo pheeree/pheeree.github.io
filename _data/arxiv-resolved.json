@@ -17718,5 +17718,68 @@
    "cs.LG",
    "stat.ML"
   ]
+ },
+ "2507.00327": {
+  "title": "Beyond Low-Rank Tuning: Model Prior-Guided Rank Allocation for Effective Transfer in Low-Data and Large-Gap Regimes",
+  "authors": [
+   "Chuyan Zhang",
+   "Kefan Wang",
+   "Yun Gu"
+  ],
+  "published": "2025-06-30",
+  "categories": [
+   "cs.CV"
+  ]
+ },
+ "2611.27155": {
+  "title": "The Vulnerability Window: Decision Instability in Quantized Reward Models",
+  "authors": [
+   "Omkar Shewale",
+   "Deepak Kumar",
+   "Divakar Kumar Yadav"
+  ],
+  "published": "2026-11-20",
+  "categories": [
+   "cs.LG",
+   "cs.CL"
+  ]
+ },
+ "2110.02333": {
+  "title": "On the Impact of Stable Ranks in Deep Nets",
+  "authors": [
+   "Bogdan Georgiev",
+   "Lukas Franken",
+   "Mayukh Mukherjee",
+   "Georgios Arvanitidis"
+  ],
+  "published": "2021-10-05",
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "math.ST"
+  ]
+ },
+ "2608.26389": {
+  "title": "LowRankArena: A Standardized Evaluation Platform for SVD-Based LLM Compression",
+  "authors": [
+   "Zishan Shao",
+   "Lixun Zhang",
+   "Kangning Cui",
+   "Wenhao Wu",
+   "Jinhee Kim",
+   "Yixiao Wang",
+   "Ting Jiang",
+   "Hancheng Ye",
+   "Qinsi Wang",
+   "Fan Yang",
+   "Danyang Zhuo",
+   "Yiran Chen",
+   "Hai Li"
+  ],
+  "published": "2026-08-26",
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ]
  }
 }

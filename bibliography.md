@@ -6,6 +6,16 @@ permalink: /bibliography/
 
 이 페이지는 각 글이 인용한 논문의 서지정보와 원문 링크를 모은다. `scripts/build_citations.py` 가 자동 생성하며 발행 때마다 갱신된다.
 
+## [2026-11-24] 가중치만 보고 내다본 손상은 표의 어느 쪽인가 — 스펙트럼 예측식이 맞추는 순 하락과, 압축률이 이미 가져간 몫
+
+- **중심**: Mingxue Xu. *Predicting LLM Compression Degradation from Spectral Statistics*. [arXiv:2604.18085](https://arxiv.org/abs/2604.18085) — 분야: cs.LG
+- Bogdan Georgiev 외. *On the Impact of Stable Ranks in Deep Nets*. [arXiv:2110.02333](https://arxiv.org/abs/2110.02333) — 분야: cs.LG, cs.AI, math.ST
+- Xin Wang 외. *SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression*. [arXiv:2403.07378](https://arxiv.org/abs/2403.07378) — 분야: cs.CL, cs.LG
+- Chuyan Zhang 외. *Beyond Low-Rank Tuning: Model Prior-Guided Rank Allocation for Effective Transfer in Low-Data and Large-Gap Regimes*. [arXiv:2507.00327](https://arxiv.org/abs/2507.00327) — 분야: cs.CV
+- Amogh Singh. *Certifying Compressed Language Models: An Audit and a Statistical Toolkit*. [arXiv:2608.15046](https://arxiv.org/abs/2608.15046) — 분야: cs.LG
+- Zishan Shao 외. *LowRankArena: A Standardized Evaluation Platform for SVD-Based LLM Compression*. [arXiv:2608.26389](https://arxiv.org/abs/2608.26389) — 분야: cs.CL, cs.LG
+- Omkar Shewale 외. *The Vulnerability Window: Decision Instability in Quantized Reward Models*. [arXiv:2611.27155](https://arxiv.org/abs/2611.27155) — 분야: cs.LG, cs.CL
+
 ## [2026-11-22] 참조는 얼마를 보탰나 — 특권 정보 자기증류에서 참조 없는 대조군이 가져간 몫과, 롤아웃 형태가 뒤집은 부호
 
 - **중심**: XiuYu Zhang 외. *What Does Privileged Information Add to On-Policy Self-Distillation?*. [arXiv:2609.20612](https://arxiv.org/abs/2609.20612) — 분야: cs.CL

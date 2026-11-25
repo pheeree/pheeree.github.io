@@ -1594,3 +1594,16 @@
     곁가지 Miller 'Adding Error Bars to Evals'(2411.00640, 문항 수준 paired 차이).
   switch_notice: false
   branch: null
+- date: 2026-11-24
+  slug: spectral-predictor-forecasts-net-not-flips
+  source: 2604.18085
+  path: a
+  focus_q: Q9
+  nth: 57
+  purpose: >
+    (a) 직전 글(11-22 flips 원전)의 '다음 읽을 후보' 다섯 편 가운데 미러 도착·미사용인 Xu 'Predicting LLM Compression Degradation
+    from Spectral Statistics'를 픽 — 조타된 픽(사슬 연속, 앞 두 글이 연달아 지목). 오늘의 목적: Q9 질문 3 '레이블 없이 손상을 미리 잴 수 있는가'를
+    가중치만 보는 눈금 쪽에서 민다 — γ·ρ̄(압축률×안정 랭크)가 LOO R 0.89로 예측한다는 그 대상이 2×2 표의 어느 칸인지(순 정확도 = c−b,
+    거리 b+c가 아님), 그리고 γ 단독 기준선 없이 ρ̄가 보탠 몫이 얼마인지를 가른다. 질문 4(눈금이 재는 차원의 어긋남)에도 닿는다.
+  switch_notice: false
+  branch: null

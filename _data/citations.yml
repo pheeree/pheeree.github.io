@@ -1,6 +1,22 @@
 # 자동 생성 — scripts/build_citations.py. 직접 편집 금지.
 # 글별 서지정보 + 원문 링크. 포스트 발행 때마다 갱신.
 
+2026-11-24-spectral-predictor-forecasts-net-not-flips:
+  title: "가중치만 보고 내다본 손상은 표의 어느 쪽인가 — 스펙트럼 예측식이 맞추는 순 하락과, 압축률이 이미 가져간 몫"
+  central:
+    id: "2604.18085"
+    title: "Predicting LLM Compression Degradation from Spectral Statistics"
+    authors: "Mingxue Xu"
+    keywords: "cs.LG"
+    url: "https://arxiv.org/abs/2604.18085"
+  referenced:
+    - { id: "2110.02333", title: "On the Impact of Stable Ranks in Deep Nets", authors: "Bogdan Georgiev 외", keywords: "cs.LG, cs.AI, math.ST", url: "https://arxiv.org/abs/2110.02333" }
+    - { id: "2403.07378", title: "SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression", authors: "Xin Wang 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2403.07378" }
+    - { id: "2507.00327", title: "Beyond Low-Rank Tuning: Model Prior-Guided Rank Allocation for Effective Transfer in Low-Data and Large-Gap Regimes", authors: "Chuyan Zhang 외", keywords: "cs.CV", url: "https://arxiv.org/abs/2507.00327" }
+    - { id: "2608.15046", title: "Certifying Compressed Language Models: An Audit and a Statistical Toolkit", authors: "Amogh Singh", keywords: "cs.LG", url: "https://arxiv.org/abs/2608.15046" }
+    - { id: "2608.26389", title: "LowRankArena: A Standardized Evaluation Platform for SVD-Based LLM Compression", authors: "Zishan Shao 외", keywords: "cs.CL, cs.LG", url: "https://arxiv.org/abs/2608.26389" }
+    - { id: "2611.27155", title: "The Vulnerability Window: Decision Instability in Quantized Reward Models", authors: "Omkar Shewale 외", keywords: "cs.LG, cs.CL", url: "https://arxiv.org/abs/2611.27155" }
+
 2026-11-22-privileged-information-opsd-what-reference-adds:
   title: "참조는 얼마를 보탰나 — 특권 정보 자기증류에서 참조 없는 대조군이 가져간 몫과, 롤아웃 형태가 뒤집은 부호"
   central:

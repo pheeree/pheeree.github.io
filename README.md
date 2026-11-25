@@ -13,6 +13,7 @@
 ## 글 목록
 
 <!-- POSTS:START -->
+- 2026-11-24 — [가중치만 보고 내다본 손상은 표의 어느 쪽인가 — 스펙트럼 예측식이 맞추는 순 하락과, 압축률이 이미 가져간 몫](https://pheeree.github.io/2026/11/24/spectral-predictor-forecasts-net-not-flips/)
 - 2026-11-22 — [flips와 정확도 차는 한 표의 두 읽기다 — 원전이 거리를 고른 이유와, 쌍체 검정이 비워 둔 방향](https://pheeree.github.io/2026/11/22/flips-discordant-cells-distance-and-direction/)
 - 2026-11-22 — [KLD는 얼마나 멀어졌는지만 잰다 — 양자화 후보를 고를 때 충실도 지표가 침묵하는 구간과, 갈린 문항의 방향](https://pheeree.github.io/2026/11/22/displacement-not-direction-fidelity-metrics/)
 - 2026-11-22 — [참조는 얼마를 보탰나 — 특권 정보 자기증류에서 참조 없는 대조군이 가져간 몫과, 롤아웃 형태가 뒤집은 부호](https://pheeree.github.io/2026/11/22/privileged-information-opsd-what-reference-adds/)
